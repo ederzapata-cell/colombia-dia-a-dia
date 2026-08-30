@@ -1,461 +1,706 @@
-const timeline = document.getElementById("timeline"),
-  searchDialog = document.getElementById("searchDialog"),
-  searchInput = document.getElementById("searchInput"),
-  searchResults = document.getElementById("searchResults"),
-  dateDialog = document.getElementById("dateDialog"),
-  dateInput = document.getElementById("dateInput"),
-  supportDialog = document.getElementById("supportDialog");
+const timeline = document.getElementById("timeline");
+const searchDialog = document.getElementById("searchDialog");
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+const dateDialog = document.getElementById("dateDialog");
+const dateInput = document.getElementById("dateInput");
+const supportDialog = document.getElementById("supportDialog");
+
+const MONTHS = [
+  "enero",
+  "febrero",
+  "marzo",
+  "abril",
+  "mayo",
+  "junio",
+  "julio",
+  "agosto",
+  "septiembre",
+  "octubre",
+  "noviembre",
+  "diciembre"
+];
+
+const MONTHS_SHORT = [
+  "ENE",
+  "FEB",
+  "MAR",
+  "ABR",
+  "MAY",
+  "JUN",
+  "JUL",
+  "AGO",
+  "SEP",
+  "OCT",
+  "NOV",
+  "DIC"
+];
 
 const availableDates = [...new Set(events.map(e => e.eventDate))].sort();
 
-let currentDate = availableDates[availableDates.length - 1];
+let currentDate =
+  availableDates[availableDates.length - 1] || "2026-08-07";
 
 function formatDate(s) {
+  if (!s) return "—";
+
   const [y, m, d] = s.split("-");
+
   return `${d}/${m}/${y}`;
 }
 
 function longDate(s) {
-  return new Intl.DateTimeFormat("es-CO", {
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-  }).format(new Date(`${s}T12:00:00`));
+  const [y, m, d] = s.split("-").map(Number);
+
+  return `${d} de ${MONTHS[m - 1]} de ${y}`;
 }
 
 function shortNodeDate(s) {
-  const [y, m, d] = s.split("-");
+  const [y, m, d] = s.split("-").map(Number);
 
-  const months = [
-    "ENE","FEB","MAR","ABR","MAY","JUN",
-    "JUL","AGO","SEP","OCT","NOV","DIC"
-  ];
-
-  return `${d} ${months[Number(m) - 1]} ${y}`;
+  return `${String(d).padStart(2, "0")} ${MONTHS_SHORT[m - 1]} ${y}`;
 }
 
-function dayNumber(s) {
-  const start = new Date("2026-08-07T12:00:00");
-  const current = new Date(`${s}T12:00:00`);
+function getDayMeta(date) {
+  if (
+    typeof dayMeta !== "undefined" &&
+    dayMeta &&
+    dayMeta[date]
+  ) {
+    return dayMeta[date];
+  }
 
-  return Math.round((current - start) / 86400000) + 1;
+  if (date === "2026-08-30") {
+    return {
+      status: "EN ACTUALIZACIÓN ⟳",
+      subtitle:
+        "Información verificada hasta el último barrido disponible."
+    };
+  }
+
+  return {
+    status: "VERIFICADO ✓",
+    subtitle:
+      "Hechos verificados y contextualizados para esta fecha."
+  };
 }
 
-function cardTemplate(i) {
+function sourceLabel(item) {
+  /*
+    IMPORTANTE:
+    "Fuente oficial" describe el origen de la información.
+
+    No significa automáticamente:
+    - verdad demostrada
+    - responsabilidad judicial establecida
+    - hecho independiente verificado
+
+    Por eso NO añadimos un ✓ universal a las fuentes.
+  */
+
+  return `${item.sourceType} · ${item.sourceName}`;
+}
+
+function cardTemplate(item) {
+  const effectiveDate =
+    item.effectiveDate || item.legalDate || null;
+
+  const related =
+    Array.isArray(item.related) && item.related.length
+      ? item.related.join(", ")
+      : "—";
+
+  const extraSources =
+    Array.isArray(item.extraSources) &&
+    item.extraSources.length
+      ? `
+        <div class="secondary-sources">
+          <h4>OTRAS FUENTES</h4>
+
+          ${item.extraSources
+            .map(
+              ([name, url]) => `
+                <a
+                  href="${url}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ${name} ↗
+                </a>
+              `
+            )
+            .join("")}
+        </div>
+      `
+      : "";
+
+  const note = item.note
+    ? `<p class="record-note">${item.note}</p>`
+    : "";
+
+  let effectiveDateHtml = "";
+
+  if (effectiveDate) {
+    const label = item.legalDate
+      ? "Fecha jurídica"
+      : "Fecha de aplicación";
+
+    effectiveDateHtml = `
+      <li>
+        ${label}: ${formatDate(effectiveDate)}
+      </li>
+    `;
+  }
+
   return `
-    <article class="event-card" id="${i.id}">
+    <article
+      class="event-card"
+      id="${item.id}"
+    >
+
       <div class="meta">
-        <span class="badge">${i.category}</span>
-        <span class="badge verified">${i.status}</span>
+
+        <span class="badge">
+          ${item.category}
+        </span>
+
+        <span class="badge verified">
+          ${item.status}
+        </span>
+
       </div>
 
-      <h3>${i.title}</h3>
+      <h3>
+        ${item.title}
+      </h3>
 
-      <p>${i.summary}</p>
+      <p>
+        ${item.summary}
+      </p>
 
       <div class="source-row">
+
         <a
-          href="${i.sourceUrl}"
+          href="${item.sourceUrl}"
           target="_blank"
           rel="noopener noreferrer"
         >
-          ${i.sourceType} ✓ · ${i.sourceName}
+          ${sourceLabel(item)}
         </a>
 
         <button
           class="details-btn"
-          data-details="${i.id}"
+          data-details="${item.id}"
+          type="button"
         >
           Ver →
         </button>
+
       </div>
 
-      <div class="details" id="details-${i.id}">
+      <div
+        class="details"
+        id="details-${item.id}"
+      >
+
         <h4>DATOS DEL REGISTRO</h4>
 
         <ul>
-          <li>Fecha del hecho: ${formatDate(i.eventDate)}</li>
-          <li>Fecha de publicación: ${formatDate(i.publishedDate)}</li>
-          <li>Estado: ${i.status}</li>
-          <li>Relacionados: ${i.related.join(", ")}</li>
+
+          <li>
+            Fecha del hecho:
+            ${formatDate(item.eventDate)}
+          </li>
+
+          <li>
+            Fecha de publicación:
+            ${formatDate(item.publishedDate)}
+          </li>
+
+          ${effectiveDateHtml}
+
+          <li>
+            Estado:
+            ${item.status}
+          </li>
+
+          <li>
+            Relacionados:
+            ${related}
+          </li>
+
         </ul>
 
-        ${
-          i.extraSources.length
-            ? `
-              <div class="secondary-sources">
-                <h4>OTRAS FUENTES</h4>
+        ${note}
 
-                ${i.extraSources
-                  .map(
-                    ([n, u]) =>
-                      `<a href="${u}" target="_blank" rel="noopener noreferrer">${n} ↗</a>`
-                  )
-                  .join("")}
-              </div>
-            `
-            : ""
-        }
+        ${extraSources}
+
       </div>
+
     </article>
   `;
 }
 
-function renderTimeline(date = currentDate) {
-  currentDate = date;
+function emptyGroup() {
+  return `
+    <div class="event-card empty-card">
+      <p>
+        Sin acontecimientos relevantes documentados.
+      </p>
+    </div>
+  `;
+}
 
+function updateHero() {
+  const meta = getDayMeta(currentDate);
+
+  const heroEyebrow =
+    document.getElementById("heroEyebrow");
+
+  const heroDate =
+    document.getElementById("heroDate");
+
+  const heroSubtitle =
+    document.getElementById("heroSubtitle");
+
+  if (heroEyebrow) {
+    heroEyebrow.textContent =
+      currentDate === "2026-08-07"
+        ? "PUNTO CERO · DÍA 1"
+        : "COLOMBIA · DÍA A DÍA";
+  }
+
+  if (heroDate) {
+    heroDate.textContent =
+      longDate(currentDate);
+  }
+
+  if (heroSubtitle) {
+    heroSubtitle.textContent =
+      meta.subtitle;
+  }
+
+  if (dateInput) {
+    dateInput.value =
+      currentDate;
+  }
+}
+
+function renderTimeline() {
   const groups = [
     ["government", "GOBIERNO"],
     ["opposition", "OPOSICIÓN"],
     ["state", "ESTADO Y PAÍS"]
   ];
 
-  const dayEvents = events.filter(
-    e => e.eventDate === currentDate
-  );
+  const meta =
+    getDayMeta(currentDate);
 
-  timeline.innerHTML =
-    `<div class="day-node">
-      ${shortNodeDate(currentDate)} · VERIFICADO ✓
-    </div>` +
+  const dayEvents =
+    events.filter(
+      e => e.eventDate === currentDate
+    );
 
-    groups.map(([key, label]) => {
-      const groupEvents = dayEvents.filter(
-        e => e.group === key
-      );
+  timeline.innerHTML = `
+    <div class="day-node">
+      ${shortNodeDate(currentDate)}
+      ·
+      ${meta.status}
+    </div>
 
-      return `
-        <section class="group ${key}">
-          <div class="group-label">
-            ${label}
-          </div>
+    ${groups
+      .map(([groupKey, groupLabel]) => {
+        const items =
+          dayEvents.filter(
+            e => e.group === groupKey
+          );
 
-          ${
-            groupEvents.length
-              ? groupEvents.map(cardTemplate).join("")
-              : `
-                <div class="empty-group">
-                  Sin acontecimientos relevantes documentados.
-                </div>
-              `
-          }
-        </section>
-      `;
-    }).join("");
+        return `
+          <section class="group ${groupKey}">
 
-  updateHero();
+            <div class="group-label">
+              ${groupLabel}
+            </div>
+
+            ${
+              items.length
+                ? items
+                    .map(cardTemplate)
+                    .join("")
+                : emptyGroup()
+            }
+
+          </section>
+        `;
+      })
+      .join("")}
+  `;
 
   document
     .querySelectorAll(".details-btn")
     .forEach(button => {
-      button.addEventListener("click", () => {
-        const details = document.getElementById(
-          `details-${button.dataset.details}`
-        );
+      button.addEventListener(
+        "click",
+        () => {
+          const panel =
+            document.getElementById(
+              `details-${button.dataset.details}`
+            );
 
-        details.classList.toggle("open");
+          if (!panel) return;
 
-        button.textContent =
-          details.classList.contains("open")
-            ? "Cerrar ↑"
-            : "Ver →";
-      });
+          panel.classList.toggle("open");
+
+          button.textContent =
+            panel.classList.contains("open")
+              ? "Cerrar ↑"
+              : "Ver →";
+        }
+      );
+    });
+
+  updateHero();
+}
+
+function goToDate(date) {
+  if (!availableDates.includes(date)) {
+    alert(
+      "Todavía no hay registros cargados para esa fecha."
+    );
+
+    return;
+  }
+
+  currentDate = date;
+
+  renderTimeline();
+
+  document
+    .querySelector(".day-node")
+    ?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
     });
 }
 
-function updateHero() {
-  const eyebrow = document.getElementById("dayEyebrow");
-  const title = document.getElementById("dayTitle");
-  const subtitle = document.getElementById("daySubtitle");
-
-  if (eyebrow) {
-    eyebrow.textContent =
-      `CRONOLOGÍA · DÍA ${dayNumber(currentDate)}`;
-  }
-
-  if (title) {
-    title.textContent = longDate(currentDate);
-  }
-
-  if (subtitle) {
-    subtitle.textContent =
-      currentDate === "2026-08-07"
-        ? "Inicio de la cronología verificable de esta plataforma."
-        : "Hechos relevantes documentados y verificables de esta jornada.";
-  }
-
-  if (dateInput) {
-    dateInput.value = currentDate;
-  }
-}
-
-function doSearch(q) {
-  q = q.trim().toLowerCase();
+function doSearch(query) {
+  const q =
+    query.trim().toLowerCase();
 
   if (!q) {
     searchResults.innerHTML = "";
     return;
   }
 
-  const hits = events.filter(e =>
-    [
-      e.title,
-      e.summary,
-      e.category,
-      e.sourceName,
-      ...e.related
-    ]
-      .join(" ")
-      .toLowerCase()
-      .includes(q)
-  );
+  const hits =
+    events.filter(item => {
+      const searchableText = [
+        item.title,
+        item.summary,
+        item.category,
+        item.sourceName,
+        item.groupLabel,
+        ...(item.related || [])
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
 
-  const glossaryHits = Object.entries(glossary).filter(
-    ([term, definition]) =>
-      `${term} ${definition}`
-        .toLowerCase()
-        .includes(q)
-  );
+      return searchableText.includes(q);
+    });
+
+  const glossaryHits =
+    typeof glossary !== "undefined" &&
+    glossary
+      ? Object.entries(glossary).filter(
+          ([term, definition]) =>
+            `${term} ${definition}`
+              .toLowerCase()
+              .includes(q)
+        )
+      : [];
+
+  const eventResults =
+    hits
+      .map(
+        item => `
+          <button
+            class="search-hit"
+            data-jump="${item.id}"
+            data-date="${item.eventDate}"
+            type="button"
+          >
+
+            <strong>
+              ${item.title}
+            </strong>
+
+            <span>
+              ${item.groupLabel || ""}
+              ·
+              ${item.category}
+              ·
+              ${formatDate(item.eventDate)}
+            </span>
+
+          </button>
+        `
+      )
+      .join("");
+
+  const glossaryResults =
+    glossaryHits
+      .map(
+        ([term, definition]) => `
+          <div class="search-hit">
+
+            <strong>
+              ${term}
+            </strong>
+
+            <span>
+              ${definition}
+            </span>
+
+          </div>
+        `
+      )
+      .join("");
 
   searchResults.innerHTML =
-    hits.map(e => `
-      <button
-        class="search-hit"
-        data-jump="${e.id}"
-        data-date="${e.eventDate}"
-      >
-        <strong>${e.title}</strong>
-        <span>
-          ${e.groupLabel}
-          · ${e.category}
-          · ${formatDate(e.eventDate)}
-        </span>
-      </button>
-    `).join("")
+    eventResults ||
+    glossaryResults
+      ? eventResults + glossaryResults
+      : `
+        <div class="search-hit">
 
-    +
+          <strong>
+            Sin resultados
+          </strong>
 
-    glossaryHits.map(([term, definition]) => `
-      <div class="search-hit">
-        <strong>${term}</strong>
-        <span>${definition}</span>
-      </div>
-    `).join("")
+          <span>
+            Prueba otro término.
+          </span>
 
-    ||
-
-    `
-      <div class="search-hit">
-        <strong>Sin resultados</strong>
-        <span>Prueba otro término.</span>
-      </div>
-    `;
+        </div>
+      `;
 
   document
     .querySelectorAll("[data-jump]")
     .forEach(button => {
-      button.addEventListener("click", () => {
-        searchDialog.close();
+      button.addEventListener(
+        "click",
+        () => {
+          searchDialog.close();
 
-        renderTimeline(button.dataset.date);
+          currentDate =
+            button.dataset.date;
 
-        setTimeout(() => {
-          document
-            .getElementById(button.dataset.jump)
-            ?.scrollIntoView({
-              behavior: "smooth",
-              block: "center"
-            });
-        }, 80);
-      });
+          renderTimeline();
+
+          requestAnimationFrame(
+            () => {
+              document
+                .getElementById(
+                  button.dataset.jump
+                )
+                ?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center"
+                });
+            }
+          );
+        }
+      );
     });
 }
 
-
-/* BUSCAR */
-
 document
   .getElementById("openSearch")
-  .addEventListener(
+  ?.addEventListener(
     "click",
-    () => searchDialog.showModal()
+    () => {
+      searchDialog?.showModal();
+    }
   );
 
 document
   .getElementById("navSearch")
-  .addEventListener(
+  ?.addEventListener(
     "click",
-    () => searchDialog.showModal()
+    () => {
+      searchDialog?.showModal();
+    }
   );
 
-searchInput.addEventListener(
+searchInput?.addEventListener(
   "input",
-  e => doSearch(e.target.value)
+  event => {
+    doSearch(event.target.value);
+  }
 );
-
-
-/* IR A FECHA */
 
 document
   .getElementById("goToDate")
-  .addEventListener("click", () => {
-    dateInput.min = availableDates[0];
-    dateInput.max =
-      availableDates[availableDates.length - 1];
-
-    dateInput.value = currentDate;
-
-    dateDialog.showModal();
-  });
+  ?.addEventListener(
+    "click",
+    () => {
+      dateDialog?.showModal();
+    }
+  );
 
 document
   .getElementById("dateSubmit")
-  .addEventListener("click", e => {
-    e.preventDefault();
+  ?.addEventListener(
+    "click",
+    () => {
+      const selected =
+        dateInput.value;
 
-    const selected = dateInput.value;
+      dateDialog?.close();
 
-    if (availableDates.includes(selected)) {
-      renderTimeline(selected);
-
-      dateDialog.close();
-
-      document
-        .querySelector(".day-node")
-        ?.scrollIntoView({
-          behavior: "smooth"
-        });
-    } else {
-      alert(
-        "Todavía no hay registros disponibles para esa fecha."
-      );
+      goToDate(selected);
     }
-  });
+  );
 
-
-/* APÓYANOS */
+const openSupport = () => {
+  supportDialog?.showModal();
+};
 
 document
-  .querySelectorAll("#supportBtn, #topSupportBtn")
-  .forEach(button => {
-    button.addEventListener("click", () => {
-      supportDialog.showModal();
-    });
-  });
+  .getElementById("supportBtn")
+  ?.addEventListener(
+    "click",
+    openSupport
+  );
 
+document
+  .getElementById("topSupportBtn")
+  ?.addEventListener(
+    "click",
+    openSupport
+  );
 
-/* COPIAR LLAVE BRE-B */
+document
+  .getElementById("copyKeyBtn")
+  ?.addEventListener(
+    "click",
+    async () => {
+      const key =
+        document
+          .getElementById("brebKey")
+          ?.textContent
+          ?.trim();
 
-const copyKeyBtn =
-  document.getElementById("copyKeyBtn");
+      const status =
+        document.getElementById(
+          "copyStatus"
+        );
 
-const copyStatus =
-  document.getElementById("copyStatus");
+      if (!key) return;
 
-const brebKey =
-  document.getElementById("brebKey");
+      try {
+        await navigator.clipboard.writeText(
+          key
+        );
 
-copyKeyBtn.addEventListener("click", async () => {
-  const key = brebKey.textContent.trim();
+        if (status) {
+          status.textContent =
+            "Llave copiada ✓";
+        }
+      } catch {
+        if (status) {
+          status.textContent =
+            `Llave: ${key}`;
+        }
+      }
 
-  try {
-    await navigator.clipboard.writeText(key);
-
-    copyStatus.textContent =
-      "Llave copiada ✓";
-
-    copyKeyBtn.textContent =
-      "Copiada ✓";
-
-  } catch (error) {
-    const textarea =
-      document.createElement("textarea");
-
-    textarea.value = key;
-
-    document.body.appendChild(textarea);
-
-    textarea.select();
-
-    document.execCommand("copy");
-
-    textarea.remove();
-
-    copyStatus.textContent =
-      "Llave copiada ✓";
-
-    copyKeyBtn.textContent =
-      "Copiada ✓";
-  }
-
-  setTimeout(() => {
-    copyStatus.textContent = "";
-
-    copyKeyBtn.textContent =
-      "Copiar llave";
-  }, 2200);
-});
-
-
-/* NAVEGACIÓN INFERIOR */
+      setTimeout(
+        () => {
+          if (status) {
+            status.textContent = "";
+          }
+        },
+        2200
+      );
+    }
+  );
 
 document
   .querySelectorAll(".nav-item")
   .forEach(button => {
-    button.addEventListener("click", () => {
-      document
-        .querySelectorAll(".nav-item")
-        .forEach(item =>
-          item.classList.remove("active")
+    button.addEventListener(
+      "click",
+      () => {
+        document
+          .querySelectorAll(".nav-item")
+          .forEach(item =>
+            item.classList.remove(
+              "active"
+            )
+          );
+
+        button.classList.add(
+          "active"
         );
 
-      button.classList.add("active");
+        if (
+          button.dataset.section ===
+          "hoy"
+        ) {
+          currentDate =
+            availableDates[
+              availableDates.length - 1
+            ] || currentDate;
 
+          renderTimeline();
 
-      /* HOY = ÚLTIMO DÍA DISPONIBLE */
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
 
-      if (button.dataset.section === "hoy") {
-        renderTimeline(
-          availableDates[availableDates.length - 1]
-        );
+        if (
+          button.dataset.section ===
+          "dia"
+        ) {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
 
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
+        if (
+          button.dataset.section ===
+          "entiende"
+        ) {
+          searchDialog?.showModal();
+
+          if (searchInput) {
+            searchInput.value =
+              "presunción de inocencia";
+
+            doSearch(
+              searchInput.value
+            );
+          }
+        }
       }
-
-
-      /* DÍA A DÍA = SELECTOR */
-
-      if (button.dataset.section === "dia") {
-        dateInput.min = availableDates[0];
-
-        dateInput.max =
-          availableDates[availableDates.length - 1];
-
-        dateInput.value = currentDate;
-
-        dateDialog.showModal();
-      }
-
-
-      /* ENTIENDE */
-
-      if (button.dataset.section === "entiende") {
-        searchDialog.showModal();
-
-        searchInput.value =
-          "presunción de inocencia";
-
-        doSearch(searchInput.value);
-      }
-    });
+    );
   });
 
+if (
+  dateInput &&
+  availableDates.length
+) {
+  dateInput.min =
+    availableDates[0];
 
-/* CARGAR EL DÍA MÁS RECIENTE */
+  dateInput.max =
+    availableDates[
+      availableDates.length - 1
+    ];
+}
 
-renderTimeline(
-  availableDates[availableDates.length - 1]
-);
+renderTimeline();

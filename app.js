@@ -5,41 +5,25 @@ const searchResults = document.getElementById("searchResults");
 const dateDialog = document.getElementById("dateDialog");
 const dateInput = document.getElementById("dateInput");
 const supportDialog = document.getElementById("supportDialog");
+const termDialog = document.getElementById("termDialog");
+const termDialogTitle = document.getElementById("termDialogTitle");
+const termDialogDefinition = document.getElementById("termDialogDefinition");
 
 const MONTHS = [
-  "enero",
-  "febrero",
-  "marzo",
-  "abril",
-  "mayo",
-  "junio",
-  "julio",
-  "agosto",
-  "septiembre",
-  "octubre",
-  "noviembre",
-  "diciembre"
+  "enero","febrero","marzo","abril","mayo","junio",
+  "julio","agosto","septiembre","octubre","noviembre","diciembre"
 ];
 
 const MONTHS_SHORT = [
-  "ENE",
-  "FEB",
-  "MAR",
-  "ABR",
-  "MAY",
-  "JUN",
-  "JUL",
-  "AGO",
-  "SEP",
-  "OCT",
-  "NOV",
-  "DIC"
+  "ENE","FEB","MAR","ABR","MAY","JUN",
+  "JUL","AGO","SEP","OCT","NOV","DIC"
 ];
 
 const availableDates = [...new Set(events.map(e => e.eventDate))].sort();
 
 let currentDate =
   availableDates[availableDates.length - 1] || "2026-08-07";
+
 
 function formatDate(s) {
   if (!s) return "—";
@@ -49,17 +33,20 @@ function formatDate(s) {
   return `${d}/${m}/${y}`;
 }
 
+
 function longDate(s) {
   const [y, m, d] = s.split("-").map(Number);
 
   return `${d} de ${MONTHS[m - 1]} de ${y}`;
 }
 
+
 function shortNodeDate(s) {
   const [y, m, d] = s.split("-").map(Number);
 
   return `${String(d).padStart(2, "0")} ${MONTHS_SHORT[m - 1]} ${y}`;
 }
+
 
 function getDayMeta(date) {
   if (
@@ -85,28 +72,200 @@ function getDayMeta(date) {
   };
 }
 
+
 function sourceLabel(item) {
-  /*
-    IMPORTANTE:
-    "Fuente oficial" describe el origen de la información.
-
-    No significa automáticamente:
-    - verdad demostrada
-    - responsabilidad judicial establecida
-    - hecho independiente verificado
-
-    Por eso NO añadimos un ✓ universal a las fuentes.
-  */
-
   return `${item.sourceType} · ${item.sourceName}`;
 }
 
+
+/* =========================================================
+   GLOSARIO / ENTIENDE
+   ========================================================= */
+
+function escapeRegExp(text) {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+
+function getGlossaryTerms() {
+  if (
+    typeof glossary === "undefined" ||
+    !glossary
+  ) {
+    return [];
+  }
+
+  return Object.keys(glossary)
+    .sort((a, b) => b.length - a.length);
+}
+
+
+function highlightTerms(text) {
+  if (!text) return "";
+
+  const terms = getGlossaryTerms();
+
+  if (!terms.length) return text;
+
+  const pattern = terms
+    .map(term => escapeRegExp(term))
+    .join("|");
+
+  const regex = new RegExp(
+    `\\b(${pattern})\\b`,
+    "gi"
+  );
+
+  return text.replace(regex, match => {
+    const realTerm =
+      terms.find(
+        term =>
+          term.toLowerCase() === match.toLowerCase()
+      ) || match;
+
+    return `
+      <button
+        type="button"
+        class="glossary-term"
+        data-term="${encodeURIComponent(realTerm)}"
+        aria-label="Ver explicación de ${realTerm}"
+      >
+        ${match}
+      </button>
+    `;
+  });
+}
+
+
+function openTerm(term) {
+  if (
+    typeof glossary === "undefined" ||
+    !glossary ||
+    !glossary[term]
+  ) {
+    return;
+  }
+
+  if (termDialogTitle) {
+    termDialogTitle.textContent = term;
+  }
+
+  if (termDialogDefinition) {
+    termDialogDefinition.textContent =
+      glossary[term];
+  }
+
+  termDialog?.showModal();
+}
+
+
+function bindGlossaryTerms(container = document) {
+  container
+    .querySelectorAll(".glossary-term")
+    .forEach(button => {
+
+      button.addEventListener("click", event => {
+        event.stopPropagation();
+
+        const term = decodeURIComponent(
+          button.dataset.term
+        );
+
+        openTerm(term);
+      });
+
+    });
+}
+
+
+function renderGlossaryBrowser(query = "") {
+  if (
+    typeof glossary === "undefined" ||
+    !glossary
+  ) {
+    searchResults.innerHTML = `
+      <div class="search-hit">
+        <strong>Diccionario no disponible</strong>
+      </div>
+    `;
+
+    return;
+  }
+
+  const q = query.trim().toLowerCase();
+
+  const entries = Object.entries(glossary)
+    .filter(([term, definition]) => {
+      if (!q) return true;
+
+      return `${term} ${definition}`
+        .toLowerCase()
+        .includes(q);
+    })
+    .sort(([a], [b]) =>
+      a.localeCompare(b, "es")
+    );
+
+  if (!entries.length) {
+    searchResults.innerHTML = `
+      <div class="search-hit">
+        <strong>Sin resultados</strong>
+        <span>Prueba otro término.</span>
+      </div>
+    `;
+
+    return;
+  }
+
+  searchResults.innerHTML = `
+    <div class="search-section-title">
+      ENTIENDE
+    </div>
+
+    ${entries.map(([term, definition]) => `
+      <button
+        class="search-hit glossary-search-hit"
+        data-glossary="${encodeURIComponent(term)}"
+        type="button"
+      >
+        <strong>${term}</strong>
+
+        <span>
+          ${definition}
+        </span>
+      </button>
+    `).join("")}
+  `;
+
+  document
+    .querySelectorAll("[data-glossary]")
+    .forEach(button => {
+
+      button.addEventListener("click", () => {
+        const term = decodeURIComponent(
+          button.dataset.glossary
+        );
+
+        openTerm(term);
+      });
+
+    });
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
 function cardTemplate(item) {
   const effectiveDate =
-    item.effectiveDate || item.legalDate || null;
+    item.effectiveDate ||
+    item.legalDate ||
+    null;
 
   const related =
-    Array.isArray(item.related) && item.related.length
+    Array.isArray(item.related) &&
+    item.related.length
       ? item.related.join(", ")
       : "—";
 
@@ -115,27 +274,31 @@ function cardTemplate(item) {
     item.extraSources.length
       ? `
         <div class="secondary-sources">
+
           <h4>OTRAS FUENTES</h4>
 
           ${item.extraSources
-            .map(
-              ([name, url]) => `
-                <a
-                  href="${url}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ${name} ↗
-                </a>
-              `
-            )
+            .map(([name, url]) => `
+              <a
+                href="${url}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ${name} ↗
+              </a>
+            `)
             .join("")}
+
         </div>
       `
       : "";
 
   const note = item.note
-    ? `<p class="record-note">${item.note}</p>`
+    ? `
+      <p class="record-note">
+        ${highlightTerms(item.note)}
+      </p>
+    `
     : "";
 
   let effectiveDateHtml = "";
@@ -170,13 +333,16 @@ function cardTemplate(item) {
 
       </div>
 
+
       <h3>
-        ${item.title}
+        ${highlightTerms(item.title)}
       </h3>
 
+
       <p>
-        ${item.summary}
+        ${highlightTerms(item.summary)}
       </p>
+
 
       <div class="source-row">
 
@@ -198,12 +364,15 @@ function cardTemplate(item) {
 
       </div>
 
+
       <div
         class="details"
         id="details-${item.id}"
       >
 
-        <h4>DATOS DEL REGISTRO</h4>
+        <h4>
+          DATOS DEL REGISTRO
+        </h4>
 
         <ul>
 
@@ -221,12 +390,12 @@ function cardTemplate(item) {
 
           <li>
             Estado:
-            ${item.status}
+            ${highlightTerms(item.status)}
           </li>
 
           <li>
             Relacionados:
-            ${related}
+            ${highlightTerms(related)}
           </li>
 
         </ul>
@@ -241,6 +410,7 @@ function cardTemplate(item) {
   `;
 }
 
+
 function emptyGroup() {
   return `
     <div class="event-card empty-card">
@@ -250,6 +420,11 @@ function emptyGroup() {
     </div>
   `;
 }
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
 
 function updateHero() {
   const meta = getDayMeta(currentDate);
@@ -263,6 +438,7 @@ function updateHero() {
   const heroSubtitle =
     document.getElementById("heroSubtitle");
 
+
   if (heroEyebrow) {
     heroEyebrow.textContent =
       currentDate === "2026-08-07"
@@ -270,21 +446,29 @@ function updateHero() {
         : "COLOMBIA · DÍA A DÍA";
   }
 
+
   if (heroDate) {
     heroDate.textContent =
       longDate(currentDate);
   }
+
 
   if (heroSubtitle) {
     heroSubtitle.textContent =
       meta.subtitle;
   }
 
+
   if (dateInput) {
     dateInput.value =
       currentDate;
   }
 }
+
+
+/* =========================================================
+   CRONOLOGÍA
+   ========================================================= */
 
 function renderTimeline() {
   const groups = [
@@ -301,47 +485,52 @@ function renderTimeline() {
       e => e.eventDate === currentDate
     );
 
+
   timeline.innerHTML = `
+
     <div class="day-node">
       ${shortNodeDate(currentDate)}
       ·
       ${meta.status}
     </div>
 
-    ${groups
-      .map(([groupKey, groupLabel]) => {
-        const items =
-          dayEvents.filter(
-            e => e.group === groupKey
-          );
+    ${groups.map(([groupKey, groupLabel]) => {
 
-        return `
-          <section class="group ${groupKey}">
+      const items =
+        dayEvents.filter(
+          e => e.group === groupKey
+        );
 
-            <div class="group-label">
-              ${groupLabel}
-            </div>
+      return `
+        <section class="group ${groupKey}">
 
-            ${
-              items.length
-                ? items
-                    .map(cardTemplate)
-                    .join("")
-                : emptyGroup()
-            }
+          <div class="group-label">
+            ${groupLabel}
+          </div>
 
-          </section>
-        `;
-      })
-      .join("")}
+          ${
+            items.length
+              ? items
+                  .map(cardTemplate)
+                  .join("")
+              : emptyGroup()
+          }
+
+        </section>
+      `;
+
+    }).join("")}
   `;
+
 
   document
     .querySelectorAll(".details-btn")
     .forEach(button => {
+
       button.addEventListener(
         "click",
         () => {
+
           const panel =
             document.getElementById(
               `details-${button.dataset.details}`
@@ -349,21 +538,34 @@ function renderTimeline() {
 
           if (!panel) return;
 
+
           panel.classList.toggle("open");
+
 
           button.textContent =
             panel.classList.contains("open")
               ? "Cerrar ↑"
               : "Ver →";
+
         }
       );
+
     });
+
+
+  bindGlossaryTerms(timeline);
 
   updateHero();
 }
 
+
+/* =========================================================
+   FECHAS
+   ========================================================= */
+
 function goToDate(date) {
   if (!availableDates.includes(date)) {
+
     alert(
       "Todavía no hay registros cargados para esa fecha."
     );
@@ -371,9 +573,11 @@ function goToDate(date) {
     return;
   }
 
+
   currentDate = date;
 
   renderTimeline();
+
 
   document
     .querySelector(".day-node")
@@ -383,47 +587,80 @@ function goToDate(date) {
     });
 }
 
+
+/* =========================================================
+   BUSCAR
+   ========================================================= */
+
 function doSearch(query) {
   const q =
     query.trim().toLowerCase();
 
+
   if (!q) {
-    searchResults.innerHTML = "";
+    searchResults.innerHTML = `
+      <div class="search-empty">
+
+        <strong>
+          Busca un hecho, persona, institución o concepto.
+        </strong>
+
+        <span>
+          Ejemplo: terremoto, Petro, Congreso,
+          imputación, deuda pública…
+        </span>
+
+      </div>
+    `;
+
     return;
   }
 
+
   const hits =
     events.filter(item => {
+
       const searchableText = [
         item.title,
         item.summary,
         item.category,
         item.sourceName,
         item.groupLabel,
+        item.status,
+        item.note,
         ...(item.related || [])
       ]
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
 
+
       return searchableText.includes(q);
+
     });
+
 
   const glossaryHits =
     typeof glossary !== "undefined" &&
     glossary
-      ? Object.entries(glossary).filter(
-          ([term, definition]) =>
+      ? Object.entries(glossary)
+          .filter(([term, definition]) =>
             `${term} ${definition}`
               .toLowerCase()
               .includes(q)
-        )
+          )
       : [];
 
+
   const eventResults =
-    hits
-      .map(
-        item => `
+    hits.length
+      ? `
+        <div class="search-section-title">
+          HECHOS
+        </div>
+
+        ${hits.map(item => `
+
           <button
             class="search-hit"
             data-jump="${item.id}"
@@ -444,28 +681,43 @@ function doSearch(query) {
             </span>
 
           </button>
-        `
-      )
-      .join("");
+
+        `).join("")}
+      `
+      : "";
+
 
   const glossaryResults =
-    glossaryHits
-      .map(
-        ([term, definition]) => `
-          <div class="search-hit">
+    glossaryHits.length
+      ? `
+        <div class="search-section-title">
+          ENTIENDE
+        </div>
 
-            <strong>
-              ${term}
-            </strong>
+        ${glossaryHits.map(
+          ([term, definition]) => `
 
-            <span>
-              ${definition}
-            </span>
+            <button
+              class="search-hit glossary-search-hit"
+              data-glossary="${encodeURIComponent(term)}"
+              type="button"
+            >
 
-          </div>
-        `
-      )
-      .join("");
+              <strong>
+                ${term}
+              </strong>
+
+              <span>
+                ${definition}
+              </span>
+
+            </button>
+
+          `
+        ).join("")}
+      `
+      : "";
+
 
   searchResults.innerHTML =
     eventResults ||
@@ -485,12 +737,15 @@ function doSearch(query) {
         </div>
       `;
 
+
   document
     .querySelectorAll("[data-jump]")
     .forEach(button => {
+
       button.addEventListener(
         "click",
         () => {
+
           searchDialog.close();
 
           currentDate =
@@ -498,74 +753,127 @@ function doSearch(query) {
 
           renderTimeline();
 
-          requestAnimationFrame(
-            () => {
-              document
-                .getElementById(
-                  button.dataset.jump
-                )
-                ?.scrollIntoView({
-                  behavior: "smooth",
-                  block: "center"
-                });
-            }
-          );
+
+          requestAnimationFrame(() => {
+
+            document
+              .getElementById(
+                button.dataset.jump
+              )
+              ?.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+              });
+
+          });
+
         }
       );
+
+    });
+
+
+  document
+    .querySelectorAll("[data-glossary]")
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          const term =
+            decodeURIComponent(
+              button.dataset.glossary
+            );
+
+          openTerm(term);
+
+        }
+      );
+
     });
 }
+
+
+/* =========================================================
+   EVENTOS
+   ========================================================= */
 
 document
   .getElementById("openSearch")
   ?.addEventListener(
     "click",
     () => {
+
       searchDialog?.showModal();
+
+      if (searchInput) {
+        searchInput.value = "";
+      }
+
+      doSearch("");
+
     }
   );
+
 
 document
   .getElementById("navSearch")
   ?.addEventListener(
     "click",
     () => {
+
       searchDialog?.showModal();
+
+      if (searchInput) {
+        searchInput.value = "";
+      }
+
+      doSearch("");
+
     }
   );
+
 
 searchInput?.addEventListener(
   "input",
   event => {
+
     doSearch(event.target.value);
+
   }
 );
+
 
 document
   .getElementById("goToDate")
   ?.addEventListener(
     "click",
-    () => {
-      dateDialog?.showModal();
-    }
+    () =>
+      dateDialog?.showModal()
   );
+
 
 document
   .getElementById("dateSubmit")
   ?.addEventListener(
     "click",
     () => {
+
       const selected =
         dateInput.value;
 
       dateDialog?.close();
 
       goToDate(selected);
+
     }
   );
 
-const openSupport = () => {
+
+const openSupport = () =>
   supportDialog?.showModal();
-};
+
 
 document
   .getElementById("supportBtn")
@@ -574,6 +882,7 @@ document
     openSupport
   );
 
+
 document
   .getElementById("topSupportBtn")
   ?.addEventListener(
@@ -581,11 +890,13 @@ document
     openSupport
   );
 
+
 document
   .getElementById("copyKeyBtn")
   ?.addEventListener(
     "click",
     async () => {
+
       const key =
         document
           .getElementById("brebKey")
@@ -599,39 +910,47 @@ document
 
       if (!key) return;
 
+
       try {
-        await navigator.clipboard.writeText(
-          key
-        );
+
+        await navigator.clipboard
+          .writeText(key);
 
         if (status) {
           status.textContent =
             "Llave copiada ✓";
         }
+
       } catch {
+
         if (status) {
           status.textContent =
             `Llave: ${key}`;
         }
+
       }
 
-      setTimeout(
-        () => {
-          if (status) {
-            status.textContent = "";
-          }
-        },
-        2200
-      );
+
+      setTimeout(() => {
+
+        if (status) {
+          status.textContent = "";
+        }
+
+      }, 2200);
+
     }
   );
+
 
 document
   .querySelectorAll(".nav-item")
   .forEach(button => {
+
     button.addEventListener(
       "click",
       () => {
+
         document
           .querySelectorAll(".nav-item")
           .forEach(item =>
@@ -640,14 +959,17 @@ document
             )
           );
 
+
         button.classList.add(
           "active"
         );
+
 
         if (
           button.dataset.section ===
           "hoy"
         ) {
+
           currentDate =
             availableDates[
               availableDates.length - 1
@@ -659,41 +981,55 @@ document
             top: 0,
             behavior: "smooth"
           });
+
         }
+
 
         if (
           button.dataset.section ===
           "dia"
         ) {
+
           window.scrollTo({
             top: 0,
             behavior: "smooth"
           });
+
         }
+
 
         if (
           button.dataset.section ===
           "entiende"
         ) {
+
           searchDialog?.showModal();
 
           if (searchInput) {
-            searchInput.value =
-              "presunción de inocencia";
-
-            doSearch(
-              searchInput.value
-            );
+            searchInput.value = "";
+            searchInput.placeholder =
+              "Busca un término…";
           }
+
+          renderGlossaryBrowser();
+
+          setTimeout(() => {
+            searchInput?.focus();
+          }, 100);
+
         }
+
       }
     );
+
   });
+
 
 if (
   dateInput &&
   availableDates.length
 ) {
+
   dateInput.min =
     availableDates[0];
 
@@ -701,6 +1037,8 @@ if (
     availableDates[
       availableDates.length - 1
     ];
+
 }
+
 
 renderTimeline();

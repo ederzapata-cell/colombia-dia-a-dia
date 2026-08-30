@@ -3,26 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#10233f" />
-  <meta name="description" content="Colombia Día a Día — información pública verificable, sin opinión editorial." />
+
   <title>Colombia · Día a Día</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <meta
+    name="description"
+    content="Colombia Día a Día — información pública verificable, sin opinión editorial."
+  />
+
+  <meta name="theme-color" content="#10233f" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/icons/favicon-32.png"
+  />
+
+  <!-- iPhone / iPad -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta
+    name="apple-mobile-web-app-status-bar-style"
+    content="default"
+  />
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Colombia Día a Día"
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="topbar">
     <div class="brand">
       <div class="brand-mark" aria-hidden="true">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
       <div>
         <h1>COLOMBIA · DÍA A DÍA</h1>
-        <p>No buscamos que nos creas. Queremos que puedas comprobarlo.</p>
+        <p>
+          No buscamos que nos creas.
+          Queremos que puedas comprobarlo.
+        </p>
       </div>
     </div>
-    <button class="icon-btn" id="openSearch" aria-label="Buscar">⌕</button>
+
+    <button
+      class="icon-btn"
+      id="openSearch"
+      aria-label="Buscar"
+    >
+      ⌕
+    </button>
   </header>
 
   <main>
@@ -30,75 +77,227 @@
       <div>
         <span class="eyebrow">PUNTO CERO · DÍA 1</span>
         <h2>7 de agosto de 2026</h2>
-        <p>Inicio de la cronología verificable de esta plataforma.</p>
+        <p>
+          Inicio de la cronología verificable de esta plataforma.
+        </p>
       </div>
-      <button class="date-btn" id="goToDate">Ir a fecha</button>
+
+      <button
+        class="date-btn"
+        id="goToDate"
+      >
+        Ir a fecha
+      </button>
     </section>
 
-    <section class="timeline" id="timeline" aria-live="polite"></section>
+    <section
+      class="timeline"
+      id="timeline"
+      aria-live="polite"
+    ></section>
 
     <section class="support-card">
       <div>
         <span class="eyebrow">PROYECTO INDEPENDIENTE</span>
-        <h3>Ayúdanos a mantener la información abierta y verificable.</h3>
-        <p>El contenido esencial seguirá siendo gratuito. Tu aporte ayuda a sostener investigación, verificación e infraestructura.</p>
+
+        <h3>
+          Ayúdanos a mantener la información abierta y verificable.
+        </h3>
+
+        <p>
+          El contenido esencial seguirá siendo gratuito.
+          Tu aporte ayuda a sostener investigación,
+          verificación e infraestructura.
+        </p>
       </div>
-      <button class="support-btn" id="supportBtn">♡ Apóyanos</button>
+
+      <button
+        class="support-btn"
+        id="supportBtn"
+      >
+        ♡ Apóyanos
+      </button>
     </section>
   </main>
 
-  <nav class="bottom-nav" aria-label="Navegación principal">
-    <button class="nav-item active" data-section="hoy"><span>⌂</span>Hoy</button>
-    <button class="nav-item" data-section="dia"><span>↕</span>Día a día</button>
-    <button class="nav-item" data-section="buscar" id="navSearch"><span>⌕</span>Buscar</button>
-    <button class="nav-item" data-section="entiende"><span>◎</span>Entiende</button>
-    <button class="nav-item" data-section="mas"><span>•••</span>Más</button>
+  <nav
+    class="bottom-nav"
+    aria-label="Navegación principal"
+  >
+    <button
+      class="nav-item active"
+      data-section="hoy"
+    >
+      <span>⌂</span>
+      Hoy
+    </button>
+
+    <button
+      class="nav-item"
+      data-section="dia"
+    >
+      <span>↕</span>
+      Día a día
+    </button>
+
+    <button
+      class="nav-item"
+      data-section="buscar"
+      id="navSearch"
+    >
+      <span>⌕</span>
+      Buscar
+    </button>
+
+    <button
+      class="nav-item"
+      data-section="entiende"
+    >
+      <span>◎</span>
+      Entiende
+    </button>
+
+    <button
+      class="nav-item"
+      data-section="mas"
+    >
+      <span>•••</span>
+      Más
+    </button>
   </nav>
 
+  <!-- Buscar -->
   <dialog id="searchDialog">
-    <form method="dialog" class="dialog-card">
+    <form
+      method="dialog"
+      class="dialog-card"
+    >
       <div class="dialog-head">
         <div>
           <span class="eyebrow">BUSCAR</span>
-          <h3>Encuentra hechos, personas o entidades</h3>
+
+          <h3>
+            Encuentra hechos, personas o entidades
+          </h3>
         </div>
-        <button class="close-btn" value="cancel" aria-label="Cerrar">×</button>
+
+        <button
+          class="close-btn"
+          value="cancel"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
       </div>
-      <input id="searchInput" type="search" placeholder="Ej. Petro, Congreso, Cali, Fuerza Pública…" autocomplete="off" />
-      <div id="searchResults" class="search-results"></div>
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Ej. Petro, Congreso, Cali, Fuerza Pública…"
+        autocomplete="off"
+      />
+
+      <div
+        id="searchResults"
+        class="search-results"
+      ></div>
     </form>
   </dialog>
 
+  <!-- Ir a fecha -->
   <dialog id="dateDialog">
-    <form method="dialog" class="dialog-card">
+    <form
+      method="dialog"
+      class="dialog-card"
+    >
       <div class="dialog-head">
         <div>
           <span class="eyebrow">IR A FECHA</span>
-          <h3>Consulta la cronología</h3>
+
+          <h3>
+            Consulta la cronología
+          </h3>
         </div>
-        <button class="close-btn" value="cancel" aria-label="Cerrar">×</button>
+
+        <button
+          class="close-btn"
+          value="cancel"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
       </div>
-      <input id="dateInput" type="date" min="2026-08-07" value="2026-08-07" />
-      <button class="primary-btn" id="dateSubmit" value="cancel">Ver fecha</button>
-      <p class="helper">Por ahora el MVP contiene el 7 de agosto de 2026.</p>
+
+      <input
+        id="dateInput"
+        type="date"
+        min="2026-08-07"
+        value="2026-08-07"
+      />
+
+      <button
+        class="primary-btn"
+        id="dateSubmit"
+        value="cancel"
+      >
+        Ver fecha
+      </button>
+
+      <p class="helper">
+        Por ahora el MVP contiene el 7 de agosto de 2026.
+      </p>
     </form>
   </dialog>
 
+  <!-- Apóyanos -->
   <dialog id="supportDialog">
-    <form method="dialog" class="dialog-card">
+    <form
+      method="dialog"
+      class="dialog-card"
+    >
       <div class="dialog-head">
         <div>
           <span class="eyebrow">APÓYANOS</span>
-          <h3>Información libre, verificable y sin paywall</h3>
+
+          <h3>
+            Información libre, verificable y sin paywall
+          </h3>
         </div>
-        <button class="close-btn" value="cancel" aria-label="Cerrar">×</button>
+
+        <button
+          class="close-btn"
+          value="cancel"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
       </div>
-      <p>Esta primera versión no procesa pagos todavía. Dejamos el espacio listo para conectar la opción de aportes voluntarios más adelante.</p>
-      <button class="primary-btn" value="cancel">Entendido</button>
+
+      <p>
+        Esta primera versión no procesa pagos todavía.
+        Dejamos el espacio listo para conectar la opción
+        de aportes voluntarios más adelante.
+      </p>
+
+      <button
+        class="primary-btn"
+        value="cancel"
+      >
+        Entendido
+      </button>
     </form>
   </dialog>
 
   <script src="data.js"></script>
   <script src="app.js"></script>
+
+  <!-- Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js");
+      });
+    }
+  </script>
 </body>
 </html>

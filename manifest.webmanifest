@@ -1,0 +1,25 @@
+{
+  "name": "Colombia Día a Día",
+  "short_name": "Día a Día",
+  "description": "Información pública verificable en Colombia.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#eef1f4",
+  "theme_color": "#10233f",
+  "lang": "es-CO",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

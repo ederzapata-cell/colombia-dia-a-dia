@@ -16,23 +16,12 @@
   <!-- PWA -->
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="/icons/favicon-32.png"
-  />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
 
   <!-- iPhone / iPad -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta
-    name="apple-mobile-web-app-status-bar-style"
-    content="default"
-  />
-  <meta
-    name="apple-mobile-web-app-title"
-    content="Colombia Día a Día"
-  />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Colombia Día a Día" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,8 +35,11 @@
 </head>
 
 <body>
+
   <header class="topbar">
+
     <div class="brand">
+
       <div class="brand-mark" aria-hidden="true">
         <span></span>
         <span></span>
@@ -56,30 +48,55 @@
 
       <div>
         <h1>COLOMBIA · DÍA A DÍA</h1>
-        <p>
-          No buscamos que nos creas.
-          Queremos que puedas comprobarlo.
-        </p>
+        <p>No buscamos que nos creas. Queremos que puedas comprobarlo.</p>
       </div>
+
     </div>
 
-    <button
-      class="icon-btn"
-      id="openSearch"
-      aria-label="Buscar"
-    >
-      ⌕
-    </button>
+    <div class="top-actions">
+
+      <button
+        class="top-support-btn"
+        id="topSupportBtn"
+        type="button"
+      >
+        ♡ Apóyanos
+      </button>
+
+      <button
+        class="icon-btn"
+        id="openSearch"
+        aria-label="Buscar"
+      >
+        ⌕
+      </button>
+
+    </div>
+
   </header>
 
+
   <main>
+
     <section class="hero">
+
       <div>
-        <span class="eyebrow">PUNTO CERO · DÍA 1</span>
-        <h2>7 de agosto de 2026</h2>
-        <p>
-          Inicio de la cronología verificable de esta plataforma.
+
+        <span
+          class="eyebrow"
+          id="dayEyebrow"
+        >
+          CRONOLOGÍA · DÍA 2
+        </span>
+
+        <h2 id="dayTitle">
+          8 de agosto de 2026
+        </h2>
+
+        <p id="daySubtitle">
+          Hechos relevantes documentados y verificables de esta jornada.
         </p>
+
       </div>
 
       <button
@@ -88,7 +105,9 @@
       >
         Ir a fecha
       </button>
+
     </section>
+
 
     <section
       class="timeline"
@@ -96,9 +115,14 @@
       aria-live="polite"
     ></section>
 
+
     <section class="support-card">
+
       <div>
-        <span class="eyebrow">PROYECTO INDEPENDIENTE</span>
+
+        <span class="eyebrow">
+          PROYECTO INDEPENDIENTE
+        </span>
 
         <h3>
           Ayúdanos a mantener la información abierta y verificable.
@@ -109,21 +133,27 @@
           Tu aporte ayuda a sostener investigación,
           verificación e infraestructura.
         </p>
+
       </div>
 
       <button
         class="support-btn"
         id="supportBtn"
+        type="button"
       >
         ♡ Apóyanos
       </button>
+
     </section>
+
   </main>
+
 
   <nav
     class="bottom-nav"
     aria-label="Navegación principal"
   >
+
     <button
       class="nav-item active"
       data-section="hoy"
@@ -164,21 +194,31 @@
       <span>•••</span>
       Más
     </button>
+
   </nav>
 
-  <!-- Buscar -->
+
+  <!-- BUSCAR -->
+
   <dialog id="searchDialog">
+
     <form
       method="dialog"
       class="dialog-card"
     >
+
       <div class="dialog-head">
+
         <div>
-          <span class="eyebrow">BUSCAR</span>
+
+          <span class="eyebrow">
+            BUSCAR
+          </span>
 
           <h3>
             Encuentra hechos, personas o entidades
           </h3>
+
         </div>
 
         <button
@@ -188,6 +228,7 @@
         >
           ×
         </button>
+
       </div>
 
       <input
@@ -201,22 +242,33 @@
         id="searchResults"
         class="search-results"
       ></div>
+
     </form>
+
   </dialog>
 
-  <!-- Ir a fecha -->
+
+  <!-- IR A FECHA -->
+
   <dialog id="dateDialog">
+
     <form
       method="dialog"
       class="dialog-card"
     >
+
       <div class="dialog-head">
+
         <div>
-          <span class="eyebrow">IR A FECHA</span>
+
+          <span class="eyebrow">
+            IR A FECHA
+          </span>
 
           <h3>
             Consulta la cronología
           </h3>
+
         </div>
 
         <button
@@ -226,13 +278,15 @@
         >
           ×
         </button>
+
       </div>
 
       <input
         id="dateInput"
         type="date"
         min="2026-08-07"
-        value="2026-08-07"
+        max="2026-08-08"
+        value="2026-08-08"
       />
 
       <button
@@ -244,24 +298,36 @@
       </button>
 
       <p class="helper">
-        Por ahora el MVP contiene el 7 de agosto de 2026.
+        Fechas disponibles actualmente:
+        7 y 8 de agosto de 2026.
       </p>
+
     </form>
+
   </dialog>
 
-  <!-- Apóyanos -->
+
+  <!-- APÓYANOS -->
+
   <dialog id="supportDialog">
+
     <form
       method="dialog"
-      class="dialog-card"
+      class="dialog-card support-dialog-card"
     >
+
       <div class="dialog-head">
+
         <div>
-          <span class="eyebrow">APÓYANOS</span>
+
+          <span class="eyebrow">
+            APÓYANOS
+          </span>
 
           <h3>
-            Información libre, verificable y sin paywall
+            Ayúdanos a mantener la información abierta y verificable
           </h3>
+
         </div>
 
         <button
@@ -271,27 +337,67 @@
         >
           ×
         </button>
+
       </div>
 
-      <p>
-        Esta primera versión no procesa pagos todavía.
-        Dejamos el espacio listo para conectar la opción
-        de aportes voluntarios más adelante.
+      <p class="support-intro">
+        Tu aporte voluntario ayuda a sostener
+        investigación, verificación e infraestructura.
+        El contenido esencial seguirá siendo gratuito.
       </p>
 
-      <button
-        class="primary-btn"
-        value="cancel"
-      >
-        Entendido
-      </button>
+      <div class="qr-wrap">
+
+        <img
+          src="assets/qr-apoyanos.jpeg"
+          alt="Código QR Bre-B para apoyar Colombia Día a Día"
+          class="support-qr"
+        />
+
+      </div>
+
+      <div class="key-box">
+
+        <span class="key-label">
+          LLAVE BRE-B
+        </span>
+
+        <strong id="brebKey">
+          71744644
+        </strong>
+
+        <button
+          class="copy-key-btn"
+          id="copyKeyBtn"
+          type="button"
+        >
+          Copiar llave
+        </button>
+
+      </div>
+
+      <p
+        class="copy-status"
+        id="copyStatus"
+        aria-live="polite"
+      ></p>
+
+      <p class="helper support-note">
+        Los aportes son voluntarios y se destinan
+        al sostenimiento de este proyecto independiente.
+      </p>
+
     </form>
+
   </dialog>
+
 
   <script src="data.js"></script>
   <script src="app.js"></script>
 
-  <!-- Service Worker -->
+
+  <!-- SERVICE WORKER -->
+
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
@@ -299,5 +405,6 @@
       });
     }
   </script>
+
 </body>
 </html>

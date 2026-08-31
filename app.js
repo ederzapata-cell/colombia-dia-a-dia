@@ -1,13 +1,21 @@
 const timeline = document.getElementById("timeline");
+
 const searchDialog = document.getElementById("searchDialog");
 const searchInput = document.getElementById("searchInput");
 const searchResults = document.getElementById("searchResults");
+
 const dateDialog = document.getElementById("dateDialog");
 const dateInput = document.getElementById("dateInput");
+
 const supportDialog = document.getElementById("supportDialog");
+
 const termDialog = document.getElementById("termDialog");
 const termDialogTitle = document.getElementById("termDialogTitle");
 const termDialogDefinition = document.getElementById("termDialogDefinition");
+
+const briefDialog = document.getElementById("briefDialog");
+const briefTitle = document.getElementById("briefTitle");
+const briefList = document.getElementById("briefList");
 
 const MONTHS = [
   "enero","febrero","marzo","abril","mayo","junio",
@@ -19,32 +27,71 @@ const MONTHS_SHORT = [
   "JUL","AGO","SEP","OCT","NOV","DIC"
 ];
 
-const availableDates = [...new Set(events.map(e => e.eventDate))].sort();
+const WEEKDAYS = [
+  "DOMINGO","LUNES","MARTES","MIÉRCOLES",
+  "JUEVES","VIERNES","SÁBADO"
+];
+
+const GROUP_ORDER = {
+  government: 1,
+  opposition: 2,
+  state: 3
+};
+
+const GROUP_NAMES = {
+  government: "Gobierno",
+  opposition: "Oposición",
+  state: "Estado y País"
+};
+
+
+const availableDates =
+  [...new Set(events.map(event => event.eventDate))].sort();
 
 let currentDate =
   availableDates[availableDates.length - 1] || "2026-08-07";
 
 
-function formatDate(s) {
-  if (!s) return "—";
+/* =========================================================
+   FECHAS
+   ========================================================= */
 
-  const [y, m, d] = s.split("-");
+function dateObject(dateString) {
+  const [year, month, day] =
+    dateString.split("-").map(Number);
 
-  return `${d}/${m}/${y}`;
+  return new Date(year, month - 1, day, 12, 0, 0);
 }
 
 
-function longDate(s) {
-  const [y, m, d] = s.split("-").map(Number);
+function formatDate(dateString) {
+  if (!dateString) return "—";
 
-  return `${d} de ${MONTHS[m - 1]} de ${y}`;
+  const [year, month, day] =
+    dateString.split("-");
+
+  return `${day}/${month}/${year}`;
 }
 
 
-function shortNodeDate(s) {
-  const [y, m, d] = s.split("-").map(Number);
+function longDate(dateString) {
+  const [year, month, day] =
+    dateString.split("-").map(Number);
 
-  return `${String(d).padStart(2, "0")} ${MONTHS_SHORT[m - 1]} ${y}`;
+  return `${day} de ${MONTHS[month - 1]} de ${year}`;
+}
+
+
+function shortNodeDate(dateString) {
+  const [year, month, day] =
+    dateString.split("-").map(Number);
+
+  return `${String(day).padStart(2, "0")} ${MONTHS_SHORT[month - 1]} ${year}`;
+}
+
+
+function weekdayName(dateString) {
+  return WEEKDAYS[dateObject(dateString).getDay()];
 }
 
 
@@ -73,13 +120,8 @@ function getDayMeta(date) {
 }
 
 
-function sourceLabel(item) {
-  return `${item.sourceType} · ${item.sourceName}`;
-}
-
-
 /* =========================================================
-   GLOSARIO / ENTIENDE
+   SEGURIDAD DE TEXTO
    ========================================================= */
 
 function escapeRegExp(text) {
@@ -107,16 +149,14 @@ function highlightTerms(text) {
 
   if (!terms.length) return text;
 
-  const pattern = terms
-    .map(term => escapeRegExp(term))
-    .join("|");
+  const pattern =
+    terms.map(term => escapeRegExp(term)).join("|");
 
-  const regex = new RegExp(
-    `\\b(${pattern})\\b`,
-    "gi"
-  );
+  const regex =
+    new RegExp(`\\b(${pattern})\\b`, "gi");
 
   return text.replace(regex, match => {
+
     const realTerm =
       terms.find(
         term =>
@@ -136,6 +176,10 @@ function highlightTerms(text) {
   });
 }
 
+
+/* =========================================================
+   ENTIENDE
+   ========================================================= */
 
 function openTerm(term) {
   if (
@@ -160,18 +204,20 @@ function openTerm(term) {
 
 
 function bindGlossaryTerms(container = document) {
+
   container
     .querySelectorAll(".glossary-term")
     .forEach(button => {
 
       button.addEventListener("click", event => {
+
         event.stopPropagation();
 
-        const term = decodeURIComponent(
-          button.dataset.term
-        );
+        const term =
+          decodeURIComponent(button.dataset.term);
 
         openTerm(term);
+
       });
 
     });
@@ -179,6 +225,7 @@ function bindGlossaryTerms(container = document) {
 
 
 function renderGlossaryBrowser(query = "") {
+
   if (
     typeof glossary === "undefined" ||
     !glossary
@@ -192,21 +239,27 @@ function renderGlossaryBrowser(query = "") {
     return;
   }
 
-  const q = query.trim().toLowerCase();
+  const q =
+    query.trim().toLowerCase();
 
-  const entries = Object.entries(glossary)
-    .filter(([term, definition]) => {
-      if (!q) return true;
+  const entries =
+    Object.entries(glossary)
+      .filter(([term, definition]) => {
 
-      return `${term} ${definition}`
-        .toLowerCase()
-        .includes(q);
-    })
-    .sort(([a], [b]) =>
-      a.localeCompare(b, "es")
-    );
+        if (!q) return true;
+
+        return `${term} ${definition}`
+          .toLowerCase()
+          .includes(q);
+
+      })
+      .sort(([a], [b]) =>
+        a.localeCompare(b, "es")
+      );
+
 
   if (!entries.length) {
+
     searchResults.innerHTML = `
       <div class="search-hit">
         <strong>Sin resultados</strong>
@@ -216,6 +269,7 @@ function renderGlossaryBrowser(query = "") {
 
     return;
   }
+
 
   searchResults.innerHTML = `
     <div class="search-section-title">
@@ -229,24 +283,31 @@ function renderGlossaryBrowser(query = "") {
         type="button"
       >
         <strong>${term}</strong>
-
-        <span>
-          ${definition}
-        </span>
+        <span>${definition}</span>
       </button>
     `).join("")}
   `;
+
+
+  bindGlossarySearch();
+}
+
+
+function bindGlossarySearch() {
 
   document
     .querySelectorAll("[data-glossary]")
     .forEach(button => {
 
       button.addEventListener("click", () => {
-        const term = decodeURIComponent(
-          button.dataset.glossary
-        );
+
+        const term =
+          decodeURIComponent(
+            button.dataset.glossary
+          );
 
         openTerm(term);
+
       });
 
     });
@@ -254,20 +315,177 @@ function renderGlossaryBrowser(query = "") {
 
 
 /* =========================================================
+   FUENTES / CONTADORES
+   ========================================================= */
+
+function sourceLabel(item) {
+  return `${item.sourceType} · ${item.sourceName}`;
+}
+
+
+function getDayEvents() {
+  return events.filter(
+    item => item.eventDate === currentDate
+  );
+}
+
+
+function countDaySources(dayEvents) {
+
+  const sources = new Set();
+
+  dayEvents.forEach(item => {
+
+    if (item.sourceUrl) {
+      sources.add(item.sourceUrl);
+    }
+
+    if (
+      Array.isArray(item.extraSources)
+    ) {
+
+      item.extraSources.forEach(source => {
+
+        if (Array.isArray(source) && source[1]) {
+          sources.add(source[1]);
+        }
+
+      });
+    }
+
+  });
+
+  return sources.size;
+}
+
+
+function updateTodayDashboard() {
+
+  const dayEvents =
+    getDayEvents();
+
+  const eventCount =
+    dayEvents.length;
+
+  const sourceCount =
+    countDaySources(dayEvents);
+
+  const groupCount =
+    new Set(
+      dayEvents.map(item => item.group)
+    ).size;
+
+
+  const todayKicker =
+    document.getElementById("todayKicker");
+
+  const heroDate =
+    document.getElementById("heroDate");
+
+  const heroSubtitle =
+    document.getElementById("heroSubtitle");
+
+  const todayEventCount =
+    document.getElementById("todayEventCount");
+
+  const todaySourceCount =
+    document.getElementById("todaySourceCount");
+
+  const todayGroupCount =
+    document.getElementById("todayGroupCount");
+
+
+  if (todayKicker) {
+
+    todayKicker.textContent =
+      `${weekdayName(currentDate)} · HOY EN COLOMBIA`;
+
+  }
+
+
+  if (heroDate) {
+    heroDate.textContent =
+      longDate(currentDate);
+  }
+
+
+  if (heroSubtitle) {
+    heroSubtitle.textContent =
+      getDayMeta(currentDate).subtitle;
+  }
+
+
+  if (todayEventCount) {
+    todayEventCount.textContent =
+      eventCount;
+  }
+
+
+  if (todaySourceCount) {
+    todaySourceCount.textContent =
+      sourceCount;
+  }
+
+
+  if (todayGroupCount) {
+    todayGroupCount.textContent =
+      groupCount;
+  }
+
+
+  if (dateInput) {
+    dateInput.value =
+      currentDate;
+  }
+}
+
+
+/* =========================================================
    TARJETAS
    ========================================================= */
 
+function getImportance(item) {
+
+  if (item.importance) {
+    return item.importance;
+  }
+
+  return null;
+}
+
+
+function importanceBadge(item) {
+
+  const importance =
+    getImportance(item);
+
+  if (!importance) return "";
+
+  const normalized =
+    importance.toLowerCase();
+
+  return `
+    <span class="importance-badge ${normalized}">
+      ${importance}
+    </span>
+  `;
+}
+
+
 function cardTemplate(item) {
+
   const effectiveDate =
     item.effectiveDate ||
     item.legalDate ||
     null;
+
 
   const related =
     Array.isArray(item.related) &&
     item.related.length
       ? item.related.join(", ")
       : "—";
+
 
   const extraSources =
     Array.isArray(item.extraSources) &&
@@ -293,20 +511,43 @@ function cardTemplate(item) {
       `
       : "";
 
-  const note = item.note
-    ? `
-      <p class="record-note">
-        ${highlightTerms(item.note)}
-      </p>
-    `
-    : "";
+
+  const note =
+    item.note
+      ? `
+        <p class="record-note">
+          ${highlightTerms(item.note)}
+        </p>
+      `
+      : "";
+
+
+  const whyItMatters =
+    item.whyItMatters
+      ? `
+        <div class="why-box">
+
+          <span>
+            ¿POR QUÉ IMPORTA?
+          </span>
+
+          <p>
+            ${highlightTerms(item.whyItMatters)}
+          </p>
+
+        </div>
+      `
+      : "";
+
 
   let effectiveDateHtml = "";
 
   if (effectiveDate) {
-    const label = item.legalDate
-      ? "Fecha jurídica"
-      : "Fecha de aplicación";
+
+    const label =
+      item.legalDate
+        ? "Fecha jurídica"
+        : "Fecha de aplicación";
 
     effectiveDateHtml = `
       <li>
@@ -315,6 +556,7 @@ function cardTemplate(item) {
     `;
   }
 
+
   return `
     <article
       class="event-card"
@@ -322,6 +564,8 @@ function cardTemplate(item) {
     >
 
       <div class="meta">
+
+        ${importanceBadge(item)}
 
         <span class="badge">
           ${item.category}
@@ -339,9 +583,12 @@ function cardTemplate(item) {
       </h3>
 
 
-      <p>
+      <p class="event-summary">
         ${highlightTerms(item.summary)}
       </p>
+
+
+      ${whyItMatters}
 
 
       <div class="source-row">
@@ -423,103 +670,99 @@ function emptyGroup() {
 
 
 /* =========================================================
-   HERO
-   ========================================================= */
-
-function updateHero() {
-  const meta = getDayMeta(currentDate);
-
-  const heroEyebrow =
-    document.getElementById("heroEyebrow");
-
-  const heroDate =
-    document.getElementById("heroDate");
-
-  const heroSubtitle =
-    document.getElementById("heroSubtitle");
-
-
-  if (heroEyebrow) {
-    heroEyebrow.textContent =
-      currentDate === "2026-08-07"
-        ? "PUNTO CERO · DÍA 1"
-        : "COLOMBIA · DÍA A DÍA";
-  }
-
-
-  if (heroDate) {
-    heroDate.textContent =
-      longDate(currentDate);
-  }
-
-
-  if (heroSubtitle) {
-    heroSubtitle.textContent =
-      meta.subtitle;
-  }
-
-
-  if (dateInput) {
-    dateInput.value =
-      currentDate;
-  }
-}
-
-
-/* =========================================================
    CRONOLOGÍA
    ========================================================= */
 
 function renderTimeline() {
+
   const groups = [
-    ["government", "GOBIERNO"],
-    ["opposition", "OPOSICIÓN"],
-    ["state", "ESTADO Y PAÍS"]
+    ["government", "GOBIERNO", "◆"],
+    ["opposition", "OPOSICIÓN", "◐"],
+    ["state", "ESTADO Y PAÍS", "●"]
   ];
+
 
   const meta =
     getDayMeta(currentDate);
 
+
   const dayEvents =
-    events.filter(
-      e => e.eventDate === currentDate
-    );
+    getDayEvents();
+
+
+  const isUpdating =
+    meta.status
+      .toLowerCase()
+      .includes("actualización");
+
+
+  timeline.classList.remove(
+    "timeline-enter"
+  );
+
+  void timeline.offsetWidth;
+
+  timeline.classList.add(
+    "timeline-enter"
+  );
 
 
   timeline.innerHTML = `
 
-    <div class="day-node">
+    <div
+      class="day-node ${isUpdating ? "updating" : ""}"
+    >
       ${shortNodeDate(currentDate)}
       ·
       ${meta.status}
     </div>
 
-    ${groups.map(([groupKey, groupLabel]) => {
 
-      const items =
-        dayEvents.filter(
-          e => e.group === groupKey
-        );
+    ${groups.map(
+      ([groupKey, groupLabel, icon]) => {
 
-      return `
-        <section class="group ${groupKey}">
+        const items =
+          dayEvents.filter(
+            item =>
+              item.group === groupKey
+          );
 
-          <div class="group-label">
-            ${groupLabel}
-          </div>
 
-          ${
-            items.length
-              ? items
-                  .map(cardTemplate)
-                  .join("")
-              : emptyGroup()
-          }
+        return `
+          <section
+            class="group ${groupKey}"
+          >
 
-        </section>
-      `;
+            <div class="group-heading">
 
-    }).join("")}
+              <div class="group-label">
+                <span class="group-symbol">
+                  ${icon}
+                </span>
+
+                ${groupLabel}
+              </div>
+
+              <span class="group-count">
+                ${items.length}
+              </span>
+
+            </div>
+
+
+            ${
+              items.length
+                ? items
+                    .map(cardTemplate)
+                    .join("")
+                : emptyGroup()
+            }
+
+          </section>
+        `;
+
+      }
+    ).join("")}
   `;
 
 
@@ -538,9 +781,7 @@ function renderTimeline() {
 
           if (!panel) return;
 
-
           panel.classList.toggle("open");
-
 
           button.textContent =
             panel.classList.contains("open")
@@ -555,15 +796,162 @@ function renderTimeline() {
 
   bindGlossaryTerms(timeline);
 
-  updateHero();
+  updateTodayDashboard();
 }
 
 
 /* =========================================================
-   FECHAS
+   COLOMBIA EN 2 MINUTOS
+   ========================================================= */
+
+function getBriefEvents() {
+
+  const dayEvents =
+    [...getDayEvents()];
+
+
+  dayEvents.sort((a, b) => {
+
+    const importanceOrder = {
+      esencial: 1,
+      relevante: 2,
+      archivo: 3
+    };
+
+
+    const aImportance =
+      importanceOrder[
+        String(a.importance || "")
+          .toLowerCase()
+      ] || 10;
+
+
+    const bImportance =
+      importanceOrder[
+        String(b.importance || "")
+          .toLowerCase()
+      ] || 10;
+
+
+    if (aImportance !== bImportance) {
+      return aImportance - bImportance;
+    }
+
+
+    return (
+      (GROUP_ORDER[a.group] || 9) -
+      (GROUP_ORDER[b.group] || 9)
+    );
+
+  });
+
+
+  return dayEvents.slice(0, 5);
+}
+
+
+function renderBrief() {
+
+  const items =
+    getBriefEvents();
+
+
+  if (briefTitle) {
+    briefTitle.textContent =
+      longDate(currentDate);
+  }
+
+
+  if (!items.length) {
+
+    briefList.innerHTML = `
+      <div class="brief-empty">
+        No hay acontecimientos relevantes documentados para esta fecha.
+      </div>
+    `;
+
+    return;
+  }
+
+
+  briefList.innerHTML =
+    items.map((item, index) => `
+
+      <button
+        class="brief-item"
+        data-brief-jump="${item.id}"
+        type="button"
+      >
+
+        <span class="brief-number">
+          ${index + 1}
+        </span>
+
+        <span class="brief-content">
+
+          <span class="brief-group">
+            ${GROUP_NAMES[item.group] || ""}
+            ·
+            ${item.category}
+          </span>
+
+          <strong>
+            ${item.title}
+          </strong>
+
+          <span class="brief-summary">
+            ${item.summary}
+          </span>
+
+        </span>
+
+        <span class="brief-arrow">
+          →
+        </span>
+
+      </button>
+
+    `).join("");
+
+
+  document
+    .querySelectorAll(
+      "[data-brief-jump]"
+    )
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          briefDialog?.close();
+
+          requestAnimationFrame(() => {
+
+            document
+              .getElementById(
+                button.dataset.briefJump
+              )
+              ?.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+              });
+
+          });
+
+        }
+      );
+
+    });
+}
+
+
+/* =========================================================
+   CAMBIO DE FECHA
    ========================================================= */
 
 function goToDate(date) {
+
   if (!availableDates.includes(date)) {
 
     alert(
@@ -574,40 +962,42 @@ function goToDate(date) {
   }
 
 
-  currentDate = date;
+  currentDate =
+    date;
+
 
   renderTimeline();
 
 
-  document
-    .querySelector(".day-node")
-    ?.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 
 /* =========================================================
-   BUSCAR
+   BÚSQUEDA
    ========================================================= */
 
 function doSearch(query) {
+
   const q =
     query.trim().toLowerCase();
 
 
   if (!q) {
+
     searchResults.innerHTML = `
       <div class="search-empty">
 
         <strong>
-          Busca un hecho, persona, institución o concepto.
+          ¿Qué quieres comprobar?
         </strong>
 
         <span>
-          Ejemplo: terremoto, Petro, Congreso,
-          imputación, deuda pública…
+          Busca una persona, institución, hecho
+          o concepto.
         </span>
 
       </div>
@@ -628,6 +1018,7 @@ function doSearch(query) {
         item.groupLabel,
         item.status,
         item.note,
+        item.whyItMatters,
         ...(item.related || [])
       ]
         .filter(Boolean)
@@ -660,7 +1051,6 @@ function doSearch(query) {
         </div>
 
         ${hits.map(item => `
-
           <button
             class="search-hit"
             data-jump="${item.id}"
@@ -673,7 +1063,7 @@ function doSearch(query) {
             </strong>
 
             <span>
-              ${item.groupLabel || ""}
+              ${GROUP_NAMES[item.group] || ""}
               ·
               ${item.category}
               ·
@@ -681,7 +1071,6 @@ function doSearch(query) {
             </span>
 
           </button>
-
         `).join("")}
       `
       : "";
@@ -696,7 +1085,6 @@ function doSearch(query) {
 
         ${glossaryHits.map(
           ([term, definition]) => `
-
             <button
               class="search-hit glossary-search-hit"
               data-glossary="${encodeURIComponent(term)}"
@@ -712,7 +1100,6 @@ function doSearch(query) {
               </span>
 
             </button>
-
           `
         ).join("")}
       `
@@ -725,15 +1112,8 @@ function doSearch(query) {
       ? eventResults + glossaryResults
       : `
         <div class="search-hit">
-
-          <strong>
-            Sin resultados
-          </strong>
-
-          <span>
-            Prueba otro término.
-          </span>
-
+          <strong>Sin resultados</strong>
+          <span>Prueba otro término.</span>
         </div>
       `;
 
@@ -773,31 +1153,27 @@ function doSearch(query) {
     });
 
 
-  document
-    .querySelectorAll("[data-glossary]")
-    .forEach(button => {
-
-      button.addEventListener(
-        "click",
-        () => {
-
-          const term =
-            decodeURIComponent(
-              button.dataset.glossary
-            );
-
-          openTerm(term);
-
-        }
-      );
-
-    });
+  bindGlossarySearch();
 }
 
 
 /* =========================================================
-   EVENTOS
+   EVENTOS UI
    ========================================================= */
+
+document
+  .getElementById("openBrief")
+  ?.addEventListener(
+    "click",
+    () => {
+
+      renderBrief();
+
+      briefDialog?.showModal();
+
+    }
+  );
+
 
 document
   .getElementById("openSearch")
@@ -809,6 +1185,8 @@ document
 
       if (searchInput) {
         searchInput.value = "";
+        searchInput.placeholder =
+          "Ej. terremoto, Petro, Congreso, imputación…";
       }
 
       doSearch("");
@@ -827,6 +1205,8 @@ document
 
       if (searchInput) {
         searchInput.value = "";
+        searchInput.placeholder =
+          "Ej. terremoto, Petro, Congreso, imputación…";
       }
 
       doSearch("");
@@ -838,9 +1218,7 @@ document
 searchInput?.addEventListener(
   "input",
   event => {
-
     doSearch(event.target.value);
-
   }
 );
 
@@ -871,8 +1249,8 @@ document
   );
 
 
-const openSupport = () =>
-  supportDialog?.showModal();
+const openSupport =
+  () => supportDialog?.showModal();
 
 
 document
@@ -907,6 +1285,7 @@ document
         document.getElementById(
           "copyStatus"
         );
+
 
       if (!key) return;
 
@@ -954,20 +1333,15 @@ document
         document
           .querySelectorAll(".nav-item")
           .forEach(item =>
-            item.classList.remove(
-              "active"
-            )
+            item.classList.remove("active")
           );
 
 
-        button.classList.add(
-          "active"
-        );
+        button.classList.add("active");
 
 
         if (
-          button.dataset.section ===
-          "hoy"
+          button.dataset.section === "hoy"
         ) {
 
           currentDate =
@@ -986,36 +1360,40 @@ document
 
 
         if (
-          button.dataset.section ===
-          "dia"
+          button.dataset.section === "dia"
         ) {
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+          document
+            .querySelector(".day-node")
+            ?.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
 
         }
 
 
         if (
-          button.dataset.section ===
-          "entiende"
+          button.dataset.section === "entiende"
         ) {
 
           searchDialog?.showModal();
 
           if (searchInput) {
+
             searchInput.value = "";
+
             searchInput.placeholder =
               "Busca un término…";
+
           }
 
           renderGlossaryBrowser();
 
-          setTimeout(() => {
-            searchInput?.focus();
-          }, 100);
+          setTimeout(
+            () => searchInput?.focus(),
+            100
+          );
 
         }
 

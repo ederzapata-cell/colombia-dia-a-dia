@@ -92,8 +92,16 @@ const dayMeta = {
     subtitle: "Emergencias, contratación pública, oposición y recuperación."
   },
   "2026-08-30": {
-    status: "EN ACTUALIZACIÓN ⟳",
-    subtitle: "Información verificada hasta el último barrido disponible."
+    status: "VERIFICADO ✓",
+    subtitle: "Seguridad, derechos humanos, incendios y decisiones nacionales."
+  },
+  "2026-08-31": {
+    status: "VERIFICADO ✓",
+    subtitle: "Economía, seguridad, oposición e instituciones."
+  },
+  "2026-09-01": {
+    status: "",
+    subtitle: "Energía, instituciones y acontecimientos del país."
   }
 };
 
@@ -1745,7 +1753,7 @@ const events = [
 
 
   // =========================================================
-  // 30 AGO · EN ACTUALIZACIÓN
+  // 30 AGO
   // =========================================================
 
   {
@@ -1807,15 +1815,17 @@ const events = [
     group: "state",
     groupLabel: "ESTADO Y PAÍS",
     category: "DERECHOS HUMANOS",
+    importance: "ESENCIAL",
     title: "Defensoría advierte que la desaparición forzada continúa afectando a Colombia",
     summary: "La Defensoría reportó 2.145 casos de atención relacionados con desaparición forzada entre enero y agosto de 2026 y recordó que el universo histórico de personas desaparecidas supera ampliamente esa cifra.",
     eventDate: "2026-08-30",
     publishedDate: "2026-08-30",
     sourceType: "Fuente oficial",
     sourceName: "Defensoría del Pueblo",
-    sourceUrl: "https://www.defensoria.gov.co/",
+    sourceUrl: "https://www.defensoria.gov.co/web/guest/-/la-desaparici%C3%B3n-forzada-es-un-fen%C3%B3meno-que-persiste-en-colombia",
     status: "Verificado",
     related: ["desaparición forzada", "Defensoría", "UBPD"],
+    whyItMatters: "Permite distinguir los casos atendidos durante 2026 del universo histórico de personas desaparecidas en Colombia.",
     note: "El universo histórico aproximado de 137.000 personas desaparecidas no corresponde a casos ocurridos solamente durante 2026.",
     extraSources: []
   },
@@ -1825,6 +1835,7 @@ const events = [
     group: "opposition",
     groupLabel: "OPOSICIÓN",
     category: "POLÍTICA Y CONGRESO",
+    importance: "RELEVANTE",
     title: "Petro interviene en controversia interna del Pacto Histórico",
     summary: "El expresidente se pronunció sobre diferencias internas relacionadas con actuaciones de integrantes de su bancada en la Comisión de Acusaciones y con recientes decisiones políticas.",
     eventDate: "2026-08-30",
@@ -1835,6 +1846,167 @@ const events = [
     status: "Declaración documentada",
     related: ["Gustavo Petro", "Pacto Histórico", "Comisión de Acusaciones"],
     extraSources: []
+  },
+
+
+  // =========================================================
+  // 31 AGO
+  // =========================================================
+
+  {
+    id: "cepeda-tensiones-pacto-31",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN",
+    category: "POLÍTICA",
+    importance: "RELEVANTE",
+    title: "Iván Cepeda niega una ruptura del Pacto Histórico",
+    summary: "Cepeda respondió a las tensiones internas conocidas durante los días anteriores y sostuvo que las diferencias dentro del progresismo corresponden a debates propios de una organización política.",
+    eventDate: "2026-08-31",
+    publishedDate: "2026-08-31",
+    sourceType: "Declaración atribuida",
+    sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/08/31/ivan-cepeda-nego-division-del-pacto-historico-no-hay-una-implosion-del-progresismo/",
+    status: "Declaración documentada",
+    related: ["Iván Cepeda", "Pacto Histórico", "Gustavo Petro"],
+    note: "La afirmación sobre la unidad del movimiento corresponde a la valoración política expresada por Cepeda.",
+    extraSources: []
+  },
+
+  {
+    id: "desempleo-julio-dane-31",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "ECONOMÍA",
+    importance: "ESENCIAL",
+    title: "DANE reporta una tasa de desempleo nacional de 8,1 % en julio",
+    summary: "La tasa de desempleo nacional fue de 8,1 % en julio de 2026, frente al 8,8 % registrado en julio de 2025. El país tenía alrededor de 24,5 millones de personas ocupadas.",
+    eventDate: "2026-08-31",
+    publishedDate: "2026-08-31",
+    sourceType: "Estadística oficial",
+    sourceName: "DANE",
+    sourceUrl: "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo",
+    status: "Verificado",
+    related: ["DANE", "desempleo", "mercado laboral", "tasa de desempleo"],
+    whyItMatters: "Es uno de los principales indicadores para entender la situación del mercado laboral colombiano.",
+    note: "El dato fue publicado durante el nuevo Gobierno, pero corresponde a julio de 2026, último mes completo anterior a la posesión presidencial del 7 de agosto. Por eso no se atribuye como resultado de la nueva administración.",
+    extraSources: [
+      ["Caracol Radio", "https://caracol.com.co/2026/08/31/el-desempleo-en-colombia-se-ubico-en-81-en-julio-2026-segun-el-dane/"],
+      ["El País", "https://elpais.com/america-colombia/2026-08-31/la-tasa-de-desempleo-en-colombia-marca-81-en-julio.html"]
+    ]
+  },
+
+  {
+    id: "operacion-amon-menores-31",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "ESENCIAL",
+    title: "Autoridades confirman que tres menores estaban entre los muertos identificados de la Operación Amón",
+    summary: "Medicina Legal informó que recibió diez cuerpos relacionados con la operación militar del 27 de agosto en Guaviare. Nueve habían sido identificados y uno continuaba en análisis forense. Entre los nueve identificados había tres menores de edad.",
+    eventDate: "2026-08-31",
+    publishedDate: "2026-08-31",
+    sourceType: "Fuente oficial",
+    sourceName: "Instituto Nacional de Medicina Legal",
+    sourceUrl: "https://www.medicinalegal.gov.co/inicio/-/asset_publisher/t0LBQNMxVOxe/content/plantilla_comunic-14",
+    status: "Confirmación posterior",
+    related: ["Operación Amón", "Guaviare", "Medicina Legal", "menores de edad"],
+    whyItMatters: "La identificación forense aporta nueva información sobre una operación militar cuyo balance inicial había sido divulgado el 27 de agosto.",
+    note: "La operación ocurrió el 27 de agosto. El balance operacional informado ese día fue de 11 muertos. Medicina Legal informó posteriormente haber recibido 10 cuerpos relacionados con la operación. Las dos cifras corresponden a registros distintos y se conservan de manera transparente.",
+    extraSources: [
+      ["Caracol Radio · declaración del Ministerio de Defensa", "https://caracol.com.co/2026/08/31/mindefensa-confirmo-que-tres-menores-murieron-en-ataque-en-guaviare-y-rechazo-reclutamiento-forzado/"]
+    ]
+  },
+
+  {
+    id: "interes-bancario-corriente-31",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "ECONOMÍA",
+    importance: "RELEVANTE",
+    title: "Superfinanciera certifica en 19,49 % E.A. el interés bancario corriente para septiembre",
+    summary: "La Superintendencia Financiera certificó en 19,49 % efectivo anual el interés bancario corriente para crédito de consumo y ordinario durante septiembre de 2026.",
+    eventDate: "2026-08-31",
+    publishedDate: "2026-08-31",
+    effectiveDate: "2026-09-01",
+    sourceType: "Fuente oficial",
+    sourceName: "Superintendencia Financiera de Colombia",
+    sourceUrl: "https://www.superfinanciera.gov.co/publicaciones/10116235/superfinanciera-certifica-el-interes-bancario-corriente/",
+    status: "Verificado",
+    related: ["interés bancario corriente", "crédito", "Superfinanciera", "efectivo anual"],
+    whyItMatters: "Esta tasa sirve como referencia para determinar límites legales aplicables a determinados intereses.",
+    note: "No significa que todos los créditos bancarios deban cobrar exactamente 19,49 % E.A.",
+    extraSources: []
+  },
+
+  {
+    id: "procuraduria-nukak-31",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "DERECHOS HUMANOS",
+    importance: "RELEVANTE",
+    title: "Procuraduría solicita información sobre atención en salud a la comunidad Nukak Baka",
+    summary: "La Procuraduría requirió información a autoridades administrativas y de salud de Guaviare sobre afiliación, atención diferencial y diferentes riesgos sanitarios que afectan a la comunidad indígena Nukak Baka.",
+    eventDate: "2026-08-31",
+    publishedDate: "2026-08-31",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/procuraduria-requiere-informacion-autoridades-administrativas-salud-guaviare-sobre-atencion-comunidad-indigena.aspx",
+    status: "Actuación preventiva",
+    related: ["Nukak Baka", "Guaviare", "Procuraduría", "salud", "actuación preventiva"],
+    note: "El requerimiento es una actuación preventiva. No equivale a una sanción ni establece por sí mismo que alguna autoridad haya incumplido sus obligaciones.",
+    extraSources: []
+  },
+
+  {
+    id: "operacion-azarias-31",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "ESENCIAL",
+    title: "Gobierno eleva a 20 muertos el balance de la Operación Azarías",
+    summary: "El presidente informó durante la noche un balance de 20 muertos en operaciones militares, cinco capturados y dos menores recuperados en una acción contra una estructura que las autoridades relacionan con alias Iván Mordisco.",
+    eventDate: "2026-08-31",
+    publishedDate: "2026-09-01",
+    sourceType: "Balance oficial reproducido por prensa",
+    sourceName: "DW",
+    sourceUrl: "https://amp.dw.com/es/bombardeo-m%C3%A1s-letal-del-ej%C3%A9rcito-en-colombia-deja-20-muertos/a-78582252",
+    status: "Atribución oficial",
+    related: ["Operación Azarías", "Iván Mordisco", "Carolina Ramírez"],
+    note: "Las pertenencias, cargos y responsabilidades atribuidas a las personas involucradas corresponden a información de las autoridades. La publicación periodística ocurrió el 1 de septiembre, pero la actualización oficial del balance fue comunicada la noche del 31 de agosto.",
+    extraSources: []
+  },
+
+
+  // =========================================================
+  // 01 SEP
+  // =========================================================
+
+  {
+    id: "creg-ahorro-energia-septiembre",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "ENERGÍA",
+    importance: "ESENCIAL",
+    title: "Comienza el programa transitorio de ahorro de energía eléctrica de la CREG",
+    summary: "Desde el 1 de septiembre comienza el programa transitorio que establece metas individuales de consumo y un esquema de incentivos al ahorro y cobros adicionales por determinados consumos superiores a la meta.",
+    eventDate: "2026-09-01",
+    publishedDate: "2026-09-01",
+    effectiveDate: "2026-09-01",
+    sourceType: "Fuente regulatoria oficial",
+    sourceName: "Comisión de Regulación de Energía y Gas",
+    sourceUrl: "https://gestornormativo.creg.gov.co/gestor/entorno/novedades_resoluciones.html",
+    status: "Vigente",
+    related: [
+      "CREG",
+      "energía",
+      "meta individual de consumo",
+      "ahorro de energía"
+    ],
+    whyItMatters: "La medida puede producir cobros adicionales para determinados usuarios que consuman por encima de su meta y beneficios monetarios para usuarios que logren ahorro reconocido.",
+    note: "No es un aumento general de la tarifa de energía ni un programa de racionamiento. La regulación excluye a usuarios ubicados en municipios identificados por la UNGRD como afectados por el terremoto del 10 de agosto. La duración inicial del programa es de seis meses.",
+    extraSources: [
+      ["Resolución CREG 101 120 de 2026 · programa original", "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm"]
+    ]
   }
 
 ];
@@ -1960,5 +2132,20 @@ const glossary = {
     "En ayuda humanitaria, indica que el recurso o bien ya llegó al destinatario institucional o territorial correspondiente. Es distinto de anunciado, comprometido o movilizado.",
 
   "ejecutado":
-    "Indica que un recurso o medida ya fue utilizado o aplicado efectivamente, no solamente anunciado, apropiado o transferido."
+    "Indica que un recurso o medida ya fue utilizado o aplicado efectivamente, no solamente anunciado, apropiado o transferido.",
+
+  "interés bancario corriente":
+    "Tasa de referencia certificada por la Superintendencia Financiera a partir de la información del sistema financiero. Se utiliza, entre otras cosas, para establecer determinados límites legales de intereses. No significa que todos los créditos tengan esa misma tasa.",
+
+  "meta individual de consumo":
+    "Referencia de consumo de energía que la regulación asigna a cada usuario para comparar su consumo durante el programa transitorio. Consumir por encima o ahorrar frente a esa meta puede producir efectos económicos según las reglas de la CREG.",
+
+  "tasa de desempleo":
+    "Porcentaje de la población económicamente activa que no tiene empleo, está disponible para trabajar y está buscando trabajo.",
+
+  "actuación preventiva":
+    "Intervención de un organismo de control destinada a solicitar información, advertir riesgos o promover el cumplimiento de obligaciones. No equivale por sí sola a una sanción ni demuestra una irregularidad.",
+
+  "efectivo anual":
+    "Forma de expresar una tasa de interés indicando el rendimiento o costo equivalente durante un año, teniendo en cuenta la capitalización. Suele abreviarse E.A."
 };

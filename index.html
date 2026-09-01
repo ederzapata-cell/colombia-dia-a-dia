@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Colombia Día a Día — información pública verificable, sin opinión editorial."
+    content="Colombia Día a Día — información pública verificable, explicada de forma clara y sin opinión editorial."
   />
 
   <meta name="theme-color" content="#10233f" />
@@ -49,528 +49,710 @@
 
 <body>
 
-<header class="topbar">
+  <header class="topbar">
 
-  <div class="brand">
+    <a class="brand" href="#" id="brandHome" aria-label="Ir a hoy">
 
-    <img
-      src="logo-colombia-dia-a-dia.png"
-      alt=""
-      class="brand-logo"
-    />
-
-    <div class="brand-copy">
-      <h1>COLOMBIA · DÍA A DÍA</h1>
-
-      <p>
-        No buscamos que nos creas.
-        Queremos que puedas comprobarlo.
-      </p>
-    </div>
-
-  </div>
-
-  <div class="top-actions">
-
-    <button
-      class="top-support-btn"
-      id="topSupportBtn"
-      type="button"
-    >
-      ♡ Apóyanos
-    </button>
-
-    <button
-      class="icon-btn"
-      id="openSearch"
-      type="button"
-      aria-label="Buscar"
-    >
-      ⌕
-    </button>
-
-  </div>
-
-</header>
-
-
-<main>
-
-  <!-- PORTADA DEL DÍA -->
-  <section class="today-hero">
-
-    <div class="today-heading">
-
-      <span
-        class="today-kicker"
-        id="todayKicker"
-      >
-        HOY EN COLOMBIA
-      </span>
-
-      <h2 id="heroDate">
-        30 de agosto de 2026
-      </h2>
-
-      <p
-        class="today-summary"
-        id="heroSubtitle"
-      >
-        Información verificada hasta el último barrido disponible.
-      </p>
-
-    </div>
-
-
-    <div class="today-stats">
-
-      <div class="today-stat">
-        <strong id="todayEventCount">0</strong>
-        <span>hechos</span>
+      <div class="brand-symbol" aria-hidden="true">
+        <span class="brand-yellow"></span>
+        <span class="brand-blue"></span>
+        <span class="brand-red"></span>
       </div>
 
-      <div class="today-stat">
-        <strong id="todaySourceCount">0</strong>
-        <span>fuentes</span>
+      <div class="brand-copy">
+        <strong>COLOMBIA</strong>
+        <span>DÍA A DÍA</span>
       </div>
 
-      <div class="today-stat">
-        <strong id="todayGroupCount">0</strong>
-        <span>áreas</span>
-      </div>
+    </a>
 
-    </div>
-
-
-    <div class="today-actions">
+    <div class="top-actions">
 
       <button
-        class="date-btn"
-        id="goToDate"
+        class="top-support-btn"
+        id="topSupportBtn"
         type="button"
       >
-        📅 Ir a fecha
+        ♡ Apóyanos
+      </button>
+
+      <button
+        class="round-icon-btn"
+        id="openSearch"
+        type="button"
+        aria-label="Buscar"
+      >
+        <span aria-hidden="true">⌕</span>
       </button>
 
     </div>
 
-  </section>
+  </header>
 
 
-  <!-- COLOMBIA EN 2 MINUTOS -->
-  <section class="two-minute-card">
+  <main>
 
-    <div class="two-minute-icon">
-      ☕
-    </div>
+    <!-- HERO -->
 
-    <div class="two-minute-copy">
+    <section class="welcome-card">
 
-      <span class="two-minute-label">
-        COLOMBIA EN 2 MINUTOS
-      </span>
+      <div class="welcome-decoration decoration-a"></div>
+      <div class="welcome-decoration decoration-b"></div>
+      <div class="welcome-decoration decoration-c"></div>
 
-      <h3>
-        Lo esencial del día, sin vueltas.
-      </h3>
+      <div class="welcome-content">
 
-      <p>
-        Un resumen rápido para entender qué pasó antes de entrar al detalle.
+        <p class="welcome-kicker" id="welcomeKicker">
+          COLOMBIA · DÍA A DÍA
+        </p>
+
+        <h1 id="welcomeTitle">
+          Buenos días, Colombia.
+        </h1>
+
+        <p class="welcome-date" id="heroDate">
+          1 de septiembre de 2026
+        </p>
+
+        <p class="welcome-text">
+          Lo importante del país, explicado sin ruido.
+        </p>
+
+        <div class="welcome-actions">
+
+          <button
+            class="soft-btn"
+            id="goToDate"
+            type="button"
+          >
+            Ir a una fecha
+          </button>
+
+          <span class="verified-note" id="heroStatus">
+            Información verificada
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- COLOMBIA EN 2 MINUTOS -->
+
+    <section
+      class="brief-card"
+      id="briefCard"
+    >
+
+      <div class="brief-top">
+
+        <div class="brief-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div>
+          <span class="section-kicker light">
+            COLOMBIA EN 2 MINUTOS
+          </span>
+
+          <h2>Qué necesitas saber hoy</h2>
+        </div>
+
+      </div>
+
+      <p id="briefDescription">
+        Una selección de los asuntos más importantes de la jornada.
       </p>
 
-    </div>
+      <div class="brief-meta">
 
-    <button
-      id="openBrief"
-      class="two-minute-btn"
-      type="button"
-    >
-      Ver resumen →
-    </button>
+        <span id="briefCount">0 asuntos</span>
 
-  </section>
+        <button
+          id="openBrief"
+          class="brief-btn"
+          type="button"
+        >
+          Ver lo esencial →
+        </button>
 
-
-  <!-- CRONOLOGÍA -->
-  <section
-    class="timeline"
-    id="timeline"
-    aria-live="polite"
-  ></section>
-
-
-  <!-- APOYO -->
-  <section class="support-card">
-
-    <div>
-
-      <span class="eyebrow">
-        PROYECTO INDEPENDIENTE
-      </span>
-
-      <h3>
-        Ayúdanos a mantener la información abierta y verificable.
-      </h3>
-
-      <p>
-        El contenido esencial seguirá siendo gratuito.
-        Tu aporte ayuda a sostener investigación,
-        verificación e infraestructura.
-      </p>
-
-    </div>
-
-    <button
-      class="support-btn"
-      id="supportBtn"
-      type="button"
-    >
-      ♡ Apóyanos
-    </button>
-
-  </section>
-
-</main>
-
-
-<!-- NAVEGACIÓN -->
-<nav
-  class="bottom-nav"
-  aria-label="Navegación principal"
->
-
-  <button
-    class="nav-item active"
-    data-section="hoy"
-    type="button"
-  >
-    <span>⌂</span>
-    Hoy
-  </button>
-
-  <button
-    class="nav-item"
-    data-section="dia"
-    type="button"
-  >
-    <span>↕</span>
-    Día a día
-  </button>
-
-  <button
-    class="nav-item"
-    data-section="buscar"
-    id="navSearch"
-    type="button"
-  >
-    <span>⌕</span>
-    Buscar
-  </button>
-
-  <button
-    class="nav-item"
-    data-section="entiende"
-    type="button"
-  >
-    <span>◎</span>
-    Entiende
-  </button>
-
-  <button
-    class="nav-item"
-    data-section="mas"
-    type="button"
-  >
-    <span>•••</span>
-    Más
-  </button>
-
-</nav>
-
-
-<!-- COLOMBIA EN 2 MINUTOS -->
-<dialog id="briefDialog">
-
-  <form
-    method="dialog"
-    class="dialog-card brief-dialog-card"
-  >
-
-    <div class="dialog-head">
-
-      <div>
-        <span class="eyebrow">
-          ☕ COLOMBIA EN 2 MINUTOS
-        </span>
-
-        <h3 id="briefTitle">
-          Lo esencial del día
-        </h3>
       </div>
 
-      <button
-        class="close-btn"
-        value="cancel"
-        aria-label="Cerrar"
-      >
-        ×
-      </button>
-
-    </div>
-
-    <div
-      class="brief-list"
-      id="briefList"
-    ></div>
-
-    <p class="brief-note">
-      Este resumen no reemplaza las fuentes.
-      Puedes abrir cada registro de la cronología para comprobar la información.
-    </p>
-
-  </form>
-
-</dialog>
+    </section>
 
 
-<!-- BUSCAR -->
-<dialog id="searchDialog">
+    <!-- RESUMEN DEL DÍA -->
 
-  <form
-    method="dialog"
-    class="dialog-card"
-  >
+    <section class="day-overview">
 
-    <div class="dialog-head">
+      <div class="section-heading">
 
-      <div>
-        <span class="eyebrow">
-          BUSCAR
+        <div>
+          <span class="section-kicker">
+            PANORAMA
+          </span>
+
+          <h2>Así está Colombia hoy</h2>
+        </div>
+
+        <span
+          class="day-total"
+          id="todayEventCount"
+        >
+          0 hechos
         </span>
 
-        <h3>
-          Encuentra hechos, personas o conceptos
-        </h3>
       </div>
 
-      <button
-        class="close-btn"
-        value="cancel"
-        aria-label="Cerrar"
-      >
-        ×
-      </button>
 
-    </div>
+      <div class="overview-grid">
 
-    <input
-      id="searchInput"
-      type="search"
-      placeholder="Ej. terremoto, Petro, Congreso, imputación…"
-      autocomplete="off"
-    />
+        <button
+          class="overview-card government-card"
+          data-filter-group="government"
+          type="button"
+        >
+          <span class="overview-symbol">
+            G
+          </span>
 
-    <div
-      id="searchResults"
-      class="search-results"
-    ></div>
+          <span class="overview-name">
+            Gobierno
+          </span>
 
-  </form>
+          <strong id="governmentCount">
+            0
+          </strong>
 
-</dialog>
+          <small>
+            hechos
+          </small>
+        </button>
 
 
-<!-- IR A FECHA -->
-<dialog id="dateDialog">
+        <button
+          class="overview-card opposition-card"
+          data-filter-group="opposition"
+          type="button"
+        >
+          <span class="overview-symbol">
+            O
+          </span>
 
-  <form
-    method="dialog"
-    class="dialog-card"
-  >
+          <span class="overview-name">
+            Oposición
+          </span>
 
-    <div class="dialog-head">
+          <strong id="oppositionCount">
+            0
+          </strong>
 
-      <div>
-        <span class="eyebrow">
-          IR A FECHA
-        </span>
+          <small>
+            hechos
+          </small>
+        </button>
 
-        <h3>
-          Consulta la cronología
-        </h3>
+
+        <button
+          class="overview-card state-card"
+          data-filter-group="state"
+          type="button"
+        >
+          <span class="overview-symbol">
+            C
+          </span>
+
+          <span class="overview-name">
+            Estado y país
+          </span>
+
+          <strong id="stateCount">
+            0
+          </strong>
+
+          <small>
+            hechos
+          </small>
+        </button>
+
       </div>
 
-      <button
-        class="close-btn"
-        value="cancel"
-        aria-label="Cerrar"
-      >
-        ×
-      </button>
+    </section>
 
-    </div>
 
-    <input
-      id="dateInput"
-      type="date"
-      min="2026-08-07"
-      value="2026-08-30"
-    />
+    <!-- TERMINOS DEL DÍA -->
 
-    <button
-      class="primary-btn"
-      id="dateSubmit"
-      type="button"
+    <section
+      class="understand-strip"
+      id="understandStrip"
     >
-      Ver fecha
-    </button>
 
-    <p class="helper">
-      La cronología comienza el 7 de agosto de 2026.
-    </p>
+      <div class="understand-copy">
 
-  </form>
-
-</dialog>
-
-
-<!-- ENTIENDE -->
-<dialog id="termDialog">
-
-  <form
-    method="dialog"
-    class="dialog-card term-dialog-card"
-  >
-
-    <div class="dialog-head">
-
-      <div>
-        <span class="eyebrow">
+        <span class="section-kicker">
           ENTIENDE
         </span>
 
-        <h3 id="termDialogTitle">
-          Concepto
-        </h3>
+        <h2>Cuando una palabra complica la noticia</h2>
+
+        <p>
+          Tócala y te la explicamos en lenguaje sencillo.
+        </p>
+
+      </div>
+
+      <div
+        class="term-chips"
+        id="termChips"
+      ></div>
+
+    </section>
+
+
+    <!-- TODO LO OCURRIDO -->
+
+    <section class="events-section">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="section-kicker">
+            EL DÍA COMPLETO
+          </span>
+
+          <h2 id="eventsHeading">
+            Todo lo ocurrido hoy
+          </h2>
+        </div>
+
+        <button
+          class="view-all-btn"
+          id="clearGroupFilter"
+          type="button"
+          hidden
+        >
+          Ver todo
+        </button>
+
+      </div>
+
+      <div
+        id="timeline"
+        class="events-feed"
+        aria-live="polite"
+      ></div>
+
+    </section>
+
+
+    <!-- APOYO -->
+
+    <section class="support-card">
+
+      <div class="support-copy">
+
+        <span class="section-kicker">
+          PROYECTO INDEPENDIENTE
+        </span>
+
+        <h2>
+          Información abierta para todos.
+        </h2>
+
+        <p>
+          Tu aporte ayuda a sostener investigación,
+          verificación e infraestructura.
+        </p>
+
       </div>
 
       <button
-        class="close-btn"
-        value="cancel"
-        aria-label="Cerrar"
+        class="support-btn"
+        id="supportBtn"
+        type="button"
       >
-        ×
+        ♡ Apóyanos
       </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- NAVEGACIÓN -->
+
+  <nav
+    class="bottom-nav"
+    aria-label="Navegación principal"
+  >
+
+    <button
+      class="nav-item active"
+      data-section="hoy"
+      type="button"
+    >
+      <span class="nav-icon">⌂</span>
+      <span>Hoy</span>
+    </button>
+
+    <button
+      class="nav-item"
+      data-section="dia"
+      type="button"
+    >
+      <span class="nav-icon">↕</span>
+      <span>Día a día</span>
+    </button>
+
+    <button
+      class="nav-item"
+      data-section="buscar"
+      id="navSearch"
+      type="button"
+    >
+      <span class="nav-icon">⌕</span>
+      <span>Buscar</span>
+    </button>
+
+    <button
+      class="nav-item"
+      data-section="entiende"
+      type="button"
+    >
+      <span class="nav-icon">◎</span>
+      <span>Entiende</span>
+    </button>
+
+    <button
+      class="nav-item"
+      data-section="mas"
+      type="button"
+    >
+      <span class="nav-icon">•••</span>
+      <span>Más</span>
+    </button>
+
+  </nav>
+
+
+  <!-- BUSCAR -->
+
+  <dialog id="searchDialog">
+
+    <div class="dialog-card">
+
+      <div class="dialog-head">
+
+        <div>
+          <span class="section-kicker">
+            BUSCAR
+          </span>
+
+          <h3>
+            Encuentra hechos, personas o conceptos
+          </h3>
+        </div>
+
+        <button
+          class="close-btn"
+          data-close-dialog="searchDialog"
+          type="button"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+      </div>
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Petro, Congreso, terremoto, inflación…"
+        autocomplete="off"
+      />
+
+      <div
+        id="searchResults"
+        class="search-results"
+      ></div>
 
     </div>
 
-    <div class="simple-definition">
+  </dialog>
 
-      <span class="definition-label">
-        EN PALABRAS SENCILLAS
-      </span>
 
-      <p id="termDialogDefinition">
-        Definición.
+  <!-- IR A FECHA -->
+
+  <dialog id="dateDialog">
+
+    <div class="dialog-card">
+
+      <div class="dialog-head">
+
+        <div>
+          <span class="section-kicker">
+            DÍA A DÍA
+          </span>
+
+          <h3>
+            Consulta otra fecha
+          </h3>
+        </div>
+
+        <button
+          class="close-btn"
+          data-close-dialog="dateDialog"
+          type="button"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+      </div>
+
+      <input
+        id="dateInput"
+        type="date"
+        min="2026-08-07"
+      />
+
+      <button
+        class="primary-btn"
+        id="dateSubmit"
+        type="button"
+      >
+        Ver esta fecha
+      </button>
+
+      <p class="helper">
+        La cronología comienza el 7 de agosto de 2026.
       </p>
 
     </div>
 
-  </form>
-
-</dialog>
+  </dialog>
 
 
-<!-- APOYAR -->
-<dialog id="supportDialog">
+  <!-- COLOMBIA EN 2 MINUTOS -->
 
-  <form
-    method="dialog"
-    class="dialog-card support-dialog-card"
-  >
+  <dialog id="briefDialog">
 
-    <div class="dialog-head">
+    <div class="dialog-card large-dialog">
 
-      <div>
-        <span class="eyebrow">
-          APÓYANOS
-        </span>
+      <div class="dialog-head">
 
-        <h3>
-          Ayúdanos a mantener la información abierta y verificable
-        </h3>
+        <div>
+          <span class="section-kicker">
+            COLOMBIA EN 2 MINUTOS
+          </span>
+
+          <h3>
+            Lo esencial del día
+          </h3>
+        </div>
+
+        <button
+          class="close-btn"
+          data-close-dialog="briefDialog"
+          type="button"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
       </div>
 
-      <button
-        class="close-btn"
-        value="cancel"
-        aria-label="Cerrar"
-      >
-        ×
-      </button>
+      <div
+        id="briefResults"
+        class="brief-results"
+      ></div>
 
     </div>
 
-    <p class="support-intro">
-      Tu aporte voluntario ayuda a sostener investigación,
-      verificación e infraestructura.
-      El contenido esencial seguirá siendo gratuito.
-    </p>
+  </dialog>
 
-    <div class="qr-wrap">
-      <img
-        src="assets/qr-apoyanos.jpeg"
-        alt="Código QR Bre-B para apoyar Colombia Día a Día"
-        class="support-qr"
+
+  <!-- ENTIENDE -->
+
+  <dialog id="termDialog">
+
+    <div class="dialog-card">
+
+      <div class="dialog-head">
+
+        <div>
+          <span class="section-kicker">
+            ENTIENDE
+          </span>
+
+          <h3 id="termDialogTitle">
+            Concepto
+          </h3>
+        </div>
+
+        <button
+          class="close-btn"
+          data-close-dialog="termDialog"
+          type="button"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+      </div>
+
+      <div class="definition-card">
+
+        <span class="definition-label">
+          EN PALABRAS SENCILLAS
+        </span>
+
+        <p id="termDialogDefinition"></p>
+
+      </div>
+
+    </div>
+
+  </dialog>
+
+
+  <!-- GLOSARIO -->
+
+  <dialog id="glossaryDialog">
+
+    <div class="dialog-card large-dialog">
+
+      <div class="dialog-head">
+
+        <div>
+          <span class="section-kicker">
+            ENTIENDE
+          </span>
+
+          <h3>
+            Diccionario ciudadano
+          </h3>
+        </div>
+
+        <button
+          class="close-btn"
+          data-close-dialog="glossaryDialog"
+          type="button"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+      </div>
+
+      <input
+        id="glossarySearch"
+        type="search"
+        placeholder="Buscar concepto…"
+        autocomplete="off"
       />
-    </div>
 
-    <div class="key-box">
-
-      <span class="key-label">
-        LLAVE BRE-B
-      </span>
-
-      <strong id="brebKey">
-        71744644
-      </strong>
-
-      <button
-        class="copy-key-btn"
-        id="copyKeyBtn"
-        type="button"
-      >
-        Copiar llave
-      </button>
+      <div
+        id="glossaryResults"
+        class="glossary-results"
+      ></div>
 
     </div>
 
-    <p
-      class="copy-status"
-      id="copyStatus"
-      aria-live="polite"
-    ></p>
-
-    <p class="helper support-note">
-      Los aportes son voluntarios y se destinan
-      al sostenimiento de este proyecto independiente.
-    </p>
-
-  </form>
-
-</dialog>
+  </dialog>
 
 
-<script src="data.js"></script>
-<script src="app.js"></script>
+  <!-- APOYANOS -->
 
-<script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/sw.js");
-    });
-  }
-</script>
+  <dialog id="supportDialog">
+
+    <div class="dialog-card support-dialog-card">
+
+      <div class="dialog-head">
+
+        <div>
+          <span class="section-kicker">
+            APÓYANOS
+          </span>
+
+          <h3>
+            Ayúdanos a mantener la información abierta
+          </h3>
+        </div>
+
+        <button
+          class="close-btn"
+          data-close-dialog="supportDialog"
+          type="button"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+      </div>
+
+      <p class="support-intro">
+        Tu aporte voluntario ayuda a sostener investigación,
+        verificación e infraestructura.
+      </p>
+
+      <div class="qr-wrap">
+        <img
+          src="assets/qr-apoyanos.jpeg"
+          alt="Código QR Bre-B para apoyar Colombia Día a Día"
+          class="support-qr"
+        />
+      </div>
+
+      <div class="key-box">
+
+        <span class="key-label">
+          LLAVE BRE-B
+        </span>
+
+        <strong id="brebKey">
+          71744644
+        </strong>
+
+        <button
+          class="copy-key-btn"
+          id="copyKeyBtn"
+          type="button"
+        >
+          Copiar llave
+        </button>
+
+      </div>
+
+      <p
+        class="copy-status"
+        id="copyStatus"
+        aria-live="polite"
+      ></p>
+
+      <p class="helper">
+        Los aportes son voluntarios.
+      </p>
+
+    </div>
+
+  </dialog>
+
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js");
+      });
+    }
+  </script>
 
 </body>
 </html>

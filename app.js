@@ -1,510 +1,613 @@
-const timeline = document.getElementById("timeline");
+/* =========================================================
+   COLOMBIA · DÍA A DÍA
+   App principal
+   ========================================================= */
 
-const searchDialog = document.getElementById("searchDialog");
-const searchInput = document.getElementById("searchInput");
-const searchResults = document.getElementById("searchResults");
+const timeline =
+  document.getElementById("timeline");
 
-const dateDialog = document.getElementById("dateDialog");
-const dateInput = document.getElementById("dateInput");
+const searchDialog =
+  document.getElementById("searchDialog");
 
-const supportDialog = document.getElementById("supportDialog");
+const searchInput =
+  document.getElementById("searchInput");
 
-const termDialog = document.getElementById("termDialog");
-const termDialogTitle = document.getElementById("termDialogTitle");
-const termDialogDefinition = document.getElementById("termDialogDefinition");
+const searchResults =
+  document.getElementById("searchResults");
 
-const briefDialog = document.getElementById("briefDialog");
-const briefTitle = document.getElementById("briefTitle");
-const briefList = document.getElementById("briefList");
+const dateDialog =
+  document.getElementById("dateDialog");
 
-const MONTHS = [
-  "enero","febrero","marzo","abril","mayo","junio",
-  "julio","agosto","septiembre","octubre","noviembre","diciembre"
-];
+const dateInput =
+  document.getElementById("dateInput");
 
-const MONTHS_SHORT = [
-  "ENE","FEB","MAR","ABR","MAY","JUN",
-  "JUL","AGO","SEP","OCT","NOV","DIC"
-];
+const briefDialog =
+  document.getElementById("briefDialog");
 
-const WEEKDAYS = [
-  "DOMINGO","LUNES","MARTES","MIÉRCOLES",
-  "JUEVES","VIERNES","SÁBADO"
-];
+const briefResults =
+  document.getElementById("briefResults");
 
-const GROUP_ORDER = {
-  government: 1,
-  opposition: 2,
-  state: 3
+const termDialog =
+  document.getElementById("termDialog");
+
+const glossaryDialog =
+  document.getElementById("glossaryDialog");
+
+const glossarySearch =
+  document.getElementById("glossarySearch");
+
+const glossaryResults =
+  document.getElementById("glossaryResults");
+
+const supportDialog =
+  document.getElementById("supportDialog");
+
+
+/* =========================================================
+   DATOS BÁSICOS
+   ========================================================= */
+
+const groupConfig = {
+  government: {
+    label: "GOBIERNO"
+  },
+
+  opposition: {
+    label: "OPOSICIÓN"
+  },
+
+  state: {
+    label: "ESTADO Y PAÍS"
+  }
 };
 
-const GROUP_NAMES = {
-  government: "Gobierno",
-  opposition: "Oposición",
-  state: "Estado y País"
+
+const importanceRank = {
+  ESENCIAL: 1,
+  RELEVANTE: 2,
+  ARCHIVO: 3
 };
 
 
-const availableDates =
-  [...new Set(events.map(event => event.eventDate))].sort();
+const availableDates = [
+  ...new Set(
+    events.map(
+      event => event.eventDate
+    )
+  )
+].sort();
 
-let currentDate =
-  availableDates[availableDates.length - 1] || "2026-08-07";
+
+const latestDate =
+  availableDates[
+    availableDates.length - 1
+  ];
+
+
+let selectedDate =
+  latestDate;
+
+
+let activeGroup =
+  null;
 
 
 /* =========================================================
    FECHAS
    ========================================================= */
 
-function dateObject(dateString) {
-  const [year, month, day] =
-    dateString.split("-").map(Number);
+function parseLocalDate(dateString) {
 
-  return new Date(year, month - 1, day, 12, 0, 0);
+  const [
+    year,
+    month,
+    day
+  ] = dateString
+    .split("-")
+    .map(Number);
+
+  return new Date(
+    year,
+    month - 1,
+    day
+  );
+
 }
 
 
-function formatDate(dateString) {
-  if (!dateString) return "—";
+function formatLongDate(dateString) {
 
-  const [year, month, day] =
-    dateString.split("-");
+  if (!dateString) {
+    return "";
+  }
+
+  return parseLocalDate(
+    dateString
+  ).toLocaleDateString(
+    "es-CO",
+    {
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    }
+  );
+
+}
+
+
+function formatShortDate(dateString) {
+
+  if (!dateString) {
+    return "—";
+  }
+
+  const [
+    year,
+    month,
+    day
+  ] = dateString.split("-");
 
   return `${day}/${month}/${year}`;
+
 }
 
 
-function longDate(dateString) {
-  const [year, month, day] =
-    dateString.split("-").map(Number);
+function greeting() {
 
-  return `${day} de ${MONTHS[month - 1]} de ${year}`;
-}
+  const hour =
+    new Date().getHours();
 
-
-function shortNodeDate(dateString) {
-  const [year, month, day] =
-    dateString.split("-").map(Number);
-
-  return `${String(day).padStart(2, "0")} ${MONTHS_SHORT[month - 1]} ${year}`;
-}
-
-
-function weekdayName(dateString) {
-  return WEEKDAYS[dateObject(dateString).getDay()];
-}
-
-
-function getDayMeta(date) {
-  if (
-    typeof dayMeta !== "undefined" &&
-    dayMeta &&
-    dayMeta[date]
-  ) {
-    return dayMeta[date];
+  if (hour < 12) {
+    return "Buenos días, Colombia.";
   }
 
-  if (date === "2026-08-30") {
-    return {
-      status: "EN ACTUALIZACIÓN ⟳",
-      subtitle:
-        "Información verificada hasta el último barrido disponible."
-    };
+  if (hour < 19) {
+    return "Buenas tardes, Colombia.";
   }
 
-  return {
-    status: "VERIFICADO ✓",
-    subtitle:
-      "Hechos verificados y contextualizados para esta fecha."
-  };
+  return "Buenas noches, Colombia.";
+
 }
 
 
 /* =========================================================
-   SEGURIDAD DE TEXTO
+   EVENTOS DEL DÍA
    ========================================================= */
 
-function escapeRegExp(text) {
-  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function getEventsForDate(
+  date = selectedDate
+) {
+
+  return events.filter(
+    event =>
+      event.eventDate === date
+  );
+
 }
 
 
-function getGlossaryTerms() {
+function getEventsForGroup(
+  group,
+  date = selectedDate
+) {
+
+  return getEventsForDate(date)
+    .filter(
+      event =>
+        event.group === group
+    );
+
+}
+
+
+/* =========================================================
+   GLOSARIO
+   ========================================================= */
+
+function escapeRegex(text) {
+
+  return text.replace(
+    /[.*+?^${}()|[\]\\]/g,
+    "\\$&"
+  );
+
+}
+
+
+function glossaryEntries() {
+
   if (
-    typeof glossary === "undefined" ||
+    typeof glossary !== "object" ||
     !glossary
   ) {
     return [];
   }
 
-  return Object.keys(glossary)
-    .sort((a, b) => b.length - a.length);
+  return Object.entries(
+    glossary
+  );
+
 }
 
 
-function highlightTerms(text) {
-  if (!text) return "";
+function highlightGlossary(text) {
 
-  const terms = getGlossaryTerms();
-
-  if (!terms.length) return text;
-
-  const pattern =
-    terms.map(term => escapeRegExp(term)).join("|");
-
-  const regex =
-    new RegExp(`\\b(${pattern})\\b`, "gi");
-
-  return text.replace(regex, match => {
-
-    const realTerm =
-      terms.find(
-        term =>
-          term.toLowerCase() === match.toLowerCase()
-      ) || match;
-
-    return `
-      <button
-        type="button"
-        class="glossary-term"
-        data-term="${encodeURIComponent(realTerm)}"
-        aria-label="Ver explicación de ${realTerm}"
-      >
-        ${match}
-      </button>
-    `;
-  });
-}
-
-
-/* =========================================================
-   ENTIENDE
-   ========================================================= */
-
-function openTerm(term) {
-  if (
-    typeof glossary === "undefined" ||
-    !glossary ||
-    !glossary[term]
-  ) {
-    return;
+  if (!text) {
+    return "";
   }
 
-  if (termDialogTitle) {
-    termDialogTitle.textContent = term;
-  }
-
-  if (termDialogDefinition) {
-    termDialogDefinition.textContent =
-      glossary[term];
-  }
-
-  termDialog?.showModal();
-}
+  let output =
+    text;
 
 
-function bindGlossaryTerms(container = document) {
-
-  container
-    .querySelectorAll(".glossary-term")
-    .forEach(button => {
-
-      button.addEventListener("click", event => {
-
-        event.stopPropagation();
-
-        const term =
-          decodeURIComponent(button.dataset.term);
-
-        openTerm(term);
-
-      });
-
-    });
-}
-
-
-function renderGlossaryBrowser(query = "") {
-
-  if (
-    typeof glossary === "undefined" ||
-    !glossary
-  ) {
-    searchResults.innerHTML = `
-      <div class="search-hit">
-        <strong>Diccionario no disponible</strong>
-      </div>
-    `;
-
-    return;
-  }
-
-  const q =
-    query.trim().toLowerCase();
-
-  const entries =
-    Object.entries(glossary)
-      .filter(([term, definition]) => {
-
-        if (!q) return true;
-
-        return `${term} ${definition}`
-          .toLowerCase()
-          .includes(q);
-
-      })
-      .sort(([a], [b]) =>
-        a.localeCompare(b, "es")
+  const terms =
+    glossaryEntries()
+      .map(([term]) => term)
+      .sort(
+        (a, b) =>
+          b.length - a.length
       );
 
 
-  if (!entries.length) {
+  terms.forEach(term => {
 
-    searchResults.innerHTML = `
-      <div class="search-hit">
-        <strong>Sin resultados</strong>
-        <span>Prueba otro término.</span>
-      </div>
-    `;
+    const regex =
+      new RegExp(
+        `\\b(${escapeRegex(term)})\\b`,
+        "gi"
+      );
 
+
+    output =
+      output.replace(
+        regex,
+        match =>
+          `<button
+            type="button"
+            class="glossary-term"
+            data-term="${encodeURIComponent(term)}"
+          >${match}</button>`
+      );
+
+  });
+
+
+  return output;
+
+}
+
+
+function openTerm(term) {
+
+  const realTerm =
+    glossaryEntries()
+      .find(
+        ([name]) =>
+          name.toLowerCase() ===
+          term.toLowerCase()
+      );
+
+
+  if (!realTerm) {
     return;
   }
 
 
-  searchResults.innerHTML = `
-    <div class="search-section-title">
-      ENTIENDE
-    </div>
-
-    ${entries.map(([term, definition]) => `
-      <button
-        class="search-hit glossary-search-hit"
-        data-glossary="${encodeURIComponent(term)}"
-        type="button"
-      >
-        <strong>${term}</strong>
-        <span>${definition}</span>
-      </button>
-    `).join("")}
-  `;
+  const [
+    name,
+    definition
+  ] = realTerm;
 
 
-  bindGlossarySearch();
-}
+  document.getElementById(
+    "termDialogTitle"
+  ).textContent =
+    name;
 
 
-function bindGlossarySearch() {
+  document.getElementById(
+    "termDialogDefinition"
+  ).textContent =
+    definition;
 
-  document
-    .querySelectorAll("[data-glossary]")
-    .forEach(button => {
 
-      button.addEventListener("click", () => {
+  termDialog.showModal();
 
-        const term =
-          decodeURIComponent(
-            button.dataset.glossary
-          );
-
-        openTerm(term);
-
-      });
-
-    });
 }
 
 
 /* =========================================================
-   FUENTES / CONTADORES
+   HERO
    ========================================================= */
 
-function sourceLabel(item) {
-  return `${item.sourceType} · ${item.sourceName}`;
-}
+function renderHero() {
+
+  const isLatest =
+    selectedDate === latestDate;
 
 
-function getDayEvents() {
-  return events.filter(
-    item => item.eventDate === currentDate
+  document.body.classList.toggle(
+    "history-mode",
+    !isLatest
   );
+
+
+  document.getElementById(
+    "welcomeKicker"
+  ).textContent =
+    isLatest
+      ? "COLOMBIA · DÍA A DÍA"
+      : "DÍA A DÍA";
+
+
+  document.getElementById(
+    "welcomeTitle"
+  ).textContent =
+    isLatest
+      ? greeting()
+      : "Colombia, día a día.";
+
+
+  document.getElementById(
+    "heroDate"
+  ).textContent =
+    formatLongDate(
+      selectedDate
+    );
+
+
+  document.getElementById(
+    "heroStatus"
+  ).textContent =
+    isLatest
+      ? "Información verificada"
+      : "Archivo verificado";
+
+
+  document.getElementById(
+    "eventsHeading"
+  ).textContent =
+    isLatest
+      ? "Todo lo ocurrido hoy"
+      : `Lo ocurrido el ${formatLongDate(
+          selectedDate
+        )}`;
+
 }
 
 
-function countDaySources(dayEvents) {
+/* =========================================================
+   RESUMEN
+   ========================================================= */
 
-  const sources = new Set();
-
-  dayEvents.forEach(item => {
-
-    if (item.sourceUrl) {
-      sources.add(item.sourceUrl);
-    }
-
-    if (
-      Array.isArray(item.extraSources)
-    ) {
-
-      item.extraSources.forEach(source => {
-
-        if (Array.isArray(source) && source[1]) {
-          sources.add(source[1]);
-        }
-
-      });
-    }
-
-  });
-
-  return sources.size;
-}
-
-
-function updateTodayDashboard() {
+function updateCounts() {
 
   const dayEvents =
-    getDayEvents();
-
-  const eventCount =
-    dayEvents.length;
-
-  const sourceCount =
-    countDaySources(dayEvents);
-
-  const groupCount =
-    new Set(
-      dayEvents.map(item => item.group)
-    ).size;
+    getEventsForDate();
 
 
-  const todayKicker =
-    document.getElementById("todayKicker");
-
-  const heroDate =
-    document.getElementById("heroDate");
-
-  const heroSubtitle =
-    document.getElementById("heroSubtitle");
-
-  const todayEventCount =
-    document.getElementById("todayEventCount");
-
-  const todaySourceCount =
-    document.getElementById("todaySourceCount");
-
-  const todayGroupCount =
-    document.getElementById("todayGroupCount");
+  document.getElementById(
+    "todayEventCount"
+  ).textContent =
+    `${dayEvents.length} ${
+      dayEvents.length === 1
+        ? "hecho"
+        : "hechos"
+    }`;
 
 
-  if (todayKicker) {
-
-    todayKicker.textContent =
-      `${weekdayName(currentDate)} · HOY EN COLOMBIA`;
-
-  }
-
-
-  if (heroDate) {
-    heroDate.textContent =
-      longDate(currentDate);
-  }
+  document.getElementById(
+    "governmentCount"
+  ).textContent =
+    getEventsForGroup(
+      "government"
+    ).length;
 
 
-  if (heroSubtitle) {
-    heroSubtitle.textContent =
-      getDayMeta(currentDate).subtitle;
-  }
+  document.getElementById(
+    "oppositionCount"
+  ).textContent =
+    getEventsForGroup(
+      "opposition"
+    ).length;
 
 
-  if (todayEventCount) {
-    todayEventCount.textContent =
-      eventCount;
-  }
+  document.getElementById(
+    "stateCount"
+  ).textContent =
+    getEventsForGroup(
+      "state"
+    ).length;
 
-
-  if (todaySourceCount) {
-    todaySourceCount.textContent =
-      sourceCount;
-  }
-
-
-  if (todayGroupCount) {
-    todayGroupCount.textContent =
-      groupCount;
-  }
-
-
-  if (dateInput) {
-    dateInput.value =
-      currentDate;
-  }
 }
 
 
 /* =========================================================
-   TARJETAS
+   COLOMBIA EN 2 MINUTOS
    ========================================================= */
 
-function getImportance(item) {
+function getBriefEvents() {
 
-  if (item.importance) {
-    return item.importance;
+  const dayEvents =
+    [...getEventsForDate()];
+
+
+  dayEvents.sort(
+    (a, b) => {
+
+      const aRank =
+        importanceRank[
+          (
+            a.importance ||
+            "RELEVANTE"
+          ).toUpperCase()
+        ] || 2;
+
+
+      const bRank =
+        importanceRank[
+          (
+            b.importance ||
+            "RELEVANTE"
+          ).toUpperCase()
+        ] || 2;
+
+
+      if (aRank !== bRank) {
+        return aRank - bRank;
+      }
+
+
+      const groupOrder = {
+        government: 1,
+        opposition: 2,
+        state: 3
+      };
+
+
+      return (
+        groupOrder[a.group] -
+        groupOrder[b.group]
+      );
+
+    }
+  );
+
+
+  return dayEvents.slice(
+    0,
+    5
+  );
+
+}
+
+
+function renderBrief() {
+
+  const selected =
+    getBriefEvents();
+
+
+  document.getElementById(
+    "briefCount"
+  ).textContent =
+    `${selected.length} ${
+      selected.length === 1
+        ? "asunto"
+        : "asuntos"
+    }`;
+
+
+  if (!selected.length) {
+
+    briefResults.innerHTML =
+      `
+        <div class="empty-group">
+          Todavía no hay hechos cargados
+          para esta fecha.
+        </div>
+      `;
+
+    return;
+
   }
 
-  return null;
+
+  briefResults.innerHTML =
+    selected
+      .map(
+        (event, index) => `
+          <article class="brief-result">
+
+            <div class="brief-number">
+              ${index + 1}
+            </div>
+
+            <div>
+
+              <h4>
+                ${event.title}
+              </h4>
+
+              <p>
+                ${event.summary}
+              </p>
+
+            </div>
+
+          </article>
+        `
+      )
+      .join("");
+
 }
 
 
-function importanceBadge(item) {
+/* =========================================================
+   TARJETA DE EVENTO
+   ========================================================= */
+
+function cardTemplate(event) {
 
   const importance =
-    getImportance(item);
-
-  if (!importance) return "";
-
-  const normalized =
-    importance.toLowerCase();
-
-  return `
-    <span class="importance-badge ${normalized}">
-      ${importance}
-    </span>
-  `;
-}
+    event.importance
+      ? event.importance.toUpperCase()
+      : "";
 
 
-function cardTemplate(item) {
+  const why =
+    event.whyItMatters
+      ? `
+        <div class="why-box">
 
-  const effectiveDate =
-    item.effectiveDate ||
-    item.legalDate ||
-    null;
+          <strong>
+            ¿POR QUÉ IMPORTA?
+          </strong>
+
+          <p>
+            ${highlightGlossary(
+              event.whyItMatters
+            )}
+          </p>
+
+        </div>
+      `
+      : "";
 
 
   const related =
-    Array.isArray(item.related) &&
-    item.related.length
-      ? item.related.join(", ")
-      : "—";
+    Array.isArray(event.related)
+      ? event.related
+      : [];
 
 
   const extraSources =
-    Array.isArray(item.extraSources) &&
-    item.extraSources.length
+    Array.isArray(event.extraSources)
+      ? event.extraSources
+      : [];
+
+
+  const secondarySources =
+    extraSources.length
       ? `
         <div class="secondary-sources">
 
-          <h4>OTRAS FUENTES</h4>
+          <p class="detail-label">
+            OTRAS FUENTES
+          </p>
 
-          ${item.extraSources
-            .map(([name, url]) => `
-              <a
-                href="${url}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ${name} ↗
-              </a>
-            `)
+          ${extraSources
+            .map(
+              ([name, url]) => `
+                <a
+                  href="${url}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ${name} ↗
+                </a>
+              `
+            )
             .join("")}
 
         </div>
@@ -513,100 +616,81 @@ function cardTemplate(item) {
 
 
   const note =
-    item.note
+    event.note
       ? `
-        <p class="record-note">
-          ${highlightTerms(item.note)}
-        </p>
-      `
-      : "";
-
-
-  const whyItMatters =
-    item.whyItMatters
-      ? `
-        <div class="why-box">
-
-          <span>
-            ¿POR QUÉ IMPORTA?
-          </span>
-
-          <p>
-            ${highlightTerms(item.whyItMatters)}
-          </p>
-
+        <div class="note-box">
+          ${highlightGlossary(
+            event.note
+          )}
         </div>
       `
       : "";
 
 
-  let effectiveDateHtml = "";
-
-  if (effectiveDate) {
-
-    const label =
-      item.legalDate
-        ? "Fecha jurídica"
-        : "Fecha de aplicación";
-
-    effectiveDateHtml = `
-      <li>
-        ${label}: ${formatDate(effectiveDate)}
-      </li>
-    `;
-  }
-
-
   return `
     <article
       class="event-card"
-      id="${item.id}"
+      id="${event.id}"
+      data-group="${event.group}"
     >
 
-      <div class="meta">
+      <div class="card-topline">
 
-        ${importanceBadge(item)}
-
-        <span class="badge">
-          ${item.category}
+        <span class="category-label">
+          ${event.category}
         </span>
 
-        <span class="badge verified">
-          ${item.status}
+        ${
+          importance
+            ? `
+              <span class="importance-pill">
+                ${importance}
+              </span>
+            `
+            : ""
+        }
+
+        <span class="status-pill">
+          ${event.status}
         </span>
 
       </div>
 
 
       <h3>
-        ${highlightTerms(item.title)}
+        ${highlightGlossary(
+          event.title
+        )}
       </h3>
 
 
       <p class="event-summary">
-        ${highlightTerms(item.summary)}
+        ${highlightGlossary(
+          event.summary
+        )}
       </p>
 
 
-      ${whyItMatters}
+      ${why}
 
 
-      <div class="source-row">
+      <div class="card-actions">
 
         <a
-          href="${item.sourceUrl}"
+          class="source-link"
+          href="${event.sourceUrl}"
           target="_blank"
           rel="noopener noreferrer"
         >
-          ${sourceLabel(item)}
+          ${event.sourceName} ↗
         </a>
 
         <button
           class="details-btn"
-          data-details="${item.id}"
           type="button"
+          data-details="${event.id}"
         >
-          Ver →
+          Entender mejor →
         </button>
 
       </div>
@@ -614,160 +698,169 @@ function cardTemplate(item) {
 
       <div
         class="details"
-        id="details-${item.id}"
+        id="details-${event.id}"
       >
 
-        <h4>
+        <p class="detail-label">
           DATOS DEL REGISTRO
-        </h4>
+        </p>
 
         <ul>
 
           <li>
             Fecha del hecho:
-            ${formatDate(item.eventDate)}
+            ${formatShortDate(
+              event.eventDate
+            )}
           </li>
 
           <li>
             Fecha de publicación:
-            ${formatDate(item.publishedDate)}
+            ${formatShortDate(
+              event.publishedDate
+            )}
           </li>
 
-          ${effectiveDateHtml}
+          ${
+            event.effectiveDate
+              ? `
+                <li>
+                  Entrada en vigencia:
+                  ${formatShortDate(
+                    event.effectiveDate
+                  )}
+                </li>
+              `
+              : ""
+          }
 
           <li>
             Estado:
-            ${highlightTerms(item.status)}
+            ${event.status}
           </li>
 
-          <li>
-            Relacionados:
-            ${highlightTerms(related)}
-          </li>
+          ${
+            related.length
+              ? `
+                <li>
+                  Relacionados:
+                  ${related.join(", ")}
+                </li>
+              `
+              : ""
+          }
 
         </ul>
 
-        ${note}
+        ${secondarySources}
 
-        ${extraSources}
+        ${note}
 
       </div>
 
     </article>
   `;
-}
 
-
-function emptyGroup() {
-  return `
-    <div class="event-card empty-card">
-      <p>
-        Sin acontecimientos relevantes documentados.
-      </p>
-    </div>
-  `;
 }
 
 
 /* =========================================================
-   CRONOLOGÍA
+   RENDER DE GRUPOS
+   ========================================================= */
+
+function renderGroup(
+  group,
+  label
+) {
+
+  const groupEvents =
+    getEventsForGroup(group);
+
+
+  if (
+    activeGroup &&
+    activeGroup !== group
+  ) {
+    return "";
+  }
+
+
+  return `
+    <section
+      class="group-block group-${group}"
+    >
+
+      <div class="group-heading">
+
+        <span class="group-dot"></span>
+
+        <strong>
+          ${label}
+        </strong>
+
+        <span class="group-count">
+          ${groupEvents.length}
+        </span>
+
+      </div>
+
+
+      ${
+        groupEvents.length
+          ? groupEvents
+              .map(cardTemplate)
+              .join("")
+          : `
+            <div class="empty-group">
+              Sin acontecimientos relevantes
+              documentados.
+            </div>
+          `
+      }
+
+    </section>
+  `;
+
+}
+
+
+/* =========================================================
+   TIMELINE / FEED
    ========================================================= */
 
 function renderTimeline() {
 
-  const groups = [
-    ["government", "GOBIERNO", "◆"],
-    ["opposition", "OPOSICIÓN", "◐"],
-    ["state", "ESTADO Y PAÍS", "●"]
-  ];
+  timeline.innerHTML =
+    [
+      [
+        "government",
+        "GOBIERNO"
+      ],
 
+      [
+        "opposition",
+        "OPOSICIÓN"
+      ],
 
-  const meta =
-    getDayMeta(currentDate);
-
-
-  const dayEvents =
-    getDayEvents();
-
-
-  const isUpdating =
-    meta.status
-      .toLowerCase()
-      .includes("actualización");
-
-
-  timeline.classList.remove(
-    "timeline-enter"
-  );
-
-  void timeline.offsetWidth;
-
-  timeline.classList.add(
-    "timeline-enter"
-  );
-
-
-  timeline.innerHTML = `
-
-    <div
-      class="day-node ${isUpdating ? "updating" : ""}"
-    >
-      ${shortNodeDate(currentDate)}
-      ·
-      ${meta.status}
-    </div>
-
-
-    ${groups.map(
-      ([groupKey, groupLabel, icon]) => {
-
-        const items =
-          dayEvents.filter(
-            item =>
-              item.group === groupKey
-          );
-
-
-        return `
-          <section
-            class="group ${groupKey}"
-          >
-
-            <div class="group-heading">
-
-              <div class="group-label">
-                <span class="group-symbol">
-                  ${icon}
-                </span>
-
-                ${groupLabel}
-              </div>
-
-              <span class="group-count">
-                ${items.length}
-              </span>
-
-            </div>
-
-
-            ${
-              items.length
-                ? items
-                    .map(cardTemplate)
-                    .join("")
-                : emptyGroup()
-            }
-
-          </section>
-        `;
-
-      }
-    ).join("")}
-  `;
+      [
+        "state",
+        "ESTADO Y PAÍS"
+      ]
+    ]
+      .map(
+        ([key, label]) =>
+          renderGroup(
+            key,
+            label
+          )
+      )
+      .join("");
 
 
   document
-    .querySelectorAll(".details-btn")
+    .querySelectorAll(
+      ".details-btn"
+    )
     .forEach(button => {
 
       button.addEventListener(
@@ -779,14 +872,18 @@ function renderTimeline() {
               `details-${button.dataset.details}`
             );
 
-          if (!panel) return;
 
-          panel.classList.toggle("open");
+          panel.classList.toggle(
+            "open"
+          );
+
 
           button.textContent =
-            panel.classList.contains("open")
+            panel.classList.contains(
+              "open"
+            )
               ? "Cerrar ↑"
-              : "Ver →";
+              : "Entender mejor →";
 
         }
       );
@@ -794,129 +891,269 @@ function renderTimeline() {
     });
 
 
-  bindGlossaryTerms(timeline);
+  bindGlossaryTerms();
 
-  updateTodayDashboard();
 }
 
 
 /* =========================================================
-   COLOMBIA EN 2 MINUTOS
+   TERMINOS DESTACADOS
    ========================================================= */
 
-function getBriefEvents() {
+function getRelevantTerms() {
 
-  const dayEvents =
-    [...getDayEvents()];
-
-
-  dayEvents.sort((a, b) => {
-
-    const importanceOrder = {
-      esencial: 1,
-      relevante: 2,
-      archivo: 3
-    };
-
-
-    const aImportance =
-      importanceOrder[
-        String(a.importance || "")
-          .toLowerCase()
-      ] || 10;
+  const text =
+    getEventsForDate()
+      .map(
+        event =>
+          [
+            event.title,
+            event.summary,
+            event.note || "",
+            event.whyItMatters || "",
+            ...(event.related || [])
+          ].join(" ")
+      )
+      .join(" ")
+      .toLowerCase();
 
 
-    const bImportance =
-      importanceOrder[
-        String(b.importance || "")
-          .toLowerCase()
-      ] || 10;
+  const matches =
+    glossaryEntries()
+      .filter(
+        ([term]) =>
+          text.includes(
+            term.toLowerCase()
+          )
+      )
+      .map(
+        ([term]) => term
+      );
 
 
-    if (aImportance !== bImportance) {
-      return aImportance - bImportance;
-    }
+  if (matches.length) {
+    return matches.slice(0, 4);
+  }
 
 
-    return (
-      (GROUP_ORDER[a.group] || 9) -
-      (GROUP_ORDER[b.group] || 9)
+  return glossaryEntries()
+    .slice(0, 4)
+    .map(
+      ([term]) => term
     );
 
-  });
-
-
-  return dayEvents.slice(0, 5);
 }
 
 
-function renderBrief() {
+function renderTermChips() {
 
-  const items =
-    getBriefEvents();
-
-
-  if (briefTitle) {
-    briefTitle.textContent =
-      longDate(currentDate);
-  }
+  const terms =
+    getRelevantTerms();
 
 
-  if (!items.length) {
+  const container =
+    document.getElementById(
+      "termChips"
+    );
 
-    briefList.innerHTML = `
-      <div class="brief-empty">
-        No hay acontecimientos relevantes documentados para esta fecha.
-      </div>
-    `;
+
+  if (!terms.length) {
+
+    document.getElementById(
+      "understandStrip"
+    ).style.display =
+      "none";
 
     return;
+
   }
 
 
-  briefList.innerHTML =
-    items.map((item, index) => `
+  document.getElementById(
+    "understandStrip"
+  ).style.display =
+    "";
 
-      <button
-        class="brief-item"
-        data-brief-jump="${item.id}"
-        type="button"
-      >
 
-        <span class="brief-number">
-          ${index + 1}
-        </span>
+  container.innerHTML =
+    terms
+      .map(
+        term => `
+          <button
+            class="term-chip"
+            type="button"
+            data-term="${encodeURIComponent(term)}"
+          >
+            ${term}
+          </button>
+        `
+      )
+      .join("");
 
-        <span class="brief-content">
 
-          <span class="brief-group">
-            ${GROUP_NAMES[item.group] || ""}
-            ·
-            ${item.category}
-          </span>
+  bindGlossaryTerms();
 
-          <strong>
-            ${item.title}
-          </strong>
+}
 
-          <span class="brief-summary">
-            ${item.summary}
-          </span>
 
-        </span>
+/* =========================================================
+   GLOSSARY EVENTS
+   ========================================================= */
 
-        <span class="brief-arrow">
-          →
-        </span>
+function bindGlossaryTerms() {
 
-      </button>
+  document
+    .querySelectorAll(
+      "[data-term]"
+    )
+    .forEach(button => {
 
-    `).join("");
+      button.onclick =
+        () => {
+
+          const term =
+            decodeURIComponent(
+              button.dataset.term
+            );
+
+          openTerm(term);
+
+        };
+
+    });
+
+}
+
+
+/* =========================================================
+   BUSCAR
+   ========================================================= */
+
+function doSearch(query) {
+
+  const q =
+    query
+      .trim()
+      .toLowerCase();
+
+
+  if (!q) {
+
+    searchResults.innerHTML =
+      "";
+
+    return;
+
+  }
+
+
+  const eventHits =
+    events.filter(event => {
+
+      const content = [
+        event.title,
+        event.summary,
+        event.category,
+        event.sourceName,
+        event.status,
+        event.note || "",
+        event.whyItMatters || "",
+        ...(event.related || [])
+      ]
+        .join(" ")
+        .toLowerCase();
+
+
+      return content.includes(q);
+
+    });
+
+
+  const glossaryHits =
+    glossaryEntries()
+      .filter(
+        ([term, definition]) =>
+          `${term} ${definition}`
+            .toLowerCase()
+            .includes(q)
+      );
+
+
+  const eventHtml =
+    eventHits
+      .slice(0, 30)
+      .map(
+        event => `
+          <button
+            type="button"
+            class="search-hit"
+            data-jump="${event.id}"
+            data-date="${event.eventDate}"
+          >
+
+            <strong>
+              ${event.title}
+            </strong>
+
+            <span>
+              ${
+                event.groupLabel ||
+                groupConfig[
+                  event.group
+                ]?.label ||
+                ""
+              }
+              ·
+              ${formatLongDate(
+                event.eventDate
+              )}
+            </span>
+
+          </button>
+        `
+      )
+      .join("");
+
+
+  const glossaryHtml =
+    glossaryHits
+      .slice(0, 15)
+      .map(
+        ([term, definition]) => `
+          <button
+            type="button"
+            class="glossary-hit"
+            data-search-term="${encodeURIComponent(term)}"
+          >
+
+            <strong>
+              ${term}
+            </strong>
+
+            <span>
+              ${definition}
+            </span>
+
+          </button>
+        `
+      )
+      .join("");
+
+
+  searchResults.innerHTML =
+    eventHtml +
+    glossaryHtml ||
+    `
+      <div class="empty-group">
+        No encontramos resultados.
+        Prueba otro término.
+      </div>
+    `;
 
 
   document
     .querySelectorAll(
-      "[data-brief-jump]"
+      "[data-jump]"
     )
     .forEach(button => {
 
@@ -924,406 +1161,530 @@ function renderBrief() {
         "click",
         () => {
 
-          briefDialog?.close();
+          selectedDate =
+            button.dataset.date;
 
-          requestAnimationFrame(() => {
 
-            document
-              .getElementById(
-                button.dataset.briefJump
-              )
-              ?.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-              });
+          activeGroup =
+            null;
 
-          });
+
+          renderAll();
+
+
+          searchDialog.close();
+
+
+          setTimeout(
+            () => {
+
+              document
+                .getElementById(
+                  button.dataset.jump
+                )
+                ?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center"
+                });
+
+            },
+            60
+          );
 
         }
       );
 
     });
-}
-
-
-/* =========================================================
-   CAMBIO DE FECHA
-   ========================================================= */
-
-function goToDate(date) {
-
-  if (!availableDates.includes(date)) {
-
-    alert(
-      "Todavía no hay registros cargados para esa fecha."
-    );
-
-    return;
-  }
-
-
-  currentDate =
-    date;
-
-
-  renderTimeline();
-
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-
-
-/* =========================================================
-   BÚSQUEDA
-   ========================================================= */
-
-function doSearch(query) {
-
-  const q =
-    query.trim().toLowerCase();
-
-
-  if (!q) {
-
-    searchResults.innerHTML = `
-      <div class="search-empty">
-
-        <strong>
-          ¿Qué quieres comprobar?
-        </strong>
-
-        <span>
-          Busca una persona, institución, hecho
-          o concepto.
-        </span>
-
-      </div>
-    `;
-
-    return;
-  }
-
-
-  const hits =
-    events.filter(item => {
-
-      const searchableText = [
-        item.title,
-        item.summary,
-        item.category,
-        item.sourceName,
-        item.groupLabel,
-        item.status,
-        item.note,
-        item.whyItMatters,
-        ...(item.related || [])
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase();
-
-
-      return searchableText.includes(q);
-
-    });
-
-
-  const glossaryHits =
-    typeof glossary !== "undefined" &&
-    glossary
-      ? Object.entries(glossary)
-          .filter(([term, definition]) =>
-            `${term} ${definition}`
-              .toLowerCase()
-              .includes(q)
-          )
-      : [];
-
-
-  const eventResults =
-    hits.length
-      ? `
-        <div class="search-section-title">
-          HECHOS
-        </div>
-
-        ${hits.map(item => `
-          <button
-            class="search-hit"
-            data-jump="${item.id}"
-            data-date="${item.eventDate}"
-            type="button"
-          >
-
-            <strong>
-              ${item.title}
-            </strong>
-
-            <span>
-              ${GROUP_NAMES[item.group] || ""}
-              ·
-              ${item.category}
-              ·
-              ${formatDate(item.eventDate)}
-            </span>
-
-          </button>
-        `).join("")}
-      `
-      : "";
-
-
-  const glossaryResults =
-    glossaryHits.length
-      ? `
-        <div class="search-section-title">
-          ENTIENDE
-        </div>
-
-        ${glossaryHits.map(
-          ([term, definition]) => `
-            <button
-              class="search-hit glossary-search-hit"
-              data-glossary="${encodeURIComponent(term)}"
-              type="button"
-            >
-
-              <strong>
-                ${term}
-              </strong>
-
-              <span>
-                ${definition}
-              </span>
-
-            </button>
-          `
-        ).join("")}
-      `
-      : "";
-
-
-  searchResults.innerHTML =
-    eventResults ||
-    glossaryResults
-      ? eventResults + glossaryResults
-      : `
-        <div class="search-hit">
-          <strong>Sin resultados</strong>
-          <span>Prueba otro término.</span>
-        </div>
-      `;
 
 
   document
-    .querySelectorAll("[data-jump]")
+    .querySelectorAll(
+      "[data-search-term]"
+    )
     .forEach(button => {
 
       button.addEventListener(
         "click",
         () => {
 
+          const term =
+            decodeURIComponent(
+              button.dataset.searchTerm
+            );
+
+
           searchDialog.close();
 
-          currentDate =
-            button.dataset.date;
-
-          renderTimeline();
-
-
-          requestAnimationFrame(() => {
-
-            document
-              .getElementById(
-                button.dataset.jump
-              )
-              ?.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-              });
-
-          });
+          openTerm(term);
 
         }
       );
 
     });
 
-
-  bindGlossarySearch();
 }
 
 
 /* =========================================================
-   EVENTOS UI
+   GLOSARIO COMPLETO
+   ========================================================= */
+
+function renderGlossary(
+  query = ""
+) {
+
+  const q =
+    query
+      .trim()
+      .toLowerCase();
+
+
+  const entries =
+    glossaryEntries()
+      .filter(
+        ([term, definition]) => {
+
+          if (!q) {
+            return true;
+          }
+
+
+          return (
+            `${term} ${definition}`
+              .toLowerCase()
+              .includes(q)
+          );
+
+        }
+      )
+      .sort(
+        (a, b) =>
+          a[0].localeCompare(
+            b[0],
+            "es"
+          )
+      );
+
+
+  glossaryResults.innerHTML =
+    entries.length
+      ? entries
+          .map(
+            ([term, definition]) => `
+              <button
+                type="button"
+                class="glossary-hit"
+                data-full-term="${encodeURIComponent(term)}"
+              >
+
+                <strong>
+                  ${term}
+                </strong>
+
+                <span>
+                  ${definition}
+                </span>
+
+              </button>
+            `
+          )
+          .join("")
+      : `
+          <div class="empty-group">
+            No encontramos ese concepto.
+          </div>
+        `;
+
+
+  document
+    .querySelectorAll(
+      "[data-full-term]"
+    )
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          const term =
+            decodeURIComponent(
+              button.dataset.fullTerm
+            );
+
+
+          glossaryDialog.close();
+
+          openTerm(term);
+
+        }
+      );
+
+    });
+
+}
+
+
+/* =========================================================
+   FECHA
+   ========================================================= */
+
+function selectDate(date) {
+
+  if (!date) {
+    return;
+  }
+
+
+  selectedDate =
+    date;
+
+
+  activeGroup =
+    null;
+
+
+  renderAll();
+
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+}
+
+
+/* =========================================================
+   FILTER POR GRUPO
+   ========================================================= */
+
+function filterByGroup(group) {
+
+  activeGroup =
+    group;
+
+
+  document.getElementById(
+    "clearGroupFilter"
+  ).hidden =
+    false;
+
+
+  renderTimeline();
+
+
+  document
+    .querySelector(
+      ".events-section"
+    )
+    ?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+}
+
+
+function clearGroupFilter() {
+
+  activeGroup =
+    null;
+
+
+  document.getElementById(
+    "clearGroupFilter"
+  ).hidden =
+    true;
+
+
+  renderTimeline();
+
+}
+
+
+/* =========================================================
+   APOYO
+   ========================================================= */
+
+function openSupport() {
+
+  supportDialog.showModal();
+
+}
+
+
+async function copyBrebKey() {
+
+  const key =
+    document.getElementById(
+      "brebKey"
+    ).textContent.trim();
+
+
+  const status =
+    document.getElementById(
+      "copyStatus"
+    );
+
+
+  try {
+
+    await navigator.clipboard.writeText(
+      key
+    );
+
+
+    status.textContent =
+      "Llave copiada ✓";
+
+
+  } catch {
+
+    status.textContent =
+      `Llave: ${key}`;
+
+  }
+
+
+  setTimeout(
+    () => {
+
+      status.textContent =
+        "";
+
+    },
+    2200
+  );
+
+}
+
+
+/* =========================================================
+   NAV
+   ========================================================= */
+
+function setActiveNav(section) {
+
+  document
+    .querySelectorAll(
+      ".nav-item"
+    )
+    .forEach(button => {
+
+      button.classList.toggle(
+        "active",
+        button.dataset.section === section
+      );
+
+    });
+
+}
+
+
+/* =========================================================
+   RENDER GENERAL
+   ========================================================= */
+
+function renderAll() {
+
+  renderHero();
+
+  updateCounts();
+
+  renderBrief();
+
+  renderTermChips();
+
+  renderTimeline();
+
+
+  dateInput.value =
+    selectedDate;
+
+
+  dateInput.max =
+    latestDate;
+
+}
+
+
+/* =========================================================
+   EVENT LISTENERS
    ========================================================= */
 
 document
-  .getElementById("openBrief")
-  ?.addEventListener(
+  .getElementById(
+    "openSearch"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      searchDialog.showModal();
+
+      setTimeout(
+        () =>
+          searchInput.focus(),
+        40
+      );
+
+    }
+  );
+
+
+document
+  .getElementById(
+    "navSearch"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      searchDialog.showModal();
+
+      setTimeout(
+        () =>
+          searchInput.focus(),
+        40
+      );
+
+    }
+  );
+
+
+searchInput.addEventListener(
+  "input",
+  event =>
+    doSearch(
+      event.target.value
+    )
+);
+
+
+document
+  .getElementById(
+    "goToDate"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      dateDialog.showModal();
+
+    }
+  );
+
+
+document
+  .getElementById(
+    "dateSubmit"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      const value =
+        dateInput.value;
+
+
+      dateDialog.close();
+
+      selectDate(value);
+
+      setActiveNav("dia");
+
+    }
+  );
+
+
+document
+  .getElementById(
+    "openBrief"
+  )
+  .addEventListener(
     "click",
     () => {
 
       renderBrief();
 
-      briefDialog?.showModal();
+      briefDialog.showModal();
 
     }
   );
 
 
 document
-  .getElementById("openSearch")
-  ?.addEventListener(
+  .getElementById(
+    "supportBtn"
+  )
+  .addEventListener(
     "click",
-    () => {
-
-      searchDialog?.showModal();
-
-      if (searchInput) {
-        searchInput.value = "";
-        searchInput.placeholder =
-          "Ej. terremoto, Petro, Congreso, imputación…";
-      }
-
-      doSearch("");
-
-    }
+    openSupport
   );
 
 
 document
-  .getElementById("navSearch")
-  ?.addEventListener(
+  .getElementById(
+    "topSupportBtn"
+  )
+  .addEventListener(
     "click",
-    () => {
-
-      searchDialog?.showModal();
-
-      if (searchInput) {
-        searchInput.value = "";
-        searchInput.placeholder =
-          "Ej. terremoto, Petro, Congreso, imputación…";
-      }
-
-      doSearch("");
-
-    }
+    openSupport
   );
 
 
-searchInput?.addEventListener(
+document
+  .getElementById(
+    "copyKeyBtn"
+  )
+  .addEventListener(
+    "click",
+    copyBrebKey
+  );
+
+
+document
+  .getElementById(
+    "clearGroupFilter"
+  )
+  .addEventListener(
+    "click",
+    clearGroupFilter
+  );
+
+
+document
+  .querySelectorAll(
+    "[data-filter-group]"
+  )
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () =>
+        filterByGroup(
+          button.dataset.filterGroup
+        )
+    );
+
+  });
+
+
+glossarySearch.addEventListener(
   "input",
-  event => {
-    doSearch(event.target.value);
-  }
+  event =>
+    renderGlossary(
+      event.target.value
+    )
 );
 
 
-document
-  .getElementById("goToDate")
-  ?.addEventListener(
-    "click",
-    () =>
-      dateDialog?.showModal()
-  );
-
+/* CERRAR DIALOGS */
 
 document
-  .getElementById("dateSubmit")
-  ?.addEventListener(
-    "click",
-    () => {
-
-      const selected =
-        dateInput.value;
-
-      dateDialog?.close();
-
-      goToDate(selected);
-
-    }
-  );
-
-
-const openSupport =
-  () => supportDialog?.showModal();
-
-
-document
-  .getElementById("supportBtn")
-  ?.addEventListener(
-    "click",
-    openSupport
-  );
-
-
-document
-  .getElementById("topSupportBtn")
-  ?.addEventListener(
-    "click",
-    openSupport
-  );
-
-
-document
-  .getElementById("copyKeyBtn")
-  ?.addEventListener(
-    "click",
-    async () => {
-
-      const key =
-        document
-          .getElementById("brebKey")
-          ?.textContent
-          ?.trim();
-
-      const status =
-        document.getElementById(
-          "copyStatus"
-        );
-
-
-      if (!key) return;
-
-
-      try {
-
-        await navigator.clipboard
-          .writeText(key);
-
-        if (status) {
-          status.textContent =
-            "Llave copiada ✓";
-        }
-
-      } catch {
-
-        if (status) {
-          status.textContent =
-            `Llave: ${key}`;
-        }
-
-      }
-
-
-      setTimeout(() => {
-
-        if (status) {
-          status.textContent = "";
-        }
-
-      }, 2200);
-
-    }
-  );
-
-
-document
-  .querySelectorAll(".nav-item")
+  .querySelectorAll(
+    "[data-close-dialog]"
+  )
   .forEach(button => {
 
     button.addEventListener(
@@ -1331,69 +1692,84 @@ document
       () => {
 
         document
-          .querySelectorAll(".nav-item")
-          .forEach(item =>
-            item.classList.remove("active")
-          );
+          .getElementById(
+            button.dataset.closeDialog
+          )
+          ?.close();
+
+      }
+    );
+
+  });
 
 
-        button.classList.add("active");
+/* NAV */
+
+document
+  .querySelectorAll(
+    ".nav-item"
+  )
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        const section =
+          button.dataset.section;
+
+
+        setActiveNav(
+          section
+        );
 
 
         if (
-          button.dataset.section === "hoy"
+          section === "hoy"
         ) {
 
-          currentDate =
-            availableDates[
-              availableDates.length - 1
-            ] || currentDate;
-
-          renderTimeline();
-
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+          selectDate(
+            latestDate
+          );
 
         }
 
 
         if (
-          button.dataset.section === "dia"
+          section === "dia"
+        ) {
+
+          dateDialog.showModal();
+
+        }
+
+
+        if (
+          section === "entiende"
+        ) {
+
+          renderGlossary();
+
+          glossarySearch.value =
+            "";
+
+          glossaryDialog.showModal();
+
+        }
+
+
+        if (
+          section === "mas"
         ) {
 
           document
-            .querySelector(".day-node")
+            .querySelector(
+              ".support-card"
+            )
             ?.scrollIntoView({
               behavior: "smooth",
-              block: "start"
+              block: "center"
             });
-
-        }
-
-
-        if (
-          button.dataset.section === "entiende"
-        ) {
-
-          searchDialog?.showModal();
-
-          if (searchInput) {
-
-            searchInput.value = "";
-
-            searchInput.placeholder =
-              "Busca un término…";
-
-          }
-
-          renderGlossaryBrowser();
-
-          setTimeout(
-            () => searchInput?.focus(),
-            100
-          );
 
         }
 
@@ -1403,20 +1779,61 @@ document
   });
 
 
-if (
-  dateInput &&
-  availableDates.length
-) {
+/* BRAND */
 
-  dateInput.min =
-    availableDates[0];
+document
+  .getElementById(
+    "brandHome"
+  )
+  .addEventListener(
+    "click",
+    event => {
 
-  dateInput.max =
-    availableDates[
-      availableDates.length - 1
-    ];
+      event.preventDefault();
 
-}
+      setActiveNav(
+        "hoy"
+      );
+
+      selectDate(
+        latestDate
+      );
+
+    }
+  );
 
 
-renderTimeline();
+/* ESCUCHAR TERM BUTTONS */
+
+document.addEventListener(
+  "click",
+  event => {
+
+    const button =
+      event.target.closest(
+        ".glossary-term"
+      );
+
+
+    if (!button) {
+      return;
+    }
+
+
+    const term =
+      decodeURIComponent(
+        button.dataset.term
+      );
+
+
+    openTerm(term);
+
+  }
+);
+
+
+/* =========================================================
+   INICIO
+   ========================================================= */
+
+renderAll();

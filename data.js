@@ -106,6 +106,10 @@ const dayMeta = {
   "2026-09-02": {
     status: "VERIFICADO ✓",
     subtitle: "Seguridad, justicia, contratación pública, control institucional y reconstrucción."
+  },
+  "2026-09-03": {
+    status: "EN ACTUALIZACIÓN",
+    subtitle: "Justicia, seguridad, instituciones, política y control de recursos públicos."
   }
 };
 
@@ -1643,9 +1647,7 @@ const events = [
     related: ["Cesar", "Pelaya", "drones", "seguridad"],
     extraSources: []
   },
-
-
-  // =========================================================
+    // =========================================================
   // 29 AGO
   // =========================================================
 
@@ -2066,9 +2068,7 @@ const events = [
     note: "La captura en España y la existencia de un requerimiento de extradición no significan que la extradición a Colombia se haya ejecutado ese mismo día. Las vinculaciones criminales corresponden a señalamientos de las autoridades.",
     extraSources: []
   },
-
-
-  // =========================================================
+    // =========================================================
   // 02 SEP
   // =========================================================
 
@@ -2329,11 +2329,283 @@ const events = [
     whyItMatters: "El régimen disciplinario establece procedimientos y responsabilidades aplicables a servidores públicos y otros sujetos sometidos a control disciplinario.",
     note: "El inicio del trabajo técnico no significa que exista todavía una reforma aprobada. La propuesta deberá pasar por las etapas jurídicas correspondientes.",
     extraSources: []
+  },
+
+  // =========================================================
+  // 03 SEP
+  // =========================================================
+
+  {
+    id: "corte-suprema-visita-03",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "JUSTICIA",
+    importance: "ESENCIAL",
+    title: "Presidente visita la Corte Suprema y afirma que respetará la independencia judicial",
+    summary: "Abelardo De La Espriella se reunió con la Sala Plena de la Corte Suprema de Justicia y afirmó que las decisiones de jueces y magistrados serán respetadas y que el Ejecutivo no interferirá en la autonomía de la Rama Judicial.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Las-decisiones-judiciales-seran-respetadas-desde-el-mas-humilde-juez-hasta-260903.aspx",
+    status: "Declaración oficial",
+    related: ["Corte Suprema de Justicia", "independencia judicial", "Presidencia", "Rama Judicial"],
+    whyItMatters: "La relación entre el Ejecutivo y las altas cortes es central para la separación de poderes y el funcionamiento del Estado de derecho.",
+    note: "La fuente oficial documenta el compromiso expresado por el Presidente. La declaración no constituye por sí sola una verificación independiente sobre el comportamiento futuro del Gobierno.",
+    extraSources: []
+  },
+
+  {
+    id: "directiva-comunicaciones-03",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "COMUNICACIONES",
+    importance: "ESENCIAL",
+    title: "Gobierno expide su primera directiva para coordinar la comunicación institucional",
+    summary: "La Directiva Presidencial No. 01 establece que decisiones, anuncios, políticas, cifras y resultados del Ejecutivo se divulguen principalmente mediante canales institucionales y que altos funcionarios coordinen previamente entrevistas y declaraciones con la Secretaría para las Comunicaciones y Prensa de la Presidencia.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    legalDate: "2026-09-03",
+    sourceType: "Directiva presidencial reportada por prensa",
+    sourceName: "Cambio",
+    sourceUrl: "https://cambiocolombia.com/poder/articulo/2026/9/ministros-podran-dar-entrevistas-pero-con-autorizacion-de-presidencia-detalles-de-la-nueva-directiva-del-gobierno-de-la-espriella",
+    status: "Expedida",
+    related: ["Directiva Presidencial No. 01", "comunicación institucional", "medios de comunicación", "Presidencia"],
+    whyItMatters: "Define reglas para la manera en que ministros, directores y otras entidades del Ejecutivo comunican información oficial y se relacionan con los medios.",
+    note: "La directiva conocida no establece una categoría de 'medios amigos'. Esa expresión apareció en reportes sobre una reunión interna anterior y no se presenta como contenido de la Directiva Presidencial No. 01.",
+    extraSources: [
+      ["La República", "https://www.larepublica.co/economia/asi-funcionara-la-nueva-estrategia-de-comunicacion-del-gobierno-de-de-la-espriella-4473930"]
+    ]
+  },
+
+  {
+    id: "distritos-mineros-proyecto-03",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "MINERÍA",
+    importance: "RELEVANTE",
+    title: "MinMinas anuncia proyecto para derogar las resoluciones de los Distritos Mineros Especiales",
+    summary: "El Ministerio de Minas y Energía presentó para comentarios un proyecto de resolución orientado a derogar las diez resoluciones que delimitaron Distritos Mineros Especiales para la Diversificación Productiva.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Ministerio de Minas y Energía",
+    sourceUrl: "https://www.minenergia.gov.co/es/servicio-al-ciudadano/foros/derogar-las-resoluciones-mediante-las-cuales-se-delimitaron-los-distritos-mineros-especiales-para-la-diversificacion-productiva/",
+    status: "Proyecto en consulta",
+    related: ["Distritos Mineros Especiales", "Ministerio de Minas y Energía", "minería", "consulta pública"],
+    whyItMatters: "La eventual derogatoria modificaría una política territorial minera adoptada durante el Gobierno anterior.",
+    note: "A esta fecha el Ministerio mantiene publicado un proyecto de resolución para comentarios. Por eso no se presenta la derogatoria jurídica como ya consumada.",
+    extraSources: []
+  },
+
+  {
+    id: "alianza-verde-independencia-03",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN",
+    category: "PARTIDOS",
+    importance: "ESENCIAL",
+    title: "Alianza Verde se declara independiente frente al Gobierno",
+    summary: "La Dirección Nacional de Alianza Verde decidió asumir una posición de independencia frente al Gobierno de Abelardo De La Espriella, en lugar de declararse formalmente en oposición.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Decisión partidista reportada por prensa",
+    sourceName: "Cambio",
+    sourceUrl: "https://cambiocolombia.com/poder/articulo/2026/9/alianza-verde-independencia-abelardo-espriella-pacto-historico-disputas",
+    status: "Decisión partidista",
+    related: ["Alianza Verde", "independencia", "oposición", "Gobierno"],
+    whyItMatters: "La decisión ayuda a definir el mapa formal de relaciones entre partidos y Gobierno durante el nuevo periodo presidencial.",
+    note: "La categoría de esta tarjeta dentro de la interfaz es OPOSICIÓN por corresponder al espacio político no gubernamental; jurídicamente, Alianza Verde decidió declararse independiente, no partido de oposición.",
+    extraSources: [
+      ["Semana", "https://www.semana.com/politica/articulo/la-alianza-verde-se-declaro-en-independencia-frente-al-gobierno-de-abelardo-de-la-espriella-el-ala-petrista-perdio-el-pulso/202653/"]
+    ]
+  },
+
+  {
+    id: "bombardeos-menores-cautelar-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA Y DERECHOS HUMANOS",
+    importance: "ESENCIAL",
+    title: "Juzgado dicta medida provisional sobre bombardeos cuando exista información de menores reclutados",
+    summary: "El Juzgado 34 de Familia de Bogotá ordenó de manera provisional que las autoridades se abstengan de ejecutar operaciones aéreas ofensivas en escenarios cobijados por la medida mientras se resuelve de fondo una tutela relacionada con la protección de menores reclutados.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    legalDate: "2026-09-03",
+    sourceType: "Decisión judicial reportada por prensa",
+    sourceName: "Cambio",
+    sourceUrl: "https://cambiocolombia.com/justicia/articulo/2026/9/jueza-le-ordena-al-gobierno-de-abelardo-de-la-espriella-que-suspenda-temporalmente-los-bombardeos",
+    status: "Medida cautelar provisional",
+    related: ["Juzgado 34 de Familia", "bombardeos", "menores reclutados", "tutela", "Fuerzas Militares"],
+    whyItMatters: "La decisión judicial incide de manera directa en el uso de operaciones aéreas ofensivas y en las obligaciones de protección de menores reclutados por grupos armados.",
+    note: "No es una prohibición definitiva de todos los bombardeos en Colombia. Es una medida provisional dentro de una acción de tutela mientras se adopta una decisión de fondo.",
+    extraSources: [
+      ["Canal 1", "https://canal1.com.co/noticias/nacional/juzgado-ordena-suspender-ataques-aereos-donde-haya-menores-reclutados/"]
+    ]
+  },
+
+  {
+    id: "pae-suspension-proceso-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTRATACIÓN PÚBLICA",
+    importance: "ESENCIAL",
+    title: "Colombia Compra Eficiente suspende temporalmente un proceso logístico del PAE",
+    summary: "La Agencia Nacional de Contratación Pública suspendió temporalmente el proceso CCENEG-098-01-2026 después de que la Procuraduría formulara observaciones jurídicas, técnicas, económicas y operativas que requerían revisión adicional.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/colombia-compra-eficiente-acoge-recomendacion-preventiva-procuraduria-sobre-proceso-logistico-pae.aspx",
+    status: "Suspensión temporal preventiva",
+    related: ["PAE", "Colombia Compra Eficiente", "Procuraduría", "contratación pública"],
+    whyItMatters: "El PAE moviliza recursos públicos destinados a alimentación escolar y el proceso de selección quedó sometido a revisión preventiva antes de una decisión definitiva.",
+    note: "La suspensión puede durar hasta 30 días y puede levantarse antes. Recae exclusivamente sobre el proceso de selección y no suspende la prestación del Programa de Alimentación Escolar. La actuación preventiva no demuestra por sí sola corrupción.",
+    extraSources: []
+  },
+
+  {
+    id: "cne-mesa-directiva-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "INSTITUCIONES",
+    importance: "RELEVANTE",
+    title: "Juan Felipe Lemos es elegido presidente del Consejo Nacional Electoral",
+    summary: "La Sala Plena del CNE eligió a Juan Felipe Lemos Uribe como presidente del organismo y a José Antonio Parra Fandiño como vicepresidente.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Decisión institucional reportada por prensa",
+    sourceName: "El Heraldo",
+    sourceUrl: "https://www.elheraldo.co/colombia/2026/09/03/juan-felipe-lemos-es-el-nuevo-presidente-del-consejo-nacional-electoral/",
+    status: "Elegidos",
+    related: ["CNE", "Juan Felipe Lemos", "José Antonio Parra", "mesa directiva"],
+    whyItMatters: "La mesa directiva encabezará una de las principales autoridades administrativas electorales durante el inicio del nuevo periodo institucional.",
+    note: "La elección de la mesa directiva es distinta de la elección y posesión de los nueve magistrados del CNE, hechos registrados en días anteriores.",
+    extraSources: []
+  },
+
+  {
+    id: "explosivos-charta-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "ESENCIAL",
+    title: "Ejército ubica y destruye 250 kilogramos de explosivo R1 en Charta, Santander",
+    summary: "Ejército y Dijín, con mecanismos de cooperación del FBI, localizaron un depósito ilegal con 250 kilogramos de explosivo R1 en la vereda Ovejera de Charta. El material fue destruido de forma controlada.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Ejército Nacional",
+    sourceUrl: "https://www.ejercito.mil.co/ejercito-nacional-neutraliza-posible-accion-terrorista-del-gao-eln-tras-la-ubicacion-de-250-kilogramos-de-explosivo-r1-en-charta-santander-643705",
+    status: "Atribución oficial",
+    related: ["Charta", "Santander", "ELN", "explosivo R1", "Dijín"],
+    whyItMatters: "La cantidad y ubicación del material representaban, según las autoridades, un riesgo para población civil, Fuerza Pública e infraestructura.",
+    note: "La pertenencia del depósito al Frente de Guerra Nororiental del ELN corresponde a la atribución oficial del Ejército.",
+    extraSources: []
+  },
+
+  {
+    id: "incautacion-cocaina-736-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD Y NARCOTRÁFICO",
+    importance: "RELEVANTE",
+    title: "Autoridades reportan incautación de 736 kilogramos de cocaína en operación marítima",
+    summary: "El presidente informó que autoridades colombianas, en coordinación con Estados Unidos y Guardacostas de Santa Marta, interceptaron una lancha rápida con 736 kilogramos de cocaína que tendría como destino República Dominicana.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Balance oficial reproducido por prensa",
+    sourceName: "Semana",
+    sourceUrl: "https://www.semana.com/confidenciales/articulo/abelardo-de-la-espriella-confirmo-golpe-al-narcotrafico-se-evito-la-distribucion-de-18-millones-de-dosis-de-cocaina/202611/",
+    status: "Incautación reportada",
+    related: ["cocaína", "Guardacostas", "Santa Marta", "República Dominicana", "narcotráfico"],
+    note: "Las estimaciones sobre número de dosis evitadas y afectación económica corresponden a cálculos divulgados por las autoridades y no se presentan como mediciones independientes.",
+    extraSources: []
+  },
+
+  {
+    id: "sinai-repatriacion-oficial-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "FUERZA PÚBLICA",
+    importance: "RELEVANTE",
+    title: "Ejército repatría y reemplaza a oficial del Batallón Colombia en el Sinaí mientras avanzan investigaciones",
+    summary: "El Ejército ordenó la repatriación y reemplazo del oficial que ejercía un cargo en el Batallón Colombia N.° 3 en la península del Sinaí mientras se adelantan actuaciones disciplinarias y otras investigaciones sobre presuntas conductas incompatibles con las políticas institucionales.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Ejército Nacional",
+    sourceUrl: "https://www.ejercito.mil.co/comunicado-de-prensa-643700",
+    status: "Investigaciones en curso",
+    related: ["Batallón Colombia", "Sinaí", "Ejército Nacional", "MFO", "investigación disciplinaria"],
+    whyItMatters: "La decisión involucra a una unidad colombiana desplegada en una misión internacional y activa controles disciplinarios e investigaciones de otras jurisdicciones.",
+    note: "La repatriación es una decisión administrativa y no equivale a una sanción o declaración de responsabilidad. Las conductas investigadas permanecen como presuntas.",
+    extraSources: []
+  },
+
+  {
+    id: "carlos-ramon-gonzalez-defensa-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA Y CORRUPCIÓN",
+    importance: "ESENCIAL",
+    title: "Tribunal ordena asignar defensor de oficio a Carlos Ramón González en proceso por el caso UNGRD",
+    summary: "La Sala Penal del Tribunal Superior de Bogotá ordenó a la Defensoría del Pueblo adelantar los trámites para asignar un abogado de oficio al exdirector del Dapre Carlos Ramón González Merchán, quien no compareció a la actuación judicial.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Actuación judicial reportada por prensa",
+    sourceName: "Semana",
+    sourceUrl: "https://www.semana.com/nacion/articulo/no-hay-noticia-de-don-carlos-ramon-gonzalez-tribunal-ordeno-que-se-le-designe-abogado-al-exdirector-del-dapre/202649/",
+    status: "Proceso penal en curso",
+    related: ["Carlos Ramón González", "UNGRD", "Dapre", "Tribunal Superior de Bogotá", "Defensoría del Pueblo"],
+    whyItMatters: "El caso UNGRD es uno de los principales procesos de corrupción vinculados a la administración anterior y esta actuación permite seguir su estado procesal.",
+    note: "La asignación de un defensor de oficio es una garantía procesal y no equivale a condena. Debe mantenerse separada la condición procesal del investigado o acusado de cualquier conclusión sobre responsabilidad penal.",
+    extraSources: []
+  },
+
+  {
+    id: "amenazas-magistrados-refuerzo-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA Y SEGURIDAD",
+    importance: "ESENCIAL",
+    title: "Autoridades refuerzan seguridad de magistrados y del Palacio de Justicia ante posibles amenazas",
+    summary: "El presidente de la Corte Suprema, Iván Mauricio Lenis, informó que autoridades investigan hechos que podrían comprometer la seguridad de magistrados y funcionarios de la Procuraduría y que la Policía reforzó medidas preventivas de protección.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Declaración institucional reportada por prensa",
+    sourceName: "El Espectador",
+    sourceUrl: "https://www.elespectador.com/judicial/ningun-funcionario-judicial-debe-afrontar-amenazas-presidente-de-corte-suprema/",
+    status: "En investigación",
+    related: ["Corte Suprema de Justicia", "Palacio de Justicia", "magistrados", "amenazas", "Policía Nacional"],
+    whyItMatters: "Las amenazas o riesgos contra operadores judiciales pueden afectar la independencia de la justicia y requieren esclarecimiento y protección institucional.",
+    note: "Los hechos y posibles responsables se encontraban bajo investigación. No se atribuye autoría mientras las autoridades competentes no la establezcan.",
+    extraSources: [
+      ["Ministerio de Justicia", "https://www.minjusticia.gov.co/Sala-de-prensa/Paginas/Ministerio-de-Justicia-rechaza-cualquier-acto-de-intimidacion-o-agresion-contra-Rama-Judicial.aspx"]
+    ]
+  },
+
+  {
+    id: "renta-joven-ciclo4-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "PROGRAMAS SOCIALES",
+    importance: "RELEVANTE",
+    title: "Comienza el cuarto ciclo de pagos de Renta Joven",
+    summary: "Prosperidad Social programó desde el 3 de septiembre el abono bancario para 1.557 participantes de Renta Joven. Los pagos por giro para otros 1.171 estudiantes comienzan el 4 y continúan hasta el 11 de septiembre.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-08-30",
+    effectiveDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Prosperidad Social",
+    sourceUrl: "https://prosperidadsocial.gov.co/Noticias/prosperidad-social-entregara-el-cuarto-ciclo-de-renta-joven-el-3-de-septiembre/",
+    status: "Ciclo de pagos iniciado",
+    related: ["Renta Joven", "Prosperidad Social", "transferencias monetarias"],
+    whyItMatters: "El ciclo afecta directamente a miles de participantes y fue reprogramado durante la transición hacia el Registro Universal de Ingresos.",
+    note: "El anuncio fue publicado el 30 de agosto, pero el hecho nuevo del 3 de septiembre es el inicio efectivo de los abonos bancarios previstos para esa fecha.",
+    extraSources: []
   }
 
 ];
-
-
 const glossary = {
 
   "posesión presidencial":
@@ -2502,5 +2774,24 @@ const glossary = {
     "Violaciones graves de las normas aplicables a los conflictos armados que pueden generar responsabilidad penal individual cuando se cumplen los elementos jurídicos correspondientes.",
 
   "crímenes de lesa humanidad":
-    "Determinados actos graves cometidos como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque, según los requisitos del derecho penal internacional."
+    "Determinados actos graves cometidos como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque, según los requisitos del derecho penal internacional.",
+
+  "independencia judicial":
+    "Principio según el cual jueces y tribunales deben decidir los asuntos sometidos a su conocimiento sin interferencias indebidas de otras ramas del poder, actores políticos o particulares.",
+
+  "medida cautelar":
+    "Decisión provisional adoptada por una autoridad judicial para proteger derechos o preservar una situación mientras se resuelve de fondo un proceso. No equivale necesariamente a una decisión definitiva.",
+
+  "defensor de oficio":
+    "Abogado asignado por el sistema de defensa pública para garantizar que una persona cuente con representación jurídica cuando no tiene o no designa un abogado particular.",
+
+  "partido independiente":
+    "En el Estatuto de la Oposición, organización política que no se declara de gobierno ni de oposición. Puede apoyar o controvertir decisiones del Ejecutivo según cada asunto.",
+
+  "Renta Joven":
+    "Programa de transferencias monetarias dirigido a población joven que cumple determinados requisitos de educación y focalización socioeconómica. Los pagos dependen de las condiciones y cronogramas definidos por Prosperidad Social.",
+
+  "proyecto de resolución":
+    "Texto normativo que una entidad publica para estudio, comentarios o trámite antes de adoptar una decisión administrativa definitiva. Un proyecto no equivale a una resolución ya expedida."
+
 };

@@ -100,8 +100,12 @@ const dayMeta = {
     subtitle: "Economía, seguridad, oposición e instituciones."
   },
   "2026-09-01": {
-    status: "",
-    subtitle: "Energía, instituciones y acontecimientos del país."
+    status: "VERIFICADO ✓",
+    subtitle: "Energía, instituciones, justicia y seguridad."
+  },
+  "2026-09-02": {
+    status: "VERIFICADO ✓",
+    subtitle: "Seguridad, justicia, contratación pública, control institucional y reconstrucción."
   }
 };
 
@@ -1996,17 +2000,335 @@ const events = [
     sourceName: "Comisión de Regulación de Energía y Gas",
     sourceUrl: "https://gestornormativo.creg.gov.co/gestor/entorno/novedades_resoluciones.html",
     status: "Vigente",
-    related: [
-      "CREG",
-      "energía",
-      "meta individual de consumo",
-      "ahorro de energía"
-    ],
+    related: ["CREG", "energía", "meta individual de consumo", "ahorro de energía"],
     whyItMatters: "La medida puede producir cobros adicionales para determinados usuarios que consuman por encima de su meta y beneficios monetarios para usuarios que logren ahorro reconocido.",
     note: "No es un aumento general de la tarifa de energía ni un programa de racionamiento. La regulación excluye a usuarios ubicados en municipios identificados por la UNGRD como afectados por el terremoto del 10 de agosto. La duración inicial del programa es de seis meses.",
     extraSources: [
       ["Resolución CREG 101 120 de 2026 · programa original", "https://gestornormativo.creg.gov.co/gestor/entorno/docs/resolucion_creg_101-120_2026.htm"]
     ]
+  },
+
+  {
+    id: "posesion-magistrados-cne-01",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "INSTITUCIONAL",
+    importance: "ESENCIAL",
+    title: "Nuevos magistrados del CNE toman posesión para el periodo 2026–2030",
+    summary: "Los nueve magistrados elegidos por el Congreso el 25 de agosto tomaron posesión de sus cargos en el Consejo Nacional Electoral.",
+    eventDate: "2026-09-01",
+    publishedDate: "2026-09-01",
+    sourceType: "Fuente institucional",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/",
+    status: "Verificado",
+    related: ["CNE", "Consejo Nacional Electoral", "magistrados", "posesión"],
+    whyItMatters: "El CNE es una de las principales autoridades administrativas electorales y tendrá responsabilidades sobre los procesos políticos y electorales del nuevo periodo.",
+    note: "La elección ocurrió el 25 de agosto. El hecho nuevo del 1 de septiembre es la posesión de los magistrados.",
+    extraSources: []
+  },
+
+  {
+    id: "reactivacion-46-ordenes-01",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA Y SEGURIDAD",
+    importance: "ESENCIAL",
+    title: "Fiscalía reactiva órdenes de captura contra 46 integrantes de tres estructuras armadas",
+    summary: "Tras la terminación de tres procesos de diálogo, la Fiscalía reactivó órdenes de captura que habían estado suspendidas contra integrantes de las estructuras involucradas.",
+    eventDate: "2026-09-01",
+    publishedDate: "2026-09-02",
+    sourceType: "Actuación judicial reportada por prensa",
+    sourceName: "DW",
+    sourceUrl: "https://amp.dw.com/es/colombia-reactiva-%C3%B3rdenes-de-captura-contra-46-armados/a-78657513",
+    status: "Órdenes reactivadas",
+    related: ["orden de captura", "Fiscalía", "Calarcá", "ACSN", "procesos de paz"],
+    whyItMatters: "La terminación de los procesos de diálogo tuvo consecuencias judiciales concretas para personas que habían contado con suspensiones temporales de órdenes de captura.",
+    note: "Una orden de captura vigente no significa que la persona haya sido capturada ni condenada.",
+    extraSources: []
+  },
+
+  {
+    id: "captura-pirry-espana-01",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA Y SEGURIDAD",
+    importance: "RELEVANTE",
+    title: "Autoridades reportan captura en España de alias Pirry, requerido para extradición",
+    summary: "Jhonatan Alexander Castrillón Arango, alias Pirry, fue capturado en Tarragona, España. Las autoridades colombianas lo señalan como segundo cabecilla de La Mesa y reportaron que tenía circular roja de Interpol.",
+    eventDate: "2026-09-01",
+    publishedDate: "2026-09-01",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Cayo-en-Espana-alias-Pirry-segundo-cabecilla-de-la-La-Mesa-organizacion-narcoterrorista-que-delinquia-260801.aspx",
+    status: "Capturado · requerido para extradición",
+    related: ["alias Pirry", "La Mesa", "Interpol", "España", "extradición"],
+    note: "La captura en España y la existencia de un requerimiento de extradición no significan que la extradición a Colombia se haya ejecutado ese mismo día. Las vinculaciones criminales corresponden a señalamientos de las autoridades.",
+    extraSources: []
+  },
+
+
+  // =========================================================
+  // 02 SEP
+  // =========================================================
+
+  {
+    id: "balance-seguridad-gobierno-02",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SEGURIDAD",
+    importance: "ESENCIAL",
+    title: "Gobierno reporta 18 capturas y siete sometimientos a la justicia en las últimas 24 horas",
+    summary: "Presidencia informó un balance de 18 capturas, siete sometimientos a la justicia, cuatro menores recuperados y un integrante del Clan del Golfo muerto en operaciones durante las últimas 24 horas.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Balance oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/No-vine-a-negociar-con-asesinos-extorsionistas-y-reclutadores-de-menores-260902.aspx",
+    status: "Balance oficial",
+    related: ["Fuerza Pública", "capturas", "sometimiento a la justicia", "Clan del Golfo", "narcotráfico"],
+    whyItMatters: "Permite seguir de forma acumulativa y diaria la política de seguridad del Gobierno, diferenciando los resultados reportados oficialmente de resultados judiciales posteriores.",
+    note: "Las cifras corresponden al balance presentado por el Gobierno y la Fuerza Pública. No se presentan como una auditoría independiente. Presidencia también reportó incautaciones de narcóticos y destrucción de cinco laboratorios.",
+    extraSources: []
+  },
+
+  {
+    id: "calarca-medida-aseguramiento-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA",
+    importance: "ESENCIAL",
+    title: "Jueza ordena medida de aseguramiento en prisión contra alias Calarcá",
+    summary: "Una jueza de control de garantías impuso medida de aseguramiento privativa de la libertad contra Alexander Díaz Mendoza, alias Calarcá Córdoba, dentro de un proceso relacionado con el homicidio de seis firmantes del Acuerdo de Paz.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    legalDate: "2026-09-02",
+    sourceType: "Actuación judicial",
+    sourceName: "El Espectador",
+    sourceUrl: "https://www.elespectador.com/judicial/ordenan-prision-contra-alias-calarca-jefe-de-las-disidencias-de-las-farc/",
+    status: "Medida de aseguramiento · prófugo",
+    related: ["alias Calarcá", "medida de aseguramiento", "firmantes de paz", "Fiscalía"],
+    whyItMatters: "La decisión representa un nuevo avance judicial después de la reactivación de órdenes de captura contra integrantes de estructuras cuyos diálogos fueron terminados.",
+    note: "La medida de aseguramiento no equivale a una condena. Alias Calarcá continuaba prófugo; una orden de detención no significa que haya sido capturado.",
+    extraSources: [
+      ["Cambio", "https://cambiocolombia.com/conflicto-armado-en-colombia/articulo/2026/9/dictan-medida-de-aseguramiento-contra-alias-calarca-sucede-despues-de-que-se-reactivara-su-orden-de-captura"]
+    ]
+  },
+
+  {
+    id: "captura-la-puerca-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA Y SEGURIDAD",
+    importance: "ESENCIAL",
+    title: "Capturan en Santa Marta a alias La Puerca, señalado como cabecilla de las ACSN",
+    summary: "Daniel Bravo Arias, alias La Puerca, fue capturado en zona rural de Santa Marta. Las autoridades lo señalan como integrante de mando de las Autodefensas Conquistadoras de la Sierra Nevada.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Fuente periodística con información de autoridades",
+    sourceName: "Semana",
+    sourceUrl: "https://www.semana.com/nacion/barranquilla/articulo/cayo-alias-la-puerca-uno-de-los-cabecillas-de-las-autodefensas-conquistadores-de-la-sierra-a-quien-se-le-habia-suspendido-la-orden-de-captura/202644/",
+    status: "Capturado",
+    related: ["alias La Puerca", "ACSN", "Santa Marta", "orden de captura"],
+    whyItMatters: "La captura ocurre después de la reactivación de órdenes judiciales derivada del cierre de procesos de diálogo.",
+    note: "La captura no equivale a condena. Los cargos y la posición que las autoridades le atribuyen dentro de la organización deberán ser establecidos dentro del proceso correspondiente.",
+    extraSources: []
+  },
+
+  {
+    id: "zaragoza-clan-golfo-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "RELEVANTE",
+    title: "Operación contra el Clan del Golfo en Zaragoza deja dos capturados y un menor recuperado",
+    summary: "Ejército y Policía reportaron dos capturas, el sometimiento de otra persona y la recuperación de un menor durante una operación en Zaragoza, Antioquia.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Información de autoridades reproducida por prensa",
+    sourceName: "Cambio",
+    sourceUrl: "https://d1x0qnenkl91hi.cloudfront.net/conflicto-armado-en-colombia/articulo/2026/9/golpe-al-clan-del-golfo-en-zaragoza-antioquia-ejercito-captura-a-alias-80-y-recupera-a-un-menor",
+    status: "Atribución oficial",
+    related: ["Zaragoza", "Antioquia", "Clan del Golfo", "menor recuperado"],
+    note: "La pertenencia de los capturados a una estructura armada corresponde a la atribución de las autoridades y deberá ser determinada judicialmente.",
+    extraSources: []
+  },
+
+  {
+    id: "captura-bam-bam-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA",
+    importance: "RELEVANTE",
+    title: "Capturan en El Dorado a alias Bam Bam por investigación del homicidio de Gustavo Aponte",
+    summary: "Jherson Leonardo Contreras Ramírez, alias Bam Bam, fue detenido en el aeropuerto El Dorado cuando pretendía viajar a Perú. Es el segundo capturado dentro de la investigación por el homicidio del empresario Gustavo Aponte.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Fuente periodística con información de Fiscalía",
+    sourceName: "Cambio",
+    sourceUrl: "https://d1x0qnenkl91hi.cloudfront.net/pais/articulo/2026/9/cayo-bam-bam-en-el-dorado-segundo-capturado-por-el-crimen-de-gustavo-aponte-dueno-de-arroz-sonora",
+    status: "Capturado",
+    related: ["alias Bam Bam", "Gustavo Aponte", "Fiscalía", "El Dorado"],
+    note: "La hipótesis sobre las circunstancias del homicidio forma parte de la investigación de la Fiscalía. Captura no equivale a condena.",
+    extraSources: []
+  },
+
+  {
+    id: "procuraduria-vigilancia-sismo-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTROL DE RECURSOS",
+    importance: "ESENCIAL",
+    title: "Procuraduría activa vigilancia especial sobre contratación y recursos de reconstrucción",
+    summary: "La Procuraduría creó un grupo especial para hacer seguimiento a la atención de víctimas, contratación, reconstrucción y manejo de recursos, incluida la Subcuenta Sismo 2026.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/procuraduria-activa-vigilancia-para-proteger-victimas-garantizar-reconstruccion-transparente-tras-terremo.aspx",
+    status: "Actuación preventiva",
+    related: ["Procuraduría", "Subcuenta Sismo 2026", "contratación pública", "reconstrucción", "transparencia"],
+    whyItMatters: "La reconstrucción moviliza grandes cantidades de recursos públicos y requiere controles para reducir riesgos de irregularidades, retrasos o uso indebido.",
+    note: "La creación del grupo de vigilancia es una actuación preventiva. No significa que la Procuraduría haya establecido que existe corrupción en la reconstrucción.",
+    extraSources: []
+  },
+
+  {
+    id: "anolaima-cargos-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTRATACIÓN PÚBLICA",
+    importance: "RELEVANTE",
+    title: "Procuraduría formula cargos a exsecretario de Planeación de Anolaima por supervisión de obra vial",
+    summary: "La Procuraduría formuló cargos a Cristian Leonardo Ramos Sarmiento por presuntas fallas en la supervisión de un contrato de obra vial.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/procuraduria-formulo-cargos-exsecretario-planeacion-anolaima-cundinamarca-presuntas-fallas-supervision-obra-vial.aspx",
+    status: "Pliego de cargos",
+    related: ["Procuraduría", "Anolaima", "contratación pública", "pliego de cargos"],
+    whyItMatters: "El caso permite seguir actuaciones concretas de los organismos de control sobre la supervisión de contratos financiados con recursos públicos.",
+    note: "La conducta fue calificada provisionalmente como falta grave a título de culpa grave. El pliego de cargos no equivale a sanción y se mantiene la presunción de inocencia.",
+    extraSources: []
+  },
+
+  {
+    id: "ricardo-roa-desarchivo-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTROL Y JUSTICIA",
+    importance: "ESENCIAL",
+    title: "Procuraduría respalda solicitud para desarchivar investigación relacionada con Ricardo Roa",
+    summary: "La Procuraduría se sumó a la solicitud para que se revise el archivo de una investigación relacionada con contratación de helicópteros en Ecopetrol y posibles restricciones a la libre competencia.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Actuación institucional reportada por prensa",
+    sourceName: "Semana",
+    sourceUrl: "https://semana-semana-prod.web.arc-cdn.net/nacion/articulo/procuraduria-se-suma-a-la-solicitud-de-desarchivar-una-investigacion-contra-ricardo-roa-por-contratos-de-helicopteros-en-ecopetrol/202628/",
+    status: "Solicitud de desarchivo",
+    related: ["Ricardo Roa", "Ecopetrol", "Procuraduría", "helicópteros", "solicitud de desarchivo"],
+    whyItMatters: "Se trata de contratación de una empresa con participación estatal y de una actuación institucional destinada a determinar si una investigación archivada debe continuar.",
+    note: "Que la Procuraduría apoye una solicitud de desarchivo no significa que la Fiscalía haya reabierto la investigación ni que exista responsabilidad establecida.",
+    extraSources: []
+  },
+
+  {
+    id: "presupuesto-debate-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONGRESO Y ECONOMÍA",
+    importance: "ESENCIAL",
+    title: "Congresistas de varias bancadas se retiran del debate del Presupuesto 2027 por ausencia de funcionarios",
+    summary: "El trámite del proyecto de Presupuesto General de la Nación por $634,9 billones enfrentó una controversia cuando congresistas de diferentes bancadas se retiraron del debate ante la ausencia de varios altos funcionarios del Gobierno.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Fuente periodística",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-02/los-congresistas-de-todas-las-bancadas-se-retiran-del-debate-del-presupuesto-de-de-la-espriella-ante-la-ausencia-de-los-ministros.html",
+    status: "En trámite",
+    related: ["Presupuesto 2027", "Congreso", "PGN 2027", "MinHacienda"],
+    whyItMatters: "El presupuesto define cómo pretende financiar y distribuir el Estado cientos de billones de pesos durante 2027.",
+    note: "El proyecto fue radicado el 27 de agosto. El debate y las controversias del trámite no significan que el presupuesto haya sido aprobado o rechazado.",
+    extraSources: []
+  },
+
+  {
+    id: "balance-terremoto-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "TERREMOTO",
+    importance: "ESENCIAL",
+    title: "Nuevo balance registra 331 fallecidos, 4.519 heridos y 136 desaparecidos por el terremoto",
+    summary: "El corte conocido el 2 de septiembre registró 331 fallecidos, 4.519 heridos, 136 desaparecidos y 364 personas rescatadas.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Balance UNGRD",
+    sourceName: "UNGRD",
+    sourceUrl: "https://portal.gestiondelriesgo.gov.co/",
+    status: "Balance provisional",
+    related: ["UNGRD", "terremoto", "damnificados", "desaparecidos"],
+    whyItMatters: "Los balances permiten seguir la evolución de la emergencia y las variaciones producidas por identificación, conciliación y depuración de registros.",
+    note: "Las cifras de una emergencia pueden subir o bajar cuando las autoridades eliminan duplicados, identifican personas o actualizan reportes territoriales.",
+    extraSources: []
+  },
+
+  {
+    id: "incendios-tolima-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "INCENDIOS",
+    importance: "RELEVANTE",
+    title: "Ejército reporta seis focos de incendio activos en Tolima",
+    summary: "El Ejército informó que continuaba apoyando la atención de seis focos activos en Carmen de Apicalá, Cunday, Suárez, Villahermosa, Venadillo y Chaparral.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Fuente oficial",
+    sourceName: "Ejército Nacional",
+    sourceUrl: "https://www.ejercito.mil.co/ejercito-nacional-continua-atendiendo-emergencia-por-incendios-forestales-en-el-tolima",
+    status: "Balance territorial",
+    related: ["Tolima", "incendios forestales", "Ejército"],
+    note: "El dato corresponde a Tolima y no representa un balance nacional de incendios.",
+    extraSources: []
+  },
+
+  {
+    id: "arauca-extradicion-proceso-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "EXTRADICIÓN",
+    importance: "RELEVANTE",
+    title: "INPEC refuerza seguridad de alias Araña mientras avanza su proceso de extradición",
+    summary: "Geovanny Andrés Rojas, alias Araña, permanecía recluido en La Picota mientras se adelantaban los preparativos relacionados con su extradición a Estados Unidos.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Información penitenciaria reproducida por prensa",
+    sourceName: "Semana",
+    sourceUrl: "https://www.semana.com/nacion/articulo/inpec-extrema-medidas-de-seguridad-contra-el-temido-alias-arana-mientras-se-produce-su-extradicion-a-estados-unidos/202606/",
+    status: "Extradición en trámite",
+    related: ["alias Araña", "extradición", "La Picota", "Estados Unidos", "INPEC"],
+    note: "No se encontró confirmación suficiente de que el traslado físico a Estados Unidos se hubiera ejecutado el 2 de septiembre. Por eso el estado se mantiene como extradición en trámite.",
+    extraSources: []
+  },
+
+  {
+    id: "reforma-codigo-disciplinario-02",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "INSTITUCIONES",
+    importance: "RELEVANTE",
+    title: "Grupo de expertos inicia trabajo para proponer reforma al Código General Disciplinario",
+    summary: "La Procuraduría informó el inicio de sesiones de un grupo de expertos encargado de preparar una propuesta de reforma al régimen disciplinario.",
+    eventDate: "2026-09-02",
+    publishedDate: "2026-09-02",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/comenzaron-sesiones-grupo-expertos-procuraduria-general-nacion-reforma-codigo-general-di.aspx",
+    status: "Proceso iniciado",
+    related: ["Código General Disciplinario", "Procuraduría", "régimen disciplinario"],
+    whyItMatters: "El régimen disciplinario establece procedimientos y responsabilidades aplicables a servidores públicos y otros sujetos sometidos a control disciplinario.",
+    note: "El inicio del trabajo técnico no significa que exista todavía una reforma aprobada. La propuesta deberá pasar por las etapas jurídicas correspondientes.",
+    extraSources: []
   }
 
 ];
@@ -2147,5 +2469,38 @@ const glossary = {
     "Intervención de un organismo de control destinada a solicitar información, advertir riesgos o promover el cumplimiento de obligaciones. No equivale por sí sola a una sanción ni demuestra una irregularidad.",
 
   "efectivo anual":
-    "Forma de expresar una tasa de interés indicando el rendimiento o costo equivalente durante un año, teniendo en cuenta la capitalización. Suele abreviarse E.A."
+    "Forma de expresar una tasa de interés indicando el rendimiento o costo equivalente durante un año, teniendo en cuenta la capitalización. Suele abreviarse E.A.",
+
+  "medida de aseguramiento":
+    "Decisión judicial preventiva que puede restringir la libertad de una persona mientras avanza un proceso penal cuando se cumplen los requisitos legales. No equivale a una condena.",
+
+  "orden de captura":
+    "Mandato emitido por una autoridad judicial competente para detener a una persona. Que exista una orden de captura no significa que la persona ya haya sido capturada.",
+
+  "pliego de cargos":
+    "Actuación mediante la cual una autoridad disciplinaria formula formalmente los hechos y posibles faltas que atribuye a una persona dentro de un proceso. No equivale a una sanción.",
+
+  "solicitud de desarchivo":
+    "Petición para que una autoridad revise la decisión de archivar una investigación y determine si existen razones para continuarla. La solicitud por sí sola no reabre el proceso.",
+
+  "contratación pública":
+    "Conjunto de procedimientos mediante los cuales las entidades del Estado adquieren bienes, obras o servicios utilizando recursos públicos.",
+
+  "transparencia":
+    "Principio según el cual las actuaciones y decisiones públicas deben poder ser conocidas, examinadas y controladas, salvo las excepciones legales de reserva.",
+
+  "sometimiento a la justicia":
+    "Proceso mediante el cual una persona vinculada a una organización criminal se presenta ante las autoridades y queda sujeta a las reglas judiciales aplicables. No equivale automáticamente a una condena.",
+
+  "control de garantías":
+    "Función judicial destinada a revisar la legalidad y protección de derechos fundamentales durante determinadas actuaciones de una investigación penal.",
+
+  "justicia transicional":
+    "Conjunto de mecanismos judiciales y extrajudiciales utilizados por sociedades que enfrentan las consecuencias de conflictos armados o violaciones masivas de derechos humanos, buscando combinar justicia, verdad, reparación y garantías de no repetición.",
+
+  "crímenes de guerra":
+    "Violaciones graves de las normas aplicables a los conflictos armados que pueden generar responsabilidad penal individual cuando se cumplen los elementos jurídicos correspondientes.",
+
+  "crímenes de lesa humanidad":
+    "Determinados actos graves cometidos como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque, según los requisitos del derecho penal internacional."
 };

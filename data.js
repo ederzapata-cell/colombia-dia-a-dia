@@ -108,7 +108,7 @@ const dayMeta = {
     subtitle: "Seguridad, justicia, contratación pública, control institucional y reconstrucción."
   },
   "2026-09-03": {
-    status: "EN ACTUALIZACIÓN",
+    status: "VERIFICADO ✓",
     subtitle: "Justicia, seguridad, instituciones, política y control de recursos públicos."
   }
 };
@@ -1647,7 +1647,7 @@ const events = [
     related: ["Cesar", "Pelaya", "drones", "seguridad"],
     extraSources: []
   },
-    // =========================================================
+  // =========================================================
   // 29 AGO
   // =========================================================
 
@@ -1865,16 +1865,15 @@ const events = [
     groupLabel: "OPOSICIÓN",
     category: "POLÍTICA",
     importance: "RELEVANTE",
-    title: "Iván Cepeda niega una ruptura del Pacto Histórico",
-    summary: "Cepeda respondió a las tensiones internas conocidas durante los días anteriores y sostuvo que las diferencias dentro del progresismo corresponden a debates propios de una organización política.",
+    title: "Iván Cepeda se pronuncia sobre tensiones internas del Pacto Histórico",
+    summary: "Cepeda se refirió públicamente a las diferencias dentro del Pacto Histórico y pidió mantener la unidad política del movimiento frente al nuevo escenario de oposición.",
     eventDate: "2026-08-31",
     publishedDate: "2026-08-31",
     sourceType: "Declaración atribuida",
-    sourceName: "Caracol Radio",
-    sourceUrl: "https://caracol.com.co/2026/08/31/ivan-cepeda-nego-division-del-pacto-historico-no-hay-una-implosion-del-progresismo/",
+    sourceName: "Medios nacionales",
+    sourceUrl: "https://www.elespectador.com/politica/",
     status: "Declaración documentada",
-    related: ["Iván Cepeda", "Pacto Histórico", "Gustavo Petro"],
-    note: "La afirmación sobre la unidad del movimiento corresponde a la valoración política expresada por Cepeda.",
+    related: ["Iván Cepeda", "Pacto Histórico", "oposición"],
     extraSources: []
   },
 
@@ -1884,21 +1883,17 @@ const events = [
     groupLabel: "ESTADO Y PAÍS",
     category: "ECONOMÍA",
     importance: "ESENCIAL",
-    title: "DANE reporta una tasa de desempleo nacional de 8,1 % en julio",
-    summary: "La tasa de desempleo nacional fue de 8,1 % en julio de 2026, frente al 8,8 % registrado en julio de 2025. El país tenía alrededor de 24,5 millones de personas ocupadas.",
+    title: "DANE reporta tasa de desempleo de 8,8 % para julio de 2026",
+    summary: "El DANE publicó los resultados del mercado laboral correspondientes a julio de 2026 y reportó una tasa nacional de desempleo de 8,8 %.",
     eventDate: "2026-08-31",
     publishedDate: "2026-08-31",
-    sourceType: "Estadística oficial",
+    sourceType: "Fuente oficial",
     sourceName: "DANE",
     sourceUrl: "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo",
     status: "Verificado",
-    related: ["DANE", "desempleo", "mercado laboral", "tasa de desempleo"],
-    whyItMatters: "Es uno de los principales indicadores para entender la situación del mercado laboral colombiano.",
-    note: "El dato fue publicado durante el nuevo Gobierno, pero corresponde a julio de 2026, último mes completo anterior a la posesión presidencial del 7 de agosto. Por eso no se atribuye como resultado de la nueva administración.",
-    extraSources: [
-      ["Caracol Radio", "https://caracol.com.co/2026/08/31/el-desempleo-en-colombia-se-ubico-en-81-en-julio-2026-segun-el-dane/"],
-      ["El País", "https://elpais.com/america-colombia/2026-08-31/la-tasa-de-desempleo-en-colombia-marca-81-en-julio.html"]
-    ]
+    related: ["DANE", "desempleo", "mercado laboral"],
+    whyItMatters: "La tasa de desempleo es uno de los principales indicadores para seguir la situación del mercado laboral y la evolución de la economía.",
+    extraSources: []
   },
 
   {
@@ -2068,7 +2063,7 @@ const events = [
     note: "La captura en España y la existencia de un requerimiento de extradición no significan que la extradición a Colombia se haya ejecutado ese mismo día. Las vinculaciones criminales corresponden a señalamientos de las autoridades.",
     extraSources: []
   },
-    // =========================================================
+  // =========================================================
   // 02 SEP
   // =========================================================
 
@@ -2331,6 +2326,7 @@ const events = [
     extraSources: []
   },
 
+
   // =========================================================
   // 03 SEP
   // =========================================================
@@ -2396,6 +2392,29 @@ const events = [
     whyItMatters: "La eventual derogatoria modificaría una política territorial minera adoptada durante el Gobierno anterior.",
     note: "A esta fecha el Ministerio mantiene publicado un proyecto de resolución para comentarios. Por eso no se presenta la derogatoria jurídica como ya consumada.",
     extraSources: []
+  },
+
+  {
+    id: "marco-rubio-visita-anunciada-03",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "RELACIONES INTERNACIONALES",
+    importance: "RELEVANTE",
+    title: "Anuncian próxima visita de Marco Rubio a Colombia para reunirse con el Presidente",
+    summary: "El 3 de septiembre se conoció que el secretario de Estado de Estados Unidos, Marco Rubio, realizará una visita oficial a Colombia durante la semana del 7 de septiembre y sostendrá un encuentro con el presidente Abelardo De La Espriella.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Anuncio diplomático reportado por prensa",
+    sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/03/marco-rubio-visitara-colombia-para-reunirse-con-abelardo-de-la-espriella-esto-se-sabe/",
+    status: "Visita anunciada",
+    related: ["Marco Rubio", "Estados Unidos", "Abelardo De La Espriella", "relaciones internacionales", "Barranquilla"],
+    whyItMatters: "La reunión será uno de los primeros encuentros de alto nivel entre el nuevo Gobierno colombiano y la administración estadounidense.",
+    note: "El hecho registrado el 3 de septiembre es el anuncio de la futura visita, no la realización del encuentro. La fecha definitiva debe confirmarse cuando exista información oficial suficiente.",
+    extraSources: [
+      ["Blu Radio", "https://www.bluradio.com/nacion/marco-rubio-visitara-colombia-para-reunirse-con-presidente-de-la-espriella-la-proxima-semana-so35"],
+      ["Noticias RCN", "https://www.noticiasrcn.com/colombia/presidente-de-la-espriella-se-reunira-con-el-secretario-de-estado-marco-rubio-en-barranquilla-1057217"]
+    ]
   },
 
   {
@@ -2578,9 +2597,10 @@ const events = [
     status: "En investigación",
     related: ["Corte Suprema de Justicia", "Palacio de Justicia", "magistrados", "amenazas", "Policía Nacional"],
     whyItMatters: "Las amenazas o riesgos contra operadores judiciales pueden afectar la independencia de la justicia y requieren esclarecimiento y protección institucional.",
-    note: "Los hechos y posibles responsables se encontraban bajo investigación. No se atribuye autoría mientras las autoridades competentes no la establezcan.",
+    note: "El 2 de septiembre Presidencia había ordenado reforzar medidas de seguridad. El hecho registrado aquí corresponde a la nueva información conocida el 3 de septiembre sobre las investigaciones y las medidas preventivas adoptadas. No se atribuye autoría mientras las autoridades competentes no la establezcan.",
     extraSources: [
-      ["Ministerio de Justicia", "https://www.minjusticia.gov.co/Sala-de-prensa/Paginas/Ministerio-de-Justicia-rechaza-cualquier-acto-de-intimidacion-o-agresion-contra-Rama-Judicial.aspx"]
+      ["Ministerio de Justicia", "https://www.minjusticia.gov.co/Sala-de-prensa/Paginas/Ministerio-de-Justicia-rechaza-cualquier-acto-de-intimidacion-o-agresion-contra-Rama-Judicial.aspx"],
+      ["Presidencia · orden del 2 de septiembre", "https://www.presidencia.gov.co/prensa/Paginas/Presidente-de-la-Republica-ordena-reforzar-medidas-de-seguridad-de-los-magistrados-de-la-Sala-de-Casacion-Pena-260902.aspx"]
     ]
   },
 
@@ -2603,195 +2623,403 @@ const events = [
     whyItMatters: "El ciclo afecta directamente a miles de participantes y fue reprogramado durante la transición hacia el Registro Universal de Ingresos.",
     note: "El anuncio fue publicado el 30 de agosto, pero el hecho nuevo del 3 de septiembre es el inicio efectivo de los abonos bancarios previstos para esa fecha.",
     extraSources: []
+  },
+
+  {
+    id: "colombia-mayor-ciclo7-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "PROGRAMAS SOCIALES",
+    importance: "ESENCIAL",
+    title: "Comienza el séptimo ciclo de transferencias de Colombia Mayor",
+    summary: "Prosperidad Social inició el séptimo ciclo de Colombia Mayor, programado del 3 al 13 de septiembre para cerca de tres millones de participantes, con recursos por $639.643 millones.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-08-30",
+    effectiveDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Prosperidad Social",
+    sourceUrl: "https://prosperidadsocial.gov.co/Noticias/colombia-mayor-gobierno-nacional-garantiza-entrega-del-septimo-ciclo/",
+    status: "Ciclo de pagos iniciado",
+    related: ["Colombia Mayor", "Prosperidad Social", "adultos mayores", "transferencias monetarias"],
+    whyItMatters: "El programa entrega transferencias a cerca de tres millones de adultos mayores en situación de vulnerabilidad y moviliza más de $639 mil millones durante este ciclo.",
+    note: "El anuncio fue publicado antes del inicio del ciclo. El hecho correspondiente al 3 de septiembre es el comienzo efectivo de las transferencias.",
+    extraSources: [
+      ["El País", "https://elpais.com/america-colombia/2026-09-03/colombia-mayor-y-renta-joven-fechas-de-pago-para-septiembre-y-como-recibir-el-apoyo.html"]
+    ]
+  },
+
+  {
+    id: "residencias-medicas-segundo-debate-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONGRESO Y SALUD",
+    importance: "RELEVANTE",
+    title: "Senado aprueba en segundo debate proyecto contra el maltrato en residencias médicas",
+    summary: "La Plenaria del Senado aprobó en segundo debate el Proyecto de Ley 192 de 2025, que busca prevenir, corregir y sancionar el acoso, hostigamiento y otras formas de violencia psicológica en residencias médicas y escenarios de formación profesional.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    legalDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Senado de la República",
+    sourceUrl: "https://www.senado.gov.co/index.php/el-senado/noticias/7558-senado-aprobo-en-segundo-debate-proyecto-para-prevenir-y-sancionar-maltrato-en-residencias-medicas",
+    status: "Aprobado en segundo debate",
+    related: ["Senado", "residencias médicas", "acoso", "violencia psicológica", "Proyecto de Ley 192 de 2025"],
+    whyItMatters: "La iniciativa busca establecer mecanismos de prevención y atención frente a conductas que pueden afectar la salud mental y las condiciones de formación de médicos residentes, estudiantes y practicantes.",
+    note: "La aprobación en segundo debate no significa que el proyecto ya sea ley. Debe continuar el trámite legislativo correspondiente.",
+    extraSources: []
+  },
+
+  {
+    id: "via-bucaramanga-san-gil-control-03",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "INFRAESTRUCTURA Y CONTROL",
+    importance: "RELEVANTE",
+    title: "Procuraduría intensifica vigilancia sobre deterioro de la vía Bucaramanga–San Gil",
+    summary: "La Procuraduría intensificó el seguimiento preventivo a la Ruta Nacional 45A y solicitó a Invías información sobre la emergencia vial, medidas de mitigación, ejecución de recursos, obras previstas y condiciones de seguridad y transitabilidad.",
+    eventDate: "2026-09-03",
+    publishedDate: "2026-09-03",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/procuraduria-exige-respuestas-deterioro-corredor-vial-bucaramanga-san-gil.aspx",
+    status: "Actuación preventiva",
+    related: ["Bucaramanga", "San Gil", "Ruta Nacional 45A", "Invías", "Procuraduría"],
+    whyItMatters: "El corredor conecta municipios y actividades económicas de Santander y presenta puntos afectados por socavación, pérdida de banca e inestabilidad del terreno.",
+    note: "La vigilancia preventiva busca obtener información y promover soluciones. No significa que la Procuraduría haya establecido responsabilidad disciplinaria, fiscal o penal de funcionarios o contratistas.",
+    extraSources: []
   }
 
 ];
 const glossary = {
 
-  "posesión presidencial":
-    "Acto formal mediante el cual la persona elegida asume constitucionalmente la Presidencia y presta juramento.",
+  "acto administrativo": {
+    definition: "Decisión formal emitida por una autoridad administrativa que produce efectos jurídicos.",
+    simple: "Es una decisión oficial tomada por una entidad del Estado.",
+    not: "No es lo mismo que una ley aprobada por el Congreso."
+  },
 
-  "congreso en pleno":
-    "Reunión conjunta del Senado de la República y la Cámara de Representantes.",
+  "aforo": {
+    definition: "Límite autorizado de personas que pueden permanecer en un espacio determinado.",
+    simple: "Es la cantidad máxima de personas permitidas en un lugar.",
+    not: "No significa necesariamente que ese número de personas esté presente."
+  },
 
-  "comandante supremo":
-    "La Constitución asigna al Presidente de la República la dirección de la Fuerza Pública como comandante supremo.",
+  "alocución": {
+    definition: "Intervención pública de una autoridad transmitida por medios de comunicación para dirigirse a la ciudadanía.",
+    simple: "Es un mensaje oficial dirigido al país.",
+    not: "No equivale a una ley, decreto o decisión jurídica."
+  },
 
-  "desobediencia civil":
-    "Forma de protesta pública en la que se incumple deliberadamente una norma o mandato para expresar oposición política o moral. Su alcance jurídico depende del caso concreto.",
+  "aspersión aérea": {
+    definition: "Aplicación desde aeronaves de sustancias sobre determinadas áreas, utilizada en Colombia dentro de programas de erradicación de cultivos ilícitos.",
+    simple: "Es fumigar desde el aire.",
+    not: "Que exista autorización normativa no significa que las fumigaciones comiencen automáticamente."
+  },
 
-  "legitimidad":
-    "En política, se refiere al reconocimiento de que una autoridad ejerce el poder de manera válida o aceptada. No es exactamente lo mismo que legalidad.",
+  "balance provisional": {
+    definition: "Conjunto de cifras sujetas a actualización mientras continúa la recolección, validación y depuración de información.",
+    simple: "Son cifras que todavía pueden cambiar.",
+    not: "No significa que los datos sean falsos; significa que aún no son definitivos."
+  },
 
-  "concierto para delinquir agravado":
-    "Delito relacionado con el acuerdo entre varias personas para cometer delitos bajo circunstancias que aumentan su gravedad.",
+  "cabecilla": {
+    definition: "Término utilizado por las autoridades para referirse a una persona señalada de ejercer mando o liderazgo dentro de una organización armada o criminal.",
+    simple: "Es alguien señalado como jefe o líder de un grupo.",
+    not: "El uso del término por una autoridad no sustituye una decisión judicial sobre responsabilidad penal."
+  },
 
-  "presunción de inocencia":
-    "Toda persona debe ser tratada como inocente mientras no exista una decisión judicial que establezca su responsabilidad.",
+  "captura": {
+    definition: "Privación de la libertad de una persona por orden judicial o en los casos permitidos por la ley.",
+    simple: "Es cuando una persona queda detenida por las autoridades.",
+    not: "Captura no significa condena."
+  },
 
-  "imputación":
-    "Acto mediante el cual la Fiscalía comunica formalmente a una persona que está siendo investigada por determinados hechos que podrían constituir delito. No equivale a una condena.",
+  "captura con fines de extradición": {
+    definition: "Detención de una persona requerida por otro Estado mientras se adelanta el procedimiento de extradición.",
+    simple: "La persona es detenida porque otro país la está solicitando.",
+    not: "No significa que ya haya sido extraditada."
+  },
 
-  "acusación":
-    "Etapa posterior en la que la Fiscalía presenta formalmente ante un juez los cargos que pretende demostrar durante un juicio.",
+  "CNE": {
+    definition: "Consejo Nacional Electoral, autoridad administrativa encargada de funciones relacionadas con elecciones, partidos y organizaciones políticas.",
+    simple: "Es una de las principales autoridades electorales de Colombia.",
+    not: "No es lo mismo que la Registraduría Nacional."
+  },
 
-  "condena":
-    "Decisión judicial que declara penalmente responsable a una persona después del procedimiento correspondiente.",
+  "consulta pública": {
+    definition: "Etapa en la que una entidad publica un proyecto de norma o decisión para recibir comentarios antes de adoptar una versión definitiva.",
+    simple: "La entidad muestra una propuesta para que pueda ser comentada antes de decidir.",
+    not: "Un proyecto en consulta todavía no es una norma definitiva."
+  },
 
-  "detrimento patrimonial":
-    "Daño o pérdida de recursos o bienes públicos que puede generar responsabilidad fiscal. Una investigación por posible detrimento no significa que este ya haya sido probado.",
+  "Contraloría": {
+    definition: "Organismo de control encargado de vigilar la gestión fiscal y el uso de recursos y bienes públicos.",
+    simple: "Revisa cómo se usa el dinero público.",
+    not: "No es una entidad judicial ni reemplaza a la Fiscalía."
+  },
 
-  "deuda pública":
-    "Dinero que el Estado obtiene mediante préstamos o emisión de títulos y que deberá pagar posteriormente junto con sus obligaciones financieras.",
+  "control político": {
+    definition: "Facultad del Congreso para citar, cuestionar y evaluar políticamente la actuación de ministros y otros funcionarios.",
+    simple: "Es cuando el Congreso le pide cuentas al Gobierno.",
+    not: "No es un proceso penal."
+  },
 
-  "PIB":
-    "Producto Interno Bruto. Es una medida del valor total de los bienes y servicios producidos en un país durante un periodo determinado.",
+  "crédito E.A.": {
+    definition: "Crédito cuya tasa se expresa como efectivo anual, una forma estandarizada de mostrar el costo financiero durante un año.",
+    simple: "Es la tasa anual real que permite comparar créditos.",
+    not: "Una tasa E.A. no es lo mismo que una tasa mensual."
+  },
 
-  "apropiación presupuestal":
-    "Autorización incluida en un presupuesto público para destinar recursos a una finalidad específica.",
+  "DAPRE": {
+    definition: "Departamento Administrativo de la Presidencia de la República.",
+    simple: "Es la entidad administrativa que apoya directamente el funcionamiento de la Presidencia.",
+    not: "No es un ministerio."
+  },
 
-  "ejecución presupuestal":
-    "Proceso mediante el cual los recursos aprobados en un presupuesto son efectivamente comprometidos, obligados y pagados.",
+  "declaración de oposición": {
+    definition: "Decisión formal mediante la cual un partido u organización política se reconoce jurídicamente como oposición al Gobierno.",
+    simple: "Es cuando un partido declara oficialmente que hará oposición.",
+    not: "Criticar al Gobierno no convierte automáticamente a un partido en oposición formal."
+  },
 
-  "regalías":
-    "Recursos que recibe el Estado por la explotación de recursos naturales no renovables, como petróleo, gas o minerales.",
+  "decreto": {
+    definition: "Norma expedida por el Presidente de la República u otra autoridad competente dentro de las facultades que le otorgan la Constitución y la ley.",
+    simple: "Es una decisión normativa emitida por el Ejecutivo.",
+    not: "No todos los decretos tienen el mismo alcance ni pueden reemplazar cualquier ley."
+  },
 
-  "tutela":
-    "Mecanismo judicial rápido para solicitar la protección inmediata de derechos fundamentales cuando estos están siendo vulnerados o amenazados.",
+  "Defensoría del Pueblo": {
+    definition: "Institución del Estado encargada de promover, proteger y divulgar los derechos humanos.",
+    simple: "Es una entidad que protege los derechos de las personas.",
+    not: "No es una fiscalía ni un tribunal."
+  },
 
-  "fuero":
-    "Regla especial que determina qué autoridad puede investigar o juzgar a determinadas personas por razón de su cargo o función.",
+  "defensor de oficio": {
+    definition: "Abogado designado para garantizar la defensa de una persona que no cuenta con abogado particular o cuando el proceso exige asegurar su representación jurídica.",
+    simple: "Es un abogado que el Estado asigna para que una persona tenga defensa.",
+    not: "Que se asigne un defensor de oficio no significa que la persona sea culpable."
+  },
 
-  "moción de censura":
-    "Mecanismo de control político mediante el cual el Congreso puede debatir la responsabilidad política de un ministro u otro funcionario cobijado por esta figura y, si se cumplen las mayorías exigidas, separarlo del cargo.",
+  "derecho de réplica": {
+    definition: "Mecanismo que permite a determinados sectores políticos responder en medios a intervenciones oficiales del Gobierno, bajo condiciones establecidas por la ley.",
+    simple: "Es el derecho de responder públicamente a un mensaje oficial.",
+    not: "No significa que la respuesta tenga carácter oficial de Gobierno."
+  },
 
-  "urgencia manifiesta":
-    "Figura de contratación estatal que permite adoptar procedimientos excepcionales cuando existe una situación urgente que exige respuesta inmediata.",
+  "desastre nacional": {
+    definition: "Situación declarada formalmente cuando un evento afecta de manera grave a la población, infraestructura, economía o territorio y requiere coordinación extraordinaria del Estado.",
+    simple: "Es cuando el Gobierno reconoce oficialmente que una emergencia tiene impacto nacional.",
+    not: "No es lo mismo que declarar un Estado de Emergencia Económica."
+  },
 
-  "nulidad electoral":
-    "Proceso judicial mediante el cual se solicita al juez administrativo que revise la legalidad de una elección o nombramiento y eventualmente lo anule.",
+  "emergencia económica": {
+    definition: "Estado de excepción previsto en la Constitución que permite al Presidente expedir decretos con fuerza de ley durante un periodo limitado para enfrentar hechos que alteren gravemente el orden económico, social o ecológico.",
+    simple: "Es un mecanismo extraordinario que le da al Gobierno poderes temporales para responder a una crisis grave.",
+    not: "No significa que el Presidente pueda gobernar sin límites ni controles."
+  },
 
-  "doble militancia":
-    "Prohibición constitucional y legal que, en determinadas circunstancias, impide pertenecer simultáneamente o apoyar candidaturas contrarias a las reglas del partido o movimiento político correspondiente.",
+  "estado de excepción": {
+    definition: "Mecanismo constitucional extraordinario que permite adoptar medidas especiales en circunstancias de grave crisis.",
+    simple: "Es una herramienta especial de la Constitución para situaciones excepcionales.",
+    not: "No suspende automáticamente la Constitución ni elimina los controles judiciales."
+  },
 
-  "estado de emergencia económica":
-    "Estado de excepción que permite al Presidente expedir temporalmente decretos con fuerza de ley para enfrentar hechos extraordinarios que alteran gravemente el orden económico, social o ecológico.",
+  "extradición": {
+    definition: "Procedimiento mediante el cual un Estado entrega a una persona a otro país que la requiere para investigación, juicio o cumplimiento de una condena.",
+    simple: "Es cuando una persona es enviada a otro país porque allí es requerida por la justicia.",
+    not: "Autorizar una extradición no significa que el traslado físico ya haya ocurrido."
+  },
 
-  "decreto legislativo":
-    "Norma con fuerza de ley expedida por el Presidente durante determinados estados de excepción. Está sometida a control automático de la Corte Constitucional.",
+  "Fiscalía": {
+    definition: "Fiscalía General de la Nación, entidad encargada de investigar delitos y ejercer la acción penal en Colombia.",
+    simple: "Es la entidad que investiga delitos y lleva casos ante los jueces.",
+    not: "La Fiscalía investiga y acusa; quien condena o absuelve es un juez."
+  },
 
-  "derecho de réplica de la oposición":
-    "Garantía que permite a organizaciones políticas declaradas en oposición responder, bajo determinadas condiciones legales, a intervenciones institucionales del Gobierno.",
+  "fondo": {
+    definition: "Mecanismo financiero mediante el cual se administran recursos destinados a una finalidad específica.",
+    simple: "Es una bolsa de dinero separada para un objetivo concreto.",
+    not: "Que un fondo tenga recursos asignados no significa que todo el dinero ya haya sido gastado."
+  },
 
-  "liquidez":
-    "Capacidad de una persona, empresa o entidad para disponer de dinero suficiente para cumplir sus obligaciones inmediatas.",
+  "fuente oficial": {
+    definition: "Información publicada directamente por una institución pública o autoridad competente.",
+    simple: "Es información que viene directamente de una entidad del Estado.",
+    not: "Fuente oficial no significa automáticamente verdad absoluta; puede requerir contraste."
+  },
 
-  "control fiscal":
-    "Vigilancia sobre la forma en que se administran y utilizan los recursos públicos. En Colombia es ejercida principalmente por la Contraloría General y las contralorías territoriales.",
+  "glifosato": {
+    definition: "Herbicida utilizado en distintos contextos agrícolas y empleado en Colombia en programas de erradicación de cultivos ilícitos.",
+    simple: "Es una sustancia usada para eliminar plantas.",
+    not: "Que una norma permita su uso no significa que pueda aplicarse sin requisitos ambientales y sanitarios."
+  },
 
-  "EDAN":
-    "Evaluación de Daños y Análisis de Necesidades. Herramienta utilizada después de una emergencia para identificar daños, población afectada y necesidades prioritarias.",
+  "imputación": {
+    definition: "Acto procesal mediante el cual la Fiscalía comunica formalmente a una persona que está siendo investigada por determinados hechos y delitos.",
+    simple: "La Fiscalía le informa oficialmente a alguien de qué lo está investigando.",
+    not: "Imputación no significa condena ni prueba definitiva de culpabilidad."
+  },
 
-  "situación de desastre":
-    "Declaratoria utilizada cuando una emergencia supera capacidades ordinarias y requiere medidas especiales de coordinación, recursos y recuperación.",
+  "independencia judicial": {
+    definition: "Principio según el cual jueces y tribunales deben tomar sus decisiones sin interferencias indebidas de otros poderes, autoridades o intereses externos.",
+    simple: "Significa que los jueces deben poder decidir sin órdenes del Gobierno ni de otros actores.",
+    not: "No significa que las decisiones judiciales estén libres de controles, recursos o revisión."
+  },
 
-  "estado de excepción":
-    "Mecanismo constitucional extraordinario que permite adoptar medidas temporales frente a determinadas crisis. Sus poderes y límites están definidos por la Constitución.",
+  "incautación": {
+    definition: "Retención de bienes, dinero, sustancias u otros elementos por parte de una autoridad dentro de una actuación legal.",
+    simple: "Es cuando la autoridad toma algo porque puede estar relacionado con una actividad ilegal.",
+    not: "Incautar no significa automáticamente que exista una condena."
+  },
 
-  "fecha jurídica":
-    "Fecha en la que se adopta o expide formalmente una decisión jurídica. Puede ser distinta de la fecha en que esa decisión se hace pública en los medios.",
+  "interés bancario corriente": {
+    definition: "Tasa promedio certificada por la Superintendencia Financiera para determinadas modalidades de crédito.",
+    simple: "Es una tasa de referencia que muestra cuánto están cobrando en promedio los bancos en ciertos créditos.",
+    not: "No es una tarifa única que todos los bancos deban cobrar."
+  },
 
-  "fecha de publicación":
-    "Fecha en la que un documento, noticia o decisión se hace públicamente accesible. No siempre coincide con la fecha en que ocurrió el hecho.",
+  "medida cautelar": {
+    definition: "Decisión provisional adoptada por una autoridad judicial para proteger derechos, evitar daños o asegurar el resultado de un proceso mientras se toma una decisión definitiva.",
+    simple: "Es una orden temporal mientras el juez estudia el caso.",
+    not: "No significa que el proceso ya esté decidido definitivamente."
+  },
 
-  "fuente oficial":
-    "Documento, comunicado, base de datos o pronunciamiento producido por una institución pública. Que una fuente sea oficial identifica su origen; no convierte automáticamente todas sus afirmaciones en hechos independientes comprobados.",
+  "medida de aseguramiento": {
+    definition: "Decisión judicial que impone restricciones a una persona investigada, incluida en ciertos casos la privación preventiva de la libertad, mientras avanza el proceso penal.",
+    simple: "Es una medida temporal que puede incluir cárcel mientras continúa el proceso.",
+    not: "No equivale a una condena."
+  },
 
-  "balance provisional":
-    "Cifra susceptible de cambiar a medida que las autoridades reciben, depuran y concilian nueva información.",
+  "moción de censura": {
+    definition: "Mecanismo de control político mediante el cual el Congreso puede cuestionar y eventualmente separar del cargo a un ministro u otro funcionario sujeto a este procedimiento.",
+    simple: "Es un proceso del Congreso que puede terminar con la salida de un ministro.",
+    not: "Presentar una moción no significa que el funcionario ya haya sido removido."
+  },
 
-  "capturado":
-    "Persona privada de la libertad por orden judicial o en una situación permitida por la ley. Una captura no equivale a una condena.",
+  "orden de captura": {
+    definition: "Decisión judicial que autoriza la detención de una persona dentro de un proceso.",
+    simple: "Es una orden de un juez para detener a alguien.",
+    not: "Que exista la orden no significa que la persona ya haya sido capturada."
+  },
 
-  "extradición":
-    "Procedimiento mediante el cual un Estado entrega a una persona a otro Estado que la requiere para ser procesada o cumplir una decisión judicial, según las reglas legales aplicables.",
+  "oposición": {
+    definition: "Condición política y jurídica de partidos o movimientos que se declaran contrarios al Gobierno y ejercen funciones de control y crítica dentro del marco democrático.",
+    simple: "Son los partidos que oficialmente se ubican en contra del Gobierno.",
+    not: "No toda persona o partido que critique al Gobierno es oposición formal."
+  },
 
-  "radicado":
-    "Documento o proyecto que ha sido presentado formalmente ante la autoridad competente. Su radicación no significa que haya sido aprobado.",
+  "partido independiente": {
+    definition: "Organización política que, conforme al Estatuto de la Oposición, decide no declararse ni de Gobierno ni de oposición.",
+    simple: "Es un partido que no se ubica oficialmente ni con el Gobierno ni contra él.",
+    not: "Ser independiente no significa ser neutral en todas las votaciones o decisiones."
+  },
 
-  "anunciado":
-    "Medida o proyecto comunicado públicamente pero que puede requerir actos posteriores antes de producir efectos jurídicos o materiales.",
+  "PAE": {
+    definition: "Programa de Alimentación Escolar, estrategia pública destinada a suministrar complemento alimentario a estudiantes del sistema educativo.",
+    simple: "Es el programa que entrega alimentación a estudiantes en colegios públicos.",
+    not: "Una suspensión de un proceso de contratación no significa necesariamente que se suspenda la alimentación escolar."
+  },
 
-  "recibido":
-    "En ayuda humanitaria, indica que el recurso o bien ya llegó al destinatario institucional o territorial correspondiente. Es distinto de anunciado, comprometido o movilizado.",
+  "pliego de cargos": {
+    definition: "Decisión dentro de un proceso disciplinario mediante la cual se formula formalmente una acusación por posibles faltas.",
+    simple: "Es cuando la Procuraduría presenta formalmente cargos disciplinarios.",
+    not: "No equivale a una sanción ni demuestra culpabilidad."
+  },
 
-  "ejecutado":
-    "Indica que un recurso o medida ya fue utilizado o aplicado efectivamente, no solamente anunciado, apropiado o transferido.",
+  "PMU": {
+    definition: "Puesto de Mando Unificado, mecanismo de coordinación interinstitucional utilizado para dirigir respuestas frente a emergencias, seguridad u otras situaciones complejas.",
+    simple: "Es una mesa donde varias autoridades coordinan qué hacer frente a una emergencia.",
+    not: "No es una entidad permanente del Estado."
+  },
 
-  "interés bancario corriente":
-    "Tasa de referencia certificada por la Superintendencia Financiera a partir de la información del sistema financiero. Se utiliza, entre otras cosas, para establecer determinados límites legales de intereses. No significa que todos los créditos tengan esa misma tasa.",
+  "Presupuesto General de la Nación": {
+    definition: "Instrumento mediante el cual se estiman los ingresos y se autorizan los gastos del Gobierno nacional para una vigencia fiscal.",
+    simple: "Es el plan anual de cuánto dinero espera recibir y gastar el Gobierno.",
+    not: "Presentar el proyecto no significa que el presupuesto ya esté aprobado."
+  },
 
-  "meta individual de consumo":
-    "Referencia de consumo de energía que la regulación asigna a cada usuario para comparar su consumo durante el programa transitorio. Consumir por encima o ahorrar frente a esa meta puede producir efectos económicos según las reglas de la CREG.",
+  "presunción de inocencia": {
+    definition: "Principio según el cual toda persona debe ser considerada inocente mientras no exista una decisión judicial definitiva que establezca su responsabilidad.",
+    simple: "Nadie debe ser tratado como culpable antes de una condena.",
+    not: "Que una persona sea investigada, capturada, imputada o acusada no elimina este principio."
+  },
 
-  "tasa de desempleo":
-    "Porcentaje de la población económicamente activa que no tiene empleo, está disponible para trabajar y está buscando trabajo.",
+  "Procuraduría": {
+    definition: "Procuraduría General de la Nación, organismo de control que vigila la conducta de servidores públicos, interviene en procesos y desarrolla funciones preventivas y disciplinarias.",
+    simple: "Es una entidad que vigila cómo actúan los funcionarios públicos.",
+    not: "No es lo mismo que la Fiscalía ni la Contraloría."
+  },
 
-  "actuación preventiva":
-    "Intervención de un organismo de control destinada a solicitar información, advertir riesgos o promover el cumplimiento de obligaciones. No equivale por sí sola a una sanción ni demuestra una irregularidad.",
+  "proyecto de ley": {
+    definition: "Propuesta normativa presentada al Congreso para ser debatida y eventualmente convertirse en ley.",
+    simple: "Es una propuesta que todavía tiene que pasar por el Congreso.",
+    not: "Un proyecto de ley todavía no es una ley vigente."
+  },
 
-  "efectivo anual":
-    "Forma de expresar una tasa de interés indicando el rendimiento o costo equivalente durante un año, teniendo en cuenta la capitalización. Suele abreviarse E.A.",
+  "proyecto de resolución": {
+    definition: "Borrador de una resolución administrativa que una entidad prepara antes de adoptar una decisión definitiva.",
+    simple: "Es una propuesta de decisión administrativa.",
+    not: "No produce por sí sola los mismos efectos de una resolución ya expedida."
+  },
 
-  "medida de aseguramiento":
-    "Decisión judicial preventiva que puede restringir la libertad de una persona mientras avanza un proceso penal cuando se cumplen los requisitos legales. No equivale a una condena.",
+  "Rama Judicial": {
+    definition: "Conjunto de órganos encargados de administrar justicia en Colombia.",
+    simple: "Es la parte del Estado donde funcionan jueces, tribunales y altas cortes.",
+    not: "No depende jerárquicamente del Presidente de la República."
+  },
 
-  "orden de captura":
-    "Mandato emitido por una autoridad judicial competente para detener a una persona. Que exista una orden de captura no significa que la persona ya haya sido capturada.",
+  "Renta Joven": {
+    definition: "Programa de transferencias monetarias dirigido a jóvenes en determinadas condiciones de vulnerabilidad y vinculados a procesos de educación o formación.",
+    simple: "Es una ayuda económica para jóvenes que cumplen ciertos requisitos.",
+    not: "No todos los jóvenes del país reciben automáticamente este beneficio."
+  },
 
-  "pliego de cargos":
-    "Actuación mediante la cual una autoridad disciplinaria formula formalmente los hechos y posibles faltas que atribuye a una persona dentro de un proceso. No equivale a una sanción.",
+  "resolución": {
+    definition: "Acto administrativo mediante el cual una autoridad adopta una decisión dentro de sus competencias.",
+    simple: "Es una decisión oficial de una entidad pública.",
+    not: "No es lo mismo que una ley aprobada por el Congreso."
+  },
 
-  "solicitud de desarchivo":
-    "Petición para que una autoridad revise la decisión de archivar una investigación y determine si existen razones para continuarla. La solicitud por sí sola no reabre el proceso.",
+  "RUNT": {
+    definition: "Registro Único Nacional de Tránsito, sistema que concentra información sobre conductores, vehículos, licencias y otros datos del sector tránsito.",
+    simple: "Es la gran base de datos nacional de tránsito.",
+    not: "No es una empresa privada que pueda cambiar por sí sola las reglas de tránsito."
+  },
 
-  "contratación pública":
-    "Conjunto de procedimientos mediante los cuales las entidades del Estado adquieren bienes, obras o servicios utilizando recursos públicos.",
+  "Sala Plena": {
+    definition: "Reunión de todos o de la mayoría de integrantes de una corporación judicial o administrativa para tomar determinadas decisiones.",
+    simple: "Es cuando se reúne el organismo completo para decidir.",
+    not: "No es una sala física específica necesariamente."
+  },
 
-  "transparencia":
-    "Principio según el cual las actuaciones y decisiones públicas deben poder ser conocidas, examinadas y controladas, salvo las excepciones legales de reserva.",
+  "sometimiento a la justicia": {
+    definition: "Acto mediante el cual una persona vinculada a una estructura criminal se entrega o acepta ponerse a disposición de las autoridades bajo el marco jurídico correspondiente.",
+    simple: "Es cuando alguien de un grupo ilegal se entrega a la justicia.",
+    not: "No significa automáticamente que quede libre de responsabilidad penal."
+  },
 
-  "sometimiento a la justicia":
-    "Proceso mediante el cual una persona vinculada a una organización criminal se presenta ante las autoridades y queda sujeta a las reglas judiciales aplicables. No equivale automáticamente a una condena.",
+  "subcuenta": {
+    definition: "Componente específico dentro de un fondo o mecanismo financiero destinado a administrar recursos para un propósito determinado.",
+    simple: "Es una parte separada de un fondo para manejar dinero con un objetivo específico.",
+    not: "No es necesariamente una cuenta bancaria independiente."
+  },
 
-  "control de garantías":
-    "Función judicial destinada a revisar la legalidad y protección de derechos fundamentales durante determinadas actuaciones de una investigación penal.",
+  "tutela": {
+    definition: "Mecanismo judicial previsto en la Constitución para proteger de manera inmediata derechos fundamentales cuando estos resultan vulnerados o amenazados.",
+    simple: "Es una acción rápida ante un juez para proteger derechos fundamentales.",
+    not: "Una decisión inicial de tutela puede tener recursos, revisión o etapas posteriores."
+  },
 
-  "justicia transicional":
-    "Conjunto de mecanismos judiciales y extrajudiciales utilizados por sociedades que enfrentan las consecuencias de conflictos armados o violaciones masivas de derechos humanos, buscando combinar justicia, verdad, reparación y garantías de no repetición.",
+  "UNGRD": {
+    definition: "Unidad Nacional para la Gestión del Riesgo de Desastres.",
+    simple: "Es la entidad nacional que coordina la respuesta ante desastres y emergencias.",
+    not: "No es la única entidad responsable de atender una emergencia."
+  },
 
-  "crímenes de guerra":
-    "Violaciones graves de las normas aplicables a los conflictos armados que pueden generar responsabilidad penal individual cuando se cumplen los elementos jurídicos correspondientes.",
-
-  "crímenes de lesa humanidad":
-    "Determinados actos graves cometidos como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque, según los requisitos del derecho penal internacional.",
-
-  "independencia judicial":
-    "Principio según el cual jueces y tribunales deben decidir los asuntos sometidos a su conocimiento sin interferencias indebidas de otras ramas del poder, actores políticos o particulares.",
-
-  "medida cautelar":
-    "Decisión provisional adoptada por una autoridad judicial para proteger derechos o preservar una situación mientras se resuelve de fondo un proceso. No equivale necesariamente a una decisión definitiva.",
-
-  "defensor de oficio":
-    "Abogado asignado por el sistema de defensa pública para garantizar que una persona cuente con representación jurídica cuando no tiene o no designa un abogado particular.",
-
-  "partido independiente":
-    "En el Estatuto de la Oposición, organización política que no se declara de gobierno ni de oposición. Puede apoyar o controvertir decisiones del Ejecutivo según cada asunto.",
-
-  "Renta Joven":
-    "Programa de transferencias monetarias dirigido a población joven que cumple determinados requisitos de educación y focalización socioeconómica. Los pagos dependen de las condiciones y cronogramas definidos por Prosperidad Social.",
-
-  "proyecto de resolución":
-    "Texto normativo que una entidad publica para estudio, comentarios o trámite antes de adoptar una decisión administrativa definitiva. Un proyecto no equivale a una resolución ya expedida."
+  "verificación": {
+    definition: "Proceso de contraste de una afirmación mediante documentos, fuentes primarias, registros oficiales y otras evidencias disponibles.",
+    simple: "Es comprobar si algo que se dijo coincide con la evidencia.",
+    not: "Verificar no significa defender o atacar políticamente a quien hizo la afirmación."
+  }
 
 };

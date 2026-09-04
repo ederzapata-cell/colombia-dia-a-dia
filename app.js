@@ -230,6 +230,106 @@ function glossaryEntries() {
 }
 
 
+/*
+  Permite usar dos formatos:
+
+  FORMATO ANTIGUO:
+  "tutela": "Definición..."
+
+  FORMATO NUEVO:
+  "tutela": {
+    definition: "...",
+    simple: "...",
+    not: "..."
+  }
+*/
+
+function normalizeGlossaryEntry(value) {
+
+  if (
+    typeof value === "string"
+  ) {
+
+    return {
+      definition: value,
+      simple: "",
+      not: ""
+    };
+
+  }
+
+
+  if (
+    value &&
+    typeof value === "object"
+  ) {
+
+    return {
+      definition:
+        value.definition || "",
+
+      simple:
+        value.simple || "",
+
+      not:
+        value.not || ""
+    };
+
+  }
+
+
+  return {
+    definition: "",
+    simple: "",
+    not: ""
+  };
+
+}
+
+
+function glossarySearchText(
+  term,
+  value
+) {
+
+  const entry =
+    normalizeGlossaryEntry(
+      value
+    );
+
+
+  return [
+    term,
+    entry.definition,
+    entry.simple,
+    entry.not
+  ]
+    .join(" ")
+    .toLowerCase();
+
+}
+
+
+function glossaryPreview(
+  value
+) {
+
+  const entry =
+    normalizeGlossaryEntry(
+      value
+    );
+
+
+  if (entry.simple) {
+    return entry.simple;
+  }
+
+
+  return entry.definition;
+
+}
+
+
 function highlightGlossary(text) {
 
   if (!text) {
@@ -295,8 +395,14 @@ function openTerm(term) {
 
   const [
     name,
-    definition
+    value
   ] = realTerm;
+
+
+  const entry =
+    normalizeGlossaryEntry(
+      value
+    );
 
 
   document.getElementById(
@@ -305,10 +411,96 @@ function openTerm(term) {
     name;
 
 
-  document.getElementById(
-    "termDialogDefinition"
-  ).textContent =
-    definition;
+  const definitionBox =
+    document.getElementById(
+      "termDialogDefinition"
+    );
+
+
+  definitionBox.innerHTML = `
+    ${
+      entry.definition
+        ? `
+          <span
+            style="
+              display:block;
+              margin-bottom:18px;
+            "
+          >
+            <strong
+              style="
+                display:block;
+                margin-bottom:6px;
+              "
+            >
+              DEFINICIÓN
+            </strong>
+
+            <span>
+              ${entry.definition}
+            </span>
+          </span>
+        `
+        : ""
+    }
+
+    ${
+      entry.simple
+        ? `
+          <span
+            style="
+              display:block;
+              margin-bottom:18px;
+              padding:14px 16px;
+              border-radius:14px;
+              background:#f3f6f9;
+            "
+          >
+            <strong
+              style="
+                display:block;
+                margin-bottom:6px;
+              "
+            >
+              EN PALABRAS SENCILLAS
+            </strong>
+
+            <span>
+              ${entry.simple}
+            </span>
+          </span>
+        `
+        : ""
+    }
+
+    ${
+      entry.not
+        ? `
+          <span
+            style="
+              display:block;
+              padding:14px 16px;
+              border-radius:14px;
+              background:#fff7e8;
+            "
+          >
+            <strong
+              style="
+                display:block;
+                margin-bottom:6px;
+              "
+            >
+              NO SIGNIFICA...
+            </strong>
+
+            <span>
+              ${entry.not}
+            </span>
+          </span>
+        `
+        : ""
+    }
+  `;
 
 
   termDialog.showModal();
@@ -897,7 +1089,7 @@ function renderTimeline() {
 
 
 /* =========================================================
-   TERMINOS DESTACADOS
+   TÉRMINOS DESTACADOS
    ========================================================= */
 
 function getRelevantTerms() {
@@ -1072,10 +1264,11 @@ function doSearch(query) {
   const glossaryHits =
     glossaryEntries()
       .filter(
-        ([term, definition]) =>
-          `${term} ${definition}`
-            .toLowerCase()
-            .includes(q)
+        ([term, value]) =>
+          glossarySearchText(
+            term,
+            value
+          ).includes(q)
       );
 
 
@@ -1119,7 +1312,7 @@ function doSearch(query) {
     glossaryHits
       .slice(0, 15)
       .map(
-        ([term, definition]) => `
+        ([term, value]) => `
           <button
             type="button"
             class="glossary-hit"
@@ -1131,7 +1324,7 @@ function doSearch(query) {
             </strong>
 
             <span>
-              ${definition}
+              ${glossaryPreview(value)}
             </span>
 
           </button>
@@ -1242,18 +1435,17 @@ function renderGlossary(
   const entries =
     glossaryEntries()
       .filter(
-        ([term, definition]) => {
+        ([term, value]) => {
 
           if (!q) {
             return true;
           }
 
 
-          return (
-            `${term} ${definition}`
-              .toLowerCase()
-              .includes(q)
-          );
+          return glossarySearchText(
+            term,
+            value
+          ).includes(q);
 
         }
       )
@@ -1270,7 +1462,7 @@ function renderGlossary(
     entries.length
       ? entries
           .map(
-            ([term, definition]) => `
+            ([term, value]) => `
               <button
                 type="button"
                 class="glossary-hit"
@@ -1282,7 +1474,7 @@ function renderGlossary(
                 </strong>
 
                 <span>
-                  ${definition}
+                  ${glossaryPreview(value)}
                 </span>
 
               </button>
@@ -1679,7 +1871,9 @@ glossarySearch.addEventListener(
 );
 
 
-/* CERRAR DIALOGS */
+/* =========================================================
+   CERRAR DIALOGS
+   ========================================================= */
 
 document
   .querySelectorAll(
@@ -1703,7 +1897,9 @@ document
   });
 
 
-/* NAV */
+/* =========================================================
+   NAV
+   ========================================================= */
 
 document
   .querySelectorAll(
@@ -1779,7 +1975,9 @@ document
   });
 
 
-/* BRAND */
+/* =========================================================
+   BRAND
+   ========================================================= */
 
 document
   .getElementById(
@@ -1803,7 +2001,9 @@ document
   );
 
 
-/* ESCUCHAR TERM BUTTONS */
+/* =========================================================
+   ESCUCHAR TERM BUTTONS
+   ========================================================= */
 
 document.addEventListener(
   "click",

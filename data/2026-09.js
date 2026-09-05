@@ -258,3 +258,142 @@ events.push(
   }
 
 );
+// =========================================================
+// 05 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-05"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Seguridad, gobernabilidad, oposición y justicia."
+};
+
+
+events.push(
+
+  // ---------------------------------------------------------
+  // GOBIERNO
+  // ---------------------------------------------------------
+
+  {
+    id: "ataque-drones-eln-ocana-05",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Ataque con drones contra guarnición militar en Ocaña deja tres militares muertos",
+    summary: "Un ataque con drones cargados con explosivos contra el Cantón Militar El Trapiche, en Ocaña, Norte de Santander, dejó tres militares muertos y cuatro heridos. El Gobierno atribuyó el ataque al ELN y anunció una respuesta ofensiva contra esa organización y otras estructuras armadas en el Catatumbo.",
+    eventDate: "2026-09-05",
+    publishedDate: "2026-09-05",
+    sourceType: "Fuente periodística",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-05/un-ataque-con-drones-del-eln-deja-al-menos-tres-muertos-en-un-cuartel-militar-en-colombia.html",
+    status: "Información confirmada",
+    related: [
+      "Ocaña",
+      "Norte de Santander",
+      "ELN",
+      "Catatumbo",
+      "Fuerzas Militares",
+      "drones"
+    ],
+    whyItMatters: "El ataque evidencia el uso de drones con explosivos contra instalaciones militares y provocó el anuncio de una nueva respuesta operativa del Gobierno en una de las regiones con mayor presencia de grupos armados.",
+    note: "El ataque comenzó el 4 de septiembre y su balance, consecuencias y respuesta gubernamental fueron noticia nacional durante el 5 de septiembre.",
+    extraSources: []
+  },
+
+  {
+    id: "coalicion-gobierno-congreso-05",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "GOBERNABILIDAD",
+    importance: "IMPORTANTE",
+    title: "Ocho partidos se alinean con el Gobierno mientras se define el nuevo mapa político del Congreso",
+    summary: "Ocho partidos políticos se habían declarado de Gobierno mientras otras colectividades definían su posición frente a la administración de Abelardo De La Espriella. Cambio Radical y ASI quedaron entre las fuerzas que respaldan al Ejecutivo, mientras el Nuevo Liberalismo y la Alianza Verde optaron por declararse independientes.",
+    eventDate: "2026-09-05",
+    publishedDate: "2026-09-05",
+    sourceType: "Fuente periodística",
+    sourceName: "El Espectador",
+    sourceUrl: "https://www.elespectador.com/politica/de-la-espriella-ya-suma-141-votos-en-el-congreso-asi-estan-las-cargas-para-la-gobernabilidad-que-partidos-lo-apoyan/",
+    status: "Mapa político en definición",
+    related: [
+      "Congreso",
+      "Abelardo De La Espriella",
+      "Cambio Radical",
+      "ASI",
+      "Nuevo Liberalismo",
+      "Alianza Verde",
+      "CNE"
+    ],
+    whyItMatters: "La posición formal de los partidos determina la relación política de cada colectividad con el Ejecutivo y permite dimensionar las mayorías con las que podría contar el Gobierno para tramitar su agenda en el Congreso.",
+    note: "La estimación de votos potenciales no garantiza que todos los congresistas de los partidos declarados de Gobierno voten de manera uniforme en cada proyecto.",
+    extraSources: [
+      [
+        "El País · definición del mapa político ante el CNE",
+        "https://www.elpais.com.co/colombia/cne-faltan-horas-para-definir-el-mapa-politico-frente-al-gobierno-de-la-espriella-0401.html"
+      ]
+    ]
+  },
+
+
+  // ---------------------------------------------------------
+  // OPOSICIÓN
+  // ---------------------------------------------------------
+
+  {
+    id: "cepeda-regresion-autoritaria-05",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN",
+    category: "OPOSICIÓN",
+    importance: "RELEVANTE",
+    title: "Iván Cepeda denuncia una “regresión autoritaria” y mantiene llamado a la movilización",
+    summary: "Iván Cepeda afirmó que Colombia atraviesa lo que calificó como una “regresión autoritaria” bajo el Gobierno de Abelardo De La Espriella y señaló que sectores de oposición continuarán promoviendo movilización social y una estrategia que denomina “desobediencia civil pacífica”.",
+    eventDate: "2026-09-05",
+    publishedDate: "2026-09-05",
+    sourceType: "Declaración política reportada por prensa",
+    sourceName: "Notimérica",
+    sourceUrl: "https://www.notimerica.com/politica/noticia-colombia-cepeda-denuncia-regresion-autoritaria-colombia-insiste-desobediencia-civil-pacifica-20260905122431.html",
+    status: "Declaración de oposición",
+    related: [
+      "Iván Cepeda",
+      "oposición",
+      "Abelardo De La Espriella",
+      "movilización social",
+      "desobediencia civil"
+    ],
+    whyItMatters: "Las declaraciones muestran la estrategia política que uno de los principales dirigentes de oposición plantea frente al nuevo Gobierno.",
+    note: "“Regresión autoritaria” y “desobediencia civil pacífica” corresponden a caracterizaciones y expresiones utilizadas por Cepeda; no constituyen afirmaciones editoriales de Colombia día a día.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · JUSTICIA
+  // ---------------------------------------------------------
+
+  {
+    id: "tutela-emisoras-paz-cepeda-05",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA",
+    importance: "RELEVANTE",
+    title: "Juez niega tutela presentada por Iván Cepeda por cambios en las Emisoras de Paz",
+    summary: "El Juzgado 32 de Ejecución de Penas y Medidas de Seguridad de Bogotá negó una acción de tutela presentada por Iván Cepeda y otros accionantes relacionada con los cambios realizados en las Emisoras de Paz.",
+    eventDate: "2026-09-05",
+    publishedDate: "2026-09-05",
+    sourceType: "Decisión judicial reportada por prensa",
+    sourceName: "El Heraldo",
+    sourceUrl: "https://www.elheraldo.co/colombia/2026/09/05/niegan-tutela-de-ivan-cepeda-por-suspension-de-emisoras-de-paz/",
+    status: "Tutela negada",
+    related: [
+      "Iván Cepeda",
+      "Emisoras de Paz",
+      "Bogotá",
+      "tutela",
+      "justicia"
+    ],
+    whyItMatters: "La decisión judicial interviene en una controversia sobre el funcionamiento de las Emisoras de Paz y las medidas adoptadas sobre esos espacios creados en desarrollo del Acuerdo de Paz.",
+    note: "El fallo de tutela resuelve la acción constitucional presentada en este caso y no implica necesariamente que hayan concluido otras controversias jurídicas o políticas relacionadas con las emisoras.",
+    extraSources: []
+  }
+
+);

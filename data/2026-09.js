@@ -397,3 +397,95 @@ events.push(
   }
 
 );
+// =========================================================
+// 06 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-06"] = {
+  status: "HOY",
+  subtitle: "Control disciplinario, derechos humanos y seguridad."
+};
+
+events.push(
+
+  {
+    id: "empoaguas-pliego-cargos-06",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTROL Y CONTRATACIÓN",
+    importance: "RELEVANTE",
+    title: "Procuraduría formula cargos a exdirectivos de Empoaguas por proyecto de agua potable en Guaviare",
+    summary: "La Procuraduría formuló pliego de cargos contra el exgerente de Empoaguas José Vicente Urquijo Sedaño y el exsubgerente operativo Juan Alexis Moreno Leyton por presuntas irregularidades en la ejecución de un proyecto superior a $30.000 millones financiado con regalías.",
+    eventDate: "2026-09-06",
+    publishedDate: "2026-09-06",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/pliego-cargos-exdirectivos-empoaguas-presuntas-irregularidades-millonario-proyecto-agua-potable-guaviare.aspx",
+    status: "Pliego de cargos",
+    related: [
+      "Empoaguas",
+      "San José del Guaviare",
+      "Sistema General de Regalías",
+      "agua potable",
+      "instituciones educativas rurales"
+    ],
+    whyItMatters: "El proyecto buscaba suministrar agua potable a 88 instituciones educativas rurales y fue financiado con recursos públicos del Sistema General de Regalías.",
+    note: "La formulación de cargos no equivale a una sanción ni establece responsabilidad disciplinaria definitiva.",
+    extraSources: []
+  },
+
+  {
+    id: "defensoria-operacion-azarias-06",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "DERECHOS HUMANOS",
+    importance: "IMPORTANTE",
+    title: "Defensoría cuestiona la presentación pública de los resultados de la Operación Azarías",
+    summary: "La defensora del Pueblo, Iris Marín Ortiz, cuestionó públicamente la forma en que el presidente Abelardo De La Espriella presentó los resultados de la Operación Azarías en Guaviare, en la que murieron 23 personas señaladas oficialmente como integrantes de estructuras de alias Iván Mordisco.",
+    eventDate: "2026-09-06",
+    publishedDate: "2026-09-06",
+    sourceType: "Fuente oficial",
+    sourceName: "Defensoría del Pueblo",
+    sourceUrl: "https://www.defensoria.gov.co/web/guest/-/el-estado-y-el-gobierno-no-pueden-entrar-en-una-competencia-por-demostrar-quien-puede-ser-mas-cruel",
+    status: "Pronunciamiento institucional",
+    related: [
+      "Defensoría del Pueblo",
+      "Iris Marín",
+      "Operación Azarías",
+      "Guaviare",
+      "menores de edad",
+      "derechos humanos"
+    ],
+    whyItMatters: "El pronunciamiento abre una discusión institucional sobre los límites humanitarios y la forma en que el Estado comunica los resultados de operaciones militares.",
+    note: "La Defensoría señaló que, según Medicina Legal, dos de las personas muertas en la operación eran menores de edad. El pronunciamiento expresa la posición institucional de la Defensoría y no constituye una decisión judicial sobre la legalidad de la operación.",
+    extraSources: []
+  },
+
+  {
+    id: "capturas-paramo-letras-06",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "RELEVANTE",
+    title: "Capturan a dos hombres señalados de terrorismo en el Páramo de Letras",
+    summary: "Policía y Ejército capturaron a dos jóvenes de 19 y 22 años en el sector de Letras, entre Caldas y Tolima, después de que fueran encontrados, según el reporte oficial, instalando una bandera con simbología alusiva al ELN.",
+    eventDate: "2026-09-06",
+    publishedDate: "2026-09-06",
+    sourceType: "Reporte periodístico con información policial",
+    sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/06/capturan-a-dos-hombres-senalados-de-terrorismo-tras-operativo-en-el-paramo-de-letras/",
+    status: "Capturados",
+    related: [
+      "Páramo de Letras",
+      "Caldas",
+      "Tolima",
+      "Policía",
+      "Ejército",
+      "ELN"
+    ],
+    whyItMatters: "Las autoridades investigan si el episodio estaba relacionado con acciones de intimidación o extorsión y si los detenidos tenían algún vínculo efectivo con una estructura armada.",
+    note: "Los dos hombres fueron puestos a disposición de la Fiscalía por el presunto delito de terrorismo. La captura y la simbología encontrada no establecen por sí mismas responsabilidad penal ni pertenencia al ELN.",
+    extraSources: []
+  }
+
+);

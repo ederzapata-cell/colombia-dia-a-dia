@@ -403,10 +403,52 @@ events.push(
 
 dayMeta["2026-09-06"] = {
   status: "HOY",
-  subtitle: "Control disciplinario, derechos humanos y seguridad."
+  subtitle: "Seguridad, control disciplinario y recursos públicos."
 };
 
+
 events.push(
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · SEGURIDAD
+  // ---------------------------------------------------------
+
+  {
+    id: "operacion-el-penol-narino-06",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Operación contra disidencias de las FARC deja siete muertos y cinco capturados en Nariño",
+    summary: "Las Fuerzas Militares reportaron que siete presuntos integrantes del frente Franco Benavides, perteneciente al Estado Mayor Central de las disidencias de las FARC, murieron durante operaciones militares en El Peñol, Nariño. Otras cinco personas fueron capturadas.",
+    eventDate: "2026-09-06",
+    publishedDate: "2026-09-06",
+    sourceType: "Atribución oficial reportada por prensa",
+    sourceName: "Fuerzas Militares / Canal 1",
+    sourceUrl: "https://canal1.com.co/noticias/nacional/presidente-reporto-siete-muertos-y-cinco-capturados-en-narino/",
+    status: "Balance operacional",
+    related: [
+      "El Peñol",
+      "Nariño",
+      "Fuerzas Militares",
+      "Frente Franco Benavides",
+      "Estado Mayor Central",
+      "disidencias de las FARC"
+    ],
+    whyItMatters: "La operación forma parte de las acciones de la Fuerza Pública contra estructuras armadas que operan en Nariño y afecta a una estructura señalada por las autoridades de participar en actividades armadas y economías ilegales.",
+    note: "La identificación de las personas fallecidas como integrantes del frente Franco Benavides corresponde a la información entregada por las autoridades. La tarjeta no establece individualmente responsabilidades penales.",
+    extraSources: [
+      [
+        "Semana",
+        "https://semana-semana-prod.web.arc-cdn.net/nacion/articulo/fuerzas-militares-registran-nuevo-golpe-contra-las-disidencias-de-las-farc-tras-operativo-en-el-penol-narino/202644/"
+      ]
+    ]
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · CONTROL Y CONTRATACIÓN
+  // ---------------------------------------------------------
 
   {
     id: "empoaguas-pliego-cargos-06",
@@ -415,7 +457,7 @@ events.push(
     category: "CONTROL Y CONTRATACIÓN",
     importance: "RELEVANTE",
     title: "Procuraduría formula cargos a exdirectivos de Empoaguas por proyecto de agua potable en Guaviare",
-    summary: "La Procuraduría formuló pliego de cargos contra el exgerente de Empoaguas José Vicente Urquijo Sedaño y el exsubgerente operativo Juan Alexis Moreno Leyton por presuntas irregularidades en la ejecución de un proyecto superior a $30.000 millones financiado con regalías.",
+    summary: "La Procuraduría formuló pliego de cargos contra el exgerente de Empoaguas José Vicente Urquijo Sedaño y el exsubgerente operativo Juan Alexis Moreno Leyton por presuntas irregularidades en la ejecución de un proyecto de más de $30.000 millones financiado con recursos del Sistema General de Regalías.",
     eventDate: "2026-09-06",
     publishedDate: "2026-09-06",
     sourceType: "Fuente oficial",
@@ -425,66 +467,13 @@ events.push(
     related: [
       "Empoaguas",
       "San José del Guaviare",
+      "Procuraduría",
       "Sistema General de Regalías",
       "agua potable",
       "instituciones educativas rurales"
     ],
-    whyItMatters: "El proyecto buscaba suministrar agua potable a 88 instituciones educativas rurales y fue financiado con recursos públicos del Sistema General de Regalías.",
-    note: "La formulación de cargos no equivale a una sanción ni establece responsabilidad disciplinaria definitiva.",
-    extraSources: []
-  },
-
-  {
-    id: "defensoria-operacion-azarias-06",
-    group: "state",
-    groupLabel: "ESTADO Y PAÍS",
-    category: "DERECHOS HUMANOS",
-    importance: "IMPORTANTE",
-    title: "Defensoría cuestiona la presentación pública de los resultados de la Operación Azarías",
-    summary: "La defensora del Pueblo, Iris Marín Ortiz, cuestionó públicamente la forma en que el presidente Abelardo De La Espriella presentó los resultados de la Operación Azarías en Guaviare, en la que murieron 23 personas señaladas oficialmente como integrantes de estructuras de alias Iván Mordisco.",
-    eventDate: "2026-09-06",
-    publishedDate: "2026-09-06",
-    sourceType: "Fuente oficial",
-    sourceName: "Defensoría del Pueblo",
-    sourceUrl: "https://www.defensoria.gov.co/web/guest/-/el-estado-y-el-gobierno-no-pueden-entrar-en-una-competencia-por-demostrar-quien-puede-ser-mas-cruel",
-    status: "Pronunciamiento institucional",
-    related: [
-      "Defensoría del Pueblo",
-      "Iris Marín",
-      "Operación Azarías",
-      "Guaviare",
-      "menores de edad",
-      "derechos humanos"
-    ],
-    whyItMatters: "El pronunciamiento abre una discusión institucional sobre los límites humanitarios y la forma en que el Estado comunica los resultados de operaciones militares.",
-    note: "La Defensoría señaló que, según Medicina Legal, dos de las personas muertas en la operación eran menores de edad. El pronunciamiento expresa la posición institucional de la Defensoría y no constituye una decisión judicial sobre la legalidad de la operación.",
-    extraSources: []
-  },
-
-  {
-    id: "capturas-paramo-letras-06",
-    group: "state",
-    groupLabel: "ESTADO Y PAÍS",
-    category: "SEGURIDAD",
-    importance: "RELEVANTE",
-    title: "Capturan a dos hombres señalados de terrorismo en el Páramo de Letras",
-    summary: "Policía y Ejército capturaron a dos jóvenes de 19 y 22 años en el sector de Letras, entre Caldas y Tolima, después de que fueran encontrados, según el reporte oficial, instalando una bandera con simbología alusiva al ELN.",
-    eventDate: "2026-09-06",
-    publishedDate: "2026-09-06",
-    sourceType: "Reporte periodístico con información policial",
-    sourceName: "Caracol Radio",
-    sourceUrl: "https://caracol.com.co/2026/09/06/capturan-a-dos-hombres-senalados-de-terrorismo-tras-operativo-en-el-paramo-de-letras/",
-    status: "Capturados",
-    related: [
-      "Páramo de Letras",
-      "Caldas",
-      "Tolima",
-      "Policía",
-      "Ejército",
-      "ELN"
-    ],
-    whyItMatters: "Las autoridades investigan si el episodio estaba relacionado con acciones de intimidación o extorsión y si los detenidos tenían algún vínculo efectivo con una estructura armada.",
-    note: "Los dos hombres fueron puestos a disposición de la Fiscalía por el presunto delito de terrorismo. La captura y la simbología encontrada no establecen por sí mismas responsabilidad penal ni pertenencia al ELN.",
+    whyItMatters: "El proyecto, financiado con recursos públicos, estaba destinado a suministrar agua potable a 88 instituciones educativas rurales de San José del Guaviare.",
+    note: "La formulación de cargos disciplinarios no equivale a una sanción ni establece responsabilidad definitiva. El proceso deberá determinar si las conductas investigadas constituyen faltas disciplinarias.",
     extraSources: []
   }
 

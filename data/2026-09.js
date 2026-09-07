@@ -513,3 +513,267 @@ events.push(
   }
 
 );
+// =========================================================
+// 07 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-07"] = {
+  status: "HOY",
+  subtitle: "Reconstrucción, seguridad, control institucional, justicia, servicios públicos y derechos humanos."
+};
+
+events.push(
+
+  // ---------------------------------------------------------
+  // GOBIERNO · RECONSTRUCCIÓN
+  // ---------------------------------------------------------
+
+  {
+    id: "presidente-empresarios-choco-07",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "RECONSTRUCCIÓN",
+    importance: "IMPORTANTE",
+    title: "Presidente viaja a Chocó con empresarios para avanzar en el plan de reconstrucción",
+    summary: "El presidente Abelardo De La Espriella tiene prevista este 7 de septiembre una visita a Quibdó acompañado por dirigentes empresariales para trabajar en un plan de recuperación del departamento tras el terremoto del 10 de agosto.",
+    eventDate: "2026-09-07",
+    publishedDate: "2026-09-07",
+    sourceType: "Agenda presidencial reportada por prensa",
+    sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/07/presidente-visitara-al-choco-junto-empresarios-para-trazar-el-camino-de-la-reconstruccion-tras-sismo/",
+    status: "Jornada prevista",
+    related: [
+      "Chocó",
+      "Quibdó",
+      "reconstrucción",
+      "terremoto",
+      "empresarios",
+      "Abelardo De La Espriella"
+    ],
+    whyItMatters: "La visita busca vincular inversión y financiación privada con la reconstrucción de vivienda, infraestructura y actividad económica en una de las regiones más afectadas por el terremoto.",
+    note: "Esta tarjeta registra la agenda prevista para hoy. Los acuerdos, recursos o compromisos concretos que resulten de la reunión deberán incorporarse después de que sean anunciados o documentados.",
+    extraSources: [
+      [
+        "El Espectador",
+        "https://www.elespectador.com/politica/de-la-espriella-y-empresarios-iran-a-choco-para-coordinar-apoyo-tras-terremoto/"
+      ]
+    ]
+  },
+
+
+  // ---------------------------------------------------------
+  // GOBIERNO · SEGURIDAD
+  // ---------------------------------------------------------
+
+  {
+    id: "balance-primer-mes-seguridad-07",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Gobierno presenta balance de operaciones de la Fuerza Pública durante su primer mes",
+    summary: "La Presidencia publicó un balance acumulado desde el 7 de agosto que reporta cerca de 15.000 capturas, 23 cabecillas neutralizados, alrededor de 50 toneladas de narcóticos incautadas, más de 1.300 hectáreas de coca erradicadas y cerca de 1.500 armas decomisadas.",
+    eventDate: "2026-09-07",
+    publishedDate: "2026-09-07",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Firmes-en-lucha-contra-el-narcoterrorismo-y-la-criminalidad-260907.aspx",
+    status: "Balance oficial",
+    related: [
+      "Fuerza Pública",
+      "seguridad",
+      "capturas",
+      "narcotráfico",
+      "cultivos de coca",
+      "armas"
+    ],
+    whyItMatters: "El balance permite conocer los resultados operacionales que el Gobierno atribuye a la Fuerza Pública durante el primer mes de la nueva administración.",
+    note: "Las cifras corresponden a un balance presentado por el Gobierno y reúnen resultados acumulados desde el 7 de agosto. No significan que todas las operaciones hayan ocurrido el 7 de septiembre.",
+    extraSources: []
+  },
+
+  {
+    id: "mininterior-defensoria-respuesta-07",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "DERECHOS HUMANOS Y SEGURIDAD",
+    importance: "RELEVANTE",
+    title: "Ministro del Interior rechaza cuestionamientos de la Defensoría sobre actuación del Estado en operaciones militares",
+    summary: "El ministro del Interior, Rodrigo Lara, respondió a un pronunciamiento de la defensora del Pueblo, Iris Marín, quien había pedido que las operaciones contra grupos armados respetaran los límites constitucionales y la dignidad humana.",
+    eventDate: "2026-09-07",
+    publishedDate: "2026-09-07",
+    sourceType: "Declaración atribuida",
+    sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/07/una-triste-equivocacion-mininterior-responde-a-la-defensoria-del-pueblo-sobre-cuestionamientos/",
+    status: "Pronunciamientos institucionales en contraste",
+    related: [
+      "Ministerio del Interior",
+      "Rodrigo Lara",
+      "Defensoría del Pueblo",
+      "Iris Marín",
+      "derechos humanos",
+      "operaciones militares"
+    ],
+    whyItMatters: "La discusión enfrenta dos asuntos institucionales relevantes: la obligación del Estado de combatir grupos armados y el deber de mantener sus actuaciones dentro de los límites constitucionales y humanitarios.",
+    note: "La tarjeta registra las posiciones de ambas instituciones sin adoptar ninguna de ellas como conclusión editorial.",
+    extraSources: [
+      [
+        "Defensoría del Pueblo",
+        "https://www.defensoria.gov.co/"
+      ]
+    ]
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · SERVICIOS PÚBLICOS
+  // ---------------------------------------------------------
+
+  {
+    id: "puerto-carreno-servicios-publicos-07",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SERVICIOS PÚBLICOS",
+    importance: "RELEVANTE",
+    title: "Procuraduría exige medidas por crisis de energía y aseo en Puerto Carreño",
+    summary: "La Procuraduría inició seguimiento preventivo por las deficiencias en la prestación de energía eléctrica y aseo que afectan a habitantes y comunidades indígenas de Puerto Carreño, Vichada.",
+    eventDate: "2026-09-07",
+    publishedDate: "2026-09-07",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/procuraduria-exige-garantias-servicios-publicos-puerto-carreno-vichada-tras-crisis-energetica-considerables.aspx",
+    status: "Actuación preventiva",
+    related: [
+      "Puerto Carreño",
+      "Vichada",
+      "energía",
+      "aseo",
+      "Procuraduría",
+      "comunidades indígenas"
+    ],
+    whyItMatters: "La falta o deficiencia prolongada de servicios esenciales afecta directamente las condiciones de vida de la población y exige respuestas de autoridades nacionales, territoriales y empresas prestadoras.",
+    note: "La actuación de la Procuraduría es preventiva y de seguimiento; no corresponde a una sanción disciplinaria.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · NIÑEZ Y CONTROL DISCIPLINARIO
+  // ---------------------------------------------------------
+
+  {
+    id: "defensora-familia-yopal-cargos-07",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTROL DISCIPLINARIO",
+    importance: "RELEVANTE",
+    title: "Procuraduría formula cargos a defensora de Familia por presunta demora en proteger a dos menores",
+    summary: "La Procuraduría formuló pliego de cargos contra Nidya Jazmín Andrade Forero, defensora de Familia del ICBF en Yopal, por presuntas omisiones y demoras en la activación de medidas de protección para dos menores afectados por una tragedia familiar.",
+    eventDate: "2026-09-07",
+    publishedDate: "2026-09-07",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/cargos-defensora-familia-presunta-falta-atencion-menores-edad.aspx",
+    status: "Pliego de cargos",
+    related: [
+      "ICBF",
+      "Yopal",
+      "Casanare",
+      "Nidya Jazmín Andrade Forero",
+      "niñez",
+      "Procuraduría"
+    ],
+    whyItMatters: "Los defensores de Familia tienen obligaciones específicas y plazos legales para verificar y proteger los derechos de niños y adolescentes ante posibles situaciones de vulneración.",
+    note: "La Procuraduría calificó provisionalmente la conducta como falta grave a título de culpa grave. La formulación de cargos no establece responsabilidad definitiva.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · EMPLEO PÚBLICO
+  // ---------------------------------------------------------
+
+  {
+    id: "concurso-procuraduria-2800-cargos-07",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "INSTITUCIONES",
+    importance: "RELEVANTE",
+    title: "Se abre inscripción para concurso de más de 2.800 cargos de carrera en la Procuraduría",
+    summary: "Este 7 de septiembre comienza el proceso de inscripción para un concurso de méritos destinado a proveer más de 2.800 cargos de carrera administrativa en la Procuraduría General de la Nación.",
+    eventDate: "2026-09-07",
+    publishedDate: "2026-08-21",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/procurador-general-ordena-avanzar-con-carrera-administrativa-institucion.aspx",
+    status: "Inscripciones abiertas",
+    related: [
+      "Procuraduría",
+      "empleo público",
+      "concurso de méritos",
+      "carrera administrativa",
+      "Universidad de Antioquia"
+    ],
+    whyItMatters: "El concurso busca proveer miles de empleos mediante criterios de mérito y reducir la dependencia de nombramientos provisionales dentro de la entidad.",
+    note: "La convocatoria fue anunciada previamente, pero la apertura de las inscripciones ocurre el 7 de septiembre; por eso la fecha del hecho corresponde a hoy.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · JUSTICIA
+  // ---------------------------------------------------------
+
+  {
+    id: "corte-audiencias-exfuncionarios-07",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA",
+    importance: "RELEVANTE",
+    title: "Corte Suprema tiene programadas audiencias en procesos contra exfuncionarios públicos",
+    summary: "La Sala Especial de Primera Instancia programó para este 7 de septiembre audiencias de formulación de acusación contra un exfiscal delegado ante el Tribunal Superior de Bogotá y un exgobernador de Bolívar, además de la continuación del juicio oral contra el exgobernador de Norte de Santander William Villamizar Laguado.",
+    eventDate: "2026-09-07",
+    publishedDate: "2026-09-07",
+    sourceType: "Fuente oficial",
+    sourceName: "Corte Suprema de Justicia",
+    sourceUrl: "https://cortesuprema.gov.co/calendario-de-audiencias-primera-instancia/",
+    status: "Audiencias programadas",
+    related: [
+      "Corte Suprema de Justicia",
+      "Germán Árias Cotes",
+      "José Julián Vásquez Buelvas",
+      "William Villamizar Laguado",
+      "Sala Especial de Primera Instancia"
+    ],
+    whyItMatters: "Los procesos corresponden a actuaciones penales contra personas que ejercieron altos cargos públicos y son competencia de la Sala Especial de Primera Instancia.",
+    note: "La programación de una audiencia no implica condena. El estado de cada proceso debe actualizarse si durante la jornada se produce una decisión relevante.",
+    extraSources: []
+  },
+
+  {
+    id: "corte-aspirantes-sala-instruccion-07",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA",
+    importance: "RELEVANTE",
+    title: "Corte Suprema continúa audiencias para elegir cinco magistrados de la Sala Especial de Instrucción",
+    summary: "La Corte Suprema tiene previsto escuchar este 7 de septiembre a 20 aspirantes dentro del proceso para proveer cinco cargos de magistrado o magistrada de la Sala Especial de Instrucción.",
+    eventDate: "2026-09-07",
+    publishedDate: "2026-09-02",
+    sourceType: "Fuente oficial",
+    sourceName: "Corte Suprema de Justicia",
+    sourceUrl: "https://cortesuprema.gov.co/la-sala-plena-de-la-corte-suprema-de-justicia-escuchara-en-audiencia-publica-a-50-aspirantes-a-magistrado-a-de-la-sala-especial-de-instruccion/",
+    status: "Audiencia pública programada",
+    related: [
+      "Corte Suprema de Justicia",
+      "Sala Especial de Instrucción",
+      "magistrados",
+      "elección",
+      "Consejo Superior de la Judicatura"
+    ],
+    whyItMatters: "La Sala Especial de Instrucción investiga penalmente a congresistas y otros aforados, por lo que la renovación de cinco de sus magistraturas tiene relevancia institucional.",
+    note: "La Corte informó que las listas surgieron de una convocatoria pública a la que se presentaron 450 profesionales del Derecho. La audiencia de hoy está prevista para comenzar a las 12:45 p. m.; cualquier elección deberá registrarse solamente cuando efectivamente ocurra.",
+    extraSources: []
+  }
+
+);

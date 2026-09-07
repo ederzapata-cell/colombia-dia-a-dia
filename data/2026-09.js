@@ -402,78 +402,113 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-06"] = {
-  status: "HOY",
-  subtitle: "Seguridad, control disciplinario y recursos públicos."
+  status: "VERIFICADO ✓",
+  subtitle: "Operaciones militares, ataques en Cauca y pronunciamiento de la Defensoría."
 };
-
 
 events.push(
 
   // ---------------------------------------------------------
-  // ESTADO Y PAÍS · SEGURIDAD
+  // GOBIERNO / SEGURIDAD
   // ---------------------------------------------------------
 
   {
     id: "operacion-el-penol-narino-06",
-    group: "state",
-    groupLabel: "ESTADO Y PAÍS",
+    group: "government",
+    groupLabel: "GOBIERNO",
     category: "SEGURIDAD",
     importance: "IMPORTANTE",
-    title: "Operación contra disidencias de las FARC deja siete muertos y cinco capturados en Nariño",
-    summary: "Las Fuerzas Militares reportaron que siete presuntos integrantes del frente Franco Benavides, perteneciente al Estado Mayor Central de las disidencias de las FARC, murieron durante operaciones militares en El Peñol, Nariño. Otras cinco personas fueron capturadas.",
+    title: "Operación militar en El Peñol deja siete integrantes de disidencias muertos y cinco capturados",
+    summary: "El presidente Abelardo De La Espriella informó el 6 de septiembre que una operación de la Fuerza Pública contra el frente Franco Benavides, de las disidencias de las Farc, en El Peñol, Nariño, dejó siete integrantes de esa estructura muertos y otros cinco capturados.",
     eventDate: "2026-09-06",
     publishedDate: "2026-09-06",
-    sourceType: "Atribución oficial reportada por prensa",
-    sourceName: "Fuerzas Militares / Canal 1",
-    sourceUrl: "https://canal1.com.co/noticias/nacional/presidente-reporto-siete-muertos-y-cinco-capturados-en-narino/",
-    status: "Balance operacional",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Presidente-De-La-Espriella-destaca-golpe-contundente-de-la-Fuerza-Publica-contra-las-disidencias-de-las-Farc-260906.aspx",
+    status: "Balance oficial",
     related: [
       "El Peñol",
       "Nariño",
-      "Fuerzas Militares",
-      "Frente Franco Benavides",
-      "Estado Mayor Central",
-      "disidencias de las FARC"
+      "Franco Benavides",
+      "disidencias de las Farc",
+      "Fuerza Pública"
     ],
-    whyItMatters: "La operación forma parte de las acciones de la Fuerza Pública contra estructuras armadas que operan en Nariño y afecta a una estructura señalada por las autoridades de participar en actividades armadas y economías ilegales.",
-    note: "La identificación de las personas fallecidas como integrantes del frente Franco Benavides corresponde a la información entregada por las autoridades. La tarjeta no establece individualmente responsabilidades penales.",
+    whyItMatters: "La operación hace parte de la ofensiva militar del nuevo Gobierno contra estructuras armadas y produjo uno de los balances operacionales más altos reportados durante la jornada.",
+    note: "La condición de las personas fallecidas como integrantes de la estructura armada corresponde al reporte oficial de las autoridades.",
     extraSources: [
       [
-        "Semana",
-        "https://semana-semana-prod.web.arc-cdn.net/nacion/articulo/fuerzas-militares-registran-nuevo-golpe-contra-las-disidencias-de-las-farc-tras-operativo-en-el-penol-narino/202644/"
+        "Noticias Caracol",
+        "https://www.noticiascaracol.com/colombia/operacion-militar-en-el-penol-narino-deja-siete-disidentes-de-las-farc-muertos-y-cinco-capturados-cb20"
       ]
     ]
   },
 
 
   // ---------------------------------------------------------
-  // ESTADO Y PAÍS · CONTROL Y CONTRATACIÓN
+  // ESTADO Y PAÍS / SEGURIDAD
   // ---------------------------------------------------------
 
   {
-    id: "empoaguas-pliego-cargos-06",
+    id: "ataques-cajibio-inza-cauca-06",
     group: "state",
     groupLabel: "ESTADO Y PAÍS",
-    category: "CONTROL Y CONTRATACIÓN",
-    importance: "RELEVANTE",
-    title: "Procuraduría formula cargos a exdirectivos de Empoaguas por proyecto de agua potable en Guaviare",
-    summary: "La Procuraduría formuló pliego de cargos contra el exgerente de Empoaguas José Vicente Urquijo Sedaño y el exsubgerente operativo Juan Alexis Moreno Leyton por presuntas irregularidades en la ejecución de un proyecto de más de $30.000 millones financiado con recursos del Sistema General de Regalías.",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Ataques contra la Fuerza Pública en Cajibío e Inzá dejan tres policías heridos",
+    summary: "Durante la mañana del 6 de septiembre fueron atacadas instalaciones de la Fuerza Pública en Cajibío e Inzá, Cauca. En el corregimiento El Carmelo, Cajibío, la subestación de Policía fue atacada y tres uniformados resultaron heridos.",
     eventDate: "2026-09-06",
     publishedDate: "2026-09-06",
     sourceType: "Fuente oficial",
-    sourceName: "Procuraduría General de la Nación",
-    sourceUrl: "https://www.procuraduria.gov.co/Pages/pliego-cargos-exdirectivos-empoaguas-presuntas-irregularidades-millonario-proyecto-agua-potable-guaviare.aspx",
-    status: "Pliego de cargos",
+    sourceName: "Defensoría del Pueblo",
+    sourceUrl: "https://www.defensoria.gov.co/web/guest/-/reiteramos-nuestros-llamados-frente-al-deterioro-de-la-seguridad-en-cajib%C3%ADo-e-inz%C3%A1-cauca",
+    status: "Verificado",
     related: [
-      "Empoaguas",
-      "San José del Guaviare",
-      "Procuraduría",
-      "Sistema General de Regalías",
-      "agua potable",
-      "instituciones educativas rurales"
+      "Cajibío",
+      "Inzá",
+      "Cauca",
+      "Policía Nacional",
+      "Fuerza Pública",
+      "drones"
     ],
-    whyItMatters: "El proyecto, financiado con recursos públicos, estaba destinado a suministrar agua potable a 88 instituciones educativas rurales de San José del Guaviare.",
-    note: "La formulación de cargos disciplinarios no equivale a una sanción ni establece responsabilidad definitiva. El proceso deberá determinar si las conductas investigadas constituyen faltas disciplinarias.",
+    whyItMatters: "Los ataques muestran el deterioro del orden público en zonas del Cauca y afectaron directamente a miembros de la Fuerza Pública, además de generar riesgo para las comunidades cercanas.",
+    note: "La Defensoría confirmó tres policías heridos en Cajibío. La atribución específica de responsabilidad debe mantenerse en términos de lo informado por las autoridades.",
+    extraSources: [
+      [
+        "Caracol Radio",
+        "https://caracol.com.co/programas/noticias-regionales/"
+      ]
+    ]
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS / DERECHOS HUMANOS
+  // ---------------------------------------------------------
+
+  {
+    id: "defensoria-pronunciamiento-operacion-azarias-06",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "DERECHOS HUMANOS",
+    importance: "IMPORTANTE",
+    title: "Defensoría cuestiona la exhibición de cuerpos tras la operación Azarías",
+    summary: "La defensora del Pueblo, Iris Marín, cuestionó públicamente la forma en que el presidente fue mostrado caminando entre cuerpos de personas muertas durante la operación Azarías, realizada días antes en Guaviare.",
+    eventDate: "2026-09-06",
+    publishedDate: "2026-09-06",
+    sourceType: "Fuente oficial",
+    sourceName: "Defensoría del Pueblo",
+    sourceUrl: "https://www.defensoria.gov.co/web/guest/-/el-estado-y-el-gobierno-no-pueden-entrar-en-una-competencia-por-demostrar-quien-puede-ser-mas-cruel",
+    status: "Pronunciamiento institucional",
+    related: [
+      "Defensoría del Pueblo",
+      "Iris Marín",
+      "Operación Azarías",
+      "Guaviare",
+      "derechos humanos",
+      "Fuerza Pública"
+    ],
+    whyItMatters: "El pronunciamiento abre un debate institucional sobre los límites simbólicos y humanitarios de la comunicación pública de las operaciones militares y sobre el trato digno a las personas fallecidas.",
+    note: "Esta tarjeta registra el pronunciamiento de la Defensoría del 6 de septiembre. No vuelve a registrar como nuevo hecho la operación Azarías, que ocurrió en una fecha anterior.",
     extraSources: []
   }
 

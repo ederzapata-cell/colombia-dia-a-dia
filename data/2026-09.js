@@ -551,3 +551,41 @@ events.push(
     }
   ]
 }
+{
+  date: "2026-09-08",
+  label: "8 de septiembre",
+  government: [
+    {
+      title: "Gobierno y empresarios consolidan 13 acuerdos para la reconstrucción",
+      text: "El Espectador informó este 8 de septiembre que la reunión encabezada por el presidente Abelardo De La Espriella con grandes empresarios dejó 13 acuerdos estratégicos para la reconstrucción tras el terremoto. Las iniciativas abarcan sectores como transporte, energía y comercio, y se suman a cerca de $2 billones en apoyos anunciados por empresarios.",
+      source: "El Espectador",
+      url: "https://www.elespectador.com/politica/de-la-espriella-afianzo-lazos-con-privados-hay-13-acuerdos-para-la-reconstruccion/"
+    },
+    {
+      title: "De La Espriella retoma propuesta de corredor interoceánico para el Chocó",
+      text: "El País destacó este 8 de septiembre que el Gobierno retomó la propuesta de construir un corredor interoceánico que conecte el Atlántico y el Pacífico mediante un tren o canal. La iniciativa había sido impulsada durante el gobierno de Gustavo Petro y cuenta con estudios previos de prefactibilidad, aunque todavía no están definidos la ruta definitiva, la financiación ni el cronograma.",
+      source: "El País",
+      url: "https://elpais.com/america-colombia/2026-09-08/el-canal-que-los-une-de-la-espriella-retoma-la-propuesta-de-petro-de-construir-un-tren-interoceanico.html"
+    },
+    {
+      title: "Recorte del Estado vuelve al centro de la agenda del Gobierno",
+      text: "El Espectador publicó este 8 de septiembre un análisis sobre la anunciada reducción de la estructura estatal. Según cifras de Función Pública citadas por el medio, Colombia registra 1.422.061 servidores públicos y el 53 % pertenece a la Rama Ejecutiva. Entre las medidas planteadas por De La Espriella están el cierre de varias embajadas y la reorganización de entidades relacionadas con paz, reconciliación y derechos humanos.",
+      source: "El Espectador",
+      url: "https://www.elespectador.com/politica/de-la-espriella-recortara-el-estado-son-14-millones-de-servidores-publicos-mas-de-la-mitad-son-del-gobierno/"
+    },
+    {
+      title: "Primer mes de Gobierno: terremoto, seguridad y finanzas públicas concentran los retos",
+      text: "El Espectador publicó este 8 de septiembre un balance del primer mes de Abelardo De La Espriella en la Presidencia. El medio identifica como principales retos la reconstrucción después del terremoto, la situación de seguridad y las finanzas públicas, mientras el Gobierno busca recursos para atender la emergencia y tramitar un Presupuesto General de la Nación para 2027 cercano a $635 billones.",
+      source: "El Espectador",
+      url: "https://www.elespectador.com/politica/primer-mes-de-abelardo-de-la-espriella-estos-han-sido-los-tres-retos-de-su-gobierno/"
+    }
+  ],
+  opposition: [
+    {
+      title: "Iván Cepeda cuestiona los alcances de la visita de Marco Rubio",
+      text: "El senador Iván Cepeda expresó cuestionamientos frente a la visita a Colombia del secretario de Estado de Estados Unidos, Marco Rubio, y planteó dudas sobre los alcances políticos de la reunión con el Gobierno de Abelardo De La Espriella.",
+      source: "El País Cali",
+      url: "https://www.elpais.com.co/politica/ivan-cepeda-advierte-sobre-la-visita-de-marco-rubio-a-colombia-y-cuestiona-sus-posibles-alcances-0620.html"
+    }
+  ]
+}

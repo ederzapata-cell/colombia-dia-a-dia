@@ -506,3 +506,120 @@ events.push(
   }
 
 );
+// ---------------------------------------------------------
+// GOBIERNO / ECONOMÍA
+// ---------------------------------------------------------
+
+{
+  id: "congelamiento-gasto-entidades-09",
+  group: "government",
+  groupLabel: "GOBIERNO",
+  category: "ECONOMÍA",
+  importance: "IMPORTANTE",
+  title: "Congelamiento de recursos deja a varias entidades públicas al borde de la parálisis",
+  summary: "El Gobierno mantiene bloqueados recursos de distintas entidades como parte de su estrategia de ajuste fiscal. El Ministerio de Hacienda anunció un recorte presupuestal de $21,9 billones, mientras dependencias de Agricultura, Educación y entidades relacionadas con la implementación de paz reportan dificultades para ejecutar contratos y programas.",
+  eventDate: "2026-09-09",
+  publishedDate: "2026-09-09",
+  sourceType: "Fuente periodística",
+  sourceName: "El País",
+  sourceUrl: "https://elpais.com/america-colombia/2026-09-09/el-gobierno-frena-el-gasto-en-varias-entidades-que-quedan-al-borde-de-la-paralisis.html",
+  status: "Información publicada",
+  related: [
+    "ajuste fiscal",
+    "Ministerio de Hacienda",
+    "gasto público",
+    "presupuesto",
+    "entidades públicas"
+  ],
+  whyItMatters: "El bloqueo de recursos empieza a tener efectos concretos sobre la operación de entidades públicas y la ejecución de programas estatales.",
+  extraSources: []
+},
+
+// ---------------------------------------------------------
+// GOBIERNO / CONGRESO
+// ---------------------------------------------------------
+
+{
+  id: "mayorias-legislativas-gobierno-09",
+  group: "government",
+  groupLabel: "GOBIERNO",
+  category: "GOBERNABILIDAD",
+  importance: "IMPORTANTE",
+  title: "Mayorías legislativas se declaran de Gobierno",
+  summary: "El nuevo mapa político del Congreso deja al Gobierno con una mayoría formal significativa: 110 de 182 representantes y 63 de 103 senadores pertenecen a partidos que se han declarado oficialistas. Sin embargo, la disciplina interna de las bancadas será clave para convertir esa mayoría en votos efectivos para la agenda legislativa.",
+  eventDate: "2026-09-09",
+  publishedDate: "2026-09-09",
+  sourceType: "Fuente periodística",
+  sourceName: "El País",
+  sourceUrl: "https://elpais.com/america-colombia/2026-09-09/las-mayorias-legislativas-declaran-su-apoyo-al-gobierno.html",
+  status: "Mapa político definido",
+  related: [
+    "Congreso",
+    "gobernabilidad",
+    "Senado",
+    "Cámara de Representantes",
+    "partidos políticos"
+  ],
+  whyItMatters: "La mayoría formal puede facilitar la aprobación del Presupuesto, reformas y otros proyectos prioritarios del Ejecutivo.",
+  note: "La declaratoria formal de un partido como partido de Gobierno no garantiza que todos sus congresistas voten de manera uniforme.",
+  extraSources: []
+},
+
+// ---------------------------------------------------------
+// GOBIERNO / INTELIGENCIA
+// ---------------------------------------------------------
+
+{
+  id: "nuevo-director-dni-zuluaga-09",
+  group: "government",
+  groupLabel: "GOBIERNO",
+  category: "SEGURIDAD E INTELIGENCIA",
+  importance: "IMPORTANTE",
+  title: "De La Espriella designa nuevo director de la Dirección Nacional de Inteligencia",
+  summary: "El presidente designó al general retirado Jorge Andrés Zuluaga como nuevo director de la Dirección Nacional de Inteligencia. El oficial tiene una trayectoria de más de tres décadas en inteligencia militar y participó en la Operación Jaque, pero su nombramiento genera controversia por cuestionamientos relacionados con interceptaciones ilegales y señalamientos dentro de investigaciones sobre la Unión Patriótica.",
+  eventDate: "2026-09-09",
+  publishedDate: "2026-09-09",
+  sourceType: "Fuente periodística",
+  sourceName: "El País",
+  sourceUrl: "https://elpais.com/america-colombia/2026-09-09/de-la-espriella-designa-como-director-de-inteligencia-a-un-general-cuestionado-por-las-chuzadas-y-por-la-persecucion-a-la-up.html",
+  status: "Nombramiento anunciado",
+  related: [
+    "DNI",
+    "Jorge Andrés Zuluaga",
+    "inteligencia",
+    "Operación Jaque",
+    "Presidencia"
+  ],
+  whyItMatters: "La DNI maneja información estratégica de seguridad nacional y depende directamente de la Presidencia, por lo que su dirección es un cargo particularmente sensible.",
+  note: "Los cuestionamientos mencionados corresponden a antecedentes y señalamientos reportados por el medio; no equivalen por sí mismos a una condena.",
+  extraSources: []
+},
+
+// ---------------------------------------------------------
+// ESTADO Y PAÍS / PAZ
+// ---------------------------------------------------------
+
+{
+  id: "crisis-recursos-arn-09",
+  group: "state",
+  groupLabel: "ESTADO Y PAÍS",
+  category: "PAZ Y REINCORPORACIÓN",
+  importance: "IMPORTANTE",
+  title: "Falta de recursos pone en riesgo la operación de la Agencia para la Reincorporación",
+  summary: "La Agencia para la Reincorporación y la Normalización advierte que el bloqueo de $53.000 millones podría obligarla a interrumpir servicios y contratos desde mediados de octubre. La entidad acompaña actualmente a miles de personas en procesos de reincorporación y enfrenta además una reducción prevista de sus recursos para 2027.",
+  eventDate: "2026-09-09",
+  publishedDate: "2026-09-09",
+  sourceType: "Fuente periodística",
+  sourceName: "El País",
+  sourceUrl: "https://elpais.com/america-colombia/2026-09-09/la-falta-de-recursos-deja-a-la-agencia-para-la-reincorporacion-al-borde-de-la-paralisis.html",
+  status: "Alerta institucional",
+  related: [
+    "ARN",
+    "reincorporación",
+    "Acuerdo de Paz",
+    "excombatientes",
+    "presupuesto"
+  ],
+  whyItMatters: "Una interrupción de la operación de la ARN afectaría directamente programas de reincorporación, acompañamiento territorial y beneficios económicos para miles de personas.",
+  extraSources: []
+}

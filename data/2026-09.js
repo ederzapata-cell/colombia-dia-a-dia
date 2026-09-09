@@ -292,3 +292,217 @@ events.push(
   }
 
 );
+// =========================================================
+// CIERRE · 08 SEP 2026
+// =========================================================
+
+// Cerramos oficialmente el día 8
+dayMeta["2026-09-08"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Reconstrucción, relaciones con Estados Unidos, seguridad, reforma estatal y porte de armas."
+};
+
+events.push(
+
+  // ---------------------------------------------------------
+  // GOBIERNO · CIERRE DEL DÍA
+  // ---------------------------------------------------------
+
+  {
+    id: "acuerdos-barranquilla-rubio-08",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "RELACIONES INTERNACIONALES",
+    importance: "IMPORTANTE",
+    title: "Colombia y Estados Unidos sellan los Acuerdos de Barranquilla",
+    summary: "El presidente Abelardo De La Espriella y el secretario de Estado de Estados Unidos, Marco Rubio, definieron en Barranquilla una nueva hoja de ruta bilateral centrada en seguridad, reconstrucción y cooperación económica. Los acuerdos incluyen cooperación contra el narcotráfico, fortalecimiento de capacidades de defensa, minerales críticos y un memorando sobre uso civil de energía nuclear.",
+    eventDate: "2026-09-08",
+    publishedDate: "2026-09-08",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Acuerdos-de-Barranquilla-en-economia-reconstruccion-y-seguridad-el-renacer-260908.aspx",
+    status: "Acuerdos anunciados",
+    related: [
+      "Estados Unidos",
+      "Marco Rubio",
+      "Acuerdos de Barranquilla",
+      "seguridad",
+      "inversión",
+      "minerales críticos",
+      "energía nuclear"
+    ],
+    whyItMatters: "Los acuerdos marcan un cambio significativo en la relación entre Colombia y Estados Unidos y establecen prioridades de cooperación para los próximos años.",
+    note: "Los aranceles estadounidenses a productos colombianos no quedaron resueltos durante el encuentro.",
+    extraSources: [
+      [
+        "El País · balance del encuentro",
+        "https://elpais.com/america-colombia/2026-09-08/de-la-espriella-y-rubio-relanzan-las-relaciones-entre-colombia-y-estados-unidos-con-una-agenda-de-seguridad-e-inversion.html"
+      ]
+    ]
+  },
+
+  {
+    id: "porte-armas-decreto-1368-08",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Gobierno levanta la suspensión general de los permisos para el porte de armas",
+    summary: "El presidente Abelardo De La Espriella firmó el Decreto 1368, que pone fin a la suspensión general de los permisos para el porte de armas de fuego. La medida no constituye una autorización general para portar armas: se mantienen los requisitos legales, controles y restricciones individuales establecidos por las autoridades.",
+    eventDate: "2026-09-08",
+    publishedDate: "2026-09-08",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Presidente-De-La-Espriella-levanta-suspension-de-los-permisos-para-el-porte-260908.aspx",
+    status: "Decreto firmado",
+    related: [
+      "porte de armas",
+      "Decreto 1368",
+      "seguridad",
+      "permisos",
+      "armas de fuego"
+    ],
+    whyItMatters: "La decisión modifica una política nacional de larga duración sobre el porte legal de armas y abrió un nuevo debate político y de seguridad.",
+    note: "El decreto no elimina los requisitos para obtener o conservar un permiso de porte.",
+    extraSources: []
+  }
+
+);
+
+
+// =========================================================
+// 09 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-09"] = {
+  status: "EN DESARROLLO",
+  subtitle: "Relación con Estados Unidos, porte de armas, control político y educación."
+};
+
+events.push(
+
+  // ---------------------------------------------------------
+  // GOBIERNO
+  // ---------------------------------------------------------
+
+  {
+    id: "balance-acuerdos-barranquilla-09",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "RELACIONES INTERNACIONALES",
+    importance: "IMPORTANTE",
+    title: "Acuerdos de Barranquilla fijan nueva agenda entre Colombia y Estados Unidos",
+    summary: "El balance publicado esta madrugada sobre la reunión entre Abelardo De La Espriella y Marco Rubio destaca una nueva agenda bilateral basada en cooperación en seguridad, lucha contra el narcotráfico e inversión. Colombia también planteó fortalecer radares, drones, sistemas antidrones y otras capacidades de defensa, mientras el tema de los aranceles estadounidenses quedó pendiente.",
+    eventDate: "2026-09-08",
+    publishedDate: "2026-09-09",
+    sourceType: "Fuente periodística",
+    sourceName: "El Espectador",
+    sourceUrl: "https://www.elespectador.com/politica/de-la-espriella-y-rubio-trazaron-ruta-basada-en-seguridad-y-cooperacion-para-una-nueva-era-entre-colombia-y-estados-unidos/",
+    status: "Balance publicado",
+    related: [
+      "Estados Unidos",
+      "Marco Rubio",
+      "Acuerdos de Barranquilla",
+      "seguridad",
+      "narcotráfico",
+      "aranceles"
+    ],
+    whyItMatters: "La agenda acordada define prioridades concretas de la relación con Estados Unidos y confirma un cambio de rumbo en cooperación y seguridad.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // OPOSICIÓN / DEBATE POLÍTICO
+  // ---------------------------------------------------------
+
+  {
+    id: "debate-porte-armas-09",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Levantamiento de la suspensión del porte de armas provoca choque político",
+    summary: "La decisión del Gobierno de reactivar los permisos vigentes para el porte legal de armas abrió un fuerte debate político. Desde sectores del Pacto Histórico se anunció oposición a la medida y la senadora Esmeralda Hernández afirmó que demandará el decreto, al considerar que puede aumentar los riesgos de violencia.",
+    eventDate: "2026-09-08",
+    publishedDate: "2026-09-09",
+    sourceType: "Reacciones políticas reportadas por prensa",
+    sourceName: "El País",
+    sourceUrl: "https://www.elpais.com.co/politica/choque-politico-por-el-decreto-que-habilita-el-porte-de-armas-estas-fueron-las-reacciones-0856.html",
+    status: "Debate político",
+    related: [
+      "porte de armas",
+      "Esmeralda Hernández",
+      "Pacto Histórico",
+      "Decreto 1368",
+      "seguridad"
+    ],
+    whyItMatters: "La decisión sobre porte de armas se convirtió rápidamente en uno de los primeros grandes enfrentamientos entre el Gobierno y sectores de oposición.",
+    note: "El anuncio de una demanda no significa que el decreto haya sido suspendido o declarado ilegal.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · CONGRESO
+  // ---------------------------------------------------------
+
+  {
+    id: "mocion-censura-minvivienda-09",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONGRESO",
+    importance: "IMPORTANTE",
+    title: "Senado cita a moción de censura al ministro de Vivienda por actuación durante emergencia",
+    summary: "El Senado citó para este 9 de septiembre al ministro de Vivienda, Jaime Andrés Beltrán, a un debate de moción de censura por cuestionamientos relacionados con su actuación durante la emergencia provocada por el terremoto del 10 de agosto. Congresistas cuestionan que el funcionario se desplazara a Santa Marta mientras avanzaba la atención inicial de la tragedia.",
+    eventDate: "2026-09-09",
+    publishedDate: "2026-09-09",
+    sourceType: "Información legislativa reportada por prensa",
+    sourceName: "El País",
+    sourceUrl: "https://www.elpais.com.co/politica/senado-cita-a-mocion-de-censura-al-ministro-de-vivienda-por-viaje-a-santa-marta-tras-emergencia-por-el-terremoto-0803.html",
+    status: "Debate programado",
+    related: [
+      "Jaime Andrés Beltrán",
+      "Ministerio de Vivienda",
+      "Senado",
+      "moción de censura",
+      "terremoto",
+      "Santa Marta"
+    ],
+    whyItMatters: "La moción de censura constituye uno de los primeros controles políticos de alto nivel contra un ministro del nuevo Gobierno.",
+    note: "La citación a moción de censura no implica que el ministro haya sido removido ni que el Senado haya determinado responsabilidad.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · EDUCACIÓN
+  // ---------------------------------------------------------
+
+  {
+    id: "resultados-pisa-colombia-09",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "EDUCACIÓN",
+    importance: "IMPORTANTE",
+    title: "Resultados PISA reavivan preocupación por el desempeño educativo de Colombia",
+    summary: "Los resultados de PISA 2025 continúan ocupando la agenda informativa nacional. Colombia registró 381 puntos en matemáticas y 399 en lectura, con retrocesos frente a la medición anterior, mientras ciencias presentó una leve mejora hasta 414 puntos. Siete de cada diez estudiantes evaluados no alcanzaron las competencias mínimas en matemáticas.",
+    eventDate: "2026-09-08",
+    publishedDate: "2026-09-09",
+    sourceType: "Resultados internacionales reportados por prensa",
+    sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/08/pruebas-pisa-exponen-el-retroceso-educativo-en-colombia/",
+    status: "Resultados publicados",
+    related: [
+      "PISA 2025",
+      "educación",
+      "OCDE",
+      "matemáticas",
+      "lectura",
+      "ciencias"
+    ],
+    whyItMatters: "Los resultados muestran dificultades persistentes en competencias básicas y reabren el debate sobre calidad, aprendizaje y política educativa en Colombia.",
+    extraSources: []
+  }
+
+);

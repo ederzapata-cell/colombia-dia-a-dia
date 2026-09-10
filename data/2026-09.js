@@ -623,3 +623,93 @@ events.push(
   whyItMatters: "Una interrupción de la operación de la ARN afectaría directamente programas de reincorporación, acompañamiento territorial y beneficios económicos para miles de personas.",
   extraSources: []
 }
+// ---------------------------------------------------------
+// GOBIERNO · SEGURIDAD Y JUSTICIA
+// ---------------------------------------------------------
+
+{
+  id: "70-extradiciones-primer-mes-10",
+  group: "government",
+  groupLabel: "GOBIERNO",
+  category: "SEGURIDAD Y JUSTICIA",
+  importance: "IMPORTANTE",
+  title: "Gobierno reporta 70 extradiciones firmadas en sus primeros 32 días",
+  summary: "El presidente Abelardo De La Espriella informó que ha firmado 70 extradiciones durante sus primeros 32 días de Gobierno, un promedio superior a dos por día. El mandatario presentó la cifra como parte de la estrategia de su administración contra el narcotráfico y el crimen organizado.",
+  eventDate: "2026-09-09",
+  publishedDate: "2026-09-10",
+  sourceType: "Declaración oficial reportada por prensa",
+  sourceName: "EFE",
+  sourceUrl: "https://efe.com/noticias/colombia/",
+  status: "Balance oficial",
+  related: [
+    "extradición",
+    "narcotráfico",
+    "crimen organizado",
+    "Estados Unidos",
+    "seguridad"
+  ],
+  whyItMatters: "El volumen de extradiciones muestra una de las líneas centrales de la política de seguridad y cooperación judicial internacional del nuevo Gobierno.",
+  note: "La cifra de 70 extradiciones corresponde al balance divulgado por el presidente.",
+  extraSources: []
+},
+
+// ---------------------------------------------------------
+// GOBIERNO · PAZ Y SEGURIDAD
+// ---------------------------------------------------------
+
+{
+  id: "revocan-negociadores-paz-total-10",
+  group: "government",
+  groupLabel: "GOBIERNO",
+  category: "PAZ Y SEGURIDAD",
+  importance: "IMPORTANTE",
+  title: "Gobierno revoca a negociadores de las mesas con el ELN y el Clan del Golfo",
+  summary: "El Gobierno revocó formalmente las designaciones de sus representantes en los procesos de diálogo con el ELN y el Clan del Golfo. Entre quienes dejan de integrar la delegación ante el ELN están Vera Grabe, María José Pizarro, Iván Cepeda, José Félix Lafaurie y otros integrantes nombrados durante el gobierno anterior.",
+  eventDate: "2026-09-10",
+  publishedDate: "2026-09-10",
+  sourceType: "Actos administrativos reportados por prensa",
+  sourceName: "Infobae",
+  sourceUrl: "https://www.infobae.com/colombia/2026/09/10/abelardo-de-la-espriella-desmonta-otra-pieza-de-la-paz-total-de-petro-revoca-a-negociadores-con-eln-y-clan-del-golfo/",
+  status: "Designaciones revocadas",
+  related: [
+    "ELN",
+    "Clan del Golfo",
+    "Paz Total",
+    "Vera Grabe",
+    "Iván Cepeda",
+    "diálogos de paz"
+  ],
+  whyItMatters: "La decisión formaliza el cambio de orientación del nuevo Gobierno frente a dos de los principales procesos de negociación impulsados durante la administración anterior.",
+  note: "La revocatoria de los negociadores no debe interpretarse por sí sola como terminación jurídica de todos los mecanismos relacionados con esos procesos.",
+  extraSources: []
+},
+
+// ---------------------------------------------------------
+// GOBIERNO · RECONSTRUCCIÓN
+// ---------------------------------------------------------
+
+{
+  id: "once-decretos-emergencia-economica-10",
+  group: "government",
+  groupLabel: "GOBIERNO",
+  category: "RECONSTRUCCIÓN",
+  importance: "IMPORTANTE",
+  title: "Gobierno pone en marcha 11 decretos de emergencia para acelerar la reconstrucción",
+  summary: "El presidente Abelardo De La Espriella y su gabinete firmaron 11 decretos al amparo de la Emergencia Económica declarada tras el terremoto. Las medidas buscan movilizar recursos, fortalecer la capacidad financiera de las regiones, garantizar servicios públicos, acelerar la reconstrucción de infraestructura y facilitar la continuidad educativa.",
+  eventDate: "2026-09-09",
+  publishedDate: "2026-09-10",
+  sourceType: "Fuente oficial",
+  sourceName: "Presidencia de la República",
+  sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Presidente-De-La-Espriella-y-su-Gabinete-firmaron-11-decretos-al-amparo-260909.aspx",
+  status: "Decretos firmados",
+  related: [
+    "Emergencia Económica",
+    "terremoto",
+    "reconstrucción",
+    "servicios públicos",
+    "educación",
+    "regiones"
+  ],
+  whyItMatters: "Los decretos convierten la declaratoria de emergencia en medidas concretas para financiar y acelerar la etapa de recuperación y reconstrucción.",
+  extraSources: []
+}

@@ -1,4 +1,520 @@
 // =========================================================
+// COLOMBIA DÍA A DÍA
+// DATOS · SEPTIEMBRE 2026
+//
+// Cada nuevo día se agrega AL FINAL de este archivo.
+// No modificar ni reconstruir días anteriores.
+// =========================================================
+
+
+// =========================================================
+// 04 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-04"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Regiones, energía, control institucional, Congreso, justicia y seguridad."
+};
+
+
+events.push(
+
+  // ---------------------------------------------------------
+  // GOBIERNO
+  // ---------------------------------------------------------
+
+  {
+    id: "cumbre-gobernadores-mompox-04",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "REGIONES",
+    importance: "RELEVANTE",
+    title: "Gobierno plantea mayor cooperación con departamentos durante la Cumbre de Gobernadores en Mompox",
+    summary: "El presidente Abelardo De La Espriella participó en la Cumbre de Gobernadores realizada en Mompox, Bolívar, y reiteró que su Gobierno buscará fortalecer la descentralización y la cooperación entre la Nación y los departamentos.",
+    eventDate: "2026-09-04",
+    publishedDate: "2026-09-04",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/En-la-Patria-Milagro-el-vinculo-entre-nacion-y-departamentos-no-sera-de-dependencia-sino-de-cooperacion-260904.aspx",
+    status: "Verificado",
+    related: [
+      "Cumbre de Gobernadores",
+      "Mompox",
+      "Bolívar",
+      "descentralización",
+      "gobernadores"
+    ],
+    whyItMatters: "La cumbre fue uno de los primeros escenarios de coordinación entre el nuevo Gobierno nacional y los mandatarios departamentales.",
+    extraSources: [
+      [
+        "Presidencia · convocatoria y agenda de la cumbre",
+        "https://www.presidencia.gov.co/prensa/Paginas/Presidente-Abelardo-De-La-Espriella-participara-este-viernes-en-Cumbre-de-Gobernadores-en-Mompox-260904.aspx"
+      ]
+    ]
+  },
+
+  {
+    id: "gobierno-el-nino-energia-04",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "ENERGÍA",
+    importance: "RELEVANTE",
+    title: "Gobierno anuncia medidas preventivas ante posibles efectos de El Niño sobre agua, gas y energía",
+    summary: "Durante la Cumbre de Gobernadores, el presidente informó que el Gobierno trabaja en medidas para anticiparse a los posibles efectos del fenómeno de El Niño sobre las reservas y el abastecimiento de agua, gas y energía.",
+    eventDate: "2026-09-04",
+    publishedDate: "2026-09-04",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Gobierno-del-presidente-De-La-Espriella-se-anticipa-a-los-efectos-del-fenomeno-de-El-Nino-para-evitar-260904.aspx",
+    status: "Medidas anunciadas",
+    related: [
+      "El Niño",
+      "energía",
+      "gas",
+      "agua",
+      "abastecimiento"
+    ],
+    whyItMatters: "Los periodos secos asociados a El Niño pueden afectar los embalses y la disponibilidad de recursos necesarios para el suministro energético y de agua.",
+    note: "La tarjeta registra las medidas preventivas anunciadas por el Gobierno. No significa que exista actualmente una crisis energética.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · CONTROL
+  // ---------------------------------------------------------
+
+  {
+    id: "intenalco-investigacion-contrato-04",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTROL Y CONTRATACIÓN",
+    importance: "RELEVANTE",
+    title: "Procuraduría abre investigación por posibles irregularidades en contrato de Intenalco",
+    summary: "La Procuraduría abrió investigación disciplinaria contra tres funcionarios de Intenalco, en Cali, por posibles irregularidades relacionadas con un contrato interadministrativo por $300 millones suscrito en 2023.",
+    eventDate: "2026-09-04",
+    publishedDate: "2026-09-04",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/investigacion-presuntas-irregularidades-contrato-institucion-educativa.aspx",
+    status: "Investigación disciplinaria abierta",
+    related: [
+      "Intenalco",
+      "Cali",
+      "Procuraduría",
+      "contratación pública",
+      "contrato interadministrativo"
+    ],
+    whyItMatters: "La actuación busca establecer si el contratista tenía la experiencia e idoneidad necesarias, si existen soportes de la ejecución y si se cumplieron las normas de contratación pública.",
+    note: "La apertura de una investigación disciplinaria no establece responsabilidad.",
+    extraSources: []
+  },
+
+  {
+    id: "exalcalde-acacias-cargos-04",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTROL Y CONTRATACIÓN",
+    importance: "RELEVANTE",
+    title: "Procuraduría formula cargos a exalcalde de Acacías por presunto favorecimiento contractual",
+    summary: "La Procuraduría formuló cargos contra el exalcalde de Acacías, Eduardo Cortés Trujillo, y contra el entonces integrante de un comité evaluador Jimmy Fernando Alarcón Jiménez por presuntas irregularidades en una licitación pública adelantada en 2023.",
+    eventDate: "2026-09-04",
+    publishedDate: "2026-09-04",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/cargos-exalcalde-acacias-meta-presunto-favorecimiento-contratacion.aspx",
+    status: "Pliego de cargos",
+    related: [
+      "Acacías",
+      "Meta",
+      "Eduardo Cortés Trujillo",
+      "Jimmy Fernando Alarcón Jiménez",
+      "contratación pública"
+    ],
+    whyItMatters: "El proceso examina un posible favorecimiento durante la evaluación y adjudicación de un contrato municipal.",
+    note: "La Procuraduría calificó provisionalmente la conducta atribuida al exalcalde como gravísima a título de dolo y la atribuida a Alarcón como grave a título de dolo. La formulación de cargos no equivale a una sanción.",
+    extraSources: []
+  },
+
+  {
+    id: "alcalde-barbosa-investigacion-04",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONTROL DISCIPLINARIO",
+    importance: "RELEVANTE",
+    title: "Procuraduría investiga al alcalde de Barbosa por presuntas irregularidades en autorización de corrida de toros",
+    summary: "La Procuraduría abrió investigación disciplinaria contra Marco Alirio Cortés Torres, alcalde de Barbosa, Santander, por posibles irregularidades relacionadas con una corrida de toros realizada el 1 de enero de 2026.",
+    eventDate: "2026-09-04",
+    publishedDate: "2026-09-04",
+    sourceType: "Fuente oficial",
+    sourceName: "Procuraduría General de la Nación",
+    sourceUrl: "https://www.procuraduria.gov.co/Pages/procuraduria-investiga-alcalde-barbosa-santander-presuntas-irregularidades-autorizacion-corrida-toros.aspx",
+    status: "Investigación disciplinaria abierta",
+    related: [
+      "Barbosa",
+      "Santander",
+      "Marco Alirio Cortés Torres",
+      "Procuraduría",
+      "corrida de toros"
+    ],
+    whyItMatters: "La Procuraduría busca establecer si el evento contó con los permisos, documentos y pólizas exigidos legalmente.",
+    note: "La apertura de la investigación no implica una decisión sobre la responsabilidad disciplinaria del alcalde.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · CONGRESO
+  // ---------------------------------------------------------
+
+  {
+    id: "territorios-carceles-proyecto-04",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CONGRESO",
+    importance: "RELEVANTE",
+    title: "Radican proyecto para priorizar recursos en territorios que albergan cárceles de alta y mediana seguridad",
+    summary: "El representante Mello Castro González radicó un proyecto de ley que propone priorizar recursos nacionales para municipios y departamentos donde funcionan establecimientos penitenciarios de alta y mediana seguridad.",
+    eventDate: "2026-09-04",
+    publishedDate: "2026-09-04",
+    sourceType: "Fuente oficial",
+    sourceName: "Cámara de Representantes",
+    sourceUrl: "https://www.camara.gov.co/radican-proyecto-de-ley-para-fortalecer-territorios-con-carceles-de-alta-y-mediana-seguridad/",
+    status: "Proyecto de ley radicado",
+    related: [
+      "Cámara de Representantes",
+      "Mello Castro González",
+      "FONSECON",
+      "cárceles",
+      "seguridad"
+    ],
+    whyItMatters: "La iniciativa propone que estos territorios tengan prioridad en el acceso a recursos del Fondo Nacional de Seguridad y Convivencia Ciudadana y contempla financiación de hasta el 100 % de determinados proyectos.",
+    note: "La radicación apenas inicia el trámite legislativo. El proyecto no es todavía una ley.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · JUSTICIA Y SEGURIDAD
+  // ---------------------------------------------------------
+
+  {
+    id: "amenazas-magistrados-lineas-investigacion-04",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA Y SEGURIDAD",
+    importance: "RELEVANTE",
+    title: "Autoridades trabajan sobre tres líneas de investigación por amenazas contra magistrados de la Corte Suprema",
+    summary: "Mauricio Lenis, presidente de la Corte Suprema de Justicia, informó que Policía, Fiscalía y Dijín avanzan en investigaciones para esclarecer las amenazas contra magistrados de esa corporación.",
+    eventDate: "2026-09-04",
+    publishedDate: "2026-09-04",
+    sourceType: "Declaración institucional reportada por prensa",
+    sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/04/policia-maneja-tres-lineas-de-investigacion-presidente-de-corte-suprema-por-amenazas-a-magistrados/",
+    status: "Investigación en curso",
+    related: [
+      "Corte Suprema de Justicia",
+      "Mauricio Lenis",
+      "Policía Nacional",
+      "Fiscalía",
+      "Dijín",
+      "amenazas"
+    ],
+    whyItMatters: "Las amenazas contra integrantes de una alta corte afectan directamente las garantías de seguridad e independencia necesarias para el ejercicio de la función judicial.",
+    note: "La existencia de líneas de investigación no significa que se hayan identificado o establecido responsables.",
+    extraSources: []
+  },
+
+  {
+    id: "uribe-indagatoria-fiscalia-04",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA",
+    importance: "IMPORTANTE",
+    title: "Álvaro Uribe rinde indagatoria ante la Fiscalía por cuatro expedientes relacionados con violencia paramilitar en Antioquia",
+    summary: "El expresidente Álvaro Uribe Vélez rindió indagatoria ante la Fiscalía en investigaciones relacionadas con las masacres de El Aro y La Granja, el asesinato del defensor de derechos humanos Jesús María Valle y la conformación de un grupo paramilitar en San Roque.",
+    eventDate: "2026-09-04",
+    publishedDate: "2026-09-04",
+    sourceType: "Fuente periodística",
+    sourceName: "El Espectador",
+    sourceUrl: "https://www.elespectador.com/judicial/termino-la-primera-jornada-de-la-indagatoria-a-alvaro-uribe-por-masacres-en-antioquia/",
+    status: "Indagatoria realizada",
+    related: [
+      "Álvaro Uribe Vélez",
+      "Fiscalía",
+      "El Aro",
+      "La Granja",
+      "Jesús María Valle",
+      "San Roque"
+    ],
+    whyItMatters: "La diligencia vincula formalmente al expresidente a actuaciones judiciales relacionadas con hechos ocurridos en Antioquia durante la década de 1990.",
+    note: "La indagatoria no equivale a acusación ni a condena. Uribe negó responsabilidad en los hechos investigados.",
+    extraSources: [
+      [
+        "Asuntos Legales",
+        "https://www.asuntoslegales.com.co/actualidad/uribe-llego-a-indagatoria-ante-la-fiscalia-por-masacres-de-el-aro-y-la-granja-4474493"
+      ]
+    ]
+  }
+
+);
+// =========================================================
+// 05 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-05"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Seguridad, gobernabilidad, oposición y justicia."
+};
+
+
+events.push(
+
+  // ---------------------------------------------------------
+  // GOBIERNO
+  // ---------------------------------------------------------
+
+  {
+    id: "ataque-drones-eln-ocana-05",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Ataque con drones contra guarnición militar en Ocaña deja tres militares muertos",
+    summary: "Un ataque con drones cargados con explosivos contra el Cantón Militar El Trapiche, en Ocaña, Norte de Santander, dejó tres militares muertos y cuatro heridos. El Gobierno atribuyó el ataque al ELN y anunció una respuesta ofensiva contra esa organización y otras estructuras armadas en el Catatumbo.",
+    eventDate: "2026-09-05",
+    publishedDate: "2026-09-05",
+    sourceType: "Fuente periodística",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-05/un-ataque-con-drones-del-eln-deja-al-menos-tres-muertos-en-un-cuartel-militar-en-colombia.html",
+    status: "Información confirmada",
+    related: [
+      "Ocaña",
+      "Norte de Santander",
+      "ELN",
+      "Catatumbo",
+      "Fuerzas Militares",
+      "drones"
+    ],
+    whyItMatters: "El ataque evidencia el uso de drones con explosivos contra instalaciones militares y provocó el anuncio de una nueva respuesta operativa del Gobierno en una de las regiones con mayor presencia de grupos armados.",
+    note: "El ataque comenzó el 4 de septiembre y su balance, consecuencias y respuesta gubernamental fueron noticia nacional durante el 5 de septiembre.",
+    extraSources: []
+  },
+
+  {
+    id: "coalicion-gobierno-congreso-05",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "GOBERNABILIDAD",
+    importance: "IMPORTANTE",
+    title: "Ocho partidos se alinean con el Gobierno mientras se define el nuevo mapa político del Congreso",
+    summary: "Ocho partidos políticos se habían declarado de Gobierno mientras otras colectividades definían su posición frente a la administración de Abelardo De La Espriella. Cambio Radical y ASI quedaron entre las fuerzas que respaldan al Ejecutivo, mientras el Nuevo Liberalismo y la Alianza Verde optaron por declararse independientes.",
+    eventDate: "2026-09-05",
+    publishedDate: "2026-09-05",
+    sourceType: "Fuente periodística",
+    sourceName: "El Espectador",
+    sourceUrl: "https://www.elespectador.com/politica/de-la-espriella-ya-suma-141-votos-en-el-congreso-asi-estan-las-cargas-para-la-gobernabilidad-que-partidos-lo-apoyan/",
+    status: "Mapa político en definición",
+    related: [
+      "Congreso",
+      "Abelardo De La Espriella",
+      "Cambio Radical",
+      "ASI",
+      "Nuevo Liberalismo",
+      "Alianza Verde",
+      "CNE"
+    ],
+    whyItMatters: "La posición formal de los partidos determina la relación política de cada colectividad con el Ejecutivo y permite dimensionar las mayorías con las que podría contar el Gobierno para tramitar su agenda en el Congreso.",
+    note: "La estimación de votos potenciales no garantiza que todos los congresistas de los partidos declarados de Gobierno voten de manera uniforme en cada proyecto.",
+    extraSources: [
+      [
+        "El País · definición del mapa político ante el CNE",
+        "https://www.elpais.com.co/colombia/cne-faltan-horas-para-definir-el-mapa-politico-frente-al-gobierno-de-la-espriella-0401.html"
+      ]
+    ]
+  },
+
+
+  // ---------------------------------------------------------
+  // OPOSICIÓN
+  // ---------------------------------------------------------
+
+  {
+    id: "cepeda-regresion-autoritaria-05",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN",
+    category: "OPOSICIÓN",
+    importance: "RELEVANTE",
+    title: "Iván Cepeda denuncia una “regresión autoritaria” y mantiene llamado a la movilización",
+    summary: "Iván Cepeda afirmó que Colombia atraviesa lo que calificó como una “regresión autoritaria” bajo el Gobierno de Abelardo De La Espriella y señaló que sectores de oposición continuarán promoviendo movilización social y una estrategia que denomina “desobediencia civil pacífica”.",
+    eventDate: "2026-09-05",
+    publishedDate: "2026-09-05",
+    sourceType: "Declaración política reportada por prensa",
+    sourceName: "Notimérica",
+    sourceUrl: "https://www.notimerica.com/politica/noticia-colombia-cepeda-denuncia-regresion-autoritaria-colombia-insiste-desobediencia-civil-pacifica-20260905122431.html",
+    status: "Declaración de oposición",
+    related: [
+      "Iván Cepeda",
+      "oposición",
+      "Abelardo De La Espriella",
+      "movilización social",
+      "desobediencia civil"
+    ],
+    whyItMatters: "Las declaraciones muestran la estrategia política que uno de los principales dirigentes de oposición plantea frente al nuevo Gobierno.",
+    note: "“Regresión autoritaria” y “desobediencia civil pacífica” corresponden a caracterizaciones y expresiones utilizadas por Cepeda; no constituyen afirmaciones editoriales de Colombia día a día.",
+    extraSources: []
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS · JUSTICIA
+  // ---------------------------------------------------------
+
+  {
+    id: "tutela-emisoras-paz-cepeda-05",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA",
+    importance: "RELEVANTE",
+    title: "Juez niega tutela presentada por Iván Cepeda por cambios en las Emisoras de Paz",
+    summary: "El Juzgado 32 de Ejecución de Penas y Medidas de Seguridad de Bogotá negó una acción de tutela presentada por Iván Cepeda y otros accionantes relacionada con los cambios realizados en las Emisoras de Paz.",
+    eventDate: "2026-09-05",
+    publishedDate: "2026-09-05",
+    sourceType: "Decisión judicial reportada por prensa",
+    sourceName: "El Heraldo",
+    sourceUrl: "https://www.elheraldo.co/colombia/2026/09/05/niegan-tutela-de-ivan-cepeda-por-suspension-de-emisoras-de-paz/",
+    status: "Tutela negada",
+    related: [
+      "Iván Cepeda",
+      "Emisoras de Paz",
+      "Bogotá",
+      "tutela",
+      "justicia"
+    ],
+    whyItMatters: "La decisión judicial interviene en una controversia sobre el funcionamiento de las Emisoras de Paz y las medidas adoptadas sobre esos espacios creados en desarrollo del Acuerdo de Paz.",
+    note: "El fallo de tutela resuelve la acción constitucional presentada en este caso y no implica necesariamente que hayan concluido otras controversias jurídicas o políticas relacionadas con las emisoras.",
+    extraSources: []
+  }
+
+);
+// =========================================================
+// 06 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-06"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Operaciones militares, ataques en Cauca y pronunciamiento de la Defensoría."
+};
+
+events.push(
+
+  // ---------------------------------------------------------
+  // GOBIERNO / SEGURIDAD
+  // ---------------------------------------------------------
+
+  {
+    id: "operacion-el-penol-narino-06",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Operación militar en El Peñol deja siete integrantes de disidencias muertos y cinco capturados",
+    summary: "El presidente Abelardo De La Espriella informó el 6 de septiembre que una operación de la Fuerza Pública contra el frente Franco Benavides, de las disidencias de las Farc, en El Peñol, Nariño, dejó siete integrantes de esa estructura muertos y otros cinco capturados.",
+    eventDate: "2026-09-06",
+    publishedDate: "2026-09-06",
+    sourceType: "Fuente oficial",
+    sourceName: "Presidencia de la República",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Presidente-De-La-Espriella-destaca-golpe-contundente-de-la-Fuerza-Publica-contra-las-disidencias-de-las-Farc-260906.aspx",
+    status: "Balance oficial",
+    related: [
+      "El Peñol",
+      "Nariño",
+      "Franco Benavides",
+      "disidencias de las Farc",
+      "Fuerza Pública"
+    ],
+    whyItMatters: "La operación hace parte de la ofensiva militar del nuevo Gobierno contra estructuras armadas y produjo uno de los balances operacionales más altos reportados durante la jornada.",
+    note: "La condición de las personas fallecidas como integrantes de la estructura armada corresponde al reporte oficial de las autoridades.",
+    extraSources: [
+      [
+        "Noticias Caracol",
+        "https://www.noticiascaracol.com/colombia/operacion-militar-en-el-penol-narino-deja-siete-disidentes-de-las-farc-muertos-y-cinco-capturados-cb20"
+      ]
+    ]
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS / SEGURIDAD
+  // ---------------------------------------------------------
+
+  {
+    id: "ataques-cajibio-inza-cauca-06",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Ataques contra la Fuerza Pública en Cajibío e Inzá dejan tres policías heridos",
+    summary: "Durante la mañana del 6 de septiembre fueron atacadas instalaciones de la Fuerza Pública en Cajibío e Inzá, Cauca. En el corregimiento El Carmelo, Cajibío, la subestación de Policía fue atacada y tres uniformados resultaron heridos.",
+    eventDate: "2026-09-06",
+    publishedDate: "2026-09-06",
+    sourceType: "Fuente oficial",
+    sourceName: "Defensoría del Pueblo",
+    sourceUrl: "https://www.defensoria.gov.co/web/guest/-/reiteramos-nuestros-llamados-frente-al-deterioro-de-la-seguridad-en-cajib%C3%ADo-e-inz%C3%A1-cauca",
+    status: "Verificado",
+    related: [
+      "Cajibío",
+      "Inzá",
+      "Cauca",
+      "Policía Nacional",
+      "Fuerza Pública",
+      "drones"
+    ],
+    whyItMatters: "Los ataques muestran el deterioro del orden público en zonas del Cauca y afectaron directamente a miembros de la Fuerza Pública, además de generar riesgo para las comunidades cercanas.",
+    note: "La Defensoría confirmó tres policías heridos en Cajibío. La atribución específica de responsabilidad debe mantenerse en términos de lo informado por las autoridades.",
+    extraSources: [
+      [
+        "Caracol Radio",
+        "https://caracol.com.co/programas/noticias-regionales/"
+      ]
+    ]
+  },
+
+
+  // ---------------------------------------------------------
+  // ESTADO Y PAÍS / DERECHOS HUMANOS
+  // ---------------------------------------------------------
+
+  {
+    id: "defensoria-pronunciamiento-operacion-azarias-06",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "DERECHOS HUMANOS",
+    importance: "IMPORTANTE",
+    title: "Defensoría cuestiona la exhibición de cuerpos tras la operación Azarías",
+    summary: "La defensora del Pueblo, Iris Marín, cuestionó públicamente la forma en que el presidente fue mostrado caminando entre cuerpos de personas muertas durante la operación Azarías, realizada días antes en Guaviare.",
+    eventDate: "2026-09-06",
+    publishedDate: "2026-09-06",
+    sourceType: "Fuente oficial",
+    sourceName: "Defensoría del Pueblo",
+    sourceUrl: "https://www.defensoria.gov.co/web/guest/-/el-estado-y-el-gobierno-no-pueden-entrar-en-una-competencia-por-demostrar-quien-puede-ser-mas-cruel",
+    status: "Pronunciamiento institucional",
+    related: [
+      "Defensoría del Pueblo",
+      "Iris Marín",
+      "Operación Azarías",
+      "Guaviare",
+      "derechos humanos",
+      "Fuerza Pública"
+    ],
+    whyItMatters: "El pronunciamiento abre un debate institucional sobre los límites simbólicos y humanitarios de la comunicación pública de las operaciones militares y sobre el trato digno a las personas fallecidas.",
+    note: "Esta tarjeta registra el pronunciamiento de la Defensoría del 6 de septiembre. No vuelve a registrar como nuevo hecho la operación Azarías, que ocurrió en una fecha anterior.",
+    extraSources: []
+  }
+
+);
+
+// =========================================================
 // 07 SEP 2026
 // =========================================================
 
@@ -168,7 +684,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Gobierno y empresarios consolidan 13 acuerdos para la reconstrucción",
     summary: "El Espectador informó este 8 de septiembre que la reunión encabezada por el presidente Abelardo De La Espriella con grandes empresarios dejó 13 acuerdos estratégicos para la reconstrucción tras el terremoto. Las iniciativas abarcan sectores como transporte, energía y comercio, y se suman a cerca de $2 billones en apoyos anunciados por empresarios.",
-    eventDate: "2026-09-07",
+    eventDate: "2026-09-08",
     publishedDate: "2026-09-08",
     sourceType: "Fuente periodística",
     sourceName: "El Espectador",
@@ -193,7 +709,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "De La Espriella retoma propuesta de corredor interoceánico para el Chocó",
     summary: "El País destacó este 8 de septiembre que el Gobierno retomó la propuesta de construir un corredor interoceánico que conecte el Atlántico y el Pacífico mediante un tren o canal. La iniciativa había sido impulsada durante el gobierno de Gustavo Petro y cuenta con estudios previos de prefactibilidad, aunque todavía no están definidos la ruta definitiva, la financiación ni el cronograma.",
-    eventDate: "2026-09-07",
+    eventDate: "2026-09-08",
     publishedDate: "2026-09-08",
     sourceType: "Fuente periodística",
     sourceName: "El País",
@@ -393,7 +909,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Acuerdos de Barranquilla fijan nueva agenda entre Colombia y Estados Unidos",
     summary: "El balance publicado esta madrugada sobre la reunión entre Abelardo De La Espriella y Marco Rubio destaca una nueva agenda bilateral basada en cooperación en seguridad, lucha contra el narcotráfico e inversión. Colombia también planteó fortalecer radares, drones, sistemas antidrones y otras capacidades de defensa, mientras el tema de los aranceles estadounidenses quedó pendiente.",
-    eventDate: "2026-09-08",
+    eventDate: "2026-09-09",
     publishedDate: "2026-09-09",
     sourceType: "Fuente periodística",
     sourceName: "El Espectador",
@@ -424,7 +940,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Levantamiento de la suspensión del porte de armas provoca choque político",
     summary: "La decisión del Gobierno de reactivar los permisos vigentes para el porte legal de armas abrió un fuerte debate político. Desde sectores del Pacto Histórico se anunció oposición a la medida y la senadora Esmeralda Hernández afirmó que demandará el decreto, al considerar que puede aumentar los riesgos de violencia.",
-    eventDate: "2026-09-08",
+    eventDate: "2026-09-09",
     publishedDate: "2026-09-09",
     sourceType: "Reacciones políticas reportadas por prensa",
     sourceName: "El País",
@@ -487,7 +1003,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Resultados PISA reavivan preocupación por el desempeño educativo de Colombia",
     summary: "Los resultados de PISA 2025 continúan ocupando la agenda informativa nacional. Colombia registró 381 puntos en matemáticas y 399 en lectura, con retrocesos frente a la medición anterior, mientras ciencias presentó una leve mejora hasta 414 puntos. Siete de cada diez estudiantes evaluados no alcanzaron las competencias mínimas en matemáticas.",
-    eventDate: "2026-09-08",
+    eventDate: "2026-09-09",
     publishedDate: "2026-09-09",
     sourceType: "Resultados internacionales reportados por prensa",
     sourceName: "Caracol Radio",
@@ -647,7 +1163,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Colombia cumple un mes del terremoto con más de 466.000 personas afectadas",
     summary: "Un mes después del terremoto que golpeó el occidente colombiano, el balance actualizado mantiene en primer plano el impacto humano, la pérdida de viviendas y los enormes retos de atención y reconstrucción.",
-    eventDate: "2026-08-10",
+    eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
     sourceType: "Balance oficial reportado por prensa",
     sourceName: "UNGRD / prensa nacional",
@@ -685,7 +1201,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Violencia armada agrava la emergencia del terremoto en Sipí, Chocó",
     summary: "Comunidades afectadas por el terremoto enfrentan una nueva emergencia por enfrentamientos entre el ELN y el Clan del Golfo, con desplazamientos hacia Istmina y temor por explosivos.",
-    eventDate: "2026-08-14",
+    eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
     sourceType: "Reportaje periodístico",
     sourceName: "El País",
@@ -724,7 +1240,7 @@ events.push(
     importance: "RELEVANTE",
     title: "Cambio de lenguaje sobre el campesinado mantiene abierto el debate",
     summary: "La decisión del Ministerio de Agricultura de usar la expresión 'empresario del campo' en lugar de 'campesino' siguió generando discusión sobre identidad rural y reconocimiento constitucional.",
-    eventDate: "2026-09-09",
+    eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
     sourceType: "Debate público reportado por prensa",
     sourceName: "El País",
@@ -743,7 +1259,7 @@ events.push(
     importance: "RELEVANTE",
     title: "Flexibilización del porte de armas mantiene abierto el debate nacional",
     summary: "La decisión del Gobierno de levantar la suspensión general de permisos continúa generando cuestionamientos políticos y de seguridad.",
-    eventDate: "2026-09-08",
+    eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
     sourceType: "Debate público reportado por prensa",
     sourceName: "Prensa nacional e internacional",
@@ -763,7 +1279,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Gobierno reporta 70 extradiciones firmadas en sus primeros 32 días",
     summary: "El presidente informó que ha firmado 70 extradiciones durante sus primeros 32 días de Gobierno como parte de su estrategia contra el narcotráfico y el crimen organizado.",
-    eventDate: "2026-09-09",
+    eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
     sourceType: "Declaración oficial reportada por prensa",
     sourceName: "EFE / Gobierno",
@@ -801,7 +1317,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Gobierno pone en marcha 11 decretos de emergencia para acelerar la reconstrucción",
     summary: "El presidente y su gabinete firmaron 11 decretos al amparo de la Emergencia Económica para movilizar recursos, fortalecer a las regiones y acelerar infraestructura y continuidad educativa.",
-    eventDate: "2026-09-09",
+    eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
     sourceType: "Fuente oficial y prensa",
     sourceName: "Presidencia / Caracol Radio",
@@ -873,7 +1389,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "JEP y UBPD alertan por recursos insuficientes para 2027",
     summary: "La Jurisdicción Especial para la Paz y la Unidad de Búsqueda de Personas dadas por Desaparecidas advirtieron que los recursos previstos para 2027 podrían resultar insuficientes para cumplir plenamente sus funciones.",
-    eventDate: "2026-09-10",
+    eventDate: "2026-09-11",
     publishedDate: "2026-09-11",
     sourceType: "Información institucional reportada por prensa",
     sourceName: "Prensa nacional",
@@ -911,7 +1427,7 @@ events.push(
     importance: "RELEVANTE",
     title: "AtlasIntel ubica la imagen positiva de De La Espriella en 54 %",
     summary: "La primera medición de AtlasIntel sobre el nuevo Gobierno ubica la imagen positiva del presidente en 54 %, mientras su vicepresidente José Manuel Restrepo registra 53 % de favorabilidad.",
-    eventDate: "2026-09-10",
+    eventDate: "2026-09-11",
     publishedDate: "2026-09-11",
     sourceType: "Encuesta reportada por prensa",
     sourceName: "El Espectador / AtlasIntel",
@@ -930,7 +1446,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Cierre de la Zona de Ubicación Temporal en Putumayo genera preocupación por 99 desmovilizados",
     summary: "La decisión del Gobierno de poner fin a la Zona de Ubicación Temporal de Valle del Guamuez, donde permanecían 99 personas que dejaron las armas, abrió interrogantes sobre protección, reincorporación y acompañamiento institucional.",
-    eventDate: "2026-09-10",
+    eventDate: "2026-09-11",
     publishedDate: "2026-09-11",
     sourceType: "Decisión gubernamental y reacciones reportadas por prensa",
     sourceName: "Infobae",
@@ -949,7 +1465,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "Petro y Claudia López acercan posiciones con miras a las elecciones regionales de 2027",
     summary: "Gustavo Petro confirmó una reunión con Claudia López y promovió una 'Alianza por la Vida' para ampliar la coordinación de sectores opositores y competir por alcaldías, gobernaciones y curules en 2027.",
-    eventDate: "2026-09-10",
+    eventDate: "2026-09-11",
     publishedDate: "2026-09-11",
     sourceType: "Declaraciones políticas reportadas por prensa",
     sourceName: "Infobae",
@@ -968,7 +1484,7 @@ events.push(
     importance: "IMPORTANTE",
     title: "FLIP pide al Gobierno garantías verificables para la libertad de prensa",
     summary: "La Fundación para la Libertad de Prensa y organizaciones aliadas pidieron medidas concretas para proteger el ejercicio periodístico, garantizar acceso a información pública y evitar presiones directas o indirectas sobre medios y periodistas.",
-    eventDate: "2026-09-10",
+    eventDate: "2026-09-11",
     publishedDate: "2026-09-11",
     sourceType: "Pronunciamiento de organización de prensa reportado por medios",
     sourceName: "FLIP / Infobae",

@@ -1336,8 +1336,8 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-11"] = {
-  status: "EN DESARROLLO",
-  subtitle: "Cooperación militar, paz, energía, oposición, opinión pública, prensa y seguridad."
+  status: "VERIFICADO ✓",
+  subtitle: "Cooperación militar, paz, energía, opinión pública, seguridad, ambiente, narcotráfico y deporte."
 };
 
 events.push(
@@ -1493,6 +1493,83 @@ events.push(
     related: ["FLIP", "libertad de prensa", "periodistas", "acceso a información"],
     whyItMatters: "La libertad de prensa y el acceso a información oficial son garantías centrales para el control democrático del poder.",
     extraSources: []
+  },
+
+  {
+    id: "operativo-colombia-brasil-amazonas-11",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD Y NARCOTRÁFICO",
+    importance: "IMPORTANTE",
+    title: "Alerta de Colombia permite incautar 4,5 toneladas de marihuana y armas en Brasil",
+    summary: "Una operación coordinada entre la Armada de Colombia y la Policía Federal de Brasil permitió interceptar en el río Amazonas una lancha con 4,5 toneladas de marihuana tipo creepy y armas de alto calibre. El procedimiento se realizó en jurisdicción brasileña tras intercambio de inteligencia naval y aérea.",
+    eventDate: "2026-09-11",
+    publishedDate: "2026-09-11",
+    sourceType: "Operativo binacional reportado por prensa",
+    sourceName: "Infobae / Armada de Colombia",
+    sourceUrl: "https://www.infobae.com/colombia/2026/09/11/brasil-incauto-45-toneladas-de-marihuana-y-armas-en-una-lancha-interceptada-en-el-amazonas-tras-una-alerta-de-colombia/",
+    status: "Operativo realizado",
+    related: ["Amazonas", "Brasil", "Armada de Colombia", "narcotráfico", "marihuana"],
+    whyItMatters: "La operación muestra cooperación transfronteriza contra rutas de narcotráfico en la Amazonia.",
+    extraSources: []
+  },
+
+  {
+    id: "alerta-roja-el-nino-capitales-11",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "AMBIENTE Y GESTIÓN DEL RIESGO",
+    importance: "IMPORTANTE",
+    title: "Ocho capitales entran en alerta roja por riesgo de desabastecimiento de agua e incendios",
+    summary: "Asocapitales advirtió que ocho ciudades capitales se encuentran en alerta roja ante el fortalecimiento de El Niño, por riesgos de desabastecimiento de agua e incendios. El Ideam proyecta que las condiciones podrían extenderse hasta comienzos de 2027.",
+    eventDate: "2026-09-11",
+    publishedDate: "2026-09-11",
+    sourceType: "Alerta institucional reportada por prensa",
+    sourceName: "Infobae / Asocapitales",
+    sourceUrl: "https://www.infobae.com/colombia/2026/09/11/ocho-capitales-estan-en-alerta-roja-por-desabastecimiento-de-agua-e-incendios-ante-el-nino-segun-asocapitales/",
+    status: "Alerta roja",
+    related: ["El Niño", "agua", "incendios", "Asocapitales", "Ideam"],
+    whyItMatters: "La alerta anticipa presiones sobre servicios públicos, abastecimiento de agua y gestión de incendios en varias ciudades.",
+    extraSources: []
+  },
+
+  {
+    id: "enel-seguridad-energetica-bogota-11",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "ENERGÍA E INFRAESTRUCTURA",
+    importance: "RELEVANTE",
+    title: "MinAmbiente habilita obras de Enel para reforzar la seguridad energética de Bogotá y la Sabana",
+    summary: "El Ministerio de Ambiente habilitó intervenciones de bajo impacto en 44 áreas de la Cuenca Alta del Río Bogotá para avanzar en obras asociadas a la Subestación Norte 230/115 kV. La decisión cubre sectores de Gachancipá, Nemocón, Tocancipá y Zipaquirá y mantiene vigentes los demás permisos ambientales exigidos.",
+    eventDate: "2026-09-11",
+    publishedDate: "2026-09-11",
+    sourceType: "Decisión institucional reportada por prensa",
+    sourceName: "Infobae / Ministerio de Ambiente",
+    sourceUrl: "https://www.infobae.com/colombia/2026/09/11/ministerio-de-ambiente-habilito-44-areas-de-la-cuenca-alta-del-rio-bogota-para-obras-de-enel-para-reforzar-la-seguridad-energetica-de-la-ciudad/",
+    status: "Intervenciones habilitadas",
+    related: ["Enel", "Bogotá", "Sabana", "seguridad energética", "Ministerio de Ambiente"],
+    whyItMatters: "El proyecto busca aumentar la confiabilidad del sistema eléctrico de Bogotá y municipios de la Sabana Norte.",
+    extraSources: []
+  },
+
+  {
+    id: "james-atletico-nacional-11",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "DEPORTES",
+    importance: "RELEVANTE",
+    title: "James Rodríguez regresa al fútbol colombiano y ficha por Atlético Nacional",
+    summary: "James Rodríguez, capitán y referente de la selección Colombia, fue anunciado como nuevo jugador de Atlético Nacional. A sus 35 años regresa al fútbol colombiano después de una extensa trayectoria internacional.",
+    eventDate: "2026-09-11",
+    publishedDate: "2026-09-11",
+    sourceType: "Noticia deportiva",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-11/james-rodriguez-ficha-por-el-atletico-nacional-de-medellin.html",
+    status: "Fichaje anunciado",
+    related: ["James Rodríguez", "Atlético Nacional", "Medellín", "fútbol colombiano"],
+    whyItMatters: "El regreso de una de las figuras más importantes de la selección genera impacto deportivo, comercial y mediático en la liga colombiana.",
+    extraSources: []
   }
+
 
 );

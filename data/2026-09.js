@@ -633,112 +633,8 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-10"] = {
-  status: "EN DESARROLLO",
-  subtitle: "Seguridad, paz y reconstrucción."
-};
-
-events.push(
-
-// ---------------------------------------------------------
-// GOBIERNO · SEGURIDAD Y JUSTICIA
-// ---------------------------------------------------------
-
-{
-  id: "70-extradiciones-primer-mes-10",
-  group: "government",
-  groupLabel: "GOBIERNO",
-  category: "SEGURIDAD Y JUSTICIA",
-  importance: "IMPORTANTE",
-  title: "Gobierno reporta 70 extradiciones firmadas en sus primeros 32 días",
-  summary: "El presidente Abelardo De La Espriella informó que ha firmado 70 extradiciones durante sus primeros 32 días de Gobierno, un promedio superior a dos por día. El mandatario presentó la cifra como parte de la estrategia de su administración contra el narcotráfico y el crimen organizado.",
-  eventDate: "2026-09-09",
-  publishedDate: "2026-09-10",
-  sourceType: "Declaración oficial reportada por prensa",
-  sourceName: "EFE",
-  sourceUrl: "https://efe.com/noticias/colombia/",
-  status: "Balance oficial",
-  related: [
-    "extradición",
-    "narcotráfico",
-    "crimen organizado",
-    "Estados Unidos",
-    "seguridad"
-  ],
-  whyItMatters: "El volumen de extradiciones muestra una de las líneas centrales de la política de seguridad y cooperación judicial internacional del nuevo Gobierno.",
-  note: "La cifra de 70 extradiciones corresponde al balance divulgado por el presidente.",
-  extraSources: []
-},
-
-// ---------------------------------------------------------
-// GOBIERNO · PAZ Y SEGURIDAD
-// ---------------------------------------------------------
-
-{
-  id: "revocan-negociadores-paz-total-10",
-  group: "government",
-  groupLabel: "GOBIERNO",
-  category: "PAZ Y SEGURIDAD",
-  importance: "IMPORTANTE",
-  title: "Gobierno revoca a negociadores de las mesas con el ELN y el Clan del Golfo",
-  summary: "El Gobierno revocó formalmente las designaciones de sus representantes en los procesos de diálogo con el ELN y el Clan del Golfo. Entre quienes dejan de integrar la delegación ante el ELN están Vera Grabe, María José Pizarro, Iván Cepeda, José Félix Lafaurie y otros integrantes nombrados durante el gobierno anterior.",
-  eventDate: "2026-09-10",
-  publishedDate: "2026-09-10",
-  sourceType: "Actos administrativos reportados por prensa",
-  sourceName: "Infobae",
-  sourceUrl: "https://www.infobae.com/colombia/2026/09/10/abelardo-de-la-espriella-desmonta-otra-pieza-de-la-paz-total-de-petro-revoca-a-negociadores-con-eln-y-clan-del-golfo/",
-  status: "Designaciones revocadas",
-  related: [
-    "ELN",
-    "Clan del Golfo",
-    "Paz Total",
-    "Vera Grabe",
-    "Iván Cepeda",
-    "diálogos de paz"
-  ],
-  whyItMatters: "La decisión formaliza el cambio de orientación del nuevo Gobierno frente a dos de los principales procesos de negociación impulsados durante la administración anterior.",
-  note: "La revocatoria de los negociadores no debe interpretarse por sí sola como terminación jurídica de todos los mecanismos relacionados con esos procesos.",
-  extraSources: []
-},
-
-// ---------------------------------------------------------
-// GOBIERNO · RECONSTRUCCIÓN
-// ---------------------------------------------------------
-
-{
-  id: "once-decretos-emergencia-economica-10",
-  group: "government",
-  groupLabel: "GOBIERNO",
-  category: "RECONSTRUCCIÓN",
-  importance: "IMPORTANTE",
-  title: "Gobierno pone en marcha 11 decretos de emergencia para acelerar la reconstrucción",
-  summary: "El presidente Abelardo De La Espriella y su gabinete firmaron 11 decretos al amparo de la Emergencia Económica declarada tras el terremoto. Las medidas buscan movilizar recursos, fortalecer la capacidad financiera de las regiones, garantizar servicios públicos, acelerar la reconstrucción de infraestructura y facilitar la continuidad educativa.",
-  eventDate: "2026-09-09",
-  publishedDate: "2026-09-10",
-  sourceType: "Fuente oficial",
-  sourceName: "Presidencia de la República",
-  sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Presidente-De-La-Espriella-y-su-Gabinete-firmaron-11-decretos-al-amparo-260909.aspx",
-  status: "Decretos firmados",
-  related: [
-    "Emergencia Económica",
-    "terremoto",
-    "reconstrucción",
-    "servicios públicos",
-    "educación",
-    "regiones"
-  ],
-  whyItMatters: "Los decretos convierten la declaratoria de emergencia en medidas concretas para financiar y acelerar la etapa de recuperación y reconstrucción.",
-  extraSources: []
-}
-
-);
-
-// =========================================================
-// CIERRE · 10 SEP 2026
-// =========================================================
-
-dayMeta["2026-09-10"] = {
   status: "VERIFICADO ✓",
-  subtitle: "Terremoto, reconstrucción, seguridad, justicia, campo, armas, extradiciones, paz, conectividad y control institucional."
+  subtitle: "Terremoto, reconstrucción, seguridad, justicia, campo, armas, extradiciones y paz."
 };
 
 events.push(
@@ -750,15 +646,15 @@ events.push(
     category: "TERREMOTO",
     importance: "IMPORTANTE",
     title: "Colombia cumple un mes del terremoto con más de 466.000 personas afectadas",
-    summary: "Un mes después del terremoto que golpeó el occidente colombiano, el balance actualizado reporta más de 466.000 personas afectadas y mantiene en primer plano los retos de atención humanitaria, vivienda y reconstrucción.",
+    summary: "Un mes después del terremoto que golpeó el occidente colombiano, el balance actualizado mantiene en primer plano el impacto humano, la pérdida de viviendas y los enormes retos de atención y reconstrucción.",
     eventDate: "2026-08-10",
     publishedDate: "2026-09-10",
     sourceType: "Balance oficial reportado por prensa",
     sourceName: "UNGRD / prensa nacional",
-    sourceUrl: "https://portal.gestiondelriesgo.gov.co/Paginas/Noticias/2026/356-personas-rescatadas-la-respuesta-de-la-UNGRD-continua-un-mes-despues-del-terremoto.aspx",
+    sourceUrl: "https://portal.gestiondelriesgo.gov.co/",
     status: "Balance actualizado",
     related: ["terremoto", "UNGRD", "damnificados", "reconstrucción"],
-    whyItMatters: "El balance de un mes permite dimensionar la magnitud humana y material de la emergencia y el tamaño del desafío de reconstrucción.",
+    whyItMatters: "El balance de un mes permite dimensionar la magnitud de la emergencia y el tamaño del desafío de reconstrucción.",
     extraSources: []
   },
 
@@ -769,7 +665,7 @@ events.push(
     category: "ECONOMÍA",
     importance: "IMPORTANTE",
     title: "Reconstrucción tras el terremoto aumenta la presión sobre las finanzas públicas",
-    summary: "La reconstrucción se estima en decenas de billones de pesos y obliga al Gobierno a financiar la recuperación mientras intenta reducir el déficit fiscal, reorientar gasto y conseguir nuevas fuentes de financiación.",
+    summary: "El costo de la reconstrucción se estima en decenas de billones de pesos y obliga al Gobierno a financiar la recuperación mientras intenta reducir el déficit fiscal y reorientar el gasto público.",
     eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
     sourceType: "Análisis periodístico",
@@ -777,7 +673,7 @@ events.push(
     sourceUrl: "https://elpais.com/america-colombia/2026-09-10/el-malabarismo-fiscal-que-afronta-colombia-tras-el-terremoto-recortar-y-reconstruir-a-la-vez.html",
     status: "Análisis económico",
     related: ["reconstrucción", "déficit fiscal", "terremoto", "gasto público"],
-    whyItMatters: "La reconstrucción obliga al Gobierno a conciliar dos objetivos difíciles de ejecutar simultáneamente: contener el gasto y financiar una recuperación de gran escala.",
+    whyItMatters: "La reconstrucción obliga al Gobierno a conciliar contención del gasto y recuperación de gran escala.",
     extraSources: []
   },
 
@@ -788,7 +684,7 @@ events.push(
     category: "SEGURIDAD",
     importance: "IMPORTANTE",
     title: "Violencia armada agrava la emergencia del terremoto en Sipí, Chocó",
-    summary: "Comunidades afectadas por el terremoto enfrentan una nueva emergencia por enfrentamientos entre el ELN y el Clan del Golfo. Familias de varias zonas se desplazaron hacia Istmina en medio de combates y del temor por la presencia de explosivos.",
+    summary: "Comunidades afectadas por el terremoto enfrentan una nueva emergencia por enfrentamientos entre el ELN y el Clan del Golfo, con desplazamientos hacia Istmina y temor por explosivos.",
     eventDate: "2026-08-14",
     publishedDate: "2026-09-10",
     sourceType: "Reportaje periodístico",
@@ -796,7 +692,7 @@ events.push(
     sourceUrl: "https://elpais.com/america-colombia/2026-09-10/las-dos-tragedias-de-sipi-choco-lo-que-no-dano-el-terremoto-lo-danaron-las-balas.html",
     status: "Crisis humanitaria",
     related: ["Sipí", "Chocó", "ELN", "Clan del Golfo", "desplazamiento"],
-    whyItMatters: "Las comunidades enfrentan simultáneamente las consecuencias del desastre natural y el recrudecimiento del conflicto armado.",
+    whyItMatters: "Las comunidades enfrentan simultáneamente las consecuencias del desastre natural y el conflicto armado.",
     extraSources: []
   },
 
@@ -807,14 +703,14 @@ events.push(
     category: "JUSTICIA",
     importance: "IMPORTANTE",
     title: "Juez ordena ocultar temporalmente publicaciones del presidente junto a cadáveres",
-    summary: "El Juzgado Catorce Laboral del Circuito de Bogotá ordenó ocultar temporalmente dos publicaciones de la cuenta oficial de Presidencia en las que aparece el mandatario junto a cadáveres de personas abatidas en operaciones militares.",
+    summary: "Un juez ordenó ocultar temporalmente publicaciones oficiales en las que aparece el presidente junto a cuerpos de personas abatidas en operaciones militares.",
     eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
     sourceType: "Decisión judicial reportada por prensa",
-    sourceName: "El Universal / Colprensa",
+    sourceName: "Prensa nacional",
     sourceUrl: "https://www.eluniversal.com.co/colombia/2026/09/09/juez-ordena-a-de-la-espriella-ocultar-publicaciones-donde-aparece-caminando-entre-cadaveres/",
     status: "Orden judicial temporal",
-    related: ["justicia", "Presidencia", "redes sociales", "Alianza Verde"],
+    related: ["justicia", "Presidencia", "redes sociales"],
     whyItMatters: "La decisión lleva al terreno judicial la controversia sobre la comunicación pública de operaciones militares.",
     note: "La medida es temporal y no constituye una decisión definitiva sobre el fondo.",
     extraSources: []
@@ -827,7 +723,7 @@ events.push(
     category: "AGRICULTURA",
     importance: "RELEVANTE",
     title: "Cambio de lenguaje sobre el campesinado mantiene abierto el debate",
-    summary: "La decisión del Ministerio de Agricultura de usar la expresión 'empresario del campo' en lugar de 'campesino' en sus comunicaciones siguió generando discusión política y social sobre identidad rural y reconocimiento constitucional.",
+    summary: "La decisión del Ministerio de Agricultura de usar la expresión 'empresario del campo' en lugar de 'campesino' siguió generando discusión sobre identidad rural y reconocimiento constitucional.",
     eventDate: "2026-09-09",
     publishedDate: "2026-09-10",
     sourceType: "Debate público reportado por prensa",
@@ -835,26 +731,84 @@ events.push(
     sourceUrl: "https://elpais.com/america-colombia/2026-09-09/el-gobierno-de-de-la-espriella-reemplaza-la-palabra-campesino-por-empresario-del-campo.html",
     status: "Debate en curso",
     related: ["Ministerio de Agricultura", "campesinado", "sector rural"],
-    whyItMatters: "El término 'campesino' tiene reconocimiento constitucional, por lo que el cambio trasciende una simple decisión de comunicación.",
+    whyItMatters: "El término campesino tiene reconocimiento constitucional y el cambio trasciende una decisión de comunicación.",
     extraSources: []
   },
 
   {
-    id: "frontier-colombia-10",
-    group: "state",
-    groupLabel: "ESTADO Y PAÍS",
-    category: "ECONOMÍA Y CONECTIVIDAD",
+    id: "debate-porte-armas-continua-10",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN",
+    category: "SEGURIDAD",
     importance: "RELEVANTE",
-    title: "Frontier Airlines anuncia su llegada a Colombia con rutas a Bogotá, Medellín y Cartagena",
-    summary: "Frontier Airlines anunció que comenzará en diciembre vuelos directos entre Orlando y Bogotá, Medellín y Cartagena, con 14 frecuencias semanales iniciales. La operación está sujeta a las aprobaciones gubernamentales correspondientes.",
+    title: "Flexibilización del porte de armas mantiene abierto el debate nacional",
+    summary: "La decisión del Gobierno de levantar la suspensión general de permisos continúa generando cuestionamientos políticos y de seguridad.",
+    eventDate: "2026-09-08",
+    publishedDate: "2026-09-10",
+    sourceType: "Debate público reportado por prensa",
+    sourceName: "Prensa nacional e internacional",
+    sourceUrl: "https://www.presidencia.gov.co/prensa/Paginas/Presidente-De-La-Espriella-levanta-suspension-de-los-permisos-para-el-porte-260908.aspx",
+    status: "Debate en curso",
+    related: ["porte de armas", "seguridad", "permisos"],
+    whyItMatters: "La medida modifica una política nacional de larga duración sobre el porte legal de armas.",
+    note: "El levantamiento de la suspensión general no equivale a autorizar el porte irrestricto.",
+    extraSources: []
+  },
+
+  {
+    id: "70-extradiciones-primer-mes-10",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SEGURIDAD Y JUSTICIA",
+    importance: "IMPORTANTE",
+    title: "Gobierno reporta 70 extradiciones firmadas en sus primeros 32 días",
+    summary: "El presidente informó que ha firmado 70 extradiciones durante sus primeros 32 días de Gobierno como parte de su estrategia contra el narcotráfico y el crimen organizado.",
+    eventDate: "2026-09-09",
+    publishedDate: "2026-09-10",
+    sourceType: "Declaración oficial reportada por prensa",
+    sourceName: "EFE / Gobierno",
+    sourceUrl: "https://efe.com/noticias/colombia/",
+    status: "Balance oficial",
+    related: ["extradición", "narcotráfico", "crimen organizado", "seguridad"],
+    whyItMatters: "El volumen de extradiciones muestra una de las líneas centrales de la nueva política de seguridad.",
+    extraSources: []
+  },
+
+  {
+    id: "revocan-negociadores-paz-total-10",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "PAZ Y SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Gobierno revoca a negociadores de las mesas con el ELN y el Clan del Golfo",
+    summary: "El Gobierno revocó formalmente las designaciones de representantes que participaban en procesos de diálogo con el ELN y el Clan del Golfo.",
     eventDate: "2026-09-10",
     publishedDate: "2026-09-10",
-    sourceType: "Anuncio empresarial e institucional",
-    sourceName: "ProColombia",
-    sourceUrl: "https://procolombia.co/sala-de-prensa/noticias/frontier-airlines-llega-colombia-y-abre-nuevas-conexiones-entre-colombia-estados-unidos-y-el-caribe",
-    status: "Rutas anunciadas",
-    related: ["Frontier Airlines", "Orlando", "Bogotá", "Medellín", "Cartagena", "turismo"],
-    whyItMatters: "La llegada de una nueva aerolínea amplía la conectividad aérea con Estados Unidos y puede impulsar turismo, negocios e inversión.",
+    sourceType: "Actos administrativos reportados por prensa",
+    sourceName: "El Espectador",
+    sourceUrl: "https://www.elespectador.com/politica/de-la-espriella-consolida-giro-en-politicas-de-paz-y-seguridad-y-elimina-paz-total-del-gobierno-petro-asi-marcha/",
+    status: "Designaciones revocadas",
+    related: ["ELN", "Clan del Golfo", "Paz Total", "diálogos de paz"],
+    whyItMatters: "La decisión formaliza el cambio de orientación frente a procesos de negociación del gobierno anterior.",
+    extraSources: []
+  },
+
+  {
+    id: "once-decretos-emergencia-economica-10",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "RECONSTRUCCIÓN",
+    importance: "IMPORTANTE",
+    title: "Gobierno pone en marcha 11 decretos de emergencia para acelerar la reconstrucción",
+    summary: "El presidente y su gabinete firmaron 11 decretos al amparo de la Emergencia Económica para movilizar recursos, fortalecer a las regiones y acelerar infraestructura y continuidad educativa.",
+    eventDate: "2026-09-09",
+    publishedDate: "2026-09-10",
+    sourceType: "Fuente oficial y prensa",
+    sourceName: "Presidencia / Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/10/gobierno-de-la-espriella-firma-11-decretos-para-acelerar-la-reconstruccion-tras-el-terremoto/",
+    status: "Decretos firmados",
+    related: ["Emergencia Económica", "terremoto", "reconstrucción", "regiones"],
+    whyItMatters: "Los decretos convierten la declaratoria de emergencia en medidas concretas para la recuperación.",
     extraSources: []
   }
 
@@ -867,7 +821,7 @@ events.push(
 
 dayMeta["2026-09-11"] = {
   status: "EN DESARROLLO",
-  subtitle: "Cooperación militar, paz, presupuesto y conectividad internacional."
+  subtitle: "Cooperación militar, paz, energía, oposición, opinión pública, prensa y seguridad."
 };
 
 events.push(
@@ -879,16 +833,16 @@ events.push(
     category: "SEGURIDAD Y RELACIONES INTERNACIONALES",
     importance: "IMPORTANTE",
     title: "Helicópteros de Estados Unidos sobre Tumaco abren debate sobre cooperación militar",
-    summary: "Una publicación del Comando Sur de Estados Unidos mostró dos helicópteros sobre Tumaco en el marco de acciones contra el narcotráfico. El Ministerio de Defensa colombiano sostiene que la participación estadounidense se limita a asesoría y asistencia técnica, mientras sectores políticos y sociales piden claridad sobre el alcance de la cooperación.",
+    summary: "Una publicación del Comando Sur mostró dos helicópteros sobre Tumaco en el marco de acciones contra el narcotráfico. Defensa afirma que la participación estadounidense se limita a asesoría y asistencia técnica, mientras sectores políticos piden claridad sobre su alcance.",
     eventDate: "2026-09-11",
     publishedDate: "2026-09-11",
     sourceType: "Fuente periodística",
     sourceName: "El País",
     sourceUrl: "https://elpais.com/america-colombia/2026-09-11/dos-helicopteros-sobre-tumaco-estados-unidos-exhibe-su-cooperacion-militar-con-una-colombia-que-guarda-silencio.html",
     status: "Debate en desarrollo",
-    related: ["Tumaco", "Estados Unidos", "Comando Sur", "narcotráfico", "Ministerio de Defensa"],
-    whyItMatters: "El episodio plantea preguntas sobre los límites y mecanismos de control de la cooperación militar entre Colombia y Estados Unidos.",
-    note: "Defensa niega participación operativa directa de fuerzas estadounidenses y describe su presencia como asesoría y asistencia técnica.",
+    related: ["Tumaco", "Estados Unidos", "Comando Sur", "narcotráfico", "Defensa"],
+    whyItMatters: "El episodio plantea preguntas sobre los límites y controles de la cooperación militar bilateral.",
+    note: "Defensa niega participación operativa directa y describe la presencia estadounidense como asesoría y asistencia técnica.",
     extraSources: []
   },
 
@@ -899,7 +853,7 @@ events.push(
     category: "PAZ",
     importance: "IMPORTANTE",
     title: "Santos pide al Gobierno implementar plenamente el Acuerdo de Paz con las FARC",
-    summary: "El expresidente Juan Manuel Santos pidió al presidente Abelardo De La Espriella cumplir plenamente el acuerdo firmado con las FARC hace diez años. Santos sostuvo que su implementación sigue siendo una herramienta para enfrentar problemas rurales, narcotráfico y violencia en regiones históricamente afectadas por el conflicto.",
+    summary: "El expresidente Juan Manuel Santos pidió al presidente Abelardo De La Espriella cumplir plenamente el acuerdo firmado con las FARC hace diez años y defendió su implementación como herramienta frente a pobreza rural, narcotráfico y violencia.",
     eventDate: "2026-09-11",
     publishedDate: "2026-09-11",
     sourceType: "Entrevista reportada por prensa internacional",
@@ -907,45 +861,121 @@ events.push(
     sourceUrl: "https://www.reuters.com/world/americas/new-colombian-president-should-implement-farc-peace-accord-says-predecessor-2026-09-11/",
     status: "Pronunciamiento político",
     related: ["Juan Manuel Santos", "Acuerdo de Paz", "FARC", "JEP", "reforma rural"],
-    whyItMatters: "El llamado reabre el debate sobre la continuidad de la implementación del Acuerdo de 2016 bajo un Gobierno crítico de varios componentes de la justicia transicional.",
+    whyItMatters: "El llamado reabre el debate sobre la continuidad de la implementación del Acuerdo de 2016 bajo el nuevo Gobierno.",
     extraSources: []
   },
 
   {
-    id: "jep-recorte-presupuesto-11",
+    id: "jep-ubpd-presupuesto-11",
     group: "state",
     groupLabel: "ESTADO Y PAÍS",
     category: "PRESUPUESTO Y JUSTICIA TRANSICIONAL",
     importance: "IMPORTANTE",
-    title: "JEP alerta por recorte de $125.000 millones en el presupuesto de 2027",
-    summary: "La Jurisdicción Especial para la Paz y la Unidad de Búsqueda de Personas dadas por Desaparecidas advirtieron ante la Cámara que los recursos previstos para 2027 serían insuficientes para cumplir plenamente sus funciones.",
-    eventDate: "2026-09-11",
+    title: "JEP y UBPD alertan por recursos insuficientes para 2027",
+    summary: "La Jurisdicción Especial para la Paz y la Unidad de Búsqueda de Personas dadas por Desaparecidas advirtieron que los recursos previstos para 2027 podrían resultar insuficientes para cumplir plenamente sus funciones.",
+    eventDate: "2026-09-10",
     publishedDate: "2026-09-11",
     sourceType: "Información institucional reportada por prensa",
-    sourceName: "El Universal",
+    sourceName: "Prensa nacional",
     sourceUrl: "https://www.eluniversal.com.co/colombia/2026/09/10/jep-alerta-por-recorte-de-125000-millones-en-2027/",
     status: "Alerta presupuestal",
-    related: ["JEP", "UBPD", "Presupuesto 2027", "justicia transicional", "Congreso"],
-    whyItMatters: "La disponibilidad de recursos condiciona la capacidad de la justicia transicional y de la búsqueda de desaparecidos para cumplir sus mandatos.",
+    related: ["JEP", "UBPD", "Presupuesto 2027", "justicia transicional"],
+    whyItMatters: "La disponibilidad de recursos condiciona la capacidad de estas entidades para cumplir sus mandatos.",
     extraSources: []
   },
 
   {
-    id: "frontier-publicacion-11",
+    id: "ecopetrol-venezuela-licencia-11",
     group: "state",
     groupLabel: "ESTADO Y PAÍS",
-    category: "ECONOMÍA Y TURISMO",
+    category: "ENERGÍA Y RELACIONES INTERNACIONALES",
+    importance: "IMPORTANTE",
+    title: "Ecopetrol sigue a la espera de licencia de Estados Unidos para operar en Venezuela",
+    summary: "Ecopetrol continúa esperando una autorización del Departamento del Tesoro de Estados Unidos que le permita participar en oportunidades energéticas en Venezuela, en un contexto de menores reservas colombianas de petróleo y gas.",
+    eventDate: "2026-09-11",
+    publishedDate: "2026-09-11",
+    sourceType: "Análisis periodístico",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-11/el-tigre-la-refineria-y-la-licencia-que-ecopetrol-sigue-esperando.html",
+    status: "Licencia pendiente",
+    related: ["Ecopetrol", "Venezuela", "Estados Unidos", "energía", "Reficar"],
+    whyItMatters: "La decisión puede influir en la seguridad energética de Colombia y en la relación económica con Venezuela y Estados Unidos.",
+    extraSources: []
+  },
+
+  {
+    id: "atlasintel-imagen-de-la-espriella-11",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "OPINIÓN PÚBLICA",
     importance: "RELEVANTE",
-    title: "Frontier confirma 14 frecuencias semanales entre Orlando y Colombia",
-    summary: "Frontier Airlines confirmó este viernes su entrada al mercado colombiano con vuelos directos desde Orlando a Bogotá, Medellín y Cartagena a partir de diciembre. La compañía iniciará con 14 frecuencias semanales y prevé aumentar la oferta en 2027.",
+    title: "AtlasIntel ubica la imagen positiva de De La Espriella en 54 %",
+    summary: "La primera medición de AtlasIntel sobre el nuevo Gobierno ubica la imagen positiva del presidente en 54 %, mientras su vicepresidente José Manuel Restrepo registra 53 % de favorabilidad.",
     eventDate: "2026-09-10",
     publishedDate: "2026-09-11",
-    sourceType: "Fuente periodística",
-    sourceName: "EFE",
-    sourceUrl: "https://efe.com/economia/2026-09-11/frontier-airlines-llega-colombia/",
-    status: "Anuncio confirmado",
-    related: ["Frontier Airlines", "Estados Unidos", "Orlando", "turismo", "conectividad aérea"],
-    whyItMatters: "La nueva operación amplía la competencia y la conectividad aérea entre Colombia y Estados Unidos.",
+    sourceType: "Encuesta reportada por prensa",
+    sourceName: "El Espectador / AtlasIntel",
+    sourceUrl: "https://www.elespectador.com/politica/imagen-favorable-de-abelardo-de-la-espriella-quedo-en-54-asi-valoro-atlasintel-a-petro-y-cepeda/",
+    status: "Encuesta publicada",
+    related: ["AtlasIntel", "favorabilidad", "Abelardo De La Espriella", "José Manuel Restrepo"],
+    whyItMatters: "La medición ofrece una primera referencia sobre la percepción ciudadana del Gobierno tras su primer mes.",
+    extraSources: []
+  },
+
+  {
+    id: "zut-putumayo-cierre-11",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "PAZ Y SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Cierre de la Zona de Ubicación Temporal en Putumayo genera preocupación por 99 desmovilizados",
+    summary: "La decisión del Gobierno de poner fin a la Zona de Ubicación Temporal de Valle del Guamuez, donde permanecían 99 personas que dejaron las armas, abrió interrogantes sobre protección, reincorporación y acompañamiento institucional.",
+    eventDate: "2026-09-10",
+    publishedDate: "2026-09-11",
+    sourceType: "Decisión gubernamental y reacciones reportadas por prensa",
+    sourceName: "Infobae",
+    sourceUrl: "https://www.infobae.com/colombia/2026/09/10/abelardo-de-la-espriella-puso-punto-final-a-las-zonas-de-ubicacion-temporal-en-el-putumayo-y-exjefe-negociador-de-petro-reacciono-se-les-deja-al-garete/",
+    status: "Cierre anunciado",
+    related: ["Putumayo", "Valle del Guamuez", "reincorporación", "ZUT", "paz"],
+    whyItMatters: "El cierre pone a prueba la transición entre el desmonte de la Paz Total y las garantías para quienes ya habían dejado las armas.",
+    extraSources: []
+  },
+
+  {
+    id: "petro-claudia-alianza-11",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN",
+    category: "POLÍTICA",
+    importance: "IMPORTANTE",
+    title: "Petro y Claudia López acercan posiciones con miras a las elecciones regionales de 2027",
+    summary: "Gustavo Petro confirmó una reunión con Claudia López y promovió una 'Alianza por la Vida' para ampliar la coordinación de sectores opositores y competir por alcaldías, gobernaciones y curules en 2027.",
+    eventDate: "2026-09-10",
+    publishedDate: "2026-09-11",
+    sourceType: "Declaraciones políticas reportadas por prensa",
+    sourceName: "Infobae",
+    sourceUrl: "https://www.infobae.com/colombia/2026/09/10/gustavo-petro-revelo-reunion-con-claudia-lopez-y-anuncio-una-alianza-por-la-vida-hora-de-la-maxima-unidad-ante-la-antidemocracia/",
+    status: "Acercamiento político",
+    related: ["Gustavo Petro", "Claudia López", "oposición", "elecciones regionales 2027"],
+    whyItMatters: "El acercamiento puede modificar la organización de la oposición de cara a las elecciones territoriales de 2027.",
+    extraSources: []
+  },
+
+  {
+    id: "flip-libertad-prensa-11",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "LIBERTAD DE PRENSA",
+    importance: "IMPORTANTE",
+    title: "FLIP pide al Gobierno garantías verificables para la libertad de prensa",
+    summary: "La Fundación para la Libertad de Prensa y organizaciones aliadas pidieron medidas concretas para proteger el ejercicio periodístico, garantizar acceso a información pública y evitar presiones directas o indirectas sobre medios y periodistas.",
+    eventDate: "2026-09-10",
+    publishedDate: "2026-09-11",
+    sourceType: "Pronunciamiento de organización de prensa reportado por medios",
+    sourceName: "FLIP / Infobae",
+    sourceUrl: "https://www.infobae.com/colombia/2026/09/10/la-flip-y-organizaciones-sociales-piden-garantias-para-la-libertad-de-prensa-al-gobierno-de-de-la-espriella-han-profundizado-la-autocensura/",
+    status: "Pronunciamiento público",
+    related: ["FLIP", "libertad de prensa", "periodistas", "acceso a información"],
+    whyItMatters: "La libertad de prensa y el acceso a información oficial son garantías centrales para el control democrático del poder.",
     extraSources: []
   }
 

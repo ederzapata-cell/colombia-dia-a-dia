@@ -1814,7 +1814,7 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-15"] = {
-  status: "EN DESARROLLO",
+  status: "VERIFICADO ✓",
   subtitle: "Seguridad, Ecopetrol, justicia, impuestos, actividad sísmica y mercados."
 };
 
@@ -1944,6 +1944,146 @@ events.push(
     status: "Indicador económico",
     related: ["dólar", "TRM", "peso colombiano", "mercado cambiario"],
     whyItMatters: "La tasa de cambio influye en precios, importaciones, exportaciones y servicio de la deuda externa.",
+    extraSources: []
+  }
+);
+
+// =========================================================
+// 16 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-16"] = {
+  status: "EN DESARROLLO",
+  subtitle: "Narcotráfico, universidades, justicia, reconstrucción, seguridad, sismos y protección al consumidor."
+};
+
+events.push(
+  {
+    id: "eeuu-mantiene-descertificacion-antidrogas-16",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "RELACIONES EXTERIORES",
+    importance: "MUY IMPORTANTE",
+    title: "Estados Unidos mantiene la descertificación de Colombia en la lucha antidrogas",
+    summary: "El Departamento de Estado mantuvo a Colombia entre los países que, según Washington, no realizaron esfuerzos sustanciales durante los últimos doce meses para cumplir sus obligaciones internacionales contra el narcotráfico. La decisión atribuye la evaluación principalmente a las políticas del Gobierno anterior y deja abierta una revisión si se logran avances en erradicación y desmantelamiento de redes criminales.",
+    eventDate: "2026-09-16",
+    publishedDate: "2026-09-16",
+    sourceType: "Fuente periodística con documento oficial",
+    sourceName: "La República",
+    sourceUrl: "https://www.larepublica.co/economia/estados-unidos-mantiene-la-descertificacion-de-colombia-en-la-lucha-contra-las-drogas-4482924",
+    status: "Decisión internacional",
+    related: ["Estados Unidos", "descertificación", "narcotráfico", "cultivos de coca", "cooperación bilateral"],
+    whyItMatters: "La certificación influye en la cooperación antidrogas, la relación bilateral y la evaluación internacional de la política de seguridad colombiana.",
+    extraSources: []
+  },
+  {
+    id: "protocolo-ingreso-policia-universidades-16",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN Y VOCES POLÍTICAS",
+    category: "EDUCACIÓN Y ORDEN PÚBLICO",
+    importance: "IMPORTANTE",
+    title: "Anuncio de protocolo policial abre debate sobre autonomía universitaria",
+    summary: "El Gobierno anunció que prepara un protocolo para el ingreso de la Policía a universidades públicas cuando existan alteraciones extraordinarias del orden público. Representantes estudiantiles y sectores de oposición expresaron temor por posibles abusos, mientras autoridades locales y el rector de la Universidad Nacional pidieron reglas concertadas y mayor inteligencia para enfrentar infiltraciones criminales.",
+    eventDate: "2026-09-16",
+    publishedDate: "2026-09-16",
+    sourceType: "Reportaje periodístico",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-16/de-la-espriella-contra-el-movimiento-estudiantil-el-temor-se-instala-en-las-universidades-publicas.html",
+    status: "Debate público",
+    related: ["universidades públicas", "autonomía universitaria", "Policía", "protesta", "orden público"],
+    whyItMatters: "La discusión enfrenta la obligación estatal de garantizar seguridad con la protección de la protesta y la autonomía universitaria.",
+    extraSources: []
+  },
+  {
+    id: "fiscalia-inspeccion-pacto-historico-16",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN Y VOCES POLÍTICAS",
+    category: "JUSTICIA Y POLÍTICA",
+    importance: "IMPORTANTE",
+    title: "Fiscalía inspecciona sede del Pacto Histórico por financiación de campaña",
+    summary: "La Fiscalía realizó una inspección para recaudar documentos y soportes dentro de una indagación preliminar sobre posibles irregularidades en la financiación de la consulta en la que Iván Cepeda fue elegido candidato presidencial. La actuación penal es independiente de la decisión del CNE de no abrir investigación administrativa.",
+    eventDate: "2026-09-16",
+    publishedDate: "2026-09-16",
+    sourceType: "Fuente periodística",
+    sourceName: "Asuntos Legales",
+    sourceUrl: "https://www.asuntoslegales.com.co/actualidad/fiscalia-inspecciono-la-sede-del-pacto-historico-por-financiacion-de-campana-4482740",
+    status: "Indagación preliminar",
+    related: ["Fiscalía", "Pacto Histórico", "Iván Cepeda", "financiación electoral", "CNE"],
+    whyItMatters: "La actuación busca establecer si existieron irregularidades en la financiación de una campaña presidencial.",
+    note: "La indagación se encuentra en etapa preliminar y no determina responsabilidad penal.",
+    extraSources: []
+  },
+  {
+    id: "vivienda-damnificados-buenaventura-16",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "RECONSTRUCCIÓN",
+    importance: "IMPORTANTE",
+    title: "Gobierno inicia entregas de vivienda y apoyos a damnificados del terremoto",
+    summary: "Una madre y su hijo recibieron en Buenaventura una vivienda terminada y amoblada tras perder su casa en el terremoto. El Gobierno anunció cerca de 270 nuevas viviendas para municipios afectados, una destinación superior a $60.000 millones y apoyos temporales para miles de beneficiarios en Valle del Cauca.",
+    eventDate: "2026-09-16",
+    publishedDate: "2026-09-16",
+    sourceType: "Fuente periodística con información oficial",
+    sourceName: "Noticias RCN",
+    sourceUrl: "https://www.noticiasrcn.com/colombia/asi-es-la-casa-que-recibieron-madre-e-hijo-que-estuvieron-a-punto-de-morir-en-el-terremoto-1061286",
+    status: "Reconstrucción en ejecución",
+    related: ["Buenaventura", "terremoto", "vivienda", "damnificados", "Valle del Cauca"],
+    whyItMatters: "La entrega representa el paso de la atención de emergencia a soluciones habitacionales concretas para las familias afectadas.",
+    extraSources: []
+  },
+  {
+    id: "sismo-istmina-magnitud-45-16",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "GESTIÓN DEL RIESGO",
+    importance: "IMPORTANTE",
+    title: "Sismo de magnitud 4,5 vuelve a sacudir Chocó y el Eje Cafetero",
+    summary: "El Servicio Geológico Colombiano reportó un sismo de magnitud 4,5 a la 1:18 de la madrugada, con referencia en Istmina, Chocó, y profundidad de 43 kilómetros. Durante las primeras horas del día se registraron más de diez movimientos en Chocó, Santander y el océano Pacífico.",
+    eventDate: "2026-09-16",
+    publishedDate: "2026-09-16",
+    sourceType: "Fuente técnica reportada por prensa",
+    sourceName: "Noticias RCN / SGC",
+    sourceUrl: "https://www.noticiasrcn.com/colombia/temblor-en-colombia-hoy-16-de-septiembre-vea-el-reporte-1061245",
+    status: "Monitoreo sísmico",
+    related: ["Chocó", "Istmina", "SGC", "sismo", "Eje Cafetero"],
+    whyItMatters: "La continuidad de la actividad sísmica mantiene en alerta a comunidades que todavía se recuperan del terremoto de agosto.",
+    extraSources: []
+  },
+  {
+    id: "ataques-drones-catatumbo-civiles-16",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Ataques con drones explosivos ponen en riesgo a civiles en Catatumbo",
+    summary: "Campesinos de Tibú registraron un ataque con drones cargados de explosivos del que lograron escapar ilesos. En otro hecho ocurrido en El Tarra, dos personas resultaron heridas en medio de confrontaciones entre el ELN y disidencias de las FARC.",
+    eventDate: "2026-09-16",
+    publishedDate: "2026-09-16",
+    sourceType: "Fuente periodística",
+    sourceName: "Noticias RCN",
+    sourceUrl: "https://www.noticiasrcn.com/colombia/campesinos-registraron-ataque-con-dron-del-que-fueron-blanco-en-el-catatumbo-1061234",
+    status: "Alerta de seguridad",
+    related: ["Catatumbo", "Tibú", "El Tarra", "drones explosivos", "población civil"],
+    whyItMatters: "El uso de drones explosivos amplía el riesgo para campesinos, escuelas, iglesias y otras comunidades atrapadas entre grupos armados.",
+    extraSources: []
+  },
+  {
+    id: "sic-multa-productos-epa-16",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "PROTECCIÓN AL CONSUMIDOR",
+    importance: "RELEVANTE",
+    title: "SIC multa a Productos EPA con $140,4 millones",
+    summary: "La Superintendencia de Industria y Comercio impuso una multa equivalente a 100 salarios mínimos por incumplimientos en ventas por internet, entre ellos falta de información sobre características de productos, derecho de retracto y reversión del pago.",
+    eventDate: "2026-09-16",
+    publishedDate: "2026-09-16",
+    sourceType: "Fuente periodística con decisión oficial",
+    sourceName: "Asuntos Legales",
+    sourceUrl: "https://www.asuntoslegales.com.co/actualidad/la-sic-multa-a-productos-epa-con-140-4-millones-por-incumplir-normas-4482821",
+    status: "Sanción administrativa",
+    related: ["SIC", "Productos EPA", "comercio electrónico", "consumidores", "derecho de retracto"],
+    whyItMatters: "La decisión refuerza las obligaciones de información y protección al consumidor en el comercio electrónico.",
+    note: "Contra la decisión proceden los recursos de reposición y apelación.",
     extraSources: []
   }
 );

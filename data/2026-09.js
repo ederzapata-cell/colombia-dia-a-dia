@@ -1953,7 +1953,7 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-16"] = {
-  status: "EN DESARROLLO",
+  status: "VERIFICADO ✓",
   subtitle: "Narcotráfico, universidades, justicia, reconstrucción, seguridad, sismos y protección al consumidor."
 };
 
@@ -2084,6 +2084,336 @@ events.push(
     related: ["SIC", "Productos EPA", "comercio electrónico", "consumidores", "derecho de retracto"],
     whyItMatters: "La decisión refuerza las obligaciones de información y protección al consumidor en el comercio electrónico.",
     note: "Contra la decisión proceden los recursos de reposición y apelación.",
+    extraSources: []
+  }
+);
+
+// =========================================================
+// 17 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-17"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Ecopetrol, finanzas públicas y señales del nuevo Gobierno."
+};
+
+events.push(
+  {
+    id: "ecopetrol-carlos-suarez-presidente-junta-17",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "ENERGÍA Y EMPRESAS PÚBLICAS",
+    importance: "MUY IMPORTANTE",
+    title: "Carlos Augusto Suárez asume la presidencia de la junta de Ecopetrol",
+    summary: "La nueva junta directiva de Ecopetrol designó a Carlos Augusto Suárez como presidente, en reemplazo de Luis Felipe Henao. El relevo ocurre mientras el mercado espera la elección de un nuevo presidente ejecutivo para la petrolera estatal.",
+    eventDate: "2026-09-17",
+    publishedDate: "2026-09-17",
+    sourceType: "Agencia internacional",
+    sourceName: "Reuters",
+    sourceUrl: "https://www.reuters.com/business/energy/colombia-state-oil-firm-ecopetrol-taps-de-la-espriella-ally-chair-el-tiempo-2026-09-17/",
+    status: "Nombramiento corporativo",
+    related: ["Ecopetrol", "Carlos Augusto Suárez", "junta directiva", "sector petrolero"],
+    whyItMatters: "Ecopetrol es la mayor empresa del país y sus cambios de dirección inciden en la política energética, las finanzas públicas y la confianza de los inversionistas.",
+    extraSources: []
+  },
+  {
+    id: "presion-fiscal-dolar-financiacion-17",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "ECONOMÍA",
+    importance: "IMPORTANTE",
+    title: "El dólar y la deuda externa quedan en el centro del debate fiscal",
+    summary: "Un análisis económico advirtió que el presupuesto, el déficit fiscal y la mayor necesidad de financiación externa elevan la sensibilidad de las cuentas públicas frente al comportamiento del dólar y a las condiciones de crédito internacional.",
+    eventDate: "2026-09-17",
+    publishedDate: "2026-09-17",
+    sourceType: "Análisis periodístico",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-17/el-dolar-paga-el-pato.html",
+    status: "Debate económico",
+    related: ["déficit fiscal", "deuda externa", "dólar", "Presupuesto General"],
+    whyItMatters: "El costo de la deuda y la tasa de cambio condicionan el margen del Gobierno para financiar gasto e inversión.",
+    extraSources: []
+  }
+);
+
+// =========================================================
+// 18 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-18"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Justicia transicional, debate público y servicios urbanos."
+};
+
+events.push(
+  {
+    id: "jep-alerta-recortes-presupuesto-18",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "JUSTICIA TRANSICIONAL",
+    importance: "MUY IMPORTANTE",
+    title: "Presidente de la JEP alerta ante posibles recortes y reformas",
+    summary: "El presidente de la JEP, Alejandro Ramelli, anunció que buscará respaldo internacional ante iniciativas que reducirían el presupuesto del tribunal y trasladarían ciertos casos de militares a la Justicia Penal Militar.",
+    eventDate: "2026-09-18",
+    publishedDate: "2026-09-18",
+    sourceType: "Fuente periodística",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-18/el-presidente-de-la-jep-apela-a-la-comunidad-internacional-para-defender-al-tribunal-de-paz-ante-los-recortes-que-avala-de-la-espriella.html",
+    status: "Alerta institucional",
+    related: ["JEP", "Alejandro Ramelli", "Acuerdo de Paz", "presupuesto", "Justicia Penal Militar"],
+    whyItMatters: "La capacidad operativa y la independencia de la JEP son piezas centrales del sistema de verdad, justicia y reparación creado por el Acuerdo de Paz.",
+    extraSources: []
+  },
+  {
+    id: "festival-ideas-retos-nuevo-gobierno-18",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "DEBATE PÚBLICO",
+    importance: "RELEVANTE",
+    title: "Festival de las Ideas reúne voces sobre los retos del nuevo Gobierno",
+    summary: "Villa de Leyva recibió una nueva edición del Festival de las Ideas, con debates sobre democracia, libertad de prensa, reconstrucción después del terremoto y perspectivas económicas del país.",
+    eventDate: "2026-09-18",
+    publishedDate: "2026-09-18",
+    sourceType: "Fuente periodística",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-18/comienza-la-sexta-edicion-del-festival-de-las-ideas-centrada-en-los-desafios-del-nuevo-gobierno.html",
+    status: "Foro en desarrollo",
+    related: ["Festival de las Ideas", "Villa de Leyva", "democracia", "reconstrucción"],
+    whyItMatters: "El encuentro pone en discusión pública las prioridades institucionales, sociales y económicas del comienzo de Gobierno.",
+    extraSources: []
+  },
+  {
+    id: "cortes-agua-bogota-kennedy-18",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SERVICIOS PÚBLICOS",
+    importance: "RELEVANTE",
+    title: "Cortes programados de agua afectan sectores de Kennedy",
+    summary: "La Empresa de Acueducto de Bogotá programó una suspensión de 24 horas en varios barrios del suroccidente para realizar trabajos de macromedición y mantenimiento preventivo.",
+    eventDate: "2026-09-18",
+    publishedDate: "2026-09-18",
+    sourceType: "Información de servicio",
+    sourceName: "Tropicana / EAAB",
+    sourceUrl: "https://www.tropicanafm.com/2026/cortes-agua-programados-en-bogota-este-18-de-septiembre-suspension-al-suroccidente-por-24-horas-476252.html",
+    status: "Suspensión programada",
+    related: ["Bogotá", "Kennedy", "Acueducto", "cortes de agua"],
+    whyItMatters: "La interrupción exige preparación de hogares, comercios y servicios esenciales en los sectores afectados.",
+    extraSources: []
+  }
+);
+
+// =========================================================
+// 19 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-19"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Memoria institucional, seguridad y transformaciones urbanas."
+};
+
+events.push(
+  {
+    id: "archivos-das-desclasificacion-gobierno-19",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "MEMORIA Y DERECHOS HUMANOS",
+    importance: "MUY IMPORTANTE",
+    title: "Desclasificación de los archivos del DAS queda bajo responsabilidad del nuevo Gobierno",
+    summary: "El proceso para organizar, digitalizar y abrir los archivos del extinto DAS enfrenta retos técnicos, jurídicos y de conservación. La tarea responde a decisiones nacionales e internacionales sobre verdad, reparación y garantías de no repetición.",
+    eventDate: "2026-09-19",
+    publishedDate: "2026-09-19",
+    sourceType: "Reportaje periodístico",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-19/los-secretos-del-das-quedan-en-manos-del-gobierno-de-de-la-espriella.html",
+    status: "Proceso de desclasificación",
+    related: ["DAS", "Archivo General de la Nación", "DNI", "derechos humanos", "memoria histórica"],
+    whyItMatters: "La apertura de los archivos puede aportar verdad sobre persecuciones, interceptaciones ilegales y violaciones de derechos humanos.",
+    extraSources: []
+  },
+  {
+    id: "nueva-estrategia-seguridad-grupos-armados-19",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SEGURIDAD Y PAZ",
+    importance: "IMPORTANTE",
+    title: "La nueva estrategia de seguridad reabre el debate entre sometimiento y negociación",
+    summary: "El giro hacia operaciones militares y una ley de acogimiento para grupos armados alimentó la discusión sobre eficacia, garantías para las víctimas, justicia transicional y atención de las causas territoriales de la violencia.",
+    eventDate: "2026-09-19",
+    publishedDate: "2026-09-19",
+    sourceType: "Análisis periodístico",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-19/comienza-una-nueva-espiral-de-guerra-en-un-pais-azotado-por-un-terremoto.html",
+    status: "Cambio de política",
+    related: ["seguridad", "grupos armados", "ley de acogimiento", "víctimas", "paz"],
+    whyItMatters: "La estrategia define cómo responderá el Estado al control territorial de grupos armados y qué espacio conservarán la negociación y la justicia transicional.",
+    extraSources: []
+  },
+  {
+    id: "debate-gentrificacion-la-macarena-19",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "CIUDAD Y VIVIENDA",
+    importance: "RELEVANTE",
+    title: "Proyecto de coliving desata debate por gentrificación en La Macarena",
+    summary: "Vecinos, urbanistas y comerciantes discutieron el impacto de un proyecto inmobiliario de 13 pisos en La Macarena y Bosque Izquierdo, con posiciones enfrentadas sobre patrimonio, vivienda, paisaje y actividad económica.",
+    eventDate: "2026-09-19",
+    publishedDate: "2026-09-19",
+    sourceType: "Reportaje periodístico",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-19/los-intelectuales-del-barrio-bohemio-de-la-macarena-arremeten-contra-la-gentrificacion-de-un-coliving.html",
+    status: "Controversia urbana",
+    related: ["Bogotá", "La Macarena", "gentrificación", "coliving", "patrimonio"],
+    whyItMatters: "El caso refleja tensiones crecientes entre densificación, inversión inmobiliaria y protección de comunidades y entornos tradicionales.",
+    extraSources: []
+  }
+);
+
+// =========================================================
+// 20 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-20"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Selección femenina, actividad sísmica, movilizaciones y política tecnológica."
+};
+
+events.push(
+  {
+    id: "colombia-semifinal-mundial-femenino-sub20-20",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "DEPORTES",
+    importance: "IMPORTANTE",
+    title: "Colombia avanza a semifinales del Mundial Femenino Sub-20",
+    summary: "La selección colombiana venció 1-0 a Nigeria con un gol en el tiempo añadido y regresó a las semifinales del Mundial Femenino Sub-20 después de 16 años.",
+    eventDate: "2026-09-20",
+    publishedDate: "2026-09-20",
+    sourceType: "Fuente periodística",
+    sourceName: "Noticias Caracol",
+    sourceUrl: "https://www.noticiascaracol.com/golcaracol/seleccion-colombia/colombia-vs-nigeria-en-vivo-hoy-minuto-a-minuto-del-mundial-femenino-sub-20-2026-so35",
+    status: "Clasificación deportiva",
+    related: ["Selección Colombia", "fútbol femenino", "Mundial Sub-20", "Nigeria"],
+    whyItMatters: "El resultado consolida el crecimiento competitivo del fútbol femenino colombiano y amplía su visibilidad nacional.",
+    extraSources: []
+  },
+  {
+    id: "sismo-tolima-magnitud-39-20",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "GESTIÓN DEL RIESGO",
+    importance: "RELEVANTE",
+    title: "Sismo de magnitud 3,9 se siente en Tolima y ciudades cercanas",
+    summary: "El Servicio Geológico Colombiano reportó un movimiento de magnitud 3,9 con epicentro en Tolima, percibido por habitantes de distintas poblaciones de la región.",
+    eventDate: "2026-09-20",
+    publishedDate: "2026-09-20",
+    sourceType: "Fuente técnica reportada por prensa",
+    sourceName: "Blu Radio / SGC",
+    sourceUrl: "https://www.bluradio.com/nacion/temblo-en-colombia-sismo-de-magnitud-3-9-se-sintio-en-varias-ciudades-este-domingo-so35",
+    status: "Monitoreo sísmico",
+    related: ["Tolima", "SGC", "sismo", "gestión del riesgo"],
+    whyItMatters: "El reporte mantiene activa la información preventiva en un periodo de alta sensibilidad por la reciente actividad sísmica del país.",
+    extraSources: []
+  },
+  {
+    id: "agenda-movilizaciones-bogota-20",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "MOVILIDAD Y PARTICIPACIÓN",
+    importance: "RELEVANTE",
+    title: "Bogotá publica agenda de movilizaciones para la semana",
+    summary: "La Secretaría Distrital de Gobierno difundió las concentraciones y movilizaciones previstas entre el 21 y el 27 de septiembre y recomendó planear los desplazamientos.",
+    eventDate: "2026-09-20",
+    publishedDate: "2026-09-20",
+    sourceType: "Fuente oficial",
+    sourceName: "Secretaría Distrital de Gobierno de Bogotá",
+    sourceUrl: "https://www.gobiernobogota.gov.co/noticias/manifestaciones-bogota-agenda-21-al-27-septiembre-2026",
+    status: "Agenda preventiva",
+    related: ["Bogotá", "movilizaciones", "tránsito", "protesta"],
+    whyItMatters: "La información anticipada ayuda a reducir afectaciones de movilidad y facilita el ejercicio ordenado de la protesta.",
+    extraSources: []
+  }
+);
+
+// =========================================================
+// 21 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-21"] = {
+  status: "EN DESARROLLO",
+  subtitle: "Incendios forestales, política social, seguridad y debate partidista."
+};
+
+events.push(
+  {
+    id: "calamidad-incendio-villa-de-leyva-21",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "GESTIÓN DEL RIESGO",
+    importance: "MUY IMPORTANTE",
+    title: "Villa de Leyva declara calamidad pública por incendio forestal",
+    summary: "La emergencia obligó a evacuar zonas cercanas, suspender clases y desplegar a cientos de integrantes de organismos de socorro. Fuertes vientos y condiciones secas dificultan el control del incendio, mientras otras conflagraciones permanecen activas en el país.",
+    eventDate: "2026-09-21",
+    publishedDate: "2026-09-21",
+    sourceType: "Agencia internacional",
+    sourceName: "Associated Press",
+    sourceUrl: "https://apnews.com/article/8a280acc2c50b1877766dcc3a7f3d6b8",
+    status: "Emergencia en curso",
+    related: ["Villa de Leyva", "Boyacá", "incendio forestal", "calamidad pública", "El Niño"],
+    whyItMatters: "El fuego amenaza ecosistemas, viviendas, turismo y servicios locales, y evidencia el aumento del riesgo nacional durante la temporada seca.",
+    extraSources: ["https://elpais.com/america-colombia/2026-09-21/el-incendio-en-villa-de-leyva-no-da-tregua-el-gobernador-de-boyaca-pide-mas-apoyo-al-gobierno-nacional.html"]
+  },
+  {
+    id: "debate-modelo-familia-politica-publica-21",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "POLÍTICA SOCIAL",
+    importance: "IMPORTANTE",
+    title: "Propuesta de familia tradicional abre debate sobre la diversidad de hogares",
+    summary: "La promoción gubernamental de un modelo de familia tradicional fue contrastada con estudios históricos y cifras recientes que muestran una amplia diversidad de hogares, incluidos los encabezados por mujeres y los unipersonales.",
+    eventDate: "2026-09-21",
+    publishedDate: "2026-09-21",
+    sourceType: "Análisis periodístico",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-21/de-la-espriella-promueve-el-regreso-de-la-familia-tradicional-colombiana-un-mito-que-habia-sido-desmentido-hace-60-anos.html",
+    status: "Debate de política pública",
+    related: ["familias", "política social", "DANE", "hogares", "mujeres"],
+    whyItMatters: "La definición de familia puede orientar programas sociales, prioridades presupuestarias y el reconocimiento de distintas formas de hogar.",
+    extraSources: []
+  },
+  {
+    id: "cinco-fragmentaciones-seguridad-estado-21",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "SEGURIDAD",
+    importance: "IMPORTANTE",
+    title: "Análisis identifica cinco fallas de coordinación frente al crimen organizado",
+    summary: "Expertas señalaron fragmentaciones estratégicas, institucionales, territoriales, geográficas e internacionales que dificultan una respuesta sostenida del Estado ante redes criminales cada vez más adaptables.",
+    eventDate: "2026-09-21",
+    publishedDate: "2026-09-21",
+    sourceType: "Análisis especializado",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-21/mientras-el-crimen-converge-el-estado-se-fragmenta-cinco-debilidades-a-resolver.html",
+    status: "Diagnóstico de seguridad",
+    related: ["crimen organizado", "seguridad", "coordinación estatal", "territorio", "cooperación internacional"],
+    whyItMatters: "Una política de seguridad coordinada es necesaria para que capturas e incautaciones se traduzcan en desmantelamiento duradero de las redes criminales.",
+    extraSources: []
+  },
+  {
+    id: "lafaurie-critica-centro-democratico-21",
+    group: "opposition",
+    groupLabel: "OPOSICIÓN Y VOCES POLÍTICAS",
+    category: "PARTIDOS",
+    importance: "RELEVANTE",
+    title: "José Félix Lafaurie critica el rumbo del Centro Democrático",
+    summary: "El presidente de Fedegán cuestionó la identidad y la estrategia reciente del Centro Democrático, respaldó la creación de una nueva fuerza de derecha y defendió las políticas de seguridad del actual Gobierno.",
+    eventDate: "2026-09-21",
+    publishedDate: "2026-09-21",
+    sourceType: "Entrevista periodística",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-21/jose-felix-lafaurie-la-derecha-de-uribe-ya-no-sabe-a-nada.html",
+    status: "Reacomodo político",
+    related: ["José Félix Lafaurie", "Centro Democrático", "María Fernanda Cabal", "derecha"],
+    whyItMatters: "Las divisiones y nuevos partidos pueden alterar el equilibrio de fuerzas de la derecha y su relación con el Gobierno.",
     extraSources: []
   }
 );

@@ -2339,7 +2339,7 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-21"] = {
-  status: "EN DESARROLLO",
+  status: "VERIFICADO ✓",
   subtitle: "Incendios forestales, política social, seguridad y debate partidista."
 };
 
@@ -2414,6 +2414,109 @@ events.push(
     status: "Reacomodo político",
     related: ["José Félix Lafaurie", "Centro Democrático", "María Fernanda Cabal", "derecha"],
     whyItMatters: "Las divisiones y nuevos partidos pueden alterar el equilibrio de fuerzas de la derecha y su relación con el Gobierno.",
+    extraSources: []
+  }
+);
+
+// =========================================================
+// 22 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-22"] = {
+  status: "EN DESARROLLO",
+  subtitle: "Agenda internacional, salud, infraestructura, incendios forestales y protección de personas desaparecidas."
+};
+
+events.push(
+  {
+    id: "restrepo-representa-colombia-onu-22",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "RELACIONES EXTERIORES",
+    importance: "MUY IMPORTANTE",
+    title: "José Manuel Restrepo representa a Colombia ante la Asamblea General de la ONU",
+    summary: "El vicepresidente encabeza la delegación colombiana en Nueva York y presenta el primer mensaje internacional del nuevo Gobierno, con énfasis en seguridad, inversión, cooperación y relaciones multilaterales.",
+    eventDate: "2026-09-22",
+    publishedDate: "2026-09-22",
+    sourceType: "Fuente periodística",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-22/de-la-espriella-delega-en-su-vicepresidente-la-representacion-de-colombia-en-la-asamblea-general-de-la-onu.html",
+    status: "Agenda internacional en curso",
+    related: ["José Manuel Restrepo", "ONU", "Asamblea General", "política exterior", "inversión"],
+    whyItMatters: "La intervención define las prioridades diplomáticas del nuevo Gobierno y su posición ante aliados, organismos multilaterales e inversionistas.",
+    extraSources: []
+  },
+  {
+    id: "plan-choque-salud-millon-usuarios-22",
+    group: "government",
+    groupLabel: "GOBIERNO",
+    category: "SALUD",
+    importance: "MUY IMPORTANTE",
+    title: "Gobierno pone en marcha plan de choque para atender a un millón de usuarios",
+    summary: "El Ejecutivo anunció medidas para reducir demoras en la atención médica y aliviar problemas financieros de la red prestadora, incluida una estrategia de compra de cartera a las EPS.",
+    eventDate: "2026-09-22",
+    publishedDate: "2026-09-22",
+    sourceType: "Fuente periodística con información oficial",
+    sourceName: "La República",
+    sourceUrl: "https://www.larepublica.co/economia/gobierno-puso-en-marcha-plan-de-choque-en-salud-que-preve-beneficiar-1-millon-de-usuarios-4487590",
+    status: "Plan en ejecución",
+    related: ["salud", "EPS", "usuarios", "atención médica", "compra de cartera"],
+    whyItMatters: "Las medidas buscan recuperar continuidad y oportunidad en la atención de pacientes afectados por deudas y retrasos del sistema.",
+    extraSources: ["https://www.larepublica.co/economia/de-la-espriella-anuncia-compra-de-cartera-para-solucionar-demoras-en-atencion-medica-4487491"]
+  },
+  {
+    id: "contraloria-control-metro-bogota-atraso-22",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "INFRAESTRUCTURA",
+    importance: "IMPORTANTE",
+    title: "Contraloría asume control fiscal del Metro de Bogotá y advierte atraso de 4,46%",
+    summary: "La Contraloría General asumió vigilancia prevalente sobre la primera línea del Metro. Con corte al 31 de agosto, la ejecución era de 82,33% frente a 86,79% programado, con retrasos mayores en estaciones, equipos y malla.",
+    eventDate: "2026-09-22",
+    publishedDate: "2026-09-22",
+    sourceType: "Fuente periodística con información oficial",
+    sourceName: "La República",
+    sourceUrl: "https://www.larepublica.co/economia/contraloria-asume-control-fiscal-de-la-primera-linea-del-metro-y-advierte-atraso-de-4-46-4487649",
+    status: "Vigilancia fiscal reforzada",
+    related: ["Metro de Bogotá", "Contraloría", "infraestructura", "retrasos", "recursos públicos"],
+    whyItMatters: "Los retrasos pueden afectar las pruebas y la entrada en operación de uno de los proyectos de transporte más importantes del país.",
+    extraSources: []
+  },
+  {
+    id: "balance-incendios-forestales-nacional-22",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "AMBIENTE Y GESTIÓN DEL RIESGO",
+    importance: "MUY IMPORTANTE",
+    title: "Más de 100.000 hectáreas han sido afectadas por incendios forestales",
+    summary: "La UNGRD reportó 17 incendios activos y más de 430 conflagraciones durante la temporada. Tolima concentra diez emergencias activas, mientras El Niño mantiene condiciones favorables para nuevos focos.",
+    eventDate: "2026-09-22",
+    publishedDate: "2026-09-22",
+    sourceType: "Fuente periodística con balance oficial",
+    sourceName: "La República / UNGRD",
+    sourceUrl: "https://www.larepublica.co/economia/hay-mas-de-100-000-hectareas-afectadas-por-una-ola-de-mas-de-430-incendios-forestales-4487410",
+    status: "Emergencia nacional en seguimiento",
+    related: ["incendios forestales", "UNGRD", "Tolima", "El Niño", "Villa de Leyva"],
+    whyItMatters: "La extensión afectada y el número de incendios activos amenazan ecosistemas, fuentes de agua, comunidades rurales y capacidad de respuesta regional.",
+    extraSources: []
+  },
+  {
+    id: "alertas-desaparicion-mujeres-menores-dificultades-22",
+    group: "state",
+    groupLabel: "ESTADO Y PAÍS",
+    category: "DERECHOS Y PROTECCIÓN",
+    importance: "IMPORTANTE",
+    title: "Sistemas de alerta por desaparición enfrentan dificultades de implementación",
+    summary: "La Alerta Rosa y la Alerta Colombia avanzan con limitaciones presupuestales, tecnológicas y de coordinación. La difusión depende todavía principalmente de redes sociales y WhatsApp, mientras persiste desinformación sobre cuándo denunciar.",
+    eventDate: "2026-09-22",
+    publishedDate: "2026-09-22",
+    sourceType: "Reportaje periodístico",
+    sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-22/el-dificil-arranque-de-los-sistemas-de-alerta-inmediata-en-casos-de-desaparicion-de-mujeres-y-menores.html",
+    status: "Implementación parcial",
+    related: ["Alerta Rosa", "Alerta Colombia", "ICBF", "personas desaparecidas", "menores"],
+    whyItMatters: "La rapidez y el alcance de las alertas son decisivos durante las primeras horas de búsqueda de mujeres, niños y adolescentes desaparecidos.",
+    note: "No es necesario esperar 72 horas para reportar una desaparición.",
     extraSources: []
   }
 );

@@ -1,3 +1,41 @@
+
+Cargando mensajes anteriores…
+jajaja, lo dijiste, pero no escribiste nada sobre Ivan cepeda y Corcho
+Jajaja, ya encontré el error: la noticia estaba escrita, pero con fecha interna del 21, por eso no aparecía el 22.
+
+Ya está corregida y visible en el 22 con Iván Cepeda y Carolina Corcho.
+
+
+colombia-dia-a-dia-2026-09-22.txt
+Documento
+actualizamos?
+dale un buen barrido de hoy no pocas noticias
+Listo, Eder. El 23 quedó con 14 noticias y el 22 cerrado como VERIFICADO ✓.
+
+Reemplaza todo con este archivo:
+
+
+colombia-dia-a-dia-2026-09-23.txt
+Documento
+
+Texto pegado.txt
+Documento
+Hola, actualizamos? con el cierre de ayer y buenas noticias de hoy? ha estado movidito
+ok
+Trabajó durante 4min 51s
+Listo. Cerré el 23 y el 24, y dejé el 25 como EN DESARROLLO.
+
+12 noticias del 24.
+8 noticias de hoy.
+Sintaxis validada y sin identificadores duplicados.
+Sí: reemplaza todo con este archivo:
+
+
+colombia-dia-a-dia-2026-09-25.txt
+Documento
+
+
+
 // =========================================================
 // COLOMBIA DÍA A DÍA
 // DATOS · SEPTIEMBRE 2026
@@ -2639,7 +2677,7 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-23"] = {
-  status: "EN DESARROLLO",
+  status: "VERIFICADO ✓",
   subtitle: "Seguridad regional, política exterior, oposición, economía, conflicto armado, ambiente, salud y gestión del riesgo."
 };
 
@@ -2898,5 +2936,209 @@ events.push(
     related: ["Ministerio de Educación", "docentes", "terremoto", "estudiantes", "retorno a clases"],
     whyItMatters: "La preparación docente y la recuperación educativa son esenciales para evitar una interrupción prolongada del aprendizaje en las regiones damnificadas.",
     extraSources: []
+  }
+);
+
+// =========================================================
+// 24 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-24"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Relaciones exteriores, energía, pensiones, justicia transicional, salud, seguridad, ambiente, educación y regiones."
+};
+
+events.push(
+  {
+    id: "ruptura-relaciones-iran-24",
+    group: "government", groupLabel: "GOBIERNO", category: "RELACIONES EXTERIORES", importance: "MUY IMPORTANTE",
+    title: "Colombia rompe relaciones diplomáticas con Irán",
+    summary: "La Cancillería confirmó la ruptura, vigente desde el 19 de septiembre, y el Gobierno la justificó en presuntos vínculos de Irán con organizaciones terroristas internacionales. La decisión reorienta una relación bilateral sensible en medio del acercamiento de Bogotá a Estados Unidos e Israel.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Agencia internacional", sourceName: "EFE",
+    sourceUrl: "https://efe.com/noticias/colombia/", status: "Ruptura diplomática confirmada",
+    related: ["Irán", "Cancillería", "Israel", "política exterior"], whyItMatters: "La ruptura tiene efectos diplomáticos y de seguridad, y marca con claridad la nueva orientación internacional del Gobierno.", extraSources: ["https://elpais.com/america-colombia/actualidad/"]
+  },
+  {
+    id: "restrepo-discurso-onu-24",
+    group: "government", groupLabel: "GOBIERNO", category: "DIPLOMACIA", importance: "MUY IMPORTANTE",
+    title: "Vicepresidente lleva a la ONU el mensaje crítico del Gobierno y pide inversión para Colombia",
+    summary: "José Manuel Restrepo leyó ante la Asamblea General el discurso del presidente Abelardo de la Espriella, cuestionó la burocracia y eficacia de la ONU, agradeció la ayuda posterior al terremoto e invitó a recuperar la confianza inversionista en Colombia.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Cobertura periodística", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/24/en-vivo-jose-manuel-restrepo-vicepresidente-de-colombia-habla-ante-la-asamblea-general-de-la-onu/", status: "Intervención realizada",
+    related: ["José Manuel Restrepo", "ONU", "inversión", "terremoto"], whyItMatters: "Fue la primera intervención del nuevo Gobierno ante la Asamblea General y fijó sus prioridades de política exterior.", extraSources: ["https://efe.com/mundo/2026-09-24/colombia-duda-onu-ayuda-terremoto/"]
+  },
+  {
+    id: "gutierrez-presidente-ecopetrol-24",
+    group: "government", groupLabel: "GOBIERNO", category: "ENERGÍA Y EMPRESAS PÚBLICAS", importance: "MUY IMPORTANTE",
+    title: "Joaquín Gutiérrez es designado presidente de Ecopetrol",
+    summary: "La junta directiva nombró a Joaquín Gutiérrez Caballero al frente de la petrolera. Recibe una empresa estratégica con retos de caja, producción, reservas y abastecimiento; analistas y sindicatos pidieron que la nueva administración muestre resultados verificables.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Información empresarial", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/24/joaquin-gutierrez-fue-designado-como-presidente-de-ecopetrol/", status: "Nombramiento confirmado",
+    related: ["Ecopetrol", "Joaquín Gutiérrez", "petróleo", "reservas"], whyItMatters: "Ecopetrol aporta ingresos decisivos a la Nación y su conducción afecta energía, finanzas públicas e inversión.", extraSources: ["https://elpais.com/america-colombia/actualidad/"]
+  },
+  {
+    id: "renuncia-presidente-colpensiones-24",
+    group: "government", groupLabel: "GOBIERNO", category: "PENSIONES", importance: "MUY IMPORTANTE",
+    title: "Presidencia pide la renuncia del recién posesionado presidente de Colpensiones",
+    summary: "Carlos René Montoya presentó su dimisión después de que el presidente se la solicitara. La salida ocurrió tras su accidentada exposición del presupuesto ante la Comisión Séptima del Senado, donde congresistas cuestionaron su dominio de las cifras y del funcionamiento de la entidad.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Cobertura política", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/24/presidencia-solicito-la-renuncia-del-presidente-de-colpensiones-carlos-rene-montoya-munoz/", status: "Renuncia presentada",
+    related: ["Colpensiones", "Carlos René Montoya", "Senado", "pensiones"], whyItMatters: "La crisis directiva golpea a la administradora pública en medio de decisiones presupuestales y del debate sobre el sistema pensional.", extraSources: ["https://www.semana.com/politica/articulo/abelardo-de-la-espriella-le-pidio-la-renuncia-al-presidente-de-colpensiones-carlos-rene-montoya-tras-mostrar-desconocimiento-de-esa-entidad/202651/"]
+  },
+  {
+    id: "jep-inicia-sancion-secuestro-24",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA TRANSICIONAL", importance: "MUY IMPORTANTE",
+    title: "La JEP inicia la ejecución de la primera sanción por secuestros contra el último secretariado de las FARC",
+    summary: "El tribunal puso en marcha la fase de ejecución de su primera sanción restaurativa contra exintegrantes del último secretariado de las FARC por secuestros, mientras enfrenta presión política y una discusión presupuestal que puede limitar su operación.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Reportaje periodístico", sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/actualidad/", status: "Sanción en ejecución",
+    related: ["JEP", "FARC", "secuestro", "Acuerdo de Paz", "víctimas"], whyItMatters: "La ejecución material de sanciones es una prueba central de credibilidad para la justicia transicional y para los derechos de las víctimas.", extraSources: []
+  },
+  {
+    id: "salud-adicion-presupuestal-14-billones-24",
+    group: "government", groupLabel: "GOBIERNO", category: "SALUD", importance: "MUY IMPORTANTE",
+    title: "Ministra de Salud busca una adición de $14 billones para 2027",
+    summary: "La ministra Ana María Vesga abrió una negociación con Hacienda por recursos adicionales para el sistema de salud, mientras el Gobierno promete rescatar la atención y reducir el represamiento de servicios. La financiación quedó en el centro del debate presupuestal.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Reportaje periodístico", sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/actualidad/", status: "Negociación presupuestal",
+    related: ["Ministerio de Salud", "presupuesto 2027", "Hacienda", "atención médica"], whyItMatters: "La suficiencia de recursos determina pagos, acceso oportuno a servicios y estabilidad de hospitales y aseguradores.", extraSources: []
+  },
+  {
+    id: "operacion-kratos-13-capturas-24",
+    group: "government", groupLabel: "GOBIERNO", category: "SEGURIDAD", importance: "MUY IMPORTANTE",
+    title: "Operación en Santa Marta y Ciénaga deja 13 capturados de las ACSN",
+    summary: "Policía y Ejército realizaron seis allanamientos y capturaron a 13 personas señaladas de integrar las Autodefensas Conquistadoras de la Sierra Nevada, entre ellas la pareja de alias Pinocho. También se reportaron cuatro requeridos en extradición con presuntos nexos con el cartel de Sinaloa.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Reporte de orden público", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/25/seis-allanamientos-dejan-13-capturados-de-las-acsn-en-santa-marta-y-cienaga/", status: "Operación ejecutada",
+    related: ["ACSN", "Santa Marta", "Ciénaga", "alias Pinocho", "extradición"], whyItMatters: "El resultado afecta la estructura señalada de imponer el paro armado que paralizó comercio y movilidad en el Caribe.", extraSources: ["https://caracol.com.co/2026/09/24/capturaron-a-pareja-de-alias-pinocho-el-cabecilla-de-las-acsn-estaria-buscando-huir-a-venezuela/"]
+  },
+  {
+    id: "fin-paro-armado-magdalena-guajira-24",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "SEGURIDAD Y REGIONES", importance: "MUY IMPORTANTE",
+    title: "ACSN anuncia el fin del paro armado en Magdalena y La Guajira para el viernes",
+    summary: "El grupo armado anunció que la restricción de 72 horas terminaría a las 7:00 a. m. del 25 de septiembre y pidió reabrir comercios y reactivar actividades. Las autoridades mantuvieron el despliegue militar y policial ante la amenaza.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Cobertura regional", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/24/acsn-anuncia-el-fin-del-paro-armado-en-magdalena-y-la-guajira-para-este-viernes/", status: "Fin anunciado",
+    related: ["Magdalena", "La Guajira", "paro armado", "ACSN", "comercio"], whyItMatters: "La medida había alterado la vida cotidiana, el transporte, el turismo y la actividad económica de amplias zonas del Caribe.", extraSources: ["https://www.semana.com/nacion/articulo/los-conquistadores-de-la-sierra-anuncian-el-fin-al-paro-armado-en-medio-de-la-ofensiva-militar-del-gobierno-de-abelardo-de-la-espriella/202607/"]
+  },
+  {
+    id: "combate-buga-frente-57-24",
+    group: "government", groupLabel: "GOBIERNO", category: "CONFLICTO ARMADO", importance: "IMPORTANTE",
+    title: "Tres integrantes del frente 57 mueren en combates en Buga",
+    summary: "El Ejército reportó la muerte de tres integrantes de una disidencia, incluido alias Norton, señalado como cabecilla financiero y coordinador de extorsiones en Tuluá y Buga. La operación continuó en fase de extracción y consolidación de resultados.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Reporte militar", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/24/en-combates-con-el-ejercito-en-buga-murieron-tres-integrantes-del-frente-57-incluido-alias-norton/", status: "Operación en consolidación",
+    related: ["Buga", "Tuluá", "frente 57", "extorsión", "Ejército"], whyItMatters: "La estructura era señalada de secuestros, homicidios, extorsiones y ataques contra infraestructura y vehículos en el Valle.", extraSources: []
+  },
+  {
+    id: "incendios-nueve-departamentos-24",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "AMBIENTE Y EMERGENCIAS", importance: "MUY IMPORTANTE",
+    title: "Incendios forestales mantienen alertas en nueve departamentos",
+    summary: "Los incendios alcanzaron áreas de alto valor ambiental, entre ellas Villa de Leyva, el santuario de Iguaque y el Parque Nacional Natural Los Nevados. En Boyacá, más de 150 soldados y seis helicópteros apoyaron las labores de control.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Seguimiento ambiental", sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/actualidad/", status: "Emergencia en atención",
+    related: ["incendios forestales", "Iguaque", "Los Nevados", "Boyacá", "Ejército"], whyItMatters: "El fuego amenaza ecosistemas estratégicos, fuentes de agua, comunidades rurales y capacidad de respuesta de varias regiones.", extraSources: ["https://caracol.com.co/actualidad/orden-publico/"]
+  },
+  {
+    id: "fecode-movilizacion-octubre-24",
+    group: "opposition", groupLabel: "OPOSICIÓN Y MOVIMIENTOS", category: "EDUCACIÓN Y PROTESTA", importance: "IMPORTANTE",
+    title: "Fecode convoca nueva movilización nacional para octubre",
+    summary: "La federación de docentes confirmó una jornada nacional de protesta y advirtió sobre iniciativas gubernamentales y parlamentarias que, según el sindicato, abren riesgos de privatización y afectan el carácter público, universal y gratuito de la educación.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Información sindical", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/24/anuncian-paro-de-fecode-en-colombia-fecha-y-mas-detalles-de-la-convocatoria-segun-ultimo-comunicado/", status: "Movilización convocada",
+    related: ["Fecode", "docentes", "educación pública", "movilización"], whyItMatters: "La convocatoria anticipa un nuevo pulso social y político sobre el modelo educativo y puede afectar el calendario escolar.", extraSources: []
+  },
+  {
+    id: "sismos-choco-tolima-24",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "GESTIÓN DEL RIESGO", importance: "RELEVANTE",
+    title: "Sismos de magnitud 4,1 y 4,0 sacuden Chocó y Tolima",
+    summary: "El Servicio Geológico Colombiano reportó dos movimientos durante la noche, uno en Chocó y otro en Chaparral, Tolima. La actividad mantiene la atención institucional por el aumento de eventos sísmicos registrado en esta última zona.",
+    eventDate: "2026-09-24", publishedDate: "2026-09-24", sourceType: "Reporte con datos oficiales", sourceName: "Blu Radio",
+    sourceUrl: "https://lakalle.bluradio.com/noticias/nacion/dos-fuertes-temblores-sacudieron-a-colombia-en-la-noche-de-este-jueves-24-de-septiembre-so35", status: "Monitoreo sísmico",
+    related: ["Servicio Geológico Colombiano", "Chocó", "Chaparral", "Tolima", "sismos"], whyItMatters: "La vigilancia permite evaluar riesgos para comunidades ya sensibilizadas por la reciente emergencia sísmica nacional.", extraSources: []
+  }
+);
+
+// =========================================================
+// 25 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-25"] = {
+  status: "EN DESARROLLO",
+  subtitle: "Pensiones, justicia, seguridad regional, oposición social, economía, servicios, cultura y agenda ciudadana."
+};
+
+events.push(
+  {
+    id: "salida-colpensiones-tres-dias-25",
+    group: "government", groupLabel: "GOBIERNO", category: "PENSIONES Y CRISIS ADMINISTRATIVA", importance: "MUY IMPORTANTE",
+    title: "Salida del presidente de Colpensiones abre una crisis de dirección tras solo tres días",
+    summary: "Carlos René Montoya deja el cargo apenas tres días después de asumirlo, luego de las dificultades que mostró al explicar ante el Senado el presupuesto y la operación del fondo público. El Gobierno debe definir rápidamente la conducción de una entidad clave para millones de afiliados.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Seguimiento periodístico", sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/actualidad/", status: "Vacancia y relevo pendientes",
+    related: ["Colpensiones", "Carlos René Montoya", "Senado", "Gobierno"], whyItMatters: "La continuidad directiva es esencial para administrar pagos, afiliaciones, presupuesto y la transición del sistema pensional.", extraSources: ["https://caracol.com.co/2026/09/24/presidencia-solicito-la-renuncia-del-presidente-de-colpensiones-carlos-rene-montoya-munoz/"]
+  },
+  {
+    id: "murcia-retractacion-espriella-25",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA Y POLÍTICA", importance: "MUY IMPORTANTE",
+    title: "David Murcia Guzmán se retracta ante la Fiscalía de sus señalamientos contra De la Espriella",
+    summary: "El condenado exjefe de DMG afirmó que mintió durante la campaña presidencial para afectar al entonces candidato Abelardo de la Espriella. En una carta a la Fiscalía retiró sus acusaciones y aseguró que durante el gobierno Petro le ofrecieron ser gestor de paz.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Reporte judicial", sourceName: "El País",
+    sourceUrl: "https://elpais.com/america-colombia/2026-09-25/david-murcia-guzman-se-retracta-de-todos-sus-senalamientos-contra-abelardo-de-la-espriella.html", status: "Retractación presentada",
+    related: ["David Murcia Guzmán", "DMG", "Fiscalía", "Abelardo de la Espriella"], whyItMatters: "La retractación cambia el curso público y judicial de acusaciones que tuvieron peso durante la campaña presidencial.", extraSources: ["https://www.semana.com/politica/articulo/david-murcia-cerebro-de-dmg-se-retracta-de-los-senalamientos-contra-abelardo-de-la-espriella-dice-que-le-ofrecieron-ser-gestor-de-paz-en-el-gobierno-petro/202644/"]
+  },
+  {
+    id: "termina-paro-armado-caribe-25",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "SEGURIDAD Y REGIONES", importance: "MUY IMPORTANTE",
+    title: "Termina la hora anunciada del paro armado en Magdalena y La Guajira",
+    summary: "A las 7:00 a. m. venció el paro de 72 horas anunciado por las ACSN. Autoridades y comunidades entraron en una fase de verificación del retorno del transporte, el comercio y el turismo, mientras continuó el dispositivo de seguridad contra la estructura armada.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Seguimiento regional", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/2026/09/24/acsn-anuncia-el-fin-del-paro-armado-en-magdalena-y-la-guajira-para-este-viernes/", status: "Normalización en verificación",
+    related: ["Santa Marta", "Magdalena", "La Guajira", "ACSN", "paro armado"], whyItMatters: "La reapertura segura es decisiva para trabajadores, comerciantes, transportadores y el turismo del Caribe.", extraSources: ["https://www.semana.com/nacion/articulo/los-conquistadores-de-la-sierra-anuncian-el-fin-al-paro-armado-en-medio-de-la-ofensiva-militar-del-gobierno-de-abelardo-de-la-espriella/202607/"]
+  },
+  {
+    id: "encuentro-jurisdiccion-penal-santa-marta-25",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA", importance: "IMPORTANTE",
+    title: "Corte Suprema mantiene en Santa Marta encuentro sobre inteligencia artificial y crimen",
+    summary: "Magistrados, jueces, fiscales, académicos y litigantes de Colombia, España y México concluyen el encuentro de la jurisdicción penal pese a la crisis de seguridad regional. La agenda examina el uso de inteligencia artificial y la evolución de las formas criminales.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Agenda judicial", sourceName: "Semana",
+    sourceUrl: "https://www.semana.com/nacion/articulo/corte-suprema-mantiene-encuentro-de-magistrados-en-santa-marta-pese-al-paro-armado-la-justicia-nunca-se-paraliza/202649/", status: "Encuentro en curso",
+    related: ["Corte Suprema", "Santa Marta", "inteligencia artificial", "justicia penal"], whyItMatters: "El encuentro aborda cómo debe responder la justicia a nuevas herramientas tecnológicas y a estructuras criminales más complejas.", extraSources: ["https://www.semana.com/nacion/articulo/inteligencia-artificial-y-evolucion-del-crimen-los-ejes-centrales-del-encuentro-de-la-jurisdiccion-penal-en-santa-marta/202607/"]
+  },
+  {
+    id: "dolar-trm-3264-25",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "ECONOMÍA Y MERCADOS", importance: "IMPORTANTE",
+    title: "TRM llega a $3.264,39 tras un salto diario de más de $55",
+    summary: "El dólar inicia la jornada con una TRM de $3.264,39, un incremento de $55,73 frente al día anterior. El petróleo WTI también cotiza al alza alrededor de 95 dólares, dos señales relevantes para inflación, comercio exterior e ingresos fiscales.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Datos de mercado", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/", status: "Mercado abierto",
+    related: ["dólar", "TRM", "petróleo WTI", "peso colombiano"], whyItMatters: "El movimiento del dólar afecta importaciones, viajes, deuda y precios; el petróleo incide directamente en las cuentas de Ecopetrol y la Nación.", extraSources: []
+  },
+  {
+    id: "cortes-luz-bogota-soacha-25",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "SERVICIOS PÚBLICOS", importance: "RELEVANTE",
+    title: "Bogotá y Soacha tienen cortes programados de energía",
+    summary: "Enel programó suspensiones temporales en distintos barrios de Bogotá y Soacha por trabajos de mantenimiento y modernización de la red. Los usuarios deben consultar horarios y sectores para preparar actividades domésticas y comerciales.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Información de servicio", sourceName: "Caracol Radio",
+    sourceUrl: "https://caracol.com.co/", status: "Cortes programados",
+    related: ["Bogotá", "Soacha", "energía", "Enel", "servicios públicos"], whyItMatters: "Las interrupciones afectan hogares, comercios, conectividad y servicios que dependen del suministro eléctrico.", extraSources: []
+  },
+  {
+    id: "festival-idiomas-culturas-bogota-25",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "CULTURA Y EDUCACIÓN", importance: "RELEVANTE",
+    title: "Festival gratuito reúne seis culturas y cinco idiomas en Bogotá",
+    summary: "La plazoleta de CityU recibe el festival Entre Mundos durante el 25 y 26 de septiembre, con clases, actividades artísticas y gastronomía de seis países. La entrada es libre y la programación busca acercar el aprendizaje de lenguas a públicos diversos.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Agenda cultural", sourceName: "Blu Radio",
+    sourceUrl: "https://www.bluradio.com/regiones/bogota/asi-puede-asistir-a-festival-que-da-clases-gratis-en-ingles-y-otros-idiomas-en-bogota-so35", status: "Festival en curso",
+    related: ["Bogotá", "idiomas", "cultura", "CityU", "entrada libre"], whyItMatters: "Es una oportunidad gratuita de formación, intercambio cultural y apropiación del centro de la ciudad.", extraSources: []
+  },
+  {
+    id: "empleo-bogota-265-vacantes-25",
+    group: "state", groupLabel: "ESTADO Y PAÍS", category: "EMPLEO", importance: "RELEVANTE",
+    title: "Bogotá ofrece 265 oportunidades laborales en jornada de empleo",
+    summary: "La ciudad mantiene durante el 24 y 25 de septiembre una convocatoria con 265 vacantes. La oferta hace parte de los servicios distritales de intermediación laboral para conectar empresas y personas que buscan trabajo.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Fuente institucional", sourceName: "Alcaldía de Bogotá",
+    sourceUrl: "https://secretariageneral.gov.co/", status: "Convocatoria abierta",
+    related: ["Bogotá", "empleo", "vacantes", "intermediación laboral"], whyItMatters: "La convocatoria ofrece acceso directo a oportunidades laborales y facilita procesos de contratación formal.", extraSources: []
   }
 );

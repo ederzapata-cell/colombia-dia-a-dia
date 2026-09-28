@@ -3026,7 +3026,7 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-25"] = {
-  status: "EN DESARROLLO",
+  status: "VERIFICADO ✓",
   subtitle: "Pensiones, justicia, seguridad regional, oposición social, economía, servicios, cultura y agenda ciudadana."
 };
 
@@ -3102,5 +3102,254 @@ events.push(
     eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Fuente institucional", sourceName: "Alcaldía de Bogotá",
     sourceUrl: "https://secretariageneral.gov.co/", status: "Convocatoria abierta",
     related: ["Bogotá", "empleo", "vacantes", "intermediación laboral"], whyItMatters: "La convocatoria ofrece acceso directo a oportunidades laborales y facilita procesos de contratación formal.", extraSources: []
+  }
+);
+
+events.push(
+  {
+    id: "iran-rechaza-ruptura-colombia-25", group: "state", groupLabel: "ESTADO Y PAÍS", category: "RELACIONES EXTERIORES", importance: "IMPORTANTE",
+    title: "Irán rechaza la ruptura de relaciones anunciada por Colombia",
+    summary: "La Cancillería iraní cuestionó la decisión colombiana y respondió con acusaciones contra la nueva política exterior de Bogotá. El cruce profundizó la ruptura diplomática y confirmó el realineamiento internacional del Gobierno.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Cobertura internacional", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/actualidad/", status: "Respuesta diplomática",
+    related: ["Irán", "Cancillería", "ruptura diplomática", "política exterior"], whyItMatters: "La respuesta iraní eleva el costo diplomático de la ruptura y puede afectar cooperación, comercio y seguridad.", extraSources: []
+  },
+  {
+    id: "santa-marta-miedo-posparo-25", group: "state", groupLabel: "ESTADO Y PAÍS", category: "SEGURIDAD Y REGIONES", importance: "MUY IMPORTANTE",
+    title: "Santa Marta intenta volver a la normalidad entre miedo y presencia militar",
+    summary: "Aunque terminó la amenaza formal contra quienes abrieran sus negocios, barrios y comerciantes mantuvieron temor por el control territorial de las ACSN. La ciudad siguió bajo una prueba de autoridad estatal después de tres días de presión armada.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-25", sourceType: "Reportaje regional", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/actualidad/", status: "Normalización incompleta",
+    related: ["Santa Marta", "ACSN", "comercio", "militarización"], whyItMatters: "El levantamiento de una amenaza no garantiza seguridad real cuando persiste la capacidad de intimidación territorial.", extraSources: []
+  },
+  {
+    id: "extradicion-alias-arana-25", group: "government", groupLabel: "GOBIERNO", category: "SEGURIDAD Y EXTRADICIÓN", importance: "MUY IMPORTANTE",
+    title: "Colombia extradita a Estados Unidos a alias Araña",
+    summary: "Giovanni Andrés Rojas, señalado cabecilla de Comandos de Frontera, fue enviado a Estados Unidos. El Gobierno presentó la extradición como parte del endurecimiento de su política contra estructuras que combinaron diálogos, narcotráfico y violencia.",
+    eventDate: "2026-09-25", publishedDate: "2026-09-27", sourceType: "Seguimiento gubernamental", sourceName: "Semana", sourceUrl: "https://www.semana.com/nacion/articulo/arana-era-un-criminal-al-que-el-senor-gustavo-petro-le-puso-un-disfraz-abelardo-de-la-espriella-entrega-detalles-de-la-extradicion/202625/", status: "Extradición ejecutada",
+    related: ["alias Araña", "Comandos de Frontera", "Estados Unidos", "extradición"], whyItMatters: "El caso marca el nuevo enfoque frente a antiguos interlocutores de paz vinculados con economías ilegales.", extraSources: ["https://caracol.com.co/?sma=newsEditorialCaracol_generico20260926"]
+  }
+);
+
+// =========================================================
+// 26 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-26"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Seguridad territorial, energía, inversión, derechos humanos, justicia, gestión del riesgo y deporte."
+};
+
+events.push(
+  {
+    id: "reapertura-contratos-petroleo-gas-26", group: "government", groupLabel: "GOBIERNO", category: "ENERGÍA", importance: "MUY IMPORTANTE",
+    title: "Gobierno anuncia reapertura de contratos de exploración de petróleo y gas",
+    summary: "El presidente aseguró que volverán a suscribirse contratos para exploración y producción, con el argumento de recuperar reservas, asegurar el suministro de gas y fortalecer la soberanía energética del país.",
+    eventDate: "2026-09-26", publishedDate: "2026-09-26", sourceType: "Declaración gubernamental", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/autor/radio_caracol/a/", status: "Política anunciada",
+    related: ["petróleo", "gas", "exploración", "seguridad energética"], whyItMatters: "El giro modifica la política energética anterior y tendrá efectos ambientales, fiscales y productivos de largo plazo.", extraSources: []
+  },
+  {
+    id: "comitiva-nueva-york-inversion-26", group: "government", groupLabel: "GOBIERNO", category: "INVERSIÓN Y DIPLOMACIA", importance: "IMPORTANTE",
+    title: "Comitiva colombiana reporta interés de inversionistas tras agenda en Nueva York",
+    summary: "El vicepresidente José Manuel Restrepo afirmó que reuniones con empresas y fondos despertaron interés en proyectos colombianos. La delegación anunció una futura Milagro Week para presentar iniciativas estructuradas en Estados Unidos.",
+    eventDate: "2026-09-26", publishedDate: "2026-09-26", sourceType: "Cobertura económica", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/26/comitiva-colombiana-en-nueva-york-logro-despertar-interes-y-atraer-inversion-extranjera/", status: "Gestión de inversión",
+    related: ["José Manuel Restrepo", "Nueva York", "inversión extranjera", "Milagro Week"], whyItMatters: "La llegada efectiva de capital es una pieza central de la estrategia oficial de crecimiento y reconstrucción.", extraSources: ["https://www.semana.com/politica/articulo/jose-manuel-restrepo-tuvo-reunion-con-tesla-durante-su-visita-a-nueva-york-una-compania-con-mucho-interes-en-colombia/202637/"]
+  },
+  {
+    id: "112-lideres-86-masacres-26", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DERECHOS HUMANOS", importance: "MUY IMPORTANTE",
+    title: "Balance registra 112 líderes asesinados y 86 masacres entre enero y agosto",
+    summary: "Un balance difundido por Caracol Radio señaló que durante los primeros ocho meses de 2026 fueron asesinados 112 líderes sociales y se documentaron 86 masacres, cifras que mantienen la alarma sobre protección territorial y violencia organizada.",
+    eventDate: "2026-09-26", publishedDate: "2026-09-26", sourceType: "Balance de derechos humanos", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/actualidad/justicia/", status: "Alerta nacional",
+    related: ["líderes sociales", "masacres", "derechos humanos", "protección"], whyItMatters: "Las cifras evidencian una crisis persistente de protección para comunidades y liderazgos locales.", extraSources: []
+  },
+  {
+    id: "alcaldes-zonas-rojas-sin-proteccion-26", group: "government", groupLabel: "GOBIERNO", category: "SEGURIDAD TERRITORIAL", importance: "MUY IMPORTANTE",
+    title: "MinInterior advierte que alcaldes de zonas rojas tienen esquemas incompletos",
+    summary: "Rodrigo Lara alertó que la mayoría de alcaldes en municipios críticos no cuenta con protección completa. Tras un consejo de seguridad en el sur de Bolívar, el Gobierno anunció la reconstrucción de tres estaciones de Policía destruidas por ataques.",
+    eventDate: "2026-09-26", publishedDate: "2026-09-26", sourceType: "Información gubernamental", sourceName: "Semana", sourceUrl: "https://www.semana.com/politica/articulo/rodrigo-lara-denuncia-que-la-mayoria-de-los-alcaldes-en-zonas-rojas-estan-sin-esquemas-de-seguridad-completos/202613/", status: "Medidas anunciadas",
+    related: ["Rodrigo Lara", "alcaldes", "sur de Bolívar", "Policía"], whyItMatters: "La falta de protección debilita la gobernabilidad local y expone a mandatarios en territorios disputados.", extraSources: []
+  },
+  {
+    id: "balance-fuerza-publica-72-capturas-26", group: "government", groupLabel: "GOBIERNO", category: "SEGURIDAD", importance: "IMPORTANTE",
+    title: "Gobierno reporta 72 capturas y seis neutralizaciones en 24 horas",
+    summary: "El Ejecutivo presentó un balance nacional de operaciones de la Fuerza Pública con 72 capturas y seis integrantes de grupos armados neutralizados. El reporte incluyó acciones contra narcotráfico y estructuras violentas en distintas regiones.",
+    eventDate: "2026-09-26", publishedDate: "2026-09-26", sourceType: "Balance oficial", sourceName: "Semana", sourceUrl: "https://www.semana.com/nacion/articulo/gobierno-de-abelardo-de-la-espriella-entrega-nuevo-balance-operativo-de-la-fuerza-publica-en-las-ultimas-24-horas-72-capturas-y-seis-neutralizaciones/202611/", status: "Balance presentado",
+    related: ["Fuerza Pública", "capturas", "narcotráfico", "seguridad"], whyItMatters: "Permite medir la intensidad operativa del nuevo enfoque de seguridad y exige seguimiento sobre resultados judiciales.", extraSources: []
+  },
+  {
+    id: "corte-constitucional-caso-uribe-26", group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA", importance: "IMPORTANTE",
+    title: "Corte Constitucional estudia conflicto de competencia relacionado con Álvaro Uribe",
+    summary: "La presidenta de la Corte Constitucional explicó el trámite que seguirá el tribunal después de recibir una solicitud para resolver un conflicto de competencia en un proceso relacionado con el expresidente Álvaro Uribe.",
+    eventDate: "2026-09-26", publishedDate: "2026-09-26", sourceType: "Información judicial", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/actualidad/justicia/", status: "Estudio judicial",
+    related: ["Corte Constitucional", "Álvaro Uribe", "competencia", "justicia"], whyItMatters: "La decisión definirá qué autoridad debe continuar un caso de alta sensibilidad política y jurídica.", extraSources: []
+  },
+  {
+    id: "alerta-super-nino-acueductos-26", group: "state", groupLabel: "ESTADO Y PAÍS", category: "AGUA Y CLIMA", importance: "MUY IMPORTANTE",
+    title: "Prestadores de agua alertan por un posible fenómeno de El Niño severo",
+    summary: "Empresas de servicios expresaron preocupación por la reducción de fuentes hídricas y el pronóstico para octubre, noviembre y diciembre. La advertencia elevó la necesidad de planes de ahorro, reservas y respuesta regional.",
+    eventDate: "2026-09-26", publishedDate: "2026-09-26", sourceType: "Alerta sectorial", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/autor/andres_felipe_lara_molano/a/", status: "Prevención climática",
+    related: ["Fenómeno de El Niño", "agua", "sequía", "acueductos"], whyItMatters: "Una sequía severa puede comprometer agua potable, energía, agricultura y precios de alimentos.", extraSources: []
+  },
+  {
+    id: "colombia-mexico-empate-26", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DEPORTES", importance: "RELEVANTE",
+    title: "Colombia empata 1-1 con México en el inicio de su nuevo ciclo",
+    summary: "La Selección abrió su preparación hacia la Copa América 2028 y las eliminatorias de 2030 con empate en Baltimore. Luis Javier Suárez marcó para Colombia y el cuerpo técnico reconoció dificultades en presión y funcionamiento durante el primer tiempo.",
+    eventDate: "2026-09-26", publishedDate: "2026-09-27", sourceType: "Cobertura deportiva", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/nestor-lorenzo-sincero-tras-amistoso-de-colombia-con-mexico-revelo-lo-que-no-le-gusto-del-equipo/", status: "Partido finalizado",
+    related: ["Selección Colombia", "México", "Néstor Lorenzo", "fútbol"], whyItMatters: "El partido inició la renovación deportiva de la Selección y permitió evaluar nuevas convocatorias y ajustes tácticos.", extraSources: []
+  }
+);
+
+// =========================================================
+// 27 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-27"] = {
+  status: "VERIFICADO ✓",
+  subtitle: "Crisis fiscal, anticorrupción, oposición, seguridad, niñez, clima, turismo, cooperación regional y deporte."
+};
+
+events.push(
+  {
+    id: "dialogo-fmi-crisis-fiscal-27", group: "government", groupLabel: "GOBIERNO", category: "ECONOMÍA", importance: "MUY IMPORTANTE",
+    title: "Presidente ordena abrir conversaciones con el FMI por la crisis fiscal",
+    summary: "En alocución, Abelardo de la Espriella ordenó al Ministerio de Hacienda iniciar conversaciones con el Fondo Monetario Internacional. Afirmó que las cuentas públicas están en rojo y que el país necesita una ruta de estabilización.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Alocución presidencial", sourceName: "Semana", sourceUrl: "https://www.semana.com/amp/politica/articulo/abelardo-de-la-espriella-ordena-a-minhacienda-conversar-con-el-fondo-monetario-internacional-por-crisis-fiscal-el-saldo-esta-en-rojo/202637/", status: "Diálogo ordenado",
+    related: ["FMI", "Ministerio de Hacienda", "déficit fiscal", "deuda"], whyItMatters: "Una negociación con el FMI puede condicionar gasto, deuda, inversión pública y confianza de mercados.", extraSources: ["https://caracol.com.co/2026/09/28/de-la-espriella-ordeno-a-minhacienda-iniciar-dialogo-con-el-fmi-para-dar-solucion-a-crisis-fiscal/"]
+  },
+  {
+    id: "beneficios-colaboradores-corrupcion-petro-27", group: "government", groupLabel: "GOBIERNO", category: "ANTICORRUPCIÓN Y JUSTICIA", importance: "MUY IMPORTANTE",
+    title: "Gobierno propone beneficios para investigados que delaten redes de corrupción",
+    summary: "El presidente pidió a las autoridades judiciales estudiar negociaciones con investigados por corrupción del gobierno Petro, a cambio de verdad, entrega de cómplices, devolución de recursos y reparación del daño.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Alocución presidencial", sourceName: "Semana", sourceUrl: "https://www.semana.com/politica/articulo/en-alocucion-abelardo-de-la-espriella-envio-mensaje-a-los-corruptos-arrepientanse-entreguen-a-sus-complices-y-resarzan-el-dano-con-verdad/202649/", status: "Propuesta pública",
+    related: ["corrupción", "principio de oportunidad", "Gobierno Petro", "Fiscalía"], whyItMatters: "La propuesta abre un debate sobre eficacia penal, independencia judicial y garantías para recuperar dinero público.", extraSources: []
+  },
+  {
+    id: "pacto-historico-pasivo-debate-27", group: "opposition", groupLabel: "OPOSICIÓN Y MOVIMIENTOS", category: "OPOSICIÓN", importance: "MUY IMPORTANTE",
+    title: "Dirigentes del Pacto Histórico cuestionan la pasividad de la oposición",
+    summary: "Dagoberto Quiroga pidió convocar el congreso nacional del partido y afirmó que el Pacto ha reaccionado con pasividad frente al Gobierno. El debate volvió a poner sobre la mesa el liderazgo de Gustavo Petro, el papel de Iván Cepeda y el espacio propio de Carolina Corcho.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Entrevista política", sourceName: "Semana", sourceUrl: "https://semana-semana-prod.web.arc-cdn.net/politica/articulo/el-pacto-historico-esta-pasivo-frente-abelardo-exsuperintendente-reconocio-que-no-le-gusta-que-petro-sea-alcalde-de-bogota-y-habla-de-cepeda-y-la-derrota-del-26/202605/", status: "Debate interno",
+    related: ["Pacto Histórico", "Iván Cepeda", "Carolina Corcho", "Gustavo Petro"], whyItMatters: "La definición del liderazgo condiciona la capacidad de control político y movilización de la principal fuerza opositora.", extraSources: []
+  },
+  {
+    id: "abatido-robinson-gutierrez-27", group: "government", groupLabel: "GOBIERNO", category: "SEGURIDAD", importance: "MUY IMPORTANTE",
+    title: "Fuerza Pública da de baja a alias Robinson Gutiérrez en Huila",
+    summary: "Ejército, Policía y Fuerza Aérea reportaron la muerte en Tello del señalado jefe político y financiero de la estructura Teófilo Forero Castro de la Segunda Marquetalia. Las autoridades lo vinculan con la financiación del asesinato de Miguel Uribe Turbay.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Reporte oficial", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/abatido-alias-robinson-gutierrez-en-operativo-contra-la-segunda-marquetalia-en-tello-huila/", status: "Operación confirmada",
+    related: ["Robinson Gutiérrez", "Segunda Marquetalia", "Huila", "Miguel Uribe"], whyItMatters: "El operativo golpea una estructura armada y abre nuevas líneas para esclarecer responsabilidades en un magnicidio.", extraSources: []
+  },
+  {
+    id: "captura-familia-alias-fito-27", group: "government", groupLabel: "GOBIERNO", category: "COOPERACIÓN INTERNACIONAL", importance: "IMPORTANTE",
+    title: "Capturan en Colombia a esposa e hija de alias Fito",
+    summary: "Autoridades colombianas capturaron a familiares del jefe de Los Choneros, organización criminal ecuatoriana. El presidente Daniel Noboa agradeció el operativo y destacó la coordinación bilateral contra redes transnacionales.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Reporte policial", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/capturaron-en-colombia-a-esposa-e-hija-de-fito-organizacion-criminal-los-choneros-de-ecuador/", status: "Capturas confirmadas",
+    related: ["alias Fito", "Los Choneros", "Ecuador", "cooperación policial"], whyItMatters: "El caso muestra el uso de Colombia como espacio de refugio y la necesidad de cooperación contra el crimen transnacional.", extraSources: ["https://caracol.com.co/2026/09/27/presidente-de-ecuador-daniel-noboa-agradece-la-captura-de-hija-y-esposa-de-alias-fito-en-colombia/"]
+  },
+  {
+    id: "ruta-fenomeno-nino-directiva-03-27", group: "government", groupLabel: "GOBIERNO", category: "CLIMA Y GESTIÓN DEL RIESGO", importance: "MUY IMPORTANTE",
+    title: "Gobierno activa hoja de ruta nacional frente al fenómeno de El Niño",
+    summary: "La Directiva Presidencial 03 puso en marcha la coordinación entre entidades nacionales y territoriales para anticipar sequías, incendios, afectaciones al agua, energía y agricultura.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Fuente gubernamental", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/gobierno-activa-hoja-de-ruta-para-enfrentar-el-fenomeno-del-nino/", status: "Plan activado",
+    related: ["Fenómeno de El Niño", "Directiva 03", "sequía", "incendios"], whyItMatters: "La coordinación temprana puede reducir daños humanos, productivos y ambientales durante la temporada seca.", extraSources: []
+  },
+  {
+    id: "proteccion-menores-reclutados-27", group: "government", groupLabel: "GOBIERNO", category: "NIÑEZ Y CONFLICTO", importance: "MUY IMPORTANTE",
+    title: "Presidente declara que los menores reclutados deben ser tratados como víctimas",
+    summary: "De la Espriella afirmó que un niño armado sigue siendo una víctima y pidió proteger a menores utilizados por organizaciones ilegales. El pronunciamiento acompañó la defensa de la ofensiva militar del Gobierno.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Alocución presidencial", sourceName: "Semana", sourceUrl: "https://www.semana.com/nacion/articulo/abelardo-de-la-espriella-hace-advertencia-a-grupos-ilegales-por-reclutamiento-de-menores-un-nino-armado-es-una-victima/202643/", status: "Lineamiento anunciado",
+    related: ["reclutamiento infantil", "niñez", "conflicto armado", "víctimas"], whyItMatters: "El enfoque aplicado en operaciones militares debe garantizar protección especial y reintegración para menores reclutados.", extraSources: []
+  },
+  {
+    id: "plan-choque-salud-metas-entregas-27", group: "government", groupLabel: "GOBIERNO", category: "SALUD", importance: "MUY IMPORTANTE",
+    title: "Presidente exige resultados medibles en el plan de choque de salud",
+    summary: "Durante la alocución, el mandatario pidió a la ministra reportar números concretos de medicamentos, procedimientos y atenciones entregadas. El Gobierno busca reducir el represamiento y convertir los anuncios en metas verificables.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Alocución presidencial", sourceName: "Semana", sourceUrl: "https://www.semana.com/politica/articulo/presidente-de-la-espriella-dio-contundente-orden-por-plan-de-choque-de-salud-se-dirigio-a-la-ministra-quiero-numero-de-entregas/202600/", status: "Seguimiento ordenado",
+    related: ["salud", "medicamentos", "atenciones", "Ministerio de Salud"], whyItMatters: "La medición pública permite evaluar si el plan mejora realmente el acceso de pacientes y reduce demoras.", extraSources: []
+  },
+  {
+    id: "turismo-inteligencia-artificial-27", group: "government", groupLabel: "GOBIERNO", category: "TURISMO Y TECNOLOGÍA", importance: "RELEVANTE",
+    title: "Colombia impulsa una agenda de inteligencia artificial aplicada al turismo",
+    summary: "En el Día Mundial del Turismo, MinComercio presentó una agenda para usar datos e inteligencia artificial con el fin de mejorar experiencias, fortalecer empresas, conectar regiones y hacer más sostenibles los destinos.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Información sectorial", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/colombia-apuesta-por-la-tecnologia-y-la-inteligencia-artificial-para-transformar-el-turismo/", status: "Agenda presentada",
+    related: ["turismo", "inteligencia artificial", "MinComercio", "regiones"], whyItMatters: "La digitalización puede elevar productividad, promoción y sostenibilidad de miles de negocios turísticos.", extraSources: []
+  },
+  {
+    id: "sismo-chaparral-41-27", group: "state", groupLabel: "ESTADO Y PAÍS", category: "GESTIÓN DEL RIESGO", importance: "IMPORTANTE",
+    title: "Nuevo sismo de magnitud 4,1 sacude Chaparral, Tolima",
+    summary: "El Servicio Geológico Colombiano reportó otro movimiento de magnitud 4,1 con epicentro en Chaparral. El evento se suma a la actividad sísmica reciente que mantiene en alerta a habitantes y autoridades.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Fuente oficial", sourceName: "Caracol Radio / SGC", sourceUrl: "https://caracol.com.co/2026/09/27/temblor-en-colombia-hoy-27-de-septiembre-de-magnitud-41-epicentro-chaparral-tolima-segun-sgc/", status: "Monitoreo activo",
+    related: ["Chaparral", "Tolima", "sismo", "SGC"], whyItMatters: "La repetición de eventos exige vigilancia técnica, información clara y preparación comunitaria.", extraSources: []
+  },
+  {
+    id: "nairo-despedida-seleccion-27", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DEPORTES", importance: "RELEVANTE",
+    title: "Nairo Quintana disputa su última carrera con la Selección Colombia",
+    summary: "El ciclista boyacense vistió por última vez la camiseta nacional en la prueba élite del Mundial de Ruta en Montreal. Tras la competencia describió la despedida como un hasta pronto.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Cobertura deportiva", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/nairo-quintana-tras-su-ultima-competencia-con-la-seleccion-colombia-es-un-hasta-pronto/", status: "Participación finalizada",
+    related: ["Nairo Quintana", "ciclismo", "Selección Colombia", "Mundial de Ruta"], whyItMatters: "Cierra una etapa emblemática del ciclismo colombiano en competencias de selecciones.", extraSources: []
+  }
+);
+
+// =========================================================
+// 28 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-28"] = {
+  status: "EN DESARROLLO",
+  subtitle: "Crisis fiscal, energía, oposición, seguridad, derechos humanos, Congreso, clima y mercados."
+};
+
+events.push(
+  {
+    id: "hacienda-prepara-dialogo-fmi-28", group: "government", groupLabel: "GOBIERNO", category: "ECONOMÍA Y FINANZAS PÚBLICAS", importance: "MUY IMPORTANTE",
+    title: "Hacienda prepara el diálogo con el FMI ordenado por el presidente",
+    summary: "El Gobierno inicia la hoja de ruta para conversar con el Fondo Monetario Internacional sobre la situación fiscal. El anuncio ocurre mientras el Ejecutivo defiende un ajuste del gasto y busca sostener el presupuesto de 2027.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Seguimiento económico", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/28/de-la-espriella-ordeno-a-minhacienda-iniciar-dialogo-con-el-fmi-para-dar-solucion-a-crisis-fiscal/", status: "Gestión inicial",
+    related: ["FMI", "Hacienda", "crisis fiscal", "presupuesto 2027"], whyItMatters: "Las condiciones de cualquier apoyo o acompañamiento podrían impactar impuestos, gasto social, deuda e inversión.", extraSources: []
+  },
+  {
+    id: "joaquin-gutierrez-asume-ecopetrol-28", group: "government", groupLabel: "GOBIERNO", category: "ENERGÍA", importance: "MUY IMPORTANTE",
+    title: "Joaquín Gutiérrez asume oficialmente la presidencia de Ecopetrol",
+    summary: "El nuevo presidente de la petrolera inicia funciones con el mandato de recuperar eficiencia operativa, fortalecer exploración y producción, mejorar el gobierno corporativo y asegurar el suministro nacional de gas.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Información empresarial", sourceName: "Semana", sourceUrl: "https://www.semana.com/economia/empresas/articulo/joaquin-gutierrez-asume-la-presidencia-de-ecopetrol-este-lunes-28-de-septiembre/202629/", status: "Posesión efectiva",
+    related: ["Ecopetrol", "Joaquín Gutiérrez", "gas", "petróleo"], whyItMatters: "Su gestión influirá en reservas energéticas, dividendos públicos, empleo e inversión nacional.", extraSources: []
+  },
+  {
+    id: "carolina-corcho-democracia-interna-28", group: "opposition", groupLabel: "OPOSICIÓN Y MOVIMIENTOS", category: "OPOSICIÓN", importance: "MUY IMPORTANTE",
+    title: "Carolina Corcho busca consolidar un liderazgo propio dentro del Pacto Histórico",
+    summary: "La senadora plantea una discusión sobre democracia interna, participación de las bases y sucesión del liderazgo de Gustavo Petro. Su presencia central en la convocatoria al congreso fundacional confirma que busca diferenciarse sin abandonar el partido.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Análisis político", sourceName: "La Silla Vacía", sourceUrl: "https://www.lasillavacia.com/en-vivo/desayune-informado-con-las-movidas-de-este-28-de-septiembre-de-2026/", status: "Reacomodo interno",
+    related: ["Carolina Corcho", "Pacto Histórico", "Gustavo Petro", "democracia interna"], whyItMatters: "El surgimiento de liderazgos alternativos definirá la estrategia opositora y la competencia regional de 2027.", extraSources: []
+  },
+  {
+    id: "denuncia-ejecucion-extrajudicial-santa-marta-28", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DERECHOS HUMANOS Y SEGURIDAD", importance: "MUY IMPORTANTE",
+    title: "Familia denuncia ejecución extrajudicial en operativo de Santa Marta",
+    summary: "Familiares de Ricardo Martínez, de 18 años, sostienen que era campesino y no integrante de las ACSN, como fue presentado tras un operativo oficial. La denuncia abre cuestionamientos sobre identificación de víctimas, uso de la fuerza y rendición de cuentas.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Investigación periodística", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/", status: "Denuncia en verificación",
+    related: ["Ricardo Martínez", "Santa Marta", "ejecución extrajudicial", "ACSN"], whyItMatters: "El Estado debe esclarecer si hubo uso ilegítimo de la fuerza y garantizar investigación independiente y reparación.", extraSources: []
+  },
+  {
+    id: "semana-transparencia-congreso-28", group: "state", groupLabel: "ESTADO Y PAÍS", category: "CONGRESO Y TRANSPARENCIA", importance: "IMPORTANTE",
+    title: "Comienza la Semana de la Transparencia en el Congreso",
+    summary: "La Cámara de Representantes abrió una programación del 28 de septiembre al 2 de octubre con espacios de participación ciudadana, acceso a información y discusión sobre integridad institucional.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Fuente oficial", sourceName: "Cámara de Representantes", sourceUrl: "https://www.camara.gov.co/", status: "Programación en curso",
+    related: ["Congreso", "transparencia", "participación ciudadana", "Cámara"], whyItMatters: "La apertura institucional facilita control ciudadano sobre una rama con baja confianza pública.", extraSources: []
+  },
+  {
+    id: "dolar-trm-3306-28", group: "state", groupLabel: "ESTADO Y PAÍS", category: "MERCADOS", importance: "IMPORTANTE",
+    title: "Dólar inicia la semana con TRM de $3.306,86",
+    summary: "La TRM se ubicó en $3.306,86, con una reducción diaria de $22,75. El petróleo WTI retrocedió cerca de 2,8 %, un movimiento relevante para las cuentas externas y fiscales del país.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Datos de mercado", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/?sma=newsEditorialCaracol_generico20260928", status: "Mercado en movimiento",
+    related: ["dólar", "TRM", "petróleo", "mercados"], whyItMatters: "La tasa de cambio y el precio del crudo afectan inflación, importaciones, exportaciones y finanzas de Ecopetrol.", extraSources: []
+  },
+  {
+    id: "segundo-puente-medellin-28", group: "state", groupLabel: "ESTADO Y PAÍS", category: "INFRAESTRUCTURA Y REGIONES", importance: "RELEVANTE",
+    title: "Medellín habilita un segundo puente para mejorar la movilidad",
+    summary: "La Alcaldía anunció la apertura de una nueva estructura vial este lunes, como parte de las medidas para recuperar conectividad y aliviar desplazamientos en la ciudad.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Fuente institucional", sourceName: "Alcaldía de Medellín", sourceUrl: "https://x.com/FicoGutierrez", status: "Apertura anunciada",
+    related: ["Medellín", "puente", "movilidad", "infraestructura"], whyItMatters: "La habilitación mejora tiempos de viaje y restablece conexiones urbanas para ciudadanos y comercio.", extraSources: []
+  },
+  {
+    id: "riesgo-armado-santander-sur-bolivar-27", group: "state", groupLabel: "ESTADO Y PAÍS", category: "SEGURIDAD REGIONAL", importance: "IMPORTANTE",
+    title: "Santander pide ser incluido en la estrategia de seguridad para el sur de Bolívar",
+    summary: "Autoridades santandereanas solicitaron que el departamento sea integrado a la respuesta nacional ante el riesgo de expansión de grupos armados desde el sur de Bolívar y los corredores vecinos.",
+    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Seguimiento regional", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/santander-pide-entrar-en-estrategia-del-gobierno-por-riesgo-de-grupos-armados-en-el-sur-de-bolivar/", status: "Solicitud regional",
+    related: ["Santander", "sur de Bolívar", "grupos armados", "seguridad"], whyItMatters: "La coordinación entre departamentos es clave para evitar desplazamiento de estructuras criminales por presión militar.", extraSources: []
   }
 );

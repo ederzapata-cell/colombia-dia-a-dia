@@ -3291,7 +3291,7 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-28"] = {
-  status: "EN DESARROLLO",
+  status: "VERIFICADO ✓",
   subtitle: "Crisis fiscal, energía, oposición, seguridad, derechos humanos, Congreso, clima y mercados."
 };
 
@@ -3351,5 +3351,146 @@ events.push(
     summary: "Autoridades santandereanas solicitaron que el departamento sea integrado a la respuesta nacional ante el riesgo de expansión de grupos armados desde el sur de Bolívar y los corredores vecinos.",
     eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Seguimiento regional", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/santander-pide-entrar-en-estrategia-del-gobierno-por-riesgo-de-grupos-armados-en-el-sur-de-bolivar/", status: "Solicitud regional",
     related: ["Santander", "sur de Bolívar", "grupos armados", "seguridad"], whyItMatters: "La coordinación entre departamentos es clave para evitar desplazamiento de estructuras criminales por presión militar.", extraSources: []
+  }
+);
+
+events.push(
+  {
+    id: "expulsion-diplomaticos-rusos-28", group: "government", groupLabel: "GOBIERNO", category: "RELACIONES EXTERIORES Y SEGURIDAD", importance: "MUY IMPORTANTE",
+    title: "Cancillería expulsa a dos diplomáticos rusos por presunto espionaje",
+    summary: "El Gobierno ordenó la salida de dos funcionarios diplomáticos rusos señalados de realizar actividades incompatibles con su estatus. La decisión abre un nuevo foco de tensión bilateral y de contrainteligencia.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Reporte de seguridad", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/28/cancilleria-ordeno-expulsion-de-colombia-de-dos-diplomaticos-rusos-por-presunto-espionaje/", status: "Expulsión ordenada",
+    related: ["Rusia", "Cancillería", "espionaje", "diplomacia"], whyItMatters: "El caso afecta la relación bilateral y plantea interrogantes sobre operaciones de inteligencia extranjera en Colombia.", extraSources: []
+  },
+  {
+    id: "visa-martha-peralta-euclides-torres-28", group: "opposition", groupLabel: "OPOSICIÓN Y MOVIMIENTOS", category: "POLÍTICA Y RELACIONES EXTERIORES", importance: "MUY IMPORTANTE",
+    title: "Estados Unidos revoca visas de Martha Peralta y Euclides Torres",
+    summary: "La senadora opositora Martha Peralta anunció acciones institucionales y denunció persecución tras conocer la cancelación de su visa. La medida también cobijó al empresario Euclides Torres, financiador de la campaña Petro 2022.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Cobertura política", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/28/martha-peralta-anuncio-acciones-tras-cancelacion-de-su-visa-de-eeuu-denuncio-presunta-persecucion/", status: "Visas revocadas",
+    related: ["Martha Peralta", "Euclides Torres", "Estados Unidos", "Pacto Histórico"], whyItMatters: "La decisión internacional incide en el debate sobre corrupción, oposición y relaciones entre Bogotá y Washington.", extraSources: ["https://caracol.com.co/2026/09/28/de-la-espriella-celebro-la-decision-de-eeuu-de-retirar-la-visa-a-euclides-torres-y-martha-peralta/"]
+  },
+  {
+    id: "reforma-tributaria-bogota-aprobada-28", group: "state", groupLabel: "ESTADO Y PAÍS", category: "BOGOTÁ Y TRIBUTOS", importance: "MUY IMPORTANTE",
+    title: "Concejo de Bogotá aprueba reforma tributaria y la envía a sanción",
+    summary: "El proyecto de Ciudad Inteligente superó el segundo debate después de seis sesiones. Incluye alivios para más de dos millones de contribuyentes, incentivos a la inversión y recursos para alumbrado inteligente; el artículo sobre presupuestos participativos fue eliminado.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Cobertura distrital", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/28/fue-aprobada-la-reforma-tributaria-en-el-concejo-de-bogota-y-pasa-a-sancion-del-alcalde-galan/", status: "Pendiente de sanción",
+    related: ["Bogotá", "Concejo", "Carlos Fernando Galán", "impuestos"], whyItMatters: "La reforma modifica obligaciones tributarias, crea alivios y condiciona inversiones y empleo en la capital.", extraSources: []
+  },
+  {
+    id: "tutelas-presidente-consejo-estado-28", group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA", importance: "IMPORTANTE",
+    title: "Decreto devuelve al Consejo de Estado las tutelas contra el presidente",
+    summary: "El Ministerio de Justicia firmó un decreto que restablece al Consejo de Estado como autoridad para conocer las acciones de tutela dirigidas contra el presidente de la República.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Información jurídica", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/28/minjusticia-firmo-decreto-que-ordena-que-tutelas-contra-el-presidente-vuelvan-a-consejo-de-estado/", status: "Decreto firmado",
+    related: ["tutela", "Consejo de Estado", "presidente", "Ministerio de Justicia"], whyItMatters: "La norma redefine la competencia judicial para controlar por tutela actuaciones de la máxima autoridad ejecutiva.", extraSources: []
+  },
+  {
+    id: "condena-cabecillas-eln-28", group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA Y CONFLICTO", importance: "MUY IMPORTANTE",
+    title: "Condenan a 20 años de prisión a cuatro cabecillas del ELN",
+    summary: "La justicia condenó a Gabino, Antonio García, Pablo Beltrán y Pablito a 20 años de cárcel. La decisión recae sobre figuras centrales de la organización armada y se produce en el nuevo escenario de cierre de negociaciones.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Reporte judicial", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/actualidad/justicia/", status: "Condena dictada",
+    related: ["ELN", "Antonio García", "Pablo Beltrán", "justicia"], whyItMatters: "La sentencia tiene efectos sobre la conducción del ELN y la estrategia estatal frente al conflicto armado.", extraSources: []
+  },
+  {
+    id: "sanitas-cambia-operador-medicamentos-28", group: "state", groupLabel: "ESTADO Y PAÍS", category: "SALUD", importance: "IMPORTANTE",
+    title: "Sanitas anuncia nuevo operador de medicamentos en Bogotá desde octubre",
+    summary: "La EPS informó el cambio de operador para la dispensación de medicamentos en la capital a partir del 1 de octubre. Los afiliados deben verificar puntos, autorizaciones y continuidad de tratamientos.",
+    eventDate: "2026-09-28", publishedDate: "2026-09-28", sourceType: "Información de servicio", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/28/eps-sanitas-cambia-operador-de-medicamentos-en-bogota-asi-sera-desde-el-1-de-octubre/", status: "Transición anunciada",
+    related: ["Sanitas", "medicamentos", "Bogotá", "EPS"], whyItMatters: "Un cambio de operador puede afectar la entrega oportuna de tratamientos para miles de pacientes.", extraSources: []
+  }
+);
+
+// =========================================================
+// 29 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-29"] = {
+  status: "EN DESARROLLO",
+  subtitle: "Crisis fiscal, oposición, Congreso, justicia, seguridad, diplomacia, salud, regiones, turismo y deporte."
+};
+
+events.push(
+  {
+    id: "mision-tecnica-fmi-colombia-29", group: "government", groupLabel: "GOBIERNO", category: "ECONOMÍA Y FINANZAS PÚBLICAS", importance: "MUY IMPORTANTE",
+    title: "Colombia solicita al FMI una misión técnica para evaluar su plan fiscal",
+    summary: "Hacienda confirmó la solicitud de una misión técnica del Fondo Monetario Internacional para revisar proyecciones macroeconómicas y el programa de ajuste. Las conversaciones incluyen opciones de financiación, aunque todavía no existe un acuerdo formal.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Fuente oficial y agencia internacional", sourceName: "Presidencia / Reuters", sourceUrl: "https://www.presidencia.gov.co/prensa/noticias", status: "Misión solicitada",
+    related: ["FMI", "Ministerio de Hacienda", "déficit", "financiación"], whyItMatters: "El acompañamiento del FMI puede influir en recortes, deuda, inversión social y confianza de los mercados.", extraSources: ["https://www.reuters.com/world/americas/colombia-has-held-discussions-with-imf-including-securing-financing-sources-2026-09-28/", "https://caracol.com.co/2026/09/29/gobierno-califica-de-critica-la-situacion-fiscal-y-activa-plan-de-ajuste-con-apoyo-del-fmi/"]
+  },
+  {
+    id: "santa-marta-fragil-calma-pachenca-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "SEGURIDAD Y REGIONES", importance: "MUY IMPORTANTE",
+    title: "Santa Marta permanece en una calma frágil tras la ofensiva contra Los Pachenca",
+    summary: "Aunque terminó el paro armado, líderes comunitarios advierten que las causas del control territorial siguen intactas. El Gobierno mantiene la persecución contra alias Pinocho y prepara un proyecto de sometimiento, mientras la población teme una nueva escalada.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Reportaje regional", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/2026-09-29/la-ofensiva-del-gobierno-contra-los-pachenca-deja-a-santa-marta-en-una-fragil-calma.html", status: "Calma bajo vigilancia",
+    related: ["Santa Marta", "Los Pachenca", "alias Pinocho", "sometimiento"], whyItMatters: "La seguridad real depende de desmontar el control económico y social del grupo, no solo de golpear su cúpula.", extraSources: []
+  },
+  {
+    id: "extorsion-carceles-bloqueo-senales-29", group: "government", groupLabel: "GOBIERNO", category: "SEGURIDAD PENITENCIARIA", importance: "MUY IMPORTANTE",
+    title: "Gobierno activa medidas para bloquear extorsiones desde las cárceles",
+    summary: "Las autoridades anunciaron requisas reforzadas, bloqueo de IMEI e IMSI, rastreo de señales, control de energía e inhibidores focalizados. MinTIC, MinJusticia, operadores móviles, la CRC y Meta participarán en la implementación.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Información gubernamental", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/29/gobierno-vigila-acciones-para-neutralizar-extorsiones-en-carceles-no-entre-ni-la-senal-de-la-cruz/", status: "Plan en ejecución",
+    related: ["extorsión", "cárceles", "MinTIC", "operadores móviles"], whyItMatters: "Las llamadas extorsivas desde penales afectan a miles de familias y evidencian fallas persistentes de control penitenciario.", extraSources: []
+  },
+  {
+    id: "ivan-name-apela-muerte-politica-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA Y CONGRESO", importance: "MUY IMPORTANTE",
+    title: "Iván Name apelará el fallo que declaró su muerte política",
+    summary: "El exsenador anunció que recurrirá la decisión de primera instancia del Consejo de Estado sobre su investidura. El caso está relacionado con los señalamientos de una presunta entrega de $3.000 millones dentro del escándalo de la UNGRD.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Reporte judicial", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/29/ivan-name-apelara-fallo-del-consejo-de-estado-que-declaro-su-muerte-politica/", status: "Apelación anunciada",
+    related: ["Iván Name", "Consejo de Estado", "UNGRD", "pérdida de investidura"], whyItMatters: "El proceso puede fijar responsabilidades políticas en uno de los mayores escándalos de contratación reciente.", extraSources: []
+  },
+  {
+    id: "unp-disculpas-centro-democratico-29", group: "government", groupLabel: "GOBIERNO", category: "CONGRESO Y PROTECCIÓN", importance: "IMPORTANTE",
+    title: "Director de la UNP se disculpa ante el Centro Democrático en el Congreso",
+    summary: "Didier Blanco ofreció disculpas por comentarios ofensivos hechos durante la campaña. En la presentación presupuestal también afirmó que excongresistas y exfuncionarios del gobierno Petro no han devuelto vehículos de protección.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Cobertura legislativa", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/29/director-de-la-unp-pidio-disculpas-al-centro-democratico-por-comentarios-ofensivos-en-campana/", status: "Disculpas presentadas",
+    related: ["UNP", "Centro Democrático", "Didier Blanco", "esquemas de protección"], whyItMatters: "La UNP debe mantener neutralidad y garantizar que sus recursos de protección estén disponibles para personas en riesgo.", extraSources: []
+  },
+  {
+    id: "cotecmar-guardacostas-costa-rica-29", group: "government", groupLabel: "GOBIERNO", category: "COOPERACIÓN Y DEFENSA", importance: "IMPORTANTE",
+    title: "Colombia ofrece capacidades de Cotecmar para fortalecer guardacostas de Costa Rica",
+    summary: "El Gobierno puso a disposición la experiencia colombiana en construcción y mantenimiento naval para apoyar las capacidades marítimas costarricenses, dentro de una agenda bilateral de seguridad y lucha contra el narcotráfico.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Cooperación bilateral", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/tag/colombia/a/p1/", status: "Oferta de cooperación",
+    related: ["Cotecmar", "Costa Rica", "guardacostas", "narcotráfico"], whyItMatters: "La cooperación fortalece la industria naval colombiana y el control regional de rutas marítimas ilícitas.", extraSources: []
+  },
+  {
+    id: "barranquilla-endeudamiento-billon-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "REGIONES Y FINANZAS", importance: "IMPORTANTE",
+    title: "Concejo de Barranquilla aprueba cupo de endeudamiento por $1 billón",
+    summary: "La autorización financiera pasó a sanción del alcalde Alejandro Char. La administración deberá precisar proyectos, condiciones de crédito y capacidad de pago para ejecutar las inversiones previstas.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Cobertura regional", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/", status: "Pendiente de sanción",
+    related: ["Barranquilla", "Alejandro Char", "endeudamiento", "Concejo"], whyItMatters: "El nuevo endeudamiento puede acelerar obras, pero compromete ingresos futuros y exige control fiscal ciudadano.", extraSources: []
+  },
+  {
+    id: "bucaramanga-sin-racionamiento-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "AGUA Y CLIMA", importance: "IMPORTANTE",
+    title: "Acueducto de Bucaramanga descarta racionamiento inmediato",
+    summary: "La empresa informó que el nivel del embalse permitiría cubrir cerca de cuatro meses de sequía. Aun así, mantuvo el llamado al ahorro ante la evolución del fenómeno de El Niño.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Información regional", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/", status: "Abastecimiento garantizado",
+    related: ["Bucaramanga", "agua", "embalse", "Fenómeno de El Niño"], whyItMatters: "La reserva reduce el riesgo inmediato para hogares y empresas, pero no elimina la amenaza de una sequía prolongada.", extraSources: []
+  },
+  {
+    id: "norcasia-crisis-agua-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "SERVICIOS PÚBLICOS Y REGIONES", importance: "IMPORTANTE",
+    title: "Más de 2.000 habitantes de Norcasia sufren problemas de agua potable",
+    summary: "Comunidades de Norcasia, Caldas, reportaron fallas que afectan continuidad y calidad del servicio. La emergencia coincide con una temporada de presión creciente sobre fuentes hídricas regionales.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Reporte regional", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/", status: "Afectación en curso",
+    related: ["Norcasia", "Caldas", "agua potable", "servicios públicos"], whyItMatters: "El acceso continuo a agua segura es esencial para salud, educación y actividad económica local.", extraSources: []
+  },
+  {
+    id: "marchas-bogota-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "MOVILIDAD Y PROTESTA", importance: "RELEVANTE",
+    title: "Bogotá enfrenta nuevas movilizaciones y afectaciones de movilidad",
+    summary: "La ciudad tiene marchas programadas en varios sectores, sumadas a choques viales reportados durante la jornada. Autoridades recomendaron consultar rutas y anticipar desplazamientos.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Información de servicio", sourceName: "El Espectador", sourceUrl: "https://www.elespectador.com/bogota/marchas-en-bogota-esta-semana-horarios-puntos-de-encuentro-y-posibles-afectaciones/", status: "Movilizaciones en curso",
+    related: ["Bogotá", "marchas", "movilidad", "protesta"], whyItMatters: "Las concentraciones y cierres inciden en transporte público, tiempos de viaje y actividad comercial.", extraSources: []
+  },
+  {
+    id: "turismo-naturaleza-meta-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "TURISMO Y REGIONES", importance: "RELEVANTE",
+    title: "Meta abre el principal encuentro nacional de turismo de naturaleza",
+    summary: "Villavicencio recibe hasta el 1 de octubre a empresarios, destinos, 80 compradores internacionales y 80 exportadores colombianos para impulsar experiencias sostenibles y negocios de alto valor.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Agenda sectorial", sourceName: "El Espectador", sourceUrl: "https://www.elespectador.com/turismo/meta-sera-anfitrion-del-principal-encuentro-de-turismo-de-naturaleza-en-colombia/", status: "Encuentro inaugurado",
+    related: ["Meta", "Villavicencio", "turismo de naturaleza", "exportadores"], whyItMatters: "El evento puede generar negocios regionales y posicionar destinos colombianos en mercados internacionales.", extraSources: []
+  },
+  {
+    id: "cuadrado-millonarios-medellin-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DEPORTES", importance: "RELEVANTE",
+    title: "Juan Guillermo Cuadrado entra en convocatoria de Millonarios ante Medellín",
+    summary: "El experimentado internacional colombiano fue incluido para el partido de Liga en el Atanasio Girardot, generando expectativa sobre su posible debut o regreso competitivo en el fútbol nacional.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Cobertura deportiva", sourceName: "El Espectador", sourceUrl: "https://www.elespectador.com/deportes/futbol-colombiano/millonarios/juan-guillermo-cuadrado-convocado-con-millonarios-para-la-liga-betplay/", status: "Partido programado",
+    related: ["Juan Guillermo Cuadrado", "Millonarios", "Medellín", "Liga BetPlay"], whyItMatters: "La presencia de una figura de selección aumenta el interés deportivo y comercial de la liga colombiana.", extraSources: []
   }
 );

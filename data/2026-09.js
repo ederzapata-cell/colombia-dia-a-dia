@@ -1337,7 +1337,7 @@ events.push(
 
 dayMeta["2026-09-11"] = {
   status: "VERIFICADO ✓",
-  subtitle: "Cooperación militar, paz, energía, opinión pública, seguridad, ambiente, narcotráfico y deporte."
+  subtitle: "Cooperación militar, paz, energía, opinión pública, seguridad, ambiente y narcotráfico."
 };
 
 events.push(
@@ -1551,26 +1551,6 @@ events.push(
     whyItMatters: "El proyecto busca aumentar la confiabilidad del sistema eléctrico de Bogotá y municipios de la Sabana Norte.",
     extraSources: []
   },
-
-  {
-    id: "james-atletico-nacional-11",
-    group: "state",
-    groupLabel: "ESTADO Y PAÍS",
-    category: "DEPORTES",
-    importance: "RELEVANTE",
-    title: "James Rodríguez regresa al fútbol colombiano y ficha por Atlético Nacional",
-    summary: "James Rodríguez, capitán y referente de la selección Colombia, fue anunciado como nuevo jugador de Atlético Nacional. A sus 35 años regresa al fútbol colombiano después de una extensa trayectoria internacional.",
-    eventDate: "2026-09-11",
-    publishedDate: "2026-09-11",
-    sourceType: "Noticia deportiva",
-    sourceName: "El País",
-    sourceUrl: "https://elpais.com/america-colombia/2026-09-11/james-rodriguez-ficha-por-el-atletico-nacional-de-medellin.html",
-    status: "Fichaje anunciado",
-    related: ["James Rodríguez", "Atlético Nacional", "Medellín", "fútbol colombiano"],
-    whyItMatters: "El regreso de una de las figuras más importantes de la selección genera impacto deportivo, comercial y mediático en la liga colombiana.",
-    extraSources: []
-  }
-
 
 );
 
@@ -2274,28 +2254,10 @@ events.push(
 
 dayMeta["2026-09-20"] = {
   status: "VERIFICADO ✓",
-  subtitle: "Selección femenina, actividad sísmica, movilizaciones y política tecnológica."
+  subtitle: "Actividad sísmica, movilizaciones y política tecnológica."
 };
 
 events.push(
-  {
-    id: "colombia-semifinal-mundial-femenino-sub20-20",
-    group: "state",
-    groupLabel: "ESTADO Y PAÍS",
-    category: "DEPORTES",
-    importance: "IMPORTANTE",
-    title: "Colombia avanza a semifinales del Mundial Femenino Sub-20",
-    summary: "La selección colombiana venció 1-0 a Nigeria con un gol en el tiempo añadido y regresó a las semifinales del Mundial Femenino Sub-20 después de 16 años.",
-    eventDate: "2026-09-20",
-    publishedDate: "2026-09-20",
-    sourceType: "Fuente periodística",
-    sourceName: "Noticias Caracol",
-    sourceUrl: "https://www.noticiascaracol.com/golcaracol/seleccion-colombia/colombia-vs-nigeria-en-vivo-hoy-minuto-a-minuto-del-mundial-femenino-sub-20-2026-so35",
-    status: "Clasificación deportiva",
-    related: ["Selección Colombia", "fútbol femenino", "Mundial Sub-20", "Nigeria"],
-    whyItMatters: "El resultado consolida el crecimiento competitivo del fútbol femenino colombiano y amplía su visibilidad nacional.",
-    extraSources: []
-  },
   {
     id: "sismo-tolima-magnitud-39-20",
     group: "state",
@@ -2828,24 +2790,6 @@ events.push(
 
 events.push(
   {
-    id: "colombia-corea-norte-semifinal-sub20-23",
-    group: "state",
-    groupLabel: "ESTADO Y PAÍS",
-    category: "DEPORTES",
-    importance: "IMPORTANTE",
-    title: "Colombia disputa ante Corea del Norte un lugar en la final del Mundial Femenino Sub-20",
-    summary: "La selección dirigida por Carlos Paniagua juega este miércoles la semifinal del Mundial Femenino Sub-20 en Polonia. Colombia es la única representante sudamericana entre las cuatro mejores del torneo.",
-    eventDate: "2026-09-23",
-    publishedDate: "2026-09-23",
-    sourceType: "Fuente oficial deportiva",
-    sourceName: "Federación Colombiana de Fútbol",
-    sourceUrl: "https://fcf.com.co/2026/09/23/hoy-juega-colombia-347/",
-    status: "Partido programado",
-    related: ["Selección Colombia", "fútbol femenino", "Mundial Sub-20", "Corea del Norte"],
-    whyItMatters: "El equipo busca una clasificación histórica a la final y mantiene al fútbol femenino colombiano en el centro de la atención internacional.",
-    extraSources: ["https://www.fifa.com/es/articles/semifinales-mundial-femenino-sub-20-polonia-2026"]
-  },
-  {
     id: "cortes-agua-bogota-23",
     group: "state",
     groupLabel: "ESTADO Y PAÍS",
@@ -3135,7 +3079,7 @@ events.push(
 
 dayMeta["2026-09-26"] = {
   status: "VERIFICADO ✓",
-  subtitle: "Seguridad territorial, energía, inversión, derechos humanos, justicia, gestión del riesgo y deporte."
+  subtitle: "Seguridad territorial, energía, inversión, derechos humanos, justicia y gestión del riesgo."
 };
 
 events.push(
@@ -3188,13 +3132,6 @@ events.push(
     eventDate: "2026-09-26", publishedDate: "2026-09-26", sourceType: "Alerta sectorial", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/autor/andres_felipe_lara_molano/a/", status: "Prevención climática",
     related: ["Fenómeno de El Niño", "agua", "sequía", "acueductos"], whyItMatters: "Una sequía severa puede comprometer agua potable, energía, agricultura y precios de alimentos.", extraSources: []
   },
-  {
-    id: "colombia-mexico-empate-26", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DEPORTES", importance: "RELEVANTE",
-    title: "Colombia empata 1-1 con México en el inicio de su nuevo ciclo",
-    summary: "La Selección abrió su preparación hacia la Copa América 2028 y las eliminatorias de 2030 con empate en Baltimore. Luis Javier Suárez marcó para Colombia y el cuerpo técnico reconoció dificultades en presión y funcionamiento durante el primer tiempo.",
-    eventDate: "2026-09-26", publishedDate: "2026-09-27", sourceType: "Cobertura deportiva", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/nestor-lorenzo-sincero-tras-amistoso-de-colombia-con-mexico-revelo-lo-que-no-le-gusto-del-equipo/", status: "Partido finalizado",
-    related: ["Selección Colombia", "México", "Néstor Lorenzo", "fútbol"], whyItMatters: "El partido inició la renovación deportiva de la Selección y permitió evaluar nuevas convocatorias y ajustes tácticos.", extraSources: []
-  }
 );
 
 // =========================================================
@@ -3203,7 +3140,7 @@ events.push(
 
 dayMeta["2026-09-27"] = {
   status: "VERIFICADO ✓",
-  subtitle: "Crisis fiscal, anticorrupción, oposición, seguridad, niñez, clima, turismo, cooperación regional y deporte."
+  subtitle: "Crisis fiscal, anticorrupción, oposición, seguridad, niñez, clima, turismo y cooperación regional."
 };
 
 events.push(
@@ -3277,13 +3214,6 @@ events.push(
     eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Fuente oficial", sourceName: "Caracol Radio / SGC", sourceUrl: "https://caracol.com.co/2026/09/27/temblor-en-colombia-hoy-27-de-septiembre-de-magnitud-41-epicentro-chaparral-tolima-segun-sgc/", status: "Monitoreo activo",
     related: ["Chaparral", "Tolima", "sismo", "SGC"], whyItMatters: "La repetición de eventos exige vigilancia técnica, información clara y preparación comunitaria.", extraSources: []
   },
-  {
-    id: "nairo-despedida-seleccion-27", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DEPORTES", importance: "RELEVANTE",
-    title: "Nairo Quintana disputa su última carrera con la Selección Colombia",
-    summary: "El ciclista boyacense vistió por última vez la camiseta nacional en la prueba élite del Mundial de Ruta en Montreal. Tras la competencia describió la despedida como un hasta pronto.",
-    eventDate: "2026-09-27", publishedDate: "2026-09-27", sourceType: "Cobertura deportiva", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/27/nairo-quintana-tras-su-ultima-competencia-con-la-seleccion-colombia-es-un-hasta-pronto/", status: "Participación finalizada",
-    related: ["Nairo Quintana", "ciclismo", "Selección Colombia", "Mundial de Ruta"], whyItMatters: "Cierra una etapa emblemática del ciclismo colombiano en competencias de selecciones.", extraSources: []
-  }
 );
 
 // =========================================================
@@ -3404,8 +3334,8 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-29"] = {
-  status: "EN DESARROLLO",
-  subtitle: "Crisis fiscal, oposición, Congreso, justicia, seguridad, diplomacia, salud, regiones, turismo y deporte."
+  status: "VERIFICADO ✓",
+  subtitle: "Crisis fiscal, oposición, Congreso, justicia, seguridad, diplomacia, salud, regiones y turismo."
 };
 
 events.push(
@@ -3485,12 +3415,171 @@ events.push(
     summary: "Villavicencio recibe hasta el 1 de octubre a empresarios, destinos, 80 compradores internacionales y 80 exportadores colombianos para impulsar experiencias sostenibles y negocios de alto valor.",
     eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Agenda sectorial", sourceName: "El Espectador", sourceUrl: "https://www.elespectador.com/turismo/meta-sera-anfitrion-del-principal-encuentro-de-turismo-de-naturaleza-en-colombia/", status: "Encuentro inaugurado",
     related: ["Meta", "Villavicencio", "turismo de naturaleza", "exportadores"], whyItMatters: "El evento puede generar negocios regionales y posicionar destinos colombianos en mercados internacionales.", extraSources: []
+  }
+);
+
+// =========================================================
+// CIERRE COMPLEMENTARIO · 29 SEP 2026
+// =========================================================
+
+events.push(
+  {
+    id: "cristina-lombana-transparencia-29", group: "government", groupLabel: "GOBIERNO", category: "GOBIERNO Y TRANSPARENCIA", importance: "IMPORTANTE",
+    title: "Cristina Lombana es designada secretaria de Transparencia de la Presidencia",
+    summary: "El presidente Abelardo De La Espriella designó a la magistrada Cristina Lombana para dirigir la Secretaría de Transparencia. Su llegada está prevista para el 8 de octubre, una vez termine su periodo en la Corte Suprema de Justicia.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Cobertura política", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/29/de-la-espriella-designo-a-la-magistrada-cristina-lombana-como-nueva-secretaria-de-transparencia/", status: "Designación anunciada",
+    related: ["Cristina Lombana", "Secretaría de Transparencia", "Presidencia", "Corte Suprema"], whyItMatters: "La oficina coordina la política anticorrupción del Ejecutivo y el nombramiento abre discusión sobre independencia, experiencia y prioridades de control.", extraSources: []
   },
   {
-    id: "cuadrado-millonarios-medellin-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DEPORTES", importance: "RELEVANTE",
-    title: "Juan Guillermo Cuadrado entra en convocatoria de Millonarios ante Medellín",
-    summary: "El experimentado internacional colombiano fue incluido para el partido de Liga en el Atanasio Girardot, generando expectativa sobre su posible debut o regreso competitivo en el fútbol nacional.",
-    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Cobertura deportiva", sourceName: "El Espectador", sourceUrl: "https://www.elespectador.com/deportes/futbol-colombiano/millonarios/juan-guillermo-cuadrado-convocado-con-millonarios-para-la-liga-betplay/", status: "Partido programado",
-    related: ["Juan Guillermo Cuadrado", "Millonarios", "Medellín", "Liga BetPlay"], whyItMatters: "La presencia de una figura de selección aumenta el interés deportivo y comercial de la liga colombiana.", extraSources: []
+    id: "anla-piloto-aspersion-29", group: "government", groupLabel: "GOBIERNO", category: "POLÍTICA ANTIDROGAS Y AMBIENTE", importance: "MUY IMPORTANTE",
+    title: "Policía pide a la ANLA aprobar piloto de aspersión aérea sobre máximo 1.000 hectáreas",
+    summary: "Antinarcóticos solicitó formalmente la aprobación del protocolo para un piloto con glufosinato de amonio. El ensayo sería limitado a siete días y deberá medir eficacia, deriva del producto y riesgos para la salud y el ambiente antes de cualquier ampliación.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Reporte de orden público", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/29/policia-antinarcoticos-pidio-a-la-anla-aprobar-piloto-de-aspersion-aerea-maximo-1000-hectareas/", status: "Autorización solicitada",
+    related: ["ANLA", "Policía Antinarcóticos", "glufosinato", "cultivos ilícitos"], whyItMatters: "La decisión puede modificar la política antidrogas y tiene efectos directos sobre comunidades rurales, salud pública y ecosistemas.", extraSources: []
+  },
+  {
+    id: "seguridad-bogota-600-policias-29", group: "state", groupLabel: "ESTADO Y PAÍS", category: "SEGURIDAD URBANA", importance: "IMPORTANTE",
+    title: "Bogotá recibirá 600 policías mientras crece el debate sobre asistencia militar",
+    summary: "El alcalde Carlos Fernando Galán informó que el Gobierno nacional prometió 600 nuevos policías para reforzar investigación y vigilancia. Desde el Congreso y el Concejo surgieron solicitudes de asistencia militar en Kennedy, Ciudad Bolívar y Bosa.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Cobertura distrital", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/29/seguridad-en-bogota-llegaran-600-nuevos-policias-para-reforzar-la-investigacion/", status: "Refuerzo anunciado",
+    related: ["Bogotá", "Policía", "asistencia militar", "Carlos Fernando Galán"], whyItMatters: "La respuesta a la inseguridad enfrenta dos modelos distintos: fortalecer investigación policial o ampliar la participación militar en tareas urbanas.", extraSources: ["https://caracol.com.co/2026/09/30/desde-el-congreso-solicitan-militarizar-kennedy-ciudad-bolivar-y-bosa-para-reforzar-la-seguridad/"]
+  },
+  {
+    id: "revocatoria-mercados-carbono-29", group: "government", groupLabel: "GOBIERNO", category: "AMBIENTE Y REGULACIÓN", importance: "IMPORTANTE",
+    title: "MinAmbiente inicia la revocatoria del Decreto 973 sobre mercados de carbono",
+    summary: "El Ministerio anunció el retiro del marco expedido en agosto y la preparación de una nueva regulación. La cartera argumentó razones jurídicas y prometió reglas que den seguridad al mercado sin debilitar la integridad ambiental.",
+    eventDate: "2026-09-29", publishedDate: "2026-09-29", sourceType: "Fuente oficial", sourceName: "Ministerio de Ambiente", sourceUrl: "https://www.minambiente.gov.co/patria-milagro-ajusta-reglas-de-mercados-de-carbono-para-fortalecer-la-accion-climatica/", status: "Revocatoria iniciada",
+    related: ["Decreto 973", "mercados de carbono", "Ministerio de Ambiente", "acción climática"], whyItMatters: "El cambio afecta proyectos de compensación, comunidades, inversionistas y la credibilidad de las metas climáticas del país.", extraSources: []
+  }
+);
+
+// =========================================================
+// 30 SEP 2026
+// =========================================================
+
+dayMeta["2026-09-30"] = {
+  status: "EN DESARROLLO",
+  subtitle: "Gobierno, oposición, Congreso, economía, justicia, seguridad, salud, educación, ambiente y regiones."
+};
+
+events.push(
+  {
+    id: "presupuesto-terremoto-air-e-30", group: "government", groupLabel: "GOBIERNO", category: "PRESUPUESTO Y EMERGENCIA", importance: "MUY IMPORTANTE",
+    title: "Gobierno lleva al Congreso recursos para reconstrucción y crisis eléctrica del Caribe",
+    summary: "Hacienda presentó una modificación al presupuesto que contempla una adición de $2,7 billones al Fondo Milagro y un traslado de $1,2 billones para atender temporalmente obligaciones de Air-e con las generadoras. El proyecto llegó con mensaje de urgencia.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Cobertura económica y legislativa", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/2026-09-30/una-inyeccion-para-el-terremoto-y-el-apagon-el-gobierno-avanza-en-el-congreso-sin-grandes-reformas.html", status: "Proyecto radicado",
+    related: ["Ministerio de Hacienda", "Fondo Milagro", "Air-e", "Congreso"], whyItMatters: "La iniciativa define recursos urgentes para la reconstrucción tras el terremoto y para reducir el riesgo de interrupciones eléctricas en el Caribe.", extraSources: []
+  },
+  {
+    id: "decreto-regulacion-protesta-30", group: "government", groupLabel: "GOBIERNO", category: "PROTESTA Y DERECHOS", importance: "MUY IMPORTANTE",
+    title: "Gobierno publica borrador para modificar el protocolo de intervención en protestas",
+    summary: "El proyecto fija cinco lineamientos sobre diálogo, individualización de responsables y actuación policial. Permitiría usar la fuerza ante armas, explosivos, retenciones o agresiones y recibirá comentarios ciudadanos hasta el 4 de octubre.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Cobertura política", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/30/gobierno-de-la-espriella-tiene-listo-borrador-de-decreto-para-regular-el-derecho-a-la-protesta/", status: "Borrador en consulta",
+    related: ["protesta social", "Ministerio del Interior", "Policía", "derechos civiles"], whyItMatters: "La norma puede redefinir los límites entre garantía de la protesta, mediación y uso legítimo de la fuerza pública.", extraSources: []
+  },
+  {
+    id: "fin-racionamiento-gas-30", group: "government", groupLabel: "GOBIERNO", category: "ENERGÍA", importance: "MUY IMPORTANTE",
+    title: "Finaliza el racionamiento preventivo de gas tras reparación de la terminal SPEC",
+    summary: "MinMinas levantó la medida adoptada el 25 de septiembre después de que la planta de regasificación de Cartagena recuperara su capacidad. Durante la contingencia se priorizó la demanda esencial y el Gobierno mantendrá vigilancia sobre el abastecimiento.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Información sectorial", sourceName: "El Heraldo", sourceUrl: "https://elheraldoco-elheraldo-prod.web.arc-cdn.net/economia/2026/09/30/finalizo-racionamiento-preventivo-de-gas-natural-tras-culminar-trabajos-correctivos-en-la-planta-de-regasificacion-spec/", status: "Racionamiento finalizado",
+    related: ["gas natural", "SPEC LNG", "Cartagena", "MinMinas"], whyItMatters: "La normalización reduce riesgos para hogares, industria y generación eléctrica en medio de la presión energética causada por El Niño.", extraSources: []
+  },
+  {
+    id: "agua-1142-proyectos-cali-30", group: "government", groupLabel: "GOBIERNO", category: "VIVIENDA, AGUA Y RECONSTRUCCIÓN", importance: "IMPORTANTE",
+    title: "MinVivienda anuncia plan para destrabar 1.142 proyectos de agua",
+    summary: "El ministro Jaime Andrés Beltrán prometió reactivar mesas técnicas y viabilizaciones de proyectos financiados con recursos territoriales, regalías y participaciones. También anunció seguimiento semanal a vivienda y reconstrucción en Cali, Chocó y el Eje Cafetero.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Cobertura gubernamental", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/30/ministro-de-vivienda-anuncia-plan-para-destrabar-1142-proyectos-de-agua-y-acelera-obras-en-cali/", status: "Plan anunciado",
+    related: ["MinVivienda", "agua potable", "Cali", "reconstrucción"], whyItMatters: "Destrabar inversiones puede acelerar acceso a agua y recuperación de territorios afectados, siempre que haya control técnico y transparencia.", extraSources: []
+  },
+  {
+    id: "cierre-zut-putumayo-30", group: "government", groupLabel: "GOBIERNO", category: "PAZ Y REINCORPORACIÓN", importance: "MUY IMPORTANTE",
+    title: "Comisionado de Paz activa el cierre de la Zona de Ubicación Temporal de Putumayo",
+    summary: "Una comisión humanitaria deberá cerrar entre el 1 y el 2 de octubre la ZUT de Valle del Guamuez. La resolución dispone la salida de las 62 personas que permanecen allí después de una entrega colectiva de armas.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Reporte de paz", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/30/comisionado-de-paz-e-activo-plan-para-el-cierre-de-la-zut-de-putumayo/", status: "Cierre activado",
+    related: ["Putumayo", "Valle del Guamuez", "ZUT", "reincorporación"], whyItMatters: "El cierre exige garantizar seguridad, seguimiento jurídico y rutas de reincorporación para evitar nuevos riesgos en una región con presencia armada.", extraSources: []
+  },
+  {
+    id: "izquierda-persecucion-washington-30", group: "opposition", groupLabel: "OPOSICIÓN Y MOVIMIENTOS", category: "OPOSICIÓN Y RELACIONES EXTERIORES", importance: "MUY IMPORTANTE",
+    title: "Pacto Histórico denuncia una ofensiva política desde Washington",
+    summary: "Tras la revocatoria de visas a Martha Peralta y Euclides Torres, dirigentes del progresismo denunciaron persecución. Gustavo Petro habló de una acción sistemática e Iván Cepeda advirtió sobre un supuesto intento de involucrarlo mediante testimonios falsos.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Análisis político", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/2026-09-30/la-izquierda-de-petro-denuncia-una-persecucion-politica-desde-washington.html", status: "Denuncias públicas",
+    related: ["Iván Cepeda", "Gustavo Petro", "Martha Peralta", "Estados Unidos"], whyItMatters: "La disputa eleva la tensión entre la oposición, el Gobierno y Estados Unidos y puede incidir en garantías políticas y relaciones bilaterales.", extraSources: []
+  },
+  {
+    id: "centro-democratico-salvacion-ruptura-30", group: "government", groupLabel: "GOBIERNO", category: "COALICIÓN Y PARTIDOS", importance: "MUY IMPORTANTE",
+    title: "Centro Democrático se distancia de Salvación Nacional y cuestiona el trato del Gobierno",
+    summary: "El representante Andrés Guerra anunció que se apartó de reuniones con el Ejecutivo mientras se aclara la relación con su partido. El Centro Democrático descartó, por ahora, alianzas regionales con Salvación Nacional tras choques con Enrique Gómez.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Cobertura política", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/30/es-evidente-que-el-enemigo-para-la-ultraderecha-es-uribe-no-la-izquierda-de-petro-andres-guerra/", status: "Distanciamiento público",
+    related: ["Centro Democrático", "Salvación Nacional", "Álvaro Uribe", "Enrique Gómez"], whyItMatters: "La fractura puede reducir la cohesión de las mayorías oficialistas en el Congreso y reorganizar las alianzas para las elecciones regionales de 2027.", extraSources: ["https://www.lafm.com.co/politica/centro-democratico-varios-candidatos-regionales-sin-alianzas-salvacion-nacional-412511"]
+  },
+  {
+    id: "banco-republica-tasas-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "ECONOMÍA Y BANCO CENTRAL", importance: "MUY IMPORTANTE",
+    title: "Banco de la República decide la tasa con inflación de 6,24 % y una Junta dividida",
+    summary: "El Emisor llega a su reunión con la tasa en 12 % y con la inflación duplicando la meta. La mayoría de entidades consultadas anticipa una pausa, aunque otros analistas ven posible un aumento; Miguel Gómez participa por primera vez como ministro de Hacienda.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Análisis económico", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/2026-09-30/el-banco-de-la-republica-decide-el-precio-del-dinero-con-una-junta-dividida-y-un-ministro-nuevo.html", status: "Decisión pendiente",
+    related: ["Banco de la República", "tasa de interés", "inflación", "Miguel Gómez"], whyItMatters: "La decisión afecta créditos, ahorro, inversión, deuda pública y el ritmo de la economía colombiana.", extraSources: []
+  },
+  {
+    id: "hospital-san-jose-deudas-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "SALUD", importance: "MUY IMPORTANTE",
+    title: "Hospital San José suspende parte de sus servicios por deudas de Nueva EPS y FOMAG",
+    summary: "La institución reportó una cartera cercana a $30.000 millones: aproximadamente $20.000 millones del FOMAG y $10.000 millones de Nueva EPS. Mantendrá urgencias y citas ya programadas mientras busca una salida contractual y financiera.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Reporte de salud", sourceName: "La FM", sourceUrl: "https://www.lafm.com.co/sociedad/deudas-de-nueva-eps-y-fomag-al-hospital-san-jose-suspension-de-servicios-412518", status: "Servicios parcialmente suspendidos",
+    related: ["Hospital San José", "Nueva EPS", "FOMAG", "deuda hospitalaria"], whyItMatters: "La falta de liquidez amenaza la continuidad de tratamientos y muestra el impacto real de las deudas del sistema sobre pacientes y prestadores.", extraSources: []
+  },
+  {
+    id: "lideresa-gloria-buitrago-cauca-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "DERECHOS HUMANOS Y SEGURIDAD", importance: "MUY IMPORTANTE",
+    title: "Asesinan a la lideresa Gloria Buitrago en El Plateado, Cauca",
+    summary: "La dirigente comunitaria fue atacada por hombres armados en Argelia. Indepaz contabiliza 117 líderes sociales asesinados en Colombia durante 2026, 26 de ellos en Cauca, donde persisten disputas entre varias estructuras armadas.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Reporte regional y de derechos humanos", sourceName: "Caracol Radio / Indepaz", sourceUrl: "https://caracol.com.co/2026/09/30/el-cauca-registro-de-nuevo-el-asesinato-de-una-lideresa-social/", status: "Investigación abierta",
+    related: ["Gloria Buitrago", "El Plateado", "Cauca", "líderes sociales"], whyItMatters: "El crimen evidencia el riesgo persistente para liderazgos comunitarios y la insuficiencia de las medidas estatales de prevención en territorios disputados.", extraSources: []
+  },
+  {
+    id: "red-las-invisibles-carceles-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA Y SISTEMA PENITENCIARIO", importance: "IMPORTANTE",
+    title: "Operativo desmantela red señalada de ingresar drogas y tecnología a tres cárceles",
+    summary: "Gaula, Fiscalía y CTI capturaron a cinco mujeres durante allanamientos en La Modelo de Barranquilla, La Tramacúa y Palo Gordo. Incautaron celulares, SIM, memorias, drogas y cuadernos con información que será analizada por posibles nexos criminales.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Reporte de orden público", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/30/desmantelan-red-que-operaba-desde-carceles-para-ingresar-drogas-y-elementos-prohibidos/", status: "Cinco capturas",
+    related: ["Las Invisibles", "Gaula", "Fiscalía", "cárceles"], whyItMatters: "La operación revela redes de corrupción y abastecimiento ilícito que permiten a organizaciones criminales mantener capacidad operativa desde prisión.", extraSources: []
+  },
+  {
+    id: "educacion-restablecida-terremoto-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "EDUCACIÓN Y RECONSTRUCCIÓN", importance: "IMPORTANTE",
+    title: "Educación reporta restablecido el servicio para los estudiantes afectados por el terremoto",
+    summary: "El Ministerio informó que 1.275.967 niños y niñas retomaron actividades mediante presencialidad, alternancia o espacios temporales. Continúan las obras necesarias para recuperar plenamente la infraestructura educativa dañada.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Fuente oficial", sourceName: "Ministerio de Educación", sourceUrl: "https://www.mineducacion.gov.co/portal/salaprensa/Comunicados/430976:Colombia-alcanza-el-100-de-restablecimiento-del-servicio-educativo-tras-el-terremoto", status: "Servicio restablecido",
+    related: ["terremoto", "estudiantes", "Ministerio de Educación", "reconstrucción"], whyItMatters: "El regreso a clases reduce la interrupción educativa de más de un millón de estudiantes, aunque la normalización de sedes sigue pendiente.", extraSources: ["https://www.elespectador.com/educacion/mineducacion-dice-que-se-alcanzo-100-del-restablecimiento-educativo-tras-sismo-en-choco/"]
+  },
+  {
+    id: "alertas-incendios-calor-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "AMBIENTE Y CLIMA", importance: "IMPORTANTE",
+    title: "Bajan las alertas por incendios, pero 23 departamentos siguen bajo riesgo por calor",
+    summary: "El reporte del Ideam redujo a 38 las alertas por incendios y mantuvo una alerta roja en un municipio del Valle. También advirtió temperaturas superiores al promedio y riesgo elevado por calor en zonas de 23 departamentos.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Reporte técnico", sourceName: "Agronegocios / Ideam", sourceUrl: "https://www.agronegocios.co/clima/alertas-por-incendios-han-disminuido-a-38-y-solo-un-municipio-en-el-valle-tiene-alerta-roja-4493429", status: "Alertas activas",
+    related: ["Ideam", "incendios forestales", "temperaturas", "Valle del Cauca"], whyItMatters: "Aunque disminuyó el número de alertas, el calor extremo mantiene riesgos para salud, bosques, agua y producción agropecuaria.", extraSources: []
+  },
+  {
+    id: "apelaciones-esquemas-unp-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "PROTECCIÓN Y GARANTÍAS", importance: "IMPORTANTE",
+    title: "Exfuncionarios del gobierno Petro apelan el retiro de sus esquemas de seguridad",
+    summary: "Antonio Sanguino, Germán Ávila, José Antonio Ocampo y otros exfuncionarios solicitaron a la UNP revisar la decisión de retirarles protección. El listado divulgado incluye inconsistencias que la entidad deberá depurar al evaluar nuevamente los niveles de riesgo.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Investigación periodística", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/30/exfuncionarios-del-gobierno-petro-apelaron-retiro-de-su-esquema-de-seguridad-esta-es-la-lista/", status: "Apelaciones en trámite",
+    related: ["UNP", "Antonio Sanguino", "Germán Ávila", "esquemas de seguridad"], whyItMatters: "La revisión debe equilibrar austeridad y uso correcto de recursos con la obligación estatal de proteger a personas que enfrenten amenazas comprobadas.", extraSources: []
+  },
+  {
+    id: "debate-edad-pension-mujeres-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "PENSIONES Y EQUIDAD", importance: "IMPORTANTE",
+    title: "Congreso abre debate sobre una eventual mayor edad de pensión para las mujeres",
+    summary: "Los senadores Norma Hurtado y Ferney Silva discutieron la propuesta de igualar o elevar la edad de jubilación. El debate enfrenta la sostenibilidad del sistema con las brechas de empleo, ingresos y trabajo de cuidado que afectan a las mujeres.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Debate legislativo", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/30/se-debe-aumentar-la-edad-de-pension-para-las-mujeres-senadores-debaten/", status: "Debate abierto",
+    related: ["pensiones", "mujeres", "Norma Hurtado", "Ferney Silva"], whyItMatters: "Cualquier cambio incidiría durante décadas en los requisitos de jubilación y exige considerar tanto sostenibilidad financiera como desigualdades laborales.", extraSources: []
+  },
+  {
+    id: "expulsion-familiares-alias-fito-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "CRIMEN TRANSNACIONAL", importance: "IMPORTANTE",
+    title: "Colombia expulsa a Ecuador a la esposa y la hija de alias Fito",
+    summary: "Las dos mujeres, requeridas por lavado de activos y con circular roja de Interpol, fueron ubicadas en Sabana de Torres y entregadas a Ecuador. La operación involucró autoridades de ambos países y apoyo del FBI.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Reporte de seguridad", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/09/30/fueron-expulsadas-de-colombia-esposa-e-hija-de-alias-fito-hacia-el-ecuador-por-lavado-de-activos/", status: "Expulsión ejecutada",
+    related: ["alias Fito", "Ecuador", "lavado de activos", "Interpol"], whyItMatters: "La entrega muestra cooperación regional contra estructuras de lavado y evita que Colombia sea usada como refugio por redes criminales transnacionales.", extraSources: []
+  },
+  {
+    id: "dolar-baja-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "MERCADOS", importance: "RELEVANTE",
+    title: "El dólar abre a la baja mientras el mercado espera la decisión del Banco de la República",
+    summary: "La divisa inició operaciones alrededor de $3.305, unos $25 por debajo del cierre anterior, en una jornada marcada por la expectativa sobre tasas de interés y las señales fiscales del Gobierno.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Datos de mercado", sourceName: "El Espectador", sourceUrl: "https://www.elespectador.com/economia/finanzas-personales/precio-del-dolar-hoy-en-colombia-30-de-septiembre/", status: "Mercado abierto",
+    related: ["dólar", "peso colombiano", "Banco de la República", "mercados"], whyItMatters: "La tasa de cambio incide en inflación, importaciones, deuda externa y costos de empresas y hogares.", extraSources: []
   }
 );

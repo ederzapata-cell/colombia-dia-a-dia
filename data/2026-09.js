@@ -3458,7 +3458,7 @@ events.push(
 // =========================================================
 
 dayMeta["2026-09-30"] = {
-  status: "EN DESARROLLO",
+  status: "VERIFICADO ✓",
   subtitle: "Gobierno, oposición, Congreso, economía, justicia, seguridad, salud, educación, ambiente y regiones."
 };
 
@@ -3514,9 +3514,9 @@ events.push(
   },
   {
     id: "banco-republica-tasas-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "ECONOMÍA Y BANCO CENTRAL", importance: "MUY IMPORTANTE",
-    title: "Banco de la República decide la tasa con inflación de 6,24 % y una Junta dividida",
-    summary: "El Emisor llega a su reunión con la tasa en 12 % y con la inflación duplicando la meta. La mayoría de entidades consultadas anticipa una pausa, aunque otros analistas ven posible un aumento; Miguel Gómez participa por primera vez como ministro de Hacienda.",
-    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Análisis económico", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/2026-09-30/el-banco-de-la-republica-decide-el-precio-del-dinero-con-una-junta-dividida-y-un-ministro-nuevo.html", status: "Decisión pendiente",
+    title: "Banco de la República sube la tasa de interés al 12,25 %",
+    summary: "La Junta aumentó la tasa en 25 puntos básicos ante el repunte de la inflación, que llegó al 6,24 % en agosto. Cuatro directores votaron por el incremento, dos por mantenerla y uno por elevarla en 50 puntos básicos.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Decisión del banco central", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/2026-09-30/el-banco-de-la-republica-sube-la-tasa-de-interes-al-1225-en-la-primera-decision-con-miguel-gomez.html", status: "Tasa elevada al 12,25 %",
     related: ["Banco de la República", "tasa de interés", "inflación", "Miguel Gómez"], whyItMatters: "La decisión afecta créditos, ahorro, inversión, deuda pública y el ritmo de la economía colombiana.", extraSources: []
   },
   {
@@ -3581,5 +3581,40 @@ events.push(
     summary: "La divisa inició operaciones alrededor de $3.305, unos $25 por debajo del cierre anterior, en una jornada marcada por la expectativa sobre tasas de interés y las señales fiscales del Gobierno.",
     eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Datos de mercado", sourceName: "El Espectador", sourceUrl: "https://www.elespectador.com/economia/finanzas-personales/precio-del-dolar-hoy-en-colombia-30-de-septiembre/", status: "Mercado abierto",
     related: ["dólar", "peso colombiano", "Banco de la República", "mercados"], whyItMatters: "La tasa de cambio incide en inflación, importaciones, deuda externa y costos de empresas y hogares.", extraSources: []
+  }
+);
+
+// =========================================================
+// CIERRE COMPLEMENTARIO · 30 SEP 2026
+// =========================================================
+
+events.push(
+  {
+    id: "unidad-criminal-colombia-eeuu-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "JUSTICIA Y COOPERACIÓN INTERNACIONAL", importance: "IMPORTANTE",
+    title: "Fiscalía y Estados Unidos crean unidad contra el crimen transnacional",
+    summary: "El CTI y la oficina estadounidense HSI firmaron un memorando para crear una Unidad de Investigación Criminal Transnacional. El equipo ampliará investigaciones conjuntas sobre tráfico de migrantes y bienes ilícitos, lavado de activos y otras redes que operan entre países.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Cooperación institucional", sourceName: "Caracol Radio", sourceUrl: "https://caracol.com.co/2026/10/01/eeuu-y-colombia-firman-acuerdo-para-crear-nueva-unidad-de-investigacion-criminal/", status: "Memorando firmado",
+    related: ["Fiscalía", "CTI", "HSI", "crimen transnacional"], whyItMatters: "La unidad puede mejorar la capacidad de rastrear dinero, personas y bienes de organizaciones que actúan a ambos lados de la frontera.", extraSources: []
+  },
+  {
+    id: "sergei-vagin-expulsion-30", group: "government", groupLabel: "GOBIERNO", category: "MIGRACIÓN, SEGURIDAD Y DEBIDO PROCESO", importance: "MUY IMPORTANTE",
+    title: "Presidente anuncia la expulsión del ciudadano ruso Sergei Vagin",
+    summary: "El Gobierno informó la captura de Vagin y ordenó aplicarle una medida administrativa de expulsión por razones de seguridad nacional. El ciudadano ruso permanecía irregularmente en Colombia y enfrenta un juicio por una presunta red de apuestas; los antiguos señalamientos sobre ELN y financiación de protestas no fueron comprobados en ese proceso.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Decisión gubernamental y contexto judicial", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/2026-09-30/de-la-espriella-ordena-la-expulsion-del-ciudadano-ruso-sergei-vagin-implicado-en-una-red-de-apuestas-ilegales-y-senalado-de-apoyar-a-la-primera-linea.html", status: "Expulsión anunciada",
+    related: ["Sergei Vagin", "Migración Colombia", "seguridad nacional", "debido proceso"], whyItMatters: "La medida cruza política migratoria, seguridad y garantías judiciales porque el proceso penal del ciudadano continúa abierto.", extraSources: []
+  },
+  {
+    id: "delegado-universidades-reversazo-30", group: "government", groupLabel: "GOBIERNO", category: "EDUCACIÓN SUPERIOR Y GOBIERNO UNIVERSITARIO", importance: "IMPORTANTE",
+    title: "Gobierno reemplaza a Rodolfo Londoño como delegado en cinco universidades públicas",
+    summary: "La Presidencia dejó sin efecto la designación del sacerdote Rodolfo Londoño y nombró a Camilo Noguera Abello, director de Defensores de la Patria, en los consejos superiores de las universidades Nacional, de Antioquia, del Valle, del Atlántico y Pedagógica. Representantes estudiantiles cuestionaron el cambio silencioso y la presencia partidista.",
+    eventDate: "2026-09-09", publishedDate: "2026-09-30", sourceType: "Investigación política y educativa", sourceName: "El País", sourceUrl: "https://elpais.com/america-colombia/2026-09-30/el-gobierno-de-de-la-espriella-reversa-la-designacion-del-sacerdote-rodolfo-londono-como-delegado-en-cinco-universidades.html", status: "Nuevo delegado en funciones",
+    related: ["Camilo Noguera", "Rodolfo Londoño", "universidades públicas", "consejos superiores"], whyItMatters: "Los delegados presidenciales votan decisiones académicas, presupuestales y directivas en cinco de las principales universidades públicas del país.", extraSources: []
+  },
+  {
+    id: "desempleo-agosto-94-30", group: "state", groupLabel: "ESTADO Y PAÍS", category: "EMPLEO Y ECONOMÍA", importance: "MUY IMPORTANTE",
+    title: "Desempleo nacional sube al 9,4 % en agosto",
+    summary: "El DANE reportó que la tasa de desocupación aumentó desde 8,6 % en agosto de 2025 hasta 9,4 % en agosto de 2026. La participación laboral bajó a 63,3 % y la tasa de ocupación cayó 1,1 puntos porcentuales, hasta 57,4 %.",
+    eventDate: "2026-09-30", publishedDate: "2026-09-30", sourceType: "Estadística oficial", sourceName: "DANE", sourceUrl: "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo", status: "Boletín publicado",
+    related: ["DANE", "desempleo", "mercado laboral", "ocupación"], whyItMatters: "El deterioro interanual del empleo afecta ingresos de los hogares, consumo, recaudo y decisiones de política económica.", extraSources: []
   }
 );

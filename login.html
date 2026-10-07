@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E274B">
+  <title>TKT Ready — Sign in</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <a class="brand auth-brand" href="./index.html" aria-label="TKT Ready home">
+      <span class="brand-mark">T</span>
+      <span class="brand-copy"><strong>TKT Ready</strong><small>Exam trainer</small></span>
+    </a>
+
+    <section class="auth-card card">
+      <div class="auth-copy">
+        <p class="eyebrow">YOUR TKT READY ACCOUNT</p>
+        <h1 id="authHeading">Sign in</h1>
+        <p id="authIntro">Continue your preparation and keep your progress connected to your account.</p>
+      </div>
+
+      <div class="auth-demo-notice" id="authSetupNotice" hidden>
+        <strong>Firebase setup required</strong>
+        <p>This login is ready, but the Firebase web configuration has not been added yet.</p>
+      </div>
+
+      <div class="auth-current-user" id="currentUserPanel" hidden>
+        <span>Signed in as</span>
+        <strong id="currentUserEmail"></strong>
+        <div class="auth-actions-row">
+          <a class="primary-button link-button" href="./index.html">Open Dashboard</a>
+          <button class="ghost-button" id="signOutButton" type="button">Sign out</button>
+        </div>
+      </div>
+
+      <div id="authForms">
+        <div class="auth-tabs">
+          <button class="auth-tab active" type="button" data-auth-mode="signin">Sign in</button>
+          <button class="auth-tab" type="button" data-auth-mode="signup">Create account</button>
+        </div>
+
+        <form id="authForm" class="auth-form">
+          <label><span>Email</span><input id="authEmail" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label><span>Password</span><input id="authPassword" type="password" autocomplete="current-password" minlength="6" required placeholder="At least 6 characters"></label>
+          <label id="confirmPasswordLabel" hidden><span>Confirm password</span><input id="authConfirmPassword" type="password" autocomplete="new-password" minlength="6" placeholder="Repeat your password"></label>
+          <button class="primary-button auth-submit" id="authSubmit" type="submit">Sign in</button>
+        </form>
+
+        <button class="text-button auth-reset" id="resetPasswordButton" type="button">Forgot your password?</button>
+        <p class="auth-message" id="authMessage" role="status"></p>
+      </div>
+
+      <p class="auth-disclaimer">TKT Ready is an independent preparation product and is not an official Cambridge product.</p>
+    </section>
+  </main>
+
+  <script type="module" src="./login.js"></script>
+</body>
+</html>

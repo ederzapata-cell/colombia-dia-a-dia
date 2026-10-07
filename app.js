@@ -230,7 +230,7 @@ document.querySelector("#dashboardViewAllResults")?.addEventListener("click",()=
 });
 
 document.querySelectorAll(".profile-card").forEach(btn=>{
-  btn.addEventListener("click",()=>alert("Profile and account settings will be connected with Firebase Auth."));
+  btn.addEventListener("click",()=>{ location.href="./login.html"; });
 });
 
 renderReadiness();

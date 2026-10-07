@@ -38,3 +38,16 @@ This repository is configured as a static Netlify site with the repository root 
 
 - Functional Part Reviews and Full Mock
 - Exam results and mistake review
+
+
+## Firebase Authentication setup
+
+The repository includes a Firebase Authentication layer in safe demo mode.
+
+1. Create or open the Firebase project for TKT Ready.
+2. Register a Web app.
+3. Enable Authentication > Sign-in method > Email/Password.
+4. Copy the Firebase web configuration into `firebase-config.js`.
+5. Commit the file. Once configured, protected app pages require authentication automatically.
+
+The Firebase web configuration identifies the project; access control still depends on Firebase Authentication and security rules.

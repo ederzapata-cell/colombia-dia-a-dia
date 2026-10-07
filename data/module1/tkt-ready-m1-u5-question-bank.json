@@ -1,0 +1,1186 @@
+{
+  "meta": {
+    "product": "TKT Ready",
+    "module": 1,
+    "unit": 5,
+    "title": "Phonology: Sounds & Stress",
+    "version": "1.0.0",
+    "language": "English",
+    "practiceItems": 30,
+    "testBankItems": 30,
+    "miniTestDisplayCount": 10,
+    "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+    "alignment": "TKT Module 1 — Describing language: Phonology — IPA symbols, phonemes, word stress and sentence stress",
+    "scopeNote": "Intonation, linking, weak forms and connected speech are reserved for Unit 6.",
+    "skills": [
+      "phoneme_ipa",
+      "vowels_consonants",
+      "voicing",
+      "minimal_pairs",
+      "word_stress",
+      "sentence_stress"
+    ]
+  },
+  "questions": [
+    {
+      "id": "M1-U5-001",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "phoneme_ipa",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "The sounds /p/ and /b/ can distinguish “pat” and “bat”.",
+      "prompt": "What is a sound unit that can distinguish meaning called?",
+      "options": [
+        "Phoneme",
+        "Syllable",
+        "Stress"
+      ],
+      "correctAnswer": "Phoneme",
+      "explanation": "A phoneme is a distinctive sound unit that can distinguish one word from another."
+    },
+    {
+      "id": "M1-U5-002",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "phoneme_ipa",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Symbols such as /ʃ/, /θ/ and /ə/ represent speech sounds.",
+      "prompt": "Which system do these symbols belong to?",
+      "options": [
+        "The International Phonetic Alphabet (IPA)",
+        "A spelling alphabet",
+        "A punctuation system"
+      ],
+      "correctAnswer": "The International Phonetic Alphabet (IPA)",
+      "explanation": "The IPA is a system for representing speech sounds."
+    },
+    {
+      "id": "M1-U5-003",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "phoneme_ipa",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Think about the first sound in “ship”.",
+      "prompt": "Which IPA symbol represents this sound?",
+      "options": [
+        "/ʃ/",
+        "/tʃ/",
+        "/s/"
+      ],
+      "correctAnswer": "/ʃ/",
+      "explanation": "The first sound in “ship” is /ʃ/."
+    },
+    {
+      "id": "M1-U5-004",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "phoneme_ipa",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Think about the first sound in “think”.",
+      "prompt": "Which IPA symbol represents this sound?",
+      "options": [
+        "/θ/",
+        "/ð/",
+        "/t/"
+      ],
+      "correctAnswer": "/θ/",
+      "explanation": "The first sound in “think” is /θ/."
+    },
+    {
+      "id": "M1-U5-005",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "phoneme_ipa",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "A teacher writes /ˈtiːtʃə/ next to the word “teacher”.",
+      "prompt": "What does this notation mainly represent?",
+      "options": [
+        "Pronunciation",
+        "Grammar",
+        "Register"
+      ],
+      "correctAnswer": "Pronunciation",
+      "explanation": "Phonemic transcription represents pronunciation using phonemic symbols."
+    },
+    {
+      "id": "M1-U5-006",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "phoneme_ipa",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Think about the first sound in “judge”.",
+      "prompt": "Which IPA symbol represents this sound?",
+      "options": [
+        "/dʒ/",
+        "/j/",
+        "/ʒ/"
+      ],
+      "correctAnswer": "/dʒ/",
+      "explanation": "The first sound in “judge” is /dʒ/."
+    },
+    {
+      "id": "M1-U5-007",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "phoneme_ipa",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Think about the final sound in “sing”.",
+      "prompt": "Which IPA symbol represents this sound?",
+      "options": [
+        "/ŋ/",
+        "/n/",
+        "/g/"
+      ],
+      "correctAnswer": "/ŋ/",
+      "explanation": "The final sound in “sing” is /ŋ/ in standard pronunciation."
+    },
+    {
+      "id": "M1-U5-008",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "phoneme_ipa",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which definition best describes a phoneme?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A distinctive sound unit that can contrast meaning",
+        "Any written letter",
+        "A group of related words"
+      ],
+      "correctAnswer": "A distinctive sound unit that can contrast meaning",
+      "explanation": "A phoneme is a sound category that can distinguish words and meanings."
+    },
+    {
+      "id": "M1-U5-009",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "phoneme_ipa",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Think about the first sound in “this”.",
+      "prompt": "Which IPA symbol represents this sound?",
+      "options": [
+        "/ð/",
+        "/θ/",
+        "/d/"
+      ],
+      "correctAnswer": "/ð/",
+      "explanation": "The first sound in “this” is /ð/."
+    },
+    {
+      "id": "M1-U5-010",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "phoneme_ipa",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Why are IPA symbols useful in language teaching?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "They represent pronunciation consistently",
+        "They show verb tense",
+        "They show formality"
+      ],
+      "correctAnswer": "They represent pronunciation consistently",
+      "explanation": "IPA symbols represent sounds independently of ordinary spelling."
+    },
+    {
+      "id": "M1-U5-011",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "vowels_consonants",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which of these is a vowel sound?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/iː/",
+        "/t/",
+        "/ʃ/"
+      ],
+      "correctAnswer": "/iː/",
+      "explanation": "/iː/ is a vowel sound."
+    },
+    {
+      "id": "M1-U5-012",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "vowels_consonants",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which of these is a consonant sound?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/m/",
+        "/æ/",
+        "/ə/"
+      ],
+      "correctAnswer": "/m/",
+      "explanation": "/m/ is a consonant sound."
+    },
+    {
+      "id": "M1-U5-013",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "vowels_consonants",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "In standard British English, consider the vowel in “cat”.",
+      "prompt": "Which symbol commonly represents it?",
+      "options": [
+        "/æ/",
+        "/ʌ/",
+        "/ɜː/"
+      ],
+      "correctAnswer": "/æ/",
+      "explanation": "The vowel in standard British English “cat” is commonly represented by /æ/."
+    },
+    {
+      "id": "M1-U5-014",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "vowels_consonants",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which sound is a consonant?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/ŋ/",
+        "/ɪ/",
+        "/uː/"
+      ],
+      "correctAnswer": "/ŋ/",
+      "explanation": "/ŋ/ is a consonant sound, as at the end of “sing”."
+    },
+    {
+      "id": "M1-U5-015",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "vowels_consonants",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement best distinguishes vowel and consonant sounds?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Vowels have relatively open airflow; consonants involve some obstruction or narrowing",
+        "Vowels are always long",
+        "Vowels occur only in stressed syllables"
+      ],
+      "correctAnswer": "Vowels have relatively open airflow; consonants involve some obstruction or narrowing",
+      "explanation": "Consonants involve a degree of closure or narrowing; vowels generally have more open airflow."
+    },
+    {
+      "id": "M1-U5-016",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "vowels_consonants",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which symbol represents a vowel sound?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/ʌ/",
+        "/v/",
+        "/tʃ/"
+      ],
+      "correctAnswer": "/ʌ/",
+      "explanation": "/ʌ/ is a vowel sound."
+    },
+    {
+      "id": "M1-U5-017",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "vowels_consonants",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which symbol represents a consonant sound?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/ʒ/",
+        "/ɒ/",
+        "/ə/"
+      ],
+      "correctAnswer": "/ʒ/",
+      "explanation": "/ʒ/ is a consonant sound."
+    },
+    {
+      "id": "M1-U5-018",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "vowels_consonants",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which pair contains two vowel phonemes?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/ɪ/ and /iː/",
+        "/p/ and /b/",
+        "/s/ and /z/"
+      ],
+      "correctAnswer": "/ɪ/ and /iː/",
+      "explanation": "Both /ɪ/ and /iː/ are vowel phonemes."
+    },
+    {
+      "id": "M1-U5-019",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "vowels_consonants",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which symbol represents the weak central vowel called schwa?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/ə/",
+        "/æ/",
+        "/e/"
+      ],
+      "correctAnswer": "/ə/",
+      "explanation": "Schwa is represented by /ə/."
+    },
+    {
+      "id": "M1-U5-020",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "vowels_consonants",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement is true?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A vowel sound can form the nucleus of a syllable",
+        "Every consonant must be followed by a written vowel",
+        "Every vowel letter represents the same sound"
+      ],
+      "correctAnswer": "A vowel sound can form the nucleus of a syllable",
+      "explanation": "A vowel sound normally forms the central part of a syllable."
+    },
+    {
+      "id": "M1-U5-021",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "voicing",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Say /z/ while touching your throat. You can feel vibration.",
+      "prompt": "How is /z/ classified?",
+      "options": [
+        "Voiced",
+        "Unvoiced",
+        "A vowel"
+      ],
+      "correctAnswer": "Voiced",
+      "explanation": "A voiced sound is produced with vocal-fold vibration."
+    },
+    {
+      "id": "M1-U5-022",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "voicing",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which sound is unvoiced?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/s/",
+        "/z/",
+        "/d/"
+      ],
+      "correctAnswer": "/s/",
+      "explanation": "/s/ is unvoiced; /z/ and /d/ are voiced."
+    },
+    {
+      "id": "M1-U5-023",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "voicing",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair differs mainly in voicing?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/f/ and /v/",
+        "/m/ and /n/",
+        "/w/ and /j/"
+      ],
+      "correctAnswer": "/f/ and /v/",
+      "explanation": "/f/ is unvoiced and /v/ is voiced."
+    },
+    {
+      "id": "M1-U5-024",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "voicing",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which sound is voiced?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/b/",
+        "/p/",
+        "/t/"
+      ],
+      "correctAnswer": "/b/",
+      "explanation": "/b/ is voiced; /p/ and /t/ are unvoiced."
+    },
+    {
+      "id": "M1-U5-025",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "voicing",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "A teacher asks learners to touch their throats while contrasting /s/ and /z/.",
+      "prompt": "Which feature is the teacher highlighting?",
+      "options": [
+        "Voicing",
+        "Word stress",
+        "Syllable count"
+      ],
+      "correctAnswer": "Voicing",
+      "explanation": "The activity makes vocal-fold vibration noticeable."
+    },
+    {
+      "id": "M1-U5-026",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "voicing",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair contrasts an unvoiced sound with its voiced counterpart?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/t/ and /d/",
+        "/m/ and /n/",
+        "/l/ and /r/"
+      ],
+      "correctAnswer": "/t/ and /d/",
+      "explanation": "/t/ is unvoiced and /d/ is voiced."
+    },
+    {
+      "id": "M1-U5-027",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "voicing",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which sound is voiced?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/v/",
+        "/f/",
+        "/θ/"
+      ],
+      "correctAnswer": "/v/",
+      "explanation": "/v/ is voiced."
+    },
+    {
+      "id": "M1-U5-028",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "voicing",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which pair is distinguished mainly by voicing?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "/ʃ/ and /ʒ/",
+        "/ʃ/ and /tʃ/",
+        "/m/ and /ŋ/"
+      ],
+      "correctAnswer": "/ʃ/ and /ʒ/",
+      "explanation": "/ʃ/ is unvoiced and /ʒ/ is voiced."
+    },
+    {
+      "id": "M1-U5-029",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "voicing",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "What happens during the production of a voiced sound?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "The vocal folds vibrate",
+        "The pitch always rises",
+        "The sound must be a vowel"
+      ],
+      "correctAnswer": "The vocal folds vibrate",
+      "explanation": "Voiced sounds involve vibration of the vocal folds."
+    },
+    {
+      "id": "M1-U5-030",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "voicing",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which classroom technique most directly helps learners notice voicing?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Feeling throat vibration while producing contrasting sounds",
+        "Counting written letters",
+        "Underlining stressed words"
+      ],
+      "correctAnswer": "Feeling throat vibration while producing contrasting sounds",
+      "explanation": "Touching the throat makes voicing physically noticeable."
+    },
+    {
+      "id": "M1-U5-031",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "minimal_pairs",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "“ship” /ʃɪp/ and “sheep” /ʃiːp/ differ by one phoneme.",
+      "prompt": "What term describes this pair?",
+      "options": [
+        "Minimal pair",
+        "Word family",
+        "Homophones"
+      ],
+      "correctAnswer": "Minimal pair",
+      "explanation": "A minimal pair contains two words that differ by one phoneme and have different meanings."
+    },
+    {
+      "id": "M1-U5-032",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "minimal_pairs",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which pair is a minimal pair?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "fan / van",
+        "teacher / teaching",
+        "see / sea"
+      ],
+      "correctAnswer": "fan / van",
+      "explanation": "“Fan” and “van” differ by one phoneme: /f/ and /v/."
+    },
+    {
+      "id": "M1-U5-033",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "minimal_pairs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Why are minimal pairs useful in pronunciation teaching?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "They help learners notice sound contrasts that can change meaning",
+        "They teach only spelling",
+        "They show register"
+      ],
+      "correctAnswer": "They help learners notice sound contrasts that can change meaning",
+      "explanation": "Minimal pairs make meaningful phonemic contrasts clear."
+    },
+    {
+      "id": "M1-U5-034",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "minimal_pairs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair is NOT a minimal pair?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "pin / bin",
+        "rice / rise",
+        "cat / teacher"
+      ],
+      "correctAnswer": "cat / teacher",
+      "explanation": "These words differ in several sounds and syllables."
+    },
+    {
+      "id": "M1-U5-035",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "minimal_pairs",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "A learner confuses “light” and “right”, so the teacher contrasts /l/ and /r/.",
+      "prompt": "Which technique is being used?",
+      "options": [
+        "Minimal-pair practice",
+        "Register practice",
+        "Word-family practice"
+      ],
+      "correctAnswer": "Minimal-pair practice",
+      "explanation": "The two words differ by one phoneme."
+    },
+    {
+      "id": "M1-U5-036",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "minimal_pairs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair is a minimal pair?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "thin / sin",
+        "thin / thing",
+        "thin / teacher"
+      ],
+      "correctAnswer": "thin / sin",
+      "explanation": "“Thin” and “sin” differ by one phoneme."
+    },
+    {
+      "id": "M1-U5-037",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "minimal_pairs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "“cap” and “cab” differ only in their final consonant phoneme.",
+      "prompt": "What are they?",
+      "options": [
+        "A minimal pair",
+        "Homophones",
+        "A word family"
+      ],
+      "correctAnswer": "A minimal pair",
+      "explanation": "They differ by one phoneme and have different meanings."
+    },
+    {
+      "id": "M1-U5-038",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "minimal_pairs",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which pair is NOT a minimal pair?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "ship / sheep",
+        "fan / van",
+        "ship / teacher"
+      ],
+      "correctAnswer": "ship / teacher",
+      "explanation": "The words differ in several phonemes and syllables."
+    },
+    {
+      "id": "M1-U5-039",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "minimal_pairs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A pronunciation exercise contrasts /ɪ/ and /iː/ using “ship” and “sheep”.",
+      "prompt": "What is the main aim?",
+      "options": [
+        "To help learners discriminate between two phonemes",
+        "To teach formal register",
+        "To teach suffixes"
+      ],
+      "correctAnswer": "To help learners discriminate between two phonemes",
+      "explanation": "Minimal-pair work develops perception and production of sound contrasts."
+    },
+    {
+      "id": "M1-U5-040",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "minimal_pairs",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which feature must be true for two words to form a minimal pair?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "They differ by only one phoneme in the same position",
+        "They have identical spelling",
+        "They belong to the same word family"
+      ],
+      "correctAnswer": "They differ by only one phoneme in the same position",
+      "explanation": "A minimal pair differs in one phonemic contrast while the rest of the sound sequence remains the same."
+    },
+    {
+      "id": "M1-U5-041",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "word_stress",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "In “TEAcher”, the first syllable is more prominent.",
+      "prompt": "What feature is being described?",
+      "options": [
+        "Word stress",
+        "Sentence stress",
+        "Intonation"
+      ],
+      "correctAnswer": "Word stress",
+      "explanation": "Word stress is the prominence given to one syllable within a word."
+    },
+    {
+      "id": "M1-U5-042",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "word_stress",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "How many syllables are there in “banana”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Three",
+        "Two",
+        "Four"
+      ],
+      "correctAnswer": "Three",
+      "explanation": "“Banana” has three syllables: ba-na-na."
+    },
+    {
+      "id": "M1-U5-043",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "word_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which word is typically stressed on the second syllable?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "hotel",
+        "teacher",
+        "paper"
+      ],
+      "correctAnswer": "hotel",
+      "explanation": "“Hotel” is typically stressed on the second syllable: ho-TEL."
+    },
+    {
+      "id": "M1-U5-044",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "word_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Compare “PHOtograph” and “phoTOGraphy”.",
+      "prompt": "What does this illustrate?",
+      "options": [
+        "Word stress can shift within a word family",
+        "Sentence stress is fixed",
+        "Spelling always determines stress"
+      ],
+      "correctAnswer": "Word stress can shift within a word family",
+      "explanation": "Related words can have different stress patterns."
+    },
+    {
+      "id": "M1-U5-045",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "word_stress",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement about word stress is correct?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "One syllable in a multisyllabic word is typically more prominent than the others",
+        "Every syllable receives equal prominence",
+        "Word stress refers only to volume"
+      ],
+      "correctAnswer": "One syllable in a multisyllabic word is typically more prominent than the others",
+      "explanation": "A stressed syllable is relatively prominent through features such as length, pitch and intensity."
+    },
+    {
+      "id": "M1-U5-046",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "word_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which word is typically stressed on the second syllable?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "banana",
+        "teacher",
+        "comfortable"
+      ],
+      "correctAnswer": "banana",
+      "explanation": "“Banana” is typically ba-NA-na."
+    },
+    {
+      "id": "M1-U5-047",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "word_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which notation shows first-syllable stress in “teacher”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "TEAcher",
+        "teaCHER",
+        "teachER"
+      ],
+      "correctAnswer": "TEAcher",
+      "explanation": "Capitalising the stressed syllable is a common teaching convention."
+    },
+    {
+      "id": "M1-U5-048",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "word_stress",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which pair best illustrates a stress shift within a word family?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "PHOtograph / phoTOGraphy",
+        "BIG / large",
+        "SEE / sea"
+      ],
+      "correctAnswer": "PHOtograph / phoTOGraphy",
+      "explanation": "The main stress shifts across related forms."
+    },
+    {
+      "id": "M1-U5-049",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "word_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "What must learners identify to mark word stress accurately?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "The stressed syllable",
+        "Only the number of letters",
+        "The register"
+      ],
+      "correctAnswer": "The stressed syllable",
+      "explanation": "Word stress is marked by identifying the syllable with primary prominence."
+    },
+    {
+      "id": "M1-U5-050",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "word_stress",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Why can incorrect word stress reduce intelligibility?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Listeners rely partly on expected stress patterns to recognise words",
+        "Stress changes every consonant into a vowel",
+        "Word stress is part of spelling"
+      ],
+      "correctAnswer": "Listeners rely partly on expected stress patterns to recognise words",
+      "explanation": "Unexpected stress may make a familiar word harder to recognise."
+    },
+    {
+      "id": "M1-U5-051",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "sentence_stress",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "In natural speech, some words in a sentence are more prominent than others.",
+      "prompt": "What feature is this?",
+      "options": [
+        "Sentence stress",
+        "Word formation",
+        "Register"
+      ],
+      "correctAnswer": "Sentence stress",
+      "explanation": "Sentence stress is the relative prominence of words or syllables within an utterance."
+    },
+    {
+      "id": "M1-U5-052",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "sentence_stress",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "In “I bought a NEW laptop”, “NEW” is especially prominent.",
+      "prompt": "What can this prominence do?",
+      "options": [
+        "Highlight important or contrasting information",
+        "Change the word into a noun",
+        "Create a suffix"
+      ],
+      "correctAnswer": "Highlight important or contrasting information",
+      "explanation": "Sentence stress can highlight important or contrastive information."
+    },
+    {
+      "id": "M1-U5-053",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "sentence_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which words are most likely to carry stress in a neutral sentence?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Content words",
+        "Articles only",
+        "Every word equally"
+      ],
+      "correctAnswer": "Content words",
+      "explanation": "Content words such as nouns, main verbs, adjectives and adverbs commonly carry sentence stress."
+    },
+    {
+      "id": "M1-U5-054",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "sentence_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Why might a speaker stress “SHE” in “SHE sent the email”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "To contrast her with another possible sender",
+        "To mark the past tense",
+        "To show that “she” is a noun"
+      ],
+      "correctAnswer": "To contrast her with another possible sender",
+      "explanation": "Contrastive stress highlights a particular element of meaning."
+    },
+    {
+      "id": "M1-U5-055",
+      "module": 1,
+      "unit": 5,
+      "section": "practice",
+      "skill": "sentence_stress",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement best describes sentence stress?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Prominence can move depending on meaning and focus",
+        "The first word is always stressed",
+        "Sentence stress is identical to word stress"
+      ],
+      "correctAnswer": "Prominence can move depending on meaning and focus",
+      "explanation": "Sentence stress is flexible and can signal focus and contrast."
+    },
+    {
+      "id": "M1-U5-056",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "sentence_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "In “I wanted the BLUE one”, stressing “BLUE” most likely highlights:",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A contrast with another colour",
+        "The tense of the verb",
+        "The number of syllables"
+      ],
+      "correctAnswer": "A contrast with another colour",
+      "explanation": "Contrastive stress can signal correction or contrast."
+    },
+    {
+      "id": "M1-U5-057",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "sentence_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which kinds of words most commonly receive sentence stress in neutral speech?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Content words",
+        "Articles only",
+        "Prepositions only"
+      ],
+      "correctAnswer": "Content words",
+      "explanation": "Content words usually convey the key lexical information."
+    },
+    {
+      "id": "M1-U5-058",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "sentence_stress",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Compare “I sent the EMAIL” and “I SENT the email.”",
+      "prompt": "What changes most directly?",
+      "options": [
+        "The focus or contrast of the message",
+        "The grammatical tense",
+        "The number of phonemes"
+      ],
+      "correctAnswer": "The focus or contrast of the message",
+      "explanation": "Moving sentence stress changes which information is especially important."
+    },
+    {
+      "id": "M1-U5-059",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "sentence_stress",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which statement about sentence stress is correct?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "It can vary according to the speaker's intended focus",
+        "It always falls on the final word",
+        "It is fixed by spelling"
+      ],
+      "correctAnswer": "It can vary according to the speaker's intended focus",
+      "explanation": "Sentence stress can shift with emphasis and meaning."
+    },
+    {
+      "id": "M1-U5-060",
+      "module": 1,
+      "unit": 5,
+      "section": "test",
+      "skill": "sentence_stress",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "A learner stresses every word equally in a sentence.",
+      "prompt": "What is the most relevant pronunciation issue?",
+      "options": [
+        "Sentence stress",
+        "Word formation",
+        "Register"
+      ],
+      "correctAnswer": "Sentence stress",
+      "explanation": "Natural speech normally gives some words greater prominence than others."
+    }
+  ],
+  "matchingSets": [
+    {
+      "id": "M1-U5-MATCH-P01",
+      "section": "practice",
+      "instruction": "Match each example with the correct phonological term.",
+      "optionBank": [
+        "Phoneme",
+        "IPA symbol",
+        "Voiced sound",
+        "Minimal pair",
+        "Word stress",
+        "Sentence stress"
+      ],
+      "items": [
+        {
+          "example": "A sound unit that can distinguish meaning",
+          "correctAnswer": "Phoneme"
+        },
+        {
+          "example": "/ʃ/",
+          "correctAnswer": "IPA symbol"
+        },
+        {
+          "example": "/z/ with vocal-fold vibration",
+          "correctAnswer": "Voiced sound"
+        },
+        {
+          "example": "ship / sheep",
+          "correctAnswer": "Minimal pair"
+        },
+        {
+          "example": "TEAcher",
+          "correctAnswer": "Word stress"
+        },
+        {
+          "example": "SHE sent the email",
+          "correctAnswer": "Sentence stress"
+        }
+      ]
+    },
+    {
+      "id": "M1-U5-MATCH-T01",
+      "section": "test",
+      "instruction": "Match each example with the phonological feature it illustrates.",
+      "optionBank": [
+        "Vowel phoneme",
+        "Consonant phoneme",
+        "Voicing contrast",
+        "Minimal pair",
+        "Word stress shift",
+        "Contrastive sentence stress"
+      ],
+      "items": [
+        {
+          "example": "/ʌ/",
+          "correctAnswer": "Vowel phoneme"
+        },
+        {
+          "example": "/ʒ/",
+          "correctAnswer": "Consonant phoneme"
+        },
+        {
+          "example": "/t/ and /d/",
+          "correctAnswer": "Voicing contrast"
+        },
+        {
+          "example": "thin / sin",
+          "correctAnswer": "Minimal pair"
+        },
+        {
+          "example": "PHOtograph / phoTOGraphy",
+          "correctAnswer": "Word stress shift"
+        },
+        {
+          "example": "I wanted the BLUE one",
+          "correctAnswer": "Contrastive sentence stress"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1197 @@
+{
+  "meta": {
+    "product": "TKT Ready",
+    "module": 1,
+    "unit": 4,
+    "title": "Lexical Relationships & Register",
+    "version": "1.0.0",
+    "language": "English",
+    "practiceItems": 30,
+    "testBankItems": 30,
+    "miniTestDisplayCount": 10,
+    "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+    "alignment": "TKT Module 1 — Describing language: Lexis — word groupings, lexical relationships and register",
+    "skills": [
+      "synonym",
+      "antonym",
+      "lexical_set",
+      "homophone",
+      "collocation",
+      "register"
+    ]
+  },
+  "questions": [
+    {
+      "id": "M1-U4-001",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "synonym",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "The words “large” and “big” have very similar meanings in many contexts.",
+      "prompt": "What lexical relationship do they illustrate?",
+      "options": [
+        "Synonym",
+        "Antonym",
+        "Homophone"
+      ],
+      "correctAnswer": "Synonym",
+      "explanation": "Synonyms are words with the same or very similar meanings in particular contexts."
+    },
+    {
+      "id": "M1-U4-002",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "synonym",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which pair contains synonyms?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "begin / start",
+        "hot / cold",
+        "right / write"
+      ],
+      "correctAnswer": "begin / start",
+      "explanation": "“Begin” and “start” can have very similar meanings."
+    },
+    {
+      "id": "M1-U4-003",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "synonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A teacher asks learners to replace “happy” with a word that has a similar meaning.",
+      "prompt": "Which lexical concept is the teacher practising?",
+      "options": [
+        "Synonyms",
+        "Antonyms",
+        "Collocations"
+      ],
+      "correctAnswer": "Synonyms",
+      "explanation": "The task asks learners to identify a word with a similar meaning."
+    },
+    {
+      "id": "M1-U4-004",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "synonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which word is closest in meaning to “assist”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "help",
+        "prevent",
+        "leave"
+      ],
+      "correctAnswer": "help",
+      "explanation": "“Assist” and “help” are synonyms in many contexts."
+    },
+    {
+      "id": "M1-U4-005",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "synonym",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Why should teachers avoid telling learners that two synonyms are always interchangeable?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Because synonyms may differ in register, connotation or context",
+        "Because synonyms always have opposite meanings",
+        "Because synonyms must sound the same"
+      ],
+      "correctAnswer": "Because synonyms may differ in register, connotation or context",
+      "explanation": "Synonyms often overlap in meaning but may differ in formality, connotation or typical use."
+    },
+    {
+      "id": "M1-U4-006",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "antonym",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "The words “easy” and “difficult” express opposite meanings.",
+      "prompt": "What lexical relationship do they illustrate?",
+      "options": [
+        "Antonym",
+        "Synonym",
+        "Collocation"
+      ],
+      "correctAnswer": "Antonym",
+      "explanation": "Antonyms are words with opposite or contrasting meanings."
+    },
+    {
+      "id": "M1-U4-007",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "antonym",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which pair contains antonyms?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "accept / refuse",
+        "quick / fast",
+        "sea / see"
+      ],
+      "correctAnswer": "accept / refuse",
+      "explanation": "“Accept” and “refuse” express opposite meanings."
+    },
+    {
+      "id": "M1-U4-008",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "antonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A teacher writes “polite” on the board and asks learners for a word with the opposite meaning.",
+      "prompt": "Which lexical concept is being practised?",
+      "options": [
+        "Antonyms",
+        "Synonyms",
+        "Homophones"
+      ],
+      "correctAnswer": "Antonyms",
+      "explanation": "The task focuses on finding an opposite meaning."
+    },
+    {
+      "id": "M1-U4-009",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "antonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which word is an antonym of “temporary”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "permanent",
+        "brief",
+        "short"
+      ],
+      "correctAnswer": "permanent",
+      "explanation": "“Permanent” contrasts directly with “temporary”."
+    },
+    {
+      "id": "M1-U4-010",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "antonym",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which pair shows a clear oppositional relationship?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "legal / illegal",
+        "legal / lawyer",
+        "legal / law"
+      ],
+      "correctAnswer": "legal / illegal",
+      "explanation": "“Legal” and “illegal” express opposite meanings."
+    },
+    {
+      "id": "M1-U4-011",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "lexical_set",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "fork – knife – spoon – plate",
+      "prompt": "What term describes this group of words?",
+      "options": [
+        "Lexical set",
+        "Word family",
+        "Homophones"
+      ],
+      "correctAnswer": "Lexical set",
+      "explanation": "A lexical set is a group of words connected by topic, meaning or function."
+    },
+    {
+      "id": "M1-U4-012",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "lexical_set",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which group forms a lexical set?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "bus, train, bicycle, taxi",
+        "teach, teacher, teaching, taught",
+        "big, large, huge, enormous"
+      ],
+      "correctAnswer": "bus, train, bicycle, taxi",
+      "explanation": "These words belong to the same topic area: transport."
+    },
+    {
+      "id": "M1-U4-013",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "lexical_set",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A teacher presents “stove, fridge, sink, microwave” together.",
+      "prompt": "Why can these words be taught as a lexical set?",
+      "options": [
+        "They belong to the same topic area",
+        "They share the same root",
+        "They have opposite meanings"
+      ],
+      "correctAnswer": "They belong to the same topic area",
+      "explanation": "The words are semantically grouped around the topic of kitchen appliances or equipment."
+    },
+    {
+      "id": "M1-U4-014",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "lexical_set",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which group is NOT a word family but can be treated as a lexical set?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "doctor, nurse, patient, hospital",
+        "decide, decision, decisive, decisively",
+        "care, careful, careless, carefully"
+      ],
+      "correctAnswer": "doctor, nurse, patient, hospital",
+      "explanation": "These words are related by topic rather than by a common root."
+    },
+    {
+      "id": "M1-U4-015",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "lexical_set",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement best distinguishes a lexical set from a word family?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A lexical set groups words by topic or meaning; a word family groups words by a shared root",
+        "A lexical set contains only verbs; a word family contains only nouns",
+        "A lexical set contains opposites; a word family contains synonyms"
+      ],
+      "correctAnswer": "A lexical set groups words by topic or meaning; a word family groups words by a shared root",
+      "explanation": "Lexical sets are semantic groupings, while word families are morphological groupings around a common root or base."
+    },
+    {
+      "id": "M1-U4-016",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "homophone",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "“see” and “sea” are pronounced the same but have different spellings and meanings.",
+      "prompt": "What lexical relationship do they illustrate?",
+      "options": [
+        "Homophones",
+        "Synonyms",
+        "Antonyms"
+      ],
+      "correctAnswer": "Homophones",
+      "explanation": "Homophones have the same pronunciation but different meanings and usually different spellings."
+    },
+    {
+      "id": "M1-U4-017",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "homophone",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which pair contains homophones?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "right / write",
+        "large / big",
+        "hot / cold"
+      ],
+      "correctAnswer": "right / write",
+      "explanation": "“Right” and “write” are pronounced the same but have different meanings and spellings."
+    },
+    {
+      "id": "M1-U4-018",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "homophone",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A learner confuses “there” and “their” because they sound the same.",
+      "prompt": "Which lexical term is relevant?",
+      "options": [
+        "Homophones",
+        "Antonyms",
+        "Collocations"
+      ],
+      "correctAnswer": "Homophones",
+      "explanation": "“There” and “their” share the same pronunciation but differ in spelling and meaning."
+    },
+    {
+      "id": "M1-U4-019",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "homophone",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair is NOT a pair of homophones?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "flower / flour",
+        "son / sun",
+        "book / look"
+      ],
+      "correctAnswer": "book / look",
+      "explanation": "“Book” and “look” rhyme but are not pronounced identically."
+    },
+    {
+      "id": "M1-U4-020",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "homophone",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which definition best describes homophones?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Words with the same pronunciation but different meanings",
+        "Words with the same root and related meanings",
+        "Words that typically occur together"
+      ],
+      "correctAnswer": "Words with the same pronunciation but different meanings",
+      "explanation": "Homophones share pronunciation but differ in meaning and often spelling."
+    },
+    {
+      "id": "M1-U4-021",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "collocation",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "English speakers commonly say “make a decision” rather than “do a decision”.",
+      "prompt": "Which lexical concept explains this?",
+      "options": [
+        "Collocation",
+        "Antonym",
+        "Homophone"
+      ],
+      "correctAnswer": "Collocation",
+      "explanation": "Collocations are words that commonly occur together in natural language."
+    },
+    {
+      "id": "M1-U4-022",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "collocation",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which combination is a common English collocation?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "heavy rain",
+        "strong rain",
+        "powerful rain"
+      ],
+      "correctAnswer": "heavy rain",
+      "explanation": "“Heavy rain” is a conventional and frequent combination in English."
+    },
+    {
+      "id": "M1-U4-023",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "collocation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which verb commonly collocates with “homework”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "do",
+        "make",
+        "create"
+      ],
+      "correctAnswer": "do",
+      "explanation": "English commonly uses the collocation “do homework”."
+    },
+    {
+      "id": "M1-U4-024",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "collocation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A learner says “strong coffee” and “powerful coffee”. Which expression is the more natural collocation?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "strong coffee",
+        "powerful coffee",
+        "Both are equally typical"
+      ],
+      "correctAnswer": "strong coffee",
+      "explanation": "“Strong coffee” is a conventional English collocation."
+    },
+    {
+      "id": "M1-U4-025",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "collocation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Why is collocation knowledge important for learners?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "It helps them produce more natural combinations of words",
+        "It helps them identify only prefixes and suffixes",
+        "It helps them distinguish words that sound the same"
+      ],
+      "correctAnswer": "It helps them produce more natural combinations of words",
+      "explanation": "Knowing typical word combinations supports more natural and fluent language use."
+    },
+    {
+      "id": "M1-U4-026",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "register",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Compare: “Could you possibly assist me?” and “Can you help me?”",
+      "prompt": "Which lexical concept is illustrated by the difference in level of formality?",
+      "options": [
+        "Register",
+        "Homophone",
+        "Word family"
+      ],
+      "correctAnswer": "Register",
+      "explanation": "Register refers to language choices associated with factors such as formality, situation and audience."
+    },
+    {
+      "id": "M1-U4-027",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "register",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Which expression is more formal?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "I would be grateful if you could reply.",
+        "Get back to me, OK?",
+        "Text me when you can."
+      ],
+      "correctAnswer": "I would be grateful if you could reply.",
+      "explanation": "This expression uses a more formal register suitable for professional or formal communication."
+    },
+    {
+      "id": "M1-U4-028",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "register",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A teacher explains that “kids” is more informal than “children”.",
+      "prompt": "What aspect of lexis is the teacher focusing on?",
+      "options": [
+        "Register",
+        "Homophony",
+        "Antonymy"
+      ],
+      "correctAnswer": "Register",
+      "explanation": "The difference concerns level of formality and appropriacy in context."
+    },
+    {
+      "id": "M1-U4-029",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "register",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which expression is most appropriate in a formal report?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "The results indicate a significant improvement.",
+        "The results are pretty awesome.",
+        "The results are kinda better."
+      ],
+      "correctAnswer": "The results indicate a significant improvement.",
+      "explanation": "Formal reports normally use neutral or formal language rather than conversational expressions."
+    },
+    {
+      "id": "M1-U4-030",
+      "module": 1,
+      "unit": 4,
+      "section": "practice",
+      "skill": "register",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Why is register important when teaching vocabulary?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Learners need to know when and with whom a word or expression is appropriate",
+        "Learners only need to know how a word is spelled",
+        "Register tells learners whether two words rhyme"
+      ],
+      "correctAnswer": "Learners need to know when and with whom a word or expression is appropriate",
+      "explanation": "Vocabulary knowledge includes knowing whether a word is suitable for a particular audience, purpose and situation."
+    },
+    {
+      "id": "M1-U4-031",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "synonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair is closest in meaning?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "purchase / buy",
+        "borrow / lend",
+        "arrive / leave"
+      ],
+      "correctAnswer": "purchase / buy",
+      "explanation": "“Purchase” and “buy” are synonyms, although “purchase” is generally more formal."
+    },
+    {
+      "id": "M1-U4-032",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "synonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "The teacher asks learners to match “rapid” with “fast”.",
+      "prompt": "Which lexical relationship is being tested?",
+      "options": [
+        "Synonymy",
+        "Antonymy",
+        "Homophony"
+      ],
+      "correctAnswer": "Synonymy",
+      "explanation": "“Rapid” and “fast” have similar meanings in many contexts."
+    },
+    {
+      "id": "M1-U4-033",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "synonym",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement about synonyms is most accurate?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "They may share core meaning but differ in register or typical context",
+        "They must be interchangeable in every sentence",
+        "They must have identical spelling patterns"
+      ],
+      "correctAnswer": "They may share core meaning but differ in register or typical context",
+      "explanation": "Synonymy is often partial rather than absolute; usage, connotation and register can differ."
+    },
+    {
+      "id": "M1-U4-034",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "synonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which word is a synonym of “require” in this sentence: “The task requires careful planning”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "needs",
+        "avoids",
+        "finishes"
+      ],
+      "correctAnswer": "needs",
+      "explanation": "Here “require” and “need” have very similar meanings."
+    },
+    {
+      "id": "M1-U4-035",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "synonym",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "“Residence” and “home” can sometimes refer to the same place, but “residence” is usually more formal.",
+      "prompt": "What does this illustrate?",
+      "options": [
+        "Synonyms can differ in register",
+        "Antonyms can have similar meanings",
+        "Homophones can differ in spelling"
+      ],
+      "correctAnswer": "Synonyms can differ in register",
+      "explanation": "Words may be semantically similar while differing in level of formality."
+    },
+    {
+      "id": "M1-U4-036",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "antonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair has opposite meanings?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "increase / decrease",
+        "increase / rise",
+        "increase / growth"
+      ],
+      "correctAnswer": "increase / decrease",
+      "explanation": "“Increase” and “decrease” express opposing meanings."
+    },
+    {
+      "id": "M1-U4-037",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "antonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "The opposite of “optional” is:",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "compulsory",
+        "possible",
+        "flexible"
+      ],
+      "correctAnswer": "compulsory",
+      "explanation": "“Optional” means not required; “compulsory” means required."
+    },
+    {
+      "id": "M1-U4-038",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "antonym",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which pair illustrates antonymy created through a prefix?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "possible / impossible",
+        "possible / possibility",
+        "possible / possibly"
+      ],
+      "correctAnswer": "possible / impossible",
+      "explanation": "The negative prefix “im-” creates an opposite meaning."
+    },
+    {
+      "id": "M1-U4-039",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "antonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which lexical relationship is illustrated by “formal / informal”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Antonym",
+        "Synonym",
+        "Collocation"
+      ],
+      "correctAnswer": "Antonym",
+      "explanation": "The two words contrast in meaning."
+    },
+    {
+      "id": "M1-U4-040",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "antonym",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "A vocabulary exercise asks candidates to match “maximum” with “minimum”.",
+      "prompt": "What relationship is being tested?",
+      "options": [
+        "Antonymy",
+        "Synonymy",
+        "Homophony"
+      ],
+      "correctAnswer": "Antonymy",
+      "explanation": "“Maximum” and “minimum” represent opposite ends of a scale."
+    },
+    {
+      "id": "M1-U4-041",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "lexical_set",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which group forms a lexical set connected with assessment?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "test, mark, grade, feedback",
+        "teach, teacher, teaching, taught",
+        "quick, quickly, quicker, quickest"
+      ],
+      "correctAnswer": "test, mark, grade, feedback",
+      "explanation": "These words are linked by the topic of assessment."
+    },
+    {
+      "id": "M1-U4-042",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "lexical_set",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "The words “airport, passport, luggage, boarding pass” can be grouped together because they share:",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A topic area",
+        "A common root",
+        "An opposite meaning"
+      ],
+      "correctAnswer": "A topic area",
+      "explanation": "They form a lexical set connected with air travel."
+    },
+    {
+      "id": "M1-U4-043",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "lexical_set",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which set is based on semantic topic rather than morphology?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "keyboard, screen, mouse, printer",
+        "employ, employer, employee, employment",
+        "decide, decision, decisive, decisively"
+      ],
+      "correctAnswer": "keyboard, screen, mouse, printer",
+      "explanation": "These items belong to the topic of computing but do not share one morphological root."
+    },
+    {
+      "id": "M1-U4-044",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "lexical_set",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A teacher organises vocabulary under the heading “Weather”: windy, cloudy, humid, stormy.",
+      "prompt": "What is the teacher creating?",
+      "options": [
+        "A lexical set",
+        "A word family",
+        "A set of homophones"
+      ],
+      "correctAnswer": "A lexical set",
+      "explanation": "The words are grouped by a shared topic or semantic field."
+    },
+    {
+      "id": "M1-U4-045",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "lexical_set",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement is true of lexical sets?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "They help organise vocabulary according to semantic relationships or topic",
+        "Every word in the set must have the same root",
+        "Every word in the set must be the same part of speech"
+      ],
+      "correctAnswer": "They help organise vocabulary according to semantic relationships or topic",
+      "explanation": "Lexical sets are semantic groupings and can contain different word classes and unrelated roots."
+    },
+    {
+      "id": "M1-U4-046",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "homophone",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair consists of homophones?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "weak / week",
+        "weak / strong",
+        "weak / weakness"
+      ],
+      "correctAnswer": "weak / week",
+      "explanation": "“Weak” and “week” are pronounced the same but differ in spelling and meaning."
+    },
+    {
+      "id": "M1-U4-047",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "homophone",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A listening activity asks learners to distinguish the intended meaning of /peə/ in context: “pair” or “pear”.",
+      "prompt": "Which lexical relationship is involved?",
+      "options": [
+        "Homophony",
+        "Antonymy",
+        "Collocation"
+      ],
+      "correctAnswer": "Homophony",
+      "explanation": "“Pair” and “pear” share the same pronunciation but have different meanings."
+    },
+    {
+      "id": "M1-U4-048",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "homophone",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which pair is NOT homophonous in standard pronunciation?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "know / no",
+        "one / won",
+        "food / foot"
+      ],
+      "correctAnswer": "food / foot",
+      "explanation": "“Food” and “foot” have different vowel sounds."
+    },
+    {
+      "id": "M1-U4-049",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "homophone",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which definition is correct?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Homophones sound the same but have different meanings",
+        "Homophones have opposite meanings",
+        "Homophones are words that commonly occur together"
+      ],
+      "correctAnswer": "Homophones sound the same but have different meanings",
+      "explanation": "Shared pronunciation is the defining feature of homophones."
+    },
+    {
+      "id": "M1-U4-050",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "homophone",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Why can homophones create spelling difficulties?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "The pronunciation alone may not show which spelling and meaning is intended",
+        "They always contain silent letters",
+        "They always belong to different registers"
+      ],
+      "correctAnswer": "The pronunciation alone may not show which spelling and meaning is intended",
+      "explanation": "Because homophones sound the same, context is often needed to choose the correct spelling and meaning."
+    },
+    {
+      "id": "M1-U4-051",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "collocation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which combination is the most natural collocation?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "take an exam",
+        "make an exam",
+        "do an exam paper"
+      ],
+      "correctAnswer": "take an exam",
+      "explanation": "“Take an exam” is a standard collocation in many varieties of English."
+    },
+    {
+      "id": "M1-U4-052",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "collocation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which adjective commonly collocates with “mistake”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "serious",
+        "powerful",
+        "deeply"
+      ],
+      "correctAnswer": "serious",
+      "explanation": "“Serious mistake” is a conventional adjective + noun collocation."
+    },
+    {
+      "id": "M1-U4-053",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "collocation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which sentence contains an unnatural collocation?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "She made a decision.",
+        "She did her homework.",
+        "She performed a decision."
+      ],
+      "correctAnswer": "She performed a decision.",
+      "explanation": "English normally uses “make a decision”, not “perform a decision”."
+    },
+    {
+      "id": "M1-U4-054",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "collocation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "“Highly effective” is an example of which type of lexical relationship?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Collocation",
+        "Antonymy",
+        "Homophony"
+      ],
+      "correctAnswer": "Collocation",
+      "explanation": "“Highly” commonly occurs with adjectives such as “effective”."
+    },
+    {
+      "id": "M1-U4-055",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "collocation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "A learner knows the meaning of “decision” but repeatedly says “do a decision”. What knowledge is mainly missing?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Collocational knowledge",
+        "Knowledge of antonyms",
+        "Knowledge of homophones"
+      ],
+      "correctAnswer": "Collocational knowledge",
+      "explanation": "The learner needs to know which words typically combine with “decision”."
+    },
+    {
+      "id": "M1-U4-056",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "register",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which sentence uses the most informal register?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "That lesson was awesome!",
+        "The lesson was highly effective.",
+        "The lesson achieved its stated objectives."
+      ],
+      "correctAnswer": "That lesson was awesome!",
+      "explanation": "“Awesome” in this context is conversational and informal."
+    },
+    {
+      "id": "M1-U4-057",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "register",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which expression would be most appropriate in a formal email to an examination centre?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "I am writing to enquire about the test date.",
+        "Hey, when's the test?",
+        "Just wanna know the date."
+      ],
+      "correctAnswer": "I am writing to enquire about the test date.",
+      "explanation": "The wording is appropriately formal and professional."
+    },
+    {
+      "id": "M1-U4-058",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "register",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "A learner uses “gonna” in a formal academic presentation.",
+      "prompt": "What vocabulary issue is most relevant?",
+      "options": [
+        "Register",
+        "Homophony",
+        "Antonymy"
+      ],
+      "correctAnswer": "Register",
+      "explanation": "“Gonna” is associated with informal spoken language and may be inappropriate in a formal academic context."
+    },
+    {
+      "id": "M1-U4-059",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "register",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "The difference between “depart” and “leave” can partly be described in terms of:",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Register",
+        "Homophony",
+        "Word formation only"
+      ],
+      "correctAnswer": "Register",
+      "explanation": "“Depart” is generally more formal than “leave” in many contexts."
+    },
+    {
+      "id": "M1-U4-060",
+      "module": 1,
+      "unit": 4,
+      "section": "test",
+      "skill": "register",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement about register is most accurate?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Appropriate language choices depend on audience, purpose and situation",
+        "Formal language is always better than informal language",
+        "Register concerns pronunciation only"
+      ],
+      "correctAnswer": "Appropriate language choices depend on audience, purpose and situation",
+      "explanation": "Register is about selecting language appropriate to context, including audience, purpose and degree of formality."
+    }
+  ],
+  "matchingSets": [
+    {
+      "id": "M1-U4-MATCH-P01",
+      "section": "practice",
+      "instruction": "Match each example with the correct lexical relationship.",
+      "optionBank": [
+        "Synonym",
+        "Antonym",
+        "Lexical set",
+        "Homophone",
+        "Collocation",
+        "Register"
+      ],
+      "items": [
+        {
+          "questionId": "M1-U4-002",
+          "example": "begin / start",
+          "correctAnswer": "Synonym"
+        },
+        {
+          "questionId": "M1-U4-007",
+          "example": "accept / refuse",
+          "correctAnswer": "Antonym"
+        },
+        {
+          "questionId": "M1-U4-011",
+          "example": "fork / knife / spoon / plate",
+          "correctAnswer": "Lexical set"
+        },
+        {
+          "questionId": "M1-U4-017",
+          "example": "right / write",
+          "correctAnswer": "Homophone"
+        },
+        {
+          "questionId": "M1-U4-021",
+          "example": "make a decision",
+          "correctAnswer": "Collocation"
+        },
+        {
+          "questionId": "M1-U4-028",
+          "example": "kids is more informal than children",
+          "correctAnswer": "Register"
+        }
+      ]
+    },
+    {
+      "id": "M1-U4-MATCH-T01",
+      "section": "test",
+      "instruction": "Match each item with the lexical term it illustrates.",
+      "optionBank": [
+        "Synonym",
+        "Antonym",
+        "Lexical set",
+        "Homophone",
+        "Collocation",
+        "Register"
+      ],
+      "items": [
+        {
+          "questionId": "M1-U4-031",
+          "example": "purchase / buy",
+          "correctAnswer": "Synonym"
+        },
+        {
+          "questionId": "M1-U4-036",
+          "example": "increase / decrease",
+          "correctAnswer": "Antonym"
+        },
+        {
+          "questionId": "M1-U4-042",
+          "example": "airport / passport / luggage / boarding pass",
+          "correctAnswer": "Lexical set"
+        },
+        {
+          "questionId": "M1-U4-046",
+          "example": "weak / week",
+          "correctAnswer": "Homophone"
+        },
+        {
+          "questionId": "M1-U4-054",
+          "example": "highly effective",
+          "correctAnswer": "Collocation"
+        },
+        {
+          "questionId": "M1-U4-057",
+          "example": "I am writing to enquire about the test date.",
+          "correctAnswer": "Register"
+        }
+      ]
+    }
+  ]
+}

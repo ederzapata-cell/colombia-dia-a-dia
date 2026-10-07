@@ -1,9 +1,18 @@
 [build]
   publish = "."
+  command = ""
+
+[build.environment]
+  NODE_VERSION = "20"
 
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

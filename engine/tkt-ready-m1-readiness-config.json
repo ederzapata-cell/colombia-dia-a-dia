@@ -1,0 +1,98 @@
+{
+  "product": "TKT Ready",
+  "module": 1,
+  "version": "1.0.0",
+  "readinessDisclaimer": "TKT Ready Readiness is an internal preparation indicator. It is not an official Cambridge score, band prediction or guarantee of exam performance.",
+  "levels": [
+    {
+      "id": "not_ready",
+      "label": "Not ready",
+      "minScore": 0,
+      "maxScore": 54
+    },
+    {
+      "id": "developing",
+      "label": "Developing",
+      "minScore": 55,
+      "maxScore": 69
+    },
+    {
+      "id": "almost_ready",
+      "label": "Almost ready",
+      "minScore": 70,
+      "maxScore": 100
+    },
+    {
+      "id": "tkt_ready",
+      "label": "TKT Ready",
+      "minScore": 80,
+      "maxScore": 100,
+      "gates": {
+        "minimumFullMocks": 2,
+        "minimumLatestFullMock": 75,
+        "minimumPartScore": 65,
+        "minimumUnitsWithEvidence": 12
+      }
+    }
+  ],
+  "scoreWeights": {
+    "fullMock": 0.6,
+    "partReviews": 0.2,
+    "unitMiniTests": 0.2
+  },
+  "fullMockRecencyWeights": [
+    0.5,
+    0.3,
+    0.2
+  ],
+  "evidenceConfidence": {
+    "fullMocks": {
+      "maxPoints": 50,
+      "fullCreditAt": 2
+    },
+    "partReviews": {
+      "maxPoints": 20,
+      "fullCreditAtDistinctParts": 3
+    },
+    "unitMiniTests": {
+      "maxPoints": 30,
+      "fullCreditAtDistinctUnits": 15
+    },
+    "bands": [
+      {
+        "label": "Low",
+        "min": 0,
+        "max": 34
+      },
+      {
+        "label": "Medium",
+        "min": 35,
+        "max": 69
+      },
+      {
+        "label": "High",
+        "min": 70,
+        "max": 100
+      }
+    ]
+  },
+  "unitMastery": {
+    "strong": {
+      "min": 80,
+      "max": 100
+    },
+    "developing": {
+      "min": 65,
+      "max": 79
+    },
+    "reviewRecommended": {
+      "min": 0,
+      "max": 64
+    }
+  },
+  "recommendationRules": {
+    "maxPriorityUnits": 3,
+    "weakUnitThreshold": 65,
+    "strongUnitThreshold": 80
+  }
+}

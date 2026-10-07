@@ -1,0 +1,164 @@
+{
+  "product": "TKT Ready",
+  "schemaVersion": 1,
+  "principles": [
+    "Keep dashboard summary documents small and fast to read.",
+    "Store attempt history as separate documents.",
+    "Store per-question responses in an attempt subcollection and load them only for review/analytics.",
+    "Do not duplicate the 900-question content bank in each user's Firestore data.",
+    "Question IDs are immutable and never reused.",
+    "Readiness is an internal TKT Ready indicator, not an official Cambridge band prediction."
+  ],
+  "paths": {
+    "user": {
+      "path": "users/{uid}",
+      "purpose": "Minimal account/profile state.",
+      "fields": {
+        "schemaVersion": "number",
+        "email": "string|null",
+        "displayName": "string|null",
+        "createdAt": "timestamp",
+        "lastLoginAt": "timestamp",
+        "activeModule": "number",
+        "onboardingComplete": "boolean"
+      }
+    },
+    "moduleSummary": {
+      "path": "users/{uid}/modules/module-1",
+      "purpose": "Fast dashboard document. Cached summaries only; never store full attempt history here.",
+      "fields": {
+        "module": "1",
+        "status": "not_started|in_progress|completed",
+        "startedAt": "timestamp|null",
+        "lastActivityAt": "timestamp|null",
+        "currentUnit": "number|null",
+        "completedUnits": "number[]",
+        "completedUnitCount": "number",
+        "overallProgressPct": "number",
+        "readiness": {
+          "score": "number 0-100",
+          "level": "not_ready|developing|almost_ready|tkt_ready",
+          "confidenceScore": "number 0-100",
+          "confidenceLabel": "Low|Medium|High",
+          "updatedAt": "timestamp|null"
+        },
+        "latestFullMock": {
+          "attemptId": "string|null",
+          "percentage": "number|null",
+          "completedAt": "timestamp|null"
+        },
+        "bestFullMock": {
+          "attemptId": "string|null",
+          "percentage": "number|null",
+          "completedAt": "timestamp|null"
+        },
+        "partSummary": {
+          "1": {
+            "latest": "number|null",
+            "best": "number|null"
+          },
+          "2": {
+            "latest": "number|null",
+            "best": "number|null"
+          },
+          "3": {
+            "latest": "number|null",
+            "best": "number|null"
+          }
+        },
+        "priorityUnits": "number[] up to 3",
+        "nextAction": {
+          "type": "unit|part_review|full_mock|null",
+          "target": "string|null",
+          "label": "string|null"
+        }
+      }
+    },
+    "unitProgress": {
+      "path": "users/{uid}/modules/module-1/units/unit-{01..15}",
+      "purpose": "One compact progress document per unit.",
+      "fields": {
+        "module": "1",
+        "unit": "number 1-15",
+        "title": "string",
+        "status": "not_started|in_progress|completed",
+        "learnCompleted": "boolean",
+        "practiceCompleted": "boolean",
+        "miniTestAttempts": "number",
+        "latestMiniTestPct": "number|null",
+        "bestMiniTestPct": "number|null",
+        "mastery": "number|null",
+        "masteryStatus": "No evidence|Review recommended|Developing|Strong",
+        "practiceStats": {
+          "questionsAnswered": "number",
+          "correct": "number",
+          "accuracyPct": "number|null"
+        },
+        "lastActivityAt": "timestamp|null",
+        "completedAt": "timestamp|null"
+      }
+    },
+    "attempt": {
+      "path": "users/{uid}/modules/module-1/attempts/{attemptId}",
+      "purpose": "One document per Mini Test, Part Review or Full Mock.",
+      "fields": {
+        "attemptId": "string",
+        "module": "1",
+        "type": "unit_mini_test|part_review|full_mock",
+        "part": "number|null",
+        "unit": "number|null",
+        "correct": "number",
+        "total": "number",
+        "percentage": "number",
+        "durationSeconds": "number|null",
+        "startedAt": "timestamp|null",
+        "completedAt": "timestamp",
+        "signature": "string|null",
+        "questionCount": "number",
+        "taskCount": "number|null",
+        "bankVersion": "string",
+        "partStats": "map|null",
+        "unitStats": "map|null"
+      },
+      "recommendedIndexes": [
+        "type ASC, completedAt DESC",
+        "unit ASC, completedAt DESC",
+        "part ASC, completedAt DESC"
+      ]
+    },
+    "response": {
+      "path": "users/{uid}/modules/module-1/attempts/{attemptId}/responses/{questionId}",
+      "purpose": "Per-question answer snapshot loaded only when reviewing an attempt.",
+      "fields": {
+        "questionId": "string",
+        "taskId": "string|null",
+        "module": "1",
+        "part": "number|null",
+        "unit": "number",
+        "skill": "string|null",
+        "difficulty": "easy|medium|hard|null",
+        "taskType": "multiple_choice|matching",
+        "selectedAnswer": "string|null",
+        "correctAnswer": "string",
+        "isCorrect": "boolean",
+        "optionOrder": "string[]|null",
+        "answeredAt": "timestamp|null",
+        "bankVersion": "string"
+      }
+    }
+  },
+  "writeFlow": [
+    "1. Create/update the attempt summary document.",
+    "2. Write response documents in the attempt's responses subcollection.",
+    "3. Update the unit progress document when applicable.",
+    "4. Recalculate readiness/history from attempt summaries.",
+    "5. Update the Module 1 dashboard summary document.",
+    "6. Never copy full question-bank content into user documents."
+  ],
+  "dashboardReadPattern": [
+    "Read users/{uid}/modules/module-1.",
+    "Read the 15 unit progress docs only when the dashboard/unit list needs them.",
+    "Query the latest 5-10 attempt summaries for Recent Results.",
+    "Read responses only after the learner opens Review Mistakes / Attempt Review."
+  ]
+}

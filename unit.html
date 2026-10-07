@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E274B">
+  <title>TKT Ready — Unit</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">T</span>
+        <span class="brand-copy"><strong>TKT Ready</strong><small>Exam trainer</small></span>
+      </a>
+      <nav class="side-nav">
+        <a class="nav-item" href="./index.html"><span class="nav-icon">⌂</span><span>Dashboard</span></a>
+        <a class="nav-item active" href="./module1.html"><span class="nav-icon">▤</span><span>Module 1</span></a>
+        <a class="nav-item" href="#practice"><span class="nav-icon">✦</span><span>Practice</span></a>
+        <a class="nav-item" href="#mini-test"><span class="nav-icon">◷</span><span>Mini Test</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-note"><span class="mini-note-dot"></span><p>Independent preparation for the Cambridge TKT.</p></div>
+      </div>
+    </aside>
+
+    <main class="main unit-main">
+      <header class="unit-header">
+        <div>
+          <a class="back-link" href="./module1.html">← Module 1</a>
+          <p class="eyebrow" id="unitEyebrow">UNIT</p>
+          <h1 id="unitTitle">Loading unit…</h1>
+          <p class="topbar-subtitle">Learn the concept, practise it, then check your exam readiness.</p>
+        </div>
+        <div class="unit-header-score" id="latestUnitScore">
+          <span>Latest Mini Test</span>
+          <strong>—</strong>
+        </div>
+      </header>
+
+      <nav class="unit-stage-tabs" aria-label="Unit stages">
+        <button class="unit-tab active" type="button" data-stage="learn">Learn</button>
+        <button class="unit-tab" type="button" data-stage="examples">Examples</button>
+        <button class="unit-tab" type="button" data-stage="practice">Practice</button>
+        <button class="unit-tab" type="button" data-stage="strategy">TKT Strategy</button>
+        <button class="unit-tab" type="button" data-stage="mini-test">Mini Test</button>
+        <button class="unit-tab" type="button" data-stage="results">Results</button>
+      </nav>
+
+      <section class="unit-stage-panel active" data-panel="learn">
+        <div class="section-heading">
+          <div><p class="eyebrow">LEARN</p><h2>Core concepts</h2></div>
+          <span class="mode-chip study">Study mode</span>
+        </div>
+        <div class="microcard-grid" id="learnCards"></div>
+        <div class="stage-actions"><button class="primary-button next-stage" type="button" data-next="examples">Continue to Examples</button></div>
+      </section>
+
+      <section class="unit-stage-panel" data-panel="examples">
+        <div class="section-heading">
+          <div><p class="eyebrow">EXAMPLES</p><h2>See the concepts in context</h2></div>
+        </div>
+        <div class="example-list" id="exampleList"></div>
+        <div class="stage-actions">
+          <button class="ghost-button previous-stage" type="button" data-next="learn">Back</button>
+          <button class="primary-button next-stage" type="button" data-next="practice">Start Practice</button>
+        </div>
+      </section>
+
+      <section class="unit-stage-panel" data-panel="practice" id="practice">
+        <div class="section-heading">
+          <div><p class="eyebrow">PRACTICE</p><h2>Immediate feedback</h2></div>
+          <span class="mode-chip practice">Practice mode</span>
+        </div>
+
+        <div class="practice-summary">
+          <span id="practiceCounter">Question 1</span>
+          <span id="practiceAccuracy">Accuracy —</span>
+        </div>
+
+        <article class="question-card card">
+          <p class="question-skill" id="practiceSkill"></p>
+          <h3 id="practicePrompt">Loading question…</h3>
+          <div class="answer-list" id="practiceAnswers"></div>
+          <div class="feedback-box" id="practiceFeedback" hidden></div>
+          <div class="question-actions">
+            <button class="secondary-button" id="newPracticeQuestion" type="button">New Question</button>
+            <button class="primary-button" id="nextPracticeQuestion" type="button" hidden>Next Question</button>
+          </div>
+        </article>
+
+        <div class="stage-actions">
+          <button class="ghost-button previous-stage" type="button" data-next="examples">Back</button>
+          <button class="primary-button next-stage" type="button" data-next="strategy">Continue to TKT Strategy</button>
+        </div>
+      </section>
+
+      <section class="unit-stage-panel" data-panel="strategy">
+        <div class="section-heading">
+          <div><p class="eyebrow">TKT STRATEGY</p><h2>Think like the exam</h2></div>
+          <span class="mode-chip strategy">Exam focus</span>
+        </div>
+        <div class="strategy-list" id="strategyList"></div>
+        <div class="stage-actions">
+          <button class="ghost-button previous-stage" type="button" data-next="practice">Back</button>
+          <button class="primary-button next-stage" type="button" data-next="mini-test">Take Mini Test</button>
+        </div>
+      </section>
+
+      <section class="unit-stage-panel" data-panel="mini-test" id="mini-test">
+        <div class="section-heading">
+          <div><p class="eyebrow">MINI TEST</p><h2>10 questions · no feedback until submission</h2></div>
+          <span class="mode-chip test">Test mode</span>
+        </div>
+
+        <div id="miniTestIntro" class="mini-test-intro card">
+          <h3>Ready to test this unit?</h3>
+          <p>Your questions and answer order will be randomized. You will see your result after you submit all 10 questions.</p>
+          <button class="primary-button" id="startMiniTest" type="button">Start Mini Test</button>
+        </div>
+
+        <div id="miniTestArea" hidden>
+          <div class="test-progress-row">
+            <span id="testCounter">Question 1 of 10</span>
+            <div class="test-progress"><span id="testProgressFill" style="width:10%"></span></div>
+          </div>
+          <article class="question-card card test-question-card">
+            <h3 id="testPrompt"></h3>
+            <div class="answer-list" id="testAnswers"></div>
+            <div class="question-actions spread">
+              <button class="ghost-button" id="previousTestQuestion" type="button">Previous</button>
+              <button class="primary-button" id="nextTestQuestion" type="button">Next</button>
+              <button class="primary-button" id="submitMiniTest" type="button" hidden>Submit Mini Test</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="unit-stage-panel" data-panel="results">
+        <div class="section-heading">
+          <div><p class="eyebrow">RESULTS</p><h2>Your latest Unit Mini Test</h2></div>
+        </div>
+        <div id="resultsEmpty" class="empty-results card">
+          <h3>No Mini Test result yet</h3>
+          <p>Complete the 10-question Mini Test to see your score and recommendation.</p>
+          <button class="primary-button" type="button" data-next="mini-test">Take Mini Test</button>
+        </div>
+        <div id="resultsContent" hidden>
+          <div class="results-hero card">
+            <div class="result-score-circle"><strong id="resultScore">0%</strong><span id="resultRaw">0/10</span></div>
+            <div>
+              <p class="eyebrow">UNIT RESULT</p>
+              <h2 id="resultLabel">Developing</h2>
+              <p id="resultRecommendation"></p>
+              <div class="result-actions">
+                <button class="secondary-button" id="retryMiniTest" type="button">Try Another Mini Test</button>
+                <a class="primary-button link-button" href="./module1.html">Back to Module 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="mistake-review card">
+            <h3>Review mistakes</h3>
+            <div id="mistakeList"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>TKT Ready</span>
+        <span>Independent preparation for the Cambridge TKT.</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="./unit.js"></script>
+</body>
+</html>

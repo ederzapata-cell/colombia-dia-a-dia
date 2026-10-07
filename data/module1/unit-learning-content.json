@@ -1,0 +1,722 @@
+{
+  "1": {
+    "title": "Parts of Speech",
+    "learn": [
+      [
+        "Word class",
+        "Identify how a word functions in context, not only how it looks."
+      ],
+      [
+        "Nouns",
+        "Recognise common, proper, countable, uncountable, collective and compound nouns."
+      ],
+      [
+        "Verbs",
+        "Distinguish main, auxiliary, modal, transitive and intransitive verbs."
+      ],
+      [
+        "Adjectives & adverbs",
+        "Notice what each word modifies and the information it adds."
+      ],
+      [
+        "Pronouns & determiners",
+        "Separate reference words from words that introduce or specify nouns."
+      ],
+      [
+        "Prepositions & conjunctions",
+        "Recognise relationship words and linking words."
+      ]
+    ],
+    "examples": [
+      [
+        "work",
+        "I work every day. / My work is demanding."
+      ],
+      [
+        "fast",
+        "a fast car / drive fast"
+      ],
+      [
+        "that",
+        "That book is mine. / I know that you’re busy."
+      ]
+    ],
+    "strategy": [
+      "Decide the word class from its function in the sentence.",
+      "Expect the same word form to belong to different classes in different contexts.",
+      "Use the words around the target word as evidence."
+    ]
+  },
+  "2": {
+    "title": "Grammatical Structures",
+    "learn": [
+      [
+        "Present simple",
+        "Habits, routines, facts and states."
+      ],
+      [
+        "Present continuous",
+        "Actions in progress and temporary situations."
+      ],
+      [
+        "Past simple",
+        "Completed past actions and events."
+      ],
+      [
+        "Present perfect",
+        "Past actions connected to the present."
+      ],
+      [
+        "Modals & future",
+        "Meaning expressed through modal verbs and future forms."
+      ],
+      [
+        "Passive & reported speech",
+        "How form changes when focus or reporting changes."
+      ]
+    ],
+    "examples": [
+      [
+        "Present perfect",
+        "She has lived here for five years."
+      ],
+      [
+        "Passive",
+        "The lesson was recorded yesterday."
+      ],
+      [
+        "Reported speech",
+        "He said that he was tired."
+      ]
+    ],
+    "strategy": [
+      "Look for time reference and communicative meaning before naming the tense.",
+      "Separate form from use: the same structure can carry different meanings.",
+      "Pay attention to auxiliaries because they often reveal the structure."
+    ]
+  },
+  "3": {
+    "title": "Lexis: Meaning & Word Formation",
+    "learn": [
+      [
+        "Affixes",
+        "Prefixes and suffixes change meaning or word class."
+      ],
+      [
+        "Roots & base words",
+        "Recognise the core form from which related words are built."
+      ],
+      [
+        "Compounds",
+        "Two or more words can combine into one lexical unit."
+      ],
+      [
+        "Word families",
+        "Words may share a root but belong to different word classes."
+      ],
+      [
+        "Idioms",
+        "Meaning may not be predictable from the individual words."
+      ],
+      [
+        "Phrasal verbs",
+        "Verb + particle combinations often create a distinct meaning."
+      ]
+    ],
+    "examples": [
+      [
+        "Word family",
+        "decide → decision → decisive"
+      ],
+      [
+        "Compound",
+        "boarding pass"
+      ],
+      [
+        "Phrasal verb",
+        "look after = take care of"
+      ]
+    ],
+    "strategy": [
+      "Use morphology as a clue, but always confirm meaning from context.",
+      "Treat idioms and phrasal verbs as lexical units.",
+      "Notice whether the question asks about form, meaning or relationship."
+    ]
+  },
+  "4": {
+    "title": "Lexical Relationships & Register",
+    "learn": [
+      [
+        "Synonyms",
+        "Words with the same or very similar meaning."
+      ],
+      [
+        "Antonyms",
+        "Words with opposite meanings."
+      ],
+      [
+        "Lexical sets",
+        "Words grouped by topic or semantic field."
+      ],
+      [
+        "Homophones",
+        "Words with the same pronunciation but different spelling/meaning."
+      ],
+      [
+        "Collocations",
+        "Words that commonly occur together."
+      ],
+      [
+        "Register",
+        "Language choices shaped by formality, relationship and context."
+      ]
+    ],
+    "examples": [
+      [
+        "Collocation",
+        "make a decision / heavy rain / take an exam"
+      ],
+      [
+        "Homophones",
+        "right / write"
+      ],
+      [
+        "Register",
+        "Could you possibly…? vs Can you…?"
+      ]
+    ],
+    "strategy": [
+      "For collocation, choose what sounds conventionally natural, not merely grammatical.",
+      "For register, identify audience, relationship and situation.",
+      "Do not confuse lexical set with synonymy."
+    ]
+  },
+  "5": {
+    "title": "Phonology: Sounds & Stress",
+    "learn": [
+      [
+        "Phonemes",
+        "Individual meaningful sound units."
+      ],
+      [
+        "Vowels & consonants",
+        "Different sound categories in spoken English."
+      ],
+      [
+        "Voicing",
+        "Some consonants are voiced; others are unvoiced."
+      ],
+      [
+        "Minimal pairs",
+        "Two words differing in one phoneme."
+      ],
+      [
+        "Word stress",
+        "One syllable is more prominent in a word."
+      ],
+      [
+        "Sentence stress",
+        "Prominent words carry key meaning or contrast."
+      ]
+    ],
+    "examples": [
+      [
+        "Minimal pair",
+        "ship / sheep"
+      ],
+      [
+        "Voicing",
+        "fan / van"
+      ],
+      [
+        "Word stress",
+        "TEAcher / hoTEL"
+      ]
+    ],
+    "strategy": [
+      "Think in sounds, not spelling.",
+      "Use minimal pairs to identify exactly which sound changes.",
+      "For stress questions, listen for prominence rather than syllable length alone."
+    ]
+  },
+  "6": {
+    "title": "Phonology: Intonation & Connected Speech",
+    "learn": [
+      [
+        "Intonation",
+        "Pitch movement can signal attitude and discourse meaning."
+      ],
+      [
+        "Connected speech",
+        "Natural speech flows as a continuous stream."
+      ],
+      [
+        "Linking",
+        "Sounds connect across word boundaries."
+      ],
+      [
+        "Weak forms",
+        "Function words often reduce in unstressed positions."
+      ],
+      [
+        "Contractions",
+        "Common spoken/written shortened forms."
+      ],
+      [
+        "Elision",
+        "Sounds may disappear in rapid connected speech."
+      ]
+    ],
+    "examples": [
+      [
+        "Weak form",
+        "can → /kən/"
+      ],
+      [
+        "Linking",
+        "turn_off / pick_it_up"
+      ],
+      [
+        "Contraction",
+        "they have → they’ve"
+      ]
+    ],
+    "strategy": [
+      "Do not analyse connected speech as isolated dictionary words.",
+      "Look for reduced function words and sound links.",
+      "Remember that intonation can change speaker attitude without changing grammar."
+    ]
+  },
+  "7": {
+    "title": "Functions",
+    "learn": [
+      [
+        "Requests",
+        "Asking someone to do something."
+      ],
+      [
+        "Invitations",
+        "Asking someone to join or attend."
+      ],
+      [
+        "Agreement",
+        "Showing shared opinion."
+      ],
+      [
+        "Disagreement",
+        "Expressing a different view."
+      ],
+      [
+        "Thanking",
+        "Showing appreciation."
+      ],
+      [
+        "Refusals & introductions",
+        "Managing social interaction appropriately."
+      ]
+    ],
+    "examples": [
+      [
+        "Request",
+        "Could you help me?"
+      ],
+      [
+        "Invitation",
+        "Would you like to join us?"
+      ],
+      [
+        "Refusal",
+        "I’m afraid I won’t be able to come."
+      ]
+    ],
+    "strategy": [
+      "Identify what the speaker is doing, not just the grammar used.",
+      "Check formality and appropriacy for the situation.",
+      "Different exponents can express the same function."
+    ]
+  },
+  "8": {
+    "title": "Language Skills & Subskills",
+    "learn": [
+      [
+        "Reading for gist",
+        "Understand the overall message."
+      ],
+      [
+        "Scanning",
+        "Find specific information quickly."
+      ],
+      [
+        "Listening subskills",
+        "Listen for gist, detail, attitude or prediction."
+      ],
+      [
+        "Speaking subskills",
+        "Fluency, accuracy, interaction and repair."
+      ],
+      [
+        "Writing subskills",
+        "Planning, drafting, editing and proofreading."
+      ],
+      [
+        "Text features",
+        "Layout, organisation and genre conventions."
+      ]
+    ],
+    "examples": [
+      [
+        "Skimming",
+        "Read quickly for the main idea."
+      ],
+      [
+        "Scanning",
+        "Find a departure time in a timetable."
+      ],
+      [
+        "Proofreading",
+        "Check spelling and grammar in a final draft."
+      ]
+    ],
+    "strategy": [
+      "Match the subskill to the learner’s immediate purpose.",
+      "Do not confuse editing with proofreading.",
+      "Gist and detail tasks require different reading/listening behaviour."
+    ]
+  },
+  "9": {
+    "title": "Motivation, Exposure & Acquisition",
+    "learn": [
+      [
+        "Motivation",
+        "Reasons and energy for learning can change over time."
+      ],
+      [
+        "Exposure",
+        "Contact with the target language inside and outside class."
+      ],
+      [
+        "Acquisition",
+        "Language can develop gradually through meaningful use."
+      ],
+      [
+        "Silent period",
+        "Comprehension may develop before much production."
+      ],
+      [
+        "Interaction",
+        "Communication creates opportunities to negotiate meaning."
+      ],
+      [
+        "Focus on form",
+        "Brief attention to language features within meaningful communication."
+      ]
+    ],
+    "examples": [
+      [
+        "Exposure",
+        "Listening to podcasts outside class."
+      ],
+      [
+        "Interaction",
+        "Information-gap pair work."
+      ],
+      [
+        "Focus on form",
+        "Pause briefly to notice a useful grammar pattern."
+      ]
+    ],
+    "strategy": [
+      "Exposure alone is not the whole story: interaction and attention to form also matter.",
+      "Treat motivation as dynamic, not fixed.",
+      "Distinguish acquisition processes from explicit study."
+    ]
+  },
+  "10": {
+    "title": "Errors & L1/L2 Learning",
+    "learn": [
+      [
+        "Error vs slip",
+        "A slip can often be self-corrected; an error reflects incomplete learning."
+      ],
+      [
+        "Developmental error",
+        "A normal stage in building the L2 system."
+      ],
+      [
+        "L1 interference",
+        "First-language patterns influence L2 use."
+      ],
+      [
+        "Overgeneralisation",
+        "A rule is applied too widely."
+      ],
+      [
+        "Interlanguage",
+        "The learner’s developing language system."
+      ],
+      [
+        "Fossilisation",
+        "Some errors become persistent over time."
+      ]
+    ],
+    "examples": [
+      [
+        "Slip",
+        "He go… sorry, he goes."
+      ],
+      [
+        "Overgeneralisation",
+        "goed / buyed"
+      ],
+      [
+        "L1 interference",
+        "Word order transferred from the first language."
+      ]
+    ],
+    "strategy": [
+      "Ask whether the learner could self-correct before deciding slip vs error.",
+      "Errors can be useful diagnostic evidence.",
+      "Correction timing should fit the activity aim."
+    ]
+  },
+  "11": {
+    "title": "Learners: Characteristics & Needs",
+    "learn": [
+      [
+        "Age & maturity",
+        "Development can influence attention, confidence and classroom behaviour."
+      ],
+      [
+        "Learning context",
+        "L1/L2 environments differ in exposure and use."
+      ],
+      [
+        "Learning preferences",
+        "Learners may prefer different modes and interaction patterns."
+      ],
+      [
+        "Learning strategies",
+        "Learners use deliberate techniques to support learning."
+      ],
+      [
+        "Past experience",
+        "Previous classes can shape confidence and expectations."
+      ],
+      [
+        "Learner needs",
+        "Personal, academic and professional goals influence priorities."
+      ]
+    ],
+    "examples": [
+      [
+        "Strategy",
+        "Guess meaning from context."
+      ],
+      [
+        "Professional need",
+        "English for international customer calls."
+      ],
+      [
+        "Past experience",
+        "A learner expects grammar translation because previous courses used it."
+      ]
+    ],
+    "strategy": [
+      "Do not treat preferences as fixed learner types.",
+      "Distinguish needs from preferences.",
+      "Use learner profiles to explain teaching choices."
+    ]
+  },
+  "12": {
+    "title": "Presenting Language",
+    "learn": [
+      [
+        "Warmer",
+        "A short activity that energises or settles learners."
+      ],
+      [
+        "Ice-breaker",
+        "Helps people get to know one another."
+      ],
+      [
+        "Lead-in",
+        "Creates interest and activates knowledge for the main topic."
+      ],
+      [
+        "Contextualising",
+        "Puts language into a meaningful situation."
+      ],
+      [
+        "Presenting",
+        "Clarifies meaning, form and pronunciation."
+      ],
+      [
+        "Concept checking",
+        "Confirms that learners understand the target meaning."
+      ]
+    ],
+    "examples": [
+      [
+        "Lead-in",
+        "Discuss travel before a reading about tourism."
+      ],
+      [
+        "Context",
+        "Present “I’d like…” in a restaurant scene."
+      ],
+      [
+        "CCQ",
+        "Do I still live here now?"
+      ]
+    ],
+    "strategy": [
+      "Separate warmer, ice-breaker and lead-in by their main aim.",
+      "A strong presentation connects meaning, form and pronunciation.",
+      "Use focused CCQs instead of only asking “Do you understand?”"
+    ]
+  },
+  "13": {
+    "title": "Teaching Activities & Techniques",
+    "learn": [
+      [
+        "Drilling & modelling",
+        "Guided oral practice based on a model."
+      ],
+      [
+        "Eliciting",
+        "Get learners to supply language or information."
+      ],
+      [
+        "Prompting",
+        "Give a clue to support learner production."
+      ],
+      [
+        "Controlled → free practice",
+        "Gradually increase learner choice."
+      ],
+      [
+        "Comprehension vs production",
+        "Receptive understanding vs producing language."
+      ],
+      [
+        "Feedback & correction",
+        "Use techniques that support accuracy and independence."
+      ]
+    ],
+    "examples": [
+      [
+        "Substitution drill",
+        "I bought a book. Pen → I bought a pen."
+      ],
+      [
+        "Prompt",
+        "It begins with /b/…"
+      ],
+      [
+        "Peer correction",
+        "Learners help correct one another."
+      ]
+    ],
+    "strategy": [
+      "Identify the teacher’s immediate aim behind the technique.",
+      "Control refers mainly to how much language choice learners have.",
+      "Different correction techniques shift responsibility between teacher and learner."
+    ]
+  },
+  "14": {
+    "title": "Teaching Approaches & Lesson Frameworks",
+    "learn": [
+      [
+        "PPP",
+        "Presentation → Practice → Production."
+      ],
+      [
+        "TBL",
+        "Meaningful task first, then language focus."
+      ],
+      [
+        "Test–Teach–Test",
+        "Diagnose → teach → check again."
+      ],
+      [
+        "Guided discovery",
+        "Learners infer rules from examples with support."
+      ],
+      [
+        "TPR & Grammar-Translation",
+        "Physical response vs rule/translation-focused procedures."
+      ],
+      [
+        "Lexical & skills-based",
+        "Chunks/collocations vs skill/subskill lesson staging."
+      ]
+    ],
+    "examples": [
+      [
+        "PPP",
+        "Context → controlled practice → freer role-play."
+      ],
+      [
+        "TBL",
+        "Plan a trip → discuss language used."
+      ],
+      [
+        "Guided discovery",
+        "Examples → infer rule → practise."
+      ]
+    ],
+    "strategy": [
+      "Identify the sequence first; the sequence often reveals the framework.",
+      "Separate a teaching technique from a complete lesson framework.",
+      "Look for what is central: target language, task, discovery, physical response, translation, chunks or skills."
+    ]
+  },
+  "15": {
+    "title": "Assessment",
+    "learn": [
+      [
+        "Placement & diagnostic",
+        "Level placement vs identifying strengths and weaknesses."
+      ],
+      [
+        "Progress & achievement",
+        "Learning during a course vs attainment over a completed programme."
+      ],
+      [
+        "Proficiency",
+        "Ability independent of one specific taught course."
+      ],
+      [
+        "Formative & summative",
+        "Support learning vs report achievement."
+      ],
+      [
+        "Assessment methods",
+        "Self, peer, portfolio, formal, informal and continuous assessment."
+      ],
+      [
+        "Objective & subjective",
+        "Predetermined answers vs judgement-based marking."
+      ]
+    ],
+    "examples": [
+      [
+        "Placement",
+        "Which level class should this learner join?"
+      ],
+      [
+        "Diagnostic",
+        "What does this learner need to work on?"
+      ],
+      [
+        "Formative",
+        "Feedback on a draft before final submission."
+      ]
+    ],
+    "strategy": [
+      "Classify assessment mainly by its purpose.",
+      "A task format can serve different purposes depending on how results are used.",
+      "Distinguish assessment purpose from assessment method."
+    ]
+  }
+}

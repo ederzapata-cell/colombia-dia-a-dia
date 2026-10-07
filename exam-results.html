@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E274B">
+  <title>TKT Ready — Exam Results</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="simple-page exam-results-page">
+    <a class="brand simple-brand" href="./index.html">
+      <span class="brand-mark">T</span>
+      <span class="brand-copy"><strong>TKT Ready</strong><small>Exam trainer</small></span>
+    </a>
+
+    <main class="exam-results-wrap">
+      <section class="results-hero card exam-results-hero">
+        <div class="result-score-circle">
+          <strong id="examResultScore">0%</strong>
+          <span id="examResultRaw">0/0</span>
+        </div>
+        <div>
+          <p class="eyebrow" id="examResultType">MODULE 1</p>
+          <h1 id="examResultLabel">Results</h1>
+          <p id="examResultMessage"></p>
+          <div class="result-actions">
+            <a class="ghost-button link-button" href="./module1.html">Back to Module 1</a>
+            <button class="secondary-button" id="retryExam" type="button">Try Another Attempt</button>
+            <a class="primary-button link-button" href="./index.html">Dashboard</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-breakdown-grid">
+        <article class="card breakdown-card">
+          <p class="eyebrow">PART BREAKDOWN</p>
+          <div id="partBreakdown"></div>
+        </article>
+        <article class="card breakdown-card">
+          <p class="eyebrow">UNIT BREAKDOWN</p>
+          <div id="unitBreakdown"></div>
+        </article>
+      </section>
+
+      <section class="card mistake-review">
+        <div class="section-heading">
+          <div><p class="eyebrow">REVIEW</p><h2>Incorrect answers</h2></div>
+          <span id="mistakeCount" class="status-chip developing">0 mistakes</span>
+        </div>
+        <div id="examMistakeList"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./exam-results.js"></script>
+</body>
+</html>

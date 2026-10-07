@@ -1,0 +1,1185 @@
+{
+  "meta": {
+    "product": "TKT Ready",
+    "module": 1,
+    "unit": 11,
+    "title": "Learners: Characteristics & Needs",
+    "version": "1.0.0",
+    "language": "English",
+    "practiceItems": 30,
+    "testBankItems": 30,
+    "miniTestDisplayCount": 10,
+    "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+    "alignment": "TKT Module 1 — Background to language learning: differences between L1/L2 learning, learner characteristics and learner needs",
+    "skills": [
+      "age_maturity",
+      "learning_context_l1_l2",
+      "learning_preferences",
+      "learning_strategies",
+      "past_learning_experience",
+      "learner_needs"
+    ]
+  },
+  "questions": [
+    {
+      "id": "M1-U11-001",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "age_maturity",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which learner characteristic is most directly related to differences in attention span, self-consciousness and ability to control behaviour?",
+      "options": [
+        "Age and maturity",
+        "Word formation",
+        "Register"
+      ],
+      "correctAnswer": "Age and maturity",
+      "explanation": "Age and maturity can affect attention, behaviour, risk-taking and how learners respond to classroom activities."
+    },
+    {
+      "id": "M1-U11-002",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "age_maturity",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Young learners may often benefit from shorter, varied activities. Which characteristic is this most closely related to?",
+      "options": [
+        "Age and maturity",
+        "Past language-learning experience only",
+        "Professional needs"
+      ],
+      "correctAnswer": "Age and maturity",
+      "explanation": "Younger learners may have different concentration spans and developmental needs from older learners."
+    },
+    {
+      "id": "M1-U11-003",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "age_maturity",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which factor may make some teenagers especially sensitive about speaking in front of the whole class?",
+      "options": [
+        "Self-consciousness linked to maturity",
+        "L1 interference only",
+        "Word stress"
+      ],
+      "correctAnswer": "Self-consciousness linked to maturity",
+      "explanation": "Adolescents may be particularly sensitive to peer judgement and making mistakes publicly."
+    },
+    {
+      "id": "M1-U11-004",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "age_maturity",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Adults can sometimes bring useful life and professional experience into language tasks. Which characteristic is most relevant?",
+      "options": [
+        "Maturity",
+        "Silent period",
+        "Phonemic awareness"
+      ],
+      "correctAnswer": "Maturity",
+      "explanation": "Maturity and life experience can influence how learners approach content and classroom tasks."
+    },
+    {
+      "id": "M1-U11-005",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "age_maturity",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about age is most accurate?",
+      "options": [
+        "Different age groups may need different activity types and classroom support",
+        "One age group always learns languages better in every respect",
+        "Age has no classroom implications"
+      ],
+      "correctAnswer": "Different age groups may need different activity types and classroom support",
+      "explanation": "Age can affect attention, interests, cognitive development, confidence and preferred activity types."
+    },
+    {
+      "id": "M1-U11-006",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "age_maturity",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A teacher replaces a 30-minute teacher-fronted explanation with several short tasks for a class of young learners. What characteristic is the teacher mainly responding to?",
+      "options": [
+        "Age and maturity",
+        "Professional needs",
+        "Past examination experience"
+      ],
+      "correctAnswer": "Age and maturity",
+      "explanation": "The teacher is adapting the lesson to learners' likely developmental and concentration needs."
+    },
+    {
+      "id": "M1-U11-007",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "age_maturity",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which feature is more likely to differ between children, teenagers and adults?",
+      "options": [
+        "Attitude to risk-taking and making mistakes",
+        "The definition of a noun",
+        "The number of English phonemes"
+      ],
+      "correctAnswer": "Attitude to risk-taking and making mistakes",
+      "explanation": "Learners of different ages and maturity levels may differ in confidence, risk-taking and self-consciousness."
+    },
+    {
+      "id": "M1-U11-008",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "age_maturity",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher decision best shows awareness of learner maturity?",
+      "options": [
+        "Choosing tasks that match learners' cognitive and social development",
+        "Using identical tasks for all ages because age is irrelevant",
+        "Choosing activities only by textbook page number"
+      ],
+      "correctAnswer": "Choosing tasks that match learners' cognitive and social development",
+      "explanation": "Maturity affects what kinds of demands and interaction patterns are appropriate."
+    },
+    {
+      "id": "M1-U11-009",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "age_maturity",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A class of adults responds well to discussing workplace decisions and real-life problems. Which factor may help explain this?",
+      "options": [
+        "Their maturity and life experience",
+        "Their lack of learning strategies",
+        "A silent period"
+      ],
+      "correctAnswer": "Their maturity and life experience",
+      "explanation": "Adults can often draw on wider personal and professional experience."
+    },
+    {
+      "id": "M1-U11-010",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "age_maturity",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement should a TKT candidate avoid?",
+      "options": [
+        "All learners of the same age have identical characteristics",
+        "Age can influence classroom behaviour",
+        "Maturity can affect attitudes to learning"
+      ],
+      "correctAnswer": "All learners of the same age have identical characteristics",
+      "explanation": "Age is one factor, but individuals within the same age group still differ considerably."
+    },
+    {
+      "id": "M1-U11-011",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A child acquires an L1 through everyday family interaction, while an adult studies an L2 for two hours a week in class. Which difference is most relevant?",
+      "options": [
+        "Context of learning",
+        "Word stress",
+        "Register"
+      ],
+      "correctAnswer": "Context of learning",
+      "explanation": "L1 and L2 learning can differ greatly in amount of exposure, purpose and learning environment."
+    },
+    {
+      "id": "M1-U11-012",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which is a common difference between L1 and classroom L2 learning?",
+      "options": [
+        "Amount and type of exposure",
+        "Whether language has meaning",
+        "Whether learners can ever interact"
+      ],
+      "correctAnswer": "Amount and type of exposure",
+      "explanation": "L1 learners often receive extensive natural exposure, while classroom L2 exposure may be more limited."
+    },
+    {
+      "id": "M1-U11-013",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "An adult L2 learner consciously studies grammar rules, whereas a young L1 learner may develop grammar without explicit explanation. Which difference is illustrated?",
+      "options": [
+        "Ways of learning",
+        "Text layout",
+        "Collocation"
+      ],
+      "correctAnswer": "Ways of learning",
+      "explanation": "L1 and L2 learning can differ in the degree of conscious study and explicit instruction."
+    },
+    {
+      "id": "M1-U11-014",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why can the context of L2 learning affect teaching choices?",
+      "options": [
+        "Learners may have limited exposure outside class and need classroom opportunities to use language",
+        "Context determines every learner's intelligence",
+        "Context removes the need for interaction"
+      ],
+      "correctAnswer": "Learners may have limited exposure outside class and need classroom opportunities to use language",
+      "explanation": "Teachers often need to compensate for limited natural exposure by creating meaningful input and use."
+    },
+    {
+      "id": "M1-U11-015",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about L1 and L2 learning is most accurate?",
+      "options": [
+        "They can differ in age, context and ways of learning",
+        "They are identical processes in every respect",
+        "L2 learning never involves natural acquisition"
+      ],
+      "correctAnswer": "They can differ in age, context and ways of learning",
+      "explanation": "Cambridge explicitly identifies age, context and ways of learning as important differences."
+    },
+    {
+      "id": "M1-U11-016",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner studies English mainly in a classroom and rarely encounters it elsewhere. Which factor is especially important?",
+      "options": [
+        "Context of learning",
+        "Word family",
+        "Elision"
+      ],
+      "correctAnswer": "Context of learning",
+      "explanation": "The learner's environment limits natural exposure and may affect teaching decisions."
+    },
+    {
+      "id": "M1-U11-017",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which situation most clearly shows a difference in learning context?",
+      "options": [
+        "One learner uses English daily at work; another uses it only in a weekly lesson",
+        "Two learners prefer diagrams",
+        "Two learners both take notes"
+      ],
+      "correctAnswer": "One learner uses English daily at work; another uses it only in a weekly lesson",
+      "explanation": "The amount and purpose of English use outside class are contextual differences."
+    },
+    {
+      "id": "M1-U11-018",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why might an L2 teacher deliberately create information-gap tasks?",
+      "options": [
+        "To provide interaction that may be less available outside class",
+        "To imitate spelling practice",
+        "To eliminate all learner differences"
+      ],
+      "correctAnswer": "To provide interaction that may be less available outside class",
+      "explanation": "Classroom tasks can create communicative opportunities that learners may lack in their wider environment."
+    },
+    {
+      "id": "M1-U11-019",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which difference is most clearly about ways of learning rather than context?",
+      "options": [
+        "An adult consciously analyses grammar rules",
+        "A learner studies in Colombia",
+        "A learner has two lessons a week"
+      ],
+      "correctAnswer": "An adult consciously analyses grammar rules",
+      "explanation": "Conscious analysis is a learning process, while place and lesson frequency are contextual factors."
+    },
+    {
+      "id": "M1-U11-020",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_context_l1_l2",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which conclusion is most appropriate for teaching?",
+      "options": [
+        "Teachers should consider how much exposure and use learners get beyond the classroom",
+        "All L2 learners should be taught exactly like young L1 learners",
+        "Classroom context has no effect on learning"
+      ],
+      "correctAnswer": "Teachers should consider how much exposure and use learners get beyond the classroom",
+      "explanation": "Teaching choices should respond to the opportunities and limitations of the learner's actual context."
+    },
+    {
+      "id": "M1-U11-021",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_preferences",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner says diagrams and written examples help her understand new language. What does this describe?",
+      "options": [
+        "A learning preference",
+        "A fossilised error",
+        "A professional need"
+      ],
+      "correctAnswer": "A learning preference",
+      "explanation": "A learning preference is a way of learning that a learner tends to find helpful or comfortable."
+    },
+    {
+      "id": "M1-U11-022",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_preferences",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner prefers to hear a model before trying a new phrase. Which concept is most relevant?",
+      "options": [
+        "Learning preference",
+        "Placement assessment",
+        "Interlanguage"
+      ],
+      "correctAnswer": "Learning preference",
+      "explanation": "Learners can differ in the ways they prefer to encounter or practise language."
+    },
+    {
+      "id": "M1-U11-023",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_preferences",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teaching response best caters for different learning preferences?",
+      "options": [
+        "Use a reasonable variety of activity types and modes",
+        "Label each learner permanently as one type and never vary tasks",
+        "Use only the teacher's own preferred method"
+      ],
+      "correctAnswer": "Use a reasonable variety of activity types and modes",
+      "explanation": "Variety can give learners different routes into the same content without treating preferences as fixed limitations."
+    },
+    {
+      "id": "M1-U11-024",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_preferences",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about learning preferences is most useful for teachers?",
+      "options": [
+        "They can influence how comfortable or engaged learners feel with activities",
+        "They determine what a learner is capable of learning",
+        "They never change"
+      ],
+      "correctAnswer": "They can influence how comfortable or engaged learners feel with activities",
+      "explanation": "Preferences can affect engagement, but they should not be treated as fixed measures of ability."
+    },
+    {
+      "id": "M1-U11-025",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_preferences",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why is it unhelpful to treat a preference as a permanent limitation?",
+      "options": [
+        "Learners can use and develop a range of ways of learning",
+        "A preference is a medical diagnosis",
+        "Preferences apply only to children"
+      ],
+      "correctAnswer": "Learners can use and develop a range of ways of learning",
+      "explanation": "Preferences describe tendencies, not fixed boundaries on learning."
+    },
+    {
+      "id": "M1-U11-026",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_preferences",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner enjoys role play and learns well through active participation. Which learner characteristic is most directly involved?",
+      "options": [
+        "Learning preference",
+        "Professional need",
+        "L1 interference"
+      ],
+      "correctAnswer": "Learning preference",
+      "explanation": "The example describes a preferred way of participating in learning."
+    },
+    {
+      "id": "M1-U11-027",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_preferences",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which lesson plan best acknowledges different learning preferences?",
+      "options": [
+        "It combines examples, discussion, short written work and active practice where appropriate",
+        "It uses only one activity type throughout every lesson",
+        "It permanently separates learners by supposed type"
+      ],
+      "correctAnswer": "It combines examples, discussion, short written work and active practice where appropriate",
+      "explanation": "A varied lesson can provide multiple ways to engage with content."
+    },
+    {
+      "id": "M1-U11-028",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_preferences",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement should a TKT candidate choose?",
+      "options": [
+        "Learning preferences may affect how learners respond to activities",
+        "A visual preference means a learner cannot learn through listening",
+        "Learning preferences are identical to language level"
+      ],
+      "correctAnswer": "Learning preferences may affect how learners respond to activities",
+      "explanation": "Preferences can influence engagement and response, but they do not define absolute ability."
+    },
+    {
+      "id": "M1-U11-029",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_preferences",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A teacher notices some learners like individual reflection while others prefer collaborative discussion. What is the teacher observing?",
+      "options": [
+        "Different learning preferences",
+        "Different verb tenses",
+        "Different phonemes"
+      ],
+      "correctAnswer": "Different learning preferences",
+      "explanation": "Learners may prefer different interaction patterns and modes of working."
+    },
+    {
+      "id": "M1-U11-030",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_preferences",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the best pedagogic implication of learning preferences?",
+      "options": [
+        "Offer variety while still helping learners develop flexibility",
+        "Teach each learner only through one preferred mode",
+        "Ignore all learner reactions to activities"
+      ],
+      "correctAnswer": "Offer variety while still helping learners develop flexibility",
+      "explanation": "Good teaching responds to preferences without restricting learners to them."
+    },
+    {
+      "id": "M1-U11-031",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_strategies",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner writes new vocabulary in a notebook and reviews it regularly. What is this?",
+      "options": [
+        "A learning strategy",
+        "A learner need",
+        "A fossilised error"
+      ],
+      "correctAnswer": "A learning strategy",
+      "explanation": "A learning strategy is a deliberate action a learner uses to support learning."
+    },
+    {
+      "id": "M1-U11-032",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_strategies",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which example is a learning strategy?",
+      "options": [
+        "Guessing the meaning of a word from context",
+        "Being 25 years old",
+        "Needing English for a job"
+      ],
+      "correctAnswer": "Guessing the meaning of a word from context",
+      "explanation": "The learner is using a purposeful technique to solve a learning problem."
+    },
+    {
+      "id": "M1-U11-033",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_strategies",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner checks understanding by asking, “Do I really know how to use this?” Which strategy is this closest to?",
+      "options": [
+        "Self-monitoring",
+        "L1 interference",
+        "Silent period"
+      ],
+      "correctAnswer": "Self-monitoring",
+      "explanation": "The learner is monitoring their own knowledge and performance."
+    },
+    {
+      "id": "M1-U11-034",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_strategies",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "How can teachers help learners develop learning strategies?",
+      "options": [
+        "Model useful strategies and give learners chances to practise them",
+        "Keep all strategy decisions secret",
+        "Tell learners there is only one correct strategy"
+      ],
+      "correctAnswer": "Model useful strategies and give learners chances to practise them",
+      "explanation": "Strategies can be made explicit and practised so learners become more independent."
+    },
+    {
+      "id": "M1-U11-035",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learning_strategies",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which strategy most directly supports learner autonomy?",
+      "options": [
+        "Setting personal goals and monitoring progress",
+        "Waiting for the teacher to make every decision",
+        "Avoiding reflection"
+      ],
+      "correctAnswer": "Setting personal goals and monitoring progress",
+      "explanation": "Goal-setting and self-monitoring help learners take greater responsibility for learning."
+    },
+    {
+      "id": "M1-U11-036",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_strategies",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner uses flashcards with spaced review to remember vocabulary. Which characteristic is this?",
+      "options": [
+        "Learning strategy",
+        "Maturity",
+        "Learning context"
+      ],
+      "correctAnswer": "Learning strategy",
+      "explanation": "The learner is using a deliberate technique to improve retention."
+    },
+    {
+      "id": "M1-U11-037",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_strategies",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which behaviour shows a compensation strategy?",
+      "options": [
+        "Paraphrasing when the exact word is unknown",
+        "Refusing to communicate until every word is known",
+        "Copying the date from the board"
+      ],
+      "correctAnswer": "Paraphrasing when the exact word is unknown",
+      "explanation": "Paraphrasing helps a learner communicate despite a gap in language knowledge."
+    },
+    {
+      "id": "M1-U11-038",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_strategies",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about learning strategies is most accurate?",
+      "options": [
+        "Different strategies may be useful for different tasks and learners",
+        "One strategy is best for every learner and task",
+        "Strategies are the same as learner needs"
+      ],
+      "correctAnswer": "Different strategies may be useful for different tasks and learners",
+      "explanation": "Effective strategy use depends on the task, learner and learning goal."
+    },
+    {
+      "id": "M1-U11-039",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_strategies",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner decides to listen to English for ten minutes every day and records progress. What is most clearly demonstrated?",
+      "options": [
+        "Goal-setting and self-monitoring",
+        "L1 interference",
+        "A silent period"
+      ],
+      "correctAnswer": "Goal-setting and self-monitoring",
+      "explanation": "The learner plans learning and tracks progress independently."
+    },
+    {
+      "id": "M1-U11-040",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learning_strategies",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher action best develops strategic competence as a learner?",
+      "options": [
+        "Ask learners to reflect on which strategies helped and why",
+        "Give answers without discussing process",
+        "Prevent learners from evaluating their own work"
+      ],
+      "correctAnswer": "Ask learners to reflect on which strategies helped and why",
+      "explanation": "Reflection helps learners become more aware of useful strategies and when to use them."
+    },
+    {
+      "id": "M1-U11-041",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "past_learning_experience",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner is used to grammar translation and feels uncomfortable when a new teacher uses pair work. Which characteristic is most relevant?",
+      "options": [
+        "Past language-learning experience",
+        "Word stress",
+        "Professional need"
+      ],
+      "correctAnswer": "Past language-learning experience",
+      "explanation": "Previous classroom experience can shape expectations about what learning should look like."
+    },
+    {
+      "id": "M1-U11-042",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "past_learning_experience",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner previously failed a language course and now lacks confidence. Which factor may be influencing the learner?",
+      "options": [
+        "Past learning experience",
+        "Collocation",
+        "Age only"
+      ],
+      "correctAnswer": "Past learning experience",
+      "explanation": "Previous success or failure can affect confidence and expectations."
+    },
+    {
+      "id": "M1-U11-043",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "past_learning_experience",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why should a teacher ask learners about previous language courses?",
+      "options": [
+        "Past experiences may affect expectations, confidence and preferred classroom routines",
+        "It determines their CEFR level automatically",
+        "It eliminates the need for assessment"
+      ],
+      "correctAnswer": "Past experiences may affect expectations, confidence and preferred classroom routines",
+      "explanation": "Previous learning can shape beliefs about teaching and learning."
+    },
+    {
+      "id": "M1-U11-044",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "past_learning_experience",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner expects the teacher to explain every grammar rule because that was normal in previous courses. What is this an example of?",
+      "options": [
+        "Past learning experience influencing expectations",
+        "L1 interference",
+        "Fossilisation"
+      ],
+      "correctAnswer": "Past learning experience influencing expectations",
+      "explanation": "Learners can develop strong beliefs about effective teaching from previous classrooms."
+    },
+    {
+      "id": "M1-U11-045",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "past_learning_experience",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "How should a teacher respond when a new approach differs greatly from learners' previous experience?",
+      "options": [
+        "Explain the purpose of the new approach and introduce it supportively",
+        "Assume resistance means learners are lazy",
+        "Change everything without explanation"
+      ],
+      "correctAnswer": "Explain the purpose of the new approach and introduce it supportively",
+      "explanation": "Making the rationale clear can help learners adapt to unfamiliar methods."
+    },
+    {
+      "id": "M1-U11-046",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "past_learning_experience",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner strongly prefers teacher correction because previous courses were highly teacher-centred. Which factor may explain this?",
+      "options": [
+        "Past language-learning experience",
+        "Professional need",
+        "Age alone"
+      ],
+      "correctAnswer": "Past language-learning experience",
+      "explanation": "Previous teaching styles can shape expectations about teacher and learner roles."
+    },
+    {
+      "id": "M1-U11-047",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "past_learning_experience",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which previous experience is most likely to reduce confidence?",
+      "options": [
+        "Repeated unsuccessful attempts to learn a language",
+        "Successful completion of a challenging course",
+        "Receiving useful feedback"
+      ],
+      "correctAnswer": "Repeated unsuccessful attempts to learn a language",
+      "explanation": "Past failure can influence present confidence and motivation."
+    },
+    {
+      "id": "M1-U11-048",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "past_learning_experience",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about past learning experience is most accurate?",
+      "options": [
+        "It can affect how learners respond to a teacher's methods",
+        "It has no effect once a new course begins",
+        "It determines future success completely"
+      ],
+      "correctAnswer": "It can affect how learners respond to a teacher's methods",
+      "explanation": "Prior experience influences expectations but does not determine all future learning."
+    },
+    {
+      "id": "M1-U11-049",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "past_learning_experience",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A class dislikes pair work because they have almost never used it before. What is a sensible first response?",
+      "options": [
+        "Teach the routine gradually and explain its purpose",
+        "Conclude that pair work can never work with them",
+        "Force complex pair tasks immediately without support"
+      ],
+      "correctAnswer": "Teach the routine gradually and explain its purpose",
+      "explanation": "Learners may need support to adapt to an unfamiliar classroom procedure."
+    },
+    {
+      "id": "M1-U11-050",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "past_learning_experience",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher question would best reveal relevant past learning experience?",
+      "options": [
+        "What kinds of English classes and activities have you done before?",
+        "What is your favourite colour?",
+        "How many syllables are in 'teacher'?"
+      ],
+      "correctAnswer": "What kinds of English classes and activities have you done before?",
+      "explanation": "The question directly explores previous language-learning experiences."
+    },
+    {
+      "id": "M1-U11-051",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learner_needs",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner needs English to give presentations at work. What type of need is this primarily?",
+      "options": [
+        "Professional need",
+        "Pronunciation slip",
+        "Learning preference"
+      ],
+      "correctAnswer": "Professional need",
+      "explanation": "The language is needed for present or future employment."
+    },
+    {
+      "id": "M1-U11-052",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learner_needs",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner wants to pass an English-medium university course. Which type of need is especially relevant?",
+      "options": [
+        "Learning/academic need",
+        "Word stress need",
+        "Age characteristic only"
+      ],
+      "correctAnswer": "Learning/academic need",
+      "explanation": "The learner needs English to study successfully in an educational context."
+    },
+    {
+      "id": "M1-U11-053",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learner_needs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which is an example of a personal learner need?",
+      "options": [
+        "Wanting English to communicate while travelling",
+        "Needing to master a company's reporting format",
+        "Needing a specific exam score for university admission"
+      ],
+      "correctAnswer": "Wanting English to communicate while travelling",
+      "explanation": "Personal needs can arise from individual interests, lifestyle and communication goals."
+    },
+    {
+      "id": "M1-U11-054",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learner_needs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why is needs analysis useful?",
+      "options": [
+        "It helps teachers choose relevant content, skills and priorities",
+        "It guarantees all learners want the same syllabus",
+        "It replaces all assessment"
+      ],
+      "correctAnswer": "It helps teachers choose relevant content, skills and priorities",
+      "explanation": "Understanding learner needs supports more purposeful course and lesson planning."
+    },
+    {
+      "id": "M1-U11-055",
+      "module": 1,
+      "unit": 11,
+      "section": "practice",
+      "skill": "learner_needs",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner needs English for customer calls, has little study time and wants to become more independent. Which statement is best?",
+      "options": [
+        "Needs can include professional goals, learning conditions and learner autonomy",
+        "Only the job goal counts as a need",
+        "Time availability is unrelated to learning"
+      ],
+      "correctAnswer": "Needs can include professional goals, learning conditions and learner autonomy",
+      "explanation": "Learner needs can be personal, learning-related and professional, and can include practical constraints."
+    },
+    {
+      "id": "M1-U11-056",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learner_needs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which learner most clearly has a future professional need?",
+      "options": [
+        "A nursing student who will work in an English-speaking hospital",
+        "A learner who likes blue notebooks",
+        "A learner who prefers diagrams"
+      ],
+      "correctAnswer": "A nursing student who will work in an English-speaking hospital",
+      "explanation": "The learner will need English for future employment."
+    },
+    {
+      "id": "M1-U11-057",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learner_needs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner has only 20 minutes a day available for independent study. Which category can this inform?",
+      "options": [
+        "Learning needs",
+        "Phonology only",
+        "L1 interference"
+      ],
+      "correctAnswer": "Learning needs",
+      "explanation": "Time availability affects how learning can realistically be organised."
+    },
+    {
+      "id": "M1-U11-058",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learner_needs",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which course decision best reflects learner needs?",
+      "options": [
+        "Prioritise telephone language for learners who handle international calls",
+        "Teach identical content regardless of learners' goals",
+        "Choose topics only because the teacher likes them"
+      ],
+      "correctAnswer": "Prioritise telephone language for learners who handle international calls",
+      "explanation": "Relevant language content should reflect learners' real communicative goals."
+    },
+    {
+      "id": "M1-U11-059",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learner_needs",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which question is most useful in a needs analysis?",
+      "options": [
+        "What do you need to do in English now or in the future?",
+        "Which English letter do you like best?",
+        "Can you name three prepositions?"
+      ],
+      "correctAnswer": "What do you need to do in English now or in the future?",
+      "explanation": "The question identifies real personal, learning or professional purposes."
+    },
+    {
+      "id": "M1-U11-060",
+      "module": 1,
+      "unit": 11,
+      "section": "test",
+      "skill": "learner_needs",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about learner needs is most accurate?",
+      "options": [
+        "Different learners in the same class may have different personal, learning and professional needs",
+        "All learners at the same level have identical needs",
+        "Needs are the same as learning preferences"
+      ],
+      "correctAnswer": "Different learners in the same class may have different personal, learning and professional needs",
+      "explanation": "Language level alone does not determine why, what or how learners need to learn."
+    }
+  ],
+  "matchingSets": [
+    {
+      "id": "M1-U11-MATCH-P01",
+      "section": "practice",
+      "instruction": "Match each learner description with the most relevant characteristic or need.",
+      "optionBank": [
+        "Age and maturity",
+        "Learning context",
+        "Learning preference",
+        "Learning strategy",
+        "Past learning experience",
+        "Learner need"
+      ],
+      "items": [
+        {
+          "example": "A teenager is very self-conscious about making mistakes in front of classmates.",
+          "correctAnswer": "Age and maturity"
+        },
+        {
+          "example": "A learner uses English daily at work but another only uses it in class.",
+          "correctAnswer": "Learning context"
+        },
+        {
+          "example": "A learner says diagrams help her understand new language.",
+          "correctAnswer": "Learning preference"
+        },
+        {
+          "example": "A learner reviews vocabulary with spaced flashcards.",
+          "correctAnswer": "Learning strategy"
+        },
+        {
+          "example": "A learner expects grammar translation because previous courses used it.",
+          "correctAnswer": "Past learning experience"
+        },
+        {
+          "example": "A learner needs English to give presentations at work.",
+          "correctAnswer": "Learner need"
+        }
+      ]
+    },
+    {
+      "id": "M1-U11-MATCH-T01",
+      "section": "test",
+      "instruction": "Match each example with the most relevant TKT concept.",
+      "optionBank": [
+        "Maturity",
+        "Ways of learning",
+        "Learning preference",
+        "Learning strategy",
+        "Past language-learning experience",
+        "Professional need"
+      ],
+      "items": [
+        {
+          "example": "Ability to manage longer abstract tasks develops with age.",
+          "correctAnswer": "Maturity"
+        },
+        {
+          "example": "An adult consciously analyses grammar rules.",
+          "correctAnswer": "Ways of learning"
+        },
+        {
+          "example": "A learner prefers collaborative discussion to individual reflection.",
+          "correctAnswer": "Learning preference"
+        },
+        {
+          "example": "A learner sets a weekly goal and monitors progress.",
+          "correctAnswer": "Learning strategy"
+        },
+        {
+          "example": "Previous unsuccessful courses have reduced confidence.",
+          "correctAnswer": "Past language-learning experience"
+        },
+        {
+          "example": "A learner will need English for international customer calls.",
+          "correctAnswer": "Professional need"
+        }
+      ]
+    }
+  ]
+}

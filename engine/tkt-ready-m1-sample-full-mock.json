@@ -1,0 +1,1304 @@
+{
+  "product": "TKT Ready",
+  "module": 1,
+  "mode": "full_mock",
+  "title": "Module 1 Full Mock — Sample Generated Attempt",
+  "durationMinutes": 80,
+  "feedbackDuringAttempt": false,
+  "taskCount": 13,
+  "questionCount": 80,
+  "unitCoverage": {
+    "1": 5,
+    "2": 5,
+    "3": 5,
+    "4": 5,
+    "5": 5,
+    "6": 5,
+    "7": 5,
+    "8": 5,
+    "9": 5,
+    "10": 5,
+    "11": 5,
+    "12": 6,
+    "13": 6,
+    "14": 6,
+    "15": 7
+  },
+  "tasks": [
+    {
+      "taskId": "P1-T1",
+      "part": 1,
+      "taskType": "multiple_choice",
+      "unitIds": [
+        5,
+        2
+      ],
+      "questionCount": 10,
+      "instruction": "Choose the best answer for each question.",
+      "items": [
+        {
+          "id": "M1-U2-042",
+          "module": 1,
+          "unit": 2,
+          "section": "test",
+          "skill": "past_perfect_simple",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "Which form correctly represents the past perfect simple?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "was + -ing form",
+            "have + past participle",
+            "had + past participle"
+          ],
+          "correctAnswer": "had + past participle",
+          "explanation": "The past perfect simple uses “had” plus the past participle."
+        },
+        {
+          "id": "M1-U5-058",
+          "module": 1,
+          "unit": 5,
+          "section": "test",
+          "skill": "sentence_stress",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "Compare “I sent the EMAIL” and “I SENT the email.”",
+          "prompt": "What changes most directly?",
+          "options": [
+            "The focus or contrast of the message",
+            "The number of phonemes",
+            "The grammatical tense"
+          ],
+          "correctAnswer": "The focus or contrast of the message",
+          "explanation": "Moving sentence stress changes which information is especially important."
+        },
+        {
+          "id": "M1-U2-031",
+          "module": 1,
+          "unit": 2,
+          "section": "test",
+          "skill": "present_simple",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "The library closes at six every evening.",
+          "prompt": "Which use of the present simple is shown?",
+          "options": [
+            "A regular schedule",
+            "An action happening now",
+            "A recently completed action"
+          ],
+          "correctAnswer": "A regular schedule",
+          "explanation": "The present simple can describe regular schedules and timetables."
+        },
+        {
+          "id": "M1-U5-038",
+          "module": 1,
+          "unit": 5,
+          "section": "test",
+          "skill": "minimal_pairs",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "Which pair is NOT a minimal pair?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "ship / sheep",
+            "fan / van",
+            "ship / teacher"
+          ],
+          "correctAnswer": "ship / teacher",
+          "explanation": "The words differ in several phonemes and syllables."
+        },
+        {
+          "id": "M1-U5-037",
+          "module": 1,
+          "unit": 5,
+          "section": "test",
+          "skill": "minimal_pairs",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "“cap” and “cab” differ only in their final consonant phoneme.",
+          "prompt": "What are they?",
+          "options": [
+            "Homophones",
+            "A word family",
+            "A minimal pair"
+          ],
+          "correctAnswer": "A minimal pair",
+          "explanation": "They differ by one phoneme and have different meanings."
+        },
+        {
+          "id": "M1-U5-048",
+          "module": 1,
+          "unit": 5,
+          "section": "test",
+          "skill": "word_stress",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "Which pair best illustrates a stress shift within a word family?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "BIG / large",
+            "SEE / sea",
+            "PHOtograph / phoTOGraphy"
+          ],
+          "correctAnswer": "PHOtograph / phoTOGraphy",
+          "explanation": "The main stress shifts across related forms."
+        },
+        {
+          "id": "M1-U2-037",
+          "module": 1,
+          "unit": 2,
+          "section": "test",
+          "skill": "present_perfect_simple",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "We have already completed Module 1.",
+          "prompt": "What is the grammatical structure?",
+          "options": [
+            "Past perfect simple",
+            "Present perfect continuous",
+            "Present perfect simple"
+          ],
+          "correctAnswer": "Present perfect simple",
+          "explanation": "“Have completed” is present perfect simple."
+        },
+        {
+          "id": "M1-U2-033",
+          "module": 1,
+          "unit": 2,
+          "section": "test",
+          "skill": "present_continuous",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "More teachers are using digital resources this year.",
+          "prompt": "What use of the present continuous is shown?",
+          "options": [
+            "A completed action in the past",
+            "A fixed historical fact",
+            "A changing or temporary situation around the present"
+          ],
+          "correctAnswer": "A changing or temporary situation around the present",
+          "explanation": "The present continuous can describe developments or temporary situations around the present."
+        },
+        {
+          "id": "M1-U2-059",
+          "module": 1,
+          "unit": 2,
+          "section": "test",
+          "skill": "gerund",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "Which sentence uses an -ing form as a gerund rather than as part of a continuous verb?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "She is planning a lesson.",
+            "She was planning when I called.",
+            "She enjoys planning lessons."
+          ],
+          "correctAnswer": "She enjoys planning lessons.",
+          "explanation": "After “enjoys”, “planning” functions as a noun-like complement, so it is a gerund."
+        },
+        {
+          "id": "M1-U5-046",
+          "module": 1,
+          "unit": 5,
+          "section": "test",
+          "skill": "word_stress",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "Which word is typically stressed on the second syllable?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "teacher",
+            "comfortable",
+            "banana"
+          ],
+          "correctAnswer": "banana",
+          "explanation": "“Banana” is typically ba-NA-na."
+        }
+      ]
+    },
+    {
+      "taskId": "P1-T2",
+      "part": 1,
+      "taskType": "matching",
+      "unitIds": [
+        8
+      ],
+      "questionCount": 5,
+      "instruction": "Match each description with the correct language-skill term.",
+      "optionBank": [
+        "Summarising",
+        "Using interactive strategies",
+        "Reading/listening for detail",
+        "Accuracy",
+        "Authenticity",
+        "Skimming"
+      ],
+      "items": [
+        {
+          "id": "M1-U8-MATCH-T01-Q6",
+          "unit": 8,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Use a real-world text created for genuine communication.",
+          "correctAnswer": "Authenticity"
+        },
+        {
+          "id": "M1-U8-MATCH-T01-Q5",
+          "unit": 8,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Use language correctly.",
+          "correctAnswer": "Accuracy"
+        },
+        {
+          "id": "M1-U8-MATCH-T01-Q1",
+          "unit": 8,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Read rapidly to get an overview.",
+          "correctAnswer": "Skimming"
+        },
+        {
+          "id": "M1-U8-MATCH-T01-Q2",
+          "unit": 8,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Understand specific information carefully.",
+          "correctAnswer": "Reading/listening for detail"
+        },
+        {
+          "id": "M1-U8-MATCH-T01-Q3",
+          "unit": 8,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Ask for clarification and keep a conversation going.",
+          "correctAnswer": "Using interactive strategies"
+        }
+      ]
+    },
+    {
+      "taskId": "P1-T3",
+      "part": 1,
+      "taskType": "multiple_choice",
+      "unitIds": [
+        4,
+        3
+      ],
+      "questionCount": 10,
+      "instruction": "Choose the best answer for each question.",
+      "items": [
+        {
+          "id": "M1-U3-048",
+          "module": 1,
+          "unit": 3,
+          "section": "test",
+          "skill": "word_family",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "Which feature is essential to a word family?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "A shared root or base word",
+            "Exactly the same spelling",
+            "Exactly the same part of speech"
+          ],
+          "correctAnswer": "A shared root or base word",
+          "explanation": "Word-family members are connected through a common root or base; their word classes and forms may differ."
+        },
+        {
+          "id": "M1-U4-032",
+          "module": 1,
+          "unit": 4,
+          "section": "test",
+          "skill": "synonym",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "The teacher asks learners to match “rapid” with “fast”.",
+          "prompt": "Which lexical relationship is being tested?",
+          "options": [
+            "Synonymy",
+            "Homophony",
+            "Antonymy"
+          ],
+          "correctAnswer": "Synonymy",
+          "explanation": "“Rapid” and “fast” have similar meanings in many contexts."
+        },
+        {
+          "id": "M1-U3-049",
+          "module": 1,
+          "unit": 3,
+          "section": "test",
+          "skill": "false_friend",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "An English learner sees a target-language word that resembles an L1 word and assumes the meanings are identical, but they are not.",
+          "prompt": "Which term applies?",
+          "options": [
+            "Homonym",
+            "Phrasal verb",
+            "False friend"
+          ],
+          "correctAnswer": "False friend",
+          "explanation": "A false friend creates misleading cross-language similarity in form or sound."
+        },
+        {
+          "id": "M1-U3-046",
+          "module": 1,
+          "unit": 3,
+          "section": "test",
+          "skill": "word_family",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "Which set forms a word family?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "speak, talk, say",
+            "pen, pencil, notebook",
+            "analyse, analysis, analytical"
+          ],
+          "correctAnswer": "analyse, analysis, analytical",
+          "explanation": "These forms share a common root and are related through word formation."
+        },
+        {
+          "id": "M1-U4-036",
+          "module": 1,
+          "unit": 4,
+          "section": "test",
+          "skill": "antonym",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "Which pair has opposite meanings?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "increase / rise",
+            "increase / decrease",
+            "increase / growth"
+          ],
+          "correctAnswer": "increase / decrease",
+          "explanation": "“Increase” and “decrease” express opposing meanings."
+        },
+        {
+          "id": "M1-U3-036",
+          "module": 1,
+          "unit": 3,
+          "section": "test",
+          "skill": "prefix",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "What is the function of “re-” in “reconsider”?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "It creates a compound from two independent words",
+            "It is a suffix that changes the word class",
+            "It is a prefix that adds meaning to the base verb"
+          ],
+          "correctAnswer": "It is a prefix that adds meaning to the base verb",
+          "explanation": "“Re-” occurs before “consider” and typically adds the meaning of doing something again."
+        },
+        {
+          "id": "M1-U4-057",
+          "module": 1,
+          "unit": 4,
+          "section": "test",
+          "skill": "register",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "Which expression would be most appropriate in a formal email to an examination centre?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "I am writing to enquire about the test date.",
+            "Just wanna know the date.",
+            "Hey, when's the test?"
+          ],
+          "correctAnswer": "I am writing to enquire about the test date.",
+          "explanation": "The wording is appropriately formal and professional."
+        },
+        {
+          "id": "M1-U4-055",
+          "module": 1,
+          "unit": 4,
+          "section": "test",
+          "skill": "collocation",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "A learner knows the meaning of “decision” but repeatedly says “do a decision”. What knowledge is mainly missing?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "Knowledge of antonyms",
+            "Collocational knowledge",
+            "Knowledge of homophones"
+          ],
+          "correctAnswer": "Collocational knowledge",
+          "explanation": "The learner needs to know which words typically combine with “decision”."
+        },
+        {
+          "id": "M1-U3-035",
+          "module": 1,
+          "unit": 3,
+          "section": "test",
+          "skill": "prefix",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "Which word is formed by adding a prefix to a base word?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "notebook",
+            "impossible",
+            "movement"
+          ],
+          "correctAnswer": "impossible",
+          "explanation": "“Im-” is a prefix added to the base adjective “possible”."
+        },
+        {
+          "id": "M1-U4-060",
+          "module": 1,
+          "unit": 4,
+          "section": "test",
+          "skill": "register",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "Which statement about register is most accurate?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "Appropriate language choices depend on audience, purpose and situation",
+            "Formal language is always better than informal language",
+            "Register concerns pronunciation only"
+          ],
+          "correctAnswer": "Appropriate language choices depend on audience, purpose and situation",
+          "explanation": "Register is about selecting language appropriate to context, including audience, purpose and degree of formality."
+        }
+      ]
+    },
+    {
+      "taskId": "P1-T4",
+      "part": 1,
+      "taskType": "multiple_choice",
+      "unitIds": [
+        7
+      ],
+      "questionCount": 5,
+      "instruction": "Choose the best answer for each question.",
+      "items": [
+        {
+          "id": "M1-U7-058",
+          "module": 1,
+          "unit": 7,
+          "section": "test",
+          "skill": "refusals",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "A learner says to a client, “No way. I won't do that.”",
+          "prompt": "What is the main appropriacy problem?",
+          "options": [
+            "The learner is making an invitation",
+            "The refusal is too direct and informal",
+            "The learner is thanking the client"
+          ],
+          "correctAnswer": "The refusal is too direct and informal",
+          "explanation": "The communicative function is clear, but the exponent is inappropriate for a professional relationship."
+        },
+        {
+          "id": "M1-U7-019",
+          "module": 1,
+          "unit": 7,
+          "section": "test",
+          "skill": "invitations",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "In “Would you like to come to dinner?”, what is “Would you like to...”?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "A phonological feature",
+            "A definition of register",
+            "An exponent of inviting"
+          ],
+          "correctAnswer": "An exponent of inviting",
+          "explanation": "An exponent is the actual language used to realise a communicative function."
+        },
+        {
+          "id": "M1-U7-017",
+          "module": 1,
+          "unit": 7,
+          "section": "test",
+          "skill": "invitations",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "“Why don't we have lunch together?”",
+          "prompt": "What function does this exponent most likely perform?",
+          "options": [
+            "Thanking",
+            "Requesting permission",
+            "Inviting/suggesting a shared activity"
+          ],
+          "correctAnswer": "Inviting/suggesting a shared activity",
+          "explanation": "The speaker proposes a shared activity and invites the listener to take part."
+        },
+        {
+          "id": "M1-U7-040",
+          "module": 1,
+          "unit": 7,
+          "section": "test",
+          "skill": "thanking",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "Which statement best describes the relationship between function and exponent?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "An exponent is the same as a phoneme",
+            "Every function has one fixed sentence",
+            "The function “thanking” can be realised through many different exponents"
+          ],
+          "correctAnswer": "The function “thanking” can be realised through many different exponents",
+          "explanation": "A function is the communicative purpose; an exponent is the language form used to express it."
+        },
+        {
+          "id": "M1-U7-056",
+          "module": 1,
+          "unit": 7,
+          "section": "test",
+          "skill": "refusals",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "Which exponent most clearly expresses a polite refusal?",
+          "prompt": "Choose the best answer.",
+          "options": [
+            "Come with us!",
+            "Thank you very much.",
+            "I'd love to, but I'm afraid I can't."
+          ],
+          "correctAnswer": "I'd love to, but I'm afraid I can't.",
+          "explanation": "The speaker declines while maintaining politeness."
+        }
+      ]
+    },
+    {
+      "taskId": "P1-T5",
+      "part": 1,
+      "taskType": "matching",
+      "unitIds": [
+        6
+      ],
+      "questionCount": 5,
+      "instruction": "Match each description with the correct phonological term.",
+      "optionBank": [
+        "Weak form",
+        "Contraction",
+        "Connected speech",
+        "Intonation",
+        "Linking",
+        "Elision"
+      ],
+      "items": [
+        {
+          "id": "M1-U6-MATCH-T01-Q2",
+          "unit": 6,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Umbrella term for sound changes in continuous spoken language",
+          "correctAnswer": "Connected speech"
+        },
+        {
+          "id": "M1-U6-MATCH-T01-Q3",
+          "unit": 6,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Connection of sounds across neighbouring words",
+          "correctAnswer": "Linking"
+        },
+        {
+          "id": "M1-U6-MATCH-T01-Q4",
+          "unit": 6,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Reduced pronunciation of an unstressed function word",
+          "correctAnswer": "Weak form"
+        },
+        {
+          "id": "M1-U6-MATCH-T01-Q5",
+          "unit": 6,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Shortened form such as we've or can't",
+          "correctAnswer": "Contraction"
+        },
+        {
+          "id": "M1-U6-MATCH-T01-Q1",
+          "unit": 6,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Pitch movement that can express attitude",
+          "correctAnswer": "Intonation"
+        }
+      ]
+    },
+    {
+      "taskId": "P1-T6",
+      "part": 1,
+      "taskType": "matching",
+      "unitIds": [
+        1
+      ],
+      "questionCount": 5,
+      "instruction": "Match each example with the correct grammatical term.",
+      "optionBank": [
+        "Possessive pronoun",
+        "Modal verb",
+        "Conjunction",
+        "Exclamation",
+        "Uncountable noun",
+        "Preposition"
+      ],
+      "items": [
+        {
+          "id": "M1-U1-MATCH-T01-Q2",
+          "unit": 1,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "might",
+          "correctAnswer": "Modal verb"
+        },
+        {
+          "id": "M1-U1-MATCH-T01-Q4",
+          "unit": 1,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "through",
+          "correctAnswer": "Preposition"
+        },
+        {
+          "id": "M1-U1-MATCH-T01-Q5",
+          "unit": 1,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "unless",
+          "correctAnswer": "Conjunction"
+        },
+        {
+          "id": "M1-U1-MATCH-T01-Q1",
+          "unit": 1,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "equipment",
+          "correctAnswer": "Uncountable noun"
+        },
+        {
+          "id": "M1-U1-MATCH-T01-Q3",
+          "unit": 1,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "ours",
+          "correctAnswer": "Possessive pronoun"
+        }
+      ]
+    },
+    {
+      "taskId": "P2-T1",
+      "part": 2,
+      "taskType": "matching",
+      "unitIds": [
+        11
+      ],
+      "questionCount": 5,
+      "instruction": "Match each example with the most relevant TKT concept.",
+      "optionBank": [
+        "Learning preference",
+        "Ways of learning",
+        "Past language-learning experience",
+        "Professional need",
+        "Maturity",
+        "Learning strategy"
+      ],
+      "items": [
+        {
+          "id": "M1-U11-MATCH-T01-Q6",
+          "unit": 11,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "A learner will need English for international customer calls.",
+          "correctAnswer": "Professional need"
+        },
+        {
+          "id": "M1-U11-MATCH-T01-Q3",
+          "unit": 11,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "A learner prefers collaborative discussion to individual reflection.",
+          "correctAnswer": "Learning preference"
+        },
+        {
+          "id": "M1-U11-MATCH-T01-Q5",
+          "unit": 11,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Previous unsuccessful courses have reduced confidence.",
+          "correctAnswer": "Past language-learning experience"
+        },
+        {
+          "id": "M1-U11-MATCH-T01-Q2",
+          "unit": 11,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "An adult consciously analyses grammar rules.",
+          "correctAnswer": "Ways of learning"
+        },
+        {
+          "id": "M1-U11-MATCH-T01-Q4",
+          "unit": 11,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "A learner sets a weekly goal and monitors progress.",
+          "correctAnswer": "Learning strategy"
+        }
+      ]
+    },
+    {
+      "taskId": "P2-T2",
+      "part": 2,
+      "taskType": "multiple_choice",
+      "unitIds": [
+        10
+      ],
+      "questionCount": 5,
+      "instruction": "Choose the best answer for each question.",
+      "items": [
+        {
+          "id": "M1-U10-030",
+          "module": 1,
+          "unit": 10,
+          "section": "test",
+          "skill": "l1_interference",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "Which example is least likely to be caused primarily by L1 interference?",
+          "options": [
+            "A learner substitutes an L1 sound for an unfamiliar English sound",
+            "A learner says “goed” after learning regular past -ed",
+            "A learner transfers L1 word order into English"
+          ],
+          "correctAnswer": "A learner says “goed” after learning regular past -ed",
+          "explanation": "“Goed” is typically explained by overgeneralisation/development rather than direct L1 transfer."
+        },
+        {
+          "id": "M1-U10-038",
+          "module": 1,
+          "unit": 10,
+          "section": "test",
+          "skill": "overgeneralisation",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "Which statement is most accurate?",
+          "options": [
+            "Overgeneralisation means the learner has learned no rule",
+            "Overgeneralisation can show partial learning of a rule",
+            "It always comes from L1"
+          ],
+          "correctAnswer": "Overgeneralisation can show partial learning of a rule",
+          "explanation": "The learner has learned a productive rule but not yet its limits or exceptions."
+        },
+        {
+          "id": "M1-U10-037",
+          "module": 1,
+          "unit": 10,
+          "section": "test",
+          "skill": "overgeneralisation",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "Which learner error most clearly shows overgeneralisation?",
+          "options": [
+            "Using a direct translation from L1",
+            "One accidental misspelling",
+            "“Childs” instead of “children”"
+          ],
+          "correctAnswer": "“Childs” instead of “children”",
+          "explanation": "The regular plural rule is being applied to an irregular noun."
+        },
+        {
+          "id": "M1-U10-020",
+          "module": 1,
+          "unit": 10,
+          "section": "test",
+          "skill": "developmental_error",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "Which example is least likely to be a developmental error?",
+          "options": [
+            "A learner says “foots” for “feet”",
+            "A learner accidentally writes “teh” for “the” once",
+            "A learner says “buyed” for “bought”"
+          ],
+          "correctAnswer": "A learner accidentally writes “teh” for “the” once",
+          "explanation": "A one-off typing mistake is more likely to be a slip than a developmental error."
+        },
+        {
+          "id": "M1-U10-049",
+          "module": 1,
+          "unit": 10,
+          "section": "test",
+          "skill": "interlanguage",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "Why can two learners at the same level have different interlanguage systems?",
+          "options": [
+            "Interlanguage is random",
+            "They may have different L1s, experiences and developing hypotheses",
+            "All learners should have identical systems"
+          ],
+          "correctAnswer": "They may have different L1s, experiences and developing hypotheses",
+          "explanation": "Learner language develops individually based on prior knowledge and experience."
+        }
+      ]
+    },
+    {
+      "taskId": "P2-T3",
+      "part": 2,
+      "taskType": "matching",
+      "unitIds": [
+        9
+      ],
+      "questionCount": 5,
+      "instruction": "Match each description with the correct term.",
+      "optionBank": [
+        "Acquisition",
+        "Focus on form",
+        "Motivation",
+        "Exposure",
+        "Silent period",
+        "Interaction"
+      ],
+      "items": [
+        {
+          "id": "M1-U9-MATCH-T01-Q1",
+          "unit": 9,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Willingness and reasons for learning.",
+          "correctAnswer": "Motivation"
+        },
+        {
+          "id": "M1-U9-MATCH-T01-Q6",
+          "unit": 9,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Attention to a language feature within meaning-focused activity.",
+          "correctAnswer": "Focus on form"
+        },
+        {
+          "id": "M1-U9-MATCH-T01-Q2",
+          "unit": 9,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Contact with target-language input.",
+          "correctAnswer": "Exposure"
+        },
+        {
+          "id": "M1-U9-MATCH-T01-Q3",
+          "unit": 9,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Gradual development of language through meaningful input and use.",
+          "correctAnswer": "Acquisition"
+        },
+        {
+          "id": "M1-U9-MATCH-T01-Q4",
+          "unit": 9,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "A phase of limited production despite developing comprehension.",
+          "correctAnswer": "Silent period"
+        }
+      ]
+    },
+    {
+      "taskId": "P3-T1",
+      "part": 3,
+      "taskType": "matching",
+      "unitIds": [
+        14
+      ],
+      "questionCount": 6,
+      "instruction": "Match each description with the correct teaching approach or framework.",
+      "optionBank": [
+        "TBL",
+        "Grammar-Translation",
+        "PPP",
+        "Test-teach-test",
+        "Skills-based lesson",
+        "Guided discovery"
+      ],
+      "items": [
+        {
+          "id": "M1-U14-MATCH-T01-Q5",
+          "unit": 14,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Learners infer a rule from examples.",
+          "correctAnswer": "Guided discovery"
+        },
+        {
+          "id": "M1-U14-MATCH-T01-Q3",
+          "unit": 14,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Teacher presentation followed by controlled and freer practice.",
+          "correctAnswer": "PPP"
+        },
+        {
+          "id": "M1-U14-MATCH-T01-Q2",
+          "unit": 14,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Lead-in → gist → detailed comprehension → productive follow-up.",
+          "correctAnswer": "Skills-based lesson"
+        },
+        {
+          "id": "M1-U14-MATCH-T01-Q4",
+          "unit": 14,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Learners complete a meaningful task before language focus.",
+          "correctAnswer": "TBL"
+        },
+        {
+          "id": "M1-U14-MATCH-T01-Q1",
+          "unit": 14,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Grammar rule followed by translation of a text.",
+          "correctAnswer": "Grammar-Translation"
+        },
+        {
+          "id": "M1-U14-MATCH-T01-Q6",
+          "unit": 14,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Learners attempt a task before targeted teaching and then try again.",
+          "correctAnswer": "Test-teach-test"
+        }
+      ]
+    },
+    {
+      "taskId": "P3-T2",
+      "part": 3,
+      "taskType": "matching",
+      "unitIds": [
+        13
+      ],
+      "questionCount": 6,
+      "instruction": "Match each activity with its main purpose or category.",
+      "optionBank": [
+        "Jigsaw task",
+        "Transformation drill",
+        "Comprehension task",
+        "Less controlled practice",
+        "Production task",
+        "Peer correction"
+      ],
+      "items": [
+        {
+          "id": "M1-U13-MATCH-T01-Q4",
+          "unit": 13,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Write a short email.",
+          "correctAnswer": "Production task"
+        },
+        {
+          "id": "M1-U13-MATCH-T01-Q5",
+          "unit": 13,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Different learners combine separate pieces of information.",
+          "correctAnswer": "Jigsaw task"
+        },
+        {
+          "id": "M1-U13-MATCH-T01-Q2",
+          "unit": 13,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Use a target structure but create some of your own content.",
+          "correctAnswer": "Less controlled practice"
+        },
+        {
+          "id": "M1-U13-MATCH-T01-Q6",
+          "unit": 13,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Learners help correct one another's language.",
+          "correctAnswer": "Peer correction"
+        },
+        {
+          "id": "M1-U13-MATCH-T01-Q3",
+          "unit": 13,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Listen and choose the correct picture.",
+          "correctAnswer": "Comprehension task"
+        },
+        {
+          "id": "M1-U13-MATCH-T01-Q1",
+          "unit": 13,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Change an affirmative sentence into a negative one.",
+          "correctAnswer": "Transformation drill"
+        }
+      ]
+    },
+    {
+      "taskId": "P3-T3",
+      "part": 3,
+      "taskType": "matching",
+      "unitIds": [
+        12
+      ],
+      "questionCount": 6,
+      "instruction": "Match each teaching aim with the most appropriate technique.",
+      "optionBank": [
+        "Ice-breaker",
+        "Warmer",
+        "Presenting language",
+        "Contextualising",
+        "Lead-in",
+        "Concept checking"
+      ],
+      "items": [
+        {
+          "id": "M1-U12-MATCH-T01-Q5",
+          "unit": 12,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Introduce a new item and focus attention on meaning/form/pronunciation.",
+          "correctAnswer": "Presenting language"
+        },
+        {
+          "id": "M1-U12-MATCH-T01-Q2",
+          "unit": 12,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Help a new group get to know one another.",
+          "correctAnswer": "Ice-breaker"
+        },
+        {
+          "id": "M1-U12-MATCH-T01-Q1",
+          "unit": 12,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Increase energy at the start of the lesson.",
+          "correctAnswer": "Warmer"
+        },
+        {
+          "id": "M1-U12-MATCH-T01-Q4",
+          "unit": 12,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Put target language into a situation that shows its meaning.",
+          "correctAnswer": "Contextualising"
+        },
+        {
+          "id": "M1-U12-MATCH-T01-Q6",
+          "unit": 12,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Confirm that learners understand the meaning of a new item.",
+          "correctAnswer": "Concept checking"
+        },
+        {
+          "id": "M1-U12-MATCH-T01-Q3",
+          "unit": 12,
+          "module": 1,
+          "section": "test",
+          "taskType": "matching",
+          "example": "Create interest and activate knowledge before the main task.",
+          "correctAnswer": "Lead-in"
+        }
+      ]
+    },
+    {
+      "taskId": "P3-T4",
+      "part": 3,
+      "taskType": "multiple_choice",
+      "unitIds": [
+        15
+      ],
+      "questionCount": 7,
+      "instruction": "Choose the best answer for each question.",
+      "items": [
+        {
+          "id": "M1-U15-016",
+          "module": 1,
+          "unit": 15,
+          "section": "test",
+          "skill": "progress_achievement",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "After Units 1–4, learners take a test based only on those units. What type of test is this most likely to be?",
+          "options": [
+            "Proficiency test",
+            "Placement test",
+            "Progress test"
+          ],
+          "correctAnswer": "Progress test",
+          "explanation": "The test checks learning at a particular point within the course."
+        },
+        {
+          "id": "M1-U15-058",
+          "module": 1,
+          "unit": 15,
+          "section": "test",
+          "skill": "task_design_marking",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "A grammar test claims to assess spoken interaction but contains only isolated gap-fill items. What is the main design concern?",
+          "options": [
+            "The task is too objective",
+            "The task must be a placement test",
+            "The task may not assess the intended ability appropriately"
+          ],
+          "correctAnswer": "The task may not assess the intended ability appropriately",
+          "explanation": "Assessment tasks should match the ability or construct the teacher intends to assess."
+        },
+        {
+          "id": "M1-U15-039",
+          "module": 1,
+          "unit": 15,
+          "section": "test",
+          "skill": "formative_summative",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "A teacher observes pair work, notes common problems and plans tomorrow's lesson from those observations. This assessment is primarily:",
+          "options": [
+            "Summative",
+            "Formative",
+            "Placement"
+          ],
+          "correctAnswer": "Formative",
+          "explanation": "The teacher uses current evidence to inform subsequent teaching."
+        },
+        {
+          "id": "M1-U15-028",
+          "module": 1,
+          "unit": 15,
+          "section": "test",
+          "skill": "proficiency",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "A learner performs poorly on a proficiency test even though they got high marks on their course tests. What is one possible explanation?",
+          "options": [
+            "Proficiency tests always test only vocabulary",
+            "The course tests and proficiency test may measure different content or purposes",
+            "One of the tests must be invalid"
+          ],
+          "correctAnswer": "The course tests and proficiency test may measure different content or purposes",
+          "explanation": "Strong achievement on one syllabus does not automatically equal broader proficiency."
+        },
+        {
+          "id": "M1-U15-018",
+          "module": 1,
+          "unit": 15,
+          "section": "test",
+          "skill": "progress_achievement",
+          "difficulty": "hard",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "Which statement is true of both progress and achievement tests?",
+          "options": [
+            "Their content is related to what learners have been taught",
+            "Their purpose is to place learners in classes",
+            "They are independent of the syllabus"
+          ],
+          "correctAnswer": "Their content is related to what learners have been taught",
+          "explanation": "Both types normally reflect the language, skills or objectives taught in the course."
+        },
+        {
+          "id": "M1-U15-017",
+          "module": 1,
+          "unit": 15,
+          "section": "test",
+          "skill": "progress_achievement",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "A final test covers the main objectives of the whole B1 course. What type of test is this?",
+          "options": [
+            "Placement test",
+            "Achievement test",
+            "Diagnostic test"
+          ],
+          "correctAnswer": "Achievement test",
+          "explanation": "The test measures achievement of the course content and objectives."
+        },
+        {
+          "id": "M1-U15-006",
+          "module": 1,
+          "unit": 15,
+          "section": "test",
+          "skill": "diagnostic_placement",
+          "difficulty": "medium",
+          "taskType": "multiple_choice",
+          "stem": "",
+          "prompt": "A school tests a new learner and assigns them to B1 rather than A2. Which assessment purpose is this?",
+          "options": [
+            "Placement",
+            "Diagnostic",
+            "Progress"
+          ],
+          "correctAnswer": "Placement",
+          "explanation": "The result is being used to decide the learner's appropriate class level."
+        }
+      ]
+    }
+  ]
+}

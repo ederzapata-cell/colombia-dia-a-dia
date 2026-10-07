@@ -1,37 +1,40 @@
-# Colombia · Día a Día
+# TKT Ready
 
-Plataforma ciudadana de información pública verificable en Colombia.
+Independent preparation for the Cambridge Teaching Knowledge Test (TKT).
 
-> **No buscamos que nos creas. Queremos que puedas comprobarlo.**
+## Current status
 
-## MVP
-La cronología comienza el **7 de agosto de 2026** y está diseñada **mobile-first**.
+Module 1 foundation is in place:
 
-### Estructura editorial
-- Gobierno
-- Oposición
-- Estado y País
+- 15 units
+- 900-question content bank
+- Unit Mini Test logic
+- Part Reviews
+- Full Module 1 Mock engine: 80 questions / 80 minutes / 13 tasks
+- Readiness and progress engine
+- Firestore data model
+- Dashboard visual prototype
+- Module 1 overview screen
+- Connected Dashboard → Module 1 → Unit navigation
 
-### Principios
-1. Cero opinión editorial.
-2. Prioridad a fuentes primarias y oficiales.
-3. Las declaraciones se atribuyen a quien las hace.
-4. Una fuente oficial no equivale automáticamente a verdad cuando la institución es parte interesada.
-5. Se distingue entre denunciado, investigado, imputado, acusado, condenado y absuelto.
-6. Correcciones visibles.
-7. Versiones incompatibles se presentan como versiones en conflicto.
-8. El contenido esencial seguirá siendo gratuito.
+## Repository structure
 
-## Archivos
-- `index.html`
-- `styles.css`
-- `data.js`
-- `app.js`
-- `netlify.toml`
+- `/data/module1` — Unit 1–15 question banks
+- `/engine` — Exam and readiness logic
+- `/firebase` — Firestore schema, helpers and rules
+- `/docs` — UI architecture and screen flow
+- `/index.html` — Current dashboard prototype
+- `/styles.css` — Current visual system
+- `/app.js` — Prototype interactions
+- `/netlify.toml` — Netlify deployment configuration
 
-## Ejecutar
-Abre `index.html` o usa:
+## Positioning
 
-```bash
-python -m http.server 8000
-```
+TKT Ready is an independent preparation product. It is not an official Cambridge product and does not claim to predict an official Cambridge band.
+
+## Deployment
+
+This repository is configured as a static Netlify site with the repository root as the publish directory.
+
+- Functional Part Reviews and Full Mock
+- Exam results and mistake review

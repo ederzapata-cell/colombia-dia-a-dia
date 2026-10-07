@@ -1,0 +1,1185 @@
+{
+  "meta": {
+    "product": "TKT Ready",
+    "module": 1,
+    "unit": 8,
+    "title": "Language Skills & Subskills",
+    "version": "1.0.0",
+    "language": "English",
+    "practiceItems": 30,
+    "testBankItems": 30,
+    "miniTestDisplayCount": 10,
+    "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+    "alignment": "TKT Module 1 — Describing language and language skills: reading, listening, speaking, writing, their subskills, and features of spoken/written texts",
+    "skills": [
+      "reading_gist_skimming",
+      "reading_detail_scanning",
+      "listening_subskills",
+      "speaking_subskills",
+      "writing_subskills",
+      "text_features"
+    ]
+  },
+  "questions": [
+    {
+      "id": "M1-U8-001",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_gist_skimming",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners read a newspaper article quickly to understand the main idea. Which subskill are they mainly using?",
+      "options": [
+        "Reading for gist",
+        "Scanning",
+        "Proofreading"
+      ],
+      "correctAnswer": "Reading for gist",
+      "explanation": "Reading for gist means reading to understand the general meaning or main idea."
+    },
+    {
+      "id": "M1-U8-002",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_gist_skimming",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner reads a webpage rapidly to get a general impression of its content. Which technique is this?",
+      "options": [
+        "Skimming",
+        "Scanning",
+        "Editing"
+      ],
+      "correctAnswer": "Skimming",
+      "explanation": "Skimming means reading quickly to get a general idea of a text."
+    },
+    {
+      "id": "M1-U8-003",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_gist_skimming",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Before reading an article titled “Why We Sleep”, learners guess what information it may contain. Which subskill are they using?",
+      "options": [
+        "Predicting",
+        "Scanning",
+        "Proofreading"
+      ],
+      "correctAnswer": "Predicting",
+      "explanation": "Predicting uses clues such as titles, visuals and prior knowledge to anticipate content."
+    },
+    {
+      "id": "M1-U8-004",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_gist_skimming",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task best practises reading for gist?",
+      "options": [
+        "Choose the best title for the whole article",
+        "Find the date of the event",
+        "Correct five spelling mistakes"
+      ],
+      "correctAnswer": "Choose the best title for the whole article",
+      "explanation": "Choosing an overall title requires understanding the general meaning of the text."
+    },
+    {
+      "id": "M1-U8-005",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_gist_skimming",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the main relationship between skimming and reading for gist?",
+      "options": [
+        "Skimming is a technique often used to achieve gist understanding",
+        "They are completely unrelated",
+        "Reading for gist means locating one exact fact"
+      ],
+      "correctAnswer": "Skimming is a technique often used to achieve gist understanding",
+      "explanation": "Skimming describes fast reading; gist describes the overall understanding the reader is trying to obtain."
+    },
+    {
+      "id": "M1-U8-006",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_gist_skimming",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners have 30 seconds to read four short texts and match each one to a heading. Which subskill is primarily being tested?",
+      "options": [
+        "Reading for gist",
+        "Scanning for a number",
+        "Proofreading"
+      ],
+      "correctAnswer": "Reading for gist",
+      "explanation": "Matching headings requires understanding the overall meaning of each text."
+    },
+    {
+      "id": "M1-U8-007",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_gist_skimming",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which instruction most clearly encourages skimming?",
+      "options": [
+        "Read quickly and decide what the text is mainly about",
+        "Find the exact price mentioned in paragraph 3",
+        "Correct the punctuation"
+      ],
+      "correctAnswer": "Read quickly and decide what the text is mainly about",
+      "explanation": "Skimming involves fast reading for general meaning."
+    },
+    {
+      "id": "M1-U8-008",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_gist_skimming",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A teacher shows only the title and photograph before learners read. Which subskill is the teacher most likely activating?",
+      "options": [
+        "Predicting",
+        "Editing",
+        "Scanning"
+      ],
+      "correctAnswer": "Predicting",
+      "explanation": "Titles and visuals provide clues that readers can use to anticipate text content."
+    },
+    {
+      "id": "M1-U8-009",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_gist_skimming",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task is least suitable for practising gist reading?",
+      "options": [
+        "Find every example of the past perfect",
+        "Choose the best summary sentence",
+        "Decide which headline matches the article"
+      ],
+      "correctAnswer": "Find every example of the past perfect",
+      "explanation": "Finding every example of a form requires close reading rather than gist reading."
+    },
+    {
+      "id": "M1-U8-010",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_gist_skimming",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which distinction between skimming and scanning is correct?",
+      "options": [
+        "Skimming is for general meaning; scanning is for specific information",
+        "Skimming is for grammar; scanning is for pronunciation",
+        "They are identical"
+      ],
+      "correctAnswer": "Skimming is for general meaning; scanning is for specific information",
+      "explanation": "Skimming seeks an overview; scanning searches selectively for particular information."
+    },
+    {
+      "id": "M1-U8-011",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_detail_scanning",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner looks through a timetable to find the departure time of one train. Which subskill is this?",
+      "options": [
+        "Scanning",
+        "Skimming",
+        "Summarising"
+      ],
+      "correctAnswer": "Scanning",
+      "explanation": "Scanning means searching a text for specific information."
+    },
+    {
+      "id": "M1-U8-012",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_detail_scanning",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners read a paragraph carefully to identify three reasons given by the writer. Which subskill are they using?",
+      "options": [
+        "Reading for detail",
+        "Reading for gist",
+        "Predicting"
+      ],
+      "correctAnswer": "Reading for detail",
+      "explanation": "Reading for detail means reading carefully to understand specific information."
+    },
+    {
+      "id": "M1-U8-013",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_detail_scanning",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner guesses the meaning of “exhausted” from the surrounding sentence. Which subskill is this?",
+      "options": [
+        "Deducing meaning from context",
+        "Scanning",
+        "Proofreading"
+      ],
+      "correctAnswer": "Deducing meaning from context",
+      "explanation": "The learner uses surrounding language and meaning to work out an unfamiliar word."
+    },
+    {
+      "id": "M1-U8-014",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_detail_scanning",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A text never says the writer is annoyed, but the language strongly suggests irritation. Which subskill is needed?",
+      "options": [
+        "Inferring attitude",
+        "Scanning",
+        "Note-taking"
+      ],
+      "correctAnswer": "Inferring attitude",
+      "explanation": "Inference involves understanding meaning that is implied rather than directly stated."
+    },
+    {
+      "id": "M1-U8-015",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "reading_detail_scanning",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task most clearly requires scanning rather than reading for detail?",
+      "options": [
+        "Find the hotel phone number",
+        "Explain why the writer changed jobs",
+        "Identify the writer's attitude"
+      ],
+      "correctAnswer": "Find the hotel phone number",
+      "explanation": "Scanning is used to locate a specific item of information quickly."
+    },
+    {
+      "id": "M1-U8-016",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_detail_scanning",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners search a long webpage for the registration deadline. Which subskill are they mainly using?",
+      "options": [
+        "Scanning",
+        "Skimming",
+        "Paraphrasing"
+      ],
+      "correctAnswer": "Scanning",
+      "explanation": "They are searching selectively for one specific piece of information."
+    },
+    {
+      "id": "M1-U8-017",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_detail_scanning",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which question most clearly tests reading for detail?",
+      "options": [
+        "What two problems did the author experience on the journey?",
+        "What is the text generally about?",
+        "What do you think the article may discuss?"
+      ],
+      "correctAnswer": "What two problems did the author experience on the journey?",
+      "explanation": "Answering requires careful understanding of specific information."
+    },
+    {
+      "id": "M1-U8-018",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_detail_scanning",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The writer calls a failed proposal “another brilliant idea from management”. Which subskill helps the reader recognise possible sarcasm?",
+      "options": [
+        "Inferring attitude",
+        "Scanning",
+        "Skimming"
+      ],
+      "correctAnswer": "Inferring attitude",
+      "explanation": "The reader must interpret attitude from context rather than literal words alone."
+    },
+    {
+      "id": "M1-U8-019",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_detail_scanning",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity practises deducing meaning from context?",
+      "options": [
+        "Work out an unknown word using the sentences around it",
+        "Look up every unknown word before reading",
+        "Count the paragraphs"
+      ],
+      "correctAnswer": "Work out an unknown word using the sentences around it",
+      "explanation": "Contextual clues can help readers infer the meaning of unfamiliar vocabulary."
+    },
+    {
+      "id": "M1-U8-020",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "reading_detail_scanning",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement best distinguishes scanning from reading for detail?",
+      "options": [
+        "Scanning searches selectively for a target; reading for detail processes information more thoroughly",
+        "Scanning always takes longer",
+        "Reading for detail means reading only headings"
+      ],
+      "correctAnswer": "Scanning searches selectively for a target; reading for detail processes information more thoroughly",
+      "explanation": "Scanning is selective, while detailed reading involves closer processing of relevant information."
+    },
+    {
+      "id": "M1-U8-021",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "listening_subskills",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners listen once to understand the general topic of a conversation. Which subskill are they using?",
+      "options": [
+        "Listening for gist",
+        "Intensive listening",
+        "Proofreading"
+      ],
+      "correctAnswer": "Listening for gist",
+      "explanation": "Listening for gist focuses on overall meaning."
+    },
+    {
+      "id": "M1-U8-022",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "listening_subskills",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners listen for a flight number in an airport announcement. Which subskill are they mainly using?",
+      "options": [
+        "Listening for specific information",
+        "Summarising a written text",
+        "Editing"
+      ],
+      "correctAnswer": "Listening for specific information",
+      "explanation": "The listener focuses on one target item of information."
+    },
+    {
+      "id": "M1-U8-023",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "listening_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners listen carefully to identify exactly why a speaker missed an appointment. Which subskill is being practised?",
+      "options": [
+        "Listening for detail",
+        "Listening for gist",
+        "Skimming"
+      ],
+      "correctAnswer": "Listening for detail",
+      "explanation": "The task requires careful understanding of specific information."
+    },
+    {
+      "id": "M1-U8-024",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "listening_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A speaker never says “I'm angry”, but tone and wording show strong irritation. Which listening subskill is required?",
+      "options": [
+        "Inferring attitude or feeling",
+        "Scanning",
+        "Proofreading"
+      ],
+      "correctAnswer": "Inferring attitude or feeling",
+      "explanation": "The listener interprets meaning that is implied rather than explicitly stated."
+    },
+    {
+      "id": "M1-U8-025",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "listening_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Before hearing a restaurant conversation, learners predict vocabulary and topics they may hear. Which subskill is being activated?",
+      "options": [
+        "Predicting",
+        "Editing",
+        "Paraphrasing"
+      ],
+      "correctAnswer": "Predicting",
+      "explanation": "Prediction uses context and prior knowledge to anticipate content."
+    },
+    {
+      "id": "M1-U8-026",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "listening_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task most clearly practises listening for gist?",
+      "options": [
+        "Decide whether the speakers are discussing work, travel or health",
+        "Write down the exact address",
+        "Identify every verb tense"
+      ],
+      "correctAnswer": "Decide whether the speakers are discussing work, travel or health",
+      "explanation": "The task focuses on the overall topic rather than details."
+    },
+    {
+      "id": "M1-U8-027",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "listening_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners listen repeatedly to a short extract and identify exact words and pronunciation features. What type of listening is this?",
+      "options": [
+        "Intensive listening",
+        "Listening only for gist",
+        "Skimming"
+      ],
+      "correctAnswer": "Intensive listening",
+      "explanation": "Intensive listening involves close, focused attention to a relatively short stretch of speech."
+    },
+    {
+      "id": "M1-U8-028",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "listening_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which question mainly tests inference in listening?",
+      "options": [
+        "How does the speaker probably feel about the decision?",
+        "What time does the train leave?",
+        "How many speakers are there?"
+      ],
+      "correctAnswer": "How does the speaker probably feel about the decision?",
+      "explanation": "The listener must interpret an attitude or feeling that may not be directly stated."
+    },
+    {
+      "id": "M1-U8-029",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "listening_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A teacher pauses a recording and asks learners what they expect to hear next. Which subskill is being practised?",
+      "options": [
+        "Predicting",
+        "Proofreading",
+        "Scanning"
+      ],
+      "correctAnswer": "Predicting",
+      "explanation": "Learners use what they have already heard to anticipate subsequent content."
+    },
+    {
+      "id": "M1-U8-030",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "listening_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the main difference between listening for gist and listening for detail?",
+      "options": [
+        "Gist focuses on overall meaning; detail focuses on specific information and relationships",
+        "Gist is only for beginners",
+        "Detail always requires writing"
+      ],
+      "correctAnswer": "Gist focuses on overall meaning; detail focuses on specific information and relationships",
+      "explanation": "The two subskills differ mainly in depth and focus of comprehension."
+    },
+    {
+      "id": "M1-U8-031",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "speaking_subskills",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner keeps a conversation going by asking follow-up questions and responding to the other speaker. Which subskill is this?",
+      "options": [
+        "Using interactive strategies",
+        "Proofreading",
+        "Scanning"
+      ],
+      "correctAnswer": "Using interactive strategies",
+      "explanation": "Interactive strategies help speakers initiate, maintain and manage interaction."
+    },
+    {
+      "id": "M1-U8-032",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "speaking_subskills",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner explains the main points of a long discussion in a shorter form. Which subskill is this?",
+      "options": [
+        "Summarising",
+        "Scanning",
+        "Predicting"
+      ],
+      "correctAnswer": "Summarising",
+      "explanation": "Summarising means expressing the main points in a shorter form."
+    },
+    {
+      "id": "M1-U8-033",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "speaking_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner cannot remember “thermometer”, so says “the thing you use to measure temperature”. Which subskill is this?",
+      "options": [
+        "Paraphrasing",
+        "Proofreading",
+        "Skimming"
+      ],
+      "correctAnswer": "Paraphrasing",
+      "explanation": "Paraphrasing means expressing the same idea in different words."
+    },
+    {
+      "id": "M1-U8-034",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "speaking_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner speaks smoothly with few unnatural pauses, although some grammar mistakes remain. Which feature is strongest?",
+      "options": [
+        "Fluency",
+        "Accuracy",
+        "Layout"
+      ],
+      "correctAnswer": "Fluency",
+      "explanation": "Fluency concerns smooth and efficient communication."
+    },
+    {
+      "id": "M1-U8-035",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "speaking_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner produces grammatically correct sentences but pauses for a long time before almost every phrase. Which description is best?",
+      "options": [
+        "Accuracy is strong; fluency is weak",
+        "Fluency is strong; accuracy is weak",
+        "Both are layout features"
+      ],
+      "correctAnswer": "Accuracy is strong; fluency is weak",
+      "explanation": "Accuracy concerns correctness; fluency concerns flow and ease of communication."
+    },
+    {
+      "id": "M1-U8-036",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "speaking_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which behaviour best illustrates an interactive strategy?",
+      "options": [
+        "Asking for clarification when something is unclear",
+        "Checking spelling after writing",
+        "Looking for a date in a text"
+      ],
+      "correctAnswer": "Asking for clarification when something is unclear",
+      "explanation": "Clarification requests help speakers manage interaction."
+    },
+    {
+      "id": "M1-U8-037",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "speaking_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner says, “In other words, the project was delayed because...” Which subskill is the learner using?",
+      "options": [
+        "Paraphrasing",
+        "Scanning",
+        "Proofreading"
+      ],
+      "correctAnswer": "Paraphrasing",
+      "explanation": "The learner is reformulating an idea using different wording."
+    },
+    {
+      "id": "M1-U8-038",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "speaking_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task primarily develops summarising in speaking?",
+      "options": [
+        "Listen to a three-minute report and give the main points in thirty seconds",
+        "Repeat every sentence exactly",
+        "Underline the stressed syllable"
+      ],
+      "correctAnswer": "Listen to a three-minute report and give the main points in thirty seconds",
+      "explanation": "The speaker must select and restate the main information briefly."
+    },
+    {
+      "id": "M1-U8-039",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "speaking_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement best describes fluency?",
+      "options": [
+        "The ability to communicate relatively smoothly and efficiently",
+        "The absence of every grammatical error",
+        "The visual organisation of a written text"
+      ],
+      "correctAnswer": "The ability to communicate relatively smoothly and efficiently",
+      "explanation": "Fluency focuses on flow and ease of communication rather than perfect correctness."
+    },
+    {
+      "id": "M1-U8-040",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "speaking_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A speaking activity asks learners to focus on correct verb endings and precise pronunciation rather than speed. Which feature is being prioritised?",
+      "options": [
+        "Accuracy",
+        "Fluency",
+        "Authenticity"
+      ],
+      "correctAnswer": "Accuracy",
+      "explanation": "Accuracy concerns correct language use, including grammar, vocabulary and pronunciation."
+    },
+    {
+      "id": "M1-U8-041",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "writing_subskills",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner checks a finished email for spelling, punctuation and grammar mistakes. Which subskill is this?",
+      "options": [
+        "Proofreading",
+        "Scanning",
+        "Predicting"
+      ],
+      "correctAnswer": "Proofreading",
+      "explanation": "Proofreading means checking a near-final text for surface-level errors."
+    },
+    {
+      "id": "M1-U8-042",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "writing_subskills",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner changes the order of two paragraphs because the ideas are not logically organised. Which process is this?",
+      "options": [
+        "Editing",
+        "Listening for gist",
+        "Scanning"
+      ],
+      "correctAnswer": "Editing",
+      "explanation": "Editing involves improving content, organisation or language in a draft."
+    },
+    {
+      "id": "M1-U8-043",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "writing_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner reduces a 500-word article to a 100-word version containing only the key ideas. Which subskill is being used?",
+      "options": [
+        "Summarising",
+        "Proofreading",
+        "Scanning"
+      ],
+      "correctAnswer": "Summarising",
+      "explanation": "Summarising involves selecting and expressing the main ideas concisely."
+    },
+    {
+      "id": "M1-U8-044",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "writing_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner rewrites “The results were surprising” as “The findings were unexpected.” Which subskill does this illustrate?",
+      "options": [
+        "Paraphrasing",
+        "Predicting",
+        "Skimming"
+      ],
+      "correctAnswer": "Paraphrasing",
+      "explanation": "Paraphrasing expresses the same or a similar meaning using different language."
+    },
+    {
+      "id": "M1-U8-045",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "writing_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the clearest difference between proofreading and editing?",
+      "options": [
+        "Proofreading checks errors in a near-final text; editing may involve larger changes to content and organisation",
+        "They are exactly the same",
+        "Editing only checks spelling"
+      ],
+      "correctAnswer": "Proofreading checks errors in a near-final text; editing may involve larger changes to content and organisation",
+      "explanation": "Editing can involve substantial revision; proofreading usually focuses on final surface accuracy."
+    },
+    {
+      "id": "M1-U8-046",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "writing_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity most directly practises proofreading?",
+      "options": [
+        "Find and correct spelling and punctuation errors in a final draft",
+        "Choose the best title for an article",
+        "Predict the next paragraph"
+      ],
+      "correctAnswer": "Find and correct spelling and punctuation errors in a final draft",
+      "explanation": "Proofreading focuses on detecting and correcting surface errors."
+    },
+    {
+      "id": "M1-U8-047",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "writing_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity is mainly editing rather than proofreading?",
+      "options": [
+        "Remove an irrelevant paragraph and improve the order of ideas",
+        "Correct three misspelled words",
+        "Add missing full stops only"
+      ],
+      "correctAnswer": "Remove an irrelevant paragraph and improve the order of ideas",
+      "explanation": "Editing includes decisions about relevance, organisation and clarity."
+    },
+    {
+      "id": "M1-U8-048",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "writing_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task best practises paraphrasing?",
+      "options": [
+        "Rewrite a sentence using different words but keep the meaning",
+        "Copy a sentence exactly",
+        "Find the phone number in a text"
+      ],
+      "correctAnswer": "Rewrite a sentence using different words but keep the meaning",
+      "explanation": "Paraphrasing preserves meaning while changing wording or structure."
+    },
+    {
+      "id": "M1-U8-049",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "writing_subskills",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task best practises summarising?",
+      "options": [
+        "Write the three main points of a long text in one short paragraph",
+        "Correct every comma",
+        "List every example in the text"
+      ],
+      "correctAnswer": "Write the three main points of a long text in one short paragraph",
+      "explanation": "Summarising selects essential information and presents it concisely."
+    },
+    {
+      "id": "M1-U8-050",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "writing_subskills",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner has excellent grammar but the ideas in an essay appear in a confusing order. Which feature most needs improvement?",
+      "options": [
+        "Organisation",
+        "Pronunciation",
+        "Scanning"
+      ],
+      "correctAnswer": "Organisation",
+      "explanation": "Written texts need clear logical organisation as well as accurate language."
+    },
+    {
+      "id": "M1-U8-051",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "text_features",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Headings, paragraphs, bullet points and columns are examples of which text feature?",
+      "options": [
+        "Layout",
+        "Intonation",
+        "Word stress"
+      ],
+      "correctAnswer": "Layout",
+      "explanation": "Layout refers to the visual arrangement of a written text."
+    },
+    {
+      "id": "M1-U8-052",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "text_features",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A real restaurant menu used unchanged in a language lesson is best described as:",
+      "options": [
+        "Authentic material/text",
+        "A word family",
+        "A minimal pair"
+      ],
+      "correctAnswer": "Authentic material/text",
+      "explanation": "Authentic texts are created for real-world communication rather than specifically for language teaching."
+    },
+    {
+      "id": "M1-U8-053",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "text_features",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A spoken presentation has a clear introduction, development and conclusion. Which feature is being described?",
+      "options": [
+        "Organisation",
+        "Scanning",
+        "Elision"
+      ],
+      "correctAnswer": "Organisation",
+      "explanation": "Organisation concerns how ideas and sections are structured coherently."
+    },
+    {
+      "id": "M1-U8-054",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "text_features",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner's written text contains almost no grammatical or spelling errors. Which feature is particularly strong?",
+      "options": [
+        "Accuracy",
+        "Fluency",
+        "Authenticity"
+      ],
+      "correctAnswer": "Accuracy",
+      "explanation": "Accuracy refers to correct use of language."
+    },
+    {
+      "id": "M1-U8-055",
+      "module": 1,
+      "unit": 8,
+      "section": "practice",
+      "skill": "text_features",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why might an authentic text be challenging for learners?",
+      "options": [
+        "It was created for real users and may contain language not simplified for learners",
+        "It has no communicative purpose",
+        "It must always be grammatically incorrect"
+      ],
+      "correctAnswer": "It was created for real users and may contain language not simplified for learners",
+      "explanation": "Authentic texts reflect real communication and may contain complex or unfamiliar language."
+    },
+    {
+      "id": "M1-U8-056",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "text_features",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which feature is most directly concerned with how information is visually arranged on a page?",
+      "options": [
+        "Layout",
+        "Fluency",
+        "Inference"
+      ],
+      "correctAnswer": "Layout",
+      "explanation": "Layout includes visual features such as headings, columns, paragraphs and spacing."
+    },
+    {
+      "id": "M1-U8-057",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "text_features",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A podcast episode produced for the general public and used unchanged in class is:",
+      "options": [
+        "Authentic",
+        "Edited for learners by definition",
+        "A lexical set"
+      ],
+      "correctAnswer": "Authentic",
+      "explanation": "It was created for a real-world audience rather than specifically for language learning."
+    },
+    {
+      "id": "M1-U8-058",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "text_features",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which pair best contrasts accuracy and fluency?",
+      "options": [
+        "Correctness versus smooth, efficient communication",
+        "Reading versus writing",
+        "Formal versus informal vocabulary"
+      ],
+      "correctAnswer": "Correctness versus smooth, efficient communication",
+      "explanation": "Accuracy concerns correctness; fluency concerns flow and ease of communication."
+    },
+    {
+      "id": "M1-U8-059",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "text_features",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A text has accurate grammar but jumps randomly from one idea to another. Which feature is weakest?",
+      "options": [
+        "Organisation",
+        "Accuracy",
+        "Authenticity"
+      ],
+      "correctAnswer": "Organisation",
+      "explanation": "The problem is how ideas are structured and connected, not grammatical correctness."
+    },
+    {
+      "id": "M1-U8-060",
+      "module": 1,
+      "unit": 8,
+      "section": "test",
+      "skill": "text_features",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about authenticity is most accurate?",
+      "options": [
+        "Authenticity concerns whether a text or task reflects real-world language use or purpose",
+        "Authentic texts must always be difficult",
+        "Authenticity is another term for grammatical accuracy"
+      ],
+      "correctAnswer": "Authenticity concerns whether a text or task reflects real-world language use or purpose",
+      "explanation": "In ELT, authenticity relates to real-world sources, purposes or language use rather than simply difficulty."
+    }
+  ],
+  "matchingSets": [
+    {
+      "id": "M1-U8-MATCH-P01",
+      "section": "practice",
+      "instruction": "Match each classroom task with the main subskill it practises.",
+      "optionBank": [
+        "Reading for gist",
+        "Scanning",
+        "Predicting",
+        "Inferring attitude",
+        "Proofreading",
+        "Paraphrasing"
+      ],
+      "items": [
+        {
+          "example": "Choose the best title for the article.",
+          "correctAnswer": "Reading for gist"
+        },
+        {
+          "example": "Find the departure time in the timetable.",
+          "correctAnswer": "Scanning"
+        },
+        {
+          "example": "Use the headline to guess what the article will discuss.",
+          "correctAnswer": "Predicting"
+        },
+        {
+          "example": "Decide how the speaker probably feels.",
+          "correctAnswer": "Inferring attitude"
+        },
+        {
+          "example": "Check a final draft for spelling and punctuation errors.",
+          "correctAnswer": "Proofreading"
+        },
+        {
+          "example": "Express the same idea using different words.",
+          "correctAnswer": "Paraphrasing"
+        }
+      ]
+    },
+    {
+      "id": "M1-U8-MATCH-T01",
+      "section": "test",
+      "instruction": "Match each description with the correct language-skill term.",
+      "optionBank": [
+        "Skimming",
+        "Reading/listening for detail",
+        "Using interactive strategies",
+        "Summarising",
+        "Accuracy",
+        "Authenticity"
+      ],
+      "items": [
+        {
+          "example": "Read rapidly to get an overview.",
+          "correctAnswer": "Skimming"
+        },
+        {
+          "example": "Understand specific information carefully.",
+          "correctAnswer": "Reading/listening for detail"
+        },
+        {
+          "example": "Ask for clarification and keep a conversation going.",
+          "correctAnswer": "Using interactive strategies"
+        },
+        {
+          "example": "Give only the main points in a shorter form.",
+          "correctAnswer": "Summarising"
+        },
+        {
+          "example": "Use language correctly.",
+          "correctAnswer": "Accuracy"
+        },
+        {
+          "example": "Use a real-world text created for genuine communication.",
+          "correctAnswer": "Authenticity"
+        }
+      ]
+    }
+  ]
+}

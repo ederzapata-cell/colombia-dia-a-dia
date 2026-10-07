@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E274B">
+  <title>TKT Ready — Exam</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="exam-page">
+  <div class="exam-shell">
+    <header class="exam-topbar">
+      <div>
+        <a href="./module1.html" class="exam-back">← Exit</a>
+        <p class="eyebrow" id="examEyebrow">MODULE 1</p>
+        <h1 id="examTitle">Loading exam…</h1>
+      </div>
+      <div class="exam-top-stats">
+        <div><span>Time</span><strong id="examTimer">--:--</strong></div>
+        <div><span>Progress</span><strong id="examProgressText">0/0</strong></div>
+      </div>
+    </header>
+
+    <main class="exam-layout">
+      <aside class="exam-task-nav card">
+        <div class="exam-task-nav-head">
+          <p class="eyebrow">TASKS</p>
+          <span id="examTaskCount">0 tasks</span>
+        </div>
+        <div id="taskButtons" class="task-button-list"></div>
+        <button class="secondary-button full-width" id="submitExamAside" type="button">Submit Exam</button>
+      </aside>
+
+      <section class="exam-main-panel">
+        <div class="exam-progress-bar"><span id="examProgressFill" style="width:0%"></span></div>
+        <article class="exam-task-card card">
+          <div class="exam-task-head">
+            <div>
+              <p class="eyebrow" id="taskLabel">TASK</p>
+              <h2 id="taskInstruction">Loading…</h2>
+            </div>
+            <span class="mode-chip test">Exam mode</span>
+          </div>
+          <div id="examQuestionArea"></div>
+          <div class="exam-actions">
+            <button class="ghost-button" id="previousExamQuestion" type="button">Previous</button>
+            <button class="ghost-button" id="nextExamQuestion" type="button">Next</button>
+            <button class="primary-button" id="submitExamMain" type="button">Submit Exam</button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div class="exam-modal-backdrop" id="submitModal" hidden>
+    <div class="exam-modal card">
+      <h2>Submit exam?</h2>
+      <p id="submitModalText">You can review unanswered questions before submitting.</p>
+      <div class="exam-modal-actions">
+        <button class="ghost-button" id="cancelSubmit" type="button">Keep working</button>
+        <button class="primary-button" id="confirmSubmit" type="button">Submit now</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./exam.js"></script>
+</body>
+</html>

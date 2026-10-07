@@ -1,0 +1,137 @@
+{
+  "product": "TKT Ready",
+  "module": 1,
+  "title": "Module 1 Exam Layer",
+  "version": "1.0.0",
+  "language": "English",
+  "examMode": {
+    "feedbackDuringAttempt": false,
+    "showAnswersAfterSubmit": true,
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "avoidExactAttemptRepeat": true,
+    "preferRecentQuestionAvoidance": true
+  },
+  "officialStructure": {
+    "durationMinutes": 80,
+    "questions": 80,
+    "tasks": 13,
+    "taskTypes": [
+      "multiple_choice",
+      "matching"
+    ],
+    "parts": [
+      {
+        "part": 1,
+        "title": "Describing Language and Language Skills",
+        "questions": 40,
+        "tasks": 6,
+        "reviewMinutes": 40,
+        "units": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "attemptCoverage": "5 questions from each of Units 1–8"
+      },
+      {
+        "part": 2,
+        "title": "Background to Language Learning",
+        "questions": 15,
+        "tasks": 3,
+        "reviewMinutes": 15,
+        "units": [
+          9,
+          10,
+          11
+        ],
+        "attemptCoverage": "5 questions from each of Units 9–11"
+      },
+      {
+        "part": 3,
+        "title": "Background to Language Teaching",
+        "questions": 25,
+        "tasks": 4,
+        "reviewMinutes": 25,
+        "units": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "attemptCoverage": "6 questions from three units and 7 from one rotating unit"
+      }
+    ]
+  },
+  "taskPatterns": {
+    "part1": [
+      {
+        "type": "multiple_choice",
+        "questionCount": 10
+      },
+      {
+        "type": "matching",
+        "questionCount": 5
+      },
+      {
+        "type": "multiple_choice",
+        "questionCount": 10
+      },
+      {
+        "type": "multiple_choice",
+        "questionCount": 5
+      },
+      {
+        "type": "matching",
+        "questionCount": 5
+      },
+      {
+        "type": "matching",
+        "questionCount": 5
+      }
+    ],
+    "part2": [
+      {
+        "type": "matching",
+        "questionCount": 5
+      },
+      {
+        "type": "multiple_choice",
+        "questionCount": 5
+      },
+      {
+        "type": "matching",
+        "questionCount": 5
+      }
+    ],
+    "part3": [
+      {
+        "type": "matching",
+        "questionCount": 6
+      },
+      {
+        "type": "matching",
+        "questionCount": 6
+      },
+      {
+        "type": "matching",
+        "questionCount": 6
+      },
+      {
+        "type": "multiple_choice",
+        "questionCount": 7
+      }
+    ]
+  },
+  "pool": {
+    "testMultipleChoiceItems": 450,
+    "testMatchingSets": 15,
+    "units": 15
+  },
+  "note": "Independent preparation for the Cambridge TKT. This engine mirrors the published Module 1 question/task distribution without claiming to reproduce Cambridge exam content."
+}

@@ -1,0 +1,391 @@
+{
+  "product": "TKT Ready",
+  "version": "1.0.0",
+  "learnerFacingLanguage": "English",
+  "positioning": "Independent preparation for the Cambridge TKT.",
+  "designPrinciples": [
+    "Exam trainer first, content library second.",
+    "Always show the learner what to do next.",
+    "Keep assessment mode visually different from study mode.",
+    "Do not imitate Cambridge branding or imply official affiliation.",
+    "Show progress without overwhelming the learner with analytics.",
+    "Use Module 1 blue as the primary module accent; reserve green/amber/red for performance states."
+  ],
+  "primaryNavigation": [
+    {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "route": "/dashboard"
+    },
+    {
+      "id": "module1",
+      "label": "Module 1",
+      "route": "/module/1"
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "route": "/practice"
+    },
+    {
+      "id": "mock",
+      "label": "Mock Exam",
+      "route": "/mock/module-1"
+    }
+  ],
+  "screens": [
+    {
+      "id": "dashboard",
+      "route": "/dashboard",
+      "title": "Dashboard",
+      "purpose": "Give the learner an immediate readiness snapshot and the next best action.",
+      "sections": [
+        {
+          "id": "readinessHero",
+          "title": "Overall TKT Readiness",
+          "shows": [
+            "Readiness Score 0–100",
+            "Readiness Level",
+            "Evidence Confidence",
+            "Short explanation",
+            "Primary CTA"
+          ],
+          "exampleCopy": {
+            "level": "Almost ready",
+            "message": "Your performance is improving. Review your priority units before your next Full Mock.",
+            "cta": "Continue Preparing"
+          }
+        },
+        {
+          "id": "continueStudying",
+          "title": "Continue Studying",
+          "shows": [
+            "Current unit",
+            "Current stage",
+            "Last activity",
+            "Resume button"
+          ]
+        },
+        {
+          "id": "moduleCard",
+          "title": "Module 1",
+          "shows": [
+            "Overall module progress",
+            "15 units",
+            "Part 1 / Part 2 / Part 3 progress",
+            "Open Module button"
+          ]
+        },
+        {
+          "id": "recommendedNext",
+          "title": "Recommended Next Activity",
+          "shows": [
+            "One primary recommendation only",
+            "Reason for recommendation",
+            "Direct action button"
+          ]
+        },
+        {
+          "id": "recentResults",
+          "title": "Recent Results",
+          "shows": [
+            "Latest 5 attempts",
+            "Attempt type",
+            "Score",
+            "Date",
+            "Open Results"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moduleOverview",
+      "route": "/module/1",
+      "title": "Module 1",
+      "subtitle": "Language and background to language learning and teaching",
+      "purpose": "Show the complete 15-unit roadmap grouped into the three official content parts.",
+      "sections": [
+        {
+          "part": 1,
+          "title": "Part 1 — Describing Language and Language Skills",
+          "units": [
+            "1. Parts of Speech",
+            "2. Grammatical Structures",
+            "3. Lexis: Meaning & Word Formation",
+            "4. Lexical Relationships & Register",
+            "5. Phonology: Sounds & Stress",
+            "6. Phonology: Intonation & Connected Speech",
+            "7. Functions",
+            "8. Language Skills & Subskills"
+          ],
+          "reviewAction": "Part 1 Review"
+        },
+        {
+          "part": 2,
+          "title": "Part 2 — Background to Language Learning",
+          "units": [
+            "9. Motivation, Exposure & Acquisition",
+            "10. Errors & L1/L2 Learning",
+            "11. Learners: Characteristics & Needs"
+          ],
+          "reviewAction": "Part 2 Review"
+        },
+        {
+          "part": 3,
+          "title": "Part 3 — Background to Language Teaching",
+          "units": [
+            "12. Presenting Language",
+            "13. Teaching Activities & Techniques",
+            "14. Teaching Approaches & Lesson Frameworks",
+            "15. Assessment"
+          ],
+          "reviewAction": "Part 3 Review"
+        }
+      ],
+      "unitCardShows": [
+        "Unit number",
+        "Unit title",
+        "Progress",
+        "Latest Mini Test score",
+        "Mastery status",
+        "Continue/Open button"
+      ]
+    },
+    {
+      "id": "unitHome",
+      "route": "/module/1/unit/:unitId",
+      "titlePattern": "Unit {n} — {title}",
+      "purpose": "Serve as the unit hub.",
+      "studyStages": [
+        {
+          "id": "learn",
+          "label": "Learn",
+          "content": "6–10 microcards"
+        },
+        {
+          "id": "examples",
+          "label": "Examples",
+          "content": "Focused examples in context"
+        },
+        {
+          "id": "practice",
+          "label": "Practice",
+          "content": "Random practice from 30-item bank"
+        },
+        {
+          "id": "strategy",
+          "label": "TKT Strategy",
+          "content": "2–4 exam-focused tips"
+        },
+        {
+          "id": "miniTest",
+          "label": "Mini Test",
+          "content": "10 random questions from 30-item Test Bank"
+        },
+        {
+          "id": "results",
+          "label": "Results",
+          "content": "Latest/best score and recommendations"
+        }
+      ],
+      "completionLogic": {
+        "hardLocks": false,
+        "recommendSequence": true,
+        "reason": "Do not trap experienced candidates; guide them while allowing direct access."
+      }
+    },
+    {
+      "id": "practice",
+      "route": "/module/1/unit/:unitId/practice",
+      "title": "Practice",
+      "purpose": "Low-pressure learning mode with immediate feedback.",
+      "behaviour": [
+        "One question at a time",
+        "Immediate correct/incorrect feedback",
+        "Show explanation after answer",
+        "Show skill label subtly",
+        "Next Question button",
+        "Session accuracy",
+        "Exit and resume later"
+      ],
+      "feedbackCopy": {
+        "correct": "Correct",
+        "incorrect": "Not quite",
+        "explanationLabel": "Why?"
+      }
+    },
+    {
+      "id": "miniTest",
+      "route": "/module/1/unit/:unitId/mini-test",
+      "title": "Unit Mini Test",
+      "purpose": "Short assessment mode with no feedback until completion.",
+      "rules": [
+        "10 random questions",
+        "Question order randomized",
+        "Options randomized",
+        "No immediate feedback",
+        "Attempt signature stored",
+        "Show results only after submission"
+      ],
+      "headerShows": [
+        "Unit title",
+        "Question x of 10",
+        "Progress bar"
+      ]
+    },
+    {
+      "id": "partReview",
+      "route": "/module/1/part/:partId/review",
+      "titlePattern": "Part {n} Review",
+      "purpose": "Exam-style review using the official Module 1 part distribution.",
+      "rules": [
+        "Part 1: 40 questions / 40 minutes",
+        "Part 2: 15 questions / 15 minutes",
+        "Part 3: 25 questions / 25 minutes",
+        "No feedback during attempt",
+        "Task-based navigation",
+        "Submit confirmation"
+      ]
+    },
+    {
+      "id": "fullMockIntro",
+      "route": "/mock/module-1",
+      "title": "Module 1 Full Mock",
+      "purpose": "Prepare the learner before entering exam mode.",
+      "shows": [
+        "80 questions",
+        "80 minutes",
+        "13 tasks",
+        "No feedback during the exam",
+        "Answers and analysis after submission",
+        "Start Full Mock button"
+      ],
+      "disclaimer": "This is independent preparation and is not an official Cambridge examination."
+    },
+    {
+      "id": "examMode",
+      "route": "/mock/module-1/attempt/:attemptId",
+      "title": "Module 1 Full Mock",
+      "purpose": "Focused exam simulation.",
+      "layout": {
+        "topBar": [
+          "Module 1",
+          "Timer",
+          "Question/task progress"
+        ],
+        "main": [
+          "Task instructions",
+          "Question or matching task",
+          "Answer controls"
+        ],
+        "bottom": [
+          "Previous",
+          "Next",
+          "Question navigator",
+          "Submit Exam"
+        ]
+      },
+      "behaviour": [
+        "No readiness score visible",
+        "No correctness feedback",
+        "Auto-save answers",
+        "Persist remaining time",
+        "Warn before leaving",
+        "Submit confirmation"
+      ]
+    },
+    {
+      "id": "results",
+      "route": "/results/:attemptId",
+      "title": "Results",
+      "purpose": "Turn a score into a clear study decision.",
+      "sections": [
+        {
+          "id": "scoreHero",
+          "shows": [
+            "Raw score",
+            "Percentage",
+            "Readiness level when relevant",
+            "Attempt type"
+          ]
+        },
+        {
+          "id": "partBreakdown",
+          "shows": [
+            "Part 1 score",
+            "Part 2 score",
+            "Part 3 score"
+          ]
+        },
+        {
+          "id": "unitBreakdown",
+          "shows": [
+            "Unit mastery",
+            "Strong / Developing / Review recommended"
+          ]
+        },
+        {
+          "id": "priorityReview",
+          "shows": [
+            "Up to 3 priority units",
+            "Why each needs review"
+          ]
+        },
+        {
+          "id": "actions",
+          "buttons": [
+            "Review Mistakes",
+            "Review Priority Unit",
+            "Try Another Mock",
+            "Back to Dashboard"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "attemptReview",
+      "route": "/results/:attemptId/review",
+      "title": "Review Mistakes",
+      "purpose": "Let the learner understand errors without turning the result screen into a wall of text.",
+      "filters": [
+        "Incorrect only",
+        "All questions",
+        "By Part",
+        "By Unit"
+      ],
+      "questionShows": [
+        "Question",
+        "Selected answer",
+        "Correct answer",
+        "Explanation",
+        "Unit",
+        "Skill"
+      ]
+    }
+  ],
+  "globalComponents": [
+    "Top navigation",
+    "Module progress bar",
+    "Readiness badge",
+    "Performance status chip",
+    "Primary CTA",
+    "Question card",
+    "Matching task card",
+    "Results chart/card",
+    "Recommendation card",
+    "Attempt history row",
+    "Independent preparation disclaimer"
+  ],
+  "performanceLabels": {
+    "strong": "Strong",
+    "developing": "Developing",
+    "review": "Review recommended"
+  },
+  "readinessLabels": [
+    "Not ready",
+    "Developing",
+    "Almost ready",
+    "TKT Ready"
+  ],
+  "nextImplementationStep": "Create the visual design system and Dashboard prototype before coding every screen."
+}

@@ -1,0 +1,1293 @@
+// TKT Ready — Module 1, Unit 1: Parts of Speech
+// Production question bank v1.0.0
+// All learner-facing content is in English.
+// Correct answers are stored as text, NOT as A/B/C positions, so options can be safely shuffled.
+
+export const unitMeta = {
+  "product": "TKT Ready",
+  "module": 1,
+  "unit": 1,
+  "title": "Parts of Speech",
+  "version": "1.0.0",
+  "language": "English",
+  "practiceItems": 30,
+  "testBankItems": 30,
+  "miniTestDisplayCount": 10,
+  "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+  "alignment": "TKT Module 1 — Describing language: Grammar — Parts of speech / word classes"
+};
+
+export const questionBank = [
+  {
+    "id": "M1-U1-001",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "noun",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The teacher gave the class a short break.",
+    "prompt": "What part of speech is “teacher”?",
+    "options": [
+      "Noun",
+      "Verb",
+      "Adjective"
+    ],
+    "correctAnswer": "Noun",
+    "explanation": "“Teacher” names a person, so it is a noun."
+  },
+  {
+    "id": "M1-U1-002",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "noun",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "Maria teaches English in Colombia.",
+    "prompt": "Which word is a proper noun?",
+    "options": [
+      "Maria",
+      "teaches",
+      "English"
+    ],
+    "correctAnswer": "Maria",
+    "explanation": "“Maria” is the specific name of a person, so it is a proper noun."
+  },
+  {
+    "id": "M1-U1-003",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "noun",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The lesson lasted forty minutes.",
+    "prompt": "Which word is a countable noun?",
+    "options": [
+      "lesson",
+      "forty",
+      "lasted"
+    ],
+    "correctAnswer": "lesson",
+    "explanation": "“Lesson” is countable because we can say one lesson, two lessons, and so on."
+  },
+  {
+    "id": "M1-U1-004",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "noun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The trainer gave us useful advice.",
+    "prompt": "What kind of noun is “advice”?",
+    "options": [
+      "Countable noun",
+      "Uncountable noun",
+      "Proper noun"
+    ],
+    "correctAnswer": "Uncountable noun",
+    "explanation": "“Advice” is normally uncountable in English; we say some advice, not an advice."
+  },
+  {
+    "id": "M1-U1-005",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "verb",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The trainer explained the task clearly.",
+    "prompt": "What part of speech is “explained”?",
+    "options": [
+      "Verb",
+      "Noun",
+      "Adjective"
+    ],
+    "correctAnswer": "Verb",
+    "explanation": "“Explained” expresses an action, so it is a verb."
+  },
+  {
+    "id": "M1-U1-006",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "verb",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The candidates have finished the activity.",
+    "prompt": "What is the function of “have” in this sentence?",
+    "options": [
+      "Main verb",
+      "Auxiliary verb",
+      "Modal verb"
+    ],
+    "correctAnswer": "Auxiliary verb",
+    "explanation": "“Have” helps form the present perfect with “finished”, so it is an auxiliary verb."
+  },
+  {
+    "id": "M1-U1-007",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "verb",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "Teachers should check instructions before an activity starts.",
+    "prompt": "What kind of verb is “should”?",
+    "options": [
+      "Main verb",
+      "Modal verb",
+      "Reporting verb"
+    ],
+    "correctAnswer": "Modal verb",
+    "explanation": "“Should” is a modal auxiliary used here to express advice."
+  },
+  {
+    "id": "M1-U1-008",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "verb",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The teacher opened the window.",
+    "prompt": "Which description best fits “opened”?",
+    "options": [
+      "Transitive verb",
+      "Intransitive verb",
+      "Modal verb"
+    ],
+    "correctAnswer": "Transitive verb",
+    "explanation": "“Opened” has a direct object, “the window”, so it is transitive."
+  },
+  {
+    "id": "M1-U1-009",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "adjective",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "It was an effective lesson.",
+    "prompt": "What part of speech is “effective”?",
+    "options": [
+      "Adjective",
+      "Adverb",
+      "Noun"
+    ],
+    "correctAnswer": "Adjective",
+    "explanation": "“Effective” describes the noun “lesson”, so it is an adjective."
+  },
+  {
+    "id": "M1-U1-010",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "adjective",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The second explanation was clearer than the first.",
+    "prompt": "What kind of adjective is “clearer”?",
+    "options": [
+      "Comparative adjective",
+      "Superlative adjective",
+      "Possessive adjective"
+    ],
+    "correctAnswer": "Comparative adjective",
+    "explanation": "“Clearer” compares two explanations, so it is a comparative adjective."
+  },
+  {
+    "id": "M1-U1-011",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "adjective",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The students completed a difficult task.",
+    "prompt": "What part of speech is “difficult”?",
+    "options": [
+      "Adjective",
+      "Adverb",
+      "Verb"
+    ],
+    "correctAnswer": "Adjective",
+    "explanation": "“Difficult” describes the noun “task”."
+  },
+  {
+    "id": "M1-U1-012",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "adverb",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The teacher spoke slowly.",
+    "prompt": "What part of speech is “slowly”?",
+    "options": [
+      "Adverb",
+      "Adjective",
+      "Noun"
+    ],
+    "correctAnswer": "Adverb",
+    "explanation": "“Slowly” tells us how the teacher spoke, so it is an adverb."
+  },
+  {
+    "id": "M1-U1-013",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "adverb",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The class often works in pairs.",
+    "prompt": "What kind of adverb is “often”?",
+    "options": [
+      "Adverb of frequency",
+      "Adverb of manner",
+      "Adverb of degree"
+    ],
+    "correctAnswer": "Adverb of frequency",
+    "explanation": "“Often” tells us how frequently something happens."
+  },
+  {
+    "id": "M1-U1-014",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "adverb",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The instructions were very clear.",
+    "prompt": "What kind of adverb is “very”?",
+    "options": [
+      "Adverb of degree",
+      "Adverb of time",
+      "Adverb of frequency"
+    ],
+    "correctAnswer": "Adverb of degree",
+    "explanation": "“Very” modifies the adjective “clear” and shows degree."
+  },
+  {
+    "id": "M1-U1-015",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "pronoun",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "They completed the task before the break.",
+    "prompt": "What kind of word is “They”?",
+    "options": [
+      "Pronoun",
+      "Determiner",
+      "Noun"
+    ],
+    "correctAnswer": "Pronoun",
+    "explanation": "“They” replaces a noun or noun phrase and functions as the subject."
+  },
+  {
+    "id": "M1-U1-016",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "pronoun",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The trainer asked them to compare answers.",
+    "prompt": "What kind of pronoun is “them”?",
+    "options": [
+      "Object pronoun",
+      "Subject pronoun",
+      "Reflexive pronoun"
+    ],
+    "correctAnswer": "Object pronoun",
+    "explanation": "“Them” receives the action of the verb “asked”, so it is an object pronoun."
+  },
+  {
+    "id": "M1-U1-017",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "pronoun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The teacher prepared the materials herself.",
+    "prompt": "What kind of pronoun is “herself”?",
+    "options": [
+      "Relative pronoun",
+      "Reflexive pronoun",
+      "Possessive pronoun"
+    ],
+    "correctAnswer": "Reflexive pronoun",
+    "explanation": "“Herself” refers back to “the teacher” and is a reflexive pronoun."
+  },
+  {
+    "id": "M1-U1-018",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "pronoun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The student who answered first was correct.",
+    "prompt": "What kind of pronoun is “who”?",
+    "options": [
+      "Relative pronoun",
+      "Object pronoun",
+      "Demonstrative pronoun"
+    ],
+    "correctAnswer": "Relative pronoun",
+    "explanation": "“Who” introduces a relative clause describing “the student”."
+  },
+  {
+    "id": "M1-U1-019",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "article",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The students opened the book.",
+    "prompt": "What kind of word is the first “the”?",
+    "options": [
+      "Definite article",
+      "Indefinite article",
+      "Pronoun"
+    ],
+    "correctAnswer": "Definite article",
+    "explanation": "“The” is the definite article."
+  },
+  {
+    "id": "M1-U1-020",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "article",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The teacher used an example from the coursebook.",
+    "prompt": "What kind of word is “an”?",
+    "options": [
+      "Indefinite article",
+      "Definite article",
+      "Conjunction"
+    ],
+    "correctAnswer": "Indefinite article",
+    "explanation": "“An” is an indefinite article used before a vowel sound."
+  },
+  {
+    "id": "M1-U1-021",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "determiner",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "Some learners finished early.",
+    "prompt": "What part of speech is “Some”?",
+    "options": [
+      "Determiner",
+      "Pronoun",
+      "Adverb"
+    ],
+    "correctAnswer": "Determiner",
+    "explanation": "“Some” comes before the noun “learners” and gives information about quantity."
+  },
+  {
+    "id": "M1-U1-022",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "preposition",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The candidates worked quietly during the test.",
+    "prompt": "What part of speech is “during”?",
+    "options": [
+      "Preposition",
+      "Conjunction",
+      "Adverb"
+    ],
+    "correctAnswer": "Preposition",
+    "explanation": "“During” introduces the noun phrase “the test”, so it is a preposition."
+  },
+  {
+    "id": "M1-U1-023",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "preposition",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The teacher stood between two groups.",
+    "prompt": "What part of speech is “between”?",
+    "options": [
+      "Preposition",
+      "Adverb",
+      "Conjunction"
+    ],
+    "correctAnswer": "Preposition",
+    "explanation": "“Between” shows the relationship between the teacher and two groups."
+  },
+  {
+    "id": "M1-U1-024",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "conjunction",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "Although the task was difficult, the learners completed it.",
+    "prompt": "What part of speech is “Although”?",
+    "options": [
+      "Conjunction",
+      "Preposition",
+      "Determiner"
+    ],
+    "correctAnswer": "Conjunction",
+    "explanation": "“Although” links clauses and introduces contrast."
+  },
+  {
+    "id": "M1-U1-025",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "conjunction",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The teacher repeated the instructions because several learners were confused.",
+    "prompt": "What part of speech is “because”?",
+    "options": [
+      "Conjunction",
+      "Adverb",
+      "Pronoun"
+    ],
+    "correctAnswer": "Conjunction",
+    "explanation": "“Because” links clauses and introduces a reason."
+  },
+  {
+    "id": "M1-U1-026",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "exclamation",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "Wow! That was a very useful activity.",
+    "prompt": "What part of speech is “Wow!”?",
+    "options": [
+      "Exclamation",
+      "Conjunction",
+      "Adverb"
+    ],
+    "correctAnswer": "Exclamation",
+    "explanation": "“Wow!” expresses a strong feeling, so it is an exclamation."
+  },
+  {
+    "id": "M1-U1-027",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "word_class_in_context",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "I have a lot of work to finish.",
+    "prompt": "What part of speech is “work” in this sentence?",
+    "options": [
+      "Noun",
+      "Verb",
+      "Adjective"
+    ],
+    "correctAnswer": "Noun",
+    "explanation": "Here, “work” names something the speaker has to finish, so it functions as a noun."
+  },
+  {
+    "id": "M1-U1-028",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "word_class_in_context",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "She is a fast learner.",
+    "prompt": "What part of speech is “fast”?",
+    "options": [
+      "Adjective",
+      "Adverb",
+      "Noun"
+    ],
+    "correctAnswer": "Adjective",
+    "explanation": "“Fast” describes the noun “learner”, so it is an adjective here."
+  },
+  {
+    "id": "M1-U1-029",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "word_class_in_context",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The students finished the activity fast.",
+    "prompt": "What part of speech is “fast”?",
+    "options": [
+      "Adverb",
+      "Adjective",
+      "Noun"
+    ],
+    "correctAnswer": "Adverb",
+    "explanation": "Here, “fast” describes how the students finished, so it functions as an adverb."
+  },
+  {
+    "id": "M1-U1-030",
+    "module": 1,
+    "unit": 1,
+    "section": "practice",
+    "skill": "word_class_in_context",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "The teacher arrived before the lesson.",
+    "prompt": "What part of speech is “before”?",
+    "options": [
+      "Preposition",
+      "Conjunction",
+      "Pronoun"
+    ],
+    "correctAnswer": "Preposition",
+    "explanation": "“Before” is followed by the noun phrase “the lesson”, so it functions as a preposition."
+  },
+  {
+    "id": "M1-U1-031",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "noun",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The teacher wrote the key words on the whiteboard.",
+    "prompt": "What kind of noun is “whiteboard”?",
+    "options": [
+      "Compound noun",
+      "Proper noun",
+      "Uncountable noun"
+    ],
+    "correctAnswer": "Compound noun",
+    "explanation": "“Whiteboard” is formed from two words combined to make one noun."
+  },
+  {
+    "id": "M1-U1-032",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "noun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The team agreed on a new classroom routine.",
+    "prompt": "What kind of noun is “team”?",
+    "options": [
+      "Collective noun",
+      "Proper noun",
+      "Uncountable noun"
+    ],
+    "correctAnswer": "Collective noun",
+    "explanation": "“Team” refers to a group considered as a unit, so it is a collective noun."
+  },
+  {
+    "id": "M1-U1-033",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "word_class_in_context",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The class had a short break.",
+    "prompt": "What part of speech is “break”?",
+    "options": [
+      "Noun",
+      "Verb",
+      "Adjective"
+    ],
+    "correctAnswer": "Noun",
+    "explanation": "After “a short”, “break” functions as the head of a noun phrase."
+  },
+  {
+    "id": "M1-U1-034",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "noun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The school bought new equipment for the language lab.",
+    "prompt": "What kind of noun is “equipment”?",
+    "options": [
+      "Uncountable noun",
+      "Countable noun",
+      "Proper noun"
+    ],
+    "correctAnswer": "Uncountable noun",
+    "explanation": "“Equipment” is normally uncountable in English."
+  },
+  {
+    "id": "M1-U1-035",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "verb",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The learners were studying when the bell rang.",
+    "prompt": "What is the function of “were”?",
+    "options": [
+      "Auxiliary verb",
+      "Main verb",
+      "Modal verb"
+    ],
+    "correctAnswer": "Auxiliary verb",
+    "explanation": "“Were” helps form the past continuous with “studying”."
+  },
+  {
+    "id": "M1-U1-036",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "verb",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The learners might need more time.",
+    "prompt": "What kind of verb is “might”?",
+    "options": [
+      "Modal verb",
+      "Main verb",
+      "Reporting verb"
+    ],
+    "correctAnswer": "Modal verb",
+    "explanation": "“Might” is a modal auxiliary expressing possibility."
+  },
+  {
+    "id": "M1-U1-037",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "verb",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The students laughed when they saw the picture.",
+    "prompt": "Which description best fits “laughed”?",
+    "options": [
+      "Intransitive verb",
+      "Transitive verb",
+      "Auxiliary verb"
+    ],
+    "correctAnswer": "Intransitive verb",
+    "explanation": "“Laughed” does not take a direct object in this sentence."
+  },
+  {
+    "id": "M1-U1-038",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "verb",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "The trainer suggested using a shorter lead-in.",
+    "prompt": "What kind of verb is “suggested”?",
+    "options": [
+      "Reporting verb",
+      "Modal verb",
+      "Auxiliary verb"
+    ],
+    "correctAnswer": "Reporting verb",
+    "explanation": "“Suggested” reports what someone communicated or proposed."
+  },
+  {
+    "id": "M1-U1-039",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "adjective",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The teacher selected a useful resource.",
+    "prompt": "What part of speech is “useful”?",
+    "options": [
+      "Adjective",
+      "Adverb",
+      "Noun"
+    ],
+    "correctAnswer": "Adjective",
+    "explanation": "“Useful” describes the noun “resource”."
+  },
+  {
+    "id": "M1-U1-040",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "adjective",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "This was the most effective activity in the lesson.",
+    "prompt": "What kind of adjective is “most effective”?",
+    "options": [
+      "Superlative adjective",
+      "Comparative adjective",
+      "Possessive adjective"
+    ],
+    "correctAnswer": "Superlative adjective",
+    "explanation": "“Most effective” identifies the highest degree among a group."
+  },
+  {
+    "id": "M1-U1-041",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "adverb",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The teacher rarely uses translation in class.",
+    "prompt": "What kind of adverb is “rarely”?",
+    "options": [
+      "Adverb of frequency",
+      "Adverb of manner",
+      "Adverb of degree"
+    ],
+    "correctAnswer": "Adverb of frequency",
+    "explanation": "“Rarely” indicates how often something happens."
+  },
+  {
+    "id": "M1-U1-042",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "adverb",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The trainer observed the lesson yesterday.",
+    "prompt": "What kind of adverb is “yesterday”?",
+    "options": [
+      "Adverb of time",
+      "Adverb of manner",
+      "Adverb of degree"
+    ],
+    "correctAnswer": "Adverb of time",
+    "explanation": "“Yesterday” tells us when the observation happened."
+  },
+  {
+    "id": "M1-U1-043",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "word_class_in_context",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "The candidates worked hard before the exam.",
+    "prompt": "What part of speech is “hard”?",
+    "options": [
+      "Adverb",
+      "Adjective",
+      "Noun"
+    ],
+    "correctAnswer": "Adverb",
+    "explanation": "Here, “hard” modifies the verb “worked”; an adverb does not always end in -ly."
+  },
+  {
+    "id": "M1-U1-044",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "pronoun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "Their classroom is upstairs, but ours is on the ground floor.",
+    "prompt": "What kind of pronoun is “ours”?",
+    "options": [
+      "Possessive pronoun",
+      "Object pronoun",
+      "Relative pronoun"
+    ],
+    "correctAnswer": "Possessive pronoun",
+    "explanation": "“Ours” replaces a noun phrase and expresses possession."
+  },
+  {
+    "id": "M1-U1-045",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "pronoun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "These are the examples we need.",
+    "prompt": "What kind of pronoun is “These”?",
+    "options": [
+      "Demonstrative pronoun",
+      "Relative pronoun",
+      "Reflexive pronoun"
+    ],
+    "correctAnswer": "Demonstrative pronoun",
+    "explanation": "“These” stands alone and points to specific things, so it is a demonstrative pronoun."
+  },
+  {
+    "id": "M1-U1-046",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "pronoun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The activity which we tried first was too easy.",
+    "prompt": "What kind of pronoun is “which”?",
+    "options": [
+      "Relative pronoun",
+      "Possessive pronoun",
+      "Subject pronoun"
+    ],
+    "correctAnswer": "Relative pronoun",
+    "explanation": "“Which” introduces a relative clause referring to “the activity”."
+  },
+  {
+    "id": "M1-U1-047",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "pronoun",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "I gave her the answer key.",
+    "prompt": "What kind of pronoun is “her” in this sentence?",
+    "options": [
+      "Object pronoun",
+      "Subject pronoun",
+      "Reflexive pronoun"
+    ],
+    "correctAnswer": "Object pronoun",
+    "explanation": "“Her” functions as the indirect object of “gave”."
+  },
+  {
+    "id": "M1-U1-048",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "determiner",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "Each candidate received an answer sheet.",
+    "prompt": "What part of speech is “Each”?",
+    "options": [
+      "Determiner",
+      "Pronoun",
+      "Adverb"
+    ],
+    "correctAnswer": "Determiner",
+    "explanation": "“Each” comes before the noun “candidate” and specifies the members individually."
+  },
+  {
+    "id": "M1-U1-049",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "article",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The trainer collected the papers at the end.",
+    "prompt": "What kind of word is “the” before “papers”?",
+    "options": [
+      "Definite article",
+      "Indefinite article",
+      "Determiner of quantity"
+    ],
+    "correctAnswer": "Definite article",
+    "explanation": "“The” is the definite article."
+  },
+  {
+    "id": "M1-U1-050",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "determiner",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "Many teachers use concept-checking questions.",
+    "prompt": "What part of speech is “Many”?",
+    "options": [
+      "Determiner",
+      "Adverb",
+      "Conjunction"
+    ],
+    "correctAnswer": "Determiner",
+    "explanation": "“Many” appears before the plural noun “teachers” and gives quantity information."
+  },
+  {
+    "id": "M1-U1-051",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "preposition",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The learners walked through the classroom to form new groups.",
+    "prompt": "What part of speech is “through”?",
+    "options": [
+      "Preposition",
+      "Conjunction",
+      "Adjective"
+    ],
+    "correctAnswer": "Preposition",
+    "explanation": "“Through” introduces the noun phrase “the classroom” and expresses movement in relation to it."
+  },
+  {
+    "id": "M1-U1-052",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "word_class_in_context",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "The teacher checked the answers after the learners finished.",
+    "prompt": "What part of speech is “after”?",
+    "options": [
+      "Conjunction",
+      "Preposition",
+      "Adverb"
+    ],
+    "correctAnswer": "Conjunction",
+    "explanation": "Here, “after” introduces the clause “the learners finished”, so it functions as a conjunction."
+  },
+  {
+    "id": "M1-U1-053",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "conjunction",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "The task was simple, but the instructions were unclear.",
+    "prompt": "What part of speech is “but”?",
+    "options": [
+      "Conjunction",
+      "Preposition",
+      "Pronoun"
+    ],
+    "correctAnswer": "Conjunction",
+    "explanation": "“But” connects two contrasting clauses."
+  },
+  {
+    "id": "M1-U1-054",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "conjunction",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The class will continue unless the fire alarm sounds.",
+    "prompt": "What part of speech is “unless”?",
+    "options": [
+      "Conjunction",
+      "Adverb",
+      "Determiner"
+    ],
+    "correctAnswer": "Conjunction",
+    "explanation": "“Unless” introduces a condition and links two clauses."
+  },
+  {
+    "id": "M1-U1-055",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "exclamation",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "Oh! I left the answer key in the staff room.",
+    "prompt": "What part of speech is “Oh!”?",
+    "options": [
+      "Exclamation",
+      "Adverb",
+      "Conjunction"
+    ],
+    "correctAnswer": "Exclamation",
+    "explanation": "“Oh!” expresses a spontaneous feeling or reaction."
+  },
+  {
+    "id": "M1-U1-056",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "word_class_in_context",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "Please turn on the light.",
+    "prompt": "What part of speech is “light”?",
+    "options": [
+      "Noun",
+      "Adjective",
+      "Verb"
+    ],
+    "correctAnswer": "Noun",
+    "explanation": "Here, “light” names the thing to be turned on, so it functions as a noun."
+  },
+  {
+    "id": "M1-U1-057",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "word_class_in_context",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The learners carried a light bag.",
+    "prompt": "What part of speech is “light”?",
+    "options": [
+      "Adjective",
+      "Noun",
+      "Adverb"
+    ],
+    "correctAnswer": "Adjective",
+    "explanation": "Here, “light” describes the noun “bag”."
+  },
+  {
+    "id": "M1-U1-058",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "word_class_in_context",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "The groups present their ideas at the end of the lesson.",
+    "prompt": "What part of speech is “present”?",
+    "options": [
+      "Verb",
+      "Noun",
+      "Adjective"
+    ],
+    "correctAnswer": "Verb",
+    "explanation": "Here, “present” expresses the action the groups perform."
+  },
+  {
+    "id": "M1-U1-059",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "word_class_in_context",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "The candidate answered the question well.",
+    "prompt": "What part of speech is “well”?",
+    "options": [
+      "Adverb",
+      "Adjective",
+      "Noun"
+    ],
+    "correctAnswer": "Adverb",
+    "explanation": "“Well” describes how the candidate answered."
+  },
+  {
+    "id": "M1-U1-060",
+    "module": 1,
+    "unit": 1,
+    "section": "test",
+    "skill": "word_class_in_context",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "That lesson was particularly successful.",
+    "prompt": "What part of speech is “That”?",
+    "options": [
+      "Determiner",
+      "Pronoun",
+      "Conjunction"
+    ],
+    "correctAnswer": "Determiner",
+    "explanation": "“That” comes before the noun “lesson” and identifies it, so it functions as a determiner."
+  }
+];
+
+export const matchingSets = [
+  {
+    "id": "M1-U1-MATCH-P01",
+    "section": "practice",
+    "instruction": "Match each example with the correct grammatical term.",
+    "optionBank": [
+      "Countable noun",
+      "Uncountable noun",
+      "Modal verb",
+      "Object pronoun",
+      "Adverb of frequency",
+      "Indefinite article"
+    ],
+    "items": [
+      {
+        "questionId": "M1-U1-003",
+        "example": "lesson",
+        "correctAnswer": "Countable noun"
+      },
+      {
+        "questionId": "M1-U1-004",
+        "example": "advice",
+        "correctAnswer": "Uncountable noun"
+      },
+      {
+        "questionId": "M1-U1-007",
+        "example": "should",
+        "correctAnswer": "Modal verb"
+      },
+      {
+        "questionId": "M1-U1-016",
+        "example": "them",
+        "correctAnswer": "Object pronoun"
+      },
+      {
+        "questionId": "M1-U1-013",
+        "example": "often",
+        "correctAnswer": "Adverb of frequency"
+      },
+      {
+        "questionId": "M1-U1-020",
+        "example": "an",
+        "correctAnswer": "Indefinite article"
+      }
+    ]
+  },
+  {
+    "id": "M1-U1-MATCH-T01",
+    "section": "test",
+    "instruction": "Match each example with the correct grammatical term.",
+    "optionBank": [
+      "Uncountable noun",
+      "Modal verb",
+      "Possessive pronoun",
+      "Preposition",
+      "Conjunction",
+      "Exclamation"
+    ],
+    "items": [
+      {
+        "questionId": "M1-U1-034",
+        "example": "equipment",
+        "correctAnswer": "Uncountable noun"
+      },
+      {
+        "questionId": "M1-U1-036",
+        "example": "might",
+        "correctAnswer": "Modal verb"
+      },
+      {
+        "questionId": "M1-U1-044",
+        "example": "ours",
+        "correctAnswer": "Possessive pronoun"
+      },
+      {
+        "questionId": "M1-U1-051",
+        "example": "through",
+        "correctAnswer": "Preposition"
+      },
+      {
+        "questionId": "M1-U1-054",
+        "example": "unless",
+        "correctAnswer": "Conjunction"
+      },
+      {
+        "questionId": "M1-U1-055",
+        "example": "Oh!",
+        "correctAnswer": "Exclamation"
+      }
+    ]
+  }
+];
+
+
+function shuffleCopy(input) {
+  const arr = [...input];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/**
+ * Builds a unique randomized attempt.
+ *
+ * Persist every returned `signature` in the user's attempt history and pass
+ * those signatures back through `usedSignatures` on future attempts.
+ * The function will throw rather than return an exact duplicate.
+ */
+export function buildAttempt({
+  section = "test",
+  count = 10,
+  usedSignatures = []
+} = {}) {
+  const pool = questionBank.filter(q => q.section === section);
+
+  if (count < 1 || count > pool.length) {
+    throw new Error(`count must be between 1 and ${pool.length} for section "${section}".`);
+  }
+
+  const used = new Set(usedSignatures);
+
+  for (let attempt = 0; attempt < 2000; attempt++) {
+    const selected = shuffleCopy(pool)
+      .slice(0, count)
+      .map(q => ({
+        ...q,
+        options: shuffleCopy(q.options)
+      }));
+
+    const signature = selected
+      .map(q => `${q.id}::${q.options.join("~~")}`)
+      .join("||");
+
+    if (!used.has(signature)) {
+      return { questions: selected, signature };
+    }
+  }
+
+  throw new Error(
+    "Unable to create a new unique attempt from the available bank. Expand the question bank."
+  );
+}
+
+export function buildMatchingAttempt(setId) {
+  const set = matchingSets.find(s => s.id === setId);
+  if (!set) throw new Error(`Unknown matching set: ${setId}`);
+
+  return {
+    ...set,
+    items: shuffleCopy(set.items),
+    optionBank: shuffleCopy(set.optionBank)
+  };
+}
+
+export function checkAnswer(question, selectedAnswer) {
+  const isCorrect = selectedAnswer === question.correctAnswer;
+  return {
+    isCorrect,
+    correctAnswer: question.correctAnswer,
+    explanation: question.explanation
+  };
+}
+
+export function getSkillBreakdown(responses) {
+  // responses: [{ questionId, selectedAnswer }]
+  const byId = new Map(questionBank.map(q => [q.id, q]));
+  const stats = {};
+
+  for (const response of responses) {
+    const q = byId.get(response.questionId);
+    if (!q) continue;
+
+    if (!stats[q.skill]) {
+      stats[q.skill] = { correct: 0, total: 0, percentage: 0 };
+    }
+
+    stats[q.skill].total += 1;
+    if (response.selectedAnswer === q.correctAnswer) {
+      stats[q.skill].correct += 1;
+    }
+  }
+
+  for (const skill of Object.keys(stats)) {
+    const s = stats[skill];
+    s.percentage = Math.round((s.correct / s.total) * 100);
+  }
+
+  return stats;
+}

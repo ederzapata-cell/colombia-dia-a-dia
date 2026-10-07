@@ -1,0 +1,1195 @@
+{
+  "meta": {
+    "product": "TKT Ready",
+    "module": 1,
+    "unit": 14,
+    "title": "Teaching Approaches & Lesson Frameworks",
+    "version": "1.0.0",
+    "language": "English",
+    "practiceItems": 30,
+    "testBankItems": 30,
+    "miniTestDisplayCount": 10,
+    "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+    "alignment": "TKT Module 1 — Background to language teaching: teaching approaches, frameworks and procedures",
+    "skills": [
+      "ppp",
+      "tbl",
+      "test_teach_test",
+      "guided_discovery",
+      "tpr_grammar_translation",
+      "lexical_skills_based"
+    ],
+    "coverage": [
+      "Presentation, Practice and Production (PPP)",
+      "Task-based learning (TBL)",
+      "Test-teach-test",
+      "Guided discovery",
+      "Total Physical Response (TPR)",
+      "Grammar-Translation",
+      "Lexical Approach",
+      "Skills-based lessons"
+    ]
+  },
+  "questions": [
+    {
+      "id": "M1-U14-001",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "ppp",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher presents a new structure in context, gives controlled practice, then moves to freer use. Which framework is this?",
+      "options": [
+        "Presentation, Practice and Production (PPP)",
+        "Task-based learning (TBL)",
+        "Test-teach-test"
+      ],
+      "correctAnswer": "Presentation, Practice and Production (PPP)",
+      "explanation": "PPP typically moves from presentation to controlled practice and then toward freer production."
+    },
+    {
+      "id": "M1-U14-002",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "ppp",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which stage comes first in a typical PPP sequence?",
+      "options": [
+        "Presentation",
+        "Production",
+        "Final assessment"
+      ],
+      "correctAnswer": "Presentation",
+      "explanation": "PPP begins by introducing and clarifying the target language."
+    },
+    {
+      "id": "M1-U14-003",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "ppp",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity best fits the Practice stage of PPP?",
+      "options": [
+        "Complete controlled sentences using the target structure",
+        "Debate any topic using any language",
+        "Do a diagnostic task before teaching"
+      ],
+      "correctAnswer": "Complete controlled sentences using the target structure",
+      "explanation": "The Practice stage normally gives guided or controlled use of the target language."
+    },
+    {
+      "id": "M1-U14-004",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "ppp",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity best fits the Production stage of PPP?",
+      "options": [
+        "Use the target language in a freer role-play",
+        "Repeat the teacher's model only",
+        "Translate a grammar rule"
+      ],
+      "correctAnswer": "Use the target language in a freer role-play",
+      "explanation": "Production gives learners greater freedom to use the target language communicatively."
+    },
+    {
+      "id": "M1-U14-005",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "ppp",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about PPP is most accurate?",
+      "options": [
+        "It usually moves from teacher-supported presentation toward increasingly independent use",
+        "It always begins with a free task before teaching",
+        "It avoids explicit focus on language"
+      ],
+      "correctAnswer": "It usually moves from teacher-supported presentation toward increasingly independent use",
+      "explanation": "PPP typically sequences presentation, guided practice and freer production."
+    },
+    {
+      "id": "M1-U14-006",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "ppp",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A lesson follows: context → explanation of target language → gap-fill practice → freer speaking. Which framework is this?",
+      "options": [
+        "PPP",
+        "Guided discovery",
+        "Grammar-translation"
+      ],
+      "correctAnswer": "PPP",
+      "explanation": "The sequence matches Presentation, Practice and Production."
+    },
+    {
+      "id": "M1-U14-007",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "ppp",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which learner preference is often compatible with PPP?",
+      "options": [
+        "Learners who like a clear focus on new language before freer use",
+        "Learners who want only open tasks with no prior language focus",
+        "Learners who want grammar rules followed by translation only"
+      ],
+      "correctAnswer": "Learners who like a clear focus on new language before freer use",
+      "explanation": "PPP provides an explicit focus on language followed by supported practice."
+    },
+    {
+      "id": "M1-U14-008",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "ppp",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What mainly distinguishes PPP from Test-teach-test?",
+      "options": [
+        "PPP normally teaches before testing freer use; Test-teach-test begins with a diagnostic task",
+        "PPP never includes practice",
+        "Test-teach-test never includes teaching"
+      ],
+      "correctAnswer": "PPP normally teaches before testing freer use; Test-teach-test begins with a diagnostic task",
+      "explanation": "Test-teach-test starts by seeing what learners can already do, whereas PPP usually presents first."
+    },
+    {
+      "id": "M1-U14-009",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "ppp",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which sequence is most typical of PPP?",
+      "options": [
+        "Present → controlled practice → freer practice",
+        "Task → language focus → task discussion",
+        "Rule → translation"
+      ],
+      "correctAnswer": "Present → controlled practice → freer practice",
+      "explanation": "This is the defining sequence of PPP."
+    },
+    {
+      "id": "M1-U14-010",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "ppp",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which criticism is sometimes made of a rigid PPP lesson?",
+      "options": [
+        "Learners may have limited opportunity to discover needs before the target language is selected",
+        "It contains no language practice",
+        "It always avoids communication"
+      ],
+      "correctAnswer": "Learners may have limited opportunity to discover needs before the target language is selected",
+      "explanation": "A rigid PPP sequence can be less responsive to learner-generated language needs than diagnostic or task-first frameworks."
+    },
+    {
+      "id": "M1-U14-011",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tbl",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners first complete a meaningful task, then discuss the language they used. Which approach is this?",
+      "options": [
+        "Task-based learning (TBL)",
+        "PPP",
+        "Grammar-translation"
+      ],
+      "correctAnswer": "Task-based learning (TBL)",
+      "explanation": "TBL organises learning around completion of meaningful tasks, followed by language focus."
+    },
+    {
+      "id": "M1-U14-012",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tbl",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is central in Task-based Learning?",
+      "options": [
+        "Completing a meaningful task",
+        "Translating every sentence",
+        "Repeating a fixed model only"
+      ],
+      "correctAnswer": "Completing a meaningful task",
+      "explanation": "The task is the central organising feature of TBL."
+    },
+    {
+      "id": "M1-U14-013",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tbl",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity best fits TBL?",
+      "options": [
+        "Plan a class trip together, then review useful language that emerged",
+        "Study a rule, then translate a paragraph",
+        "Repeat ten model sentences"
+      ],
+      "correctAnswer": "Plan a class trip together, then review useful language that emerged",
+      "explanation": "The lesson begins with meaning-focused task completion and later examines language."
+    },
+    {
+      "id": "M1-U14-014",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tbl",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why is language focus often placed after a task in TBL?",
+      "options": [
+        "Learners' actual language use can reveal useful forms to notice or improve",
+        "Grammar should never be discussed before a task",
+        "The task has no learning purpose"
+      ],
+      "correctAnswer": "Learners' actual language use can reveal useful forms to notice or improve",
+      "explanation": "Task performance can create a meaningful basis for subsequent language analysis."
+    },
+    {
+      "id": "M1-U14-015",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tbl",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about TBL is most accurate?",
+      "options": [
+        "Meaningful task completion is central, and language analysis can follow the task",
+        "The main aim is sentence translation",
+        "The teacher must present all target language before any task"
+      ],
+      "correctAnswer": "Meaningful task completion is central, and language analysis can follow the task",
+      "explanation": "TBL typically prioritises task completion before focusing more explicitly on language."
+    },
+    {
+      "id": "M1-U14-016",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tbl",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A lesson begins with learners solving a real-world problem in groups, followed by discussion of useful language. Which framework is this?",
+      "options": [
+        "TBL",
+        "PPP",
+        "TPR"
+      ],
+      "correctAnswer": "TBL",
+      "explanation": "The task comes first and language focus follows."
+    },
+    {
+      "id": "M1-U14-017",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tbl",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which learner preference may suit TBL?",
+      "options": [
+        "Learners who like communicating to achieve an outcome",
+        "Learners who want grammar rules followed only by translation",
+        "Learners who prefer only repetition drills"
+      ],
+      "correctAnswer": "Learners who like communicating to achieve an outcome",
+      "explanation": "TBL gives learners a reason to use language to complete meaningful tasks."
+    },
+    {
+      "id": "M1-U14-018",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tbl",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What distinguishes TBL from PPP most clearly?",
+      "options": [
+        "TBL typically starts from a task; PPP typically starts from presentation of target language",
+        "TBL has no communication",
+        "PPP always starts with assessment"
+      ],
+      "correctAnswer": "TBL typically starts from a task; PPP typically starts from presentation of target language",
+      "explanation": "The sequencing and central role of the task distinguish the two frameworks."
+    },
+    {
+      "id": "M1-U14-019",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tbl",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which sequence best matches TBL?",
+      "options": [
+        "Task → discussion/language focus",
+        "Rule → translation",
+        "Presentation → controlled drill → freer role-play"
+      ],
+      "correctAnswer": "Task → discussion/language focus",
+      "explanation": "Cambridge's TKT worksheet links TBL with task completion followed by focus on language used in the task."
+    },
+    {
+      "id": "M1-U14-020",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tbl",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why can TBL help reveal learner needs?",
+      "options": [
+        "The task can show what learners can and cannot yet express successfully",
+        "The task guarantees perfect accuracy",
+        "The task removes the need for feedback"
+      ],
+      "correctAnswer": "The task can show what learners can and cannot yet express successfully",
+      "explanation": "Real task performance can expose gaps in learners' available language."
+    },
+    {
+      "id": "M1-U14-021",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "test_teach_test",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners first try a task, the teacher teaches what they need, then they try another task. Which framework is this?",
+      "options": [
+        "Test-teach-test",
+        "PPP",
+        "Guided discovery"
+      ],
+      "correctAnswer": "Test-teach-test",
+      "explanation": "Test-teach-test begins by diagnosing learner performance, then teaches relevant language, then checks improvement."
+    },
+    {
+      "id": "M1-U14-022",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "test_teach_test",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the purpose of the first 'test' in Test-teach-test?",
+      "options": [
+        "Find out what learners can already do",
+        "Give a final grade",
+        "Teach the target structure directly"
+      ],
+      "correctAnswer": "Find out what learners can already do",
+      "explanation": "The first task diagnoses strengths, gaps and prior knowledge."
+    },
+    {
+      "id": "M1-U14-023",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "test_teach_test",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why can Test-teach-test be efficient with stronger learners?",
+      "options": [
+        "The teacher can avoid spending too long teaching language learners already know",
+        "It eliminates all practice",
+        "It requires no teacher decisions"
+      ],
+      "correctAnswer": "The teacher can avoid spending too long teaching language learners already know",
+      "explanation": "The initial task helps target teaching more precisely."
+    },
+    {
+      "id": "M1-U14-024",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "test_teach_test",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which sequence best represents Test-teach-test?",
+      "options": [
+        "Diagnostic task → targeted teaching → second task",
+        "Presentation → drill → free practice",
+        "Rule → translation"
+      ],
+      "correctAnswer": "Diagnostic task → targeted teaching → second task",
+      "explanation": "The first task identifies needs, the teaching addresses them, and the second task checks progress."
+    },
+    {
+      "id": "M1-U14-025",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "test_teach_test",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is a key advantage of Test-teach-test?",
+      "options": [
+        "Teaching can respond directly to learner performance",
+        "It guarantees all learners need the same language",
+        "It avoids assessment completely"
+      ],
+      "correctAnswer": "Teaching can respond directly to learner performance",
+      "explanation": "The diagnostic first stage provides evidence for what should be taught."
+    },
+    {
+      "id": "M1-U14-026",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "test_teach_test",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners attempt a conditional-sentence task before any explanation. The teacher then clarifies problem areas and gives a second task. Which framework is this?",
+      "options": [
+        "Test-teach-test",
+        "PPP",
+        "Lexical Approach"
+      ],
+      "correctAnswer": "Test-teach-test",
+      "explanation": "The sequence is diagnostic attempt, teaching, then re-attempt."
+    },
+    {
+      "id": "M1-U14-027",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "test_teach_test",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which learner group may particularly benefit from Test-teach-test?",
+      "options": [
+        "Learners who may already know some of the target language",
+        "Learners who must always begin with full teacher presentation",
+        "Learners doing only translation"
+      ],
+      "correctAnswer": "Learners who may already know some of the target language",
+      "explanation": "The framework identifies what learners already control and what still needs teaching."
+    },
+    {
+      "id": "M1-U14-028",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "test_teach_test",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What distinguishes the first stage of Test-teach-test from the first stage of PPP?",
+      "options": [
+        "It diagnoses existing ability before explicit teaching",
+        "It always includes translation",
+        "It never involves target language"
+      ],
+      "correctAnswer": "It diagnoses existing ability before explicit teaching",
+      "explanation": "Test-teach-test starts with learner performance rather than teacher presentation."
+    },
+    {
+      "id": "M1-U14-029",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "test_teach_test",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the main purpose of the final 'test'?",
+      "options": [
+        "Check whether learners can use the language more successfully after teaching",
+        "Assign a formal qualification",
+        "Introduce the topic"
+      ],
+      "correctAnswer": "Check whether learners can use the language more successfully after teaching",
+      "explanation": "The second task provides evidence of learning after targeted teaching."
+    },
+    {
+      "id": "M1-U14-030",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "test_teach_test",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about Test-teach-test is most accurate?",
+      "options": [
+        "It is diagnostic and responsive to learner needs",
+        "It requires the teacher to pre-teach everything",
+        "It is identical to grammar-translation"
+      ],
+      "correctAnswer": "It is diagnostic and responsive to learner needs",
+      "explanation": "Its first stage helps determine what teaching is actually necessary."
+    },
+    {
+      "id": "M1-U14-031",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "guided_discovery",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners study examples and work out the grammar rule themselves. Which approach is this?",
+      "options": [
+        "Guided discovery",
+        "TPR",
+        "Grammar-translation"
+      ],
+      "correctAnswer": "Guided discovery",
+      "explanation": "Guided discovery gives learners examples and support so they can infer rules or patterns."
+    },
+    {
+      "id": "M1-U14-032",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "guided_discovery",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the teacher's role in guided discovery?",
+      "options": [
+        "Provide examples and questions that help learners discover the rule",
+        "Give the rule immediately every time",
+        "Avoid all guidance"
+      ],
+      "correctAnswer": "Provide examples and questions that help learners discover the rule",
+      "explanation": "The teacher guides learners toward noticing and formulating the rule."
+    },
+    {
+      "id": "M1-U14-033",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "guided_discovery",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity best fits guided discovery?",
+      "options": [
+        "Compare examples and answer questions about how a tense is formed and used",
+        "Translate a paragraph after reading a rule",
+        "Follow physical commands"
+      ],
+      "correctAnswer": "Compare examples and answer questions about how a tense is formed and used",
+      "explanation": "Learners use examples and guiding questions to infer the pattern."
+    },
+    {
+      "id": "M1-U14-034",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "guided_discovery",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why can guided discovery promote learner involvement?",
+      "options": [
+        "Learners actively analyse examples rather than only receiving a rule",
+        "Learners avoid thinking about language",
+        "Learners only repeat models"
+      ],
+      "correctAnswer": "Learners actively analyse examples rather than only receiving a rule",
+      "explanation": "The approach encourages cognitive engagement with language patterns."
+    },
+    {
+      "id": "M1-U14-035",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "guided_discovery",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement best describes guided discovery?",
+      "options": [
+        "The teacher structures the discovery process but learners work out key rules or patterns",
+        "Learners receive no examples or help",
+        "The lesson must contain no explicit discussion of form"
+      ],
+      "correctAnswer": "The teacher structures the discovery process but learners work out key rules or patterns",
+      "explanation": "It is guided—not unsupported—discovery."
+    },
+    {
+      "id": "M1-U14-036",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "guided_discovery",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners underline several examples of comparatives, answer questions, then formulate the rule. What approach is this?",
+      "options": [
+        "Guided discovery",
+        "Grammar-translation",
+        "TPR"
+      ],
+      "correctAnswer": "Guided discovery",
+      "explanation": "Learners infer the rule from examples with teacher guidance."
+    },
+    {
+      "id": "M1-U14-037",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "guided_discovery",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which sequence best represents guided discovery?",
+      "options": [
+        "Examples → learners work out rule → practice",
+        "Rule → translation",
+        "Task → language focus only"
+      ],
+      "correctAnswer": "Examples → learners work out rule → practice",
+      "explanation": "This sequence appears directly in Cambridge's TKT worksheet."
+    },
+    {
+      "id": "M1-U14-038",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "guided_discovery",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What distinguishes guided discovery from direct explanation?",
+      "options": [
+        "Learners infer the rule through structured analysis",
+        "No target language is shown",
+        "The teacher never intervenes"
+      ],
+      "correctAnswer": "Learners infer the rule through structured analysis",
+      "explanation": "The teacher supports the process rather than immediately stating the rule."
+    },
+    {
+      "id": "M1-U14-039",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "guided_discovery",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which learner behaviour is central to guided discovery?",
+      "options": [
+        "Noticing patterns in examples",
+        "Repeating commands physically",
+        "Translating every sentence"
+      ],
+      "correctAnswer": "Noticing patterns in examples",
+      "explanation": "Learners analyse language evidence and derive generalisations."
+    },
+    {
+      "id": "M1-U14-040",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "guided_discovery",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher action would undermine guided discovery?",
+      "options": [
+        "State the rule before learners examine the examples",
+        "Ask focused questions about the examples",
+        "Let learners compare hypotheses"
+      ],
+      "correctAnswer": "State the rule before learners examine the examples",
+      "explanation": "If the rule is supplied immediately, learners have little to discover."
+    },
+    {
+      "id": "M1-U14-041",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher says “Stand up”, “Open the door”, and “Pick up the book”, and learners physically respond. Which approach is this?",
+      "options": [
+        "Total Physical Response (TPR)",
+        "Grammar-translation",
+        "Lexical Approach"
+      ],
+      "correctAnswer": "Total Physical Response (TPR)",
+      "explanation": "TPR links language, especially instructions, with physical actions."
+    },
+    {
+      "id": "M1-U14-042",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which sequence best represents Grammar-Translation?",
+      "options": [
+        "Grammar rule → translation of a text",
+        "Instructions → actions",
+        "Task → language focus"
+      ],
+      "correctAnswer": "Grammar rule → translation of a text",
+      "explanation": "Grammar-Translation traditionally emphasises grammar explanation and translation."
+    },
+    {
+      "id": "M1-U14-043",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is central in TPR?",
+      "options": [
+        "Responding physically to language",
+        "Translating literary texts",
+        "Discovering grammar rules from examples"
+      ],
+      "correctAnswer": "Responding physically to language",
+      "explanation": "Learners demonstrate comprehension by carrying out actions."
+    },
+    {
+      "id": "M1-U14-044",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity best fits Grammar-Translation?",
+      "options": [
+        "Study a grammar rule and translate sentences between L1 and English",
+        "Respond to commands with actions",
+        "Notice lexical chunks"
+      ],
+      "correctAnswer": "Study a grammar rule and translate sentences between L1 and English",
+      "explanation": "The approach foregrounds grammar knowledge and translation."
+    },
+    {
+      "id": "M1-U14-045",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement most clearly contrasts TPR and Grammar-Translation?",
+      "options": [
+        "TPR links meaning to physical action; Grammar-Translation focuses strongly on rules and translation",
+        "Both are task-first communicative frameworks",
+        "Both avoid explicit language focus"
+      ],
+      "correctAnswer": "TPR links meaning to physical action; Grammar-Translation focuses strongly on rules and translation",
+      "explanation": "Their procedures and learning focus are fundamentally different."
+    },
+    {
+      "id": "M1-U14-046",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners listen to commands, perform the actions, then later give commands themselves. Which approach is this?",
+      "options": [
+        "TPR",
+        "PPP",
+        "Grammar-Translation"
+      ],
+      "correctAnswer": "TPR",
+      "explanation": "Cambridge's TKT worksheet links TPR with instructions, learner actions and later learner instructions."
+    },
+    {
+      "id": "M1-U14-047",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which lesson is most clearly Grammar-Translation?",
+      "options": [
+        "The teacher explains a rule, then learners translate a passage",
+        "Learners solve a task before language focus",
+        "Learners respond physically to commands"
+      ],
+      "correctAnswer": "The teacher explains a rule, then learners translate a passage",
+      "explanation": "This is the classic Grammar-Translation sequence used in Cambridge's TKT materials."
+    },
+    {
+      "id": "M1-U14-048",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which learner may find TPR particularly accessible at an early stage?",
+      "options": [
+        "A learner who can show comprehension physically before producing much language",
+        "A learner who only wants literary translation",
+        "A learner doing advanced essay proofreading only"
+      ],
+      "correctAnswer": "A learner who can show comprehension physically before producing much language",
+      "explanation": "TPR allows learners to demonstrate understanding through action."
+    },
+    {
+      "id": "M1-U14-049",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is a limitation of using Grammar-Translation alone for communicative goals?",
+      "options": [
+        "It may provide limited spontaneous interaction and spoken communication",
+        "It includes too much physical action",
+        "It always starts with a real-world task"
+      ],
+      "correctAnswer": "It may provide limited spontaneous interaction and spoken communication",
+      "explanation": "Rule study and translation do not automatically provide extensive communicative use."
+    },
+    {
+      "id": "M1-U14-050",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "tpr_grammar_translation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which pair is correctly matched?",
+      "options": [
+        "TPR — instructions and physical actions; Grammar-Translation — rules and translation",
+        "TPR — lexical chunks; Grammar-Translation — free role-play",
+        "TPR — diagnostic task; Grammar-Translation — guided discovery"
+      ],
+      "correctAnswer": "TPR — instructions and physical actions; Grammar-Translation — rules and translation",
+      "explanation": "These are the characteristic procedures of the two approaches."
+    },
+    {
+      "id": "M1-U14-051",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "lexical_skills_based",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners notice and practise chunks such as “by the way” and “Would you mind...?” Which approach is this associated with?",
+      "options": [
+        "Lexical Approach",
+        "Grammar-Translation",
+        "TPR"
+      ],
+      "correctAnswer": "Lexical Approach",
+      "explanation": "The Lexical Approach gives strong attention to words, collocations and multi-word chunks."
+    },
+    {
+      "id": "M1-U14-052",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "lexical_skills_based",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which sequence best represents a skills-based lesson?",
+      "options": [
+        "Lead-in → key vocabulary → gist task → detail task → productive follow-up",
+        "Rule → translation",
+        "Commands → physical actions"
+      ],
+      "correctAnswer": "Lead-in → key vocabulary → gist task → detail task → productive follow-up",
+      "explanation": "Cambridge's TKT worksheet uses this sequence for skills-based lessons."
+    },
+    {
+      "id": "M1-U14-053",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "lexical_skills_based",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What does the Lexical Approach particularly encourage learners to notice?",
+      "options": [
+        "Words, collocations and chunks",
+        "Only isolated grammar rules",
+        "Only physical commands"
+      ],
+      "correctAnswer": "Words, collocations and chunks",
+      "explanation": "Lexical teaching focuses on recurring combinations and chunks of language."
+    },
+    {
+      "id": "M1-U14-054",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "lexical_skills_based",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "In a reading lesson, learners first skim for gist, then read for detail, then discuss the topic. What framework is this?",
+      "options": [
+        "Skills-based lesson",
+        "Grammar-Translation",
+        "TPR"
+      ],
+      "correctAnswer": "Skills-based lesson",
+      "explanation": "The lesson is organised around staged development of receptive and productive skills."
+    },
+    {
+      "id": "M1-U14-055",
+      "module": 1,
+      "unit": 14,
+      "section": "practice",
+      "skill": "lexical_skills_based",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about a Lexical Approach is most accurate?",
+      "options": [
+        "It treats recurring lexical chunks as important building blocks of language",
+        "It rejects vocabulary and focuses only on grammar rules",
+        "It always begins with a formal test"
+      ],
+      "correctAnswer": "It treats recurring lexical chunks as important building blocks of language",
+      "explanation": "The approach highlights chunks, collocations and patterns of words in use."
+    },
+    {
+      "id": "M1-U14-056",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "lexical_skills_based",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners underline useful phrases in a dialogue, discuss their meaning, then practise them. Which approach is this?",
+      "options": [
+        "Lexical Approach",
+        "TPR",
+        "Test-teach-test"
+      ],
+      "correctAnswer": "Lexical Approach",
+      "explanation": "The sequence of noticing chunks, discussing meaning and practising them matches Cambridge's Lexical Approach example."
+    },
+    {
+      "id": "M1-U14-057",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "lexical_skills_based",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which lesson sequence most strongly suggests a skills-based framework?",
+      "options": [
+        "Lead-in → gist listening → detailed listening → speaking follow-up",
+        "Present rule → translate text",
+        "Physical commands → actions"
+      ],
+      "correctAnswer": "Lead-in → gist listening → detailed listening → speaking follow-up",
+      "explanation": "Skills-based lessons often stage receptive work from general to detailed comprehension and then move to productive follow-up."
+    },
+    {
+      "id": "M1-U14-058",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "lexical_skills_based",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What mainly distinguishes a skills-based lesson from PPP?",
+      "options": [
+        "It is organised primarily around development of a language skill/subskills rather than presentation of one target language item",
+        "It never includes vocabulary",
+        "It cannot include speaking"
+      ],
+      "correctAnswer": "It is organised primarily around development of a language skill/subskills rather than presentation of one target language item",
+      "explanation": "A skills lesson is structured around reading, listening, speaking or writing processes and subskills."
+    },
+    {
+      "id": "M1-U14-059",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "lexical_skills_based",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which item would the Lexical Approach be especially likely to treat as a useful unit?",
+      "options": [
+        "A frequent collocation such as “make a decision”",
+        "Only the letter m",
+        "Only a grammar label"
+      ],
+      "correctAnswer": "A frequent collocation such as “make a decision”",
+      "explanation": "Collocations and chunks are central lexical units in the approach."
+    },
+    {
+      "id": "M1-U14-060",
+      "module": 1,
+      "unit": 14,
+      "section": "test",
+      "skill": "lexical_skills_based",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which pair is correctly matched?",
+      "options": [
+        "Lexical Approach — noticing chunks; Skills-based lesson — gist/detail/follow-up sequence",
+        "Lexical Approach — physical commands; Skills-based lesson — translation only",
+        "Lexical Approach — diagnostic test first; Skills-based lesson — no comprehension work"
+      ],
+      "correctAnswer": "Lexical Approach — noticing chunks; Skills-based lesson — gist/detail/follow-up sequence",
+      "explanation": "These match the frameworks identified in Cambridge's TKT materials."
+    }
+  ],
+  "matchingSets": [
+    {
+      "id": "M1-U14-MATCH-P01",
+      "section": "practice",
+      "instruction": "Match each lesson sequence with the correct approach or framework.",
+      "optionBank": [
+        "PPP",
+        "Task-based learning",
+        "Test-teach-test",
+        "Guided discovery",
+        "TPR",
+        "Lexical Approach"
+      ],
+      "items": [
+        {
+          "example": "Present language in context → controlled practice → freer practice",
+          "correctAnswer": "PPP"
+        },
+        {
+          "example": "Meaningful task → discussion of task → focus on language used",
+          "correctAnswer": "Task-based learning"
+        },
+        {
+          "example": "Diagnostic task → teach needed language → second task",
+          "correctAnswer": "Test-teach-test"
+        },
+        {
+          "example": "Examples → learners work out rule → practice",
+          "correctAnswer": "Guided discovery"
+        },
+        {
+          "example": "Teacher gives instructions → learners perform actions → learners give instructions",
+          "correctAnswer": "TPR"
+        },
+        {
+          "example": "Notice chunks → discuss meaning → practise chunks",
+          "correctAnswer": "Lexical Approach"
+        }
+      ]
+    },
+    {
+      "id": "M1-U14-MATCH-T01",
+      "section": "test",
+      "instruction": "Match each description with the correct teaching approach or framework.",
+      "optionBank": [
+        "Grammar-Translation",
+        "Skills-based lesson",
+        "PPP",
+        "TBL",
+        "Guided discovery",
+        "Test-teach-test"
+      ],
+      "items": [
+        {
+          "example": "Grammar rule followed by translation of a text.",
+          "correctAnswer": "Grammar-Translation"
+        },
+        {
+          "example": "Lead-in → gist → detailed comprehension → productive follow-up.",
+          "correctAnswer": "Skills-based lesson"
+        },
+        {
+          "example": "Teacher presentation followed by controlled and freer practice.",
+          "correctAnswer": "PPP"
+        },
+        {
+          "example": "Learners complete a meaningful task before language focus.",
+          "correctAnswer": "TBL"
+        },
+        {
+          "example": "Learners infer a rule from examples.",
+          "correctAnswer": "Guided discovery"
+        },
+        {
+          "example": "Learners attempt a task before targeted teaching and then try again.",
+          "correctAnswer": "Test-teach-test"
+        }
+      ]
+    }
+  ]
+}

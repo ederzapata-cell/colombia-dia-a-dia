@@ -1,0 +1,1178 @@
+{
+  "meta": {
+    "product": "TKT Ready",
+    "module": 1,
+    "unit": 3,
+    "title": "Lexis: Meaning & Word Formation",
+    "version": "1.0.0",
+    "language": "English",
+    "practiceItems": 30,
+    "testBankItems": 30,
+    "miniTestDisplayCount": 10,
+    "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+    "alignment": "TKT Module 1 — Describing language: Lexis — types of meaning and word formation",
+    "scopeNote": "Synonyms, antonyms, lexical sets, homophones, collocation and register are intentionally reserved for Unit 4."
+  },
+  "questions": [
+    {
+      "id": "M1-U3-001",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "affix",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "In the word “unhelpful”, both “un-” and “-ful” change or add to the meaning of the base word “help”.",
+      "prompt": "What general term describes “un-” and “-ful”?",
+      "options": [
+        "Affixes",
+        "Compounds",
+        "Homonyms"
+      ],
+      "correctAnswer": "Affixes",
+      "explanation": "An affix is a meaningful group of letters added to the beginning or end of a root or base word."
+    },
+    {
+      "id": "M1-U3-002",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "affix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "The words “reusable” and “careless” contain meaningful elements added to a base word.",
+      "prompt": "Which term describes these added elements in general?",
+      "options": [
+        "Affixes",
+        "Idioms",
+        "Word families"
+      ],
+      "correctAnswer": "Affixes",
+      "explanation": "Prefixes and suffixes are both types of affix."
+    },
+    {
+      "id": "M1-U3-003",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "affix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair consists entirely of affixes?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "un- and -ness",
+        "book and case",
+        "look and after"
+      ],
+      "correctAnswer": "un- and -ness",
+      "explanation": "“Un-” is a prefix and “-ness” is a suffix, so both are affixes."
+    },
+    {
+      "id": "M1-U3-004",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "prefix",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "In the word “disagree”, “dis-” is added before the base word “agree”.",
+      "prompt": "What is “dis-”?",
+      "options": [
+        "A prefix",
+        "A suffix",
+        "A compound"
+      ],
+      "correctAnswer": "A prefix",
+      "explanation": "A prefix is an affix added to the beginning of a root or base word."
+    },
+    {
+      "id": "M1-U3-005",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "prefix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which word contains a prefix?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "rewrite",
+        "teacher",
+        "football"
+      ],
+      "correctAnswer": "rewrite",
+      "explanation": "“Re-” is added before “write”, so it is a prefix."
+    },
+    {
+      "id": "M1-U3-006",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "prefix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "What does the prefix “un-” do in the word “unfriendly”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "It changes the meaning of the base word",
+        "It joins two complete words",
+        "It marks a past tense"
+      ],
+      "correctAnswer": "It changes the meaning of the base word",
+      "explanation": "A prefix can modify the meaning of a root or base word. Here “un-” gives the opposite or negative meaning."
+    },
+    {
+      "id": "M1-U3-007",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "suffix",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "In the word “teacher”, “-er” is added to the end of “teach”.",
+      "prompt": "What is “-er”?",
+      "options": [
+        "A suffix",
+        "A prefix",
+        "A homonym"
+      ],
+      "correctAnswer": "A suffix",
+      "explanation": "A suffix is an affix added to the end of a root or base word."
+    },
+    {
+      "id": "M1-U3-008",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "suffix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which word contains a suffix that changes a verb into a noun referring to a person?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "writer",
+        "undo",
+        "classroom"
+      ],
+      "correctAnswer": "writer",
+      "explanation": "The suffix “-er” is added to the verb “write” to form the noun “writer”."
+    },
+    {
+      "id": "M1-U3-009",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "suffix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "In “careful”, what does “-ful” represent?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A suffix",
+        "A root word",
+        "A phrasal verb particle"
+      ],
+      "correctAnswer": "A suffix",
+      "explanation": "“-ful” is added after the base word “care”, so it is a suffix."
+    },
+    {
+      "id": "M1-U3-010",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "root_base_word",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "The words “helpful”, “helpless” and “unhelpful” are all formed from “help”.",
+      "prompt": "What term best describes “help”?",
+      "options": [
+        "Root or base word",
+        "Suffix",
+        "Compound"
+      ],
+      "correctAnswer": "Root or base word",
+      "explanation": "A root or base word is the basic word or part from which other words can be formed."
+    },
+    {
+      "id": "M1-U3-011",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "root_base_word",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "What is the base word in “disagreement”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "agree",
+        "dis-",
+        "-ment"
+      ],
+      "correctAnswer": "agree",
+      "explanation": "“Agree” is the base word. “Dis-” and “-ment” are affixes added to it."
+    },
+    {
+      "id": "M1-U3-012",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "root_base_word",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which word is the root/base for “photographer” and “photographic”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "photograph",
+        "photo-",
+        "-graphy"
+      ],
+      "correctAnswer": "photograph",
+      "explanation": "“Photograph” is the base from which “photographer” and “photographic” are formed."
+    },
+    {
+      "id": "M1-U3-013",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "compound",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "The word “whiteboard” combines “white” and “board” to make one lexical item.",
+      "prompt": "What type of lexical item is “whiteboard”?",
+      "options": [
+        "A compound",
+        "An affix",
+        "A homonym"
+      ],
+      "correctAnswer": "A compound",
+      "explanation": "A compound is made from two or more words that function together as one unit of meaning."
+    },
+    {
+      "id": "M1-U3-014",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "compound",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which item is a compound?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "textbook",
+        "unhappy",
+        "quickly"
+      ],
+      "correctAnswer": "textbook",
+      "explanation": "“Textbook” combines “text” and “book” into one lexical item."
+    },
+    {
+      "id": "M1-U3-015",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "compound",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which example is a compound adjective?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "well-known",
+        "unknown",
+        "knowledge"
+      ],
+      "correctAnswer": "well-known",
+      "explanation": "“Well-known” combines two elements that function together as one adjective."
+    },
+    {
+      "id": "M1-U3-016",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "word_family",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "educate – education – educational – educator",
+      "prompt": "What term describes this group?",
+      "options": [
+        "A word family",
+        "A lexical set",
+        "A compound"
+      ],
+      "correctAnswer": "A word family",
+      "explanation": "A word family is a group of words related through the same root or base word."
+    },
+    {
+      "id": "M1-U3-017",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "word_family",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which group is a word family?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "decide, decision, decisive",
+        "chair, desk, board",
+        "large, big, huge"
+      ],
+      "correctAnswer": "decide, decision, decisive",
+      "explanation": "These words share the same root and are related by word formation."
+    },
+    {
+      "id": "M1-U3-018",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "word_family",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Why are “employ”, “employee” and “employment” considered a word family?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "They share a common root/base",
+        "They all have exactly the same meaning",
+        "They are all compounds"
+      ],
+      "correctAnswer": "They share a common root/base",
+      "explanation": "Members of a word family are related through a shared root or base word."
+    },
+    {
+      "id": "M1-U3-019",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "false_friend",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A Spanish learner thinks English “actually” means Spanish “actual” (= current), although “actually” means “in fact”.",
+      "prompt": "What lexical term describes this problem?",
+      "options": [
+        "False friend",
+        "Homonym",
+        "Compound"
+      ],
+      "correctAnswer": "False friend",
+      "explanation": "A false friend is a target-language word that looks or sounds similar to an L1 word but has a different meaning."
+    },
+    {
+      "id": "M1-U3-020",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "false_friend",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A learner assumes that a familiar-looking word in English has the same meaning as a similar word in their first language, but it does not.",
+      "prompt": "What is the English word called?",
+      "options": [
+        "A false friend",
+        "An idiom",
+        "A suffix"
+      ],
+      "correctAnswer": "A false friend",
+      "explanation": "False friends can mislead learners because similarity of form does not guarantee similarity of meaning."
+    },
+    {
+      "id": "M1-U3-021",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "false_friend",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which situation best illustrates a false friend?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A learner gives an English word the meaning of a similar-looking L1 word when the meanings differ",
+        "A learner confuses two English words that sound the same",
+        "A learner forgets a suffix"
+      ],
+      "correctAnswer": "A learner gives an English word the meaning of a similar-looking L1 word when the meanings differ",
+      "explanation": "False friends involve misleading similarity between a target-language word and a word in the learner's first language."
+    },
+    {
+      "id": "M1-U3-022",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "homonym",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "The noun “bank” can refer to a financial institution or the side of a river.",
+      "prompt": "What lexical term describes these different meanings of the same word form?",
+      "options": [
+        "Homonym",
+        "Prefix",
+        "Word family"
+      ],
+      "correctAnswer": "Homonym",
+      "explanation": "Homonyms share the same form but have different meanings."
+    },
+    {
+      "id": "M1-U3-023",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "homonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which example best illustrates homonymy?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "bat = an animal / bat = equipment used in sport",
+        "teach / teacher",
+        "hot / cold"
+      ],
+      "correctAnswer": "bat = an animal / bat = equipment used in sport",
+      "explanation": "The same word form “bat” has two distinct meanings."
+    },
+    {
+      "id": "M1-U3-024",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "homonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A learner sees the word “match” in two texts: one refers to a sports event and the other to a small stick used to make fire.",
+      "prompt": "Which term is relevant?",
+      "options": [
+        "Homonym",
+        "Suffix",
+        "False friend"
+      ],
+      "correctAnswer": "Homonym",
+      "explanation": "The same written word form can represent distinct meanings."
+    },
+    {
+      "id": "M1-U3-025",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "idiom",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "After the interview, Maya said, “It was a piece of cake.” She meant it was very easy.",
+      "prompt": "What type of lexical item is “a piece of cake” in this use?",
+      "options": [
+        "An idiom",
+        "A compound",
+        "A prefix"
+      ],
+      "correctAnswer": "An idiom",
+      "explanation": "An idiom is a fixed or semi-fixed group whose overall meaning is not simply the meaning of the individual words."
+    },
+    {
+      "id": "M1-U3-026",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "idiom",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which expression is being used idiomatically?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "break the ice = make people feel more relaxed",
+        "open the window = move the window so air can enter",
+        "write the answer = put the answer on paper"
+      ],
+      "correctAnswer": "break the ice = make people feel more relaxed",
+      "explanation": "The figurative meaning of “break the ice” is different from the literal meanings of the individual words."
+    },
+    {
+      "id": "M1-U3-027",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "idiom",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Why can idioms be difficult for learners?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "The overall meaning may not be predictable from the individual words",
+        "They always contain prefixes",
+        "They are always formal"
+      ],
+      "correctAnswer": "The overall meaning may not be predictable from the individual words",
+      "explanation": "Understanding each word separately may not reveal the idiom's intended meaning."
+    },
+    {
+      "id": "M1-U3-028",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "phrasal_verb",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "Please “look up” the new term in the glossary.",
+      "prompt": "What type of lexical item is “look up”?",
+      "options": [
+        "A phrasal verb",
+        "A compound adjective",
+        "A suffix"
+      ],
+      "correctAnswer": "A phrasal verb",
+      "explanation": "A phrasal verb contains a verb plus a particle or preposition and functions as one lexical unit."
+    },
+    {
+      "id": "M1-U3-029",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "phrasal_verb",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which item is a phrasal verb?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "give up",
+        "teacher",
+        "unfair"
+      ],
+      "correctAnswer": "give up",
+      "explanation": "“Give up” consists of a verb plus a particle and has a lexical meaning as a unit."
+    },
+    {
+      "id": "M1-U3-030",
+      "module": 1,
+      "unit": 3,
+      "section": "practice",
+      "skill": "phrasal_verb",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "In “The meeting was called off”, what does “called off” illustrate?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A phrasal verb",
+        "A word family",
+        "An affix"
+      ],
+      "correctAnswer": "A phrasal verb",
+      "explanation": "“Call off” is a multi-word verb meaning to cancel."
+    },
+    {
+      "id": "M1-U3-031",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "affix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which statement about an affix is correct?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "It is added to a root or base word",
+        "It must always be a complete word",
+        "It is another term for an idiom"
+      ],
+      "correctAnswer": "It is added to a root or base word",
+      "explanation": "Affixes are meaningful elements added to roots or base words."
+    },
+    {
+      "id": "M1-U3-032",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "affix",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which word contains both a prefix and a suffix?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "unhappiness",
+        "teacher",
+        "rewrite"
+      ],
+      "correctAnswer": "unhappiness",
+      "explanation": "“Unhappiness” contains the prefix “un-” and the suffix “-ness” around the base “happy”."
+    },
+    {
+      "id": "M1-U3-033",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "affix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which pair shows two different kinds of affix?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "re- and -able",
+        "black and board",
+        "look and up"
+      ],
+      "correctAnswer": "re- and -able",
+      "explanation": "“Re-” is a prefix and “-able” is a suffix; both are affixes."
+    },
+    {
+      "id": "M1-U3-034",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "prefix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "In “misunderstand”, which element is the prefix?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "mis-",
+        "under",
+        "-stand"
+      ],
+      "correctAnswer": "mis-",
+      "explanation": "A prefix occurs before a root or base word; “mis-” is added before “understand”."
+    },
+    {
+      "id": "M1-U3-035",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "prefix",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which word is formed by adding a prefix to a base word?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "impossible",
+        "movement",
+        "notebook"
+      ],
+      "correctAnswer": "impossible",
+      "explanation": "“Im-” is a prefix added to the base adjective “possible”."
+    },
+    {
+      "id": "M1-U3-036",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "prefix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "What is the function of “re-” in “reconsider”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "It is a prefix that adds meaning to the base verb",
+        "It is a suffix that changes the word class",
+        "It creates a compound from two independent words"
+      ],
+      "correctAnswer": "It is a prefix that adds meaning to the base verb",
+      "explanation": "“Re-” occurs before “consider” and typically adds the meaning of doing something again."
+    },
+    {
+      "id": "M1-U3-037",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "suffix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which element is the suffix in “development”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "-ment",
+        "de-",
+        "develop"
+      ],
+      "correctAnswer": "-ment",
+      "explanation": "“-ment” is added to the end of the base verb “develop”."
+    },
+    {
+      "id": "M1-U3-038",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "suffix",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which word contains a suffix that changes an adjective into a noun?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "kindness",
+        "unkind",
+        "kind-hearted"
+      ],
+      "correctAnswer": "kindness",
+      "explanation": "The suffix “-ness” changes the adjective “kind” into the noun “kindness”."
+    },
+    {
+      "id": "M1-U3-039",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "suffix",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "What is “-less” in the word “careless”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A suffix",
+        "A prefix",
+        "A root word"
+      ],
+      "correctAnswer": "A suffix",
+      "explanation": "“-less” is attached to the end of the base word “care”."
+    },
+    {
+      "id": "M1-U3-040",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "root_base_word",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "What is the base word in “unpredictable”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "predict",
+        "un-",
+        "-able"
+      ],
+      "correctAnswer": "predict",
+      "explanation": "“Predict” is the base. The prefix “un-” and suffix “-able” are added around it."
+    },
+    {
+      "id": "M1-U3-041",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "root_base_word",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement best defines a root or base word?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A basic form from which related words can be created",
+        "A group of unrelated words on the same topic",
+        "A word with two unrelated meanings"
+      ],
+      "correctAnswer": "A basic form from which related words can be created",
+      "explanation": "Roots or base words provide the form from which related words may be built."
+    },
+    {
+      "id": "M1-U3-042",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "root_base_word",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which item is the base for “successful”, “successfully” and “unsuccessful”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "success",
+        "-ful",
+        "un-"
+      ],
+      "correctAnswer": "success",
+      "explanation": "“Success” is the common base used to form the related words."
+    },
+    {
+      "id": "M1-U3-043",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "compound",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which item is a compound noun?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "lesson plan",
+        "careless",
+        "disagree"
+      ],
+      "correctAnswer": "lesson plan",
+      "explanation": "“Lesson plan” combines two words that function together as one lexical unit."
+    },
+    {
+      "id": "M1-U3-044",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "compound",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which item is NOT formed by affixation?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "classroom",
+        "unhelpful",
+        "teacher"
+      ],
+      "correctAnswer": "classroom",
+      "explanation": "“Classroom” is a compound made from “class” + “room”; it is not created by adding an affix."
+    },
+    {
+      "id": "M1-U3-045",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "compound",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which description best fits a compound?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Two or more words functioning as one unit of meaning",
+        "A letter group added only to the end of a word",
+        "Two words that sound the same"
+      ],
+      "correctAnswer": "Two or more words functioning as one unit of meaning",
+      "explanation": "Compounds are built from multiple words or word elements that function together as a lexical unit."
+    },
+    {
+      "id": "M1-U3-046",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "word_family",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which set forms a word family?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "analyse, analysis, analytical",
+        "speak, talk, say",
+        "pen, pencil, notebook"
+      ],
+      "correctAnswer": "analyse, analysis, analytical",
+      "explanation": "These forms share a common root and are related through word formation."
+    },
+    {
+      "id": "M1-U3-047",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "word_family",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "A teacher groups “produce”, “producer”, “production” and “productive” together.",
+      "prompt": "Which lexical concept is the teacher illustrating?",
+      "options": [
+        "Word family",
+        "Lexical set",
+        "Homonym"
+      ],
+      "correctAnswer": "Word family",
+      "explanation": "The words are related by a shared root/base and different word-building processes."
+    },
+    {
+      "id": "M1-U3-048",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "word_family",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "Which feature is essential to a word family?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A shared root or base word",
+        "Exactly the same part of speech",
+        "Exactly the same spelling"
+      ],
+      "correctAnswer": "A shared root or base word",
+      "explanation": "Word-family members are connected through a common root or base; their word classes and forms may differ."
+    },
+    {
+      "id": "M1-U3-049",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "false_friend",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "An English learner sees a target-language word that resembles an L1 word and assumes the meanings are identical, but they are not.",
+      "prompt": "Which term applies?",
+      "options": [
+        "False friend",
+        "Homonym",
+        "Phrasal verb"
+      ],
+      "correctAnswer": "False friend",
+      "explanation": "A false friend creates misleading cross-language similarity in form or sound."
+    },
+    {
+      "id": "M1-U3-050",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "false_friend",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Spanish “embarazada” means “pregnant”, not English “embarrassed”. This pair is commonly used to illustrate which lexical concept?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "False friends",
+        "Homonyms",
+        "Compounds"
+      ],
+      "correctAnswer": "False friends",
+      "explanation": "The words look similar across the two languages but their meanings differ."
+    },
+    {
+      "id": "M1-U3-051",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "false_friend",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which feature distinguishes a false friend from a homonym?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "A false friend involves misleading similarity across languages",
+        "A false friend must be a multi-word verb",
+        "A false friend is formed by adding a suffix"
+      ],
+      "correctAnswer": "A false friend involves misleading similarity across languages",
+      "explanation": "False friends concern target-language forms that resemble L1 forms but differ in meaning; homonyms are forms within a language with distinct meanings."
+    },
+    {
+      "id": "M1-U3-052",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "homonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "The word “light” can refer to illumination or mean “not heavy”.",
+      "prompt": "Which term best describes this lexical relationship?",
+      "options": [
+        "Homonym",
+        "False friend",
+        "Affix"
+      ],
+      "correctAnswer": "Homonym",
+      "explanation": "The same word form is associated with different meanings."
+    },
+    {
+      "id": "M1-U3-053",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "homonym",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which example best represents homonyms?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "seal = an animal / seal = close something tightly",
+        "happy / unhappy",
+        "teach / teacher"
+      ],
+      "correctAnswer": "seal = an animal / seal = close something tightly",
+      "explanation": "“Seal” has the same form but distinct meanings."
+    },
+    {
+      "id": "M1-U3-054",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "homonym",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "A dictionary gives separate meanings for the same spelling “file”: a folder for documents and a metal tool for smoothing a surface.",
+      "prompt": "Which term is most relevant?",
+      "options": [
+        "Homonym",
+        "Prefix",
+        "Word family"
+      ],
+      "correctAnswer": "Homonym",
+      "explanation": "The same written form represents distinct lexical meanings."
+    },
+    {
+      "id": "M1-U3-055",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "idiom",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "“Hit the books” means “study hard”.",
+      "prompt": "What type of expression is this?",
+      "options": [
+        "Idiom",
+        "Compound noun",
+        "False friend"
+      ],
+      "correctAnswer": "Idiom",
+      "explanation": "The overall meaning is not obtained simply by interpreting “hit” and “books” literally."
+    },
+    {
+      "id": "M1-U3-056",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "idiom",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which statement best describes an idiom?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Its overall meaning may differ from the literal meanings of its individual words",
+        "It always contains a prefix and a suffix",
+        "It is always a formal expression"
+      ],
+      "correctAnswer": "Its overall meaning may differ from the literal meanings of its individual words",
+      "explanation": "Idioms function as lexical units whose meanings are often non-literal."
+    },
+    {
+      "id": "M1-U3-057",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "idiom",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "In “We need to get the ball rolling”, the speaker means “We need to start the process.”",
+      "prompt": "Which term describes “get the ball rolling”?",
+      "options": [
+        "Idiom",
+        "Homonym",
+        "Word family"
+      ],
+      "correctAnswer": "Idiom",
+      "explanation": "The phrase has a conventional non-literal meaning as a whole."
+    },
+    {
+      "id": "M1-U3-058",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "phrasal_verb",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "The teacher asked the learners to “find out” the meaning from context.",
+      "prompt": "What is “find out”?",
+      "options": [
+        "A phrasal verb",
+        "A compound noun",
+        "A suffix"
+      ],
+      "correctAnswer": "A phrasal verb",
+      "explanation": "“Find out” is a verb plus particle functioning together as a multi-word verb."
+    },
+    {
+      "id": "M1-U3-059",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "phrasal_verb",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Which sentence contains a phrasal verb?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Please hand in your assignment.",
+        "Please write your assignment.",
+        "Please check your assignment."
+      ],
+      "correctAnswer": "Please hand in your assignment.",
+      "explanation": "“Hand in” is a multi-word verb meaning to submit something."
+    },
+    {
+      "id": "M1-U3-060",
+      "module": 1,
+      "unit": 3,
+      "section": "test",
+      "skill": "phrasal_verb",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "Why is it useful to treat “put off” as one lexical unit in “They put off the meeting”?",
+      "prompt": "Choose the best answer.",
+      "options": [
+        "Its combined meaning is “postpone”, which is not obtained by interpreting each word separately",
+        "It contains a suffix",
+        "It is a word family"
+      ],
+      "correctAnswer": "Its combined meaning is “postpone”, which is not obtained by interpreting each word separately",
+      "explanation": "Phrasal verbs often have a meaning that belongs to the combination as a whole."
+    }
+  ],
+  "matchingSets": [
+    {
+      "id": "M1-U3-MATCH-P01",
+      "section": "practice",
+      "instruction": "Match each example with the correct lexical term.",
+      "optionBank": [
+        "Prefix",
+        "Suffix",
+        "Root or base word",
+        "Compound",
+        "Word family"
+      ],
+      "items": [
+        {
+          "questionId": "M1-U3-004",
+          "example": "dis- in disagree",
+          "correctAnswer": "Prefix"
+        },
+        {
+          "questionId": "M1-U3-007",
+          "example": "-er in teacher",
+          "correctAnswer": "Suffix"
+        },
+        {
+          "questionId": "M1-U3-010",
+          "example": "help in helpful / helpless / unhelpful",
+          "correctAnswer": "Root or base word"
+        },
+        {
+          "questionId": "M1-U3-013",
+          "example": "whiteboard",
+          "correctAnswer": "Compound"
+        },
+        {
+          "questionId": "M1-U3-016",
+          "example": "educate / education / educational / educator",
+          "correctAnswer": "Word family"
+        }
+      ]
+    },
+    {
+      "id": "M1-U3-MATCH-T01",
+      "section": "test",
+      "instruction": "Match each description or example with the correct lexical term.",
+      "optionBank": [
+        "False friend",
+        "Homonym",
+        "Idiom",
+        "Phrasal verb",
+        "Affix"
+      ],
+      "items": [
+        {
+          "questionId": "M1-U3-049",
+          "example": "A similar-looking L1 and English word with different meanings",
+          "correctAnswer": "False friend"
+        },
+        {
+          "questionId": "M1-U3-052",
+          "example": "light = illumination / not heavy",
+          "correctAnswer": "Homonym"
+        },
+        {
+          "questionId": "M1-U3-055",
+          "example": "hit the books = study hard",
+          "correctAnswer": "Idiom"
+        },
+        {
+          "questionId": "M1-U3-058",
+          "example": "find out",
+          "correctAnswer": "Phrasal verb"
+        },
+        {
+          "questionId": "M1-U3-031",
+          "example": "A meaningful element added to a root/base word",
+          "correctAnswer": "Affix"
+        }
+      ]
+    }
+  ]
+}

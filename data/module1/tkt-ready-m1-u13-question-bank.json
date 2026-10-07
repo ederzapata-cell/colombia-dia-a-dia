@@ -1,0 +1,1186 @@
+{
+  "meta": {
+    "product": "TKT Ready",
+    "module": 1,
+    "unit": 13,
+    "title": "Teaching Activities & Techniques",
+    "version": "1.0.0",
+    "language": "English",
+    "practiceItems": 30,
+    "testBankItems": 30,
+    "miniTestDisplayCount": 10,
+    "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+    "alignment": "TKT Module 1 — Background to language teaching: types of activities and tasks for language and skills development",
+    "scopeNote": "Lesson frameworks and named approaches such as PPP, TBL, Test-Teach-Test, TPR, Guided Discovery, Grammar-Translation and Lexical Approach are reserved mainly for Unit 14.",
+    "skills": [
+      "drilling_modeling",
+      "eliciting_prompting",
+      "controlled_to_free_practice",
+      "comprehension_vs_production",
+      "communicative_task_types",
+      "feedback_correction_review"
+    ]
+  },
+  "questions": [
+    {
+      "id": "M1-U13-001",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "drilling_modeling",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher says a sentence and the whole class repeats it together. What is this?",
+      "options": [
+        "Choral drill",
+        "Role-play",
+        "Brainstorm"
+      ],
+      "correctAnswer": "Choral drill",
+      "explanation": "In a choral drill, learners repeat the model together as a class."
+    },
+    {
+      "id": "M1-U13-002",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "drilling_modeling",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher says a phrase and one learner repeats it. What is this?",
+      "options": [
+        "Individual drill",
+        "Jigsaw task",
+        "Survey"
+      ],
+      "correctAnswer": "Individual drill",
+      "explanation": "In an individual drill, one learner repeats the teacher's model."
+    },
+    {
+      "id": "M1-U13-003",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "drilling_modeling",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher says, “I bought a book. Pen.” Learners respond, “I bought a pen.” What type of drill is this?",
+      "options": [
+        "Substitution drill",
+        "Transformation drill",
+        "Free practice"
+      ],
+      "correctAnswer": "Substitution drill",
+      "explanation": "A substitution drill keeps the structure but replaces one item."
+    },
+    {
+      "id": "M1-U13-004",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "drilling_modeling",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher says, “I went to the cinema. Didn't.” Learners respond, “I didn't go to the cinema.” What type of drill is this?",
+      "options": [
+        "Transformation drill",
+        "Choral drill",
+        "Information-gap task"
+      ],
+      "correctAnswer": "Transformation drill",
+      "explanation": "A transformation drill requires learners to change the grammatical structure."
+    },
+    {
+      "id": "M1-U13-005",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "drilling_modeling",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the teacher doing when saying the target language clearly before learners repeat it?",
+      "options": [
+        "Modelling",
+        "Scanning",
+        "Eliciting"
+      ],
+      "correctAnswer": "Modelling",
+      "explanation": "A model provides an example of the language learners are expected to repeat or use."
+    },
+    {
+      "id": "M1-U13-006",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "drilling_modeling",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity gives the most controlled oral practice?",
+      "options": [
+        "A substitution drill",
+        "An open debate",
+        "A free role-play"
+      ],
+      "correctAnswer": "A substitution drill",
+      "explanation": "The language pattern is tightly controlled and learners have little choice."
+    },
+    {
+      "id": "M1-U13-007",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "drilling_modeling",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which term refers to the language the teacher provides for learners to imitate?",
+      "options": [
+        "Model",
+        "Prompt",
+        "Warmer"
+      ],
+      "correctAnswer": "Model",
+      "explanation": "A model is an example learners can repeat or use as a reference."
+    },
+    {
+      "id": "M1-U13-008",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "drilling_modeling",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the main purpose of drilling?",
+      "options": [
+        "Provide guided practice of language",
+        "Assess final proficiency",
+        "Generate unrelated ideas"
+      ],
+      "correctAnswer": "Provide guided practice of language",
+      "explanation": "Drilling gives learners repeated, guided practice of forms or pronunciation."
+    },
+    {
+      "id": "M1-U13-009",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "drilling_modeling",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which drill changes affirmative sentences into negatives?",
+      "options": [
+        "Transformation drill",
+        "Substitution drill",
+        "Choral drill only"
+      ],
+      "correctAnswer": "Transformation drill",
+      "explanation": "The learner transforms one grammatical structure into another."
+    },
+    {
+      "id": "M1-U13-010",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "drilling_modeling",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about drilling is most accurate?",
+      "options": [
+        "It can support accurate production but usually offers limited communicative choice",
+        "It is always free practice",
+        "It always develops reading for gist"
+      ],
+      "correctAnswer": "It can support accurate production but usually offers limited communicative choice",
+      "explanation": "Drills are generally controlled and focus on accurate production."
+    },
+    {
+      "id": "M1-U13-011",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "eliciting_prompting",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher shows a picture of a carrot and asks, “What's this?” because learners may know the word. What technique is this?",
+      "options": [
+        "Eliciting",
+        "Drilling",
+        "Proofreading"
+      ],
+      "correctAnswer": "Eliciting",
+      "explanation": "Eliciting uses questions or clues to get learners to supply language or information."
+    },
+    {
+      "id": "M1-U13-012",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "eliciting_prompting",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner cannot remember a word, so the teacher gives the first sound. What technique is this?",
+      "options": [
+        "Prompting",
+        "Testing proficiency",
+        "Skimming"
+      ],
+      "correctAnswer": "Prompting",
+      "explanation": "A prompt gives a clue to help a learner remember or produce language."
+    },
+    {
+      "id": "M1-U13-013",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "eliciting_prompting",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the key difference between eliciting and simply telling?",
+      "options": [
+        "Eliciting gets learners to provide information themselves",
+        "Eliciting always involves repetition",
+        "Telling always requires pair work"
+      ],
+      "correctAnswer": "Eliciting gets learners to provide information themselves",
+      "explanation": "The teacher uses questions or clues instead of immediately giving the answer."
+    },
+    {
+      "id": "M1-U13-014",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "eliciting_prompting",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher move is a prompt?",
+      "options": [
+        "Give the first word of a phrase to help a learner continue",
+        "Ask learners to repeat a sentence together",
+        "Explain the whole answer immediately"
+      ],
+      "correctAnswer": "Give the first word of a phrase to help a learner continue",
+      "explanation": "A prompt provides partial support to help retrieval."
+    },
+    {
+      "id": "M1-U13-015",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "eliciting_prompting",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why can eliciting be useful?",
+      "options": [
+        "It activates learners' existing knowledge and increases participation",
+        "It guarantees all learners know the answer",
+        "It removes the need for teaching"
+      ],
+      "correctAnswer": "It activates learners' existing knowledge and increases participation",
+      "explanation": "Eliciting reveals what learners know and involves them actively."
+    },
+    {
+      "id": "M1-U13-016",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "eliciting_prompting",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher asks targeted questions to get learners to produce the past tense of a familiar verb. What is this?",
+      "options": [
+        "Eliciting",
+        "Modelling only",
+        "Free practice"
+      ],
+      "correctAnswer": "Eliciting",
+      "explanation": "The teacher is drawing known language from learners."
+    },
+    {
+      "id": "M1-U13-017",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "eliciting_prompting",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher says, “It begins with /b/...” to help a learner remember “borrow”. What is this?",
+      "options": [
+        "Prompting",
+        "Concept checking",
+        "Scanning"
+      ],
+      "correctAnswer": "Prompting",
+      "explanation": "The teacher gives a clue rather than the complete answer."
+    },
+    {
+      "id": "M1-U13-018",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "eliciting_prompting",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about prompting is correct?",
+      "options": [
+        "It gives support while leaving learners some responsibility for producing the answer",
+        "It always supplies the entire answer",
+        "It is another term for final assessment"
+      ],
+      "correctAnswer": "It gives support while leaving learners some responsibility for producing the answer",
+      "explanation": "Prompts scaffold learner retrieval without fully taking over."
+    },
+    {
+      "id": "M1-U13-019",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "eliciting_prompting",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity most clearly uses elicitation?",
+      "options": [
+        "Ask learners what vocabulary they already know about transport",
+        "Give learners a finished list to copy",
+        "Play a recording with no response"
+      ],
+      "correctAnswer": "Ask learners what vocabulary they already know about transport",
+      "explanation": "The teacher is drawing information from learners."
+    },
+    {
+      "id": "M1-U13-020",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "eliciting_prompting",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher action is least likely to develop learner participation?",
+      "options": [
+        "Immediately provide every answer before learners have a chance to respond",
+        "Use clues to elicit known language",
+        "Prompt a learner who is nearly able to answer"
+      ],
+      "correctAnswer": "Immediately provide every answer before learners have a chance to respond",
+      "explanation": "Eliciting and prompting encourage learners to contribute rather than remain passive."
+    },
+    {
+      "id": "M1-U13-021",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners complete sentences using one target structure with only one possible answer. What type of practice is this?",
+      "options": [
+        "Controlled practice",
+        "Free practice",
+        "Ice-breaker"
+      ],
+      "correctAnswer": "Controlled practice",
+      "explanation": "Controlled practice limits learner choice so attention can stay on accurate use of the target language."
+    },
+    {
+      "id": "M1-U13-022",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners discuss their opinions using any language they need. What type of practice is this?",
+      "options": [
+        "Free practice",
+        "Controlled practice",
+        "Choral drilling"
+      ],
+      "correctAnswer": "Free practice",
+      "explanation": "Free practice gives learners substantial choice over the language they use."
+    },
+    {
+      "id": "M1-U13-023",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A survey requires learners to use “Have you ever...?” but allows them to create their own follow-up questions. What is this likely to be?",
+      "options": [
+        "Less controlled practice",
+        "Completely controlled practice",
+        "A placement test"
+      ],
+      "correctAnswer": "Less controlled practice",
+      "explanation": "The target structure is guided, but learners still have some choice."
+    },
+    {
+      "id": "M1-U13-024",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the main difference between controlled and free practice?",
+      "options": [
+        "The amount of choice learners have in the language they use",
+        "The size of the classroom",
+        "Whether the teacher uses a board"
+      ],
+      "correctAnswer": "The amount of choice learners have in the language they use",
+      "explanation": "Control refers to how tightly the language output is predetermined."
+    },
+    {
+      "id": "M1-U13-025",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why might a lesson move from controlled to less controlled to freer practice?",
+      "options": [
+        "To gradually increase learner independence in using the target language",
+        "To reduce all learner talk",
+        "To turn speaking into reading"
+      ],
+      "correctAnswer": "To gradually increase learner independence in using the target language",
+      "explanation": "A progression can support accuracy first and then more independent use."
+    },
+    {
+      "id": "M1-U13-026",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task is most controlled?",
+      "options": [
+        "Substitute one word in a fixed sentence pattern",
+        "Role-play a complaint using any appropriate language",
+        "Debate an open question"
+      ],
+      "correctAnswer": "Substitute one word in a fixed sentence pattern",
+      "explanation": "The output is almost completely predetermined."
+    },
+    {
+      "id": "M1-U13-027",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task is most likely to develop fluency?",
+      "options": [
+        "A freer speaking task",
+        "A tightly controlled substitution drill",
+        "Copying isolated sentences"
+      ],
+      "correctAnswer": "A freer speaking task",
+      "explanation": "Freer practice allows learners to prioritise communicating meaning with greater language choice."
+    },
+    {
+      "id": "M1-U13-028",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A task gives learners sentence starters but lets them finish the ideas themselves. What is this best described as?",
+      "options": [
+        "Less controlled practice",
+        "Fully controlled practice",
+        "No practice at all"
+      ],
+      "correctAnswer": "Less controlled practice",
+      "explanation": "There is support and some constraint, but learners still make meaningful choices."
+    },
+    {
+      "id": "M1-U13-029",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement is most accurate?",
+      "options": [
+        "Controlled practice usually prioritises accuracy more than free practice",
+        "Free practice always has one correct sentence",
+        "Controlled practice gives maximum language choice"
+      ],
+      "correctAnswer": "Controlled practice usually prioritises accuracy more than free practice",
+      "explanation": "Controlled tasks limit choice to help learners practise a target form accurately."
+    },
+    {
+      "id": "M1-U13-030",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "controlled_to_free_practice",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which sequencing principle is pedagogically sensible?",
+      "options": [
+        "Move toward greater choice as learners become more secure with the target language",
+        "Begin with maximum complexity regardless of learner readiness",
+        "Keep all practice fully controlled forever"
+      ],
+      "correctAnswer": "Move toward greater choice as learners become more secure with the target language",
+      "explanation": "Gradual release supports learners as they move toward independent production."
+    },
+    {
+      "id": "M1-U13-031",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "comprehension_vs_production",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A task asks learners to listen and choose the correct picture. What kind of task is this?",
+      "options": [
+        "Comprehension task",
+        "Production task",
+        "Ice-breaker"
+      ],
+      "correctAnswer": "Comprehension task",
+      "explanation": "The task develops or checks receptive understanding rather than requiring learners to produce extended language."
+    },
+    {
+      "id": "M1-U13-032",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "comprehension_vs_production",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A task asks learners to write a short email. What kind of task is this?",
+      "options": [
+        "Production task",
+        "Comprehension task",
+        "Concept check"
+      ],
+      "correctAnswer": "Production task",
+      "explanation": "Writing is a productive skill, so learners are producing language."
+    },
+    {
+      "id": "M1-U13-033",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "comprehension_vs_production",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which skills are productive?",
+      "options": [
+        "Speaking and writing",
+        "Reading and listening",
+        "Reading and speaking only"
+      ],
+      "correctAnswer": "Speaking and writing",
+      "explanation": "Speaking and writing require learners to produce language."
+    },
+    {
+      "id": "M1-U13-034",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "comprehension_vs_production",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which skills are receptive?",
+      "options": [
+        "Reading and listening",
+        "Speaking and writing",
+        "Writing and listening only"
+      ],
+      "correctAnswer": "Reading and listening",
+      "explanation": "Reading and listening involve processing incoming language."
+    },
+    {
+      "id": "M1-U13-035",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "comprehension_vs_production",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why can the same activity type sometimes serve different purposes?",
+      "options": [
+        "Its purpose depends on how the activity is designed and used",
+        "Every activity has only one possible purpose",
+        "Task purpose depends only on classroom size"
+      ],
+      "correctAnswer": "Its purpose depends on how the activity is designed and used",
+      "explanation": "The same task format can focus on different skills or levels of control depending on design."
+    },
+    {
+      "id": "M1-U13-036",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "comprehension_vs_production",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A jigsaw listening task mainly develops:",
+      "options": [
+        "Listening comprehension plus information exchange",
+        "Only spelling",
+        "Only pronunciation drilling"
+      ],
+      "correctAnswer": "Listening comprehension plus information exchange",
+      "explanation": "Learners first process spoken information, then share it with others."
+    },
+    {
+      "id": "M1-U13-037",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "comprehension_vs_production",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A guided writing task is primarily:",
+      "options": [
+        "A production task",
+        "A comprehension task only",
+        "A warmer by definition"
+      ],
+      "correctAnswer": "A production task",
+      "explanation": "Learners produce written language, although with support."
+    },
+    {
+      "id": "M1-U13-038",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "comprehension_vs_production",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity primarily develops comprehension?",
+      "options": [
+        "Read a text and identify the writer's main point",
+        "Role-play a job interview",
+        "Write a complaint email"
+      ],
+      "correctAnswer": "Read a text and identify the writer's main point",
+      "explanation": "The learner is processing meaning from written input."
+    },
+    {
+      "id": "M1-U13-039",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "comprehension_vs_production",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity primarily develops productive speaking?",
+      "options": [
+        "Conduct a class survey",
+        "Listen for a train time",
+        "Read a jumbled text"
+      ],
+      "correctAnswer": "Conduct a class survey",
+      "explanation": "A survey usually requires learners to ask and answer questions orally."
+    },
+    {
+      "id": "M1-U13-040",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "comprehension_vs_production",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement best distinguishes comprehension and production tasks?",
+      "options": [
+        "Comprehension tasks focus on understanding input; production tasks require learners to create language",
+        "Comprehension tasks are always easier",
+        "Production tasks never involve comprehension"
+      ],
+      "correctAnswer": "Comprehension tasks focus on understanding input; production tasks require learners to create language",
+      "explanation": "The central distinction is receptive processing versus language production."
+    },
+    {
+      "id": "M1-U13-041",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "communicative_task_types",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners act as a hotel receptionist and a guest in a given situation. What task type is this?",
+      "options": [
+        "Role-play",
+        "Jumbled text",
+        "Drill"
+      ],
+      "correctAnswer": "Role-play",
+      "explanation": "Role-play gives learners roles to act out in a situation."
+    },
+    {
+      "id": "M1-U13-042",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "communicative_task_types",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners ask classmates questions and record their answers. What task type is this?",
+      "options": [
+        "Survey",
+        "Transformation drill",
+        "Proofreading"
+      ],
+      "correctAnswer": "Survey",
+      "explanation": "A survey involves gathering information from others through questions."
+    },
+    {
+      "id": "M1-U13-043",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "communicative_task_types",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners work together to decide which five items are most important for survival. What task type is this?",
+      "options": [
+        "Rank ordering/prioritising",
+        "Choral drill",
+        "Dictation"
+      ],
+      "correctAnswer": "Rank ordering/prioritising",
+      "explanation": "Learners discuss, negotiate and put items into an order of importance."
+    },
+    {
+      "id": "M1-U13-044",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "communicative_task_types",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Two learners have different information and must communicate to complete the whole picture. What kind of task is this?",
+      "options": [
+        "Information-gap/jigsaw task",
+        "Proofreading task",
+        "Concept check"
+      ],
+      "correctAnswer": "Information-gap/jigsaw task",
+      "explanation": "Learners need to exchange missing information to complete the task."
+    },
+    {
+      "id": "M1-U13-045",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "communicative_task_types",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why are problem-solving tasks communicative?",
+      "options": [
+        "Learners exchange ideas and negotiate meaning to reach a solution",
+        "They require only silent copying",
+        "They eliminate all language choice"
+      ],
+      "correctAnswer": "Learners exchange ideas and negotiate meaning to reach a solution",
+      "explanation": "The task creates a reason to communicate in order to solve a problem."
+    },
+    {
+      "id": "M1-U13-046",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "communicative_task_types",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task usually involves learners taking on roles in a simulated situation?",
+      "options": [
+        "Role-play",
+        "Brainstorm",
+        "Drill"
+      ],
+      "correctAnswer": "Role-play",
+      "explanation": "Learners act within an assigned or imagined role."
+    },
+    {
+      "id": "M1-U13-047",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "communicative_task_types",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners quickly generate as many ideas as possible about a topic before writing. What activity is this?",
+      "options": [
+        "Brainstorming",
+        "Scanning",
+        "Transformation drilling"
+      ],
+      "correctAnswer": "Brainstorming",
+      "explanation": "Brainstorming rapidly generates ideas, often as preparation for speaking or writing."
+    },
+    {
+      "id": "M1-U13-048",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "communicative_task_types",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A text is cut into sections; different learners read different sections and then share information. What is this?",
+      "options": [
+        "Jigsaw reading",
+        "Free writing",
+        "Concept checking"
+      ],
+      "correctAnswer": "Jigsaw reading",
+      "explanation": "In a jigsaw task, different learners hold different parts of the information and must combine them."
+    },
+    {
+      "id": "M1-U13-049",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "communicative_task_types",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners put a set of sentences into the correct order to reconstruct a text. What is this?",
+      "options": [
+        "Jumbled-text activity",
+        "Survey",
+        "Role-play"
+      ],
+      "correctAnswer": "Jumbled-text activity",
+      "explanation": "A jumbled-text task asks learners to restore the correct order of text parts."
+    },
+    {
+      "id": "M1-U13-050",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "communicative_task_types",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which task most strongly requires negotiation and agreeing/disagreeing?",
+      "options": [
+        "Rank ordering/prioritising",
+        "Choral repetition",
+        "Copying a model sentence"
+      ],
+      "correctAnswer": "Rank ordering/prioritising",
+      "explanation": "Learners must discuss priorities and reach agreement about an ordered list."
+    },
+    {
+      "id": "M1-U13-051",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "feedback_correction_review",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher tells a learner, “Excellent work.” What teaching technique is this?",
+      "options": [
+        "Praise",
+        "Prompting",
+        "Scanning"
+      ],
+      "correctAnswer": "Praise",
+      "explanation": "Praise tells learners they have done well and can support confidence."
+    },
+    {
+      "id": "M1-U13-052",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "feedback_correction_review",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners look again at language they studied last week in order to remember it better. What is this?",
+      "options": [
+        "Review",
+        "Placement testing",
+        "Ice-breaking"
+      ],
+      "correctAnswer": "Review",
+      "explanation": "Review means returning to previously taught language or skills."
+    },
+    {
+      "id": "M1-U13-053",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "feedback_correction_review",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner says, “He don't like it.” The teacher repeats, “Don't?” with rising intonation. What correction technique is this?",
+      "options": [
+        "Echo correction",
+        "Peer correction",
+        "Drilling"
+      ],
+      "correctAnswer": "Echo correction",
+      "explanation": "The teacher echoes the problematic part to encourage self-correction."
+    },
+    {
+      "id": "M1-U13-054",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "feedback_correction_review",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Learners correct one another's mistakes during pair work. What is this?",
+      "options": [
+        "Peer correction",
+        "Self-correction",
+        "Modelling"
+      ],
+      "correctAnswer": "Peer correction",
+      "explanation": "Peer correction occurs when learners help correct each other's language."
+    },
+    {
+      "id": "M1-U13-055",
+      "module": 1,
+      "unit": 13,
+      "section": "practice",
+      "skill": "feedback_correction_review",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why might a teacher use a correction code in writing?",
+      "options": [
+        "To help learners identify and correct their own errors",
+        "To give learners the complete rewritten answer",
+        "To assess pronunciation"
+      ],
+      "correctAnswer": "To help learners identify and correct their own errors",
+      "explanation": "Correction codes support learner awareness and self-correction."
+    },
+    {
+      "id": "M1-U13-056",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "feedback_correction_review",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "The teacher uses fingers to show where a learner's word-order error occurred. What technique is this?",
+      "options": [
+        "Finger correction",
+        "Choral drill",
+        "Lead-in"
+      ],
+      "correctAnswer": "Finger correction",
+      "explanation": "Finger correction visually locates the position of a spoken error."
+    },
+    {
+      "id": "M1-U13-057",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "feedback_correction_review",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which feedback technique gives learners responsibility for improving their own language?",
+      "options": [
+        "Self-correction",
+        "Immediate teacher replacement of every answer",
+        "Ignoring all errors"
+      ],
+      "correctAnswer": "Self-correction",
+      "explanation": "Self-correction encourages learners to monitor and repair their own language."
+    },
+    {
+      "id": "M1-U13-058",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "feedback_correction_review",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about praise is most accurate?",
+      "options": [
+        "Specific, credible praise can support confidence and motivation",
+        "Praise should replace all corrective feedback",
+        "Praise is an assessment type"
+      ],
+      "correctAnswer": "Specific, credible praise can support confidence and motivation",
+      "explanation": "Effective praise recognises successful performance and can encourage learners."
+    },
+    {
+      "id": "M1-U13-059",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "feedback_correction_review",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the main purpose of review?",
+      "options": [
+        "Strengthen memory of previously taught language or skills",
+        "Introduce learners to one another",
+        "Measure final proficiency"
+      ],
+      "correctAnswer": "Strengthen memory of previously taught language or skills",
+      "explanation": "Review revisits prior learning to help learners remember and consolidate it."
+    },
+    {
+      "id": "M1-U13-060",
+      "module": 1,
+      "unit": 13,
+      "section": "test",
+      "skill": "feedback_correction_review",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher response best balances feedback and learner independence?",
+      "options": [
+        "Give a clue and allow the learner to self-correct when possible",
+        "Correct every error before the learner can respond",
+        "Never provide feedback"
+      ],
+      "correctAnswer": "Give a clue and allow the learner to self-correct when possible",
+      "explanation": "Prompts and self-correction can provide support while keeping learners actively involved."
+    }
+  ],
+  "matchingSets": [
+    {
+      "id": "M1-U13-MATCH-P01",
+      "section": "practice",
+      "instruction": "Match each classroom action with the correct teaching term.",
+      "optionBank": [
+        "Choral drill",
+        "Elicit",
+        "Prompt",
+        "Controlled practice",
+        "Role-play",
+        "Review"
+      ],
+      "items": [
+        {
+          "example": "The whole class repeats the teacher's model.",
+          "correctAnswer": "Choral drill"
+        },
+        {
+          "example": "The teacher asks targeted questions to get known language from learners.",
+          "correctAnswer": "Elicit"
+        },
+        {
+          "example": "The teacher gives the first sound to help a learner remember a word.",
+          "correctAnswer": "Prompt"
+        },
+        {
+          "example": "Learners use one target structure with very limited language choice.",
+          "correctAnswer": "Controlled practice"
+        },
+        {
+          "example": "Learners act out a situation using assigned roles.",
+          "correctAnswer": "Role-play"
+        },
+        {
+          "example": "Learners revisit language studied in an earlier lesson.",
+          "correctAnswer": "Review"
+        }
+      ]
+    },
+    {
+      "id": "M1-U13-MATCH-T01",
+      "section": "test",
+      "instruction": "Match each activity with its main purpose or category.",
+      "optionBank": [
+        "Transformation drill",
+        "Less controlled practice",
+        "Comprehension task",
+        "Production task",
+        "Jigsaw task",
+        "Peer correction"
+      ],
+      "items": [
+        {
+          "example": "Change an affirmative sentence into a negative one.",
+          "correctAnswer": "Transformation drill"
+        },
+        {
+          "example": "Use a target structure but create some of your own content.",
+          "correctAnswer": "Less controlled practice"
+        },
+        {
+          "example": "Listen and choose the correct picture.",
+          "correctAnswer": "Comprehension task"
+        },
+        {
+          "example": "Write a short email.",
+          "correctAnswer": "Production task"
+        },
+        {
+          "example": "Different learners combine separate pieces of information.",
+          "correctAnswer": "Jigsaw task"
+        },
+        {
+          "example": "Learners help correct one another's language.",
+          "correctAnswer": "Peer correction"
+        }
+      ]
+    }
+  ]
+}

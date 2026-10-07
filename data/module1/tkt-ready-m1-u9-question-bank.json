@@ -1,0 +1,1185 @@
+{
+  "meta": {
+    "product": "TKT Ready",
+    "module": 1,
+    "unit": 9,
+    "title": "Motivation, Exposure & Acquisition",
+    "version": "1.0.0",
+    "language": "English",
+    "practiceItems": 30,
+    "testBankItems": 30,
+    "miniTestDisplayCount": 10,
+    "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+    "alignment": "TKT Module 1 — Background to language learning: motivation; exposure to language and focus on form; acquisition; silent period; interaction",
+    "skills": [
+      "motivation",
+      "exposure",
+      "acquisition",
+      "silent_period",
+      "interaction",
+      "focus_on_form"
+    ]
+  },
+  "questions": [
+    {
+      "id": "M1-U9-001",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "motivation",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner studies English because she wants a better job. Which factor is most directly involved?",
+      "options": [
+        "Motivation",
+        "Silent period",
+        "Interlanguage"
+      ],
+      "correctAnswer": "Motivation",
+      "explanation": "Motivation concerns the reasons and willingness a learner has for learning."
+    },
+    {
+      "id": "M1-U9-002",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "motivation",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which classroom choice is most likely to increase motivation?",
+      "options": [
+        "Using relevant, achievable tasks",
+        "Giving only repetitive tasks unrelated to learners' goals",
+        "Ignoring learner progress"
+      ],
+      "correctAnswer": "Using relevant, achievable tasks",
+      "explanation": "Relevant and achievable work can help learners see value and experience success."
+    },
+    {
+      "id": "M1-U9-003",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "motivation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner becomes more willing to participate after receiving encouraging feedback. What has most likely increased?",
+      "options": [
+        "Motivation",
+        "Elision",
+        "Word stress"
+      ],
+      "correctAnswer": "Motivation",
+      "explanation": "Positive feedback can strengthen confidence and willingness to engage."
+    },
+    {
+      "id": "M1-U9-004",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "motivation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why is motivation important in language learning?",
+      "options": [
+        "It can influence effort, persistence and engagement",
+        "It determines a learner's first language",
+        "It replaces the need for exposure"
+      ],
+      "correctAnswer": "It can influence effort, persistence and engagement",
+      "explanation": "Motivation affects how much effort learners invest and how long they persist."
+    },
+    {
+      "id": "M1-U9-005",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "motivation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher action is most likely to support motivation in a mixed-ability class?",
+      "options": [
+        "Set challenging but achievable goals and recognise progress",
+        "Use the same difficult task for everyone without support",
+        "Focus only on errors"
+      ],
+      "correctAnswer": "Set challenging but achievable goals and recognise progress",
+      "explanation": "Appropriate challenge and visible progress can support motivation."
+    },
+    {
+      "id": "M1-U9-006",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "motivation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner attends optional English practice every week because she enjoys communicating with classmates. What is the clearest explanation?",
+      "options": [
+        "She is motivated to learn",
+        "She is in a silent period",
+        "She is avoiding exposure"
+      ],
+      "correctAnswer": "She is motivated to learn",
+      "explanation": "Voluntary participation and enjoyment are signs of motivation."
+    },
+    {
+      "id": "M1-U9-007",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "motivation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which factor can most directly reduce learner motivation?",
+      "options": [
+        "Repeated failure with no sense of progress",
+        "Meaningful interaction",
+        "Tasks linked to learner goals"
+      ],
+      "correctAnswer": "Repeated failure with no sense of progress",
+      "explanation": "Persistent failure without support can reduce confidence and willingness to continue."
+    },
+    {
+      "id": "M1-U9-008",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "motivation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about motivation is most accurate?",
+      "options": [
+        "It can change over time and be influenced by classroom experience",
+        "It is fixed and cannot be influenced by teaching",
+        "It matters only at beginner level"
+      ],
+      "correctAnswer": "It can change over time and be influenced by classroom experience",
+      "explanation": "Motivation is dynamic and can change with experience, goals and classroom conditions."
+    },
+    {
+      "id": "M1-U9-009",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "motivation",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A teacher lets learners choose between two project topics connected to their interests. What is the most likely purpose?",
+      "options": [
+        "Increase motivation",
+        "Create a silent period",
+        "Prevent interaction"
+      ],
+      "correctAnswer": "Increase motivation",
+      "explanation": "Choice and personal relevance can increase learner involvement."
+    },
+    {
+      "id": "M1-U9-010",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "motivation",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which situation best shows motivation affecting learning behaviour?",
+      "options": [
+        "A learner practises regularly because passing an exam is an important goal",
+        "A learner hears English on television by chance",
+        "A learner notices a verb ending"
+      ],
+      "correctAnswer": "A learner practises regularly because passing an exam is an important goal",
+      "explanation": "The goal is driving sustained learning effort."
+    },
+    {
+      "id": "M1-U9-011",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "exposure",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner regularly hears and reads English outside class. Which concept does this illustrate?",
+      "options": [
+        "Exposure",
+        "Refusal",
+        "Elision"
+      ],
+      "correctAnswer": "Exposure",
+      "explanation": "Exposure means coming into contact with the target language."
+    },
+    {
+      "id": "M1-U9-012",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "exposure",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity provides learners with exposure to English?",
+      "options": [
+        "Listening to a podcast in English",
+        "Avoiding target-language input",
+        "Studying only translations with no English examples"
+      ],
+      "correctAnswer": "Listening to a podcast in English",
+      "explanation": "Listening to English gives learners direct contact with target-language input."
+    },
+    {
+      "id": "M1-U9-013",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "exposure",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why is rich exposure useful for language learning?",
+      "options": [
+        "It gives learners many examples of how language is used",
+        "It removes the need to communicate",
+        "It guarantees immediate mastery"
+      ],
+      "correctAnswer": "It gives learners many examples of how language is used",
+      "explanation": "Frequent input helps learners notice patterns, meanings and usage."
+    },
+    {
+      "id": "M1-U9-014",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "exposure",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which source can provide authentic exposure?",
+      "options": [
+        "A real-world video made for English-speaking viewers",
+        "A list of grammar labels only",
+        "A translation test with no target-language input"
+      ],
+      "correctAnswer": "A real-world video made for English-speaking viewers",
+      "explanation": "Authentic audio or video can expose learners to naturally occurring language."
+    },
+    {
+      "id": "M1-U9-015",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "exposure",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about exposure is most accurate?",
+      "options": [
+        "Exposure is important, but interaction and focus on form can also support learning",
+        "Exposure means learners should never study form",
+        "Exposure alone guarantees mastery"
+      ],
+      "correctAnswer": "Exposure is important, but interaction and focus on form can also support learning",
+      "explanation": "Interaction and focus on form can complement exposure."
+    },
+    {
+      "id": "M1-U9-016",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "exposure",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A teacher increases the amount of English learners hear during classroom routines. What factor is being increased?",
+      "options": [
+        "Exposure",
+        "Silent period",
+        "Interference"
+      ],
+      "correctAnswer": "Exposure",
+      "explanation": "Learners are receiving more target-language input."
+    },
+    {
+      "id": "M1-U9-017",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "exposure",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which situation gives the greatest amount of direct exposure to English?",
+      "options": [
+        "Reading articles and listening to English every day",
+        "Studying only explanations in another language",
+        "Avoiding English outside class"
+      ],
+      "correctAnswer": "Reading articles and listening to English every day",
+      "explanation": "Regular contact with the target language increases exposure."
+    },
+    {
+      "id": "M1-U9-018",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "exposure",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why might exposure without meaningful engagement be insufficient?",
+      "options": [
+        "Learners also benefit from interaction and attention to useful forms",
+        "Exposure automatically prevents all errors",
+        "Exposure is relevant only to pronunciation"
+      ],
+      "correctAnswer": "Learners also benefit from interaction and attention to useful forms",
+      "explanation": "Input is important, but learning is strengthened when learners process and use language."
+    },
+    {
+      "id": "M1-U9-019",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "exposure",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher choice increases exposure most directly?",
+      "options": [
+        "Use English for understandable classroom instructions and routines",
+        "Translate every instruction before using English",
+        "Reduce all listening activities"
+      ],
+      "correctAnswer": "Use English for understandable classroom instructions and routines",
+      "explanation": "Comprehensible target-language routines increase input."
+    },
+    {
+      "id": "M1-U9-020",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "exposure",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner watches many English videos but rarely tries to understand or use the language. Which statement is best?",
+      "options": [
+        "The learner has exposure, but other learning processes may still be needed",
+        "The learner has no exposure",
+        "The learner is automatically fluent"
+      ],
+      "correctAnswer": "The learner has exposure, but other learning processes may still be needed",
+      "explanation": "Contact with English is exposure, but interaction and purposeful processing can still matter."
+    },
+    {
+      "id": "M1-U9-021",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "acquisition",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner gradually begins using a phrase after hearing it repeatedly in meaningful situations, without studying a rule. Which process is this?",
+      "options": [
+        "Acquisition",
+        "Proofreading",
+        "Translation"
+      ],
+      "correctAnswer": "Acquisition",
+      "explanation": "Acquisition can develop through meaningful exposure and use without explicit rule study."
+    },
+    {
+      "id": "M1-U9-022",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "acquisition",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which situation best illustrates acquisition?",
+      "options": [
+        "Picking up a phrase after repeated meaningful exposure",
+        "Memorising the definition of 'adverb'",
+        "Correcting punctuation"
+      ],
+      "correctAnswer": "Picking up a phrase after repeated meaningful exposure",
+      "explanation": "Acquisition develops gradually through meaningful contact with language."
+    },
+    {
+      "id": "M1-U9-023",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "acquisition",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which feature is most closely associated with acquisition?",
+      "options": [
+        "Language develops gradually through exposure and use",
+        "Every rule must be memorised first",
+        "Learning happens instantly"
+      ],
+      "correctAnswer": "Language develops gradually through exposure and use",
+      "explanation": "Acquisition is generally gradual."
+    },
+    {
+      "id": "M1-U9-024",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "acquisition",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why is meaningful input important for acquisition?",
+      "options": [
+        "Learners need language they can process and connect with meaning",
+        "Meaning prevents grammar learning",
+        "Input matters only for spelling"
+      ],
+      "correctAnswer": "Learners need language they can process and connect with meaning",
+      "explanation": "Acquisition is supported by understandable language used meaningfully."
+    },
+    {
+      "id": "M1-U9-025",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "acquisition",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement best distinguishes acquisition from explicit study?",
+      "options": [
+        "Acquisition can develop implicitly through exposure and use; explicit study involves conscious attention to rules",
+        "Acquisition means memorising terminology",
+        "They are exactly the same"
+      ],
+      "correctAnswer": "Acquisition can develop implicitly through exposure and use; explicit study involves conscious attention to rules",
+      "explanation": "Acquisition is often associated with implicit development."
+    },
+    {
+      "id": "M1-U9-026",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "acquisition",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner starts producing a pattern correctly before being able to explain the rule. What may this illustrate?",
+      "options": [
+        "Acquisition",
+        "Proofreading",
+        "Register awareness only"
+      ],
+      "correctAnswer": "Acquisition",
+      "explanation": "Implicit knowledge can develop before a learner can verbalise a rule."
+    },
+    {
+      "id": "M1-U9-027",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "acquisition",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which classroom condition is most supportive of acquisition?",
+      "options": [
+        "Frequent meaningful exposure and opportunities to use language",
+        "No target-language input",
+        "Only memorising terminology"
+      ],
+      "correctAnswer": "Frequent meaningful exposure and opportunities to use language",
+      "explanation": "Acquisition is supported by rich input and meaningful use."
+    },
+    {
+      "id": "M1-U9-028",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "acquisition",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about acquisition is most accurate?",
+      "options": [
+        "It can occur gradually without full conscious awareness of every rule",
+        "It requires immediate error-free language",
+        "It happens only in children"
+      ],
+      "correctAnswer": "It can occur gradually without full conscious awareness of every rule",
+      "explanation": "Acquisition may be gradual and implicit."
+    },
+    {
+      "id": "M1-U9-029",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "acquisition",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner understands a new expression after repeatedly hearing it in real conversations. Which concept is most relevant?",
+      "options": [
+        "Acquisition",
+        "Elision",
+        "Placement testing"
+      ],
+      "correctAnswer": "Acquisition",
+      "explanation": "Repeated meaningful exposure can support gradual acquisition."
+    },
+    {
+      "id": "M1-U9-030",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "acquisition",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which example is least characteristic of acquisition?",
+      "options": [
+        "Memorising a metalanguage definition without using the target language",
+        "Picking up a phrase from repeated meaningful exposure",
+        "Developing a feel for what sounds natural"
+      ],
+      "correctAnswer": "Memorising a metalanguage definition without using the target language",
+      "explanation": "This is explicit study rather than implicit language acquisition."
+    },
+    {
+      "id": "M1-U9-031",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "silent_period",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A beginner listens carefully for several weeks but says very little at first. Which concept may explain this?",
+      "options": [
+        "Silent period",
+        "Fossilisation",
+        "Scanning"
+      ],
+      "correctAnswer": "Silent period",
+      "explanation": "A silent period is a stage when learners may process language before producing much of it."
+    },
+    {
+      "id": "M1-U9-032",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "silent_period",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "During a silent period, a learner may:",
+      "options": [
+        "Listen and build understanding before speaking much",
+        "Stop learning completely",
+        "Avoid all exposure"
+      ],
+      "correctAnswer": "Listen and build understanding before speaking much",
+      "explanation": "Low production does not necessarily mean no learning is taking place."
+    },
+    {
+      "id": "M1-U9-033",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "silent_period",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What should a teacher generally avoid doing with a learner in a silent period?",
+      "options": [
+        "Forcing immediate extended production",
+        "Providing comprehensible input",
+        "Allowing non-verbal responses"
+      ],
+      "correctAnswer": "Forcing immediate extended production",
+      "explanation": "Pressure to speak before a learner is ready may not support learning."
+    },
+    {
+      "id": "M1-U9-034",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "silent_period",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher response is most appropriate for a learner who understands instructions but is not yet ready to speak much?",
+      "options": [
+        "Provide input and allow low-pressure responses",
+        "Assume the learner has learned nothing",
+        "Exclude the learner from activities"
+      ],
+      "correctAnswer": "Provide input and allow low-pressure responses",
+      "explanation": "Learners may benefit from continued exposure without pressure."
+    },
+    {
+      "id": "M1-U9-035",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "silent_period",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about the silent period is most accurate?",
+      "options": [
+        "Limited speaking can coexist with active language processing",
+        "It means the learner is unmotivated",
+        "It should be permanent"
+      ],
+      "correctAnswer": "Limited speaking can coexist with active language processing",
+      "explanation": "Learners can build receptive knowledge before extensive production."
+    },
+    {
+      "id": "M1-U9-036",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "silent_period",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A new learner points to correct pictures and follows instructions but rarely speaks. What concept is most relevant?",
+      "options": [
+        "Silent period",
+        "Interference",
+        "Word stress"
+      ],
+      "correctAnswer": "Silent period",
+      "explanation": "The learner shows comprehension despite limited oral production."
+    },
+    {
+      "id": "M1-U9-037",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "silent_period",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity is most suitable during a silent period?",
+      "options": [
+        "Listen and choose the correct picture",
+        "Give a five-minute spontaneous speech",
+        "Debate a complex topic"
+      ],
+      "correctAnswer": "Listen and choose the correct picture",
+      "explanation": "Low-pressure response tasks allow participation without forcing extended speech."
+    },
+    {
+      "id": "M1-U9-038",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "silent_period",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why should a teacher not automatically interpret silence as lack of learning?",
+      "options": [
+        "Learners may be developing comprehension before production",
+        "Silence always means perfect comprehension",
+        "Silent learners never need interaction"
+      ],
+      "correctAnswer": "Learners may be developing comprehension before production",
+      "explanation": "Receptive knowledge can develop before extensive output."
+    },
+    {
+      "id": "M1-U9-039",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "silent_period",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is the teacher's most supportive role during a silent period?",
+      "options": [
+        "Continue providing understandable language and low-pressure participation",
+        "Remove all target-language exposure",
+        "Require constant correction"
+      ],
+      "correctAnswer": "Continue providing understandable language and low-pressure participation",
+      "explanation": "Rich input and supportive participation can help learners progress."
+    },
+    {
+      "id": "M1-U9-040",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "silent_period",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement is least appropriate?",
+      "options": [
+        "A learner in a silent period should be forced to speak extensively from day one",
+        "A learner may understand more than they can produce",
+        "Non-verbal responses can show comprehension"
+      ],
+      "correctAnswer": "A learner in a silent period should be forced to speak extensively from day one",
+      "explanation": "The silent period is better supported through input and low-pressure participation."
+    },
+    {
+      "id": "M1-U9-041",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "interaction",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Two learners ask and answer questions to complete an information-gap task. Which factor is being promoted?",
+      "options": [
+        "Interaction",
+        "Silent period",
+        "Proofreading"
+      ],
+      "correctAnswer": "Interaction",
+      "explanation": "Interaction occurs when learners exchange meaning with other people."
+    },
+    {
+      "id": "M1-U9-042",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "interaction",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why is interaction useful for language learning?",
+      "options": [
+        "It gives learners opportunities to understand, respond and negotiate meaning",
+        "It removes the need for exposure",
+        "It guarantees perfect grammar"
+      ],
+      "correctAnswer": "It gives learners opportunities to understand, respond and negotiate meaning",
+      "explanation": "Interaction requires learners to process language and respond meaningfully."
+    },
+    {
+      "id": "M1-U9-043",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "interaction",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner says, “Sorry, what do you mean?” during pair work. Which process is this part of?",
+      "options": [
+        "Interaction and negotiation of meaning",
+        "Word formation",
+        "Proofreading"
+      ],
+      "correctAnswer": "Interaction and negotiation of meaning",
+      "explanation": "Clarification requests help learners negotiate understanding."
+    },
+    {
+      "id": "M1-U9-044",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "interaction",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity creates the strongest need for genuine interaction?",
+      "options": [
+        "An information-gap task in which partners have different information",
+        "Copying a sentence from the board",
+        "Reading silently with no response"
+      ],
+      "correctAnswer": "An information-gap task in which partners have different information",
+      "explanation": "Learners need to communicate to complete the task."
+    },
+    {
+      "id": "M1-U9-045",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "interaction",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "How can interaction complement exposure?",
+      "options": [
+        "It gives learners opportunities to process and use the language they encounter",
+        "It replaces all need for input",
+        "It prevents learners from noticing form"
+      ],
+      "correctAnswer": "It gives learners opportunities to process and use the language they encounter",
+      "explanation": "Exposure provides input; interaction adds active communication."
+    },
+    {
+      "id": "M1-U9-046",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "interaction",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which classroom activity most clearly promotes interaction?",
+      "options": [
+        "A pair-work problem-solving task",
+        "Silent copying",
+        "Individual spelling memorisation only"
+      ],
+      "correctAnswer": "A pair-work problem-solving task",
+      "explanation": "Learners need to exchange ideas and respond to one another."
+    },
+    {
+      "id": "M1-U9-047",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "interaction",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner modifies a sentence after a partner says, “I don't understand.” What is happening?",
+      "options": [
+        "Negotiation of meaning during interaction",
+        "A silent period",
+        "Scanning"
+      ],
+      "correctAnswer": "Negotiation of meaning during interaction",
+      "explanation": "The learner adjusts language to make meaning clearer."
+    },
+    {
+      "id": "M1-U9-048",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "interaction",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement about interaction is most accurate?",
+      "options": [
+        "It can help learners notice gaps in their ability to express meaning",
+        "It is useful only for advanced learners",
+        "It means learners should never receive teacher input"
+      ],
+      "correctAnswer": "It can help learners notice gaps in their ability to express meaning",
+      "explanation": "Attempting to communicate can reveal what learners cannot yet express."
+    },
+    {
+      "id": "M1-U9-049",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "interaction",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why are pair and group tasks often useful for interaction?",
+      "options": [
+        "They increase opportunities for learners to exchange language",
+        "They eliminate all errors",
+        "They reduce learner talking time"
+      ],
+      "correctAnswer": "They increase opportunities for learners to exchange language",
+      "explanation": "Pair and group formats can increase learner participation."
+    },
+    {
+      "id": "M1-U9-050",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "interaction",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which activity provides exposure but very little interaction?",
+      "options": [
+        "Watching a video without any response or discussion",
+        "Completing an information-gap task",
+        "Clarifying meaning with a partner"
+      ],
+      "correctAnswer": "Watching a video without any response or discussion",
+      "explanation": "The learner receives input, but there is little or no exchange of meaning."
+    },
+    {
+      "id": "M1-U9-051",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "focus_on_form",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "During a communicative activity, the teacher briefly draws attention to the past tense ending -ed. Which concept is this?",
+      "options": [
+        "Focus on form",
+        "Silent period",
+        "Exposure only"
+      ],
+      "correctAnswer": "Focus on form",
+      "explanation": "Focus on form draws attention to language features within meaningful language use."
+    },
+    {
+      "id": "M1-U9-052",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "focus_on_form",
+      "difficulty": "easy",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which classroom action best illustrates focus on form?",
+      "options": [
+        "Briefly noticing a grammar or pronunciation feature during meaningful communication",
+        "Avoiding all attention to language form",
+        "Memorising only unrelated terminology"
+      ],
+      "correctAnswer": "Briefly noticing a grammar or pronunciation feature during meaningful communication",
+      "explanation": "Focus on form connects language features with communicative context."
+    },
+    {
+      "id": "M1-U9-053",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "focus_on_form",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Why can focus on form complement exposure?",
+      "options": [
+        "Learners may benefit from noticing important language features in the input",
+        "Exposure makes noticing unnecessary",
+        "Focus on form means translating everything"
+      ],
+      "correctAnswer": "Learners may benefit from noticing important language features in the input",
+      "explanation": "Attention to form can help learners detect useful patterns."
+    },
+    {
+      "id": "M1-U9-054",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "focus_on_form",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A learner repeatedly says “He go to work.” The teacher briefly highlights third-person -s and then returns to the task. What is this?",
+      "options": [
+        "Focus on form",
+        "A placement test",
+        "Silent reading"
+      ],
+      "correctAnswer": "Focus on form",
+      "explanation": "The teacher momentarily directs attention to a relevant grammatical feature."
+    },
+    {
+      "id": "M1-U9-055",
+      "module": 1,
+      "unit": 9,
+      "section": "practice",
+      "skill": "focus_on_form",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement best describes focus on form?",
+      "options": [
+        "Attention to particular language features can occur within meaning-focused activity",
+        "It means teaching isolated grammar with no context in every lesson",
+        "It means avoiding correction entirely"
+      ],
+      "correctAnswer": "Attention to particular language features can occur within meaning-focused activity",
+      "explanation": "Focus on form can be integrated into communicative work."
+    },
+    {
+      "id": "M1-U9-056",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "focus_on_form",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which teacher move is the clearest example of focus on form?",
+      "options": [
+        "Pause pair work briefly to clarify a useful structure learners are struggling with",
+        "Cancel all communication and teach terminology for the whole lesson",
+        "Ignore every recurring language problem"
+      ],
+      "correctAnswer": "Pause pair work briefly to clarify a useful structure learners are struggling with",
+      "explanation": "The teacher responds to a language need arising during meaningful activity."
+    },
+    {
+      "id": "M1-U9-057",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "focus_on_form",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "What is a likely benefit of focus on form?",
+      "options": [
+        "It can help learners notice the relationship between form and meaning/use",
+        "It removes the need for exposure",
+        "It guarantees instant mastery"
+      ],
+      "correctAnswer": "It can help learners notice the relationship between form and meaning/use",
+      "explanation": "Attention to form can make language patterns more noticeable."
+    },
+    {
+      "id": "M1-U9-058",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "focus_on_form",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which situation best combines exposure, interaction and focus on form?",
+      "options": [
+        "Learners listen to a model, discuss a task in pairs, and briefly analyse a useful language pattern",
+        "Learners silently copy a rule only",
+        "Learners watch a video with no follow-up"
+      ],
+      "correctAnswer": "Learners listen to a model, discuss a task in pairs, and briefly analyse a useful language pattern",
+      "explanation": "This combines input, meaningful communication and attention to form."
+    },
+    {
+      "id": "M1-U9-059",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "focus_on_form",
+      "difficulty": "medium",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "A teacher underlines recurring language in a text and asks learners what pattern they notice. Which concept is most relevant?",
+      "options": [
+        "Focus on form",
+        "Silent period",
+        "Motivation only"
+      ],
+      "correctAnswer": "Focus on form",
+      "explanation": "The task directs attention to a language pattern in meaningful input."
+    },
+    {
+      "id": "M1-U9-060",
+      "module": 1,
+      "unit": 9,
+      "section": "test",
+      "skill": "focus_on_form",
+      "difficulty": "hard",
+      "taskType": "multiple_choice",
+      "stem": "",
+      "prompt": "Which statement is least accurate?",
+      "options": [
+        "Focus on form means meaningful communication must stop completely whenever grammar is discussed",
+        "Focus on form can be brief and responsive to learner needs",
+        "Focus on form can help learners notice features in input"
+      ],
+      "correctAnswer": "Focus on form means meaningful communication must stop completely whenever grammar is discussed",
+      "explanation": "Focus on form can be integrated into communication rather than replacing it."
+    }
+  ],
+  "matchingSets": [
+    {
+      "id": "M1-U9-MATCH-P01",
+      "section": "practice",
+      "instruction": "Match each classroom situation with the correct language-learning concept.",
+      "optionBank": [
+        "Motivation",
+        "Exposure",
+        "Acquisition",
+        "Silent period",
+        "Interaction",
+        "Focus on form"
+      ],
+      "items": [
+        {
+          "example": "A learner studies because passing an exam is an important personal goal.",
+          "correctAnswer": "Motivation"
+        },
+        {
+          "example": "A learner regularly listens to English podcasts.",
+          "correctAnswer": "Exposure"
+        },
+        {
+          "example": "A learner gradually begins using a phrase after hearing it many times.",
+          "correctAnswer": "Acquisition"
+        },
+        {
+          "example": "A beginner understands instructions but says very little at first.",
+          "correctAnswer": "Silent period"
+        },
+        {
+          "example": "Learners exchange information to complete a task.",
+          "correctAnswer": "Interaction"
+        },
+        {
+          "example": "The teacher briefly highlights a grammatical feature during a communicative activity.",
+          "correctAnswer": "Focus on form"
+        }
+      ]
+    },
+    {
+      "id": "M1-U9-MATCH-T01",
+      "section": "test",
+      "instruction": "Match each description with the correct term.",
+      "optionBank": [
+        "Motivation",
+        "Exposure",
+        "Acquisition",
+        "Silent period",
+        "Interaction",
+        "Focus on form"
+      ],
+      "items": [
+        {
+          "example": "Willingness and reasons for learning.",
+          "correctAnswer": "Motivation"
+        },
+        {
+          "example": "Contact with target-language input.",
+          "correctAnswer": "Exposure"
+        },
+        {
+          "example": "Gradual development of language through meaningful input and use.",
+          "correctAnswer": "Acquisition"
+        },
+        {
+          "example": "A phase of limited production despite developing comprehension.",
+          "correctAnswer": "Silent period"
+        },
+        {
+          "example": "Exchange of meaning between learners or speakers.",
+          "correctAnswer": "Interaction"
+        },
+        {
+          "example": "Attention to a language feature within meaning-focused activity.",
+          "correctAnswer": "Focus on form"
+        }
+      ]
+    }
+  ]
+}

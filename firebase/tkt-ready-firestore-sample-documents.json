@@ -1,0 +1,152 @@
+{
+  "users/demo-user": {
+    "schemaVersion": 1,
+    "email": "teacher@example.com",
+    "displayName": "Demo Teacher",
+    "createdAt": "SERVER_TIMESTAMP",
+    "lastLoginAt": "SERVER_TIMESTAMP",
+    "activeModule": 1,
+    "onboardingComplete": true
+  },
+  "users/demo-user/modules/module-1": {
+    "module": 1,
+    "status": "in_progress",
+    "startedAt": "SERVER_TIMESTAMP",
+    "lastActivityAt": "SERVER_TIMESTAMP",
+    "currentUnit": 15,
+    "completedUnits": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "completedUnitCount": 14,
+    "overallProgressPct": 93,
+    "readiness": {
+      "score": 78,
+      "level": "almost_ready",
+      "confidenceScore": 82,
+      "confidenceLabel": "High",
+      "updatedAt": "SERVER_TIMESTAMP"
+    },
+    "latestFullMock": {
+      "attemptId": "mock_2026_10_06_a",
+      "percentage": 76,
+      "completedAt": "SERVER_TIMESTAMP"
+    },
+    "bestFullMock": {
+      "attemptId": "mock_2026_10_06_a",
+      "percentage": 76,
+      "completedAt": "SERVER_TIMESTAMP"
+    },
+    "partSummary": {
+      "1": {
+        "latest": 78,
+        "best": 78
+      },
+      "2": {
+        "latest": 73,
+        "best": 73
+      },
+      "3": {
+        "latest": 76,
+        "best": 76
+      }
+    },
+    "priorityUnits": [
+      5,
+      10,
+      14
+    ],
+    "nextAction": {
+      "type": "unit",
+      "target": "unit-05",
+      "label": "Review priority units"
+    }
+  },
+  "users/demo-user/modules/module-1/units/unit-05": {
+    "module": 1,
+    "unit": 5,
+    "title": "Phonology: Sounds & Stress",
+    "status": "completed",
+    "learnCompleted": true,
+    "practiceCompleted": true,
+    "miniTestAttempts": 2,
+    "latestMiniTestPct": 60,
+    "bestMiniTestPct": 70,
+    "mastery": 63,
+    "masteryStatus": "Review recommended",
+    "practiceStats": {
+      "questionsAnswered": 45,
+      "correct": 31,
+      "accuracyPct": 69
+    },
+    "lastActivityAt": "SERVER_TIMESTAMP",
+    "completedAt": "SERVER_TIMESTAMP"
+  },
+  "users/demo-user/modules/module-1/attempts/mock_2026_10_06_a": {
+    "attemptId": "mock_2026_10_06_a",
+    "module": 1,
+    "type": "full_mock",
+    "part": null,
+    "unit": null,
+    "correct": 61,
+    "total": 80,
+    "percentage": 76,
+    "durationSeconds": 4380,
+    "startedAt": "SERVER_TIMESTAMP",
+    "completedAt": "SERVER_TIMESTAMP",
+    "signature": "sample-signature",
+    "questionCount": 80,
+    "taskCount": 13,
+    "bankVersion": "1.0.0",
+    "partStats": {
+      "1": {
+        "correct": 31,
+        "total": 40,
+        "percentage": 78
+      },
+      "2": {
+        "correct": 11,
+        "total": 15,
+        "percentage": 73
+      },
+      "3": {
+        "correct": 19,
+        "total": 25,
+        "percentage": 76
+      }
+    },
+    "unitStats": "map of Units 1-15"
+  },
+  "users/demo-user/modules/module-1/attempts/mock_2026_10_06_a/responses/M1-U5-041": {
+    "questionId": "M1-U5-041",
+    "taskId": "P1-T3",
+    "module": 1,
+    "part": 1,
+    "unit": 5,
+    "skill": "word_stress",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "selectedAnswer": "Second syllable",
+    "correctAnswer": "First syllable",
+    "isCorrect": false,
+    "optionOrder": [
+      "Second syllable",
+      "First syllable",
+      "Final syllable"
+    ],
+    "answeredAt": "SERVER_TIMESTAMP",
+    "bankVersion": "1.0.0"
+  }
+}

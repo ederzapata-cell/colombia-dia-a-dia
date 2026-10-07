@@ -1,759 +1,268 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Colombia · Día a Día</title>
-
-  <meta
-    name="description"
-    content="Colombia Día a Día — información pública verificable, explicada de forma clara y sin opinión editorial."
-  />
-
-  <meta name="theme-color" content="#10233f" />
-
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="/icons/favicon-32.png"
-  />
-
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta
-    name="apple-mobile-web-app-status-bar-style"
-    content="default"
-  />
-  <meta
-    name="apple-mobile-web-app-title"
-    content="Colombia Día a Día"
-  />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0E274B">
+  <title>TKT Ready — Dashboard Prototype</title>
+  <meta name="description" content="Independent preparation for the Cambridge TKT.">
+  <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-
-  <header class="topbar">
-
-    <a class="brand" href="#" id="brandHome" aria-label="Ir a hoy">
-
-      <div class="brand-symbol" aria-hidden="true">
-        <span class="brand-yellow"></span>
-        <span class="brand-blue"></span>
-        <span class="brand-red"></span>
-      </div>
-
-      <div class="brand-copy">
-        <strong>COLOMBIA</strong>
-        <span>DÍA A DÍA</span>
-      </div>
-
-    </a>
-
-    <div class="top-actions">
-
-      <button
-        class="top-support-btn"
-        id="topSupportBtn"
-        type="button"
-      >
-        ♡ Apóyanos
-      </button>
-
-      <button
-        class="round-icon-btn"
-        id="openSearch"
-        type="button"
-        aria-label="Buscar"
-      >
-        <span aria-hidden="true">⌕</span>
-      </button>
-
-    </div>
-
-  </header>
-
-
-  <main>
-
-    <!-- HERO -->
-
-    <section class="welcome-card">
-
-      <div class="welcome-decoration decoration-a"></div>
-      <div class="welcome-decoration decoration-b"></div>
-      <div class="welcome-decoration decoration-c"></div>
-
-      <div class="welcome-content">
-
-        <p class="welcome-kicker" id="welcomeKicker">
-          COLOMBIA · DÍA A DÍA
-        </p>
-
-        <h1 id="welcomeTitle">
-          Buenos días, Colombia.
-        </h1>
-
-        <p class="welcome-date" id="heroDate">
-          1 de septiembre de 2026
-        </p>
-
-        <p class="welcome-text">
-          Lo importante del país, explicado sin ruido.
-        </p>
-
-        <div class="welcome-actions">
-
-          <button
-            class="soft-btn"
-            id="goToDate"
-            type="button"
-          >
-            Ir a una fecha
-          </button>
-
-          <span class="verified-note" id="heroStatus">
-            Información verificada
-          </span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- COLOMBIA EN 2 MINUTOS -->
-
-    <section
-      class="brief-card"
-      id="briefCard"
-    >
-
-      <div class="brief-top">
-
-        <div class="brief-icon" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <div>
-          <span class="section-kicker light">
-            COLOMBIA EN 2 MINUTOS
-          </span>
-
-          <h2>Qué necesitas saber hoy</h2>
-        </div>
-
-      </div>
-
-      <p id="briefDescription">
-        Una selección de los asuntos más importantes de la jornada.
-      </p>
-
-      <div class="brief-meta">
-
-        <span id="briefCount">0 asuntos</span>
-
-        <button
-          id="openBrief"
-          class="brief-btn"
-          type="button"
-        >
-          Ver lo esencial →
-        </button>
-
-      </div>
-
-    </section>
-
-
-    <!-- RESUMEN DEL DÍA -->
-
-    <section class="day-overview">
-
-      <div class="section-heading">
-
-        <div>
-          <span class="section-kicker">
-            PANORAMA
-          </span>
-
-          <h2>Así está Colombia hoy</h2>
-        </div>
-
-        <span
-          class="day-total"
-          id="todayEventCount"
-        >
-          0 hechos
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#" aria-label="TKT Ready home">
+        <span class="brand-mark">T</span>
+        <span class="brand-copy">
+          <strong>TKT Ready</strong>
+          <small>Exam trainer</small>
         </span>
+      </a>
 
-      </div>
+      <nav class="side-nav">
+        <a class="nav-item active" href="./index.html">
+          <span class="nav-icon">⌂</span>
+          <span>Dashboard</span>
+        </a>
+        <a class="nav-item" href="./module1.html">
+          <span class="nav-icon">▤</span>
+          <span>Module 1</span>
+        </a>
+        <a class="nav-item" href="./module1.html#practice">
+          <span class="nav-icon">✦</span>
+          <span>Practice</span>
+        </a>
+        <a class="nav-item" href="./exam.html?mode=mock">
+          <span class="nav-icon">◷</span>
+          <span>Mock Exam</span>
+        </a>
+      </nav>
 
-
-      <div class="overview-grid">
-
-        <button
-          class="overview-card government-card"
-          data-filter-group="government"
-          type="button"
-        >
-          <span class="overview-symbol">
-            G
-          </span>
-
-          <span class="overview-name">
-            Gobierno
-          </span>
-
-          <strong id="governmentCount">
-            0
-          </strong>
-
-          <small>
-            hechos
-          </small>
-        </button>
-
-
-        <button
-          class="overview-card opposition-card"
-          data-filter-group="opposition"
-          type="button"
-        >
-          <span class="overview-symbol">
-            O
-          </span>
-
-          <span class="overview-name">
-            Oposición
-          </span>
-
-          <strong id="oppositionCount">
-            0
-          </strong>
-
-          <small>
-            hechos
-          </small>
-        </button>
-
-
-        <button
-          class="overview-card state-card"
-          data-filter-group="state"
-          type="button"
-        >
-          <span class="overview-symbol">
-            C
-          </span>
-
-          <span class="overview-name">
-            Estado y país
-          </span>
-
-          <strong id="stateCount">
-            0
-          </strong>
-
-          <small>
-            hechos
-          </small>
-        </button>
-
-      </div>
-
-    </section>
-
-
-    <!-- TERMINOS DEL DÍA -->
-
-    <section
-      class="understand-strip"
-      id="understandStrip"
-    >
-
-      <div class="understand-copy">
-
-        <span class="section-kicker">
-          ENTIENDE
-        </span>
-
-        <h2>Cuando una palabra complica la noticia</h2>
-
-        <p>
-          Tócala y te la explicamos en lenguaje sencillo.
-        </p>
-
-      </div>
-
-      <div
-        class="term-chips"
-        id="termChips"
-      ></div>
-
-    </section>
-
-
-    <!-- TODO LO OCURRIDO -->
-
-    <section class="events-section">
-
-      <div class="section-heading">
-
-        <div>
-          <span class="section-kicker">
-            EL DÍA COMPLETO
-          </span>
-
-          <h2 id="eventsHeading">
-            Todo lo ocurrido hoy
-          </h2>
+      <div class="sidebar-bottom">
+        <div class="mini-note">
+          <span class="mini-note-dot"></span>
+          <p>Independent preparation for the Cambridge TKT.</p>
         </div>
-
-        <button
-          class="view-all-btn"
-          id="clearGroupFilter"
-          type="button"
-          hidden
-        >
-          Ver todo
-        </button>
-
-      </div>
-
-      <div
-        id="timeline"
-        class="events-feed"
-        aria-live="polite"
-      ></div>
-
-    </section>
-
-
-    <!-- APOYO -->
-
-    <section class="support-card">
-
-      <div class="support-copy">
-
-        <span class="section-kicker">
-          PROYECTO INDEPENDIENTE
-        </span>
-
-        <h2>
-          Información abierta para todos.
-        </h2>
-
-        <p>
-          Tu aporte ayuda a sostener investigación,
-          verificación e infraestructura.
-        </p>
-
-      </div>
-
-      <button
-        class="support-btn"
-        id="supportBtn"
-        type="button"
-      >
-        ♡ Apóyanos
-      </button>
-
-    </section>
-
-  </main>
-
-
-  <!-- NAVEGACIÓN -->
-
-  <nav
-    class="bottom-nav"
-    aria-label="Navegación principal"
-  >
-
-    <button
-      class="nav-item active"
-      data-section="hoy"
-      type="button"
-    >
-      <span class="nav-icon">⌂</span>
-      <span>Hoy</span>
-    </button>
-
-    <button
-      class="nav-item"
-      data-section="dia"
-      type="button"
-    >
-      <span class="nav-icon">↕</span>
-      <span>Día a día</span>
-    </button>
-
-    <button
-      class="nav-item"
-      data-section="buscar"
-      id="navSearch"
-      type="button"
-    >
-      <span class="nav-icon">⌕</span>
-      <span>Buscar</span>
-    </button>
-
-    <button
-      class="nav-item"
-      data-section="entiende"
-      type="button"
-    >
-      <span class="nav-icon">◎</span>
-      <span>Entiende</span>
-    </button>
-
-    <button
-      class="nav-item"
-      data-section="mas"
-      type="button"
-    >
-      <span class="nav-icon">•••</span>
-      <span>Más</span>
-    </button>
-
-  </nav>
-
-
-  <!-- BUSCAR -->
-
-  <dialog id="searchDialog">
-
-    <div class="dialog-card">
-
-      <div class="dialog-head">
-
-        <div>
-          <span class="section-kicker">
-            BUSCAR
+        <button class="profile-card" type="button">
+          <span class="avatar">ET</span>
+          <span>
+            <strong>English Teacher</strong>
+            <small>Module 1</small>
           </span>
-
-          <h3>
-            Encuentra hechos, personas o conceptos
-          </h3>
-        </div>
-
-        <button
-          class="close-btn"
-          data-close-dialog="searchDialog"
-          type="button"
-          aria-label="Cerrar"
-        >
-          ×
+          <span class="profile-more">•••</span>
         </button>
-
       </div>
+    </aside>
 
-      <input
-        id="searchInput"
-        type="search"
-        placeholder="Petro, Congreso, terremoto, inflación…"
-        autocomplete="off"
-      />
-
-      <div
-        id="searchResults"
-        class="search-results"
-      ></div>
-
-    </div>
-
-  </dialog>
-
-
-  <!-- IR A FECHA -->
-
-  <dialog id="dateDialog">
-
-    <div class="dialog-card">
-
-      <div class="dialog-head">
-
+    <main class="main">
+      <header class="topbar">
         <div>
-          <span class="section-kicker">
-            DÍA A DÍA
-          </span>
-
-          <h3>
-            Consulta otra fecha
-          </h3>
+          <p class="eyebrow">MODULE 1</p>
+          <h1>Welcome back.</h1>
+          <p class="topbar-subtitle">Keep building exam readiness one focused step at a time.</p>
         </div>
-
-        <button
-          class="close-btn"
-          data-close-dialog="dateDialog"
-          type="button"
-          aria-label="Cerrar"
-        >
-          ×
-        </button>
-
-      </div>
-
-      <input
-        id="dateInput"
-        type="date"
-        min="2026-08-07"
-      />
-
-      <button
-        class="primary-btn"
-        id="dateSubmit"
-        type="button"
-      >
-        Ver esta fecha
-      </button>
-
-      <p class="helper">
-        La cronología comienza el 7 de agosto de 2026.
-      </p>
-
-    </div>
-
-  </dialog>
-
-
-  <!-- COLOMBIA EN 2 MINUTOS -->
-
-  <dialog id="briefDialog">
-
-    <div class="dialog-card large-dialog">
-
-      <div class="dialog-head">
-
-        <div>
-          <span class="section-kicker">
-            COLOMBIA EN 2 MINUTOS
-          </span>
-
-          <h3>
-            Lo esencial del día
-          </h3>
+        <div class="topbar-actions">
+          <a class="ghost-button link-button" href="./module1.html">View Module</a>
+          <a class="primary-button link-button" href="./unit.html?unit=15">Continue Studying</a>
         </div>
+      </header>
 
-        <button
-          class="close-btn"
-          data-close-dialog="briefDialog"
-          type="button"
-          aria-label="Cerrar"
-        >
-          ×
-        </button>
+      <section class="dashboard-grid">
+        <article class="readiness-card card">
+          <div class="card-heading">
+            <div>
+              <p class="eyebrow">OVERALL TKT READINESS</p>
+              <h2>Almost ready</h2>
+            </div>
+            <span class="confidence-badge">High confidence</span>
+          </div>
 
-      </div>
+          <div class="readiness-content">
+            <div class="score-ring" role="img" aria-label="Readiness score 78 out of 100">
+              <div class="score-ring-inner">
+                <strong>78</strong>
+                <span>/ 100</span>
+              </div>
+            </div>
 
-      <div
-        id="briefResults"
-        class="brief-results"
-      ></div>
+            <div class="readiness-copy">
+              <p>Your performance is improving. Review your priority units before your next Full Mock.</p>
+              <div class="readiness-meta">
+                <span><b>Latest mock</b> 76%</span>
+                <span><b>Best mock</b> 76%</span>
+                <span><b>Evidence</b> High</span>
+              </div>
+              <button class="primary-button" type="button">Continue Preparing</button>
+            </div>
+          </div>
+        </article>
 
-    </div>
+        <article class="continue-card card">
+          <div class="card-heading compact">
+            <div>
+              <p class="eyebrow">CONTINUE STUDYING</p>
+              <h3>Unit 15 — Assessment</h3>
+            </div>
+            <span class="status-chip developing">In progress</span>
+          </div>
 
-  </dialog>
+          <div class="stage-line">
+            <span class="stage active"></span>
+            <span class="stage active"></span>
+            <span class="stage active"></span>
+            <span class="stage active"></span>
+            <span class="stage"></span>
+            <span class="stage"></span>
+          </div>
 
+          <div class="stage-labels">
+            <span>Learn</span><span>Examples</span><span>Practice</span>
+            <span>Strategy</span><span>Mini Test</span><span>Results</span>
+          </div>
 
-  <!-- ENTIENDE -->
+          <div class="continue-footer">
+            <p><b>Next:</b> Unit Mini Test</p>
+            <a class="secondary-button link-button" href="./unit.html?unit=15">Resume Unit</a>
+          </div>
+        </article>
 
-  <dialog id="termDialog">
+        <article class="module-card card">
+          <div class="card-heading compact">
+            <div>
+              <p class="eyebrow">MODULE 1</p>
+              <h3>Language, Learning & Teaching</h3>
+            </div>
+            <strong class="progress-number">93%</strong>
+          </div>
 
-    <div class="dialog-card">
+          <div class="big-progress" aria-label="Module progress 93 percent">
+            <span style="width:93%"></span>
+          </div>
 
-      <div class="dialog-head">
+          <div class="module-stats">
+            <div>
+              <strong>14/15</strong>
+              <span>Units completed</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>Parts</span>
+            </div>
+            <div>
+              <strong>900</strong>
+              <span>Question bank</span>
+            </div>
+          </div>
 
-        <div>
-          <span class="section-kicker">
-            ENTIENDE
-          </span>
+          <div class="part-list">
+            <div class="part-row">
+              <span>Part 1</span>
+              <span class="part-title">Describing language and language skills</span>
+              <span class="status-chip strong">Strong</span>
+            </div>
+            <div class="part-row">
+              <span>Part 2</span>
+              <span class="part-title">Background to language learning</span>
+              <span class="status-chip developing">Developing</span>
+            </div>
+            <div class="part-row">
+              <span>Part 3</span>
+              <span class="part-title">Background to language teaching</span>
+              <span class="status-chip developing">Developing</span>
+            </div>
+          </div>
 
-          <h3 id="termDialogTitle">
-            Concepto
-          </h3>
-        </div>
+          <a class="text-button link-text-button" href="./module1.html">Open Module 1 →</a>
+        </article>
 
-        <button
-          class="close-btn"
-          data-close-dialog="termDialog"
-          type="button"
-          aria-label="Cerrar"
-        >
-          ×
-        </button>
+        <article class="recommendation-card card">
+          <div class="recommendation-icon">↗</div>
+          <p class="eyebrow">RECOMMENDED NEXT ACTIVITY</p>
+          <h3>Review your priority units</h3>
+          <p>Units 5, 10 and 14 are currently below your readiness target.</p>
 
-      </div>
+          <div class="priority-list">
+            <button class="priority-row" type="button">
+              <span class="priority-number">05</span>
+              <span>
+                <strong>Phonology: Sounds & Stress</strong>
+                <small>Mastery 63%</small>
+              </span>
+              <span class="arrow">→</span>
+            </button>
+            <button class="priority-row" type="button">
+              <span class="priority-number">10</span>
+              <span>
+                <strong>Errors & L1/L2 Learning</strong>
+                <small>Mastery 64%</small>
+              </span>
+              <span class="arrow">→</span>
+            </button>
+            <button class="priority-row" type="button">
+              <span class="priority-number">14</span>
+              <span>
+                <strong>Teaching Approaches</strong>
+                <small>Mastery 67%</small>
+              </span>
+              <span class="arrow">→</span>
+            </button>
+          </div>
+        </article>
 
-      <div class="definition-card">
+        <article class="recent-card card">
+          <div class="card-heading compact">
+            <div>
+              <p class="eyebrow">RECENT RESULTS</p>
+              <h3>Your latest attempts</h3>
+            </div>
+            <button class="text-button" type="button">View all</button>
+          </div>
 
-        <span class="definition-label">
-          EN PALABRAS SENCILLAS
-        </span>
+          <div class="results-table" role="table" aria-label="Recent results">
+            <div class="result-row header" role="row">
+              <span>Activity</span>
+              <span>Score</span>
+              <span>Status</span>
+              <span>Date</span>
+            </div>
+            <button class="result-row" type="button" role="row">
+              <span>
+                <strong>Module 1 Full Mock</strong>
+                <small>80 questions · 80 minutes</small>
+              </span>
+              <span class="score-cell">76%</span>
+              <span><em class="status-chip developing">Almost ready</em></span>
+              <span>Today</span>
+            </button>
+            <button class="result-row" type="button" role="row">
+              <span>
+                <strong>Part 1 Review</strong>
+                <small>40 questions</small>
+              </span>
+              <span class="score-cell">78%</span>
+              <span><em class="status-chip developing">Developing</em></span>
+              <span>Oct 3</span>
+            </button>
+            <button class="result-row" type="button" role="row">
+              <span>
+                <strong>Unit 10 Mini Test</strong>
+                <small>Errors & L1/L2 Learning</small>
+              </span>
+              <span class="score-cell">70%</span>
+              <span><em class="status-chip developing">Developing</em></span>
+              <span>Oct 2</span>
+            </button>
+          </div>
+        </article>
+      </section>
 
-        <p id="termDialogDefinition"></p>
+      <footer class="footer">
+        <span>TKT Ready</span>
+        <span>Independent preparation for the Cambridge TKT.</span>
+      </footer>
+    </main>
+  </div>
 
-      </div>
-
-    </div>
-
-  </dialog>
-
-
-  <!-- GLOSARIO -->
-
-  <dialog id="glossaryDialog">
-
-    <div class="dialog-card large-dialog">
-
-      <div class="dialog-head">
-
-        <div>
-          <span class="section-kicker">
-            ENTIENDE
-          </span>
-
-          <h3>
-            Diccionario ciudadano
-          </h3>
-        </div>
-
-        <button
-          class="close-btn"
-          data-close-dialog="glossaryDialog"
-          type="button"
-          aria-label="Cerrar"
-        >
-          ×
-        </button>
-
-      </div>
-
-      <input
-        id="glossarySearch"
-        type="search"
-        placeholder="Buscar concepto…"
-        autocomplete="off"
-      />
-
-      <div
-        id="glossaryResults"
-        class="glossary-results"
-      ></div>
-
-    </div>
-
-  </dialog>
-
-
-  <!-- APOYANOS -->
-
-  <dialog id="supportDialog">
-
-    <div class="dialog-card support-dialog-card">
-
-      <div class="dialog-head">
-
-        <div>
-          <span class="section-kicker">
-            APÓYANOS
-          </span>
-
-          <h3>
-            Ayúdanos a mantener la información abierta
-          </h3>
-        </div>
-
-        <button
-          class="close-btn"
-          data-close-dialog="supportDialog"
-          type="button"
-          aria-label="Cerrar"
-        >
-          ×
-        </button>
-
-      </div>
-
-      <p class="support-intro">
-        Tu aporte voluntario ayuda a sostener investigación,
-        verificación e infraestructura.
-      </p>
-
-      <div class="qr-wrap">
-        <img
-          src="assets/qr-apoyanos.jpeg"
-          alt="Código QR Bre-B para apoyar Colombia Día a Día"
-          class="support-qr"
-        />
-      </div>
-
-      <div class="key-box">
-
-        <span class="key-label">
-          LLAVE BRE-B
-        </span>
-
-        <strong id="brebKey">
-          71744644
-        </strong>
-
-        <button
-          class="copy-key-btn"
-          id="copyKeyBtn"
-          type="button"
-        >
-          Copiar llave
-        </button>
-
-      </div>
-
-      <p
-        class="copy-status"
-        id="copyStatus"
-        aria-live="polite"
-      ></p>
-
-      <p class="helper">
-        Los aportes son voluntarios.
-      </p>
-
-    </div>
-
-  </dialog>
-
-<script src="data.js"></script>
-<script src="data/2026-09.js"></script>
-<script src="data/2026-10.js"></script>
-<script src="app.js"></script>
-  
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker.register("/sw.js");
-      });
-    }
-  </script>
-
+  <script src="./app.js"></script>
 </body>
 </html>

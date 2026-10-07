@@ -1,0 +1,1266 @@
+// TKT Ready — Module 1, Unit 10: Errors & L1/L2 Learning
+// Production question bank v1.0.0
+// All learner-facing content is in English.
+// Correct answers are stored as text, never as option positions.
+
+export const unitMeta = {
+  "product": "TKT Ready",
+  "module": 1,
+  "unit": 10,
+  "title": "Errors & L1/L2 Learning",
+  "version": "1.0.0",
+  "language": "English",
+  "practiceItems": 30,
+  "testBankItems": 30,
+  "miniTestDisplayCount": 10,
+  "randomizationRule": "Randomize question selection/order and answer-option order on every attempt; never reuse an exact attempt signature.",
+  "alignment": "TKT Module 1 — Background to language learning: the role of error, errors and slips, L1 interference, developmental errors, overgeneralisation, interlanguage and fossilisation",
+  "skills": [
+    "error_vs_slip",
+    "developmental_error",
+    "l1_interference",
+    "overgeneralisation",
+    "interlanguage",
+    "fossilisation_correction"
+  ]
+};
+
+export const questionBank = [
+  {
+    "id": "M1-U10-001",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "error_vs_slip",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner says, “He go to school... sorry, he goes to school.” What type of mistake is this?",
+    "options": [
+      "A slip",
+      "An error",
+      "L1 interference"
+    ],
+    "correctAnswer": "A slip",
+    "explanation": "A slip is a mistake that the learner can recognise and correct independently."
+  },
+  {
+    "id": "M1-U10-002",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "error_vs_slip",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner repeatedly uses a structure incorrectly and cannot correct it alone. What is this most likely to be?",
+    "options": [
+      "An error",
+      "A slip",
+      "A contraction"
+    ],
+    "correctAnswer": "An error",
+    "explanation": "An error reflects language the learner has not yet fully learned or processed."
+  },
+  {
+    "id": "M1-U10-003",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "error_vs_slip",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement best distinguishes a slip from an error?",
+    "options": [
+      "A slip can usually be self-corrected; an error usually cannot",
+      "A slip is always grammatical and an error is always lexical",
+      "A slip only occurs in writing"
+    ],
+    "correctAnswer": "A slip can usually be self-corrected; an error usually cannot",
+    "explanation": "Self-correction is the key distinction in TKT terminology."
+  },
+  {
+    "id": "M1-U10-004",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "error_vs_slip",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A tired B2 learner says, “She have finished”, immediately notices it and says, “Sorry, she has finished.” How should this be classified?",
+    "options": [
+      "Slip",
+      "Developmental error",
+      "Fossilised error"
+    ],
+    "correctAnswer": "Slip",
+    "explanation": "The learner knows the correct form and self-corrects immediately."
+  },
+  {
+    "id": "M1-U10-005",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "error_vs_slip",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Why are learner errors useful to teachers?",
+    "options": [
+      "They can show what learners know and what they still need to learn",
+      "They should always be ignored",
+      "They prove the learner is unmotivated"
+    ],
+    "correctAnswer": "They can show what learners know and what they still need to learn",
+    "explanation": "Errors provide diagnostic information about learners' current language development."
+  },
+  {
+    "id": "M1-U10-006",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "error_vs_slip",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which example most clearly shows a slip?",
+    "options": [
+      "A learner says “went” incorrectly once, then corrects it without help",
+      "A beginner consistently says “goed” and cannot correct it",
+      "A learner applies an L1 word order pattern repeatedly"
+    ],
+    "correctAnswer": "A learner says “went” incorrectly once, then corrects it without help",
+    "explanation": "The learner already knows the correct form and is able to self-correct."
+  },
+  {
+    "id": "M1-U10-007",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "error_vs_slip",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner has never studied the past simple and says, “Yesterday I go to the park.” Which term is most appropriate?",
+    "options": [
+      "Error",
+      "Slip",
+      "Contraction"
+    ],
+    "correctAnswer": "Error",
+    "explanation": "The learner is attempting language beyond their current level of control."
+  },
+  {
+    "id": "M1-U10-008",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "error_vs_slip",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which teacher comment most strongly suggests a slip rather than an error?",
+    "options": [
+      "“She was tired and corrected herself as soon as I prompted her.”",
+      "“He has never learned this structure.”",
+      "“She always transfers this pattern from her first language.”"
+    ],
+    "correctAnswer": "“She was tired and corrected herself as soon as I prompted her.”",
+    "explanation": "A learner who can correct the language shows that the underlying knowledge is already available."
+  },
+  {
+    "id": "M1-U10-009",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "error_vs_slip",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "What can teachers learn from systematic learner errors?",
+    "options": [
+      "Which areas may need more teaching or practice",
+      "That correction is never necessary",
+      "That all learners have the same needs"
+    ],
+    "correctAnswer": "Which areas may need more teaching or practice",
+    "explanation": "Patterns of error can help teachers adapt teaching and identify learner needs."
+  },
+  {
+    "id": "M1-U10-010",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "error_vs_slip",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement is least accurate?",
+    "options": [
+      "Every learner mistake should automatically be treated as a serious error",
+      "Some mistakes are slips",
+      "Errors can be a natural part of learning"
+    ],
+    "correctAnswer": "Every learner mistake should automatically be treated as a serious error",
+    "explanation": "Teachers need to distinguish slips from more systematic errors and decide whether correction is useful."
+  },
+  {
+    "id": "M1-U10-011",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "developmental_error",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner says “I goed home” instead of “I went home”. Which type of error can this illustrate?",
+    "options": [
+      "Developmental error",
+      "Slip",
+      "Register error"
+    ],
+    "correctAnswer": "Developmental error",
+    "explanation": "This kind of error can occur naturally as learners apply developing language rules."
+  },
+  {
+    "id": "M1-U10-012",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "developmental_error",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement best describes a developmental error?",
+    "options": [
+      "An error that is a natural part of language development",
+      "A mistake caused only by tiredness",
+      "A permanent pronunciation habit"
+    ],
+    "correctAnswer": "An error that is a natural part of language development",
+    "explanation": "Developmental errors emerge as learners organise and test language rules."
+  },
+  {
+    "id": "M1-U10-013",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "developmental_error",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Why are developmental errors important?",
+    "options": [
+      "They can show that learners are actively working out how the language system works",
+      "They show no learning is happening",
+      "They always come directly from L1"
+    ],
+    "correctAnswer": "They can show that learners are actively working out how the language system works",
+    "explanation": "These errors often reflect an evolving internal system rather than simple carelessness."
+  },
+  {
+    "id": "M1-U10-014",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "developmental_error",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which example is most likely to be developmental?",
+    "options": [
+      "“Two mans” after learning regular plural -s",
+      "Using an L1 word order exactly in English",
+      "A fluent learner makes one accidental typo"
+    ],
+    "correctAnswer": "“Two mans” after learning regular plural -s",
+    "explanation": "The learner is extending a general rule to an irregular form."
+  },
+  {
+    "id": "M1-U10-015",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "developmental_error",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which feature distinguishes a developmental error from a slip?",
+    "options": [
+      "It reflects the learner's current developing language system",
+      "It can always be corrected immediately",
+      "It only appears in pronunciation"
+    ],
+    "correctAnswer": "It reflects the learner's current developing language system",
+    "explanation": "A developmental error is part of the learner's evolving competence, not a momentary lapse."
+  },
+  {
+    "id": "M1-U10-016",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "developmental_error",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A child learning English as an additional language says “comed” for “came”. Which explanation best fits?",
+    "options": [
+      "Developmental error",
+      "Formal register",
+      "Elision"
+    ],
+    "correctAnswer": "Developmental error",
+    "explanation": "The learner is applying a developing past-tense rule to an irregular verb."
+  },
+  {
+    "id": "M1-U10-017",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "developmental_error",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement about developmental errors is most accurate?",
+    "options": [
+      "They may disappear as the learner's language develops",
+      "They are always permanent",
+      "They are caused only by first-language interference"
+    ],
+    "correctAnswer": "They may disappear as the learner's language develops",
+    "explanation": "As learners reorganise their language system, many developmental errors disappear."
+  },
+  {
+    "id": "M1-U10-018",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "developmental_error",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which learner behaviour most strongly indicates a developmental process?",
+    "options": [
+      "Applying a productive rule too widely while building the system",
+      "Making one typo because of fatigue",
+      "Choosing informal language in a formal email"
+    ],
+    "correctAnswer": "Applying a productive rule too widely while building the system",
+    "explanation": "This shows active rule-building during language development."
+  },
+  {
+    "id": "M1-U10-019",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "developmental_error",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Why should teachers not view all developmental errors as failure?",
+    "options": [
+      "They can be evidence that learners are experimenting with language rules",
+      "They are always correct alternatives",
+      "They mean the syllabus is unnecessary"
+    ],
+    "correctAnswer": "They can be evidence that learners are experimenting with language rules",
+    "explanation": "Errors can reveal active processing and development."
+  },
+  {
+    "id": "M1-U10-020",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "developmental_error",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which example is least likely to be a developmental error?",
+    "options": [
+      "A learner accidentally writes “teh” for “the” once",
+      "A learner says “foots” for “feet”",
+      "A learner says “buyed” for “bought”"
+    ],
+    "correctAnswer": "A learner accidentally writes “teh” for “the” once",
+    "explanation": "A one-off typing mistake is more likely to be a slip than a developmental error."
+  },
+  {
+    "id": "M1-U10-021",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "l1_interference",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner uses the grammatical pattern of their first language when speaking English, but the pattern is not correct in English. What is this called?",
+    "options": [
+      "L1 interference",
+      "Fossilisation",
+      "Skimming"
+    ],
+    "correctAnswer": "L1 interference",
+    "explanation": "L1 interference occurs when the first language affects performance in the target language."
+  },
+  {
+    "id": "M1-U10-022",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "l1_interference",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which area can be affected by L1 interference?",
+    "options": [
+      "Grammar, lexis or pronunciation",
+      "Only punctuation",
+      "Only handwriting"
+    ],
+    "correctAnswer": "Grammar, lexis or pronunciation",
+    "explanation": "First-language influence can affect several areas of target-language performance."
+  },
+  {
+    "id": "M1-U10-023",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "l1_interference",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner replaces an unfamiliar English sound with the closest sound from their first language. Which factor is most relevant?",
+    "options": [
+      "L1 interference",
+      "Developmental silence",
+      "Scanning"
+    ],
+    "correctAnswer": "L1 interference",
+    "explanation": "The learner is drawing on the sound system of the first language."
+  },
+  {
+    "id": "M1-U10-024",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "l1_interference",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Why might learners from different L1 backgrounds make different English errors?",
+    "options": [
+      "Their first languages may influence English in different ways",
+      "All learners acquire English identically",
+      "Errors are unrelated to previous language knowledge"
+    ],
+    "correctAnswer": "Their first languages may influence English in different ways",
+    "explanation": "Different L1 systems can create different transfer patterns."
+  },
+  {
+    "id": "M1-U10-025",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "l1_interference",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which teacher action is most useful when an error is caused by L1 interference?",
+    "options": [
+      "Help learners notice the contrast between the L1 and English pattern",
+      "Assume the learner is careless",
+      "Avoid all comparison between languages"
+    ],
+    "correctAnswer": "Help learners notice the contrast between the L1 and English pattern",
+    "explanation": "Awareness of the difference can help learners avoid transferring an inappropriate L1 pattern."
+  },
+  {
+    "id": "M1-U10-026",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "l1_interference",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner consistently places adjectives after nouns because this is normal in the learner's first language. What is the most likely cause?",
+    "options": [
+      "L1 interference",
+      "A slip",
+      "Word stress"
+    ],
+    "correctAnswer": "L1 interference",
+    "explanation": "The learner is transferring an L1 word-order pattern into English."
+  },
+  {
+    "id": "M1-U10-027",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "l1_interference",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which teacher comment most clearly describes L1 interference?",
+    "options": [
+      "“They use this structure because it works that way in their own language.”",
+      "“They know the rule but were tired.”",
+      "“They have created a new intermediate system.”"
+    ],
+    "correctAnswer": "“They use this structure because it works that way in their own language.”",
+    "explanation": "The comment directly identifies first-language influence."
+  },
+  {
+    "id": "M1-U10-028",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "l1_interference",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement about L1 interference is most accurate?",
+    "options": [
+      "It can affect both receptive expectations and productive language",
+      "It affects only beginners",
+      "It is always negative and never useful"
+    ],
+    "correctAnswer": "It can affect both receptive expectations and productive language",
+    "explanation": "Learners use prior language knowledge in many ways, and some transfer may help while other transfer causes errors."
+  },
+  {
+    "id": "M1-U10-029",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "l1_interference",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner says an English word with an L1 sound because English contains a phoneme absent from the learner's first language. Which category best fits?",
+    "options": [
+      "L1 interference",
+      "Developmental error only",
+      "Proofreading"
+    ],
+    "correctAnswer": "L1 interference",
+    "explanation": "The learner is relying on the first-language sound system."
+  },
+  {
+    "id": "M1-U10-030",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "l1_interference",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which example is least likely to be caused primarily by L1 interference?",
+    "options": [
+      "A learner says “goed” after learning regular past -ed",
+      "A learner transfers L1 word order into English",
+      "A learner substitutes an L1 sound for an unfamiliar English sound"
+    ],
+    "correctAnswer": "A learner says “goed” after learning regular past -ed",
+    "explanation": "“Goed” is typically explained by overgeneralisation/development rather than direct L1 transfer."
+  },
+  {
+    "id": "M1-U10-031",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "overgeneralisation",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner says “two mans” after learning that English plurals usually take -s. What is this?",
+    "options": [
+      "Overgeneralisation",
+      "Slip",
+      "Register"
+    ],
+    "correctAnswer": "Overgeneralisation",
+    "explanation": "The learner applies a general rule in a case where it does not apply."
+  },
+  {
+    "id": "M1-U10-032",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "overgeneralisation",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which definition best describes overgeneralisation?",
+    "options": [
+      "Using a learned rule in situations where it is not appropriate",
+      "Forgetting a rule because of tiredness",
+      "Using L1 only"
+    ],
+    "correctAnswer": "Using a learned rule in situations where it is not appropriate",
+    "explanation": "Overgeneralisation happens when a rule is extended too widely."
+  },
+  {
+    "id": "M1-U10-033",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "overgeneralisation",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner says “He throwed the ball.” What is the most likely explanation?",
+    "options": [
+      "Overgeneralisation of regular past-tense formation",
+      "A contraction",
+      "Scanning"
+    ],
+    "correctAnswer": "Overgeneralisation of regular past-tense formation",
+    "explanation": "The learner applies the regular -ed rule to an irregular verb."
+  },
+  {
+    "id": "M1-U10-034",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "overgeneralisation",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Why is overgeneralisation often considered developmental?",
+    "options": [
+      "It shows learners are forming and applying rules",
+      "It always comes from spelling",
+      "It means learners have no grammar knowledge"
+    ],
+    "correctAnswer": "It shows learners are forming and applying rules",
+    "explanation": "Applying a rule too broadly is evidence that a rule has been noticed and internalised at least partially."
+  },
+  {
+    "id": "M1-U10-035",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "overgeneralisation",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which example best illustrates overgeneralisation rather than L1 interference?",
+    "options": [
+      "“Buyed” for “bought” after learning past -ed",
+      "Using an L1 question pattern in English",
+      "Pronouncing an English sound as the nearest L1 sound"
+    ],
+    "correctAnswer": "“Buyed” for “bought” after learning past -ed",
+    "explanation": "The learner is extending an English rule to an irregular case."
+  },
+  {
+    "id": "M1-U10-036",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "overgeneralisation",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner says “She can sings.” Which explanation may fit?",
+    "options": [
+      "Overgeneralisation of third-person -s",
+      "A silent period",
+      "Authenticity"
+    ],
+    "correctAnswer": "Overgeneralisation of third-person -s",
+    "explanation": "The learner applies the -s rule where a modal verb requires the base form."
+  },
+  {
+    "id": "M1-U10-037",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "overgeneralisation",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which learner error most clearly shows overgeneralisation?",
+    "options": [
+      "“Childs” instead of “children”",
+      "One accidental misspelling",
+      "Using a direct translation from L1"
+    ],
+    "correctAnswer": "“Childs” instead of “children”",
+    "explanation": "The regular plural rule is being applied to an irregular noun."
+  },
+  {
+    "id": "M1-U10-038",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "overgeneralisation",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement is most accurate?",
+    "options": [
+      "Overgeneralisation can show partial learning of a rule",
+      "Overgeneralisation means the learner has learned no rule",
+      "It always comes from L1"
+    ],
+    "correctAnswer": "Overgeneralisation can show partial learning of a rule",
+    "explanation": "The learner has learned a productive rule but not yet its limits or exceptions."
+  },
+  {
+    "id": "M1-U10-039",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "overgeneralisation",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A teacher hears “I am knowing the answer.” Which possible explanation is closest to overgeneralisation?",
+    "options": [
+      "The learner is extending present continuous use to a stative verb",
+      "The learner is making a spelling slip",
+      "The learner is refusing to answer"
+    ],
+    "correctAnswer": "The learner is extending present continuous use to a stative verb",
+    "explanation": "The learner is applying a familiar form in a context where English normally restricts it."
+  },
+  {
+    "id": "M1-U10-040",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "overgeneralisation",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which teaching response best addresses overgeneralisation?",
+    "options": [
+      "Show the rule together with important exceptions and contrasting examples",
+      "Tell learners never to form rules",
+      "Ignore all repeated examples"
+    ],
+    "correctAnswer": "Show the rule together with important exceptions and contrasting examples",
+    "explanation": "Learners need to refine the limits of the rule they have already begun to form."
+  },
+  {
+    "id": "M1-U10-041",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "interlanguage",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "What is interlanguage?",
+    "options": [
+      "A learner's developing version of the target language",
+      "The learner's first language only",
+      "Perfect native-like target language"
+    ],
+    "correctAnswer": "A learner's developing version of the target language",
+    "explanation": "Interlanguage is the evolving language system a learner constructs while learning."
+  },
+  {
+    "id": "M1-U10-042",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "interlanguage",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement about interlanguage is true?",
+    "options": [
+      "It changes as learners learn more",
+      "It is fixed from the first lesson",
+      "It contains only L1 rules"
+    ],
+    "correctAnswer": "It changes as learners learn more",
+    "explanation": "Interlanguage develops over time as the learner's system is reorganised."
+  },
+  {
+    "id": "M1-U10-043",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "interlanguage",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner creates a structure that is neither normal in the first language nor correct in English. Which concept may explain this?",
+    "options": [
+      "Interlanguage",
+      "Scanning",
+      "Register"
+    ],
+    "correctAnswer": "Interlanguage",
+    "explanation": "Learners may create intermediate rules as part of their developing language system."
+  },
+  {
+    "id": "M1-U10-044",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "interlanguage",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Why is interlanguage useful for understanding learner errors?",
+    "options": [
+      "It shows that learners build evolving internal systems rather than simply copy language",
+      "It proves errors are random",
+      "It means L1 has no influence"
+    ],
+    "correctAnswer": "It shows that learners build evolving internal systems rather than simply copy language",
+    "explanation": "Interlanguage explains systematic patterns in learner language."
+  },
+  {
+    "id": "M1-U10-045",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "interlanguage",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which description best fits interlanguage?",
+    "options": [
+      "A dynamic system influenced by both prior language knowledge and developing target-language knowledge",
+      "A permanent list of mistakes",
+      "A translation dictionary"
+    ],
+    "correctAnswer": "A dynamic system influenced by both prior language knowledge and developing target-language knowledge",
+    "explanation": "Interlanguage is neither simply L1 nor fully target language; it develops between them."
+  },
+  {
+    "id": "M1-U10-046",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "interlanguage",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner regularly uses a self-created grammatical pattern that changes later after more exposure. What does this illustrate?",
+    "options": [
+      "Interlanguage",
+      "A one-off slip",
+      "Word stress"
+    ],
+    "correctAnswer": "Interlanguage",
+    "explanation": "A changing internal language system is characteristic of interlanguage."
+  },
+  {
+    "id": "M1-U10-047",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "interlanguage",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which teacher comment best reflects an interlanguage perspective?",
+    "options": [
+      "“This pattern is part of the learner's current developing system.”",
+      "“Every error is just carelessness.”",
+      "“The learner has no internal grammar.”"
+    ],
+    "correctAnswer": "“This pattern is part of the learner's current developing system.”",
+    "explanation": "Interlanguage treats learner language as systematic and developmental."
+  },
+  {
+    "id": "M1-U10-048",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "interlanguage",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement is most accurate?",
+    "options": [
+      "Interlanguage may contain rules from L1, rules from English and learner-created patterns",
+      "Interlanguage is identical for all learners",
+      "Interlanguage disappears after one lesson"
+    ],
+    "correctAnswer": "Interlanguage may contain rules from L1, rules from English and learner-created patterns",
+    "explanation": "A learner's developing system can combine several sources of knowledge."
+  },
+  {
+    "id": "M1-U10-049",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "interlanguage",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Why can two learners at the same level have different interlanguage systems?",
+    "options": [
+      "They may have different L1s, experiences and developing hypotheses",
+      "Interlanguage is random",
+      "All learners should have identical systems"
+    ],
+    "correctAnswer": "They may have different L1s, experiences and developing hypotheses",
+    "explanation": "Learner language develops individually based on prior knowledge and experience."
+  },
+  {
+    "id": "M1-U10-050",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "interlanguage",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which example best illustrates interlanguage rather than a simple slip?",
+    "options": [
+      "A learner repeatedly uses a stable self-created pattern over several weeks",
+      "A learner makes one typo and corrects it",
+      "A learner says the correct form immediately"
+    ],
+    "correctAnswer": "A learner repeatedly uses a stable self-created pattern over several weeks",
+    "explanation": "A recurring learner-created pattern is evidence of an organised developing system."
+  },
+  {
+    "id": "M1-U10-051",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "fossilisation_correction",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "What is fossilisation?",
+    "options": [
+      "When an incorrect language form becomes habitual and difficult to change",
+      "When a learner self-corrects immediately",
+      "When a learner first meets a new word"
+    ],
+    "correctAnswer": "When an incorrect language form becomes habitual and difficult to change",
+    "explanation": "Fossilisation occurs when an error becomes established in the learner's language."
+  },
+  {
+    "id": "M1-U10-052",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "fossilisation_correction",
+    "difficulty": "easy",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A B2 learner has omitted third-person -s for years despite knowing the rule. What may this illustrate?",
+    "options": [
+      "A fossilised error",
+      "A silent period",
+      "Skimming"
+    ],
+    "correctAnswer": "A fossilised error",
+    "explanation": "The incorrect form has become persistent and habitual."
+  },
+  {
+    "id": "M1-U10-053",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "fossilisation_correction",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Why can fossilised errors be difficult to correct?",
+    "options": [
+      "The incorrect pattern has become strongly habitual",
+      "The learner has never heard English",
+      "They are always caused by spelling"
+    ],
+    "correctAnswer": "The incorrect pattern has become strongly habitual",
+    "explanation": "Repeated use can make the incorrect pattern resistant to change."
+  },
+  {
+    "id": "M1-U10-054",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "fossilisation_correction",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "What is one important teacher decision when learners make mistakes?",
+    "options": [
+      "Whether, when and how to correct",
+      "Whether to stop all communication",
+      "Whether to correct every word immediately"
+    ],
+    "correctAnswer": "Whether, when and how to correct",
+    "explanation": "Correction should be selective and related to the learner, task and lesson aim."
+  },
+  {
+    "id": "M1-U10-055",
+    "module": 1,
+    "unit": 10,
+    "section": "practice",
+    "skill": "fossilisation_correction",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "During a fluency activity, what may be a sensible correction choice?",
+    "options": [
+      "Delay some correction until after the activity",
+      "Interrupt every sentence for every minor mistake",
+      "Ignore all recurring errors forever"
+    ],
+    "correctAnswer": "Delay some correction until after the activity",
+    "explanation": "Delayed correction can preserve fluency while still addressing useful language points."
+  },
+  {
+    "id": "M1-U10-056",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "fossilisation_correction",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which description best fits a fossilised error?",
+    "options": [
+      "A persistent error that has become difficult to change",
+      "A mistake the learner instantly self-corrects",
+      "A new word learned today"
+    ],
+    "correctAnswer": "A persistent error that has become difficult to change",
+    "explanation": "Fossilised errors are entrenched habits in learner language."
+  },
+  {
+    "id": "M1-U10-057",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "fossilisation_correction",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which correction technique encourages learner autonomy most directly?",
+    "options": [
+      "Prompting the learner to self-correct",
+      "Immediately giving every answer",
+      "Avoiding feedback entirely"
+    ],
+    "correctAnswer": "Prompting the learner to self-correct",
+    "explanation": "Self-correction encourages learners to monitor and retrieve language themselves."
+  },
+  {
+    "id": "M1-U10-058",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "fossilisation_correction",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which factor should influence whether a teacher corrects immediately?",
+    "options": [
+      "The lesson aim, activity type and effect on communication",
+      "The teacher's mood only",
+      "Whether the error contains a long word"
+    ],
+    "correctAnswer": "The lesson aim, activity type and effect on communication",
+    "explanation": "Correction decisions depend on pedagogical purpose and communicative context."
+  },
+  {
+    "id": "M1-U10-059",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "fossilisation_correction",
+    "difficulty": "medium",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "A learner makes the same error repeatedly over a long period despite repeated instruction. Which concept is most relevant?",
+    "options": [
+      "Fossilisation",
+      "Prediction",
+      "Scanning"
+    ],
+    "correctAnswer": "Fossilisation",
+    "explanation": "Persistence over time despite instruction suggests fossilisation."
+  },
+  {
+    "id": "M1-U10-060",
+    "module": 1,
+    "unit": 10,
+    "section": "test",
+    "skill": "fossilisation_correction",
+    "difficulty": "hard",
+    "taskType": "multiple_choice",
+    "stem": "",
+    "prompt": "Which statement about correction is most accurate?",
+    "options": [
+      "Effective correction is selective and should support learning without unnecessarily blocking communication",
+      "Every error must be corrected immediately",
+      "Correction is never useful"
+    ],
+    "correctAnswer": "Effective correction is selective and should support learning without unnecessarily blocking communication",
+    "explanation": "Teachers decide if, when and how to correct depending on the learning goal and context."
+  }
+];
+
+export const matchingSets = [
+  {
+    "id": "M1-U10-MATCH-P01",
+    "section": "practice",
+    "instruction": "Match each learner-language description with the correct term.",
+    "optionBank": [
+      "Slip",
+      "Developmental error",
+      "L1 interference",
+      "Overgeneralisation",
+      "Interlanguage",
+      "Fossilisation"
+    ],
+    "items": [
+      {
+        "example": "The learner makes a mistake but can immediately correct it.",
+        "correctAnswer": "Slip"
+      },
+      {
+        "example": "The learner says “goed” while developing past-tense rules.",
+        "correctAnswer": "Developmental error"
+      },
+      {
+        "example": "The learner transfers a first-language word order into English.",
+        "correctAnswer": "L1 interference"
+      },
+      {
+        "example": "The learner says “childs” after learning regular plural -s.",
+        "correctAnswer": "Overgeneralisation"
+      },
+      {
+        "example": "The learner develops a changing personal grammatical system.",
+        "correctAnswer": "Interlanguage"
+      },
+      {
+        "example": "An incorrect form becomes persistent and difficult to change.",
+        "correctAnswer": "Fossilisation"
+      }
+    ]
+  },
+  {
+    "id": "M1-U10-MATCH-T01",
+    "section": "test",
+    "instruction": "Match each example with the most appropriate explanation.",
+    "optionBank": [
+      "Slip",
+      "Error",
+      "L1 interference",
+      "Overgeneralisation",
+      "Interlanguage",
+      "Fossilised error"
+    ],
+    "items": [
+      {
+        "example": "A tired learner says the wrong form once, then self-corrects.",
+        "correctAnswer": "Slip"
+      },
+      {
+        "example": "A learner uses a structure not yet under their control and cannot self-correct.",
+        "correctAnswer": "Error"
+      },
+      {
+        "example": "An English sound is replaced by the nearest sound in the learner's first language.",
+        "correctAnswer": "L1 interference"
+      },
+      {
+        "example": "A learner says “buyed” for “bought”.",
+        "correctAnswer": "Overgeneralisation"
+      },
+      {
+        "example": "A learner repeatedly uses a self-created pattern that later changes.",
+        "correctAnswer": "Interlanguage"
+      },
+      {
+        "example": "A long-standing habitual error is difficult to eliminate.",
+        "correctAnswer": "Fossilised error"
+      }
+    ]
+  }
+];
+
+
+function shuffleCopy(input) {
+  const arr = [...input];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+export function buildAttempt({ section = "test", count = 10, usedSignatures = [] } = {}) {
+  const pool = questionBank.filter(q => q.section === section);
+
+  if (count < 1 || count > pool.length) {
+    throw new Error(`count must be between 1 and ${pool.length} for section "${section}".`);
+  }
+
+  const used = new Set(usedSignatures);
+
+  for (let tries = 0; tries < 2000; tries++) {
+    const selected = shuffleCopy(pool)
+      .slice(0, count)
+      .map(q => ({ ...q, options: shuffleCopy(q.options) }));
+
+    const signature = selected
+      .map(q => `${q.id}::${q.options.join("~~")}`)
+      .join("||");
+
+    if (!used.has(signature)) return { questions: selected, signature };
+  }
+
+  throw new Error("Unable to build a new unique attempt. Expand the question bank.");
+}
+
+export function buildMatchingAttempt(setId) {
+  const set = matchingSets.find(s => s.id === setId);
+  if (!set) throw new Error(`Unknown matching set: ${setId}`);
+
+  return {
+    ...set,
+    items: shuffleCopy(set.items),
+    optionBank: shuffleCopy(set.optionBank)
+  };
+}
+
+export function checkAnswer(question, selectedAnswer) {
+  return {
+    isCorrect: selectedAnswer === question.correctAnswer,
+    correctAnswer: question.correctAnswer,
+    explanation: question.explanation
+  };
+}
+
+export function getSkillBreakdown(responses) {
+  const byId = new Map(questionBank.map(q => [q.id, q]));
+  const stats = {};
+
+  for (const response of responses) {
+    const q = byId.get(response.questionId);
+    if (!q) continue;
+
+    stats[q.skill] ??= { correct: 0, total: 0, percentage: 0 };
+    stats[q.skill].total += 1;
+
+    if (response.selectedAnswer === q.correctAnswer) {
+      stats[q.skill].correct += 1;
+    }
+  }
+
+  for (const stat of Object.values(stats)) {
+    stat.percentage = Math.round((stat.correct / stat.total) * 100);
+  }
+
+  return stats;
+}

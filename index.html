@@ -1,214 +1,259 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0E274B">
-  <title>TKT Ready — Dashboard Prototype</title>
-  <meta name="description" content="Independent preparation for the Cambridge TKT.">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Colombia · Día a Día | Memoria pública contra la corrupción</title>
+  <meta name="description" content="Expedientes verificables sobre corrupción pública en Colombia: documentos, dinero, personas, cronología y estado procesal." />
+  <meta name="theme-color" content="#081a31" />
+  <meta name="color-scheme" content="light" />
+  <link rel="manifest" href="/manifest.webmanifest?v=2.0.0" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Colombia Día a Día" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2.0.0" />
 </head>
+
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" aria-label="Primary navigation">
-      <a class="brand" href="#" aria-label="TKT Ready home">
-        <span class="brand-mark">T</span>
-        <span class="brand-copy">
-          <strong>TKT Ready</strong>
-          <small>Exam trainer</small>
-        </span>
-      </a>
+  <a class="skip-link" href="#mainContent">Saltar al contenido</a>
 
-      <nav class="side-nav">
-        <a class="nav-item active" href="./index.html">
-          <span class="nav-icon">⌂</span>
-          <span>Dashboard</span>
-        </a>
-        <a class="nav-item" href="./module1.html">
-          <span class="nav-icon">▤</span>
-          <span>Module 1</span>
-        </a>
-        <a class="nav-item" href="./module1.html#practice">
-          <span class="nav-icon">✦</span>
-          <span>Practice</span>
-        </a>
-        <a class="nav-item" href="./exam.html?mode=mock">
-          <span class="nav-icon">◷</span>
-          <span>Mock Exam</span>
-        </a>
-      </nav>
+  <header class="topbar">
+    <a class="brand" href="#archivo" aria-label="Colombia Día a Día — inicio">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-copy"><strong>COLOMBIA</strong><span>DÍA A DÍA</span></span>
+    </a>
 
-      <div class="sidebar-bottom">
-        <div class="mini-note">
-          <span class="mini-note-dot"></span>
-          <p>Independent preparation for the Cambridge TKT.</p>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#casos">Casos</a>
+      <a href="#avances">Avances</a>
+      <a href="#metodologia">Metodología</a>
+    </nav>
+
+    <div class="top-actions">
+      <button class="icon-button" id="focusSearch" type="button" aria-label="Buscar expedientes">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+      </button>
+      <button class="support-link" id="topSupportBtn" type="button">Apoyar</button>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <section class="hero" id="archivo">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> ARCHIVO DOCUMENTAL EN ACTUALIZACIÓN</div>
+          <h1>La corrupción no se recuerda con titulares. <em>Se demuestra con expedientes.</em></h1>
+          <p class="hero-lead">Casos, dinero público, personas, documentos y estado judicial. Sin ruido partidista y sin convertir una acusación en condena.</p>
+
+          <div class="hero-actions">
+            <a class="primary-action" href="#casos">Explorar los casos</a>
+            <button class="secondary-action" id="openMethodologyHero" type="button">Cómo verificamos</button>
+          </div>
+
+          <div class="verification-line">
+            <span class="verification-check" aria-hidden="true">✓</span>
+            <span><strong id="verifiedDate">Verificado</strong><small id="coverageEdition">Cobertura inicial</small></span>
+          </div>
         </div>
-        <button class="profile-card" type="button">
-          <span class="avatar">ET</span>
-          <span>
-            <strong>English Teacher</strong>
-            <small>Module 1</small>
-          </span>
-          <span class="profile-more">•••</span>
-        </button>
+
+        <aside class="hero-proof" aria-label="Principios editoriales">
+          <div class="proof-label">REGLA CENTRAL</div>
+          <blockquote>“Imputado” no significa “condenado”.</blockquote>
+          <p>Cada ficha muestra qué afirma la autoridad, qué está probado, qué falta por decidir y quién emitió cada documento.</p>
+          <button class="text-button" id="openStages" type="button">Ver las etapas procesales →</button>
+        </aside>
       </div>
-    </aside>
+    </section>
 
-    <main class="main">
-      <header class="topbar">
+    <section class="trust-bar" aria-label="Criterios de publicación">
+      <div><strong>01</strong><span>Fuente directa</span><small>Documento o autoridad identificada</small></div>
+      <div><strong>02</strong><span>Etapa exacta</span><small>Denuncia, juicio, sanción o archivo</small></div>
+      <div><strong>03</strong><span>Dinero bien rotulado</span><small>Contrato no equivale a detrimento</small></div>
+      <div><strong>04</strong><span>Derecho a corrección</span><small>También registramos absoluciones</small></div>
+    </section>
+
+    <section class="section latest-section" id="avances">
+      <div class="section-heading split-heading">
         <div>
-          <p class="eyebrow">MODULE 1</p>
-          <h1>Welcome back.</h1>
-          <p class="topbar-subtitle">Keep building exam readiness one focused step at a time.</p>
+          <span class="section-kicker">LO ÚLTIMO QUE CAMBIÓ</span>
+          <h2>Avances, no repetición de titulares</h2>
+          <p>Solo aparece una novedad cuando cambia el expediente: una decisión, una imputación, una sanción o un documento nuevo.</p>
         </div>
-        <div class="topbar-actions">
-          <a class="ghost-button link-button" href="./module1.html">View Module</a>
-          <a class="primary-button link-button" href="./unit.html?unit=15">Continue Studying</a>
+        <button class="plain-button" id="showAllUpdates" type="button">Ver cronología completa</button>
+      </div>
+      <div class="updates-grid" id="latestUpdates"></div>
+    </section>
+
+    <section class="section metrics-section" aria-labelledby="metricsTitle">
+      <div class="section-heading compact-heading">
+        <span class="section-kicker">CORTE DOCUMENTAL</span>
+        <h2 id="metricsTitle">Qué contiene esta primera entrega</h2>
+      </div>
+      <div class="metrics-grid">
+        <article class="metric-card metric-main"><span>Expedientes publicados</span><strong id="caseCount">0</strong><small>Con fuentes y cronología</small></article>
+        <article class="metric-card"><span>Con acusación o juicio</span><strong id="trialCount">0</strong><small>No equivale a condena</small></article>
+        <article class="metric-card"><span>Con sanción o condena</span><strong id="decisionCount">0</strong><small>Precisada por persona</small></article>
+        <article class="metric-card"><span>Fuentes enlazadas</span><strong id="sourceCount">0</strong><small>Prioridad a fuentes primarias</small></article>
+      </div>
+      <p class="metrics-warning"><strong>No sumamos cifras incompatibles.</strong> Valor contractual, posible detrimento, sobrecosto y dinero recuperado se muestran por separado.</p>
+    </section>
+
+    <section class="section cases-section" id="casos">
+      <div class="section-heading split-heading cases-heading">
+        <div>
+          <span class="section-kicker">EXPEDIENTES</span>
+          <h2>Gobierno Petro · 2022–2026</h2>
+          <p id="scopeDescription">Casos nacionales con actuación formal verificable.</p>
         </div>
-      </header>
+        <div class="results-box" aria-live="polite"><strong id="resultsCount">0</strong><span>resultados</span></div>
+      </div>
 
-      <section class="dashboard-grid">
-        <article class="readiness-card card">
-          <div class="card-heading">
-            <div>
-              <p class="eyebrow">OVERALL TKT READINESS</p>
-              <h2 id="dashboardReadinessLabel">Not ready</h2>
-            </div>
-            <span class="confidence-badge" id="dashboardConfidence">Low confidence</span>
-          </div>
+      <div class="explorer-tools">
+        <label class="search-box" for="caseSearch">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+          <input id="caseSearch" type="search" placeholder="Buscar persona, entidad, territorio o caso…" autocomplete="off" />
+          <kbd>⌘ K</kbd>
+        </label>
 
-          <div class="readiness-content">
-            <div class="score-ring" role="img" aria-label="Readiness score 78 out of 100">
-              <div class="score-ring-inner">
-                <strong id="dashboardReadinessScore">0</strong>
-                <span>/ 100</span>
-              </div>
-            </div>
+        <div class="filter-row" id="stageFilters" aria-label="Filtrar por etapa">
+          <button class="filter-chip active" type="button" data-stage="all">Todos</button>
+          <button class="filter-chip" type="button" data-stage="report">Reportes</button>
+          <button class="filter-chip" type="button" data-stage="finding">Hallazgos</button>
+          <button class="filter-chip" type="button" data-stage="investigation">Investigación</button>
+          <button class="filter-chip" type="button" data-stage="charges">Imputación</button>
+          <button class="filter-chip" type="button" data-stage="trial">Juicio</button>
+          <button class="filter-chip" type="button" data-stage="sanction">Decisión</button>
+          <button class="filter-chip" type="button" data-stage="international">Internacional</button>
+        </div>
+      </div>
 
-            <div class="readiness-copy">
-              <p id="dashboardReadinessMessage">Complete study activities and exam-style attempts to build readiness evidence.</p>
-              <div class="readiness-meta">
-                <span><b>Latest mock</b> <span id="dashboardLatestMock">—</span></span>
-                <span><b>Best mock</b> <span id="dashboardBestMock">—</span></span>
-                <span><b>Evidence</b> <span id="dashboardEvidence">Low</span></span>
-              </div>
-              <a class="primary-button link-button" id="dashboardContinuePreparing" href="./module1.html">Continue Preparing</a>
-            </div>
-          </div>
-        </article>
+      <div class="active-search" id="activeSearch" hidden>
+        <span id="activeSearchText"></span>
+        <button id="clearSearch" type="button">Limpiar</button>
+      </div>
 
-        <article class="continue-card card">
-          <div class="card-heading compact">
-            <div>
-              <p class="eyebrow">CONTINUE STUDYING</p>
-              <h3 id="dashboardContinueTitle">Unit 1 — Parts of Speech</h3>
-            </div>
-            <span class="status-chip developing" id="dashboardContinueStatus">In progress</span>
-          </div>
+      <div class="case-grid" id="caseGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span aria-hidden="true">⌕</span><h3>No encontramos ese expediente</h3>
+        <p>Prueba con el nombre de una persona, entidad, territorio o etapa procesal.</p>
+        <button class="secondary-action" id="resetFilters" type="button">Restablecer filtros</button>
+      </div>
+    </section>
 
-          <div class="stage-line">
-            <span class="stage active"></span>
-            <span class="stage active"></span>
-            <span class="stage active"></span>
-            <span class="stage active"></span>
-            <span class="stage"></span>
-            <span class="stage"></span>
-          </div>
+    <section class="section timeline-section" id="cronologia">
+      <div class="section-heading split-heading">
+        <div>
+          <span class="section-kicker">MEMORIA PÚBLICA</span>
+          <h2>Una cronología que no borra el pasado</h2>
+          <p>La ficha conserva el origen del caso y añade únicamente cambios procesales sustanciales.</p>
+        </div>
+        <select id="timelineCaseSelect" aria-label="Elegir expediente para la cronología"></select>
+      </div>
+      <div class="master-timeline" id="masterTimeline"></div>
+    </section>
 
-          <div class="stage-labels">
-            <span>Learn</span><span>Examples</span><span>Practice</span>
-            <span>Strategy</span><span>Mini Test</span><span>Results</span>
-          </div>
+    <section class="section methodology-section" id="metodologia">
+      <div class="methodology-card">
+        <div>
+          <span class="section-kicker light">METODOLOGÍA ABIERTA</span>
+          <h2>Una página anticorrupción debe ser más rigurosa que partidista.</h2>
+          <p>El foco inicial es el Gobierno Petro. La misma regla se aplicará después a la administración actual, con periodos comparables y sin ocultar archivos, absoluciones o correcciones.</p>
+        </div>
+        <div class="method-actions">
+          <button class="light-action" id="openMethodology" type="button">Leer la metodología</button>
+          <button class="ghost-light-action" id="openGlossary" type="button">Diccionario judicial</button>
+        </div>
+      </div>
 
-          <div class="continue-footer">
-            <p><b>Next:</b> <span id="dashboardContinueNext">Learn → Practice → Mini Test</span></p>
-            <a class="secondary-button link-button" id="dashboardResumeUnit" href="./unit.html?unit=1">Resume Unit</a>
-          </div>
-        </article>
+      <div class="comparison-note">
+        <span class="comparison-icon" aria-hidden="true">≠</span>
+        <div><strong>Comparar gobiernos será la fase 2.</strong><p>No enfrentaremos cuatro años contra unas semanas. La comparación utilizará el mismo periodo, las mismas etapas y las mismas reglas de atribución.</p></div>
+      </div>
+    </section>
 
-        <article class="module-card card">
-          <div class="card-heading compact">
-            <div>
-              <p class="eyebrow">MODULE 1</p>
-              <h3>Language, Learning & Teaching</h3>
-            </div>
-            <strong class="progress-number" id="dashboardModuleProgress">0%</strong>
-          </div>
+    <section class="section support-card">
+      <div><span class="section-kicker">PROYECTO INDEPENDIENTE</span><h2>Que la memoria pública no dependa del algoritmo.</h2><p>Tu aporte ayuda a sostener verificación, documentación e infraestructura.</p></div>
+      <button class="primary-action" id="supportBtn" type="button">Apoyar el proyecto</button>
+    </section>
+  </main>
 
-          <div class="big-progress" aria-label="Module progress 93 percent">
-            <span id="dashboardModuleProgressFill" style="width:0%"></span>
-          </div>
+  <footer class="site-footer">
+    <div class="footer-brand">COLOMBIA <span>·</span> DÍA A DÍA</div>
+    <p>Este archivo informa sobre actuaciones públicas. No reemplaza decisiones judiciales ni declara culpabilidades.</p>
+    <button id="footerMethodology" type="button">Metodología y correcciones</button>
+  </footer>
 
-          <div class="module-stats">
-            <div>
-              <strong id="dashboardCompletedUnits">0/15</strong>
-              <span>Units completed</span>
-            </div>
-            <div>
-              <strong>3</strong>
-              <span>Parts</span>
-            </div>
-            <div>
-              <strong>900</strong>
-              <span>Question bank</span>
-            </div>
-          </div>
+  <nav class="mobile-nav" aria-label="Navegación móvil">
+    <a href="#archivo" class="active"><span>⌂</span>Inicio</a>
+    <a href="#casos"><span>▤</span>Casos</a>
+    <button id="mobileSearch" type="button"><span>⌕</span>Buscar</button>
+    <a href="#avances"><span>↗</span>Avances</a>
+    <button id="mobileMethod" type="button"><span>◎</span>Método</button>
+  </nav>
 
-          <div class="part-list">
-            <div class="part-row">
-              <span>Part 1</span>
-              <span class="part-title">Describing language and language skills</span>
-              <span class="status-chip strong">Strong</span>
-            </div>
-            <div class="part-row">
-              <span>Part 2</span>
-              <span class="part-title">Background to language learning</span>
-              <span class="status-chip developing">Developing</span>
-            </div>
-            <div class="part-row">
-              <span>Part 3</span>
-              <span class="part-title">Background to language teaching</span>
-              <span class="status-chip developing">Developing</span>
-            </div>
-          </div>
+  <dialog id="caseDialog" class="case-dialog">
+    <article class="case-sheet">
+      <button class="dialog-close floating-close" data-close-dialog="caseDialog" type="button" aria-label="Cerrar expediente">×</button>
+      <div id="caseDialogContent"></div>
+    </article>
+  </dialog>
 
-          <a class="text-button link-text-button" href="./module1.html">Open Module 1 →</a>
-        </article>
+  <dialog id="methodologyDialog">
+    <article class="dialog-panel methodology-dialog-panel">
+      <div class="dialog-header">
+        <div><span class="section-kicker">METODOLOGÍA</span><h2>Cómo entra un caso al archivo</h2></div>
+        <button class="dialog-close" data-close-dialog="methodologyDialog" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="methodology-grid">
+        <section><strong>1. Nexo verificable</strong><p>La relación con un gobierno, campaña o entidad debe estar documentada. Cercanía política o parentesco no transfieren responsabilidad.</p></section>
+        <section><strong>2. Actuación formal</strong><p>Priorizamos providencias, comunicados judiciales, fallos de control, contratos y decisiones de autoridades identificables.</p></section>
+        <section><strong>3. Etapa exacta</strong><p>Denuncia, investigación, imputación, acusación, condena y sanción son estados distintos y siempre se muestran por separado.</p></section>
+        <section><strong>4. Dinero sin inflar</strong><p>No sumamos valor del contrato, posible detrimento, sobrecosto y recursos recuperados como si fueran la misma cifra.</p></section>
+        <section><strong>5. Defensa y desenlace</strong><p>Registramos respuestas, archivos, preclusiones, absoluciones, revocatorias y correcciones con la misma visibilidad.</p></section>
+        <section><strong>6. Cambios sustanciales</strong><p>Un expediente se actualiza solo cuando aparece un documento o una decisión nueva. No se duplica por cada titular.</p></section>
+      </div>
+      <div class="stage-list" id="methodStageList"></div>
+      <div class="corrections-box"><strong>Correcciones</strong><p>Cada ficha muestra la fecha de última verificación. Una corrección futura conservará el registro de qué cambió y por qué.</p></div>
+    </article>
+  </dialog>
 
-        <article class="recommendation-card card">
-          <div class="recommendation-icon">↗</div>
-          <p class="eyebrow">RECOMMENDED NEXT ACTIVITY</p>
-          <h3 id="dashboardRecommendationTitle">Start building readiness</h3>
-          <p id="dashboardRecommendationMessage">Complete a Mini Test or Part Review to generate a targeted recommendation.</p>
-          <div class="priority-list" id="dashboardPriorityList"></div>
-          <a class="primary-button link-button dashboard-rec-cta" id="dashboardRecommendationAction" href="./module1.html">Open Module 1</a>
-        </article>
+  <dialog id="glossaryDialog">
+    <article class="dialog-panel glossary-dialog-panel">
+      <div class="dialog-header">
+        <div><span class="section-kicker">ENTIENDE EL PROCESO</span><h2>Diccionario judicial ciudadano</h2></div>
+        <button class="dialog-close" data-close-dialog="glossaryDialog" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <label class="search-box glossary-search-box" for="glossarySearch">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+        <input id="glossarySearch" type="search" placeholder="Buscar un concepto…" autocomplete="off" />
+      </label>
+      <div class="glossary-list" id="glossaryList"></div>
+    </article>
+  </dialog>
 
-        <article class="recent-card card">
-          <div class="card-heading compact">
-            <div>
-              <p class="eyebrow">RECENT RESULTS</p>
-              <h3>Your latest attempts</h3>
-            </div>
-            <button class="text-button" id="dashboardViewAllResults" type="button">View all</button>
-          </div>
-          <div class="results-table" role="table" aria-label="Recent results">
-            <div class="result-row header" role="row">
-              <span>Activity</span><span>Score</span><span>Status</span><span>Date</span>
-            </div>
-            <div id="dashboardRecentResults"></div>
-          </div>
-        </article>
-      </section>
+  <dialog id="supportDialog">
+    <article class="dialog-panel support-dialog-panel">
+      <div class="dialog-header">
+        <div><span class="section-kicker">APÓYANOS</span><h2>Ayuda a sostener el archivo</h2></div>
+        <button class="dialog-close" data-close-dialog="supportDialog" type="button" aria-label="Cerrar">×</button>
+      </div>
+      <p>Tu aporte es voluntario y ayuda a mantener investigación, verificación e infraestructura.</p>
+      <img src="assets/qr-apoyanos.jpeg" alt="Código QR Bre-B para apoyar Colombia Día a Día" class="support-qr" />
+      <div class="key-box"><span>LLAVE BRE-B</span><strong id="brebKey">71744644</strong><button id="copyKeyBtn" type="button">Copiar</button></div>
+      <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+    </article>
+  </dialog>
 
-      <footer class="footer">
-        <span>TKT Ready</span>
-        <span>Independent preparation for the Cambridge TKT.</span>
-      </footer>
-    </main>
+  <div class="update-toast" id="updateToast" hidden>
+    <span>Nueva versión disponible</span><button id="reloadApp" type="button">Actualizar ahora</button>
   </div>
 
-  <script src="./app.js"></script>
-  <script type="module" src="./auth-guard.js"></script>
+  <script src="data/cases.js?v=2.0.0"></script>
+  <script src="app.js?v=2.0.0"></script>
 </body>
 </html>

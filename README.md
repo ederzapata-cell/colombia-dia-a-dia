@@ -1,53 +1,36 @@
-# TKT Ready
+# Colombia · Día a Día
 
-Independent preparation for the Cambridge Teaching Knowledge Test (TKT).
+Archivo documental ciudadano para entender casos de corrupción pública sin confundir denuncias, imputaciones, acusaciones y condenas.
 
-## Current status
+## Enfoque editorial
 
-Module 1 foundation is in place:
+La primera etapa documenta hechos vinculados institucionalmente con el Gobierno de Gustavo Petro (2022–2026). No es un listado de titulares ni una afirmación colectiva de culpabilidad. Cada expediente separa:
 
-- 15 units
-- 900-question content bank
-- Unit Mini Test logic
-- Part Reviews
-- Full Module 1 Mock engine: 80 questions / 80 minutes / 13 tasks
-- Readiness and progress engine
-- Firestore data model
-- Dashboard visual prototype
-- Module 1 overview screen
-- Connected Dashboard → Module 1 → Unit navigation
+1. lo que está respaldado por una actuación formal;
+2. lo que todavía debe resolverse;
+3. el estado individual de cada persona;
+4. valor contractual, posible detrimento, sobrecosto y recuperación de recursos;
+5. fuentes primarias y cobertura de contexto.
 
-## Repository structure
+Los archivos, absoluciones, revocatorias y correcciones deben publicarse con la misma visibilidad que una apertura o una imputación.
 
-- `/data/module1` — Unit 1–15 question banks
-- `/engine` — Exam and readiness logic
-- `/firebase` — Firestore schema, helpers and rules
-- `/docs` — UI architecture and screen flow
-- `/index.html` — Current dashboard prototype
-- `/styles.css` — Current visual system
-- `/app.js` — Prototype interactions
-- `/netlify.toml` — Netlify deployment configuration
+## Archivos activos
 
-## Positioning
+- `index.html`: estructura y textos públicos.
+- `styles.css`: interfaz adaptable a computador y celular.
+- `data/cases.js`: expedientes, fuentes, personas y cronologías.
+- `app.js`: búsqueda, filtros, fichas y actualización de la PWA.
+- `sw.js`: actualización en línea y respaldo sin conexión.
+- `manifest.webmanifest`: instalación en el celular.
 
-TKT Ready is an independent preparation product. It is not an official Cambridge product and does not claim to predict an official Cambridge band.
+`data.js`, `data/2026-09.js` y `data/2026-10.js` pertenecen al formato anterior. La copia de trabajo los conserva como respaldo, pero no se incluyen en el paquete de reemplazo ni son cargados por la nueva página.
 
-## Deployment
+## Vista local
 
-This repository is configured as a static Netlify site with the repository root as the publish directory.
+Desde esta carpeta ejecuta:
 
-- Functional Part Reviews and Full Mock
-- Exam results and mistake review
+```bash
+python3 -m http.server 8000
+```
 
-
-## Firebase Authentication setup
-
-The repository includes a Firebase Authentication layer in safe demo mode.
-
-1. Create or open the Firebase project for TKT Ready.
-2. Register a Web app.
-3. Enable Authentication > Sign-in method > Email/Password.
-4. Copy the Firebase web configuration into `firebase-config.js`.
-5. Commit the file. Once configured, protected app pages require authentication automatically.
-
-The Firebase web configuration identifies the project; access control still depends on Firebase Authentication and security rules.
+Luego abre `http://localhost:8000`. Para publicar, reemplaza el contenido del sitio por el paquete completo; no mezcles archivos de versiones distintas.

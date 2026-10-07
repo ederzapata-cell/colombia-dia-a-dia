@@ -1,240 +1,545 @@
+/* =========================================================
+   COLOMBIA · DÍA A DÍA
+   Archivo anticorrupción — experiencia e interacción
+   ========================================================= */
 
-const UNIT_TITLES = {"1": "Parts of Speech", "2": "Grammatical Structures", "3": "Lexis: Meaning & Word Formation", "4": "Lexical Relationships & Register", "5": "Phonology: Sounds & Stress", "6": "Phonology: Intonation & Connected Speech", "7": "Functions", "8": "Language Skills & Subskills", "9": "Motivation, Exposure & Acquisition", "10": "Errors & L1/L2 Learning", "11": "Learners: Characteristics & Needs", "12": "Presenting Language", "13": "Teaching Activities & Techniques", "14": "Teaching Approaches & Lesson Frameworks", "15": "Assessment"};
+"use strict";
 
-function readJSON(key, fallback) {
+const byId = (id) => document.getElementById(id);
+const all = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+const state = {
+  query: "",
+  stage: "all",
+  selectedTimelineId: ""
+};
+
+let serviceWorkerRegistration = null;
+
+function escapeHTML(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function safeUrl(value = "") {
   try {
-    const raw = localStorage.getItem(key);
-    return raw ? JSON.parse(raw) : fallback;
+    const url = new URL(value, window.location.href);
+    return ["http:", "https:"].includes(url.protocol) ? url.href : "#";
   } catch {
-    return fallback;
+    return "#";
   }
 }
-function unitProgress(unit) { return readJSON(`tktReadyModule1Unit${unit}`, {}); }
-function history() { return readJSON("tktReadyExamHistory", []); }
-function fullMocks() { return history().filter(x => x.mode === "full_mock"); }
-function latestPart(part) { return history().find(x => x.mode === "part_review" && Number(x.part) === part) || null; }
 
-function statusFor(score) {
-  if (!Number.isFinite(score)) return { label:"No evidence", cls:"developing" };
-  if (score >= 80) return { label:"Strong", cls:"strong" };
-  if (score >= 65) return { label:"Developing", cls:"developing" };
-  return { label:"Review", cls:"review" };
+function normalizeText(value = "") {
+  return String(value)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
 }
 
-function mastery(unit) {
-  const ev = [];
-  const up = unitProgress(unit);
-  if (Number.isFinite(up.latestMiniTestPct)) ev.push({value:up.latestMiniTestPct, weight:1});
+function parseLocalDate(value) {
+  if (!value) return null;
+  const [year, month, day] = value.split("-").map(Number);
+  return new Date(year, month - 1, day);
+}
 
-  history().slice(0,3).forEach((a,i) => {
-    const s = a.unitStats?.[unit];
-    if (Number.isFinite(s?.percentage)) ev.push({value:s.percentage, weight:[.7,.5,.3][i]||.3});
+function formatLongDate(value) {
+  const date = parseLocalDate(value);
+  if (!date || Number.isNaN(date.getTime())) return "Fecha por verificar";
+  return date.toLocaleDateString("es-CO", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
   });
-
-  if (!ev.length) return null;
-  const tw = ev.reduce((s,x)=>s+x.weight,0);
-  return Math.round(ev.reduce((s,x)=>s+x.value*x.weight,0)/tw);
 }
 
-function readinessScore() {
-  const c = [];
-  const mocks = fullMocks().slice(0,3);
-  if (mocks.length) {
-    const w=[.5,.3,.2].slice(0,mocks.length), tw=w.reduce((a,b)=>a+b,0);
-    c.push({score:mocks.reduce((s,a,i)=>s+a.percentage*w[i],0)/tw, weight:.6});
-  }
-
-  const ps=[1,2,3].map(p=>latestPart(p)?.percentage).filter(Number.isFinite);
-  if (ps.length) c.push({score:ps.reduce((a,b)=>a+b,0)/ps.length, weight:.2});
-
-  const us=[];
-  for(let u=1;u<=15;u++){
-    const p=unitProgress(u);
-    if(Number.isFinite(p.latestMiniTestPct)) us.push(p.latestMiniTestPct);
-  }
-  if(us.length) c.push({score:us.reduce((a,b)=>a+b,0)/us.length, weight:.2});
-
-  if(!c.length) return 0;
-  const tw=c.reduce((s,x)=>s+x.weight,0);
-  return Math.round(c.reduce((s,x)=>s+x.score*(x.weight/tw),0));
+function formatShortDate(value) {
+  const date = parseLocalDate(value);
+  if (!date || Number.isNaN(date.getTime())) return "—";
+  return date.toLocaleDateString("es-CO", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  });
 }
 
-function confidence() {
-  const mocks=fullMocks().length;
-  const parts=[1,2,3].filter(p=>latestPart(p)).length;
-  let units=0;
-  for(let u=1;u<=15;u++) if(mastery(u)!=null) units++;
+function casesReady() {
+  return typeof corruptionCases !== "undefined" && Array.isArray(corruptionCases);
+}
 
-  const score=Math.round(
-    Math.min(50,(mocks/2)*50)+
-    Math.min(20,(parts/3)*20)+
-    Math.min(30,(units/15)*30)
+function stageReady() {
+  return typeof stageDefinitions !== "undefined" && Array.isArray(stageDefinitions);
+}
+
+function caseSearchText(item) {
+  return normalizeText([
+    item.title,
+    item.deck,
+    item.institution,
+    item.sector,
+    item.territory,
+    item.relation,
+    item.stageLabel,
+    item.summary,
+    ...(item.tags || []),
+    ...(item.people || []).flatMap((person) => [person.name, person.role, person.status])
+  ].join(" "));
+}
+
+function getFilteredCases() {
+  const query = normalizeText(state.query);
+  return corruptionCases.filter((item) => {
+    const matchesStage = state.stage === "all" || item.stage === state.stage;
+    const matchesQuery = !query || caseSearchText(item).includes(query);
+    return matchesStage && matchesQuery;
+  });
+}
+
+function setArchiveMeta() {
+  if (typeof archiveMeta === "undefined") return;
+  byId("verifiedDate").textContent = `Verificado el ${formatLongDate(archiveMeta.lastVerified)}`;
+  byId("coverageEdition").textContent = archiveMeta.edition;
+  byId("scopeDescription").textContent = archiveMeta.scopeNote;
+}
+
+function renderMetrics() {
+  const sourceCount = corruptionCases.reduce(
+    (total, item) => total + (item.sources?.length || 0),
+    0
   );
-  return {score,label:score>=70?"High":score>=35?"Medium":"Low"};
+
+  byId("caseCount").textContent = corruptionCases.length.toLocaleString("es-CO");
+  byId("trialCount").textContent = corruptionCases.filter((item) => item.stage === "trial").length.toLocaleString("es-CO");
+  byId("decisionCount").textContent = corruptionCases.filter((item) => item.stage === "sanction").length.toLocaleString("es-CO");
+  byId("sourceCount").textContent = sourceCount.toLocaleString("es-CO");
 }
 
-function readinessLevel(score) {
-  if(score<55) return "Not ready";
-  if(score<70) return "Developing";
-  if(score<80) return "Almost ready";
-
-  const mocks=fullMocks(), latest=mocks[0];
-  const parts=latest?Object.values(latest.partStats||{}).map(x=>x.percentage).filter(Number.isFinite):[];
-  let units=0;
-  for(let u=1;u<=15;u++) if(mastery(u)!=null) units++;
-
-  return mocks.length>=2 && latest?.percentage>=75 && parts.length===3 &&
-    Math.min(...parts)>=65 && units>=12 ? "TKT Ready":"Almost ready";
+function latestEventFor(item) {
+  const events = [...(item.timeline || [])].sort((a, b) => b.date.localeCompare(a.date));
+  return events[0] || {
+    date: item.lastUpdate,
+    title: item.stageLabel,
+    text: item.summary
+  };
 }
 
-function messageFor(level) {
-  return {
-    "Not ready":"Build more unit knowledge and take your first exam-style attempts.",
-    "Developing":"Your foundation is growing. Keep working on weak units and Part Reviews.",
-    "Almost ready":"Your performance is improving. Review priority units before your next Full Mock.",
-    "TKT Ready":"Your evidence is strong and consistent. Maintain readiness with targeted review and fresh mocks."
-  }[level];
+function renderLatestUpdates() {
+  const updates = corruptionCases
+    .map((item) => ({ item, event: latestEventFor(item) }))
+    .sort((a, b) => b.event.date.localeCompare(a.event.date))
+    .slice(0, 3);
+
+  byId("latestUpdates").innerHTML = updates.map(({ item, event }) => `
+    <article class="update-card">
+      <time class="update-date" datetime="${escapeHTML(event.date)}">${escapeHTML(formatLongDate(event.date))}</time>
+      <h3>${escapeHTML(event.title)}</h3>
+      <p><strong>${escapeHTML(item.title)}.</strong> ${escapeHTML(event.text)}</p>
+      <button type="button" data-open-case="${escapeHTML(item.id)}">Abrir expediente</button>
+    </article>
+  `).join("");
 }
 
-function completedUnits() {
-  let n=0;
-  for(let u=1;u<=15;u++) if(Number.isFinite(unitProgress(u).latestMiniTestPct)) n++;
-  return n;
-}
-function nextUnit() {
-  for(let u=1;u<=15;u++) if(!Number.isFinite(unitProgress(u).latestMiniTestPct)) return u;
-  return 15;
-}
+function renderCases() {
+  const filtered = getFilteredCases();
+  const grid = byId("caseGrid");
+  const empty = byId("emptyState");
 
-function renderReadiness() {
-  const score=readinessScore(), level=readinessLevel(score), conf=confidence(), mocks=fullMocks();
-  const best=mocks.length?Math.max(...mocks.map(x=>x.percentage)):null;
+  byId("resultsCount").textContent = filtered.length.toLocaleString("es-CO");
+  empty.hidden = filtered.length !== 0;
+  grid.hidden = filtered.length === 0;
 
-  document.querySelector("#dashboardReadinessScore").textContent=score;
-  document.querySelector("#dashboardReadinessLabel").textContent=level;
-  document.querySelector("#dashboardReadinessMessage").textContent=messageFor(level);
-  document.querySelector("#dashboardConfidence").textContent=`${conf.label} confidence`;
-  document.querySelector("#dashboardEvidence").textContent=conf.label;
-  document.querySelector("#dashboardLatestMock").textContent=mocks[0]?`${mocks[0].percentage}%`:"—";
-  document.querySelector("#dashboardBestMock").textContent=Number.isFinite(best)?`${best}%`:"—";
-  document.querySelector(".score-ring").style.background=
-    `conic-gradient(var(--primary) 0 ${score}%, #E8EEF7 ${score}% 100%)`;
-}
+  grid.innerHTML = filtered.map((item) => {
+    const index = corruptionCases.findIndex((candidate) => candidate.id === item.id) + 1;
+    const money = (item.money || []).slice(0, 2);
+    return `
+      <article class="case-card stage-${escapeHTML(item.stage)}">
+        <div class="case-topline">
+          <span class="case-number">EXP. ${String(index).padStart(2, "0")}</span>
+          <span class="stage-pill">${escapeHTML(item.stageLabel)}</span>
+        </div>
+        <div class="case-relation">${escapeHTML(item.relation)}</div>
+        <h3>${escapeHTML(item.title)}</h3>
+        <p class="case-deck">${escapeHTML(item.deck)}</p>
+        <div class="case-money">
+          ${money.map((entry) => `
+            <div><small>${escapeHTML(entry.label)}</small><strong>${escapeHTML(entry.value)}</strong></div>
+          `).join("")}
+        </div>
+        <div class="case-footer">
+          <small>Última actuación<strong>${escapeHTML(formatShortDate(item.lastUpdate))}</strong></small>
+          <button class="open-case" type="button" data-open-case="${escapeHTML(item.id)}" aria-label="Abrir expediente ${escapeHTML(item.title)}">Ver evidencia</button>
+        </div>
+      </article>
+    `;
+  }).join("");
 
-function renderContinue() {
-  const u=nextUnit();
-  document.querySelector("#dashboardContinueTitle").textContent=`Unit ${u} — ${UNIT_TITLES[u]}`;
-  document.querySelector("#dashboardResumeUnit").href=`./unit.html?unit=${u}`;
-  document.querySelector("#dashboardContinuePreparing").href=`./unit.html?unit=${u}`;
-  document.querySelector("#dashboardContinueNext").textContent="Learn → Practice → Mini Test";
-}
-
-function renderProgress() {
-  const done=completedUnits(), pct=Math.round((done/15)*100);
-  document.querySelector("#dashboardCompletedUnits").textContent=`${done}/15`;
-  document.querySelector("#dashboardModuleProgress").textContent=`${pct}%`;
-  document.querySelector("#dashboardModuleProgressFill").style.width=`${pct}%`;
-}
-
-function renderRecommendation() {
-  const weak=[];
-  for(let u=1;u<=15;u++){
-    const m=mastery(u);
-    if(m!=null && m<65) weak.push({unit:u,score:m});
-  }
-  weak.sort((a,b)=>a.score-b.score);
-
-  const title=document.querySelector("#dashboardRecommendationTitle");
-  const msg=document.querySelector("#dashboardRecommendationMessage");
-  const list=document.querySelector("#dashboardPriorityList");
-  const action=document.querySelector("#dashboardRecommendationAction");
-
-  if(weak.length){
-    const top=weak.slice(0,3);
-    title.textContent="Review your priority units";
-    msg.textContent="These units are currently below your readiness target.";
-    list.innerHTML=top.map(x=>`
-      <a class="priority-row" href="./unit.html?unit=${x.unit}#practice">
-        <span class="priority-number">${String(x.unit).padStart(2,"0")}</span>
-        <span><strong>${UNIT_TITLES[x.unit]}</strong><small>Mastery ${x.score}%</small></span>
-        <span class="arrow">→</span>
-      </a>`).join("");
-    action.href=`./unit.html?unit=${top[0].unit}#practice`;
-    action.textContent=`Review Unit ${top[0].unit}`;
-  } else if(!fullMocks().length){
-    title.textContent="Take your first Full Mock";
-    msg.textContent="Complete an 80-question Module 1 Full Mock to establish exam-level evidence.";
-    list.innerHTML="";
-    action.href="./exam.html?mode=mock";
-    action.textContent="Start Full Mock";
-  } else {
-    title.textContent="Keep building evidence";
-    msg.textContent="Use another fresh Part Review or Full Mock to confirm consistent performance.";
-    list.innerHTML="";
-    action.href="./exam.html?mode=mock";
-    action.textContent="Open Full Mock";
+  const activeSearch = byId("activeSearch");
+  activeSearch.hidden = !state.query && state.stage === "all";
+  if (!activeSearch.hidden) {
+    const stage = stageDefinitions.find((definition) => definition.id === state.stage);
+    const parts = [];
+    if (state.query) parts.push(`Búsqueda: “${state.query}”`);
+    if (stage) parts.push(`Etapa: ${stage.short}`);
+    byId("activeSearchText").textContent = parts.join(" · ");
   }
 }
 
-function attempts() {
-  const out=[];
-  history().forEach(x=>out.push({
-    title:x.mode==="full_mock"?"Module 1 Full Mock":`Part ${x.part} Review`,
-    subtitle:x.mode==="full_mock"?"80-question exam simulation":`Part ${x.part} exam-style review`,
-    score:x.percentage, completedAt:x.completedAt, href:"./exam-results.html"
-  }));
-
-  for(let u=1;u<=15;u++){
-    const r=unitProgress(u).latestResult;
-    if(r?.completedAt) out.push({
-      title:`Unit ${u} Mini Test`, subtitle:UNIT_TITLES[u],
-      score:r.percentage, completedAt:r.completedAt,
-      href:`./unit.html?unit=${u}#results`
-    });
-  }
-
-  return out.sort((a,b)=>new Date(b.completedAt)-new Date(a.completedAt));
+function renderTimelineOptions() {
+  const select = byId("timelineCaseSelect");
+  const preferred = corruptionCases.find((item) => item.featured) || corruptionCases[0];
+  state.selectedTimelineId = state.selectedTimelineId || preferred?.id || "";
+  select.innerHTML = corruptionCases.map((item) => `
+    <option value="${escapeHTML(item.id)}" ${item.id === state.selectedTimelineId ? "selected" : ""}>${escapeHTML(item.title)}</option>
+  `).join("");
 }
 
-function fmtDate(value) {
-  const d=new Date(value), now=new Date();
-  if(d.toDateString()===now.toDateString()) return "Today";
-  return d.toLocaleDateString(undefined,{month:"short",day:"numeric"});
-}
-
-function renderRecent(limit=5) {
-  const holder=document.querySelector("#dashboardRecentResults");
-  const rows=attempts().slice(0,limit);
-
-  if(!rows.length){
-    holder.innerHTML=`<div class="dashboard-empty-row"><strong>No results yet</strong><span>Complete a Mini Test, Part Review or Full Mock.</span></div>`;
+function renderMasterTimeline() {
+  const item = corruptionCases.find((candidate) => candidate.id === state.selectedTimelineId);
+  const target = byId("masterTimeline");
+  if (!item) {
+    target.innerHTML = "";
     return;
   }
 
-  holder.innerHTML=rows.map(x=>{
-    const s=statusFor(x.score);
-    return `<a class="result-row dashboard-result-link" href="${x.href}">
-      <span><strong>${x.title}</strong><small>${x.subtitle}</small></span>
-      <span class="score-cell">${x.score}%</span>
-      <span><em class="status-chip ${s.cls}">${s.label}</em></span>
-      <span>${fmtDate(x.completedAt)}</span>
-    </a>`;
-  }).join("");
+  target.innerHTML = [...(item.timeline || [])]
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .map((entry) => `
+      <article class="timeline-entry">
+        <time datetime="${escapeHTML(entry.date)}">${escapeHTML(formatShortDate(entry.date))}</time>
+        <div><h3>${escapeHTML(entry.title)}</h3><p>${escapeHTML(entry.text)}</p></div>
+      </article>
+    `).join("");
 }
 
-let expanded=false;
-document.querySelector("#dashboardViewAllResults")?.addEventListener("click",()=>{
-  expanded=!expanded;
-  renderRecent(expanded?25:5);
-  document.querySelector("#dashboardViewAllResults").textContent=expanded?"Show less":"View all";
-});
+function renderStages() {
+  byId("methodStageList").innerHTML = stageDefinitions.map((stage) => `
+    <div class="stage-definition">
+      <strong>${escapeHTML(stage.label)}</strong>
+      <p>${escapeHTML(stage.meaning)}</p>
+    </div>
+  `).join("");
+}
 
-document.querySelectorAll(".profile-card").forEach(btn=>{
-  btn.addEventListener("click",()=>{ location.href="./login.html"; });
-});
+function renderGlossary(query = "") {
+  const needle = normalizeText(query);
+  const entries = Object.entries(corruptionGlossary)
+    .filter(([term, definition]) => normalizeText(`${term} ${definition}`).includes(needle));
 
-renderReadiness();
-renderContinue();
-renderProgress();
-renderRecommendation();
-renderRecent();
+  byId("glossaryList").innerHTML = entries.length
+    ? entries.map(([term, definition]) => `
+        <article class="glossary-entry"><strong>${escapeHTML(term)}</strong><p>${escapeHTML(definition)}</p></article>
+      `).join("")
+    : `<article class="glossary-entry"><strong>Sin resultados</strong><p>Prueba con otro concepto procesal.</p></article>`;
+}
+
+function listMarkup(items = []) {
+  return items.map((item) => `<li>${escapeHTML(item)}</li>`).join("");
+}
+
+function openCase(caseId, { updateHash = true } = {}) {
+  const item = corruptionCases.find((candidate) => candidate.id === caseId);
+  const dialog = byId("caseDialog");
+  if (!item || !dialog) return;
+
+  byId("caseDialogContent").innerHTML = `
+    <header class="case-sheet-head stage-${escapeHTML(item.stage)}">
+      <span class="stage-pill">${escapeHTML(item.stageLabel)}</span>
+      <div class="case-relation">${escapeHTML(item.relation)}</div>
+      <h2>${escapeHTML(item.title)}</h2>
+      <p>${escapeHTML(item.summary)}</p>
+      <div class="sheet-meta">
+        <span>${escapeHTML(item.institution)}</span>
+        <span>${escapeHTML(item.sector)}</span>
+        <span>${escapeHTML(item.territory)}</span>
+      </div>
+    </header>
+    <div class="case-sheet-body">
+      <div class="sheet-alert"><strong>Regla de lectura</strong><span>El estado mostrado corresponde a la última fuente revisada. Una imputación, acusación o medida preventiva no equivale a una condena.</span></div>
+
+      <div class="money-grid">
+        ${(item.money || []).map((entry) => `<article><span>${escapeHTML(entry.label)}</span><strong>${escapeHTML(entry.value)}</strong></article>`).join("")}
+      </div>
+
+      <div class="sheet-grid">
+        <section class="evidence-panel established"><h3>Qué está documentado</h3><ul>${listMarkup(item.established)}</ul></section>
+        <section class="evidence-panel pending"><h3>Qué falta por decidir</h3><ul>${listMarkup(item.pending)}</ul></section>
+      </div>
+
+      <section class="sheet-section">
+        <h3>Personas e instituciones</h3>
+        <ul class="people-list">
+          ${(item.people || []).map((person) => `
+            <li><strong>${escapeHTML(person.name)}</strong><span>${escapeHTML(person.role)}</span><small>${escapeHTML(person.status)}</small></li>
+          `).join("")}
+        </ul>
+      </section>
+
+      <section class="sheet-section">
+        <h3>Cronología del expediente</h3>
+        <div class="dialog-timeline">
+          ${[...(item.timeline || [])].sort((a, b) => a.date.localeCompare(b.date)).map((entry) => `
+            <article><time datetime="${escapeHTML(entry.date)}">${escapeHTML(formatLongDate(entry.date))}</time><h4>${escapeHTML(entry.title)}</h4><p>${escapeHTML(entry.text)}</p></article>
+          `).join("")}
+        </div>
+      </section>
+
+      <section class="sheet-section">
+        <h3>Fuentes enlazadas</h3>
+        <ul class="source-list">
+          ${(item.sources || []).map((source) => `
+            <li><a href="${escapeHTML(safeUrl(source.url))}" target="_blank" rel="noopener noreferrer"><span><strong>${escapeHTML(source.name)}</strong><span>${escapeHTML(source.type)} · ${escapeHTML(formatShortDate(source.date))}</span></span><span class="source-arrow" aria-hidden="true">↗</span></a></li>
+          `).join("")}
+        </ul>
+      </section>
+
+      <div class="last-verified-box">Última actuación registrada: <strong>${escapeHTML(formatLongDate(item.lastUpdate))}</strong> · Corte general del archivo: <strong>${escapeHTML(formatLongDate(archiveMeta.lastVerified))}</strong>.</div>
+    </div>
+  `;
+
+  if (!dialog.open) dialog.showModal();
+  if (updateHash) history.pushState({ caseId }, "", `#caso=${encodeURIComponent(caseId)}`);
+}
+
+function openDialog(id) {
+  const dialog = byId(id);
+  if (dialog && !dialog.open) dialog.showModal();
+}
+
+function closeDialog(dialog) {
+  if (dialog?.open) dialog.close();
+}
+
+function clearCaseHash() {
+  if (location.hash.startsWith("#caso=")) {
+    history.replaceState(null, "", `${location.pathname}${location.search}#casos`);
+  }
+}
+
+function caseIdFromHash() {
+  const match = location.hash.match(/^#caso=(.+)$/);
+  return match ? decodeURIComponent(match[1]) : "";
+}
+
+function focusSearch() {
+  byId("caseSearch")?.focus({ preventScroll: true });
+  byId("casos")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function resetFilters() {
+  state.query = "";
+  state.stage = "all";
+  byId("caseSearch").value = "";
+  all("[data-stage]").forEach((button) => button.classList.toggle("active", button.dataset.stage === "all"));
+  renderCases();
+}
+
+function bindExplorer() {
+  byId("caseSearch").addEventListener("input", (event) => {
+    state.query = event.target.value.trim();
+    renderCases();
+  });
+
+  byId("stageFilters").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-stage]");
+    if (!button) return;
+    state.stage = button.dataset.stage;
+    all("[data-stage]").forEach((item) => item.classList.toggle("active", item === button));
+    renderCases();
+  });
+
+  byId("clearSearch").addEventListener("click", resetFilters);
+  byId("resetFilters").addEventListener("click", resetFilters);
+
+  document.addEventListener("click", (event) => {
+    const trigger = event.target.closest("[data-open-case]");
+    if (trigger) openCase(trigger.dataset.openCase);
+  });
+}
+
+function bindTimeline() {
+  byId("timelineCaseSelect").addEventListener("change", (event) => {
+    state.selectedTimelineId = event.target.value;
+    renderMasterTimeline();
+  });
+
+  byId("showAllUpdates").addEventListener("click", () => {
+    byId("cronologia").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function bindDialogs() {
+  const methodButtons = ["openMethodologyHero", "openMethodology", "footerMethodology", "mobileMethod"];
+  methodButtons.forEach((id) => byId(id)?.addEventListener("click", () => openDialog("methodologyDialog")));
+  byId("openStages")?.addEventListener("click", () => openDialog("methodologyDialog"));
+  byId("openGlossary")?.addEventListener("click", () => openDialog("glossaryDialog"));
+
+  ["topSupportBtn", "supportBtn"].forEach((id) => byId(id)?.addEventListener("click", () => openDialog("supportDialog")));
+
+  all("[data-close-dialog]").forEach((button) => {
+    button.addEventListener("click", () => closeDialog(byId(button.dataset.closeDialog)));
+  });
+
+  all("dialog").forEach((dialog) => {
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) closeDialog(dialog);
+    });
+    dialog.addEventListener("close", () => {
+      if (dialog.id === "caseDialog") clearCaseHash();
+    });
+  });
+
+  byId("glossarySearch")?.addEventListener("input", (event) => renderGlossary(event.target.value));
+}
+
+function bindSearchShortcuts() {
+  ["focusSearch", "mobileSearch"].forEach((id) => byId(id)?.addEventListener("click", focusSearch));
+
+  document.addEventListener("keydown", (event) => {
+    const tag = document.activeElement?.tagName?.toLowerCase();
+    const isTyping = ["input", "textarea", "select"].includes(tag) || document.activeElement?.isContentEditable;
+    const commandSearch = (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k";
+    const slashSearch = event.key === "/" && !isTyping;
+    if (commandSearch || slashSearch) {
+      event.preventDefault();
+      focusSearch();
+    }
+  });
+}
+
+async function copySupportKey() {
+  const value = byId("brebKey").textContent.trim();
+  const status = byId("copyStatus");
+  try {
+    await navigator.clipboard.writeText(value);
+    status.textContent = "Llave copiada.";
+  } catch {
+    const input = document.createElement("textarea");
+    input.value = value;
+    input.style.position = "fixed";
+    input.style.opacity = "0";
+    document.body.append(input);
+    input.select();
+    const copied = document.execCommand("copy");
+    input.remove();
+    status.textContent = copied ? "Llave copiada." : `Copia manualmente la llave: ${value}`;
+  }
+}
+
+function bindSupport() {
+  byId("copyKeyBtn")?.addEventListener("click", copySupportKey);
+}
+
+function bindHashNavigation() {
+  const openHashCase = () => {
+    const id = caseIdFromHash();
+    if (id) openCase(id, { updateHash: false });
+  };
+  window.addEventListener("hashchange", openHashCase);
+  openHashCase();
+}
+
+function bindMobileNavigation() {
+  const links = all(".mobile-nav a");
+  const sections = links
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+
+  if (!("IntersectionObserver" in window)) return;
+  const observer = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    links.forEach((link) => link.classList.toggle("active", link.getAttribute("href") === `#${visible.target.id}`));
+  }, { rootMargin: "-35% 0px -55%", threshold: [0, 0.2, 0.5] });
+  sections.forEach((section) => observer.observe(section));
+}
+
+function showUpdateToast(registration) {
+  serviceWorkerRegistration = registration;
+  byId("updateToast").hidden = false;
+}
+
+function registerServiceWorker() {
+  if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
+
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (refreshing) return;
+    refreshing = true;
+    window.location.reload();
+  });
+
+  navigator.serviceWorker.register("/sw.js?v=2.0.0").then((registration) => {
+    serviceWorkerRegistration = registration;
+    registration.update().catch(() => {});
+    if (registration.waiting) showUpdateToast(registration);
+
+    registration.addEventListener("updatefound", () => {
+      const worker = registration.installing;
+      if (!worker) return;
+      worker.addEventListener("statechange", () => {
+        if (worker.state === "installed" && navigator.serviceWorker.controller) {
+          showUpdateToast(registration);
+        }
+      });
+    });
+  }).catch(() => {
+    // El sitio continúa funcionando en línea aunque el navegador no permita PWA.
+  });
+
+  byId("reloadApp")?.addEventListener("click", () => {
+    if (serviceWorkerRegistration?.waiting) {
+      serviceWorkerRegistration.waiting.postMessage({ type: "SKIP_WAITING" });
+    } else {
+      window.location.reload();
+    }
+  });
+}
+
+function renderDataError() {
+  const grid = byId("caseGrid");
+  if (!grid) return;
+  grid.innerHTML = `
+    <article class="empty-state" style="display:block;grid-column:1/-1">
+      <span aria-hidden="true">!</span><h3>No se pudo abrir el archivo documental</h3>
+      <p>Recarga la página. Si el problema continúa, verifica que <strong>data/cases.js</strong> esté publicado junto al sitio.</p>
+    </article>
+  `;
+}
+
+function init() {
+  if (!casesReady() || !stageReady() || typeof corruptionGlossary === "undefined") {
+    renderDataError();
+    return;
+  }
+
+  setArchiveMeta();
+  renderMetrics();
+  renderLatestUpdates();
+  renderCases();
+  renderTimelineOptions();
+  renderMasterTimeline();
+  renderStages();
+  renderGlossary();
+
+  bindExplorer();
+  bindTimeline();
+  bindDialogs();
+  bindSearchShortcuts();
+  bindSupport();
+  bindHashNavigation();
+  bindMobileNavigation();
+  registerServiceWorker();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init, { once: true });
+} else {
+  init();
+}

@@ -1,13 +1,29 @@
 {
   "name": "Colombia Día a Día",
   "short_name": "Día a Día",
-  "description": "Información pública verificable en Colombia.",
+  "description": "Archivo documental ciudadano sobre corrupción pública en Colombia.",
+  "id": "/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#eef1f4",
-  "theme_color": "#10233f",
+  "background_color": "#f4f2eb",
+  "theme_color": "#081a31",
   "lang": "es-CO",
+  "categories": ["news", "education", "government"],
+  "shortcuts": [
+    {
+      "name": "Explorar expedientes",
+      "short_name": "Expedientes",
+      "url": "/#casos",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Ver avances",
+      "short_name": "Avances",
+      "url": "/#avances",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
   "icons": [
     {
       "src": "/icons/icon-192.png",

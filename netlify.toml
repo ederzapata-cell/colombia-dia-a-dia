@@ -1,18 +1,24 @@
 [build]
   publish = "."
-  command = ""
-
-[build.environment]
-  NODE_VERSION = "20"
 
 [[headers]]
   for = "/*"
   [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    X-Frame-Options = "SAMEORIGIN"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+[[headers]]
+  for = "/data/cases.js"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"

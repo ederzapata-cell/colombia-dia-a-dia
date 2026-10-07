@@ -1527,3 +1527,11 @@ a.nav-item {
   .exam-actions > * { flex: 1 1 120px; }
   .exam-modal-actions { flex-direction: column-reverse; }
 }
+
+/* ---------- Dynamic Dashboard ---------- */
+.dashboard-rec-cta { margin-top:16px; width:fit-content; }
+.priority-row { text-decoration:none; color:var(--ink); }
+.dashboard-result-link { text-decoration:none; }
+.dashboard-empty-row { padding:22px 16px; display:grid; gap:5px; color:var(--muted); font-size:12px; }
+.dashboard-empty-row strong { color:var(--ink); font-size:13px; }
+#dashboardPriorityList:empty { display:none; }

@@ -72,27 +72,27 @@
           <div class="card-heading">
             <div>
               <p class="eyebrow">OVERALL TKT READINESS</p>
-              <h2>Almost ready</h2>
+              <h2 id="dashboardReadinessLabel">Not ready</h2>
             </div>
-            <span class="confidence-badge">High confidence</span>
+            <span class="confidence-badge" id="dashboardConfidence">Low confidence</span>
           </div>
 
           <div class="readiness-content">
             <div class="score-ring" role="img" aria-label="Readiness score 78 out of 100">
               <div class="score-ring-inner">
-                <strong>78</strong>
+                <strong id="dashboardReadinessScore">0</strong>
                 <span>/ 100</span>
               </div>
             </div>
 
             <div class="readiness-copy">
-              <p>Your performance is improving. Review your priority units before your next Full Mock.</p>
+              <p id="dashboardReadinessMessage">Complete study activities and exam-style attempts to build readiness evidence.</p>
               <div class="readiness-meta">
-                <span><b>Latest mock</b> 76%</span>
-                <span><b>Best mock</b> 76%</span>
-                <span><b>Evidence</b> High</span>
+                <span><b>Latest mock</b> <span id="dashboardLatestMock">—</span></span>
+                <span><b>Best mock</b> <span id="dashboardBestMock">—</span></span>
+                <span><b>Evidence</b> <span id="dashboardEvidence">Low</span></span>
               </div>
-              <button class="primary-button" type="button">Continue Preparing</button>
+              <a class="primary-button link-button" id="dashboardContinuePreparing" href="./module1.html">Continue Preparing</a>
             </div>
           </div>
         </article>
@@ -101,9 +101,9 @@
           <div class="card-heading compact">
             <div>
               <p class="eyebrow">CONTINUE STUDYING</p>
-              <h3>Unit 15 — Assessment</h3>
+              <h3 id="dashboardContinueTitle">Unit 1 — Parts of Speech</h3>
             </div>
-            <span class="status-chip developing">In progress</span>
+            <span class="status-chip developing" id="dashboardContinueStatus">In progress</span>
           </div>
 
           <div class="stage-line">
@@ -121,8 +121,8 @@
           </div>
 
           <div class="continue-footer">
-            <p><b>Next:</b> Unit Mini Test</p>
-            <a class="secondary-button link-button" href="./unit.html?unit=15">Resume Unit</a>
+            <p><b>Next:</b> <span id="dashboardContinueNext">Learn → Practice → Mini Test</span></p>
+            <a class="secondary-button link-button" id="dashboardResumeUnit" href="./unit.html?unit=1">Resume Unit</a>
           </div>
         </article>
 
@@ -132,16 +132,16 @@
               <p class="eyebrow">MODULE 1</p>
               <h3>Language, Learning & Teaching</h3>
             </div>
-            <strong class="progress-number">93%</strong>
+            <strong class="progress-number" id="dashboardModuleProgress">0%</strong>
           </div>
 
           <div class="big-progress" aria-label="Module progress 93 percent">
-            <span style="width:93%"></span>
+            <span id="dashboardModuleProgressFill" style="width:0%"></span>
           </div>
 
           <div class="module-stats">
             <div>
-              <strong>14/15</strong>
+              <strong id="dashboardCompletedUnits">0/15</strong>
               <span>Units completed</span>
             </div>
             <div>
@@ -178,35 +178,10 @@
         <article class="recommendation-card card">
           <div class="recommendation-icon">↗</div>
           <p class="eyebrow">RECOMMENDED NEXT ACTIVITY</p>
-          <h3>Review your priority units</h3>
-          <p>Units 5, 10 and 14 are currently below your readiness target.</p>
-
-          <div class="priority-list">
-            <button class="priority-row" type="button">
-              <span class="priority-number">05</span>
-              <span>
-                <strong>Phonology: Sounds & Stress</strong>
-                <small>Mastery 63%</small>
-              </span>
-              <span class="arrow">→</span>
-            </button>
-            <button class="priority-row" type="button">
-              <span class="priority-number">10</span>
-              <span>
-                <strong>Errors & L1/L2 Learning</strong>
-                <small>Mastery 64%</small>
-              </span>
-              <span class="arrow">→</span>
-            </button>
-            <button class="priority-row" type="button">
-              <span class="priority-number">14</span>
-              <span>
-                <strong>Teaching Approaches</strong>
-                <small>Mastery 67%</small>
-              </span>
-              <span class="arrow">→</span>
-            </button>
-          </div>
+          <h3 id="dashboardRecommendationTitle">Start building readiness</h3>
+          <p id="dashboardRecommendationMessage">Complete a Mini Test or Part Review to generate a targeted recommendation.</p>
+          <div class="priority-list" id="dashboardPriorityList"></div>
+          <a class="primary-button link-button dashboard-rec-cta" id="dashboardRecommendationAction" href="./module1.html">Open Module 1</a>
         </article>
 
         <article class="recent-card card">
@@ -215,43 +190,13 @@
               <p class="eyebrow">RECENT RESULTS</p>
               <h3>Your latest attempts</h3>
             </div>
-            <button class="text-button" type="button">View all</button>
+            <button class="text-button" id="dashboardViewAllResults" type="button">View all</button>
           </div>
-
           <div class="results-table" role="table" aria-label="Recent results">
             <div class="result-row header" role="row">
-              <span>Activity</span>
-              <span>Score</span>
-              <span>Status</span>
-              <span>Date</span>
+              <span>Activity</span><span>Score</span><span>Status</span><span>Date</span>
             </div>
-            <button class="result-row" type="button" role="row">
-              <span>
-                <strong>Module 1 Full Mock</strong>
-                <small>80 questions · 80 minutes</small>
-              </span>
-              <span class="score-cell">76%</span>
-              <span><em class="status-chip developing">Almost ready</em></span>
-              <span>Today</span>
-            </button>
-            <button class="result-row" type="button" role="row">
-              <span>
-                <strong>Part 1 Review</strong>
-                <small>40 questions</small>
-              </span>
-              <span class="score-cell">78%</span>
-              <span><em class="status-chip developing">Developing</em></span>
-              <span>Oct 3</span>
-            </button>
-            <button class="result-row" type="button" role="row">
-              <span>
-                <strong>Unit 10 Mini Test</strong>
-                <small>Errors & L1/L2 Learning</small>
-              </span>
-              <span class="score-cell">70%</span>
-              <span><em class="status-chip developing">Developing</em></span>
-              <span>Oct 2</span>
-            </button>
+            <div id="dashboardRecentResults"></div>
           </div>
         </article>
       </section>

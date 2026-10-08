@@ -475,7 +475,7 @@ function registerServiceWorker() {
     window.location.reload();
   });
 
-  navigator.serviceWorker.register("/sw.js?v=2.0.0").then((registration) => {
+  navigator.serviceWorker.register("/sw.js?v=2.1.0").then((registration) => {
     serviceWorkerRegistration = registration;
     registration.update().catch(() => {});
     if (registration.waiting) showUpdateToast(registration);

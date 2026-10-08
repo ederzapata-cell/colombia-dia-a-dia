@@ -1,11 +1,11 @@
-const CACHE_VERSION = "colombia-dia-a-dia-v2.0.0";
+const CACHE_VERSION = "colombia-dia-a-dia-v2.1.0";
 const APP_SHELL = [
   "/",
   "/index.html",
-  "/styles.css?v=2.0.0",
-  "/data/cases.js?v=2.0.0",
-  "/app.js?v=2.0.0",
-  "/manifest.webmanifest?v=2.0.0",
+  "/styles.css?v=2.1.0",
+  "/data/cases.js?v=2.1.0",
+  "/app.js?v=2.1.0",
+  "/manifest.webmanifest?v=2.1.0",
   "/assets/qr-apoyanos.jpeg",
   "/icons/icon-192.png",
   "/icons/icon-512.png",

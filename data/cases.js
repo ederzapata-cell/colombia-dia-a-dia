@@ -1,14 +1,14 @@
 /* =========================================================
    COLOMBIA · DÍA A DÍA
    Archivo anticorrupción — modelo de expedientes
-   Última verificación editorial: 2026-10-07
+   Última verificación editorial: 2026-10-08
    ========================================================= */
 
 const archiveMeta = {
   title: "Memoria pública contra la corrupción",
   period: "Gobierno de Gustavo Petro · 7 ago 2022 — 7 ago 2026",
-  lastVerified: "2026-10-07",
-  edition: "Cobertura inicial · versión 2.0",
+  lastVerified: "2026-10-08",
+  edition: "Cobertura inicial · versión 2.1",
   description:
     "Expedientes construidos con decisiones judiciales, actuaciones de organismos de control y documentos públicos. Una denuncia o imputación nunca se presenta como condena.",
   scopeNote:
@@ -83,12 +83,14 @@ const corruptionCases = [
       "La Procuraduría confirmó en segunda instancia destitución e inhabilidad de 18 años para Olmedo López, 20 años para Sneyder Pinilla y 10 años para Víctor Meza.",
       "El fallo disciplinario indicó que el pago superó en más de 54 % los precios reales de mercado.",
       "Un juez aprobó el preacuerdo de Sneyder Pinilla, con pena de cinco años y ocho meses por concierto para delinquir agravado y peculado por apropiación agravado.",
-      "La Resolución 008041 del Inpec ordenó el 6 de octubre de 2026 trasladar a Olmedo López y Sneyder Pinilla desde establecimientos especiales a La Picota."
+      "El Inpec ejecutó el 6 de octubre de 2026 el traslado de Olmedo López y Sneyder Pinilla desde establecimientos especiales a La Picota.",
+      "La Fiscalía impuso medidas cautelares con fines de extinción de dominio sobre activos relacionados con seis personas del caso UNGRD; la medida es provisional y no equivale a recuperación definitiva."
     ],
     pending: [
       "Las responsabilidades penales deben individualizarse: la sanción disciplinaria no sustituye las decisiones de los jueces penales.",
       "El proceso contra Olmedo López avanzó a acusación; la acusación no es una condena.",
-      "La defensa de Pinilla cuestionó el traslado carcelario y alegó la existencia de una orden judicial previa; esa controversia no modifica el fondo del proceso penal."
+      "La defensa de Pinilla cuestionó el traslado carcelario y alegó la existencia de una orden judicial previa; esa controversia no modifica el fondo del proceso penal.",
+      "La extinción de dominio deberá resolverse en su procedimiento propio antes de hablar de bienes recuperados definitivamente por el Estado."
     ],
     people: [
       { name: "Olmedo López Martínez", role: "Exdirector de la UNGRD", status: "Sancionado disciplinariamente; acusado en proceso penal" },
@@ -101,14 +103,17 @@ const corruptionCases = [
       { date: "2025-04-04", title: "Preacuerdo aprobado", text: "Un juez aprobó el preacuerdo con Sneyder Pinilla y fijó una pena de cinco años y ocho meses." },
       { date: "2025-07-31", title: "Sanción disciplinaria confirmada", text: "La Procuraduría resolvió la segunda instancia y confirmó las destituciones e inhabilidades." },
       { date: "2026-04-16", title: "Acusación contra el exdirector", text: "La Fiscalía informó la radicación del escrito de acusación contra Olmedo López por otra línea de direccionamiento de contratos." },
-      { date: "2026-10-06", title: "Traslado ordenado a La Picota", text: "El Inpec ordenó trasladar a Olmedo López y Sneyder Pinilla a la cárcel La Picota; la defensa de Pinilla anunció oposición a la medida." }
+      { date: "2026-10-01", title: "Medidas cautelares sobre activos", text: "La Fiscalía afectó 25 activos —19 inmuebles y seis sociedades—, avaluados en más de $20.000 millones, con medidas provisionales para fines de extinción de dominio." },
+      { date: "2026-10-06", title: "Traslado ejecutado a La Picota", text: "El Inpec trasladó efectivamente a Olmedo López y Sneyder Pinilla a la cárcel La Picota; sus defensas y la Fiscalía habían planteado objeciones relacionadas con su seguridad y colaboración." }
     ],
     sources: [
       { name: "Fiscalía · inicio del caso penal", type: "Fuente primaria", date: "2024-07-25", url: "https://www.fiscalia.gov.co/colombia/inicio/mas-noticias/page/672/" },
       { name: "Fiscalía · preacuerdo de Sneyder Pinilla", type: "Fuente primaria", date: "2025-04-04", url: "https://www.fiscalia.gov.co/colombia/inicio/mas-noticias/page/435/" },
       { name: "Procuraduría · fallo disciplinario de segunda instancia", type: "Fuente primaria", date: "2025-07-31", url: "https://www.procuraduria.gov.co/Pages/procuraduria-confirmo-sancion-olmedo-lopez-sneyder-pinilla-sobrecostos-adquisicion-carrotanques.aspx" },
       { name: "Fiscalía · seguimiento UNGRD", type: "Fuente primaria", date: "2026-04-16", url: "https://www.fiscalia.gov.co/colombia/tag/olmedo-lopez/" },
-      { name: "Cambio · Resolución 008041 y controversia por el traslado", type: "Cobertura documental", date: "2026-10-06", url: "https://d1x0qnenkl91hi.cloudfront.net/poder/articulo/2026/10/el-inpec-traslada-a-la-picota-a-olmedo-lopez-y-sneyder-pinilla-dos-dias-despues-de-la-publicacion-de-cambio" }
+      { name: "Fiscalía · medidas cautelares sobre 25 activos", type: "Fuente primaria", date: "2026-10-01", url: "https://www.fiscalia.gov.co/inicio/mas-noticias/page/349/?kpg_9ec6645e24=3&noamp=mobile" },
+      { name: "Presidencia · traslado ejecutado a La Picota", type: "Fuente primaria", date: "2026-10-06", url: "https://www.presidencia.gov.co/prensa/Paginas/Se-acabaron-los-privilegios-Presidente-De-La-Espriella-ordeno-trasladar-261006.aspx" },
+      { name: "Cambio · resolución y controversia por el traslado", type: "Cobertura documental", date: "2026-10-06", url: "https://d1x0qnenkl91hi.cloudfront.net/poder/articulo/2026/10/el-inpec-traslada-a-la-picota-a-olmedo-lopez-y-sneyder-pinilla-dos-dias-despues-de-la-publicacion-de-cambio" }
     ],
     tags: ["carrotanques", "La Guajira", "sobrecostos", "contratación", "UNGRD"]
   },
@@ -123,7 +128,7 @@ const corruptionCases = [
     stage: "trial",
     stageLabel: "ACUSACIÓN / JUICIO",
     featured: true,
-    lastUpdate: "2026-03-11",
+    lastUpdate: "2026-10-01",
     summary:
       "Fiscalía y Corte Suprema abrieron procesos separados por la presunta entrega de dinero y el ofrecimiento de contratos de la UNGRD a congresistas para favorecer proyectos en trámite. Las actuaciones alcanzan a exfuncionarios de Presidencia, una exconsejera y varios congresistas y excongresistas.",
     money: [
@@ -134,11 +139,13 @@ const corruptionCases = [
       "La Corte Suprema ordenó en mayo de 2025 detención preventiva de Iván Name y Andrés Calle y los acusó en agosto del mismo año.",
       "La Fiscalía acusó a Sandra Ortiz por el presunto traslado de recursos y a Carlos Ramón González por el supuesto direccionamiento de dádivas con recursos de la UNGRD.",
       "En marzo de 2026 la Corte acusó por cohecho impropio a otros cinco congresistas y un excongresista por ofrecimientos vinculados con proyectos de la UNGRD.",
+      "La Fiscalía impuso medidas cautelares con fines de extinción de dominio sobre activos relacionados con Iván Name, Andrés Calle y otras cuatro personas del caso UNGRD.",
       "Existen decisiones procesales formales; no existe una condena general contra todas las personas mencionadas."
     ],
     pending: [
       "Los juicios deben determinar la responsabilidad individual y la credibilidad de testimonios y evidencia técnica.",
-      "El expediente no permite atribuir automáticamente responsabilidad penal al entonces presidente ni a todo el Gobierno."
+      "El expediente no permite atribuir automáticamente responsabilidad penal al entonces presidente ni a todo el Gobierno.",
+      "Las medidas sobre los activos son provisionales: todavía no constituyen extinción definitiva ni recuperación comprobada de recursos."
     ],
     people: [
       { name: "Iván Name Vásquez", role: "Expresidente del Senado", status: "Acusado por la Corte Suprema; medida de aseguramiento" },
@@ -156,14 +163,16 @@ const corruptionCases = [
       { date: "2025-08-27", title: "Acusación a los congresistas", text: "La Corte consideró que existían indicios suficientes para llevarlos a juicio." },
       { date: "2025-09-01", title: "Acusación a Sandra Ortiz", text: "La Fiscalía la acusó por el presunto traslado de recursos entre integrantes del esquema." },
       { date: "2026-01-29", title: "Acusación a Carlos Ramón González", text: "La Fiscalía formalizó la acusación por el presunto direccionamiento de dádivas a congresistas." },
-      { date: "2026-03-11", title: "Seis acusaciones adicionales", text: "La Corte acusó a cinco congresistas y un excongresista por presunto cohecho impropio y ordenó medida de aseguramiento contra dos de ellos." }
+      { date: "2026-03-11", title: "Seis acusaciones adicionales", text: "La Corte acusó a cinco congresistas y un excongresista por presunto cohecho impropio y ordenó medida de aseguramiento contra dos de ellos." },
+      { date: "2026-10-01", title: "Activos afectados con medidas cautelares", text: "La Fiscalía afectó 25 activos —19 inmuebles y seis sociedades— relacionados con seis personas del macrocaso; la valoración preliminar supera los $20.000 millones." }
     ],
     sources: [
       { name: "Corte Suprema · compulsa contra nueve aforados", type: "Fuente primaria", date: "2024-07-16", url: "https://cortesuprema.gov.co/sala-de-instruccion-recibio-compulsa-de-copias-contra-nueve-aforados-por-presuntas-irregularidades-en-la-ungrd/" },
       { name: "Corte Suprema · medida contra Name y Calle", type: "Fuente primaria", date: "2025-05-07", url: "https://cortesuprema.gov.co/sala-de-instruccion-ordeno-medida-de-aseguramiento-contra-los-congresistas-ivan-name-y-andres-calle/" },
       { name: "Corte Suprema · acusación a Name y Calle", type: "Fuente primaria", date: "2025-08-27", url: "https://cortesuprema.gov.co/caso-ungrd-la-sala-de-instruccion-acuso-a-los-congresistas-ivan-name-y-andres-calle/" },
       { name: "Fiscalía · actuaciones del caso UNGRD", type: "Fuente primaria", date: "2026-01-29", url: "https://www.fiscalia.gov.co/colombia/tag/ungrd/" },
-      { name: "Corte Suprema · seis acusaciones por cohecho impropio", type: "Fuente primaria", date: "2026-03-11", url: "https://cortesuprema.gov.co/sala-de-instruccion-acusa-a-cinco-congresistas-y-un-excongresista-por-presunto-cohecho-impropio-y-dicta-medidas-de-aseguramiento-contra-dos-de-ellos/" }
+      { name: "Corte Suprema · seis acusaciones por cohecho impropio", type: "Fuente primaria", date: "2026-03-11", url: "https://cortesuprema.gov.co/sala-de-instruccion-acusa-a-cinco-congresistas-y-un-excongresista-por-presunto-cohecho-impropio-y-dicta-medidas-de-aseguramiento-contra-dos-de-ellos/" },
+      { name: "Fiscalía · medidas cautelares sobre 25 activos", type: "Fuente primaria", date: "2026-10-01", url: "https://www.fiscalia.gov.co/inicio/mas-noticias/page/349/?kpg_9ec6645e24=3&noamp=mobile" }
     ],
     tags: ["Congreso", "cohecho", "DAPRE", "Sandra Ortiz", "Carlos Ramón González", "Iván Name", "Andrés Calle"]
   },
@@ -256,6 +265,98 @@ const corruptionCases = [
       { name: "El Espectador · medida de aseguramiento confirmada", type: "Cobertura judicial", date: "2026-02-25", url: "https://www.elespectador.com/judicial/caso-ungrd-confirman-medida-de-aseguramiento-contra-cesar-manrique-profugo-de-la-justicia/" }
     ],
     tags: ["César Manrique", "Función Pública", "ANT", "UNGRD", "contratos", "tierras"]
+  },
+  {
+    id: "dnbc-contrato-076-urgencia-manifiesta",
+    title: "Contrato 076 de la Dirección Nacional de Bomberos",
+    deck: "Una auditoría forense derivó en denuncias por contratación directa, diferencias de inventario y equipos aún no entregados.",
+    institution: "Dirección Nacional de Bomberos · Ministerio del Interior",
+    sector: "Contratación y atención de emergencias",
+    territory: "Barranquilla · Bogotá · Nacional",
+    relation: "ENTIDAD DEL GOBIERNO PETRO",
+    stage: "report",
+    stageLabel: "DENUNCIAS ANTE AUTORIDADES",
+    featured: true,
+    lastUpdate: "2026-10-07",
+    summary:
+      "El Ministerio del Interior informó que radicó denuncias ante la Fiscalía, la Procuraduría y la Contraloría después de una auditoría forense a contrataciones directas de la Dirección Nacional de Bomberos bajo una urgencia manifiesta. La principal línea divulgada examina el contrato 076, cuyo valor pasó de $16.000 millones a $24.000 millones. Al corte de esta ficha no se ha verificado apertura formal de investigación, imputación ni detrimento fiscal establecido.",
+    money: [
+      { label: "Valor final del contrato 076", value: "$24.000 millones" },
+      { label: "Universo anunciado para revisión", value: "≈ $62.000 millones" }
+    ],
+    established: [
+      "El Ministerio del Interior anunció la radicación de denuncias ante tres autoridades y presentó los hallazgos como resultado de una auditoría forense.",
+      "La documentación contractual disponible identifica a MAKEI Soluciones y Asesoría S.A.S. como contratista del contrato 076; algunas publicaciones transcribieron el nombre de manera distinta.",
+      "El ministro informó que una factura registró 744 equipos mientras el almacén habría recibido 670 y que parte de los bienes permanecía en bodegas del contratista. Estas afirmaciones todavía deben ser contrastadas por las autoridades.",
+      "El valor aproximado de $62.000 millones corresponde al conjunto de contrataciones que el Ministerio anunció revisar, no a una pérdida de recursos ya demostrada."
+    ],
+    pending: [
+      "Confirmar si Fiscalía, Procuraduría o Contraloría abrieron actuaciones formales y cuáles hechos quedaron comprendidos en cada radicado.",
+      "Determinar mediante inventarios, actas y verificaciones físicas qué bienes fueron pagados, recibidos, almacenados y finalmente entregados.",
+      "Establecer si existió responsabilidad fiscal, disciplinaria o penal; la presentación de las denuncias no prueba por sí sola una irregularidad ni identifica responsables."
+    ],
+    people: [
+      { name: "Dirección Nacional de Bomberos de Colombia", role: "Entidad contratante", status: "Contratación sometida a auditoría y denuncia institucional" },
+      { name: "MAKEI Soluciones y Asesoría S.A.S.", role: "Contratista del contrato 076 según SECOP", status: "Sin responsabilidad establecida en las fuentes revisadas" },
+      { name: "Rodrigo Lara", role: "Ministro del Interior", status: "Divulgó la auditoría y presentó las denuncias; no es investigado en este expediente" },
+      { name: "Fiscalía, Procuraduría y Contraloría", role: "Autoridades receptoras", status: "Apertura y alcance de actuaciones pendientes de verificación" }
+    ],
+    timeline: [
+      { date: "2026-10-07", title: "Auditoría remitida a las autoridades", text: "El Ministerio del Interior anunció denuncias y pidió establecer el destino de los recursos y la situación real de los equipos contratados." }
+    ],
+    sources: [
+      { name: "SECOP II · documento del contrato 076", type: "Fuente contractual", date: "2026-10-01", url: "https://community.secop.gov.co/Public/Archive/RetrieveFile/Index?DocUniqueIdentifier=&DocumentId=784541365&InCommunity=False&InPaymentGateway=False" },
+      { name: "El Espectador · presentación de la auditoría y denuncias", type: "Cobertura judicial", date: "2026-10-07", url: "https://www.elespectador.com/judicial/ministro-lara-denuncia-posible-corrupcion-en-la-direccion-de-bomberos-durante-gobierno-petro/" },
+      { name: "Infobae · cifras y hechos divulgados de la auditoría", type: "Cobertura documental", date: "2026-10-07", url: "https://www.infobae.com/colombia/2026/10/07/ministro-del-interior-denuncio-presuntos-actos-de-corrupcion-en-la-direccion-nacional-de-bomberos-durante-el-gobierno-petro/" }
+    ],
+    tags: ["Bomberos", "contrato 076", "MAKEI", "urgencia manifiesta", "inventario", "auditoría"]
+  },
+  {
+    id: "icbf-sevilla-arrendamiento-centro-zonal",
+    title: "Arrendamiento del centro zonal del ICBF en Sevilla",
+    deck: "Más de $400 millones reportados como pagados por un inmueble que no llegó a prestar el servicio previsto.",
+    institution: "ICBF Regional Valle del Cauca",
+    sector: "Contratación y atención a la niñez",
+    territory: "Sevilla · Valle del Cauca",
+    relation: "ENTIDAD DEL GOBIERNO PETRO",
+    stage: "report",
+    stageLabel: "REPORTE A ÓRGANOS DE CONTROL",
+    featured: true,
+    lastUpdate: "2026-10-03",
+    summary:
+      "El ICBF informó que durante 2026 se pagaron más de $400 millones por un inmueble destinado al traslado del centro zonal de Sevilla, aunque el traslado no se realizó y el predio no prestó el servicio previsto. La directora general anunció que pondría los documentos en conocimiento de los órganos de control. No se ha verificado todavía apertura de proceso fiscal, disciplinario o penal.",
+    money: [
+      { label: "Pagos reportados hasta 31 jul 2026", value: "> $400 millones" },
+      { label: "Cuantía inicial publicada en SECOP", value: "$409.333.027" }
+    ],
+    established: [
+      "El comunicado oficial del ICBF afirma que los pagos acumulados superaron $400 millones pese a que el traslado no se materializó y el inmueble no fue usado para prestar el servicio.",
+      "El ICBF indicó que el contrato recibió una adición y una prórroga antes del 7 de agosto de 2026, con vigencia extendida hasta el 31 de octubre.",
+      "El registro público del proceso ICBF-CD-246543-2025-VAL muestra una cuantía inicial de $409.333.027 para el alquiler del inmueble del centro zonal.",
+      "La directora Carolina Restrepo anunció que entregaría la documentación a los órganos de control para que determinaran si existieron irregularidades y responsabilidades."
+    ],
+    pending: [
+      "Confirmar la radicación y apertura de actuaciones de Fiscalía, Contraloría o Procuraduría y las decisiones que adopten.",
+      "Conciliar la fecha exacta de suscripción y el valor de la adición con la minuta y los documentos completos de SECOP.",
+      "La cooperativa propietaria afirmó públicamente que no recibió pagos del ICBF; debe establecerse quién recibió los desembolsos reportados por la entidad y bajo qué soporte antes de atribuir un beneficio."
+    ],
+    people: [
+      { name: "ICBF Regional Valle del Cauca", role: "Entidad arrendataria", status: "Contrato y supervisión sometidos a revisión institucional" },
+      { name: "Carolina Restrepo", role: "Directora general del ICBF", status: "Denunciante institucional; no es investigada en este expediente" },
+      { name: "Cooperativa de Caficultores de Sevilla", role: "Propietaria y contraparte reportada", status: "Afirmó no haber recibido pagos; sin responsabilidad establecida" },
+      { name: "Órganos de control", role: "Destinatarios anunciados de la documentación", status: "Apertura de actuaciones pendiente de verificación" }
+    ],
+    timeline: [
+      { date: "2025-12-24", title: "Contrato inicial reportado por el ICBF", text: "La entidad ubica en esta fecha la suscripción inicial; la minuta completa debe resolver diferencias de fecha presentes en otras fuentes." },
+      { date: "2026-07-31", title: "Más de $400 millones acumulados", text: "El ICBF reportó que para esta fecha los pagos superaban esa suma y el centro zonal aún no había sido trasladado." },
+      { date: "2026-10-03", title: "Solicitud institucional de investigación", text: "La directora general anunció que pondría los documentos y evidencias en conocimiento de los órganos de control." }
+    ],
+    sources: [
+      { name: "ICBF · solicitud de investigación a órganos de control", type: "Fuente primaria", date: "2026-10-03", url: "https://www.icbf.gov.co/noticias/directora-general-pide-organos-de-control-investigar-pago-de-arriendo-por-mas-de-400" },
+      { name: "SECOP II · ficha pública del proceso ICBF-CD-246543-2025-VAL", type: "Fuente contractual", date: "2025-12-28", url: "https://colombialicita.com/licitacion/290817148" },
+      { name: "La FM · respuesta de la cooperativa propietaria", type: "Contraste de contraparte", date: "2026-10-05", url: "https://www.lafm.com.co/actualidad/cali-inmueble-arrendado-icbf-sevilla-valle-del-cauca-dueno-niega-haber-recibido-413020" }
+    ],
+    tags: ["ICBF", "Sevilla", "Valle del Cauca", "arrendamiento", "centro zonal", "órganos de control"]
   },
   {
     id: "ricardo-roa-ecopetrol-hocol",

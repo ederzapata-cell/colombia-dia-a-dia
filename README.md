@@ -2,6 +2,14 @@
 
 Archivo documental ciudadano para entender casos de corrupción pública sin confundir denuncias, imputaciones, acusaciones y condenas.
 
+## Versión 2.1 · corte editorial 8 de octubre de 2026
+
+- 15 expedientes y 49 registros de fuente.
+- Nuevos expedientes sobre el contrato 076 de Bomberos y el arrendamiento del ICBF en Sevilla.
+- Traslado de Olmedo López y Sneyder Pinilla actualizado como ejecutado.
+- Medidas cautelares sobre 25 activos del caso UNGRD identificadas como provisionales, no como recuperación definitiva.
+- Caché PWA renovada para detectar la publicación en computador y celular.
+
 ## Enfoque editorial
 
 La primera etapa documenta hechos vinculados institucionalmente con el Gobierno de Gustavo Petro (2022–2026). No es un listado de titulares ni una afirmación colectiva de culpabilidad. Cada expediente separa:
